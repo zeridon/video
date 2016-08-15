@@ -42,6 +42,10 @@ cp -vr ./FBBoot/* ./boxmounts/FBBoot/
 
 echo "Copying root files..."
 bsdtar -xpf ArchLinuxARM-armv7-latest.tar.gz -C ./boxmounts/FBRoot
+chown -R root:root ./FBRoot
+chmod -R g-rwx ./FBRoot/root
+chmod 700 ./FBRoot/root/.ssh
+chmod 600 ./FBRoot/root/.ssh/authorized_keys
 cp -var ./FBRoot/* ./boxmounts/FBRoot/
 
 echo "Setting hostname to $HN"
