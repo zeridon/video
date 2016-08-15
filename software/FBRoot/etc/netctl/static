@@ -1,0 +1,4 @@
+Interface=eth0
+Connection=ethernet
+IP=dhcp
+

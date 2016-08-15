@@ -1,0 +1,8 @@
+label: dos
+label-id: 0x346716fb
+device: /dev/sdc
+unit: sectors
+
+/dev/sdc1 : start=        2048, size=      131072, type=83, bootable
+/dev/sdc2 : start=      133120, size=      131072, type=83
+/dev/sdc3 : start=      264192, size=    15259648, type=83

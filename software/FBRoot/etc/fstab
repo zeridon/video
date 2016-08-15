@@ -1,0 +1,7 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+LABEL=FBSettings /FBSettings ext4 rw,noatime 0 0
+LABEL=FBBoot /FBBoot vfat rw,noatime 0 0
+
