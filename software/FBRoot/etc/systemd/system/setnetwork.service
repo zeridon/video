@@ -1,5 +1,6 @@
 [Unit]
 Description=FOSBOX host/mac setter
+Before=dhcpcd@eth0.service
 
 [Service]
 Type=oneshot
@@ -7,5 +8,4 @@ ExecStart=/usr/local/bin/setnetwork
 
 [Install]
 WantedBy=multi-user.target
-Before=dhcpcd@eth0.service
 
