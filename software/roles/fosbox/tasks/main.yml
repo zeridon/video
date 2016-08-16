@@ -10,8 +10,10 @@
   raw: chmod 700 /root /root/.ssh
 - name: Ensure auth_keys permissions are good
   raw: chmod 600 /root/.ssh/authorized_keys
+- name: Ensure binaries permissions are good
+  raw: chmod +rx /usr/local/bin/*
 
-#- name: Enable NTP
-#systemd: name=ntpd state=started enabled=yes masked=no
+- name: Enable NTP
+  raw: systemctl enable ntpd && systemctl start ntpd
 
 

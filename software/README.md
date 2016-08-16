@@ -8,8 +8,13 @@ The custom arch distro expects an SD card with 3 partitions, labelled:
 - FBSettings (partition 2, ext4)
 - FBRoot (partition 3, ext4)
 
-The prepare_sd.sh script in this directory will do all the hard work for you.
-If anything goes wrong, read it and see what it is supposed to do, fix it by hand.
+In FBSettings, create a file containing the hostname of the machine called "hostname". Also create a file containing the wanted MAC address, called "mac".
+
+The prepare_sd.sh script in this directory will do all the hard work for you. Call it as:
+
+> ./prepare_sd.sh SD_CARD_DEVICE HOSTNAME MAC_ADDRESS
+
+If anything goes wrong, read the script and see what it is supposed to do, fix it by hand.
 Use common sense, it helps!
 
 ##First use

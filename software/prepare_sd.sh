@@ -6,15 +6,16 @@ if [ ! -e ArchLinuxARM-armv7-latest.tar.gz ] ; then
 fi
 
 
-if [ -z "$1" ] ; then
-  echo "Usage: $0 SD_CARD_DEVICE"
+if [ -z "$3" ] ; then
+  echo "Usage: $0 SD_CARD_DEVICE HOSTNAME MAC_ADDR"
   exit
 fi
 
 DEV=$1
-HN="fosbox"
+HN=$2
+MC=$3
 
-echo "About to repartition $DEV as a FOSBox. Make sure nothing is mounted. Hit ctrl+c now to cancel, or hit return to continue."
+echo "About to repartition $DEV as a FOSBox, hostname $HN with MAC $MC. Make sure nothing is mounted already! Hit ctrl+c now to cancel, or hit return to continue."
 read
 
 echo "Partitioning..."
@@ -49,7 +50,9 @@ chmod 700 ./boxmounts/FBRoot/root/.ssh
 chmod 600 ./boxmounts/FBRoot/root/.ssh/authorized_keys
 
 echo "Setting hostname to $HN"
-echo $HN > ./boxmounts/FBSettings/hostname
+echo -n $HN > ./boxmounts/FBSettings/hostname
+echo "Setting MAC address to $MC"
+echo -n $MC > ./boxmounts/FBSettings/mac
 
 echo "Unmounting partitions"
 umount ./boxmounts/*
