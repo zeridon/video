@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 if [ ! -e ArchLinuxARM-armv7-latest.tar.gz ] ; then
   echo "Downloading ArchLinuxARM tar image..."
@@ -38,15 +38,15 @@ mount ${DEV}2 ./boxmounts/FBSettings
 mount ${DEV}3 ./boxmounts/FBRoot
 
 echo "Copying boot files..."
+#No ownership issues here - this is a vfat partition.
 cp -vr ./FBBoot/* ./boxmounts/FBBoot/
 
 echo "Copying root files..."
 bsdtar -xpf ArchLinuxARM-armv7-latest.tar.gz -C ./boxmounts/FBRoot
-chown -R root:root ./FBRoot
+cp -var --no-preserve=ownership ./FBRoot/* ./boxmounts/FBRoot/
 chmod -R g-rwx ./FBRoot/root
-chmod 700 ./FBRoot/root/.ssh
-chmod 600 ./FBRoot/root/.ssh/authorized_keys
-cp -var ./FBRoot/* ./boxmounts/FBRoot/
+chmod 700 ./boxmounts/FBRoot/root/.ssh
+chmod 600 ./boxmounts/FBRoot/root/.ssh/authorized_keys
 
 echo "Setting hostname to $HN"
 echo $HN > ./boxmounts/FBSettings/hostname

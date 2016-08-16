@@ -1,0 +1,17 @@
+---
+
+- name: Install non-default packages
+  pacman: name=vim,rsync,htop,bash-completion,imagemagick,mplayer,ntp state=present
+
+- name: Update root dirs
+  synchronize: src=FBRoot/ dest=/ archive=no recursive=yes links=yes
+
+- name: Ensure folder permissions are good
+  raw: chmod 700 /root /root/.ssh
+- name: Ensure auth_keys permissions are good
+  raw: chmod 600 /root/.ssh/authorized_keys
+
+#- name: Enable NTP
+#systemd: name=ntpd state=started enabled=yes masked=no
+
+

@@ -1,0 +1,9 @@
+[fosbox]
+192.168.178.68
+
+[fosbox:vars]
+#fosboxes run arch, which means python2 instead of regular python (which is python 3!).
+ansible_python_interpreter=python2
+#Also, we simply use the root account
+ansible_user=root
+

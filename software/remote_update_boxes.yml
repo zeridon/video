@@ -1,0 +1,6 @@
+---
+- hosts: 192.168.178.68
+  remote_user: root
+  roles:
+     - fosbox
+
