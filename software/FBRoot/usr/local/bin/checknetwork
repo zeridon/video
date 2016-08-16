@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ping -c 1 -w 5 google.com >& /dev/null || systemctl restart dhcpcd@eth0.service
+
