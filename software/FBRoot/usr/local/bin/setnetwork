@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Set hostname
+cp /FBSettings/hostname /etc/hostname
+hostname `cat /etc/hostname`
+
+#Set mac address
+ip link set dev eth0 down
+ip link set dev eth0 address `cat /FBSettings/mac`
+ip link set dev eth0 up
+
