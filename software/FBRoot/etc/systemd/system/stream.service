@@ -1,0 +1,16 @@
+[Unit]
+Description=Stream BMD input to MistServer
+After=mistserver.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/bmd-streamer -f /usr/lib/firmware -B -k 1000 -S hdmi -Rx mist_input
+Restart=always
+RestartSec=2
+TimeoutStopSec=15
+MemoryMax=104857600 #100MiB max RAM use
+ExecStopPost=/bin/bash -c "rm -f /dev/shm/*fosdem*"
+
+[Install]
+WantedBy=multi-user.target
+
