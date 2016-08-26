@@ -114,7 +114,41 @@ They also monitor their own video/audio feeds for problems and will have means t
 The devroom volunteer does not leave their post without waiting for a replacement, until the teardown team comes to collect equipment. They do \emph{NOT} disconnect or turn off any equipment themselves. That is the task of the teardown team and nobody else.
 
 \section{FOSDEM Video Box}
-More details coming soon.
+The FOSDEM Video Box will take care of the streaming and recording.
+There is no need to operate the controls on the camera (once on and in the correct video mode, which the setup team will have done). The setup team should also have connected the following:
+\begin{itemize}
+  \item At least one network cable
+  \item A power cable, connected to mains, with the box already turned on
+  \item Slides boxes only:
+    \begin{itemize}
+      \item The right jack connection should be connected to the room audio system
+      \item The right VGA connection should be connected to the projector
+      \item The left jack connection should have a loose mini-jack cable, for connecting to the presenter laptop
+      \item The left VGA connection should have a loose VGA cable, for connecting to the presenter laptop
+    \end{itemize}
+  \item Cam boxes only:
+    \begin{itemize}
+      \item An HDMI cable to the (powered on) camera (the SDI connection is for backup and normally not in use)
+    \end{itemize}
+\end{itemize}
+
+The power switch is at the back, on a standard power supply.
+Order of connections and powering on does not matter, each order will work. There is no need to reboot the box after connections have changed, and there is no physical mechanism to safely power down the box.
+Fully powering on the box takes about half a minute, and it will take approximately 10 seconds before anything can be seen on the LCD display. This is normal. Boot up is about twice as slow after an unexpected power loss.
+
+\emph{Do not attempt to power off the box unassisted, as this may damage the integrity of the system.}
+In the event of power loss or accidental unplugging, the system should fully auto-recover by itself. If you suspect it may be malfunctioning, first try to open the live stream yourself on any device. When problems persist, contact the control and monitoring team (see chapter ``During the event'' for full details). They may already be aware of the problem, but quick reporting helps cut down on reaction times.
+
+While the box contains a network switch (all three ports are connected), \emph{do not connect your own equipment} to the box. The boxes are on a special subnet with reserved bandwidth for the video streaming, and any other equipment may compromise the quality of the broadcast.
+
+\emph{The slides boxes are VGA-only.}
+The internals are HDMI-compatible, but the ULD projection system only supports VGA.
+Sourcing your own HDMI (and/or DP) to VGA converters is advisable, though all speakers will be informed of the VGA requirement beforehand.
+The VGA signal is automatically scaled to 720p at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
+
+\emph{The LCD display will inform you of all vital information about the current status of the box.} It shows a preview of the stream image (auto-refreshing screenshot, not live video), the current input resolution and refresh rate (should be 720p at 50Hz), its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and audio volume level (average over the last few seconds).
+
+The boxes report all this information to control while their network status is good, where the control and monitoring team keeps on eye on all rooms. If something is wrong, they may send somebody your way to correct it. Please follow the instructions (if any) of video team members. Keeping an eye on the box vitals and correcting any problems you notice is encouraged.
 
 \section{Tripod}
 More details coming soon.
@@ -331,6 +365,20 @@ If any of these do not work, re-check your connections and settings. Still no lu
 \subsubsection{Contact control}
 Please report that you've finished the room with your local control point.
 They will let you know what rooms still need attention.
+
+\section{During the event}
+It is expected of the devroom video volunteers that they keep an eye on the following, in order of importance:
+\begin{itemize}
+  \item The wireless speaker mic is on during talks
+  \item The wireless speaker mic is worn correctly
+  \item The audio volume is not too low or too high (clipping is bad!)
+  \item The camera is aimed at the speaker, \emph{not} the projection screen (the projection screen is captured separately!)
+  \item None of the video equipment is stolen or tampered with
+  \item The video box is turned on and has OK network status.
+\end{itemize}
+As you can see, the main task is ensuring audio quality. Video quality, will important, is only a secondary concern. A recording without video is still usable, but a recording without audio is completely useless.
+
+Video team members will be both monitoring remotely as well as visiting rooms with problems. If you have questions, concerns or problems and there is no video team member nearby, contact them through the \texttt{\#fosdem-video} channel on the Freenode IRC service. If your video box shows issues on the LCD, most likely somebody is already on their way to you. When communicating with video team members, please mention the \emph{room number} as opposed to the devroom name. Devrooms move around, room numbers stay constant.
 
 \end{document}
  
