@@ -18,6 +18,9 @@ MC=$3
 echo "About to repartition $DEV as a FOSBox, hostname $HN with MAC $MC. Make sure nothing is mounted already! Hit ctrl+c now to cancel, or hit return to continue."
 read
 
+echo "Zeroing beginning of card"
+dd if=/dev/zero of=$DEV bs=1M count=8
+
 echo "Partitioning..."
 sfdisk $DEV < partitions.sfdisk
 partprobe

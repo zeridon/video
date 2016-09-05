@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#Create dir
+mkdir -p /tmp/fosbox
+
+#Collect data
+MistOutFLV -k -s fosdem+`cat /FBSettings/hostname` -g 3 - | ffmpeg -f flv -i - -loglevel panic -hide_banner -y /tmp/fosbox/screen.jpg
+MistOutFLV -s fosdem+`cat /FBSettings/hostname` -g 3 - | ffmpeg -f flv -i - -y -t 2 -f mp3 -ac 2 - -loglevel panic -hide_banner | sox -t mp3 - -n stats 2> /tmp/fosbox/audio
+
+#Display on LCD
+cp /tmp/fosbox/screen.jpg /tmp/fosbox/lcd.jpg
+echo 0 > /sys/class/graphics/fbcon/cursor_blink
+echo "q" | fbi -a /tmp/fosbox/lcd.jpg --noverbose
+

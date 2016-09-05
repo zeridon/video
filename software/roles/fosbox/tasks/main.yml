@@ -1,7 +1,7 @@
 ---
 
 - name: Install non-default packages
-  pacman: name=vim,rsync,htop,bash-completion,imagemagick,mplayer,ntp state=present
+  pacman: name=vim,rsync,htop,bash-completion,imagemagick,ntp,ffmpeg,sox state=present
 
 - name: Update root dirs
   synchronize: src=FBRoot/ dest=/ archive=no recursive=yes links=yes
