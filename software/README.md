@@ -39,6 +39,13 @@ Then, to enable ansible to work, python2 must be installed onto the box(es). To 
 Ansible can update the root and install any needed packages. To do so, first make sure you did the "first use" instructions as mentioned above, then run:
 > ansible-playbook remote_update_boxes.yml
 
+##Troubleshooting
+Check the streaming status on the box:
+> systemctl status stream
+
+Restart the streaming 
+> systemtl restart mistserver && systemctl restart stream
+
 ##Usage instructions
 Coming when software is more complete. Until then...
 > It's not safe to go alone - take this!
