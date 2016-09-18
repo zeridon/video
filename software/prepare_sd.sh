@@ -15,6 +15,12 @@ DEV=$1
 HN=$2
 MC=$3
 
+PART1="${DEV}p1"
+PART2="${DEV}p2"
+PART3="${DEV}p3"
+
+echo "PART1: $PART1 PART2: $PART2 PART3: $PART3"
+
 echo "About to repartition $DEV as a FOSBox, hostname $HN with MAC $MC. Make sure nothing is mounted already! Hit ctrl+c now to cancel, or hit return to continue."
 read
 
@@ -26,9 +32,9 @@ sfdisk $DEV < partitions.sfdisk
 partprobe
 
 echo "Formatting partitions..."
-mkfs.vfat -n FBBoot ${DEV}1
-mkfs.ext4 -L FBSettings ${DEV}2
-mkfs.ext4 -L FBRoot ${DEV}3
+mkfs.vfat -n FBBoot $PART1
+mkfs.ext3 -L FBSettings $PART2
+mkfs.ext3 -L FBRoot $PART3
 
 echo "Writing bootloader..."
 dd if=u-boot-sunxi-with-spl.bin of=$DEV bs=1024 seek=8
@@ -37,9 +43,9 @@ echo "Mounting partitions..."
 mkdir -p ./boxmounts/FBBoot
 mkdir -p ./boxmounts/FBSettings
 mkdir -p ./boxmounts/FBRoot
-mount ${DEV}1 ./boxmounts/FBBoot
-mount ${DEV}2 ./boxmounts/FBSettings
-mount ${DEV}3 ./boxmounts/FBRoot
+mount $PART1 ./boxmounts/FBBoot
+mount $PART2 ./boxmounts/FBSettings
+mount $PART3 ./boxmounts/FBRoot
 
 echo "Copying boot files..."
 #No ownership issues here - this is a vfat partition.
