@@ -46,6 +46,10 @@ Check the streaming status on the box:
 Restart the streaming 
 > systemtl restart mistserver && systemctl restart stream
 
+Comb through the logs
+> journalctl --unit=mistserver.service --since=-10h
+> journalctl --unit=stream.service --since=-10h
+
 ##Usage instructions
 Coming when software is more complete. Until then...
 > It's not safe to go alone - take this!
