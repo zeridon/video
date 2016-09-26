@@ -1,0 +1,46 @@
+digraph G {
+	concentrate=true;
+	node [shape=box];
+	speaker_laptop [label="speaker laptop"];
+	camera_with_audio_gear [label="camera with audio gear"];
+	room_sound_system [label="room sound system"];
+
+	subgraph fosdem_network {
+		subgraph cluster_room {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			cam_box [label="camera box\nbmd-tools\nffmpeg\ndump (possibly with gaps)", URL="https://github.com"];
+			speaker_box [label="speaker box\nbmdtools\nffmpeg\ndump (possibly with gaps)", URL="https://github.com"];
+			label = "INGESTION";
+		}
+
+		subgraph cluster_voc {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			vocto1[label="roomname.vocto.fosdem.org\npowerful cpu\nencoding\n3 dumps:\n2 single with black gap filler\n+ 1 pip", URL="http://github.com"];
+			voctomon[label="mon.vocto.fosdem.org\n40\"screen"];
+			label = "VOCTORACK\n24x docker container\non site in VOC\n<=96Mbit/s network in\n<=48Mbit/s network out\n1.4 Tb video data\nUPS";
+		}
+		label = "FOSDEM network";
+		style=filled;
+		color=yellow;
+	}
+
+	subgraph cluster_stream {
+		style=filled;
+		color=lightgrey;
+		node [style=filled];
+		stream_vps [label="roomname.stream.fosdem.org\nnginx_rtmp (streaming)\nnginx_http_mp4 (pseudo cutting)"];
+		label = "STREAMING\n24x scaleway baremetal\n0.048€/h each\n<200€/1 week";
+	}
+
+	room_sound_system -> camera_with_audio_gear;
+	speaker_laptop -> speaker_box [label="1024x768 50p"];
+	camera_with_audio_gear -> cam_box [label="720p50"];
+	cam_box -> vocto1 [label="udp multicast\nmpeg ts\n<=2Mbit/s"];
+        speaker_box -> vocto1 [label="udp multicast\nmpeg ts\n<=2Mbit/s"];
+	vocto1 -> stream_vps [label="720p25\nrtmp\n<=2Mbit/s"]
