@@ -43,4 +43,5 @@ digraph G {
 	camera_with_audio_gear -> cam_box [label="720p50"];
 	cam_box -> vocto1 [label="udp multicast\nmpeg ts\n<=2Mbit/s"];
         speaker_box -> vocto1 [label="udp multicast\nmpeg ts\n<=2Mbit/s"];
-	vocto1 -> stream_vps [label="720p25\nrtmp\n<=2Mbit/s"]
+	vocto1 -> stream_vps [label="720p25\nrtmp\n<=2Mbit/s"];
+}
