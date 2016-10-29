@@ -1,3 +1,5 @@
+NOTE: this is a description of the obsolete setup as it was planned by ddvtech. Please stay tuned for the updated voctomix based setup!
+
 #Software Architecture
 
 The software hierarchy is dictated by 2 main goals: _recording_ and _streaming_ of the video streams encoded inside the box.
