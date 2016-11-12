@@ -1,6 +1,0 @@
----
-- hosts: fosbox
-  gather_facts: no
-  roles:
-     - box_prepare
-

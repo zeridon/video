@@ -1,6 +1,0 @@
----
-- hosts: fosbox
-  remote_user: root
-  roles:
-     - fosbox
-

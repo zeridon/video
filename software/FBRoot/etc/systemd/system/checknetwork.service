@@ -1,7 +1,0 @@
-[Unit]
-Description=Check network, restart dhcpcd if not working
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/checknetwork
-
