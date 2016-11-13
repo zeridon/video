@@ -16,13 +16,19 @@ do.
 
 If you want to realisticly fake the streaming output of a video box, that is easy!
 <pre>
+apt-get install youtube-dl
 youtube-dl -f 22 https://www.youtube.com/watch?v=T6AEhM1GWvw -o 720p.mp4
 ffmpeg -i 720p.mp4 -c copy -f mpegts udp://227.0.0.2:9000
 </pre>
 
-Testing your stream is easy:
+Testing your stream is easy. Use either mpv:
 <pre>
+apt-get install mpv
 mpv udp://227.0.0.2:9000
+</pre>
+...or ffplay (from the ffmpeg package)
+<pre>
+ffplay udp://227.0.0.2:9000
 </pre>
 
 ## Streaming
