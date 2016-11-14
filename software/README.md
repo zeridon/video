@@ -14,6 +14,7 @@ Additional software is distributed and installed via Ansible.
 Ultimately, we would like to move to Debian, but for the time being this will
 do.
 
+## Generating a similar udp mpeg ts stream to the ones the videoboxes produce
 If you want to realisticly fake the streaming output of a video box, that is easy!
 <pre>
 apt-get install youtube-dl
