@@ -30,18 +30,41 @@ digraph G {
 		color=yellow;
 	}
 
+
+	subgraph ingest_stream {
+		style = filled;
+		color = lightgrey;
+		node [style=filled];
+		ingest_rtmp1 [label="ingest1.video.fosdem.org\nnginx_rtmp\nParis data center"];
+		ingest_rtmp2 [label="ingest2.video.fosdem.org\nnginx_rtmp\nParis data center"];
+		ingest_rtmp1b [label="ingest1b.video.fosdem.org\nnginx_rtmp\nAmsterdam data center"];
+		ingest_rtmp2b [label="ingest2b.video.fosdem.org\nnginx_rtmp\nAmsterdam data center"];
+		label = "scaleway baremetal 250Gb SSD 5Gbit internal bandwidth 800 Mbit external bandwidth";
+	}
+
+	
+
 	subgraph cluster_stream {
 		style=filled;
 		color=lightgrey;
 		node [style=filled];
-		stream_vps [label="roomname.stream.fosdem.org\nnginx_rtmp (streaming)\nnginx_http_mp4 (pseudo cutting)"];
-		label = "STREAMING\n24x scaleway baremetal\n0.048€/h each\n<200€/1 week";
+		stream_vps [label="stream.fosdem.org\n n* scaleway bare metal\nnginx (streaming)\n800 Mbit bandwidth\nround robin dns"];
 	}
+
+	www [label="www.fosdem.org"]
+	browser [label="web, android, iOs"]
 
 	room_sound_system -> camera_with_audio_gear;
 	speaker_laptop -> speaker_box [label="1024x768 50p"];
 	camera_with_audio_gear -> cam_box [label="720p50"];
 	cam_box -> vocto1 [label="udp multicast\nmpeg ts\n<=2Mbit/s"];
         speaker_box -> vocto1 [label="udp multicast\nmpeg ts\n<=2Mbit/s"];
-	vocto1 -> stream_vps [label="720p25\nrtmp\n<=2Mbit/s"];
+	vocto1 -> ingest_rtmp1
+	vocto1 -> ingest_rtmp2
+	vocto1 -> ingest_rtmp1b
+	vocto1 -> ingest_rtmp2b
+	ingest_rtmp1 -> stream_vps [label="hls-proxy"]
+	ingest_rtmp2 -> stream_vps [label="hls-proxy"]
+	stream_vps -> www [label="include HLS.js"]
+	www -> browser
 }
