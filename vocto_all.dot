@@ -1,0 +1,226 @@
+digraph G {
+	concentrate=true;
+	#ratio=0.5;
+	compound=true;
+	
+	node [shape=box];
+
+	subgraph fosdem_network {
+		subgraph cluster_rooms {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			subgraph cluster_aw1120 {
+				color=white;
+				aw1120slides[label="aw1120-slides\n185.175.218.128\nmulticast 227.0.0.1"];
+				aw1120cam[label="aw1120-cam\n185.175.218.129\nmulticast 227.0.0.2"];
+			}
+			subgraph cluster_aw1121 {
+				color=white;
+				aw1121slides[label="aw1121-slides\n185.175.218.130\nmulticast 227.0.1.1"];
+				aw1121cam[label="aw1121-cam\n185.175.218.131\nmulticast 227.0.1.2"];
+			}
+			subgraph cluster_aw1124 {
+				color=white;
+				aw1124slides[label="aw1124-slides\n185.175.218.132\nmulticast 227.0.2.1"];
+				aw1124cam[label="aw1124-cam\n185.175.218.133\nmulticast 227.0.2.2"];
+			}
+			subgraph cluster_aw1125 {
+				color=white;
+				aw1125slides[label="aw1125-slides\n185.175.218.134\nmulticast 227.0.3.1"];
+				aw1125cam[label="aw1125-cam\n185.175.218.135\nmulticast 227.0.3.2"];
+			}
+			subgraph cluster_aw1126 {
+				color=white;
+				aw1126slides[label="aw1126-slides\n185.175.218.136\nmulticast 227.0.4.1"];
+				aw1126cam[label="aw1126-cam\n185.175.218.137\nmulticast 227.0.4.2"];
+			}
+			subgraph cluster_h1301{
+				color=white;
+				h1301slides[label="h1301-slides\n185.175.218.138\nmulticast 227.1.0.1"];
+				h1301cam[label="h1301-cam\n185.175.218.139\nmulticast 227.1.0.2"];
+			}
+			subgraph cluster_h1302 {
+				color=white;
+				h1302slides[label="h1302-slides\n185.175.218.140\nmulticast 227.1.1.1"];
+				h1302cam[label="h1302-cam\n185.175.218.141\nmulticast 227.1.1.2"];
+			}
+			subgraph cluster_h1308 {
+				color=white;
+				h1308slides[label="h1308-slides\n185.175.218.142\nmulticast 227.1.2.1"];
+				h1080cam[label="h1308-cam\n185.175.218.143\nmulticast 227.1.2.2"];
+			}
+			subgraph cluster_h1309 {
+				color=white;
+				h1309slides[label="h1309-slides\n185.175.218.144\nmulticast 227.1.3.1"];
+				h1309cam[label="h1309-cam\n185.175.218.145\nmulticast 227.1.3.2"];
+			}
+			subgraph cluster_h2213 {
+				color=white;
+				h2213slides[label="h2213-slides\n185.175.218.146\nmulticast 227.1.4.1"];
+				h2213cam[label="h2213-cam\n185.175.218.147\nmulticast 227.1.4.2"];
+			}
+			subgraph cluster_h2214 {
+				color=white;
+				h2214slides[label="h2214-slides\n185.175.218.148\nmulticast 227.1.5.1"];
+				h2214cam[label="h2214-cam\n185.175.218.149\nmulticast 227.1.5.2"];
+			}
+			subgraph cluster_h2215 {
+				color=white;
+				h2215slides[label="h2215-slides\n185.175.218.150\nmulticast 227.1.6.1"];
+				h2215cam[label="h2215-cam\n185.175.218.151\nmulticast 227.1.6.2"];
+			}
+			subgraph cluster_janson {
+				color=white;
+				jansonslides[label="janson-slides\n185.175.218.152\nmulticast 227.2.0.1"];
+				jansoncam[label="janson-cam\n185.175.218.153\nmulticast 227.2.0.2"];
+			}
+			subgraph cluster_k1105 {
+				color=white;
+				k1105slides[label="k1105-slides\n185.175.218.154\nmulticast 227.3.0.1"];
+				k1105cam[label="k1105-cam\n185.175.218.155\nmulticast 227.3.0.2"];
+			}
+			subgraph cluster_k3201 {
+				color=white;
+				k3201slides[label="k3201-slides\n185.175.218.156\nmulticast 227.3.1.1"];
+				k3201cam[label="k3201-cam\n185.175.218.157\nmulticast 227.3.1.2"];
+			}
+			subgraph cluster_k3401 {
+				color=white;
+				k3401slides[label="k3401-slides\n185.175.218.158\nmulticast 227.3.2.1"];
+				k3401cam[label="k3401-cam\n185.175.218.159\nmulticast 227.3.2.2"];
+			}
+			subgraph cluster_k4201 {
+				color=white;
+				k4201slides[label="k4201-slides\n185.175.218.160\nmulticast 227.3.3.1"];
+				k4201cam[label="k4201-cam\n185.175.218.161\nmulticast 227.3.3.2"];
+			}
+			subgraph cluster_k4401 {
+				color=white;
+				k4401slides[label="k4401-slides\n185.175.218.162\nmulticast 227.3.4.1"];
+				k4401cam[label="k4401-cam\n185.175.218.163\nmulticast 227.3.4.2"];
+			}
+			subgraph cluster_k4601 {
+				color=white;
+				k4601slides[label="k4601-slides\n185.175.218.164\nmulticast 227.3.5.1"];
+				k4601cam[label="k4601-cam\n185.175.218.165\nmulticast 227.3.5.2"];
+			}
+			subgraph cluster_ua2114 {
+				color=white;
+				ua2214slides[label="ua2114-slides\n185.175.218.166\nmulticast 227.4.0.1"];
+				ua2214cam[label="ua2114-cam\n185.175.218.167\nmulticast 227.4.0.2"];
+			}
+			subgraph cluster_ua2220 {
+				color=white;
+				ua2220slides[label="ua2220-slides\n185.175.218.168\nmulticast 227.4.1.1"];
+				ua2220cam[label="ua2220-cam\n185.175.218.169\nmulticast 227.4.1.2"];
+			}
+			subgraph cluster_ub2252a {
+				color=white;
+				ub2252aslides[label="ub2252a-slides\n185.175.218.170\nmulticast 227.4.2.1"];
+				ub2252acam[label="ub2252a-cam\n185.175.218.171\nmulticast 227.4.2.2"];
+			}
+			subgraph cluster_ud2120 {
+				color=white;
+				ud2120slides[label="ud2120-slides\n185.175.218.172\nmulticast 227.4.3.1"];
+				ud2120cam[label="ud2120-cam\n185.175.218.173\nmulticast 227.4.3.2"];
+			}
+			subgraph cluster_ud2218a {
+				color=white;
+				ud2218aslides[label="ud2218a-slides\n185.175.218.174\nmulticast 227.4.4.1"];
+				ud2218acam[label="ud2218a-cam\n185.175.218.175\nmulticast 227.4.4.2"];
+			}
+			label = "INGESTION";
+			rooms_invis [style=invisible];
+		}
+
+		subgraph cluster_voc {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			subgraph cluster_voctohost0 {
+				color=white;
+				label="voctohost0\nip:185.175.218.10";
+				voctoaw1120[label="vocto-aw1120\n185.175.218.64"];	
+				voctoaw1121[label="vocto-aw1121\n185.175.218.65"];	
+				voctoaw1124[label="vocto-aw1124\n185.175.218.66"];	
+				voctoaw1125[label="vocto-aw1125\n185.175.218.67"];	
+				voctoaw1126[label="vocto-aw1126\n185.175.218.68"];	
+			}
+			subgraph cluster_voctohost1 {
+				color=white;
+				label="voctohost1\nip:185.175.218.11";
+				voctoh1301[label="vocto-h1301\n185.175.218.69"];	
+				voctoh1302[label="vocto-h1302\n185.175.218.70"];	
+				voctoh1308[label="vocto-h1308\n185.175.218.71"];	
+				voctoh1309[label="vocto-h1309\n185.175.218.72"];	
+				voctoh2213[label="vocto-h2213\n185.175.218.73"];	
+			}
+			subgraph cluster_voctohost2 {
+				color=white;
+				label="voctohost2\nip:185.175.218.12";
+				voctoh2214[label="vocto-h2214\n185.175.218.74"];	
+				voctoh2215[label="vocto-h2215\n185.175.218.75"];	
+				voctojanson[label="vocto-janson\n185.175.218.76"];	
+				voctok1105[label="vocto-k1105\n185.175.218.77"];	
+			}
+			subgraph cluster_voctohost3 {
+				color=white;
+				label="voctohost3\nip:185.175.218.13";
+				voctok3201[label="vocto-k3201\n185.175.218.78"];
+				voctok3401[label="vocto-k3401\n185.175.218.79"];
+				voctok4201[label="vocto-k4201\n185.175.218.80"];
+				voctok4401[label="vocto-k4401\n185.175.218.81"];
+				voctok4601[label="vocto-k4601\n185.175.218.82"];
+			}
+			subgraph cluster_voctohost4 {
+				color=white;
+				label="voctohost3\nip:185.175.218.14";
+				voctoua2114[label="vocto-ua2114\n185.175.218.83"];
+				voctoua2220[label="vocto-ua2220\n185.175.218.84"];
+				voctoub2252a[label="vocto-ub2252a\n185.175.218.85"];
+				voctoud2120[label="vocto-ud2120\n185.175.218.86"];
+				voctoud2218a[label="vocto-ud2218a\n185.175.218.87"];
+			}
+			voctomon[label="mon.vocto.fosdem.org\n40\"screen"];
+			label = "VOCTORACK\n24x LXC container\non site in VOC\n<=96Mbit/s network in\n<=48Mbit/s network out\n1.4 Tb video data\nUPS";
+			voc_invis [style=invisible];
+		}
+		label = "FOSDEM network";
+		style=filled;
+		color=yellow;
+	}
+
+
+	subgraph cluster_ingest_stream {
+		style = filled;
+		color = lightgrey;
+		node [style=filled];
+		ingest_rtmp1 [label="ingest1.video.fosdem.org\n12 rooms\nnginx_rtmp\nscaleway Paris\n250Gb SSD 5Gbit int 800 Mbit ext"];
+		ingest_rtmp2 [label="ingest2.video.fosdem.org\n12 rooms\nnginx_rtmp\nscaleway Paris\n250Gb SSD 5Gbit int 800 Mbit ext"];
+		ingest_backup [label="ingestbackup.video.fosdem.org\nnginx_rtmp\nGoogle compute engine\n2.5Tb disk"];
+		ingest_stream_invis [style=invisible];
+	}
+
+	
+
+	subgraph cluster_stream {
+		style=filled;
+		color=lightgrey;
+		node [style=filled];
+		stream_vps [label="stream.fosdem.org\n n* scaleway bare metal\nnginx (streaming)\n800 Mbit bandwidth\nround robin dns"];
+		cluster_stream_invis [style=invisible];
+	}
+
+	www [label="www.fosdem.org"]
+	browser [label="web, android, iOs"]
+
+	rooms_invis -> voc_invis [lhead=cluster_voc, ltail=cluster_rooms]
+	voc_invis -> ingest_stream_invis [lhead=cluster_ingest_stream, ltail=cluster_voc]
+	ingest_rtmp1 -> stream_vps [label="hls-proxy"]
+	ingest_rtmp2 -> stream_vps [label="hls-proxy"]
+	stream_vps -> www [label="include HLS.js"]
+	www -> browser
+}
