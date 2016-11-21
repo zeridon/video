@@ -108,8 +108,8 @@ digraph G {
 			}
 			subgraph cluster_ua2114 {
 				color=white;
-				ua2214slides[label="ua2114-slides\n185.175.218.166\nmulticast 227.4.0.1"];
-				ua2214cam[label="ua2114-cam\n185.175.218.167\nmulticast 227.4.0.2"];
+				ua2114slides[label="ua2114-slides\n185.175.218.166\nmulticast 227.4.0.1"];
+				ua2114cam[label="ua2114-cam\n185.175.218.167\nmulticast 227.4.0.2"];
 			}
 			subgraph cluster_ua2220 {
 				color=white;
