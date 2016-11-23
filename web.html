@@ -54,68 +54,68 @@ graph TD
       h1308cam[h1308cam<br />ip: 185.175.218.143<br />multicast:227.1.2.2]
     end
     subgraph 1309
-      h1309slides[h1309slides<br />ip: 185.175.218.142<br />multicast: 227.1.3.1]
-      h1309cam[h1309cam<br />ip: 185.175.218.143<br />multicast: 227.1.3.2]
+      h1309slides[h1309slides<br />ip: 185.175.218.144<br />multicast: 227.1.3.1]
+      h1309cam[h1309cam<br />ip: 185.175.218.145<br />multicast: 227.1.3.2]
     end
     subgraph h2213
-      h2213slides[h2213slides<br />ip: 185.175.218.144<br />multicast: 227.1.4.1]
-      h2213cam[h2213cam<br />ip: 185.175.218.145<br />multicast:227.1.4.2]
+      h2213slides[h2213slides<br />ip: 185.175.218.146<br />multicast: 227.1.4.1]
+      h2213cam[h2213cam<br />ip: 185.175.218.147<br />multicast:227.1.4.2]
     end
     subgraph h2214
-      h2214slides[h2214slides<br />ip: 185.175.218.146<br />multicast: 227.1.5.1]
-      h2214cam[h2214cam<br />ip: 185.175.218.147<br />multicast: 227.1.5.2]
+      h2214slides[h2214slides<br />ip: 185.175.218.148<br />multicast: 227.1.5.1]
+      h2214cam[h2214cam<br />ip: 185.175.218.149<br />multicast: 227.1.5.2]
     end
     subgraph h2215
-      h2215slides
-      h2215cam
+      h2215slides[h2215slides<br />ip: 185.175.218.150<br />multicast: 227.1.6.1]
+      h2215cam[h2215cam<br />ip: 185.175.218.151<br />multicast: 227.1.6.2]
     end
     subgraph janson
-      jansonslides
-      jansoncam
+      jansonslides[jansonslides<br />ip: 185.175.218.152<br />multicast: 227.2.0.1]
+      jansoncam[jansoncam<br />ip: 185.175.218.153<br />multicast: 227.2.0.2]
     end
     subgraph k1105
-      k1105slides
-      k1105cam
+      k1105slides[k1105slides<br />ip: 185.175.218.154<br />multicast: 227.3.0.1]
+      k1105cam[k1105cam<br />ip: 185.175.218.155<br />multicast: 227.3.0.2]
     end
     subgraph k3201
-      k3201slides
-      k3201cam
+      k3201slides[k3201slides<br />ip: 185.175.218.156<br />multicast: 227.3.1.1]
+      k3201cam[k3201cam<br />ip: 185.175.218.157<br />multicast: 227.3.1.2]
     end
     subgraph k3401
-      k3401slides
-      k3401cam
+      k3401slides[k3401slides<br />ip: 185.175.218.158<br />multicast: 227.3.2.1]
+      k3401cam[k3401cam<br />ip: 185.175.218.159<br />multicast: 227.3.2.2]
     end
     subgraph k4201
-      k4201slides
-      k4201cam
+      k4201slides[k3401slides<br />ip: 185.175.218.160<br />multicast: 227.3.3.1]
+      k4201cam[k3401cam<br />ip: 185.175.218.161<br />multicast: 227.3.3.2]
     end
     subgraph k4401
-      k4401slides
-      k4401cam
+      k4401slides[k4401slides<br />ip: 185.175.218.162<br />multicast: 227.3.4.1]
+      k4401cam[k4401cam<br />ip: 185.175.218.163<br />multicast: 227.3.4.2]
     end
     subgraph k4601
-      k4601slides
-      k4601cam
+      k4601slides[k4601slides<br />ip: 185.175.218.164<br />multicast: 227.3.5.1]
+      k4601cam[k4601cam<br >ip: 185.175.218.165<br />multicast: 227.3.5.2]
     end
     subgraph ua2114
-      ua2214slides
-      ua2214cam
+      ua2214slides[ua2214slides<br />ip: 185.175.218.166<br />multicast: 227.4.0.1]
+      ua2214cam[ua2214cam<br />ip: 185.175.218.167<br />multicast: 227.4.0.2]
     end
     subgraph ua2220
-      ua2220slides
-      ua2220cam
+      ua2220slides[ua2220slides<br />ip: 185.175.218.168<br />multicast: 227.4.1.1]
+      ua2220cam[ua2220cam<br />ip: 185.175.218.169<br />multicast: 227.4.1.2]
     end
     subgraph ub2252a
-      ub2252aslides
-      ub2252acam
+      ub2252aslides[ub2252aslides<br />ip: 185.175.218.170<br />multicast: 227.4.2.1]
+      ub2252acam[ub2252acam<br />ip: 185.175.218.171<br />multicast: 227.4.2.2]
     end
     subgraph ud2120
-      ud2120slides
-      ud2120cam
+      ud2120slides[ud2120slides<br />ip: 185.175.218.172<br />multicast: 227.4.3.1]
+      ud2120cam[ud2120cam<br />ip: 185.175.218.173<br />multicast: 227.4.3.2]
     end
     subgraph ud2218a
-      ud2218aslides
-      ud2218acam
+      ud2218aslides[ud2218aslides<br />ip: 185.175.218.174<br />multicast: 227.4.4.1]
+      ud2218acam[ud2218acam<br /> ip: 185.175.218.175<br />multicast: 227.4.4.2]
     end
   end
 
@@ -157,12 +157,14 @@ graph TD
   end
 
   subgraph streaming backends
-    streaming_backend1
-    streaming_backend2
+    streaming_backend1[streamback.video.fosdem.org ip:]
+    streaming_backend2[streamback.video.fosdem.org ip:]
   end
 
   subgraph streaming frontends
-    streaming_frontend1
+    streaming_frontend1[stream.video.fosdem.org ip: ]
+    streaming_frontend2[stream.video.fosdem.org ip: ]
+    streaming_frontendn[stream.video.fosdem.org ip: ]
   end
 
 %% Links between elements
