@@ -157,13 +157,15 @@ graph TD
   end
 
   subgraph streaming backends
+    streaming_backend0[streamback.video.fosdem.org ip:]
     streaming_backend1[streamback.video.fosdem.org ip:]
     streaming_backend2[streamback.video.fosdem.org ip:]
+    streaming_backend3[streamback.video.fosdem.org ip:]
   end
 
   subgraph streaming frontends
+    streaming_frontend0[stream.video.fosdem.org ip: ]
     streaming_frontend1[stream.video.fosdem.org ip: ]
-    streaming_frontend2[stream.video.fosdem.org ip: ]
     streaming_frontendn[stream.video.fosdem.org ip: ]
   end
 
@@ -172,32 +174,32 @@ graph TD
 %%aw1120
 aw1120cam --> voctocontainer_aw1120
 aw1120slides --> voctocontainer_aw1120
-voctocontainer_aw1120 --> streaming_backend1
+voctocontainer_aw1120 --> streaming_backend0
 
 %%aw1121
 aw1121cam --> voctocontainer_aw1121
 aw1121slides --> voctocontainer_aw1121
-voctocontainer_aw1121 --> streaming_backend1
+voctocontainer_aw1121 --> streaming_backend0
 
 %%aw1124
 aw1124cam --> voctocontainer_aw1124
 aw1124slides --> voctocontainer_aw1124
-voctocontainer_aw1124 --> streaming_backend1
+voctocontainer_aw1124 --> streaming_backend0
 
 %%aw1125
 aw1125cam --> voctocontainer_aw1125
 aw1125slides --> voctocontainer_aw1125
-voctocontainer_aw1125 --> streaming_backend1
+voctocontainer_aw1125 --> streaming_backend0
 
 %%aw1126
 aw1126cam --> voctocontainer_aw1126
 aw1126slides --> voctocontainer_aw1126
-voctocontainer_aw1126 --> streaming_backend1
+voctocontainer_aw1126 --> streaming_backend0
 
 %%h1301
 h1301cam --> voctocontainer_h1301
 h1301slides --> voctocontainer_h1301
-voctocontainer_h1301 --> streaming_backend1
+voctocontainer_h1301 --> streaming_backend0
 
 %%h1302
 h1302cam --> voctocontainer_h1302
@@ -262,40 +264,45 @@ voctocontainer_k4401 --> streaming_backend2
 %%k4601
 k4601cam --> voctocontainer_k4601
 k4601slides --> voctocontainer_k4601
-voctocontainer_k4601 --> streaming_backend2
+voctocontainer_k4601 --> streaming_backend3
 
 %%ua2114
 ua2114cam --> voctocontainer_ua2114
 ua2114slides --> voctocontainer_ua2114
-voctocontainer_ua2114 --> streaming_backend2
+voctocontainer_ua2114 --> streaming_backend3
 
 %%ua2220
 ua2220cam --> voctocontainer_ua2220
 ua2220slides --> voctocontainer_ua2220
-voctocontainer_ua2220 --> streaming_backend2
+voctocontainer_ua2220 --> streaming_backend3
 
 %%ub2252a
 ub2252acam --> voctocontainer_ub2252a
 ub2252aslides --> voctocontainer_ub2252a
-voctocontainer_ub2252a --> streaming_backend2
+voctocontainer_ub2252a --> streaming_backend3
 
 %%ud2120
 ud2120cam --> voctocontainer_ud2120
 ud2120slides --> voctocontainer_ud2120
-voctocontainer_ud2120 --> streaming_backend2
+voctocontainer_ud2120 --> streaming_backend3
 
 %%ud2218a
 ud2218acam --> voctocontainer_ud2218a
 ud2218aslides --> voctocontainer_ud2218a
-voctocontainer_ud2218a --> streaming_backend2
+voctocontainer_ud2218a --> streaming_backend3
 
-
+streaming_backend0 --> streaming_frontend0
+streaming_backend0 --> streaming_frontend1
+streaming_backend0 --> streaming_frontendn
+streaming_backend1 --> streaming_frontend0
 streaming_backend1 --> streaming_frontend1
-streaming_backend2 --> streaming_frontend1
-streaming_backend1 --> streaming_frontend2
-streaming_backend2 --> streaming_frontend2
 streaming_backend1 --> streaming_frontendn
+streaming_backend2 --> streaming_frontend0
+streaming_backend2 --> streaming_frontend1
 streaming_backend2 --> streaming_frontendn
+streaming_backend3 --> streaming_frontend0
+streaming_backend3 --> streaming_frontend1
+streaming_backend3 --> streaming_frontendn
     </div>
     </body>
 </html>
