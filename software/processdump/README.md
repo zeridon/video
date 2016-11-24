@@ -11,7 +11,7 @@ In practice?
 
 ## Dependencies
 
-<pre>apt-get install python-wget python-slugify</pre>
+<pre>apt-get install python-pyinotify python-slugify python-wget </pre>
 
 ## Configuration
 * Don't forget to set the penta xml url in the .py file.
