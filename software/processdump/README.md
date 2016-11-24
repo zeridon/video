@@ -3,7 +3,7 @@
 The core idea of this experiment is to radically simplify and delegate the cutting of FOSDEM videos to the maximum extent possible.
 
 In practice?
-* At the end of both Saturday and Sunday, if everything goes well (hah!) mp4 dumps of the picture in picture streams automatically become available on dump.video.fosdem.org.
+* At the end of both Saturday and Sunday, if everything goes well (hah!) mp4 dumps of the picture in picture streams automatically become available on dump$n.video.fosdem.org. If all goes well, this is one file per day. Per interruption of the nginx-rtmp stream, an extra file gets created.
 * Every talk in penta gets its own json file.
 * The json files goes into a public github repo.
 * The devroom managers, speakers and whoever they delegate update the json for their room or talk.
