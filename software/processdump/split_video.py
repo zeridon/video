@@ -23,13 +23,11 @@ if data['needs_video_team_intervention']:
 # Get the pentabarf xml file and parse it
 penta = wget.download(penta_url)
 e = ET.parse(penta).getroot()
-e.findall(".//event")
 
 # Find the event with a specific id and create the videofilename from it
 t=e.find(".//event[@id='"+data['event_id']+"']").find('title').text
 slug_title=slugify(t)
 videofilename=slug_title+'.mp4'
-
 
 # Grab the file we need and give it the slugified title for a name
 url = data['url'] + "?start=" + data['start'] + "&end=" + data['end']
