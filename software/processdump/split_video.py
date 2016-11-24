@@ -17,12 +17,13 @@ with open(args.event) as event_file:
     data = json.load(event_file)
 
 if data['needs_video_team_intervention']:
-    #FIXME. Do something
+    # FIXME. Do something
     sys.exit(1)
 
 # Get the pentabarf xml file and parse it
 penta = wget.download(penta_url)
 e = ET.parse(penta).getroot()
+# FIXME Either keep the downloaded penta xml file and make sure it doesn't get downloaded again, or throw it out and always get a fresh one.
 
 # Find the event with a specific id and create the videofilename from it
 t=e.find(".//event[@id='"+data['event_id']+"']").find('title').text
