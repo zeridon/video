@@ -42,7 +42,6 @@ videotsname = videobasename+ '.ts'
 prerollbasename = 'preroll'+ slug_title
 prerollimgname = prerollbasename+ '.jpg'
 prerolltsname = prerollbasename+ '.ts'
-print "prerolltsname is "+prerolltsname
 postrollbasename = 'postroll'
 postrollimgname = postrollbasename+ '.jpg'
 postrolltsname = postrollbasename+ '.ts'
