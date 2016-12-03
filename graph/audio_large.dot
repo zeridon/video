@@ -1,0 +1,39 @@
+digraph G {
+	label="FOSDEM 2017 large rooms video cabling setup:\nh1301, h1302, h1308, h1309, ua2114, ua2218a";
+	concentrate=true;
+	node [shape=box];
+	speaker_microphone [label="speaker microphone\nsennheiser avx me2\nesk avx bodypack transmitter\nautonomy: 15h (BA30 battery)/11h (2x AA)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
+	speaker_microphone_receiver [label="speaker microphone receiver\nsennheiser ekp avx receiver\nautonomy: >4h (BA20 battery)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
+	speaker_microphone_receiver_charger [label="USB power source"];
+	audience_microphone [label="audience microphone"];
+	audience_microphone_receiver [label="audience microphone receiver"];
+	mix_panel [label="audio mix panel\nYamaha MG06"];
+	speaker_laptop [label="speaker laptop"];
+	speaker_laptop_optional_adapter [label="optional hdmi->vga adapter", style="dotted"];
+	camera [label="camera Sony HXR-NX100", URL="https://pro.sony.com/bbsccms/assets/files/micro/nxcam/latest/Sony_HXR-NX100.pdf"];
+
+	subgraph fosdem_network {
+		subgraph cluster_room {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			cam_box [label="camera box", URL="https://github.com/FOSDEM/video"];
+			speaker_box [label="speaker box", URL="https://github.com/FOSDEM/video"];
+			label = "INGESTION";
+		}
+
+	}
+
+	speaker_microphone -> speaker_microphone_receiver [label="1.9 GHz wireless"];
+	speaker_microphone_receiver_charger -> speaker_microphone_receiver [label="USB A -> micro USB cable"];
+	speaker_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
+	audience_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
+	mix_panel -> camera [label="XLR sex? -> sex?"];
+	speaker_laptop -> speaker_box [label="or vga cable male -> male", style="dotted"];
+	speaker_laptop -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
+	speaker_laptop -> speaker_laptop_optional_adapter [label="either hdmi cable", style="dotted"];
+	speaker_laptop_optional_adapter -> speaker_box [label="vga cable male -> male", style="dotted"];
+	speaker_laptop_optional_adapter -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
+	camera -> cam_box [label="hdmi cable"];
+}
