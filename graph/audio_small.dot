@@ -1,0 +1,34 @@
+digraph G {
+	label="FOSDEM 2017 small rooms video cabling setup";
+	concentrate=true;
+	node [shape=box];
+	speaker_microphone [label="speaker microphone\nsennheiser avx me2\nesk avx bodypack transmitter\nautonomy: 15h (BA30 battery)/11h (2x AA)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
+	speaker_microphone_receiver [label="speaker microphone receiver\nsennheiser ekp avx receiver\nautonomy: >4h (BA20 battery)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
+	speaker_microphone_receiver_charger [label="USB power source"];
+	speaker_laptop [label="speaker laptop"];
+	speaker_laptop_optional_adapter [label="optional hdmi->vga adapter", style="dotted"];
+	camera [label="camera Canon XF100", URL="http://downloads.canon.com/cpr/software/video/Canon_XF100_XF105_Instruction_Manual.pdf"];
+
+	subgraph fosdem_network {
+		subgraph cluster_room {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			cam_box [label="camera box", URL="https://github.com/FOSDEM/video"];
+			speaker_box [label="speaker box", URL="https://github.com/FOSDEM/video"];
+			label = "INGESTION";
+		}
+
+	}
+
+	speaker_microphone -> speaker_microphone_receiver [label="1.9 GHz wireless"];
+	speaker_microphone_receiver_charger -> speaker_microphone_receiver [label="USB A -> micro USB cable"];
+	speaker_microphone_receiver -> camera [label="direct xlr plug (no cable)"];
+	speaker_laptop -> speaker_box [label="or vga cable male -> male", style="dotted"];
+	speaker_laptop -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
+	speaker_laptop -> speaker_laptop_optional_adapter [label="either hdmi cable", style="dotted"];
+	speaker_laptop_optional_adapter -> speaker_box [label="vga cable male -> male", style="dotted"];
+	speaker_laptop_optional_adapter -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
+	camera -> cam_box [label="hdmi cable"];
+}
