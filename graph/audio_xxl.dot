@@ -2,10 +2,12 @@ digraph G {
 	label="FOSDEM 2017 xxl rooms video cabling setup:\nh2215, janson, k1105, ua2220, ub2252a, ud2120";
 	concentrate=true;
 	node [shape=box];
-	speaker_microphone [label="speaker microphone\nsennheiser G3 series\n G3 bodypack transmitter\nautonomy: ?h (2x AA)"];
-	speaker_microphone_receiver [label="speaker microphone receiver\nsennheiser G3 series\nautonomy: ?AC powered\n?DC: >4h (2x AA battery)"];
-	audience_microphone [label="audience microphone\nULB provided\nSennheiser G3 series"];
-	audience_microphone_receiver [label="audience microphone receiver\nSennheiser G3 series"];
+	speaker_microphone [label="speaker microphone\nULB provided\nSennheiser G3 series\n G3 bodypack transmitter\nautonomy: ?h (2x AA)"];
+	speaker_microphone_receiver [label="speaker microphone receiver\nULB provided\nSennheiser G3 series\nautonomy: ?AC powered\n?DC: >4h (2x AA battery)"];
+	audience_microphone1 [label="audience microphone\nULB provided\nSennheiser G3 series"];
+	audience_microphone_receiver1 [label="audience microphone receiver\nULB provided\nSennheiser G3 series"];
+	audience_microphone2 [label="audience microphone\nULB provided\nSennheiser G3 series"];
+	audience_microphone_receiver2 [label="audience microphone receiver\nULB provided\nSennheiser G3 series"];
 	mix_panel [label="audio mix panel\nULB provided"];
 	speaker_laptop [label="speaker laptop"];
 	speaker_laptop_optional_adapter [label="optional hdmi->vga adapter", style="dotted"];
@@ -26,8 +28,10 @@ digraph G {
 
 	speaker_microphone -> speaker_microphone_receiver [label="+-600 MHz wireless"];
 	speaker_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
-	audience_microphone -> audience_microphone_receiver [label="+-600 MHz wireless"];
-	audience_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
+	audience_microphone1 -> audience_microphone_receiver1 [label="+-600 MHz wireless"];
+	audience_microphone_receiver1 -> mix_panel [label="xlr plug (no cable)"];
+	audience_microphone2 -> audience_microphone_receiver2 [label="+-600 MHz wireless"];
+	audience_microphone_receiver2 -> mix_panel [label="xlr plug (no cable)"];
 	mix_panel -> camera [label="XLR sex? -> sex?"];
 	speaker_laptop -> speaker_box [label="or vga cable male -> male", style="dotted"];
 	speaker_laptop -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
