@@ -27,11 +27,11 @@ digraph G {
 	}
 
 	speaker_microphone -> speaker_microphone_receiver [label="+-600 MHz wireless"];
-	speaker_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
+	speaker_microphone_receiver -> mix_panel [label="mini jack male -> xlr adapter cable+ xlr cable"];
 	audience_microphone1 -> audience_microphone_receiver1 [label="+-600 MHz wireless"];
-	audience_microphone_receiver1 -> mix_panel [label="xlr plug (no cable)"];
+	audience_microphone_receiver1 -> mix_panel [label="mini jack male -> xlr adapter cable + xlr cable"];
 	audience_microphone2 -> audience_microphone_receiver2 [label="+-600 MHz wireless"];
-	audience_microphone_receiver2 -> mix_panel [label="xlr plug (no cable)"];
+	audience_microphone_receiver2 -> mix_panel [label="mini jack male -> xlr adapter cable + xlr cable"];
 	mix_panel -> camera [label="XLR sex? -> sex?"];
 	speaker_laptop -> speaker_box [label="or vga cable male -> male", style="dotted"];
 	speaker_laptop -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
