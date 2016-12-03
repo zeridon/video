@@ -1,0 +1,38 @@
+digraph G {
+	label="FOSDEM 2017 xxl rooms video cabling setup:\nh2215, janson, k1105, ua2220, ub2252a, ud2120";
+	concentrate=true;
+	node [shape=box];
+	speaker_microphone [label="speaker microphone\nsennheiser G3 series\n G3 bodypack transmitter\nautonomy: ?h (2x AA)"];
+	speaker_microphone_receiver [label="speaker microphone receiver\nsennheiser G3 series\nautonomy: ?AC powered\n?DC: >4h (2x AA battery)"];
+	audience_microphone [label="audience microphone\nULB provided\nSennheiser G3 series"];
+	audience_microphone_receiver [label="audience microphone receiver\nSennheiser G3 series"];
+	mix_panel [label="audio mix panel\nULB provided"];
+	speaker_laptop [label="speaker laptop"];
+	speaker_laptop_optional_adapter [label="optional hdmi->vga adapter", style="dotted"];
+	camera [label="camera Sony HXR-NX100", URL="https://pro.sony.com/bbsccms/assets/files/micro/nxcam/latest/Sony_HXR-NX100.pdf"];
+
+	subgraph fosdem_network {
+		subgraph cluster_room {
+			style=filled;
+			color=lightgrey;
+			node [style=filled];
+			//parts
+			cam_box [label="camera box", URL="https://github.com/FOSDEM/video"];
+			speaker_box [label="speaker box", URL="https://github.com/FOSDEM/video"];
+			label = "INGESTION";
+		}
+
+	}
+
+	speaker_microphone -> speaker_microphone_receiver [label="+-600 MHz wireless"];
+	speaker_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
+	audience_microphone -> audience_microphone_receiver [label="+-600 MHz wireless"];
+	audience_microphone_receiver -> mix_panel [label="xlr plug (no cable)"];
+	mix_panel -> camera [label="XLR sex? -> sex?"];
+	speaker_laptop -> speaker_box [label="or vga cable male -> male", style="dotted"];
+	speaker_laptop -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
+	speaker_laptop -> speaker_laptop_optional_adapter [label="either hdmi cable", style="dotted"];
+	speaker_laptop_optional_adapter -> speaker_box [label="vga cable male -> male", style="dotted"];
+	speaker_laptop_optional_adapter -> speaker_box [label="3.5mm -> 6.35mm trs male cable\nunbalanced stereo", style="dotted"];
+	camera -> cam_box [label="hdmi cable"];
+}
