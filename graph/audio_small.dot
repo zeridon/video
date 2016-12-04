@@ -5,7 +5,7 @@ digraph G {
 	node [shape = box];
 	speaker_microphone [label="speaker microphone\nsennheiser avx me2\nesk avx bodypack transmitter\nautonomy: 15h (BA30 battery)/11h (2x AA)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
 	subgraph cluster_speaker_microphone_receiver {
-		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nautonomy: >4h (BA20 battery)"
+		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nautonomy: >4h (BA20 battery)\nphantom auto power on"
 		URL = "https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf";
 		speaker_microphone_receiver_usb_power_connector [label = "power input port\nmicro usb female"];
 		speaker_microphone_receiver_xlr_connector [label = "XLR male plug"];
@@ -16,7 +16,7 @@ digraph G {
 	subgraph cluster_camera {
 		label = "camera\nCanon XF100"
 		URL = "http://downloads.canon.com/cpr/software/video/Canon_XF100_XF105_Instruction_Manual.pdf";
-		camera_xlr_in [label = "audio in CH1\nXLR female port"];
+		camera_xlr_in [label = "audio in CH1\nXLR female port\n48V phantom power"];
 		camera_hdmi_out [label = "HDMI out\nHDMI A (full size) female"];
 		camera_internal_mic [label="audio in CH2\ninternal microphone"];
 		camera_audio_monitor [label="audio monitoring port\n3.5mm trs stereo female"]
