@@ -50,7 +50,7 @@ digraph G {
 	cam_power_strip [label="camera side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
 	speaker_power_strip [label="speaker side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
 	room_projector [label="room projector VGA in\nVGA port\nfemale"];
-	headphones [label="headphones\n3.5mm trs stereo male\nrental budgetcam"];
+	headphones [label="Sennheiser HD201 headphones\n3.5mm trs stereo male\nrental budgetcam", URL="https://en-us.sennheiser.com/over-ear-headphones-hd-201"];
 	video_vlan [label="FOSDEM video vlan", style="dotted"];
 
 	speaker_microphone -> speaker_microphone_receiver_xlr_connector [label = "1.9 GHz wireless", lhead = cluster_speaker_microphone_receiver ];

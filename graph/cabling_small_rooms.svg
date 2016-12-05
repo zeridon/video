@@ -188,10 +188,13 @@
 </g>
 <!-- headphones -->
 <g id="node24" class="node"><title>headphones</title>
-<polygon fill="none" stroke="black" points="309,-178 169,-178 169,-125 309,-125 309,-178"/>
-<text text-anchor="middle" x="239" y="-162.8" font-family="Times,serif" font-size="14.00">headphones</text>
+<g id="a_node24"><a xlink:href="https://en-us.sennheiser.com/over-ear-headphones-hd-201" xlink:title="Sennheiser HD201 headphones\n3.5mm trs stereo male\nrental budgetcam">
+<polygon fill="none" stroke="black" points="332.5,-178 145.5,-178 145.5,-125 332.5,-125 332.5,-178"/>
+<text text-anchor="middle" x="239" y="-162.8" font-family="Times,serif" font-size="14.00">Sennheiser HD201 headphones</text>
 <text text-anchor="middle" x="239" y="-147.8" font-family="Times,serif" font-size="14.00">3.5mm trs stereo male</text>
 <text text-anchor="middle" x="239" y="-132.8" font-family="Times,serif" font-size="14.00">rental budgetcam</text>
+</a>
+</g>
 </g>
 <!-- camera_audio_monitor&#45;&gt;headphones -->
 <g id="edge11" class="edge"><title>camera_audio_monitor&#45;&gt;headphones</title>
@@ -279,9 +282,9 @@
 </g>
 <!-- cam_power_strip -->
 <g id="node21" class="node"><title>cam_power_strip</title>
-<polygon fill="none" stroke="black" points="886,-755.5 710,-755.5 710,-717.5 886,-717.5 886,-755.5"/>
+<polygon fill="none" stroke="black" points="883,-755.5 713,-755.5 713,-717.5 883,-717.5 883,-755.5"/>
 <text text-anchor="middle" x="798" y="-740.3" font-family="Times,serif" font-size="14.00">camera side power strip</text>
-<text text-anchor="middle" x="798" y="-725.3" font-family="Times,serif" font-size="14.00">&gt;=4* CEE 7/3 or 7/5 sockets</text>
+<text text-anchor="middle" x="798" y="-725.3" font-family="Times,serif" font-size="14.00">&gt;=4 CEE 7/3 or 7/5 sockets</text>
 </g>
 <!-- cam_power_strip&#45;&gt;speaker_microphone_receiver_charger -->
 <g id="edge15" class="edge"><title>cam_power_strip&#45;&gt;speaker_microphone_receiver_charger</title>
@@ -302,9 +305,9 @@
 </g>
 <!-- speaker_power_strip -->
 <g id="node22" class="node"><title>speaker_power_strip</title>
-<polygon fill="none" stroke="black" points="1171,-755.5 995,-755.5 995,-717.5 1171,-717.5 1171,-755.5"/>
+<polygon fill="none" stroke="black" points="1168,-755.5 998,-755.5 998,-717.5 1168,-717.5 1168,-755.5"/>
 <text text-anchor="middle" x="1083" y="-740.3" font-family="Times,serif" font-size="14.00">speaker side power strip</text>
-<text text-anchor="middle" x="1083" y="-725.3" font-family="Times,serif" font-size="14.00">&gt;=4* CEE 7/3 or 7/5 sockets</text>
+<text text-anchor="middle" x="1083" y="-725.3" font-family="Times,serif" font-size="14.00">&gt;=4 CEE 7/3 or 7/5 sockets</text>
 </g>
 <!-- speaker_power_strip&#45;&gt;speaker_laptop -->
 <g id="edge18" class="edge"><title>speaker_power_strip&#45;&gt;speaker_laptop</title>
