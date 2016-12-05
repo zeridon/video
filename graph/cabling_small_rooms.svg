@@ -12,13 +12,13 @@
 <text text-anchor="middle" x="910" y="-22.8" font-family="Times,serif" font-size="14.00">FOSDEM 2017 small rooms video cabling setup:</text>
 <text text-anchor="middle" x="910" y="-7.8" font-family="Times,serif" font-size="14.00">aw1120, aw1121, aw1124, aw1125, aw1126, h2213, h2214, k3201, k3401, k4201, k4401, k4601</text>
 <g id="clust1" class="cluster"><title>cluster_speaker_microphone_receiver</title>
-<g id="a_clust1"><a xlink:href="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf" xlink:title="speaker microphone receiver\nsennheiser ekp avx receiver\nDC autonomy: &gt;4h (BA20 battery)\nAC autonomy: ∞\nphantom auto power on">
+<g id="a_clust1"><a xlink:href="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf" xlink:title="speaker microphone receiver\nsennheiser ekp avx receiver\nDC autonomy: &gt;4h (BA20 battery)\nAC autonomy: ∞\nphantom auto power on/off">
 <polygon fill="none" stroke="black" points="285,-419.5 285,-556.5 535,-556.5 535,-419.5 285,-419.5"/>
 <text text-anchor="middle" x="410" y="-541.3" font-family="Times,serif" font-size="14.00">speaker microphone receiver</text>
 <text text-anchor="middle" x="410" y="-526.3" font-family="Times,serif" font-size="14.00">sennheiser ekp avx receiver</text>
 <text text-anchor="middle" x="410" y="-511.3" font-family="Times,serif" font-size="14.00">DC autonomy: &gt;4h (BA20 battery)</text>
 <text text-anchor="middle" x="410" y="-496.3" font-family="Times,serif" font-size="14.00">AC autonomy: ∞</text>
-<text text-anchor="middle" x="410" y="-481.3" font-family="Times,serif" font-size="14.00">phantom auto power on</text>
+<text text-anchor="middle" x="410" y="-481.3" font-family="Times,serif" font-size="14.00">phantom auto power on/off</text>
 </a>
 </g>
 </g>

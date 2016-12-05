@@ -5,7 +5,7 @@ digraph G {
 	node [shape = box];
 	speaker_microphone [label="speaker microphone\nsennheiser avx me2\nesk avx bodypack transmitter\nautonomy: 15h (BA30 battery)/11h (2x AA)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
 	subgraph cluster_speaker_microphone_receiver {
-		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nDC autonomy: >4h (BA20 battery)\nAC autonomy: ∞\nphantom auto power on"
+		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nDC autonomy: >4h (BA20 battery)\nAC autonomy: ∞\nphantom auto power on/off"
 		URL = "https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf";
 		speaker_microphone_receiver_usb_power_connector [label = "power input port\nmicro usb female"];
 		speaker_microphone_receiver_xlr_connector [label = "XLR male plug"];
