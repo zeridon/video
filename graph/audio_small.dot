@@ -5,7 +5,7 @@ digraph G {
 	node [shape = box];
 	speaker_microphone [label="speaker microphone\nsennheiser avx me2\nesk avx bodypack transmitter\nautonomy: 15h (BA30 battery)/11h (2x AA)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
 	subgraph cluster_speaker_microphone_receiver {
-		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nautonomy: >4h (BA20 battery)\nphantom auto power on"
+		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nDC autonomy: >4h (BA20 battery)\nAC autonomy: ∞\nphantom auto power on"
 		URL = "https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf";
 		speaker_microphone_receiver_usb_power_connector [label = "power input port\nmicro usb female"];
 		speaker_microphone_receiver_xlr_connector [label = "XLR male plug"];
@@ -19,11 +19,11 @@ digraph G {
 		camera_xlr_in [label = "audio in CH1\nXLR female port\n48V phantom power"];
 		camera_hdmi_out [label = "HDMI out\nHDMI A (full size) female"];
 		camera_internal_mic [label="audio in CH2\ninternal microphone"];
-		camera_audio_monitor [label="audio monitoring port\n3.5mm trs stereo female"]
+		camera_audio_monitor [label="audio monitoring port\n3.5mm trs stereo female"];
+		camera_ac_in [label="camera AC input"];
 	}
 
 	subgraph fosdem_network {
-		subgraph cluster_room {
 			#style = filled;
 			color = lightgrey;
 			node [style = filled];
@@ -32,6 +32,8 @@ digraph G {
 				label = "camera box";
 				URL = "https://github.com/FOSDEM/video";
 				cam_box_hdmi_in [label="HDMI in\nHDMI A (full size) female"];
+				cam_box_switch [label="3x Gbit dumb switch"];
+				cam_box_ac_in [label="AC in"];
 			}
 			subgraph cluster_speaker_box {
 				label = "speaker box";
@@ -40,17 +42,19 @@ digraph G {
 				speaker_box_vga_out [label="VGA out\nright VGA port\nfemale"];
 				speaker_box_audio_in [label="audio in\nleft audio port\n6.35mm trs female"];
 				speaker_box_audio_out [label="audio out\nright audio port\n6.35mm trs female"];
+				speaker_box_switch [label="3x Gbit dumb switch"];
+				speaker_box_ac_in [label="AC in"];
 			}
-			label = "INGESTION";
-		}
-
 	}
 
-	room_projector [label="VGA in\nVGA port\nfemale"];
-	headphones [label="headphones\n3.5mm trs stereo male"];
+	cam_power_strip [label="camera side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
+	speaker_power_strip [label="speaker side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
+	room_projector [label="room projector VGA in\nVGA port\nfemale"];
+	headphones [label="headphones\n3.5mm trs stereo male\nrental budgetcam"];
+	video_vlan [label="FOSDEM video vlan", style="dotted"];
 
 	speaker_microphone -> speaker_microphone_receiver_xlr_connector [label = "1.9 GHz wireless", lhead = cluster_speaker_microphone_receiver ];
-	speaker_microphone_receiver_charger -> speaker_microphone_receiver_usb_power_connector [label = "USB A -> micro USB cable"];
+	speaker_microphone_receiver_charger -> speaker_microphone_receiver_usb_power_connector [label = "USB A -> micro USB cable\nincluded in mic kit"];
 	speaker_microphone_receiver_xlr_connector -> camera_xlr_in [label = "direct xlr plug (no cable)"];
 	speaker_laptop -> speaker_box_vga_in [label = "direct vga cable male/male", style="dotted"];
 	speaker_laptop -> speaker_box_audio_in [label = "3.5mm male -> 6.35mm trs male cable\nunbalanced stereo", style = "dotted"];
@@ -60,4 +64,15 @@ digraph G {
 	camera_hdmi_out -> cam_box_hdmi_in [label = "HDMI cable\nHDMI A (full size)\nmale/male"];
 	speaker_box_vga_out -> room_projector [label = "VGA cable\nmale/male"];
 	camera_audio_monitor -> headphones;
+	speaker_box_switch -> video_vlan [dir = "both", label = "ethernet cable"];
+	cam_box_switch -> video_vlan [dir = "both", label = "ethernet cable"];
+	speaker_box_switch -> cam_box_switch [dir = "both", label = "ethernet cable"];
+
+	# AC power
+	cam_power_strip -> speaker_microphone_receiver_charger;
+	cam_power_strip -> camera_ac_in;
+	cam_power_strip -> cam_box_ac_in;
+
+	speaker_power_strip -> speaker_laptop;
+	speaker_power_strip -> speaker_box_ac_in;
 }
