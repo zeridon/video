@@ -91,37 +91,54 @@
 \newpage
 
 \section{Organisation}
-Video is a big task, so there are many people working together to make it all happen. In short, there are three (types of) teams:
+Video is a big task, so there are many people working together to make it all happen. Here's all the teams:
 
-\subsection{Setup and teardown teams}
-At the start of the event/day these people take the equipment to the rooms and do basic setup (cam, sound, plugging in cables). They will ensure everything is ready before the first talk starts in each room.
-At the end of the day, they will retrieve (part of) the equipment again for safe storage overnight.
+\subsection{Per building teams: AW, H, K, U}
+Two people per building. One team for AW, H, K and U respectively. J (probably) has a dedicated knowledgeable volunteer.
 
-During the day, they may either not be present/active or be going from room to room to fix problems, following the direction of the monitoring and control team members when needed.
+Coordination with video operations control (VOC) happens through walkies and irc://irc.freenode.net\#fosdem-video.
 
-\subsection{Monitoring and control team}
+At the start of the event, these people take the equipment to the rooms. Every team works from the biggest to the smallest room in its building. They do basic setup (cam, sound, plugging in cables, basic volume checks with microphones, ...). They will ensure everything is ready before the first talk starts in each room. 
+
+During the day, they have a spot in the building:
+\begin{itemize}
+  \item AW: under the stairs
+  \item K: at the NOC
+  \item H: behind the info desk
+  \item U: in the corridor near Chavanne
+\end{itemize}
+
+They monitor video from the local building and fix local building problems as needed.
+
+At the end of the day, they retrieve the cameras for safe storage overnight.
+
+
+\subsection{Video operations control or VOC}
 These people are in the NOC in the K building. They can remote into all the video boxes, and control the video part of the website.
-Their task is to constantly monitor all the equipment and streams for problems, and to arrange fixes for any that occur.
+Their task is to constantly monitor all the equipment and streams for problems, and to arrange fixes for any that occur. They have visual monitoring of all audio streams.
 
-There will not be enough radios for each team/room to be able to contact the central monitoring and control team, so during the setup and teardown (and possibly other busy moments), each building will have a ``control'' point (usually that buildings' service desk, if any) manned by a member of this team. Progress is kept at each local control point, which will inform the rest of the monitoring and control team through either IP (preferred) or radio (backup).
+This team does not run out to fix problems themselves. Maintaining contact between everyone is their main priority.
 
-In principle, this team does not run out to fix problems themselves, but instead will sent a volunteer or similar. Maintaining contact between everyone is their main priority, and running around goes against this.
+\subsection{In the devroom}
+If there is a dedicated person for a devroom, this person:
+\begin{itemize}
+  \item stays near the video equipment, keeping it safe
+  \item makes sure the camera is aimed at the speaker.
+  \item monitors the devroom video/audio feeds (headphone!) for problems
+  \item signals problems to VOC by irc
+\end{itemize}
 
-\subsection{Devroom video volunteers}
-These people stay near the video equipment, keeping it safe and making sure the camera is aimed at the speaker.
-They also monitor their own video/audio feeds for problems and will have means to signal problems to central control.
-
-The devroom volunteer does not leave their post without waiting for a replacement, until the teardown team comes to collect equipment. They do \emph{NOT} disconnect or turn off any equipment themselves. That is the task of the teardown team and nobody else.
+The devroom volunteer does \emph{NOT} disconnect or turn off any equipment themselves. That is the task of the per building team only.
 
 \section{FOSDEM Video Box}
 The FOSDEM Video Box will take care of the streaming and recording.
 There is no need to operate the controls on the camera (once on and in the correct video mode, which the setup team will have done). The setup team should also have connected the following:
 \begin{itemize}
-  \item At least one network cable
-  \item A power cable, connected to mains, with the box already turned on
-  \item Slides boxes only:
+  \item at least one network cable
+  \item a power cable, connected to mains, with the box already turned on
+  \item slides boxes only:
     \begin{itemize}
-      \item The right jack connection should be connected to the room audio system
+      \item the right jack connection should be connected to the room audio system
       \item The right VGA connection should be connected to the projector
       \item The left jack connection should have a loose mini-jack cable, for connecting to the presenter laptop
       \item The left VGA connection should have a loose VGA cable, for connecting to the presenter laptop
@@ -142,9 +159,9 @@ In the event of power loss or accidental unplugging, the system should fully aut
 While the box contains a network switch (all three ports are connected), \emph{do not connect your own equipment} to the box. The boxes are on a special subnet with reserved bandwidth for the video streaming, and any other equipment may compromise the quality of the broadcast.
 
 \emph{The slides boxes are VGA-only.}
-The internals are HDMI-compatible, but the ULD projection system only supports VGA.
+The internals are HDMI-compatible, but the ULB campus projection system only supports VGA.
 Sourcing your own HDMI (and/or DP) to VGA converters is advisable, though all speakers will be informed of the VGA requirement beforehand.
-The VGA signal is automatically scaled to 720p at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
+The VGA signal is automatically scaled to 720p (1280x720) at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
 
 \emph{The LCD display will inform you of all vital information about the current status of the box.} It shows a preview of the stream image (auto-refreshing screenshot, not live video), the current input resolution and refresh rate (should be 720p at 50Hz), its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and audio volume level (average over the last few seconds).
 
@@ -199,7 +216,7 @@ Plug the XLR cable of the audio system into Input2.
 \end{figure}
 
 \subsubsection{Power on}
-You can find the power button on the bottom of the left side of the camera (looking from behind).
+You can find the power button on the left side of the camera (looking from behind). Look in the bottom right corner.
 
 \begin{figure}[H]
   \centering
@@ -258,10 +275,10 @@ Please check the following before leaving:
   \item Does the camera video box display the camera image on the LCD display?
 \end{itemize}
 
-If any of these do not work, re-check your connections and settings. Still no luck? Contract control!
+If any of these do not work, re-check your connections and settings. Still no luck? Contract VOC!
 
 \subsubsection{Contact control}
-Please report that you've finished the room with your local control point.
+When you have finished setup of the room, please report to VOC for a full test.
 They will let you know what rooms still need attention.
 
 \subsection{Setup for Canon XF100E}
