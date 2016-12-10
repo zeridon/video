@@ -2,7 +2,9 @@
 - name: "common: install packages"
   apt: pkg={{ item }} state=latest install_recommends=no
   with_items:
+    - ack-grep
     - bash-completion
+    - ca-certificates
     - file
     - git
     - htop
@@ -11,11 +13,13 @@
     - iotop
     - less
     - lsof
+    - ltrace
     - mediainfo
-    - mtr-tiny
-    - vim
-    - ack-grep
     - mosh
+    - mtr-tiny
+    - strace
+    - tcpdump
+    - vim
 
 - name: "common: configure irqbalance"
   debconf:
