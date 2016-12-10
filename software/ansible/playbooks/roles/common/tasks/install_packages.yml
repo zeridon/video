@@ -14,4 +14,21 @@
     - mediainfo
     - mtr-tiny
     - vim
+    - ack-grep
+    - mosh
+
+- name: "common: configure irqbalance"
+  debconf:
+    name: irqbalance
+    question: irqbalance/oneshot
+    value: true
+    vtype: boolean
+  when: kernel_package
+
+- name: "common: Upgrade kernel"
+  apt: pkg={{ item }} state=latest install_recommends=no default_release=jessie-backports
+  with_items:
+    - {{ kernel_package }}
+    - irqbalance
+  when: kernel_package
 

@@ -50,11 +50,18 @@ addressing plan.
 
 | MAC | hostname | IP |
 |-----|----------|----|
-| ? | voctohost0 | 185.175.218.10 |
+| 00:23:7d:d3:6a:e8 | voctohost0 | 185.175.218.10 |
 | ? | voctohost1 | 185.175.218.11 |
-| ? | voctohost2 | 185.175.218.12 |
+| 18:a9:05:57:af:22 | voctohost2 | 185.175.218.12 |
 | ? | voctohost3 | 185.175.218.13 |
-| ? | voctohost4 | 185.175.218.14 |
+| 00:25:b3:d7:c2:5e | voctohost4 | 185.175.218.14 |
+| 18:a9:05:55:e9:88 | voctohost5 | 185.175.218.15 |
+| 00:23:7d:d3:6a:ec | voctohost0 ilo | 185.175.218.20 |
+| | voctohost1 ilo | 185.175.218.21 |
+| 18:a9:05:57:af:26 | voctohost2 ilo | 185.175.218.22 |
+| | voctohost3 ilo | 185.175.218.23 |
+| 00:25:b3:d7:c2:62 | voctohost4 ilo | 185.175.218.24 |
+| 18:a9:05:55:e9:8c | voctohost5 ilo | 185.175.218.25 |
 
 ### Vocto containers
 
