@@ -15,10 +15,10 @@ Ultimately, we would like to move to Debian, but for the time being this will
 do.
 
 ## Faking a stream from a videobox
-If you want to realisticly fake the streaming output of a video box, that is easy!
+If you want to realisticly fake the streaming output of a video box, that is
+easy! Use a recent version of `youtube-dl`:
 <pre>
-apt-get install youtube-dl
-youtube-dl -f 22 https://www.youtube.com/watch?v=T6AEhM1GWvw -o 720p.mp4
+youtube-dl -f 22 https://www.youtube.com/watch?v=077UlBtrqWs -o 720p.mp4
 ffmpeg -re -i 720p.mp4 -c copy -f mpegts udp://227.0.0.2:9000
 </pre>
 
