@@ -1,23 +1,25 @@
  
 \documentclass{article}
 
+\usepackage[titletoc,title]{appendix}
 \usepackage{charter}
-\usepackage[english]{babel}                   % English language/hyphenation
-\usepackage[protrusion=true,expansion=true]{microtype}        % Better typography
-\usepackage{graphicx}                 % Enable pdflatex
-%\usepackage{fix-cm}                         % Custom fontsizes
-\usepackage{eurosym}                         % Euro symbol
-%\usepackage[margin=3.0cm]{geometry}
-\usepackage{fancyhdr}
-\usepackage{lastpage} % number of last page 
-\usepackage[top=2cm, bottom=4cm]{geometry}
-\usepackage{hyperref}
-\usepackage{pifont}% http://ctan.org/pkg/pifont
-\usepackage{float} %For exact figure positioning
 \usepackage{color}
+\usepackage{eurosym}                         % Euro symbol
+\usepackage[english]{babel}                   % English language/hyphenation
+\usepackage{fancyhdr}
+\usepackage{float} %For exact figure positioning
+\usepackage[top=2cm, bottom=4cm]{geometry}
+\usepackage{graphicx}                 % Enable pdflatex
+\usepackage{hyperref}
+%\usepackage{fix-cm}                         % Custom fontsizes
+%\usepackage[margin=3.0cm]{geometry}
+\usepackage{lastpage} % number of last page 
+\usepackage[protrusion=true,expansion=true]{microtype}        % Better typography
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage{rotating}
+\usepackage[table]{xcolor} 
 \definecolor{ForestGreen}{RGB}{34,139,34}
 
-\usepackage[table]{xcolor} 
 \rowcolors{2}{gray!25}{white}
 
 
@@ -28,7 +30,6 @@
     linkcolor=black,
     urlcolor=black
 }
-\usepackage[titletoc,title]{appendix}
 
 % Definition of \maketitle
 \makeatletter         
@@ -90,17 +91,23 @@
 \tableofcontents
 \newpage
 
-\section{Organisation}
+\section{People}
 Video is a big task, so there are many people working together to make it all happen. Here's all the teams:
 
-\subsection{Per building teams: AW, H, K, U}
-Two people per building. One team for AW, H, K and U respectively. J (probably) has a dedicated knowledgeable volunteer.
+\subsection{AW, H, K, U and J teams}
+You should be a team of two per building: AW, H, K and U respectively. J (probably) has a dedicated knowledgeable volunteer.
 
 Coordination with video operations control (VOC) happens through walkies and irc://irc.freenode.net\#fosdem-video.
 
-At the start of the event, these people take the equipment to the rooms. Every team works from the biggest to the smallest room in its building. They do basic setup (cam, sound, plugging in cables, basic volume checks with microphones, ...). They will ensure everything is ready before the first talk starts in each room. 
+Your tasks before the conference starts:
+\begin{itemize}
+  \item take the equipment to the rooms in your building
+  \item work from the biggest to the smallest room
+  \item do basic setup: cam, sound, plug in cables, basic audio checks with microphones, ... See below for details.
+  \item ensure the rooms are ready before the first talk starts
+\end{itemize}
 
-During the day, they have a spot in the building:
+During the day, you'll have a fixed spot in the building:
 \begin{itemize}
   \item AW: under the stairs
   \item K: at the NOC
@@ -108,30 +115,75 @@ During the day, they have a spot in the building:
   \item U: in the corridor near Chavanne
 \end{itemize}
 
-They monitor video from the local building and fix local building problems as needed.
+Your job during the conference, with the backup from the VOC team, is to do the following in your building:
+\begin{itemize}
+  \item monitor video. Hint: bring at least one laptop running mpv.
+  \item proactively fix problems with video. In some rooms, this includes preventatively replacing batteries!
+\end{itemize}
 
 At the end of the day, they retrieve the cameras for safe storage overnight.
 
 
 \subsection{Video operations control or VOC}
-These people are in the NOC in the K building. They can remote into all the video boxes, and control the video part of the website.
-Their task is to constantly monitor all the equipment and streams for problems, and to arrange fixes for any that occur. They have visual monitoring of all audio streams.
+You are in the NOC in the K building, with ssh access to all video machines: video boxes in the rooms, vocto machines near VOC, streaming backends and frontends, and the web pages showing the videos to our visitors.
 
-This team does not run out to fix problems themselves. Maintaining contact between everyone is their main priority.
+Your job is to constantly monitor all the equipment and streams for problems, and to arrange fixes for any that occur. They have visual monitoring of all audio streams.
+
+Do not run out to fix problems yourselves. Delegate to the AW, H, K and U teams. Maintaining contact between everyone is your main priority.
 
 \subsection{In the devroom}
-If there is a dedicated person for a devroom, this person:
+If you are volunteering for video inside a devroom, please:
 \begin{itemize}
-  \item stays near the video equipment, keeping it safe
-  \item makes sure the camera is aimed at the speaker.
-  \item monitors the devroom video/audio feeds (headphone!) for problems
-  \item signals problems to VOC by irc
+  \item stay near the video equipment, keeping it safe (from people tripping over cables for example!)
+  \item make sure the camera is aimed at the speaker
+  \item monitor the devroom video/audio feeds (headphone!) for problems
+  \item signal problems to VOC by irc
 \end{itemize}
 
-The devroom volunteer does \emph{NOT} disconnect or turn off any equipment themselves. That is the task of the per building team only.
+Please do \emph{NOT} disconnect or turn off any equipment yourself. That is the task of the per building team only.
 
-\section{FOSDEM Video Box}
-The FOSDEM Video Box will take care of the streaming and recording.
+\section{Rooms}
+We have 24 rooms: 12 small, 6 large and 6 extra large rooms. Each type of room has a different audio/video setup.
+\begin{itemize}
+  \item AW: AW1120 (S), AW1121 (S), AW1124 (S), AW1125 (S), AW1126 (S)
+  \item K: K1105 (XXL), K3201 (S), K3401 (S), K4201 (S), K4401 (S), K4601 (S)
+  \item H: H1201 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (XXL)
+  \item U: UA2214 (L), UA2220 (XXL), UB2252A (XXL), UD2120 (XXL), UD2218A (L)
+  \item J: Janson (XXL)
+\end{itemize}
+
+\subsection{Small rooms}
+These have a projector and a tie pin microphone for the speaker. They use the Canon XF100 camera. Audience questions are picked up by the camera's internal microphone.
+\subsubsection{Cabling diagram}
+\begin{figure}[H]
+  \begin{sideways}
+  \centering
+  \includegraphics[width = 200mm]{../../graph/cabling_small_rooms.png}
+  \end{sideways}
+\end{figure}
+
+\subsection{Large rooms}
+These have a projector, a tie pin mic for the speaker and an audience microphone. They use the Sony HXR-NX100 camera. 
+\subsubsection{Cabling diagram}
+\begin{figure}[H]
+  \begin{sideways}
+  \centering
+  \includegraphics[width = 200mm]{../../graph/cabling_large_rooms.png}
+  \end{sideways}
+\end{figure}
+
+\subsection{Extra large rooms}
+These have a projector, a tie pin mic for the speaker and one or two audience microphones. They use the Sony HXR-NX100 camera. 
+\subsubsection{Cabling diagram}
+\begin{figure}[H]
+  \begin{sideways}
+  \centering
+  \includegraphics[width = 200mm]{../../graph/cabling_xxl_rooms.png}
+  \end{sideways}
+\end{figure}
+
+\section{FOSDEM video boxes}
+The FOSDEM video box will take care of the streaming and recording.
 There is no need to operate the controls on the camera (once on and in the correct video mode, which the setup team will have done). The setup team should also have connected the following:
 \begin{itemize}
   \item at least one network cable
@@ -149,7 +201,12 @@ There is no need to operate the controls on the camera (once on and in the corre
     \end{itemize}
 \end{itemize}
 
-The power switch is at the back, on a standard power supply.
+The power switch is at the back, on a standard power supply:
+\begin{figure}[H]
+  \centering
+  \includegraphics[width = 120mm]{videobox_psu.jpg}
+\end{figure}
+
 Order of connections and powering on does not matter, each order will work. There is no need to reboot the box after connections have changed, and there is no physical mechanism to safely power down the box.
 Fully powering on the box takes about half a minute, and it will take approximately 10 seconds before anything can be seen on the LCD display. This is normal. Boot up is about twice as slow after an unexpected power loss.
 
@@ -177,14 +234,14 @@ FOSDEM2017 will use 2 different camera models: the Sony HXR-NX100 and the Canon 
 \begin{tabular}{| l | l |}
 Resolution & 1280x720 \\
 Refresh rate & 50p \\
-MIC-CHANNEL1(left) & Internal microphone \\
-MIC-CHANNEL2(right) & Speaker microphone \\
+MIC-CHANNEL1(left) &  Speaker and audience microphone \\
+MIC-CHANNEL2(right) & Internal microphone \\
 Power source & Cable AND Battery \\
 Lens cover & Remove! \\
 Camera/Tripod & Cam must be attached to tripod plate \\
 \end{tabular}
 
-\subsection{Setup for Sony HXR-NX100}
+\subsection{Setup for Sony HXR-NX100 (large and extra large rooms)}
 
 \subsubsection{Screw camera on mount}
 Screw the camera onto the tripod. Every camera has a screw hole at the bottom that can be used for this. The plate has a distinct ``point camera in this direction''-arrow, pay attention to this. The screw can be tightened by a coin or similar object.
@@ -268,8 +325,8 @@ Do not forget to remove the lens cover. Store it in the camera bag for safe keep
 \subsubsection{Checklist}
 Please check the following before leaving:
 \begin{itemize}
-  \item Does CH1 on the camera display spike when you tap the camera itself with your fingers?
-  \item Does CH2 on the camera display spike when you tap the (powered on) wireless speaker microphone?
+  \item Does CH1 on the camera display spike when you tap the (powered on) wireless speaker microphone?
+  \item Does CH2 on the camera display spike when you tap the camera itself with your fingers?
   \item Turn off the wireless speaker microphone before leaving to conserve battery power for during the day.
   \item Do both video boxes say mode 720p50 on the LCD display?
   \item Does the camera video box display the camera image on the LCD display?
@@ -281,7 +338,7 @@ If any of these do not work, re-check your connections and settings. Still no lu
 When you have finished setup of the room, please report to VOC for a full test.
 They will let you know what rooms still need attention.
 
-\subsection{Setup for Canon XF100E}
+\subsection{Setup for Canon XF100E (small rooms)}
 
 \subsubsection{Screw camera on mount}
 Screw the camera onto the tripod. Every camera has a screw hole at the bottom that can be used for this. The plate has a distinct ``point camera in this direction''-arrow, pay attention to this. The screw can be tightened by a coin or similar object.
@@ -307,20 +364,42 @@ Do not forget to hook up the other end of the HDMI cable to the FOSDEM Video Box
 \end{figure}
 
 \subsubsection{Microphone}
-Plug the XLR cable of the audio system into CH2.
+Plug the AVX receiver into CH1. Plug the USB charger cable into the AVX receiver, and the USB charger into the power strip.
 
 \begin{figure}[H]
   \centering
-\includegraphics[width = 120mm]{Canon02.jpg}
+\includegraphics[width = 120mm]{canon_avx_receiver.jpg}
 \end{figure}
 
+\subsubsection{Headphones}
+Plug the headphone into the headphone port.
+
+\begin{figure}[H]
+  \centering
+\includegraphics[width = 120mm]{canon_headphones.jpg}
+\end{figure}
+
+
 \subsubsection{Power on}
-You can find the power button on the top of the left side of the camera (looking from behind).
+Now please boot the camera. You can find the power button on the top of the left side of the camera (looking from behind).
 
 \begin{figure}[H]
   \centering
 \includegraphics[width = 120mm]{Canon03.jpg}
 \end{figure}
+
+After booting the camera, please check if:
+\begin{itemize}
+  \item the avx microphone receiver should power on (signaling through 48V phantom power)
+  \item the transmitter auto pairs with the receiver. It should show "AVX" plus the latest four digits of the receiver serial on its lcd
+  \item the transmitter battery status. Fully charged, it should indicate approximately 15 hours on the lcd
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+\includegraphics[width = 120mm]{paired_avx.jpg}
+\end{figure}
+
 
 \subsubsection{Audio settings}
 The audio settings can only be done through the hardware switches on the camera.
@@ -330,13 +409,13 @@ If unsure, verify with the image below.
 
 \begin{tabular}{| l || l | l | l | l |}
 Input & Top switch & Middle switch & Bottom switch & dial at top \\ \hline
-CH1 & LEFT (A) & RIGHT (MIC 48V) & LEFT (INT) & anything \\
-CH2 & LEFT (A) & LEFT (LINE) & RIGHT (EXT) & anything \\
+CH1 & LEFT (A) & RIGHT (MIC 48V) & RIGHT (EXT) & anything \\
+CH2 & LEFT (A) & LEFT (MIC) & LEFT (INT) & anything \\
 \end{tabular}
 
 \begin{figure}[H]
   \centering
-\includegraphics[width = 120mm]{Canon04.jpg}
+\includegraphics[width = 120mm]{canon_audio_settings.jpg}
 \end{figure}
 
 \subsubsection{Video settings}
@@ -370,8 +449,8 @@ Do not forget to remove the lens cover. Store it in the camera bag for safe keep
 \subsubsection{Checklist}
 Please check the following before leaving:
 \begin{itemize}
-  \item Does CH1 on the camera display spike when you tap the camera itself with your fingers?
-  \item Does CH2 on the camera display spike when you tap the (powered on) wireless speaker microphone?
+  \item Does CH1 on the camera display spike when you tap the (powered on) wireless speaker microphone?
+  \item Does CH2 on the camera display spike when you tap the camera itself with your fingers?
   \item Turn off the wireless speaker microphone before leaving to conserve battery power for during the day.
   \item Do both video boxes say mode 720p50 on the LCD display?
   \item Does the camera video box display the camera image on the LCD display?
@@ -379,9 +458,8 @@ Please check the following before leaving:
 
 If any of these do not work, re-check your connections and settings. Still no luck? Contract control!
 
-\subsubsection{Contact control}
-Please report that you've finished the room with your local control point.
-They will let you know what rooms still need attention.
+\subsubsection{Warn VOC}
+When you've finished setting up the room, please report this to VOC by walkie and on irc://irc.freenode.net\#fosdem-video.
 
 \section{During the event}
 It is expected of the devroom video volunteers that they keep an eye on the following, in order of importance:
@@ -393,7 +471,7 @@ It is expected of the devroom video volunteers that they keep an eye on the foll
   \item None of the video equipment is stolen or tampered with
   \item The video box is turned on and has OK network status.
 \end{itemize}
-As you can see, the main task is ensuring audio quality. Video quality, will important, is only a secondary concern. A recording without video is still usable, but a recording without audio is completely useless.
+The main task is ensuring audio quality. Video quality, while important, is only a secondary concern. A recording without video is still usable, but a recording without audio is completely useless.
 
 Video team members will be both monitoring remotely as well as visiting rooms with problems. If you have questions, concerns or problems and there is no video team member nearby, contact them through the \texttt{\#fosdem-video} channel on the Freenode IRC service. If your video box shows issues on the LCD, most likely somebody is already on their way to you. When communicating with video team members, please mention the \emph{room number} as opposed to the devroom name. Devrooms move around, room numbers stay constant.
 
