@@ -88,8 +88,8 @@ addressing plan.
 
 ### Video boxes
 
-| MAC | hostname | IP | Multicast |
-|-----|----------|----|-----------|
+| MAC | hostname | IP | Multicast | Remarks |
+|-----|----------|----|-----------|---------|
 | ? | aw1120-slides | 185.175.218.128 | 227.0.0.1 |
 | ? | aw1120-cam | 185.175.218.129 | 227.0.0.2 |
 | ? | aw1121-slides | 185.175.218.130 | 227.0.1.1 |
