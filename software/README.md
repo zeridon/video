@@ -46,16 +46,16 @@ addressing plan.
 * Vocto containers are in 185.175.218.64/26
 * Videoboxes are in 185.175.218.128/26
 
-### Vocto hosts
+### Control hosts
 
 | MAC | hostname | IP |
 |-----|----------|----|
-| 00:23:7d:d3:6a:e8 | voctohost0 | 185.175.218.10 |
-| 00:25:b3:d7:c1:b6 | voctohost1 | 185.175.218.11 |
-| 18:a9:05:57:af:22 | voctohost2 | 185.175.218.12 |
-| 00:23:7d:d3:6b:b4 | voctohost3 | 185.175.218.13 |
-| 00:25:b3:d7:c2:5e | voctohost4 | 185.175.218.14 |
-| 18:a9:05:55:e9:88 | voctohost5 | 185.175.218.15 |
+| ? | streamdump0 | 185.175.218.10 |
+| ? | streamdump1 | 185.175.218.11 |
+| ? | ? | 185.175.218.12 |
+| ? | ? | 185.175.218.13 |
+| ? | ? | 185.175.218.14 |
+| ? | ? | 185.175.218.15 |
 
 ### Vocto containers
 
