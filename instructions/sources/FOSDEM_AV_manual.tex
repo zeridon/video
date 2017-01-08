@@ -154,6 +154,21 @@ We have 24 rooms: 12 small, 6 large and 6 extra large rooms. Each type of room h
 
 \subsection{Small rooms}
 These have a projector and a tie pin microphone for the speaker. They use the Canon XF100 camera. Audience questions are picked up by the camera's internal microphone.
+
+The connections there are as follows:
+
+\begin{itemize}
+  \item Network cable (video VLAN) to the presenter box (any port)
+  \item Network cable form the presenter to camera box (any port, on each side)
+  \item Camera, presenter box, video box, USB power for the microphone receiver to the AC power
+  \item XLR cable from the microphone receiver to channel 1 (LEFT) of the camera
+  \item USB power to the microphone receiver
+  \item HDMI from the camera to the HDMI port of the video box
+  \item VGA cable from the presenter box left VGA port to the beamer in the room
+  \item VGA cable from the speaker's laptop to the right VGA port of the presenter box
+  \item stereo-jack cable + converter from 3.5" to 6.25" jack from the speaker's laptop to the sound port of the presenter box
+  \item stereo-jack + converter from 3.5" to 6.25" from the presenter box to the PA system if the room (if any)
+\end{itemize}
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
   \begin{sideways}
@@ -164,6 +179,24 @@ These have a projector and a tie pin microphone for the speaker. They use the Ca
 
 \subsection{Large rooms}
 These have a projector, a tie pin mic for the speaker and an audience microphone. They use the Sony HXR-NX100 camera. 
+
+The connections there are as follows:
+
+\begin{itemize}
+  \item Network cable (video VLAN) to the presenter box (any port)
+  \item Network cable form the presenter to camera box (any port, on each side)
+  \item Camera, presenter box, video box, USB power for the microphone receiver, audio mixer to the AC power
+  \item Microphone receiver for the speaker's microphone to channel 1 of the mixer
+  \item Microphone receiver for the audience microphone to channel 2 of the mixer
+  \item XLR cable from the left channel of the audio mixer to channel 1 (LEFT) of the camera
+  \item XLR cable from the right channel of the audio mixer to channel 2 (RIGHT) of the camera
+  \item USB power to the microphone receiver
+  \item HDMI from the camera to the HDMI port of the video box
+  \item VGA cable from the presenter box left VGA port to the beamer in the room
+  \item VGA cable from the speaker's laptop to the right VGA port of the presenter box
+  \item stereo-jack cable + converter from 3.5" to 6.25" jack from the speaker's laptop to the sound port of the presenter box
+  \item stereo-jack + converter from 3.5" to 6.25" from the presenter box to the PA system if the room (if any)
+\end{itemize}
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
   \begin{sideways}
@@ -174,6 +207,22 @@ These have a projector, a tie pin mic for the speaker and an audience microphone
 
 \subsection{Extra large rooms}
 These have a projector, a tie pin mic for the speaker and one or two audience microphones. They use the Sony HXR-NX100 camera. 
+
+The connections there are as follows:
+
+\begin{itemize}
+  \item Network cable (video VLAN) to the presenter box (any port)
+  \item Network cable form the presenter to camera box (any port, on each side)
+  \item Camera, presenter box, video box to the AC power
+  \item XLR cable from the left channel of the audio mixer (ULB provided) to channel 1 (LEFT) of the camera
+  \item XLR cable from the right channel of the audio mixer (ULB provided) to channel 2 (RIGHT) of the camera
+  \item HDMI from the camera to the HDMI port of the video box
+  \item VGA cable from the presenter box left VGA port to the beamer in the room
+  \item VGA cable from the speaker's laptop to the right VGA port of the presenter box
+  \item stereo-jack cable + converter from 3.5" to 6.25" jack from the speaker's laptop to the sound port of the presenter box
+  \item stereo-jack + converter from 3.5" to 6.25" from the presenter box to the PA system if the room (if any)
+\end{itemize}
+
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
   \begin{sideways}
@@ -217,7 +266,7 @@ While the box contains a network switch (all three ports are connected), \emph{d
 
 \emph{The slides boxes are VGA-only.}
 The internals are HDMI-compatible, but the ULB campus projection system only supports VGA.
-Sourcing your own HDMI (and/or DP) to VGA converters is advisable, though all speakers will be informed of the VGA requirement beforehand.
+HDMI to VGA converters will be provided for each room.
 The VGA signal is automatically scaled to 720p (1280x720) at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
 
 \emph{The LCD display will inform you of all vital information about the current status of the box.} It shows a preview of the stream image (auto-refreshing screenshot, not live video), the current input resolution and refresh rate (should be 720p at 50Hz), its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and audio volume level (average over the last few seconds).
@@ -283,7 +332,6 @@ You can find the power button on the left side of the camera (looking from behin
 \subsubsection{Audio settings}
 The audio settings can only be done through the hardware switches on the camera.
 Make sure to set the switches to the correct positions, as these directly affect the availability of audio on the recordings and live streams. Wrong settings means no audio!
-The position of the dials does not matter (those are for manual volume, we use automatic volume).
 If unsure, verify with the image below.
 
 \begin{tabular}{| l || l | l | l | l |}
@@ -296,6 +344,27 @@ Input2 & BOTTOM (Mic 48V) & TOP (INT MIC) & TOP (AUTO) & anything \\
   \centering
 \includegraphics[width = 120mm]{sony_audio_settings.jpg}
 \end{figure}
+
+\subsubsection{Audio levels}
+
+To configure the audio levels, use the following procedure for small rooms:
+\begin{itemize}
+  \item Set the levels to 5 for both channels;
+  \item For the internal camera microphone (channel 2, small rooms) talk loud near the camera and make sure the levels don't go over the end (using the dial);
+  \item For channel 1 (speaker microphone) yell while wearing the microphone and make sure the levels don't go over the end (using the dial);
+\end{itemize}
+
+For the other rooms:
+
+\begin{itemize}
+  \item Set the levels to 5 for both channels;
+  \item On the mixing console, set a small pan to the LEFT of the speaker microphone;
+  \item On the mixing console, set a small pan to the RIGHT of the rest of the microphones;
+  \item For the speaker microphone yell while wearing the microphone and make sure the levels don't go over the end, adjusting from the mixing console;
+  \item For all the other microphones, talk moderately loudly while adjusting the microphones, making sure that they don't go over the top;
+  \item Adjust the overall volume for the room to be audible as much as possible without creating feedback;
+  \item Additionally test for feedback while moving with the microphone around the PA system in the room and adjust accordingly.
+\end{itemize}
 
 \subsubsection{Video output configuration}
 The video configuration will be done through the on-screen display.
@@ -418,6 +487,27 @@ CH2 & LEFT (A) & LEFT (MIC) & LEFT (INT) & anything \\
 \includegraphics[width = 120mm]{canon_audio_settings.jpg}
 \end{figure}
 
+\subsubsection{Audio levels}
+
+To configure the audio levels, use the following procedure for small rooms:
+\begin{itemize}
+  \item Set the levels to 5 for both channels;
+  \item For the internal camera microphone (channel 2, small rooms) talk loud near the camera and make sure the levels don't go over the end (using the dial);
+  \item For channel 1 (speaker microphone) yell while wearing the microphone and make sure the levels don't go over the end (using the dial);
+\end{itemize}
+
+For the other rooms:
+
+\begin{itemize}
+  \item Set the levels to 5 for both channels;
+  \item On the mixing console, set a small pan to the LEFT of the speaker microphone;
+  \item On the mixing console, set a small pan to the RIGHT of the rest of the microphones;
+  \item For the speaker microphone yell while wearing the microphone and make sure the levels don't go over the end, adjusting from the mixing console;
+  \item For all the other microphones, talk moderately loudly while adjusting the microphones, making sure that they don't go over the top;
+  \item Adjust the overall volume for the room to be audible as much as possible without creating feedback;
+  \item Additionally test for feedback while moving with the microphone around the PA system in the room and adjust accordingly.
+\end{itemize}
+
 \subsubsection{Video settings}
 The video settings will be done through the on-screen display.
 
@@ -465,13 +555,25 @@ When you've finished setting up the room, please report this to VOC by walkie an
 It is expected of the devroom video volunteers that they keep an eye on the following, in order of importance:
 \begin{itemize}
   \item The wireless speaker mic is on during talks
-  \item The wireless speaker mic is worn correctly
+  \item The wireless speaker mic is worn correctly (see below)
   \item The audio volume is not too low or too high (clipping is bad!)
   \item The camera is aimed at the speaker, \emph{not} the projection screen (the projection screen is captured separately!)
   \item None of the video equipment is stolen or tampered with
   \item The video box is turned on and has OK network status.
 \end{itemize}
 The main task is ensuring audio quality. Video quality, while important, is only a secondary concern. A recording without video is still usable, but a recording without audio is completely useless.
+
+The correct way to wear a lapel mic is as follows:
+\begin{itemize}
+  \item The microphone is attached at speaker's clothes near the neck, under the chin (centrally);
+  \item There are no necklaces or lanyards that would touch it during the talk;
+  \item There are no scarves or similar that cover the microphone or will touch it;
+  \item The microphone is attached to the topmost layer of clothes (so there's nothing above it that would touch it);
+  \item If there is no place where the microphone can be attached, a lanyard can be used for this purpose, on top of all the clothing of the speaker;
+  \item The microphone receiver is attached to the belt of the speaker. If not possible, it's attached on top of a pocket;
+  \item If the speaker has neither a belt nor pockets, he/she can hold the receiver in hand, or worst case scenario, it can be attached with duct tape to the waist (with a full loop around the waist).
+  \item The speaker is notified that if he's not facing in the direction of the microphone (e.g. not looking straight) the audio will be less audible.
+\end{itemize}
 
 Video team members will be both monitoring remotely as well as visiting rooms with problems. If you have questions, concerns or problems and there is no video team member nearby, contact them through the \texttt{\#fosdem-video} channel on the Freenode IRC service. If your video box shows issues on the LCD, most likely somebody is already on their way to you. When communicating with video team members, please mention the \emph{room number} as opposed to the devroom name. Devrooms move around, room numbers stay constant.
 
