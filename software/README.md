@@ -138,4 +138,4 @@ addressing plan.
 | 02:0e:07:01:d9:0c | ud2120-cam | 185.175.218.173 | 227.4.3.2 |
 | 02:09:0b:82:98:04 | ud2218a-slides | 185.175.218.174 | 227.4.4.1 |  |
 | 02:c3:098:01:6f:4f | ud2218a-cam | 185.175.218.175 | 227.4.4.2 |
-
+| 02:c7:05:c1:ff:df | broken spare slides | n/a | n/a | bpi, lcd, network, ssd working, problem with scaler or h264 encoder? |
