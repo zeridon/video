@@ -1,4 +1,0 @@
----
-- include: install_packages.yml
-- include: configure_nginx.yml
-- include: install_sreview_detect.yml

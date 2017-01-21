@@ -1,2 +1,0 @@
-- name: restart mtail
-  service: name=mtail state=restarted
