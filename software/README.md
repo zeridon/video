@@ -86,7 +86,7 @@ addressing plan.
 | f0:de:f1:b7:e4:6b | vocto-ud2120 | 185.175.218.86 | 227.4.3.3 |
 | f0:de:f1:b7:e2:5f | vocto-ud2218a | 185.175.218.87 | 227.4.4.3 |
 | f0:de:f1:b7:f5:c0 | vocto-spare0 |
-| f0:de:f1: | vocto-spare1 |
+| f0:de:f1:b7:e3:7a | vocto-spare1 |
 | f0:de:f1: | vocto-spare2 |
 
 ### Video boxes
