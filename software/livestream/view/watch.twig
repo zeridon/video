@@ -1,0 +1,60 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<ul class="breadcrumbs">
+		<li><a href="https://fosdem.org/">FOSDEM 2017</a></li><li class="separator">/</li><li><a href="https://fosdem.org/schedule/">Schedule</a>
+		<li class="separator">/</li>
+		<li><a href="https://fosdem.org/schedule/streaming/">Live Streaming</a></li>
+		<li class="separator">/</li>
+		<li class="active">{{ room_name }}</li>
+	</ul>
+
+        <div id="pagetitles">
+		<h1>Watching {{ room_name }}</h1>
+	</div>
+
+
+    <h1 id="track">
+
+	</h1>
+
+	<div id="player"></div>
+
+    <div class="row">
+		<div class="col-md-12">&nbsp;</div>
+	</div>
+
+	<script type="text/javascript" src="/asset/clappr/clappr.min.js"></script>
+	<script>
+		var player = new Clappr.Player({
+			source: "https://stream.fosdem.org/{{ room }}.m3u8",
+			baseUrl: "/asset/clappr",
+			parentId: "#player",
+			autoPlay: true,
+
+			hlsjsConfig: {
+				xhrSetup: function(xhr, url) {
+					xhr.onerror = function() {
+						player.stop();
+						setTimeout(function(){
+							player.play();
+						}, 5000);
+					}
+				}
+			}
+
+
+		});
+
+		player.on(Clappr.Events.PLAYER_ERROR, function() {
+			console.log('retry');
+			//player.load("https://stream.fosdem.org/{{ room }}.m3u8");
+		});
+
+		player.on(Clappr.Events.PLAYBACK_ERROR, function() {
+			console.log('retry');
+			//player.load("https://stream.fosdem.org/{{ room }}.m3u8");
+		});
+	</script>
+{% endblock %}
