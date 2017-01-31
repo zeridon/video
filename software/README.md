@@ -144,3 +144,4 @@ addressing plan.
 |-----|----------|----|-----------|---------|
 | `02:c7:05:c1:ff:df` | broken spare slides | n/a | n/a | bpi, lcd, network, ssd working, problem with scaler or h264 encoder? |
 | `02:54:04:83:26:c1` | spare0-slides | | | tested and working, except for one network port |
+| `02:02:0a:82:05:40` | spare0-cam | | | tested and working, except for left network port |
