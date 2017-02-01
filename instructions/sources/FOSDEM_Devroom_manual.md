@@ -1,14 +1,14 @@
-# FOSDEM 2017 A/V devroom manager manual
+# FOSDEM 2017 A/V devroom manager manual, day DAY, room ROOM
 
 ## Where to get help
 
-* On IRC: irc.freenode.net, #fosdem-video
+* On IRC: `irc.freenode.net, #fosdem-video`
 * In person: there is a per-building team in the following locations:
-	* AW: under the stairs (in front of AW1.124)
-	* K: NOC/VOC (end of the corridor in front of K.1.105)
-	* H: behind the info desk
-	* U: in the corridor near UD2.120 (Chavanne)
-* In case of an emergency, call...
+	* **AW**: under the stairs (in front of AW1.124)
+	* **K**: NOC/VOC (end of the corridor in front of K.1.105)
+	* **H**: behind the info desk
+	* **U**: in the corridor near UD2.120 (Chavanne)
+* In case of an emergency, call Mark Van den Borre on `+32-486-961-726` or Vasil Kolev on `+359-888-508044`
 
 ## Equipment
 
@@ -28,14 +28,14 @@
 	* Ensure no necklaces, lanyards, scarves, beards or other objects that could touch the microphone during the talk;
 	* If there is no suitable place to attach the microphone, a lanyard could be used for this purpose;
 	* The microphone receiver is attached to the belt of the speaker. If this is not possible, attach it to their pocket;
-* Make sure the microphone is turned on. The audio levels can be checked on the camera.
+* **Make sure the microphone is turned on**. The audio levels can be checked on the camera.
 
 ## Video mixing control
 
-At https://control.video.fosdem.org/ you can access the video control for your room.
+At `https://control.video.fosdem.org/` you can access the video control for your room.
 
-* Username: USERNAME
-* Password: PASSWORD
+* Username: `USERNAME`
+* Password: `PASSWORD`
 
 The interface is pretty self-explanatory (and usable even on a mobile phone), you can see the current output, the camera and presenter box sources, and select one of four different views that will go on the stream and be recorded:
 
