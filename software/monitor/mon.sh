@@ -116,7 +116,8 @@ fi
 if ! [ -x `which mpv` ]; then
 	mpv=vlc
 elif  mpv --list-options|grep -w lavfi-complex >/dev/null 2>/dev/null ; then
-	mpv="mpv --demuxer-lavf-analyzeduration=30  --lavfi-complex='[aid1] asplit [t1] [ao] ; [t1] showvolume=w=1000:h=100 [t2] ; [vid1]  [t2]  overlay  [vo]'"
+	mpv='mpv --demuxer-lavf-analyzeduration=30'
+	mpvopt=--lavfi-complex='[aid1] asplit [t1] [ao] ; [t1] showvolume=w=1000:h=100 [t2] ; [vid1]  [t2]  overlay  [vo]'
 else
 	mpv="mpv --demuxer-lavf-analyzeduration=30"
 fi
@@ -126,4 +127,5 @@ if [ -z "${!stream}" ]; then
 	echo ${stream} not found
 	exit 3
 fi
-echo $stream $mpv ${!stream}
+echo Monitoring $stream 
+$mpv "$mpvopt" "${!stream}"
