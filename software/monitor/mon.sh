@@ -114,10 +114,8 @@ if [ "$2" != cam ] && [ "$2" != slides ] && [ "$2" != vocto ] && [ "$2" != backe
 fi
 
 if ! [ -x `which mpv` ]; then
-	echo "Please install mpv"
-	exit 4
-fi
-if  mpv --list-options|grep -w lavfi-complex >/dev/null 2>/dev/null ; then
+	mpv=vlc
+elif  mpv --list-options|grep -w lavfi-complex >/dev/null 2>/dev/null ; then
 	mpv="mpv --demuxer-lavf-analyzeduration=30  --lavfi-complex='[aid1] asplit [t1] [ao] ; [t1] showvolume=w=1000:h=100 [t2] ; [vid1]  [t2]  overlay  [vo]'"
 else
 	mpv="mpv --demuxer-lavf-analyzeduration=30"
