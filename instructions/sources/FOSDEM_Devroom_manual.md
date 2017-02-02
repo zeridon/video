@@ -53,3 +53,11 @@ If you want to make the most of it, these are a few guidelines:
 * Use "full-screen - presentation" for demonstrations or slides with a lot of small text
 
 Be aware that whatever you choose to do will also end up in the final recordings. What is streamed is recorded. We will not re-mix videos after the conference.
+
+## Batteries
+
+During the event the video team will bring fresh batteries at set intervals, for you to install in the microphone(s). If you need help with that, the video team members will assist your. __Please make sure that the microphone is audible in the camera after you replace the batteries.__
+
+## "Cage"
+
+Because most rooms cannot have a dedicated volunteer to manage the camera and follow the speaker around, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. The video team will prepare those for the rooms where those could be needed.
