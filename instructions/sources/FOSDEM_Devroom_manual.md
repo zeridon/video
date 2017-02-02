@@ -61,3 +61,10 @@ During the event the video team will bring fresh batteries at set intervals, for
 ## "Cage"
 
 Because most rooms cannot have a dedicated volunteer to manage the camera and follow the speaker around, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. The video team will prepare those for the rooms where those could be needed.
+
+## Review
+
+https://review.video.fosdem.org is an experimental web based review system for slicing video into finished videos. If all goes well, video should available for you to cut by Saturday evening.
+* sole contact: Wouter Verhelst <wouter@fosdem.org>, "wouter" on irc.freenode.net#fosdem-video
+* As a devroom manager, expect email from him with a user name, password and detailed instructions.
+The video team in your building may be able to help you with this or not, depending on their workload.
