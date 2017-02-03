@@ -147,7 +147,7 @@ addressing plan.
 | `02:02:0a:82:05:40` | spare0-cam | | | tested and working, except for left network port |
 
 #### Staff laptops
-don't need static lease
+
 | MAC | hostname | IP | Multicast | Remarks |
 |-----|----------|----|-----------|---------|
 | `3c:97:0e:15:9c:65`| dragast | | | |
