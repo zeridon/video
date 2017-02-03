@@ -150,5 +150,7 @@ addressing plan.
 don't need static lease
 | MAC | hostname | IP | Multicast | Remarks |
 |-----|----------|----|-----------|---------|
-| `3c:97:0e:15:9c:65`| dragast |  | |
-| `f0:de:f1:c4:7a:b4`| looksaus | | |
+| `3c:97:0e:15:9c:65`| dragast | | | |
+| `f0:de:f1:c4:7a:b4`| looksaus | | | |
+| `f0:de:f1:fe:42:09` | glottis | | | |
+| `f0:de:f1:bb:1d:45` | cerberus | | | |
