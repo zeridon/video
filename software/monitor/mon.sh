@@ -2,7 +2,7 @@
 
 aw1120_cam='udp://227.0.0.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1121_cam='udp://227.0.1.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
-aw1124_cam='udp://227.0.2.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
+ud2119_cam='udp://227.0.2.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1125_cam='udp://227.0.3.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1126_cam='udp://227.0.4.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 h1301_cam='udp://227.1.0.2:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
@@ -27,7 +27,7 @@ ud2218a_cam='udp://227.4.4.2:9000/?timeout=10000000&buffer_size=81921024&fifo_si
 
 aw1120_slides='udp://227.0.0.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1121_slides='udp://227.0.1.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
-aw1124_slides='udp://227.0.2.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
+ud2119_slides='udp://227.0.2.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1125_slides='udp://227.0.3.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1126_slides='udp://227.0.4.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 h1301_slides='udp://227.1.0.1:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
@@ -52,7 +52,7 @@ ud2218a_slides='udp://227.4.4.1:9000/?timeout=10000000&buffer_size=81921024&fifo
 
 aw1120_vocto='udp://227.0.0.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1121_vocto='udp://227.0.1.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
-aw1124_vocto='udp://227.0.2.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
+ud2119_vocto='udp://227.0.2.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1125_vocto='udp://227.0.3.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 aw1126_vocto='udp://227.0.4.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
 h1301_vocto='udp://227.1.0.3:9000/?timeout=10000000&buffer_size=81921024&fifo_size=178481'
@@ -77,7 +77,7 @@ ud2218a_vocto='udp://227.4.4.3:9000/?timeout=10000000&buffer_size=81921024&fifo_
 
 aw1120_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/aw1120'
 aw1121_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/aw1121'
-aw1124_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/aw1124'
+ud2119_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/aw1124'
 aw1125_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/aw1125'
 aw1126_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/aw1126'
 h1301_backend='rtmp://streambackend0.video.fosdem.org:1935/stream/h1301'
