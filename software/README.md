@@ -154,3 +154,4 @@ addressing plan.
 | `f0:de:f1:c4:7a:b4`| looksaus | | | |
 | `f0:de:f1:fe:42:09` | glottis | | | |
 | `f0:de:f1:bb:1d:45` | cerberus | | | |
+| `f0:de:f1:ca:b6:bc` | neter | | | |
