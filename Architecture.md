@@ -1,8 +1,10 @@
-# General overview of the video streaming/recording architecture for FOSDEM
+# General overview of the video streaming/recording architecture for FOSDEM 
 
 ## TLDR
 
 camera & presenter laptop -> videoboxes -> voctops -> restreamer -> caches <- browsers
+
+For a drawing, see graph/fosdem-video-2017.pdf.
 
 ## Elements
 
@@ -20,6 +22,8 @@ The main elements are:
 Better described in the instruction manual.
 
 Here we have the microphones connected to an audio mixer (in the case of the smallest rooms, the mixer is skipped), which goes then in one of the inputs of the camera. The camera is connected to the camera videobox over HDMI, and the videobox records the input and streams it in MPEG-TS over multicast UDP. The presenter's laptop is connected to the presenter videobox, which also records the input and streams it in the same way. 
+
+Both video boxes display on their screens a screenshot of what they push out over UDP (by reading the same stream).
 
 For the hardware in the videoboxes, see `hardware/README.md`.
 
@@ -45,7 +49,7 @@ All the voctomix scripts can be seen in `software/ansible/playbooks/roles/voctop
 
 The voctops then forward the streams are forwarded to the main restreamer at scaleway and the backup, from the streamed-out H.264 UDP stream, using the `streamcast.sh` and `streamcast_backup.sh` scripts.
 
-The recordings of the final material are done on the main restreamer and the backup. In addition, all udp multicast streams (the single streams frop every video box as well as the merged stream per room) are also dumped on two separate laptops with the ansible role `stream-dumper`.
+The recordings of the final material are done on the main restreamer and the backup. In addition, all udp multicast streams (the single streams from every video box as well as the merged stream per room) are also dumped on two separate laptops with the ansible role `stream-dumper`.
 
 The main restreamer is nginx with the RTMP module (https://github.com/arut/nginx-rtmp-module) and receives the streams via RTMP. It makes there the primary recordings and server HLS to the caching servers.
 
