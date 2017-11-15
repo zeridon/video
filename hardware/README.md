@@ -1,4 +1,4 @@
-#Hardware Architecture
+# Hardware Architecture
 
 For 2016, 2 types of boxes are in use: 1 type connected to a camera, and 1 connected to a presentation laptop. 
 
@@ -36,7 +36,7 @@ In addition to the basics, the presenter boxes have the following extra componen
 
   A simple VGA splitter that allows for simulatneous input of the VGA signal to both the scaler and the output port.
 
-##Schematics
+## Schematics
 
 The Camera box is wired as follows:
 
