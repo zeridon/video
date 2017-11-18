@@ -142,14 +142,14 @@ addressing plan.
 
 | MAC | hostname | IP | Multicast | Remarks |
 |-----|----------|----|-----------|---------|
-| `02:c7:05:c1:ff:df` | temp0-slides | | | ok |
-| `02:43:06:c2:4d:41` | temp1-slides | | | ok |
 | `02:54:04:83:26:c1` | spare0-slides | | | ok |
-| `02:c8:08:42:75:07` | spare1-slides |  | | Vasil |
-| `02:48:06:c1:1c:a1` | spare1-cam | | | Vasil |
-| `02:55:0b:42:3e:91` | temp1-cam | | | ok |
-| `02:06:08:c0:ec:64` | temp2-cam | | | ok |
-| `02:14:06:02:09:1c` | temp3-cam | | | ok |
+| `02:c8:08:42:75:07` | spare1-slides | | | vasil |
+| `02:c7:05:c1:ff:df` | spare2-slides | | | ok |
+| `02:43:06:c2:4d:41` | spare3-slides | | | ok |
+| `02:14:06:02:09:1c` | spare0-cam | | | ok |
+| `02:48:06:c1:1c:a1` | spare1-cam | | | vasil |
+| `02:55:0b:42:3e:91` | spare2-cam | | | ok |
+| `02:06:08:c0:ec:64` | spare3-cam | | | ok |
 
 
 #### Staff laptops
