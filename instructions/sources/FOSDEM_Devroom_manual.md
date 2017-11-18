@@ -11,7 +11,7 @@
 
 ## Starting a presentation
 
-* Connect the speaker's laptop to the video box on the free VGA port. If the speaker doesn't have a VGA port, use an HDMI-to-VGA converter. One can be provided by the video teamm bring it back once you're done.
+* Connect the speaker's laptop to the VGA in port of the video box. If the speaker doesn't have a VGA port, use the FOSDEM supplied HDMI-to-VGA converter.
 	* Make sure that the video box displays the screen of the laptop on its display. The output there is delayed by ~5 seconds.
 * Make the speaker wear the microphone. Here are some guidelines:
 	* The microphone is attached to speaker's clothes, close to the neck, under the chin in the middle of the torso;
@@ -27,7 +27,7 @@ At `https://control.video.fosdem.org/` you can access the video control for your
 * Username: `USERNAME`
 * Password: `PASSWORD`
 
-The interface is pretty self-explanatory (and usable even on a mobile phone), you can see the current output, the camera and presenter box sources, and select one of four different views that will go on the stream and be recorded:
+The interface is pretty self-explanatory (and usable even on a mobile phone). You can see the current output, the camera and presenter box sources, and select one of four different views that will go on the stream and be recorded:
 
 * Picture-in-picture - big presentation, small camera view (this is the default), or swapped
 * Full-screen - camera or presentation
@@ -44,7 +44,7 @@ Be aware that whatever you choose to do will also end up in the final recordings
 
 ## Review
 
-`https://review.video.fosdem.org` is an experimental system for preparing the finished videos. If all goes well, video be should available for you to cut by Saturday evening.
+`https://review.video.fosdem.org` is for preparing the finished videos.
 
 * Contact: Wouter Verhelst <wouter@fosdem.org>, `wouter` on `irc.freenode.net#fosdem-video`
 * As a devroom manager, expect email from him with a user name, password and detailed instructions.
@@ -55,5 +55,3 @@ Be aware that whatever you choose to do will also end up in the final recordings
 During the event the video team will bring fresh batteries at set intervals, for you to install in the microphone(s). If you need help with that, the video team members will assist your. __Please make sure that the microphone is audible in the camera after you replace the batteries.__
 
 Because most rooms cannot have a dedicated volunteer to manage the camera and follow the speaker around, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. The video team will prepare those for the rooms where those could be needed.
-
-
