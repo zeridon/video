@@ -1,4 +1,4 @@
-# FOSDEM 2017 A/V devroom manager manual, day DAY, room ROOM
+# FOSDEM 2018 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
 * On IRC: `irc.freenode.net, #fosdem-video`
