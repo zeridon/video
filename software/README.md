@@ -15,6 +15,7 @@ Ultimately, we would like to move to Debian, but for the time being this will
 do.
 
 ## Faking a stream from a videobox
+
 If you want to realisticly fake the streaming output of a video box, that is
 easy! Use a recent version of `youtube-dl`:
 <pre>
@@ -53,7 +54,7 @@ addressing plan.
 | `00:00:00:00:00:00` | streamdump0 | 185.175.218.10 |
 | `00:00:00:00:00:00` | streamdump1 | 185.175.218.11 |
 
-### Vocto laptops (a.k.a. vocotops)
+### Voctops
 
 | MAC | hostname | IP | Multicast |
 |-----|----------|----|-----------|
@@ -81,9 +82,15 @@ addressing plan.
 | `3c:97:0e:33:0e:5f` | ud2120-voctop | 185.175.218.85 | 227.4.3.3 |
 | `3c:97:0e:9a:bd:68` | ud2218a-voctop | 185.175.218.86 | 227.4.4.3 |
 | `3c:97:0e:9a:17:5c` | ud2119-voctop | 185.175.218.87 | 227.4.5.3 |
-| `3c:97:0e:9a:0f:94` | spare0-voctop |
-| `3c:97:0e:95:93:28` | spare1-voctop |
-| `3c:97:0e:9a:0f:ad` | spare2-voctop |
+
+#### Spares
+
+| MAC | hostname | IP | Multicast |
+|-----|----------|----|-----------|
+| `3c:97:0e:9a:0f:94` | spare0-voctop | 185.175.218.88 | 227.9.0.3 |
+| `3c:97:0e:95:93:28` | spare1-voctop | 185.175.218.89 | 227.9.1.3 |
+| `3c:97:0e:9a:0f:ad` | spare2-voctop | 185.175.218.90 | 227.9.2.3 |
+
 ### Video boxes
 
 | MAC | hostname | IP | Multicast | Remarks |
@@ -141,15 +148,14 @@ addressing plan.
 
 | MAC | hostname | IP | Multicast | Remarks |
 |-----|----------|----|-----------|---------|
-| `02:54:04:83:26:c1` | spare0-slides | | | ok |
-| `02:c8:08:42:75:07` | spare1-slides | | | vasil |
-| `02:c7:05:c1:ff:df` | spare2-slides | | | ok |
-| `02:43:06:c2:4d:41` | spare3-slides | | | ok |
-| `02:14:06:02:09:1c` | spare0-cam | | | ok |
-| `02:48:06:c1:1c:a1` | spare1-cam | | | vasil |
-| `02:55:0b:42:3e:91` | spare2-cam | | | ok |
-| `02:06:08:c0:ec:64` | spare3-cam | | | ok |
-
+| `02:54:04:83:26:c1` | spare0-slides | 185.175.218.176 | 227.9.1.1 | ok |
+| `02:14:06:02:09:1c` | spare0-cam | 185.175.218.177 | 227.9.1.2 | ok |
+| `02:c8:08:42:75:07` | spare1-slides | 185.175.218.178 | 227.9.2.1 | vasil |
+| `02:48:06:c1:1c:a1` | spare1-cam | 185.175.218.179 | 227.9.2.2 | vasil |
+| `02:c7:05:c1:ff:df` | spare2-slides | 185.175.218.180 | 227.9.3.1 | ok |
+| `02:55:0b:42:3e:91` | spare2-cam | 185.175.218.181 | 227.9.3.2 | ok |
+| `02:43:06:c2:4d:41` | spare3-slides | 185.175.218.182 | 227.9.4.1 | ok |
+| `02:06:08:c0:ec:64` | spare3-cam | 185.175.218.183 | 227.9.4.2 | ok |
 
 #### Staff laptops
 
