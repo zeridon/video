@@ -166,3 +166,8 @@ addressing plan.
 | `f0:de:f1:fe:42:09` | glottis | | | |
 | `f0:de:f1:bb:1d:45` | cerberus | | | |
 | `f0:de:f1:ca:b6:bc` | neter | | | |
+| `3c:97:0e:83:a5:c9` | video-team0 | | | |
+| `3c:97:0e:ce:46:31` | video-team1 | | | |
+| `3c:97:0e:ae:c7:h2` | video-team2 | | | |
+| `3c:97:0e:bd:02:7e` | video-team3 | | | |
+| `3c:97:0e:9a:17:95` | video-team4 | | | |
