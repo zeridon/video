@@ -275,6 +275,7 @@ a.btn-purple:hover {
 	float:left;
 	margin:0 0.1em;
 	padding:0 0.1em;
+	margin-top: 3px;
 }
 .breadcrumbs li.separator {
     color: #9f9f9f;
@@ -302,6 +303,7 @@ a.btn-purple:hover {
 	z-index:5;
 	text-shadow:0 1px 0 #fff;
 	margin:0 0 -6px;
+	margin-top: -8px;
 	background:#efefef url(/asset/img/style/bg-title-box-t.gif) repeat-x;
 }
 .title-box .holder{
