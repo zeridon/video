@@ -33,6 +33,12 @@ mpv udp://227.0.0.2:9000
 ffplay udp://227.0.0.2:9000
 </pre>
 
+## Waking up all voctops using the table in this README file
+
+Quick and dirty:
+
+    cat README.md | grep "\-voctop" | sed -e 's/`//g' | sed -e 's/ //g' | cut -d'|' -f2 | while read mac; do wol $mac; done;
+
 ## Streaming
 
 ## Addressing plan
