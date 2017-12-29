@@ -31,4 +31,11 @@ $app->get('/watch/{room}', function ($room) use ($app) {
 	]);
 });
 
+// list
+$app->get('/list', function () use ($app) {
+	return $app['twig']->render('list.twig', [
+		'rooms' => $app['config']['rooms'],
+	]);
+});
+
 $app->run();
