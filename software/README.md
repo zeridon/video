@@ -51,8 +51,8 @@ addressing plan.
 
 | MAC | hostname | IP |
 |-----|----------|----|
-| `00:00:00:00:00:00` | streamdump0 | 185.175.218.10 |
-| `00:00:00:00:00:00` | streamdump1 | 185.175.218.11 |
+| `3c:97:0e:97:31:c6` | streamdump0 | 185.175.218.10 |
+| `3c:97:0e:8a:0c:bd` | streamdump1 | 185.175.218.11 |
 
 ### Voctops
 
