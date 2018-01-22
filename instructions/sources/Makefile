@@ -19,7 +19,7 @@ depend: .depend
 	ebook-convert FOSDEM_AV_manual.html ../FOSDEM_AV_manual.epub  --language en --no-default-epub-cover
 
 dm: .depend makedep.sh tmpl.my FOSDEM_Devroom_manual.md plaintext pregen.sh dm-build-timestamp
-	pregen.sh
+	./pregen.sh
 	touch dm-build-timestamp
 
 clean:
