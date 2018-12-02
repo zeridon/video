@@ -55,3 +55,5 @@ Be aware that whatever you choose to do will also end up in the final recordings
 During the event the video team will bring fresh batteries at set intervals, for you to install in the microphone(s). If you need help with that, the video team members will assist your. __Please make sure that the microphone is audible in the camera after you replace the batteries.__
 
 Because most rooms cannot have a dedicated volunteer to manage the camera and follow the speaker around, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. The video team will prepare those for the rooms where those could be needed.
+
+Questions from remote users. If you want to take questions from remote users, please organise the channels for this in advance.
