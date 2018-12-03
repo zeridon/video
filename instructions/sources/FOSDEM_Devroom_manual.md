@@ -1,4 +1,4 @@
-# FOSDEM 2018 A/V devroom manager manual, day DAY, room ROOM
+# FOSDEM 2019 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
 * On IRC: `irc.freenode.net, #fosdem-video`
@@ -6,12 +6,13 @@
 	* **AW**: under the stairs (in front of AW1.124)
 	* **K**: NOC (end of corridor in front of K.1.105)
 	* **H**: behind the info desk
-	* **U**: in the corridor near UD2.120 (Chavanne)
+	* **UD**: in the corridor near UD2.120 (Chavanne)
+	* **UA**: in the corridor near UA2.118 (Henriot)
 * Emergency: Mark Van den Borre on `+32486961726` or Vasil Kolev on `+359888508044`
 
 ## Starting a presentation
 
-* Connect the speaker's laptop to the VGA in port of the video box. If the speaker doesn't have a VGA port, use the FOSDEM supplied HDMI-to-VGA converter.
+* Connect the speaker's laptop to the HDMI in port of the video box. If the speaker has only VGA out, a limited number of VGA to HDMI adapters are available with the per-building video support team.
 	* Make sure that the video box displays the screen of the laptop on its display. The output there is delayed by ~5 seconds.
 * Make the speaker wear the microphone. Here are some guidelines:
 	* The microphone is attached to speaker's clothes, close to the neck, under the chin in the middle of the torso;
