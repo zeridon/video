@@ -163,8 +163,8 @@ addressing plan.
 
 | MAC | hostname | IP | Remarks |
 |-----|----------|----|---------|
-| `02:86:07:41:62:7e` | spare0-cam | 185.175.218.182 | ok (vasil) |
-| `02:c3:08:43:5b:43` | spare0-slides | 185.175.218.183 | lcd color off, bad contact? (vasil) |
+| `???` | spare0-cam | 185.175.218.182 | ok (vasil) |
+| `???` | spare0-slides | 185.175.218.183 | lcd color off, bad contact? (vasil) |
 
 #### Staff laptops
 
