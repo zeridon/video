@@ -102,8 +102,8 @@ addressing plan.
 
 ### Video boxes
 
-| MAC | hostname | IP | Multicast | Remarks |
-|-----|----------|----|-----------|---------|
+| MAC | hostname | IP | Remarks |
+|-----|----------|----|---------|
 | `02:88:09:40:dc:5a` | aw1120-cam | 185.175.218.128 | ok |
 | `02:8e:06:02:95:26` | aw1120-slides | 185.175.218.129 | ok |
 | `02:02:0a:82:05:40` | aw1121-cam | 185.175.218.130 | ok |
@@ -161,8 +161,8 @@ addressing plan.
 
 #### Spares
 
-| MAC | hostname | IP | Multicast | Remarks |
-|-----|----------|----|-----------|---------|
+| MAC | hostname | IP | Remarks |
+|-----|----------|----|---------|
 | `02:86:07:41:62:7e` | spare0-cam | 185.175.218.182 | ok (vasil) |
 | `02:c3:08:43:5b:43` | spare0-slides | 185.175.218.183 | lcd color off, bad contact? (vasil) |
 
