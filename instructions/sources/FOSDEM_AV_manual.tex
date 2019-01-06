@@ -142,13 +142,13 @@ If you are volunteering for video inside a devroom, please:
 Please do \emph{NOT} disconnect or turn off any equipment yourself. That is the task of the per building team only.
 
 \section{Rooms}
-We have 24 rooms: 12 small, 6 large and 6 extra large rooms. Each type of room has a different audio/video setup.
+We have 27 rooms: 12 small, 6 large and 6 extra large rooms. Each type of room has a different audio/video setup.
 \begin{itemize}
-  \item AW: AW1120 (S), AW1121 (S), AW1124 (S), AW1125 (S), AW1126 (S)
+  \item AW: AW1120 (S), AW1121 (S), AW1125 (S), AW1126 (S)
   \item K: K1105 (XXL), K3201 (S), K3401 (S), K4201 (S), K4401 (S), K4601 (S)
-  \item H: H1201 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (XXL)
-  \item UA: UA2214 (L), UA2220 (XXL), UB2252A (XXL), TODO more
-  \item UD: UD2120 (XXL), UD2218A (L), TODO more
+  \item H: H1301 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (XXL)
+  \item UA: UA2214 (L), UA2118(), UA2220 (XXL), UB2147(), UB2252A (XXL)
+  \item UD: UD2119 (), UD2120 (XXL), UD2218A (), UD2218A (L)
   \item J: Janson (XXL)
 \end{itemize}
 
@@ -166,10 +166,9 @@ The connections there are as follows:
   \item XLR cable from the microphone receiver to channel 1 (LEFT) of the camera
   \item USB power to the microphone receiver
   \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left VGA port to the beamer in the room
-  \item VGA cable from the speaker's laptop to the right VGA port of the presenter box
-  \item stereo-jack cable + converter from 3.5" to 6.25" jack from the speaker's laptop to the sound port of the presenter box
-  \item stereo-jack + converter from 3.5" to 6.25" from the presenter box to the PA system if the room (if any)
+  \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
+  \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
 \end{itemize}
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
@@ -194,10 +193,9 @@ The connections there are as follows:
   \item XLR cable from the right channel of the audio mixer to channel 2 (RIGHT) of the camera
   \item USB power to the microphone receiver
   \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left VGA port to the beamer in the room
-  \item VGA cable from the speaker's laptop to the right VGA port of the presenter box
-  \item stereo-jack cable + converter from 3.5" to 6.25" jack from the speaker's laptop to the sound port of the presenter box
-  \item stereo-jack + converter from 3.5" to 6.25" from the presenter box to the PA system if the room (if any)
+  \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
+  \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
 \end{itemize}
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
@@ -219,10 +217,9 @@ The connections there are as follows:
   \item XLR cable from the left channel of the audio mixer (ULB provided) to channel 1 (LEFT) of the camera
   \item XLR cable from the right channel of the audio mixer (ULB provided) to channel 2 (RIGHT) of the camera
   \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left VGA port to the beamer in the room
-  \item VGA cable from the speaker's laptop to the right VGA port of the presenter box
-  \item stereo-jack cable + converter from 3.5" to 6.25" jack from the speaker's laptop to the sound port of the presenter box
-  \item stereo-jack + converter from 3.5" to 6.25" from the presenter box to the PA system if the room (if any)
+  \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
+  \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
 \end{itemize}
 
 \subsubsection{Cabling diagram}
@@ -242,9 +239,10 @@ There is no need to operate the controls on the camera (once on and in the corre
   \item slides boxes only:
     \begin{itemize}
       \item the right jack connection should be connected to the room audio system
-      \item The right VGA connection should be connected to the projector
+      \item The right HDMI connection should be connected to the projector
+      \item The VGA connection should be connected to the projector, if the beamer is VGA-only
       \item The left jack connection should have a loose mini-jack cable, for connecting to the presenter laptop
-      \item The left VGA connection should have a loose VGA cable, for connecting to the presenter laptop
+      \item The left HDMI connection should have a loose HDMI cable, for connecting to the presenter laptop
     \end{itemize}
   \item Cam boxes only:
     \begin{itemize}
@@ -266,10 +264,9 @@ In the event of power loss or accidental unplugging, the system should fully aut
 
 While the box contains a network switch (all three ports are connected), \emph{do not connect your own equipment} to the box. The boxes are on a special subnet with reserved bandwidth for the video streaming, and any other equipment may compromise the quality of the broadcast.
 
-\emph{The slides boxes are VGA-only.}
-The internals are HDMI-compatible, but the ULB campus projection system only supports VGA.
-HDMI to VGA converters will be provided for each room.
-The VGA signal is automatically scaled to 720p (1280x720) at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
+\emph{The slides boxes have only HDMI input and HDMI and VGA output.}
+For speakers with only VGA outputs, the per-building video team will have convertors that can be loaned.
+The HDMI signal is automatically scaled to 720p (1280x720) at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
 
 \emph{The LCD display will inform you of all vital information about the current status of the box.} It shows a preview of the stream image (auto-refreshing screenshot, not live video), the current input resolution and refresh rate (should be 720p at 50Hz), its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and audio volume level (average over the last few seconds).
 

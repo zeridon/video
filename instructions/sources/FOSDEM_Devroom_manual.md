@@ -47,9 +47,10 @@ Be aware that whatever you choose to do will also end up in the final recordings
 
 `https://review.video.fosdem.org` is for preparing the finished videos.
 
-* Contact: Wouter Verhelst <wouter@fosdem.org>, `wouter` on `irc.freenode.net#fosdem-video`
-* As a devroom manager, you'll be on CC: for all emails to speakers in your rooms with links to the review.
+* All speakers will receive a link for reviewing their video.
+	* As a devroom manager, you'll be on CC: for such emails.
 * The video team in your building may be able to help you with this, depending on their workload.
+* Contact: Wouter Verhelst <wouter@fosdem.org>, `wouter` on `irc.freenode.net#fosdem-video`
 
 ## Misc
 
