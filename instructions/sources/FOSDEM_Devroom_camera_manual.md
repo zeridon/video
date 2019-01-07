@@ -36,7 +36,7 @@ There are a few things you need to know/keep in mind:
 * In some rooms the lights are either too bad or turned off so the slides can be seen. If the camera is on automatic mode and sees the screen, it'll try to show that and the speaker will be very dark. This is fixable by:
 	* Pointing the camera at the speaker only, without catching the screen, and
 	* Tuning the iris of the camera to be able to see the speaker. The iris on the Canon XF100 is configured by XXXXX, on the Sony NX100 by XXXXXXXX.
-* The lights in your room are controled LIGHTINSTRUCTIONSROOM
+* The lights in your room are controlled LIGHTINSTRUCTIONSROOM
 
 ## Video mixing control
 
@@ -64,6 +64,6 @@ Be aware that whatever you choose to do will also end up in the final recordings
 
 During the event the video team will bring fresh batteries at set intervals, for you to install in the microphone(s). If you need help with that, the video team members will assist your. __Please make sure that the microphone is audible in the camera after you replace the batteries.__
 
-To make your job easier, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. Notifying the speakers before each talk of these boundaries will aslo help.
+To make your job easier, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. Notifying the speakers before each talk of these boundaries will also help.
 
 
