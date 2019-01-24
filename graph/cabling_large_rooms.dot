@@ -36,7 +36,6 @@ digraph G {
 		camera_xlr_in_1 [label = "audio in CH1\nXLR female port\n48V phantom power"];
 		camera_xlr_in_2 [label = "audio in CH2\nXLR female port\n48V phantom power"];
 		camera_hdmi_out [label = "HDMI out\nHDMI A (full size) female"];
-		camera_internal_mic [label="audio in CH2\ninternal microphone"];
 		camera_audio_monitor [label="audio monitoring port\n3.5mm trs stereo female"];
 		camera_ac_in [label="camera AC input"];
 	}
