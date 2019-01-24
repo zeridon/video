@@ -7,15 +7,15 @@ digraph G {
 	speaker_microphone [label="speaker microphone\nsennheiser avx me2\nesk avx bodypack transmitter\nautonomy: 15h (BA30 battery)/11h (2x AA)", URL="https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf"];
 	subgraph cluster_speaker_microphone_receiver {
 		label = "speaker microphone receiver\nsennheiser ekp avx receiver\nDC autonomy: >4h (BA20 battery)\nAC autonomy: ∞\nphantom auto power on/off"
-		URL = "https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf";
+			URL = "https://en-us.sennheiser.com/global-downloads/file/6524/AVX_Manual_06_2015_EN.pdf";
 		speaker_microphone_receiver_usb_power_connector [label = "power input port\nmicro usb female"];
 		speaker_microphone_receiver_xlr_connector [label = "XLR male plug"];
 	}
 	speaker_laptop [label = "speaker laptop"];
 	speaker_laptop_optional_adapter [label = "optional vga->hdmi adapter", style="dotted"];
 	subgraph cluster_camera {
-		label = "camera\nCanon XF100"
-		URL = "http://downloads.canon.com/cpr/software/video/Canon_XF100_XF105_Instruction_Manual.pdf";
+		label="camera\nSony HXR-NX100"
+		URL="https://pro.sony.com/bbsccms/assets/files/micro/nxcam/latest/Sony_HXR-NX100.pdf";
 		camera_xlr_in [label = "audio in CH1\nXLR female port\n48V phantom power"];
 		camera_hdmi_out [label = "HDMI out\nHDMI A (full size) female"];
 		camera_internal_mic [label="audio in CH2\ninternal microphone"];
@@ -24,13 +24,13 @@ digraph G {
 	}
 
 	subgraph fosdem_network {
-			#style = filled;
-			color = lightgrey;
-			node [style = filled];
-			//parts
-			subgraph cluster_cam_box {
-				label = "camera box";
-				URL = "https://github.com/FOSDEM/video";
+#style = filled;
+		color = lightgrey;
+		node [style = filled];
+		//parts
+		subgraph cluster_cam_box {
+			label = "camera box";
+			URL = "https://github.com/FOSDEM/video";
 				cam_box_hdmi_in [label="HDMI in\nHDMI A (full size) female"];
 				cam_box_switch [label="3x Gbit dumb switch"];
 				cam_box_ac_in [label="AC in"];

@@ -1,5 +1,5 @@
 digraph G {
-	label="FOSDEM 2017 xxl rooms video cabling setup:\nh2215, janson, k1105, ua2220, ub2252a, ud2120";
+	label="FOSDEM 2019 xxl rooms video cabling setup:\njanson, k1105";
 	concentrate = true;
 	compound = true;
 	node [shape = box];
@@ -24,13 +24,12 @@ digraph G {
 
 	subgraph cluster_speaker_laptop {
 		label = "speaker laptop";
-		speaker_laptop_vga_out = "VGA OUT (female)";
+		speaker_laptop_vga_out = "HDMI OUT (female)";
 		speaker_laptop_hdmi_out = "HDMI out";
 		speaker_laptop_other_screen_out = "other screen out\n(not VGA or HDMI)";
-		speaker_laptop_audio_out = "analog audio out\n3.5mm trs female unbalanced stereo";
 		speaker_laptop_power_in = "AC power in";
 	}
-	hdmi_vga_adapter [label = "optional hdmi->vga adapter", style="dotted"];
+	vga_hdmi_adapter [label = "optional vga->hdmi adapter", style="dotted"];
 	subgraph cluster_camera {
 		label="camera\nSony HXR-NX100"
 		URL="https://pro.sony.com/bbsccms/assets/files/micro/nxcam/latest/Sony_HXR-NX100.pdf";
@@ -57,10 +56,8 @@ digraph G {
 			subgraph cluster_speaker_box {
 				label = "speaker box";
 				URL = "https://github.com/FOSDEM/video";
-				speaker_box_vga_in [label="VGA in\nleft VGA port\nfemale"];
-				speaker_box_vga_out [label="VGA out\nright VGA port\nfemale"];
-				speaker_box_audio_in [label="audio in\nleft audio port\n6.35mm trs female"];
-				speaker_box_audio_out [label="audio out\nright audio port\n6.35mm trs female"];
+				speaker_box_hdmi_in [label="HDMI in\nleft HDMI port\nfemale"];
+				speaker_box_hdmi_out [label="HDMI out\nright HDMI port\nfemale"];
 				speaker_box_switch [label="3x Gbit dumb switch"];
 				speaker_box_ac_in [label="AC in"];
 			}
@@ -78,7 +75,7 @@ digraph G {
 	}
 	cam_power_strip [label="camera side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
 	speaker_power_strip [label="speaker side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
-	room_projector [label="room projector VGA in\nVGA port\nfemale"];
+	room_projector [label="room projector HDMI in\nHDMI port\nfemale"];
 	headphones [label="Sennheiser HD201 headphones\n3.5mm trs stereo male\nrental budgetcam", URL="https://en-us.sennheiser.com/over-ear-headphones-hd-201"];
 	video_vlan [label="FOSDEM video vlan", style="dotted"];
 
@@ -91,13 +88,11 @@ digraph G {
 
 	mix_panel_out_1 -> camera_xlr_in_1 [label = "xlr cable\nfemale/male"];
 	mix_panel_out_2 -> camera_xlr_in_2 [label = "xlr cable\nfemale/male"];
-	speaker_laptop_vga_out -> speaker_box_vga_in [label = "vga cable male/male", style="dotted"];
-	speaker_laptop_audio_out -> speaker_box_audio_in [label = "3.5mm male -> 6.35mm trs male cable\nunbalanced stereo", style = "dotted"];
-	speaker_laptop_hdmi_out -> hdmi_vga_adapter [label = "HDMI cable\nmale/male", style = "dotted"];
-	hdmi_vga_adapter -> speaker_box_vga_in [label = "vga cable male/male", style = "dotted"];
-	hdmi_vga_adapter -> speaker_box_audio_in [label = "3.5 -> 6.35mm trs male/male cable\nunbalanced stereo", style = "dotted"];
+	speaker_laptop_hdmi_out -> speaker_box_hdmi_in [label = "vga cable male/male"];
+	speaker_laptop_vga_out -> vga_hdmi_adapter [label = "VGA cable\nmale/male", style = "dotted"];
+	vga_hdmi_adapter -> speaker_box_hdmi_in [label = "HDMI cable male/male", style = "dotted"];
 	camera_hdmi_out -> cam_box_hdmi_in [label = "HDMI cable\nHDMI A (full size)\nmale/male"];
-	speaker_box_vga_out -> room_projector [label = "VGA cable\nmale/male"];
+	speaker_box_hdmi_out -> room_projector [label = "HDMI cable\nmale/male"];
 	camera_audio_monitor -> headphones;
 	speaker_box_switch -> video_vlan [dir = "both", label = "ethernet cable"];
 	cam_box_switch -> video_vlan [dir = "both", label = "ethernet cable"];
