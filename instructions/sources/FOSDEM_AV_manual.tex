@@ -142,29 +142,29 @@ If you are volunteering for video inside a devroom, please:
 Please do \emph{NOT} disconnect or turn off any equipment yourself. That is the task of the per building team only.
 
 \section{Rooms}
-We have 27 rooms: 12 small, 6 large and 6 extra large rooms. Each type of room has a different audio/video setup.
+We have 26 rooms: 12 small, 12 large and 2 extra large rooms. Each type of room has a different audio/video setup.
 \begin{itemize}
   \item AW: AW1120 (S), AW1121 (S), AW1125 (S), AW1126 (S)
   \item K: K1105 (XXL), K3201 (S), K3401 (S), K4201 (S), K4401 (S), K4601 (S)
-  \item H: H1301 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (XXL)
-  \item UA: UA2214 (L, Sunday only), UA2118(), UA2220 (XXL, Sunday only), UB2147(), UB2252A (XXL)
-  \item UD: UD2119 (), UD2120 (XXL), UD2208 (L), UD2218A (L)
+  \item H: H1301 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (L)
+  \item UA: UA2214 (L), UA2118(L, Sunday only), UA2220 (L), UB2252A (L)
+  \item UD: UD2119 (S), UD2120 (L), UD2208 (L), UD2218A (L)
   \item J: Janson (XXL)
 \end{itemize}
 
 Your team's flight case comes with a printed map of where the video gear goes in your rooms. Audio and power cabling should be arranged loose on the floor, or taped down after coordination with the network team! When taping down XLR cables, please provide sufficient slack for getting up to the camera. It is about 2m above ground level!
 
 \subsection{Small rooms}
-These have a projector and a tie pin microphone for the speaker. They use the Canon XF100 camera. Audience questions are picked up by the camera's internal microphone.
+These have a projector and a tie pin microphone for the speaker. Audience questions are picked up by the camera's internal microphone.
 
 The connections there are as follows:
 
 \begin{itemize}
   \item Network cable (video VLAN) to the presenter box (any port)
   \item Network cable form the presenter to camera box (any port, on each side)
-  \item Camera, presenter box, video box, USB power for the microphone receiver to the AC power
+  \item Camera, presenter box, video box to the AC power
   \item XLR cable from the microphone receiver to channel 1 (LEFT) of the camera
-  \item USB power to the microphone receiver
+  \item USB powerbank to the microphone receiver
   \item HDMI from the camera to the HDMI port of the video box
   \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
   \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
@@ -186,12 +186,12 @@ The connections there are as follows:
 \begin{itemize}
   \item Network cable (video VLAN) to the presenter box (any port)
   \item Network cable form the presenter to camera box (any port, on each side)
-  \item Camera, presenter box, video box, USB power for the microphone receiver, audio mixer to the AC power
+  \item Camera, presenter box, video box, audio mixer to the AC power
   \item Microphone receiver for the speaker's microphone to channel 1 of the mixer
   \item Microphone receiver for the audience microphone to channel 2 of the mixer
   \item XLR cable from the left channel of the audio mixer to channel 1 (LEFT) of the camera
   \item XLR cable from the right channel of the audio mixer to channel 2 (RIGHT) of the camera
-  \item USB power to the microphone receiver
+  \item USB powerbank to the microphone receivers
   \item HDMI from the camera to the HDMI port of the video box
   \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
   \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
@@ -238,10 +238,8 @@ There is no need to operate the controls on the camera (once on and in the corre
   \item a power cable, connected to mains, with the box already turned on
   \item slides boxes only:
     \begin{itemize}
-      \item the right jack connection should be connected to the room audio system
       \item The right HDMI connection should be connected to the projector
       \item The VGA connection should be connected to the projector, if the beamer is VGA-only
-      \item The left jack connection should have a loose mini-jack cable, for connecting to the presenter laptop
       \item The left HDMI connection should have a loose HDMI cable, for connecting to the presenter laptop
     \end{itemize}
   \item Cam boxes only:
@@ -420,7 +418,7 @@ If any of these do not work, re-check your connections and settings. Still no lu
 When you have finished setup of the room, please report to VOC for a full test.
 They will let you know what rooms still need attention.
 
-\subsection{Setup for Canon XF100E (small rooms)}
+\subsection{TODO Setup for Canon XF100E (previously used for small rooms)}
 
 \subsubsection{Screw camera on mount}
 Screw the camera onto the tripod. Every camera has a screw hole at the bottom that can be used for this. The plate has a distinct ``point camera in this direction''-arrow, pay attention to this. The screw can be tightened by a coin or similar object.
@@ -446,7 +444,7 @@ Do not forget to hook up the other end of the HDMI cable to the FOSDEM Video Box
 \end{figure}
 
 \subsubsection{Microphone}
-Plug the AVX receiver into CH1. Plug the USB charger cable into the AVX receiver, and the USB charger into the power strip.
+Plug the AVX receiver into CH1. Plug the USB powerbank cable into the AVX receiver.
 
 \begin{figure}[H]
   \centering
