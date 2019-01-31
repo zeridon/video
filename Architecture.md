@@ -21,9 +21,9 @@ The main elements are:
 
 Better described in the instruction manual.
 
-Here we have the microphones connected to an audio mixer (in the case of the smallest rooms, the mixer is skipped), which goes then in one of the inputs of the camera. The camera is connected to the camera videobox over HDMI, and the videobox records the input and streams it in MPEG-TS over multicast UDP. The presenter's laptop is connected to the presenter videobox, which also records the input and streams it in the same way. 
+Here we have the microphones connected to an audio mixer (in the case of the smallest rooms, the mixer is skipped), which goes then in one of the inputs of the camera. The camera is connected to the camera videobox over HDMI, and the videobox records the input and streams it in MPEG-TS over TCP. The presenter's laptop is connected to the presenter videobox, which also records the input and streams it in the same way. 
 
-Both video boxes display on their screens a screenshot of what they push out over UDP (by reading the same stream).
+Both video boxes display on their screens a screenshot of what they push out over TCP (The stream gets tee'd. Look at how sproxy gets used...).
 
 For the hardware in the videoboxes, see `hardware/README.md`.
 
