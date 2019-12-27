@@ -130,8 +130,8 @@ addressing plan.
 | `02:c8:08:42:75:07` | h2215-slides | 185.175.218.149 | check |
 | `02:17:0b:02:cb:fc` | janson-cam | 185.175.218.150 | check |
 | `02:91:07:c2:64:9a` | janson-slides | 185.175.218.151 | check |
-| `` | k1105-cam |  |  |
-| `` | k1105-slides |  |  |
+| `00:13:14:01:89:4b` | k1105-cam | 185.175.218.152 | check (vasil, chineese box) |
+| `00:13:14:01:89:19` | k1105-slides | 185.175.218.153 | check (vasil, chineese box) |
 | `` | k3201-cam |  |  |
 | `` | k3201-slides |  |  |
 | `02:06:06:41:82:58` | k3401-cam | 185.175.218.156 | check |
