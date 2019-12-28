@@ -59,7 +59,7 @@ addressing plan.
 
 | MAC | hostname | IP |
 |-----|----------|----|
-| `` | streamdump0 | 185.175.218.10 |
+| `68:f7:28:92:b7:ce` | streamdump0 | 185.175.218.10 |
 | `00:0f:53:07:0a:60` | control | 185.175.218.11 |
 
 ### Voctops
