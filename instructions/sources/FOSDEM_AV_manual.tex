@@ -137,19 +137,20 @@ If you are volunteering for video inside a devroom, please:
   \item stay near the video equipment, keeping it safe (from people tripping over cables for example!)
   \item make sure the camera is aimed at the speaker
   \item monitor the devroom video/audio feeds (headphone!) for problems
-  \item signal problems to VOC by irc
+  \item signal problems to VOC by irc/matrix
 \end{itemize}
 
 Please do \emph{NOT} disconnect or turn off any equipment yourself. That is the task of the per building team only.
 
 \section{Rooms}
-We have 26 rooms: 12 small, 12 large and 2 extra large rooms. Each type of room has a different audio/video setup.
+We have 30 rooms: 14 small, 14 large and 2 extra large rooms. Each type of room has a different audio/video setup.
 \begin{itemize}
   \item AW: AW1120 (S), AW1121 (S), AW1125 (S), AW1126 (S)
   \item K: K1105 (XXL), K3201 (S), K3401 (S), K4201 (S), K4401 (S), K4601 (S)
   \item H: H1301 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (L)
-  \item UA: UA2214 (L), UA2118(L, Sunday only), UA2220 (L), UB2252A (L)
+  \item UA: UA2214 (L), UA2118(L), UA2220 (L), UB2147 (S), UB2252A (L)
   \item UD: UD2119 (S), UD2120 (L), UD2208 (L), UD2218A (L)
+  \item UB4: UB4136 (S), UB5132 (L, Sunday only), UB5230 (L, Sunday only)
   \item J: Janson (XXL)
 \end{itemize}
 
@@ -346,8 +347,8 @@ If unsure, verify with the image below.
 
 \begin{tabular}{| l || l | l | l | l |}
 Input & Left switch & Middle switch & Right switch & dial \\ \hline
-Input1 & BOTTOM (Mic 48V) & MIDDLE (EXT MIC) & TOP (AUTO) & anything \\
-Input2 & BOTTOM (Mic 48V) & TOP (INT MIC) & TOP (AUTO) & anything \\
+Input1 & BOTTOM (Mic 48V) & MIDDLE (EXT MIC) & BOTTOM (MANUAL) & 5 \\
+Input2 & BOTTOM (Mic 48V) & TOP (INT MIC) & BOTTOM (MANUAL) & 5 \\
 \end{tabular}
 
 \begin{figure}[H]
@@ -368,8 +369,6 @@ For the other rooms:
 
 \begin{itemize}
   \item Set the levels to 5 for both channels;
-  \item On the mixing console, set a small pan to the LEFT of the speaker microphone;
-  \item On the mixing console, set a small pan to the RIGHT of the rest of the microphones;
   \item For the speaker microphone yell while wearing the microphone and make sure the levels don't go over the end, adjusting from the mixing console;
   \item For all the other microphones, talk moderately loudly while adjusting the microphones, making sure that they don't go over the top;
   \item Adjust the overall volume for the room to be audible as much as possible without creating feedback;
@@ -418,164 +417,6 @@ If any of these do not work, re-check your connections and settings. Still no lu
 \subsubsection{Contact control}
 When you have finished setup of the room, please report to VOC for a full test.
 They will let you know what rooms still need attention.
-
-\subsection{TODO Setup for Canon XF100E (previously used for small rooms)}
-
-\subsubsection{Screw camera on mount}
-Screw the camera onto the tripod. Every camera has a screw hole at the bottom that can be used for this. The plate has a distinct ``point camera in this direction''-arrow, pay attention to this. The screw can be tightened by a coin or similar object.
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 120mm]{Cam00.jpg}
-\end{figure}
-
-
-\subsubsection{Power and HDMI connectors}
-First plug in the battery at the back, then plug in both the HDMI and the power cable.
-
-The HDMI connector is hidden behind a cover on the bottom of the right side.
-Power is on the back, to the left of the battery slot.
-Look at the picture if you're unsure.
-
-Do not forget to hook up the other end of the HDMI cable to the FOSDEM Video Box, and the power cable into the mains.
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{Canon01.jpg}
-\end{figure}
-
-\subsubsection{Microphone}
-Plug the AVX receiver into CH1. Plug the USB powerbank cable into the AVX receiver.
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{canon_avx_receiver.jpg}
-\end{figure}
-
-\subsubsection{Headphones}
-Plug the headphone into the headphone port.
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{canon_headphones.jpg}
-\end{figure}
-
-
-\subsubsection{Power on}
-Now please boot the camera. You can find the power button on the top of the left side of the camera (looking from behind).
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{Canon03.jpg}
-\end{figure}
-
-After booting the camera, please check if:
-\begin{itemize}
-  \item the avx microphone receiver should power on (signaling through 48V phantom power)
-  \item the transmitter auto pairs with the receiver. It should show "AVX" plus the latest four digits of the receiver serial on its lcd
-  \item the transmitter battery status. Fully charged, it should indicate approximately 15 hours on the lcd
-\end{itemize}
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{paired_avx.jpg}
-\end{figure}
-
-
-\subsubsection{Audio settings}
-The audio settings can only be done through the hardware switches on the camera.
-Make sure to set the switches to the correct positions, as these directly affect the availability of audio on the recordings and live streams. Wrong settings means no audio!
-The position of the dials does not matter (those are for manual volume, we use automatic volume).
-If unsure, verify with the image below.
-
-\begin{tabular}{| l || l | l | l | l |}
-Input & Top switch & Middle switch & Bottom switch & dial at top \\ \hline
-CH1 & LEFT (A) & RIGHT (MIC 48V) & RIGHT (EXT) & anything \\
-CH2 & LEFT (A) & LEFT (MIC) & LEFT (INT) & anything \\
-\end{tabular}
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{canon_audio_settings.jpg}
-\end{figure}
-
-\subsubsection{Audio levels}
-
-To configure the audio levels, use the following procedure for small rooms:
-\begin{itemize}
-  \item Set the levels to 5 for both channels;
-  \item For the internal camera microphone (channel 2, small rooms) talk loud near the camera and make sure the levels don't go over the end (using the dial);
-  \item For channel 1 (speaker microphone) yell while wearing the microphone and make sure the levels don't go over the end (using the dial);
-\end{itemize}
-
-For the other rooms:
-
-\begin{itemize}
-  \item Set the levels to 5 for both channels;
-  \item On the mixing console, set a small pan to the LEFT of the speaker microphone;
-  \item On the mixing console, set a small pan to the RIGHT of the rest of the microphones;
-  \item For the speaker microphone yell while wearing the microphone and make sure the levels don't go over the end, adjusting from the mixing console;
-  \item For all the other microphones, talk moderately loudly while adjusting the microphones, making sure that they don't go over the top;
-  \item Adjust the overall volume for the room to be audible as much as possible without creating feedback;
-  \item Additionally test for feedback while moving with the microphone around the PA system in the room and adjust accordingly.
-\end{itemize}
-
-\subsubsection{Factory default settings}
-Does the camera ask for a time and date? Then you can skip this section, as it already is on factory default settings.
-Does the camera NOT ask for a time and date? Then we have to reset to factory default settings before configuring anything.
-
-We reset all but the picture profile settings to factory default:
-Menu $\rightarrow$ "Other Functions" (wrench icon) $\rightarrow$ Reset $\rightarrow$ All Settings $\rightarrow$ OK.
-
-The camera reboots. Now we set time and date. Not important. Just clicking the SET button a few times to get through this.
-
-
-\subsubsection{Video settings}
-The video settings will be done through the on-screen display.
-
-Set up like this:
-
-Menu $\rightarrow$ Last pictogram (wrench) $\rightarrow$ Bit Rate/Resolution $\rightarrow$ 1280x720 50Mbps
-
-Menu $\rightarrow$ Last pictogram (wrench) $\rightarrow$ Frame Rate $\rightarrow$ 50P
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{Canon05.jpg}
-\end{figure}
-
-With this camera model, the on-screen display will show the configuration that is active during normal operation.
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{Canon06.jpg}
-\end{figure}
-
-\subsubsection{Remove the lens cover}
-Do not forget to remove the lens cover. Store it in the camera bag for safe keeping.
-
-\begin{figure}[H]
-  \centering
-\includegraphics[width = 120mm]{Canon07.jpg}
-\end{figure}
-
-\subsubsection{Checklist}
-Please check the following before leaving:
-\begin{itemize}
-  \item Does CH1 on the camera display spike when you tap the (powered on) wireless speaker microphone?
-  \item Does CH2 on the camera display spike when you tap the camera itself with your fingers?
-  \item Turn off the wireless speaker microphone before leaving to conserve battery power for during the day.
-  \item Do both video boxes say mode 720p50 on the LCD display?
-  \item Does the camera video box display the camera image on the LCD display?
-\end{itemize}
-
-If any of these do not work, re-check your connections and settings. Still no luck? Contract control!
-
-\subsubsection{Cage}
-
-As most of the rooms will not have a dedicated volunteer to manage the camera, we recommend that for every room after you put in the camera you put two pieces of tape (or if not possible, something else), to mark the left and right end of the field of vision of the camera, so the devroom managers can notify the speakers where to walk and not lose them. It's recommended that this area doesn't make the camera see the projection screen, if possible. Otherwise it's very possible to have flickering on the recordings, or a very very dark image of the speaker.
-
-\subsubsection{Warn VOC}
-When you've finished setting up the room, please report this to VOC by walkie and on irc://irc.freenode.net\#fosdem-video or https://riot.im/app/\#/room/\#fosdem-video:matrix.org .
 
 \section{During the event}
 It is expected of the devroom video volunteers that they keep an eye on the following, in order of importance:
