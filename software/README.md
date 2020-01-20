@@ -140,7 +140,7 @@ addressing plan.
 | `02:47:02:c2:33:95` | k4201-cam | 185.175.218.158 | check |
 | `02:09:07:82:a4:ec` | k4201-slides | 185.175.218.159 | check |
 | `02:08:07:81:3b:a4` | k4401-cam | 185.175.218.160 | check |
-| `02:c8:06:c2:a8:37` | k4401-slides | 185.175.218.161 | check |
+| `02:16:01:c2:00:e0` | k4401-slides | 185.175.218.161 | check (libv, frankenbox) |
 | `02:07:03:42:41:d4` | k4601-cam | 185.175.218.162 | check |
 | `02:92:08:81:8f:0e` | k4601-slides | 185.175.218.163 | check |
 | `02:c9:04:81:73:97` | ua2114-cam | 185.175.218.164 | check |
@@ -173,6 +173,8 @@ addressing plan.
 | `02:07:0a:82:66:3c` | spare0-cam | 185.175.218.186 | check |
 | `02:c3:08:43:5b:43` | spare0-slides | 185.175.218.187 | check |
 | `00:13:14:01:63:cf` | spare1-slides | 185.175.218.188 | check (vasil, chineese box, can also be cam)|
+| `02:c8:06:c2:a8:37` | spare2-slides | 185.175.218.189 | check (was k4401-slides)
+| `02:0a:07:c2:77:08` | k4401-juggler | 185.175.218.190 | check (libv, k4401 test box)
 
 #### Staff laptops
 
