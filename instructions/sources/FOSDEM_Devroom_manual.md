@@ -2,13 +2,16 @@
 ## Where to get help
 
 * On IRC: `irc.freenode.net, #fosdem-video`
+* On Matrix/riot.im: There's an app on `https://riot.im`, install that, register, and look for `#fosdem-video` or `#fosdem-video:matrix.org` (bridged to IRC).
+* For just web access to it, you can use `https://riot.im/app/`.
 * In person: there is a per-building team in the following locations:
 	* **AW**: under the stairs (in front of AW1.124)
-	* **K**: NOC (end of corridor in front of K.1.105)
+	* **K**: third floor, near K.3601
 	* **H**: behind the info desk
 	* **UD**: in the corridor near UD2.120 (Chavanne)
 	* **UA**: in the corridor near UA2.118 (Henriot)
-* Emergency: Mark Van den Borre on `+32486961726` or Vasil Kolev on `+359888508044`
+	* For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105.
+* Emergency: Vasil Kolev on `+359888508044` or Mark Van den Borre on `+32486961726`.
 
 ## Starting a presentation
 
