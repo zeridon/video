@@ -22,7 +22,7 @@
 	* Ensure no necklaces, lanyards, scarves, beards or other objects that could touch the microphone during the talk;
 	* If there is no suitable place to attach the microphone, a lanyard could be used for this purpose;
 	* The microphone receiver is attached to the belt of the speaker. If this is not possible, attach it to their pocket;
-* **Make sure the microphone is turned on**. The audio levels can be checked on the camera.
+* **Make sure the microphone is turned on** and **not muted**. The audio levels can be checked on the camera.
 
 ## Video mixing control
 
