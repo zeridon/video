@@ -1,26 +1,16 @@
-{% extends "base.twig" %}
+{% extends "layout.base.twig" %}
 
 {% block content %}
-
-	<ul class="breadcrumbs">
-		<li><a href="https://fosdem.org/">FOSDEM 2018</a></li><li class="separator">/</li><li><a href="https://fosdem.org/schedule/">Schedule</a>
-		<li class="separator">/</li>
-		<li><a href="https://fosdem.org/schedule/streaming/">Live Streaming</a></li>
-		<li class="separator">/</li>
-		<li class="active">{{ room_name }}</li>
-	</ul>
-
-        <div id="pagetitles">
-		<h1>Watching {{ room_name }}</h1>
-	</div>
-
 
     <h1 id="track"></h1>
 
 	<div id="player"></div>
 
+	<p>&nbsp;</p>
+
 	<p>
-		Direct link: <a href="https://stream.fosdem.org/{{ room }}.m3u8">https://stream.fosdem.org/{{ room }}.m3u8</a>
+		Direct link: <a href="https://stream.fosdem.org/{{ room }}.m3u8">https://stream.fosdem.org/{{ room }}.m3u8</a> <br />
+		Schedule: <a href="https://fosdem.org/schedule/room/{{ room_slug }}">https://fosdem.org/schedule/room/{{ room_slug }}</a> <br />
 	</p>
 
 	<script type="text/javascript" src="/asset/clappr/clappr.min.js"></script>

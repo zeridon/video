@@ -1,19 +1,6 @@
-{% extends "base.twig" %}
+{% extends "layout.base.twig" %}
 
 {% block content %}
-
-	<ul class="breadcrumbs">
-		<li><a href="https://fosdem.org/">FOSDEM 2018</a></li><li class="separator">/</li><li><a href="https://fosdem.org/schedule/">Schedule</a>
-		<li class="separator">/</li>
-		<li><a href="https://fosdem.org/schedule/streaming/">Live Streaming</a></li>
-		<li class="separator">/</li>
-		<li class="active">List</li>
-	</ul>
-
-        <div id="pagetitles">
-		<h1>List</h1>
-	</div>
-
 	{% for room, room_name in rooms %}
 		<a href="/watch/{{ room }}">{{ room_name }}</a><br/>
 	{% endfor %}

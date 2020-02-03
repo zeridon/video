@@ -25,15 +25,24 @@ $app->get('/watch/{room}', function ($room) use ($app) {
 		throw new \Exception('Unknown room');
 	}
 
+	$room_slug = str_replace('(', '', $app['config']['rooms'][$room]);
+	$room_slug = str_replace(')', '', $room_slug);
+	$room_slug = str_replace('.', '', $room_slug);
+	$room_slug = str_replace(' ', '_', $room_slug);
+	$room_slug = strtolower($room_slug);
+
 	return $app['twig']->render('watch.twig', [
+		'title' => 'Stream ' . $app['config']['rooms'][$room],
 		'room' => $room,
 		'room_name' => $app['config']['rooms'][$room],
+		'room_slug' => $room_slug,
 	]);
 });
 
 // list
 $app->get('/list', function () use ($app) {
 	return $app['twig']->render('list.twig', [
+		'title' => 'List',
 		'rooms' => $app['config']['rooms'],
 	]);
 });
