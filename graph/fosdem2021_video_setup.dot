@@ -7,20 +7,22 @@ digraph G {
 		subgraph cluster_chat_fosdem_org {
 			label= "matrix services";
 			//parts
-			matrix_room_fosdem[label="general FOSDEM public matrix rooms\ninfodesk, video, ..."];
-			matrix_room_fosdem_backstage[label="general FOSDEM private matrix rooms\nconduct, ..."];
-			matrix_room_track[label="<track>#chat.fosdem.org\npublic matrix room\nno jitsi"];
-			matrix_room_track_backstage[label="<track>-backstage#chat.fosdem.org\nprivate matrix room\njitsi might come in handy"];
-			matrix_room_talk_backstage [label="\<talk_id_or_slug\>-backstage#chat.fosdem.org\nmatrix room\nbuiltin jitsi video chat\ninvite only\nopens up after q\&a", URL="https://github.com"];
-			matrix_room_talk [label="\<talk_id_or_slug\>#chat.fosdem.org\nmatrix room\ngeneral audience", URL="https://github.com"];
+			matrix_room_fosdem[label="general FOSDEM public matrix rooms\ninfodesk, video, ...", URL="https://chat.fosdem.org"];
+			matrix_room_fosdem_backstage[label="general FOSDEM private matrix rooms\nconduct, ...", URL="https://chat.fosdem.org"];
+			matrix_room_track[label="<track>#chat.fosdem.org\npublic matrix room\nno jitsi", URL="https://chat.fosdem.org"];
+			matrix_room_track_backstage[label="<track>-backstage#chat.fosdem.org\nprivate matrix room\njitsi might come in handy", URL="https://chat.fosdem.org"];
+			matrix_room_talk_backstage [label="\<talk_id_or_slug\>-backstage#chat.fosdem.org\nmatrix room\nbuiltin jitsi video chat\ninvite only\nopens up after q\&a", URL="https://chat.fosdem.org"];
+			matrix_room_talk [label="\<talk_id_or_slug\>#chat.fosdem.org\nmatrix room\ngeneral audience", URL="https://chat.fosdem.org/"];
+			matrix_bot [label="matrix bot"];
 			label = "chat.fosdem.org";
 		}
 
 		subgraph cluster_jibri_fosdem_org {
-			jibri_instance_n[label="jibri instance n", URL="http://github.com"];
+			jibri_instance_n[label="jibri instance n"];
 			label = "jibri elastic cluster\n convert jitsi rooms into rtmp video stream";
 		}
 		label = "matrix run infra";
+		URL = "https://hack.allmende.io/XWLiTMEQQFuzQA4vl1WMaw";
 		style=filled;
 		color=yellow;
 	}
@@ -29,11 +31,11 @@ digraph G {
 	subgraph cluster_fosdem_infra {
 		subgraph penta {
 			label = "pentabarf";
-			penta_fosdem_org [label = "penta.fosdem.org"];
+			penta_fosdem_org [label = "penta.fosdem.org", URL="https://penta.fosdem.org"];
 		}
 		subgraph sreview {
 			style=filled;
-			review_fosdem_org [label="review.fosdem.org"];
+			review_fosdem_org [label="review.fosdem.org", URL="https://review.fosdem.org"];
 		}
 		subgraph cluster_vocto_video_fosdem_org {
 			nginx_rtmp [label="nginx rtmp\ndns 1\: \<talk_id\>.talk.video.fosdem.org\ndns 2: \<track\>.video.fosdem.org"];
@@ -47,9 +49,10 @@ digraph G {
 			cdn_video_fosdem_org [label="FOSDEM video cdn"];
 		}
 		subgraph fosdem_org {
-			www_fosdem_org [label="FOSDEM website"];
+			www_fosdem_org [label="FOSDEM website", URL="https://fosdem.org"];
 		}
 		label = "FOSDEM run infra";
+		URL="https://github.com/FOSDEM/infrastructure/tree/master/ansible/roles/";
 		style = filled;
 		color = lightblue;
 	}
@@ -63,15 +66,12 @@ digraph G {
 	matrix_room_talk_backstage -> jibri_instance_n;
 	jibri_instance_n -> nginx_rtmp [label="rtmp push\n rtmp://<talk_id>.talk.video.fosdem.org/stream/<talk_id>"];
 	penta_fosdem_org -> ingest_timers [label="penta xml"];
-	penta_fosdem_org -> matrix_room_track [label="populate matrix: rooms, talks, speakers(?),..."];
-	penta_fosdem_org -> matrix_room_track_backstage;
-	penta_fosdem_org -> matrix_room_talk;
-	penta_fosdem_org -> matrix_room_talk_backstage;
+	penta_fosdem_org -> matrix_bot [label="populate matrix: rooms, talks, speakers(?)\ninvite speakers to their rooms, ..."];
 	ingest_timers -> vocto_ingest;
 	nginx_rtmp -> vocto_ingest;
 	vocto_ingest -> voctomix [label="rtmp pull"];
 	voctomix -> cdn_video_fosdem_org;
-	cdn_video_fosdem_org -> matrix_room_talk [label="public stream: prerecording + q\&a"];
+	cdn_video_fosdem_org -> matrix_room_track [label="public stream: prerecording + q\&a"];
 	cdn_video_fosdem_org -> www_fosdem_org;
 	matrix_room_talk -> audience;
 	matrix_room_talk_backstage -> audience [label="after q\&a: change to\npublic matrix room with moderated jitsi"];
