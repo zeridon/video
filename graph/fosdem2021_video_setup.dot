@@ -1,0 +1,79 @@
+digraph G {
+	#concentrate=true;
+	node [shape=box];
+	speaker_laptop [label="speaker"];
+
+	subgraph cluster_matrix_run_infra {
+		subgraph cluster_chat_fosdem_org {
+			label= "matrix services";
+			//parts
+			matrix_room_fosdem[label="general FOSDEM public matrix rooms\ninfodesk, video, ..."];
+			matrix_room_fosdem_backstage[label="general FOSDEM private matrix rooms\nconduct, ..."];
+			matrix_room_track[label="<track>#chat.fosdem.org\npublic matrix room\nno jitsi"];
+			matrix_room_track_backstage[label="<track>-backstage#chat.fosdem.org\nprivate matrix room\njitsi might come in handy"];
+			matrix_room_talk_backstage [label="\<talk_id_or_slug\>-backstage#chat.fosdem.org\nmatrix room\nbuiltin jitsi video chat\ninvite only\nopens up after q\&a", URL="https://github.com"];
+			matrix_room_talk [label="\<talk_id_or_slug\>#chat.fosdem.org\nmatrix room\ngeneral audience", URL="https://github.com"];
+			label = "chat.fosdem.org";
+		}
+
+		subgraph cluster_jibri_fosdem_org {
+			jibri_instance_n[label="jibri instance n", URL="http://github.com"];
+			label = "jibri elastic cluster\n convert jitsi rooms into rtmp video stream";
+		}
+		label = "matrix run infra";
+		style=filled;
+		color=yellow;
+	}
+
+
+	subgraph cluster_fosdem_infra {
+		subgraph penta {
+			label = "pentabarf";
+			penta_fosdem_org [label = "penta.fosdem.org"];
+		}
+		subgraph sreview {
+			style=filled;
+			review_fosdem_org [label="review.fosdem.org"];
+		}
+		subgraph cluster_vocto_video_fosdem_org {
+			nginx_rtmp [label="nginx rtmp\ndns 1\: \<talk_id\>.talk.video.fosdem.org\ndns 2: \<track\>.video.fosdem.org"];
+			vocto_ingest [label="ingest prerecordings\&\&\ningest q\&a"];
+			voctomix [label="voctomix"];
+			ingest_timers [label="systemd ingest timers"];
+			recordings_cache [label="local video prerecordings cache"];
+			label = "vocto-\<room\>.video.fosdem.org";
+		}
+		subgraph cluster_cdn_video_fosdem_org {
+			cdn_video_fosdem_org [label="FOSDEM video cdn"];
+		}
+		subgraph fosdem_org {
+			www_fosdem_org [label="FOSDEM website"];
+		}
+		label = "FOSDEM run infra";
+		style = filled;
+		color = lightblue;
+	}
+	audience;
+
+
+	speaker_laptop -> matrix_room_talk_backstage [label="live q\&a and hallway"];
+	speaker_laptop -> review_fosdem_org [label="upload recording\nauth method?"];
+	review_fosdem_org -> recordings_cache [label="rsync?"];
+	recordings_cache -> vocto_ingest;
+	matrix_room_talk_backstage -> jibri_instance_n;
+	jibri_instance_n -> nginx_rtmp [label="rtmp push\n rtmp://<talk_id>.talk.video.fosdem.org/stream/<talk_id>"];
+	penta_fosdem_org -> ingest_timers [label="penta xml"];
+	penta_fosdem_org -> matrix_room_track [label="populate matrix: rooms, talks, speakers(?),..."];
+	penta_fosdem_org -> matrix_room_track_backstage;
+	penta_fosdem_org -> matrix_room_talk;
+	penta_fosdem_org -> matrix_room_talk_backstage;
+	ingest_timers -> vocto_ingest;
+	nginx_rtmp -> vocto_ingest;
+	vocto_ingest -> voctomix [label="rtmp pull"];
+	voctomix -> cdn_video_fosdem_org;
+	cdn_video_fosdem_org -> matrix_room_talk [label="public stream: prerecording + q\&a"];
+	cdn_video_fosdem_org -> www_fosdem_org;
+	matrix_room_talk -> audience;
+	matrix_room_talk_backstage -> audience [label="after q\&a: change to\npublic matrix room with moderated jitsi"];
+	www_fosdem_org -> audience;
+}
