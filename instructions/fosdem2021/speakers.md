@@ -26,8 +26,8 @@ While your talk will be broadcast as prerecorded video, you will have a chance t
   - https://chat.fosdem.org/#/room/#cloud:fosdem.org
   
 ### Help! Something is wrong. Whom do I contact?
-- For issues with https://upload.video.fosdem.org , please contact video@fosdem.org. You may also be able to reach wouter live in the #video:fosdem.org matrix room.
-- For issues regarding matrix, please contact TODO.
+- For issues regarding https://upload.video.fosdem.org , please email video@fosdem.org. You may also be able to reach wouter live in the #video:fosdem.org matrix room.
+- For issues regarding matrix, please email experience@fosdem.org . You may also be able to reach the FOSDEM team live in the #speakers:fosdem.org matrix room.
   
 ## During the conference
   
