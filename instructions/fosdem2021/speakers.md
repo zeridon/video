@@ -5,7 +5,7 @@ In the below document, we'll assume that your talk's unique event id in the FOSD
 - https://penta.fosdem.org/event/edit/11790
 
 ## Before FOSDEM 2021
-### Talk video: prerecorded
+### Talk video recordings
 - Submit your prerecorded video through https://penta.fosdem.org/submission/FOSDEM21/event/11790 .
 - Your room manager will then review your talk.
 - Make sure your room ends up marked with state "done" at https://upload.video.fosdem.org/overview .
