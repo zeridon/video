@@ -9,7 +9,7 @@ In the below document, we'll assume that your talk's unique event id in the FOSD
 - Submit your prerecorded video through https://penta.fosdem.org/submission/FOSDEM21/event/11790 .
 - Your room manager will then review your talk.
 - Make sure your room ends up marked with state "done" at https://upload.video.fosdem.org/overview .
-- Verify your uploaded video on https://validate.video.fosdem.org/$your_private_link.mp4 . This is what will be broadcast at FOSDEM 2021. Warn video@fosdem.org in case of any issues. Hints:
+- Validate your final video on https://validate.video.fosdem.org/$your_private_link.mp4 . This is what will be broadcast at FOSDEM 2021. Warn video@fosdem.org in case of any issues. Hints:
   - Never share this link. Share your talk's unique event id.
   - Particularly check the end of the video. Make sure FOSDEM has the full recording.
 
