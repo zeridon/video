@@ -25,10 +25,10 @@ While your talk will be broadcast as prerecorded video, you will have a chance t
     - TODO: aliases?
   - https://chat.fosdem.org/#/room/#cloud:fosdem.org
   
-  ### Help! Something is wrong. Whom do I contact?
-  - For issues with https://upload.video.fosdem.org , please contact video@fosdem.org. You may also be able to reach wouter live in the #video:fosdem.org matrix room.
-  - For issues regarding matrix, please contact TODO.
+### Help! Something is wrong. Whom do I contact?
+- For issues with https://upload.video.fosdem.org , please contact video@fosdem.org. You may also be able to reach wouter live in the #video:fosdem.org matrix room.
+- For issues regarding matrix, please contact TODO.
   
-  ## During the conference
+## During the conference
   
-  ### Help! Something is wrong. Whom do I contact?
+### Help! Something is wrong. Whom do I contact?
