@@ -12,7 +12,7 @@
   - #video:fosdem.org . This is the public room for video issues.
   - #volunteers:fosdem.org . This is the public room for volunteers.
 
-In case you need any help, try to get into #missioncontrol:fosdem.org first. Almost everything is solvable from there. @shin.ice:fosdem.org should be able to help you get in if needed.
+In case you need any help, try to get into #missioncontrol:fosdem.org first. Almost everything is solvable from there. @shin.ice:fosdem.org should be able to help you get in if needed. After checking your staff credentials, obviously.
 
 ## During FOSDEM 2021
 
