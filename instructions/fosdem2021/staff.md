@@ -30,4 +30,7 @@ To invite someone else to an invite-only room:
 
 ```! conference inviteto #cloud-devroom_testing:fosdem.org @shin.ice:fosdem.org```
 
+### Kick and ban someone from a public room
+TODO
+
 ## After FOSDEM 2021
