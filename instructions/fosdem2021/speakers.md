@@ -63,7 +63,8 @@ Monitor your track's public room for interesting general audience questions and 
 - To be 200% sure, calculate your q&a start time yourself. Example:
   - Your scheduled start wall clock time is 10:00:00 am.
   - Add 30 s for a preroll (title) slide. 10:00:30 am.
-  - Add the length of your talk video. Let's say it's 17:32. Your q&a starts at 10:18:02 am.
+  - Add the length of your talk video. Let's say it's 17:32 long.
+  - Your q&a starts at 10:18:02 am.
 - **Do not rely on the public video stream** to decide when to start speaking live. Due to mixing, buffering, there is a time delta between seeing on the public stream and starting your q&a video. You don't want to keep your audience waiting between your talk and the q&a!
 
 ### 2. Answering audience questions during q&a
