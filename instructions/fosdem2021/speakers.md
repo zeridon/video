@@ -50,7 +50,21 @@ Did you follow the steps outlined under "Before FOSDEM 2021"? Then your talk wil
 - the FOSDEM matrix room for your talk (example: [https://chat.fosdem.org/#/room/#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org)
 - (most of) the FOSDEM apps available at https://fosdem.org/2021/schedule/mobile/
 
-You are supposed to be in the q&a room for your talk during this time, together with your room host.
+Be in your talk's backstage room ([https://chat.fosdem.org/#/room/#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org) at the start of your talk's broadcast.
+
+As soon as your prerecorded talk is being broadcast, join the embedded jitsi conference immediately upon joining the matrix room. You talk broadcast will switch over to the live jitsi room video after the end of your prerecorded talk. 
+
+Monitor your track's public room for interesting general audience questions and think of intelligent answers. Hints:
+  - Use the scoreboard widget. It gathers popular upvoted questions from the public room.
+  - Enlist the help of your backstage room host. (S)he is there to help you!
+
+**IMPORTANT: How to know exactly when your q&a session goes live?**
+- A bot in the room will warn you when your q&a is to go live.
+- To be 200% sure, calculate your q&a start time yourself. Example:
+  - Your scheduled start wall clock time is 10:00:00 am.
+  - Add 30 s for a preroll (title) slide. 10:00:30 am.
+  - Add the length of your talk video. Let's say it's 17:32. Your q&a starts at 10:18:02 am.
+- **Do not rely on the public video stream** to decide when to start speaking live. Due to buffering, there is a time delta between seeing on the public stream and starting your q&a video.
 
 ### 2. Answering audience questions during q&a
 
