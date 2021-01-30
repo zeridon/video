@@ -28,8 +28,6 @@ As staff, you have the ability to invite people into most any room, but only whe
 
 To invite someone else to an invite-only room:
 
-```! conference invite @shin.ice:fosdem.org  #cloud-devroom_testing:fosdem.org```
-
-TODO 20210130: For some reason, this is not working yet/anymore?
+```! conference inviteto #cloud-devroom_testing:fosdem.org @shin.ice:fosdem.org```
 
 ## After FOSDEM 2021
