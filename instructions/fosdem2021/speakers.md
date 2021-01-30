@@ -26,9 +26,7 @@ Here's what you'll need to do for the q&a session to go smoothly:
     - This room is invite only. It's accessible only to you, your q&a session host and FOSDEM staff.
   - The general audience room for your talk.
     - You should have received an invitation to this room.
-    - Alternatively, [schedule](https://fosdem.org/2021/schedule/events/) will tell you the name of your room:
-      - Look up your talk's title and find the room name.
-      - Derive your talk's broadcast room name. Example: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org).
+    - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2021/schedule/events/). Examples: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
   
 ### Help! Something is wrong. Whom do I contact?
 - For issues regarding https://upload.video.fosdem.org , please email video@fosdem.org. You may also be able to reach wouter live in the #video:fosdem.org matrix room.
