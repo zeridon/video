@@ -28,7 +28,7 @@ Please prepare well beforehand for the q&a session to go smoothly:
   - Potential spam issue with gmail.
  
 - (recommended, but optional). Add your matrix account to your https://penta.fosdem.org profile: person->im->matrix. This will help in assigning you the right  permissions as a speaker in https://chat.fosdem.org .
-![set your matrix id in penta](penta_matrix_id.png).
+![set your matrix id in penta](penta_set_matrix_id.png).
 
 - Join the backstage matrix room for your talk: [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
     - This room is invite only. It's accessible only to you as a speaker, your optional co-speakers, your q&a session host and FOSDEM staff.
