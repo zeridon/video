@@ -1,5 +1,5 @@
 ## Diagnostics
-From ingestion to website, you want to check where things go wrong
+From ingestion to website, if things go wrong, you want to check where:
 - Is the prerecorded file there?
 
   ```ssh root@<track>-vocto.video.fosdem.org ls -lh /mnt/video/*.mp4```
