@@ -64,9 +64,21 @@ Monitor your track's public room for interesting general audience questions and 
   - Your scheduled start wall clock time is 10:00:00 am.
   - Add 30 s for a preroll (title) slide. 10:00:30 am.
   - Add the length of your talk video. Let's say it's 17:32. Your q&a starts at 10:18:02 am.
-- **Do not rely on the public video stream** to decide when to start speaking live. Due to buffering, there is a time delta between seeing on the public stream and starting your q&a video.
+- **Do not rely on the public video stream** to decide when to start speaking live. Due to mixing, buffering, there is a time delta between seeing on the public stream and starting your q&a video. You don't want to keep your audience waiting between your talk and the q&a!
 
 ### 2. Answering audience questions during q&a
+You now have the opportunity to answer audience questions in a q&a session.
+
+**Hints:**
+  - Use your talk host's help. (S)he can keep an eye on audience feedback from the public room chat.
+  - When your time is up, your talk will automatically switch over to the next talk. You may want to keep an eye on the clock and invite super interested people into a hallway track (see "Hallway track" below).
+
+### 3. Hallway track
+Think of this as a minority of the audience clustering around the speaker for an informal chat in the hallway after the talk has ended.
+
+Once the live q&a is over, your backstage room will open up to the general audience. Audience members can then come and talk to you.
+
+If you want to make sure your audience finds its way to this hallway track, make some publicity around it near the end of your q&a session. Example: "Any further questions? Would you like to speak to me? Join me now in matrix room #talk-123456 for an interactive video chat.".
 
 ### Help! Something is wrong. Whom do I contact?
 You can reach the FOSDEM team in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
