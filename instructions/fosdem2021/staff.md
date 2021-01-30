@@ -20,12 +20,14 @@ In case you need any help, try to get into #missioncontrol:fosdem.org first. Alm
 As staff, you have the ability to step into most any room, but only when you are in #missioncontrol:fosdem.org .
 
 To invite yourself to the invite-only room:
+
 ```!conference inviteme #cloud-devroom_testing:fosdem.org```
 
 ### Invite someone to an invite-only room
 As staff, you have the ability to invite people into most any room, but only when you are in #missioncontrol:fosdem.org .
 
 To invite someone else to an invite-only room:
+
 ```! conference invite @shin.ice:fosdem.org  #cloud-devroom_testing:fosdem.org```
 
 TODO 20210130: For some reason, this is not working yet/anymore?
