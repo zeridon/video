@@ -52,9 +52,9 @@ Did you follow the steps outlined under "Before FOSDEM 2021"? Then your talk wil
 
 Be in your talk's backstage room ([https://chat.fosdem.org/#/room/#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org) at the start of your talk's broadcast.
 
-As soon as your prerecorded talk is being broadcast, join the embedded jitsi conference immediately upon joining the matrix room. You talk broadcast will switch over to the live jitsi room video after the end of your prerecorded talk. 
+As soon as your prerecorded talk is being broadcast,  immediately join the embedded jitsi conference in your backstage room. You talk broadcast will switch over to that after the end of your prerecorded talk. 
 
-Monitor your track's public room for interesting general audience questions and think of intelligent answers. Hints:
+Monitor your track's public room for interesting general audience questions and think of intelligent answers. **Hints**:
   - Use the scoreboard widget. It gathers popular upvoted questions from the public room.
   - Enlist the help of your backstage room host. (S)he is there to help you!
 
