@@ -30,8 +30,13 @@ While your talk will be broadcast as prerecorded video, you will have a chance t
 - For issues regarding matrix, please email experience@fosdem.org . You may also be able to reach the FOSDEM team live in the #speakers:fosdem.org matrix room.
   
 ## During FOSDEM 2021
-  
+Your talk is happens in three stages:
+1. Your prerecorded video is broadcast.
+2. You can answer audience questions during q&a.
+3. You can speak to the super interested fraction of your audience in the hallway track.
+
 ### Help! Something is wrong. Whom do I contact?
+You can reach the FOSDEM team in the #speakers:fosdem.org matrix room.
 
 ## After FOSDEM 2021
 When agreeing to speak at FOSDEM, you explicitly granted FOSDEM vzw the right to publish your video under a CC BY-SA license. Your video will be uploaded to the FOSDEM video archive at https://video.fosdem.org .
