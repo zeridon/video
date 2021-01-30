@@ -23,7 +23,7 @@ Here's what you'll need to do for the q&a session to go smoothly:
 
 - Get familiar with the matrix rooms for your talk:
   - [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
-    - This room is invite only. It's accessible only to you, your q&a session host and FOSDEM staff.
+    - This room is invite only. It's accessible only to you as a speaker, your optional co-speakers, your q&a session host and FOSDEM staff.
   - The general audience room for your talk.
     - You should have received an invitation to this room.
     - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2021/schedule/events/). Examples: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
