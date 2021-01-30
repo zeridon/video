@@ -14,4 +14,4 @@ From ingestion to website, you want to check where things go wrong
   ```mpv http://<track>-vocto.video.fosdem.org:8899 checks the output of the vocto mixer for the room```
 - Is the public stream output nominal?
 
-  ```mpv https://stream.fosdem.org/<track>.m3u8
+  ```mpv https://stream.fosdem.org/<track>.m3u8```
