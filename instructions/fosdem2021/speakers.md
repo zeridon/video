@@ -22,7 +22,7 @@ Here's what you'll need to do for the q&a session to go smoothly:
   - Potential spam issue with gmail.
 
 - Get familiar with the matrix rooms for your talk:
-  - #talk-123456:fosdem.org
+  - [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
     - This room is invite only. It's accessible only to you, your q&a session host and FOSDEM staff.
   - The general audience room for your talk.
     - You should have received an invitation to this room.
