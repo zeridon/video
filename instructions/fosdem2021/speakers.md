@@ -16,16 +16,20 @@ Here's what you'll need to do to get your talk video in:
   - Particularly check the end of the video. Make sure FOSDEM has the full recording.
 
 ### Talk Q&A: audience interaction using Matrix/Jitsi
-After your talk has been broadcast as prerecorded video, you will have a chance to address your audio's questions in a live broadcast q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that. This is a **matrix server with FOSDEM specific enrichments** only available using the **https://chat.fosdem.org web client. Please do not use any other matrix client.**
+After your talk has been broadcast as prerecorded video, you will have a chance to address your audio's questions in a live broadcast q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that.
 
-Here's what you'll need to do for the q&a session to go smoothly:
+**Note:** This is a **matrix server with FOSDEM specific enrichments** only available using the **https://chat.fosdem.org web client. As a speaker, please do not use any other matrix client.**
+
+Please prepare well beforehand for the q&a session to go smoothly:
+- Make sure you have access to a comfortably large screen. >= 24" screen size and >= 1920x1080 resolution would be comfortable. Things will work on a 12" 1366x768 laptop screen, but usability will suffer. Juggling an outgoing video stream, chat messages and a question scoreboard on a small screen is not fun.
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
   - Potential spam issue with gmail.
 
-- Get familiar with the matrix rooms for your talk:
-  - [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
+- Join the backstage matrix room for your talk: [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
     - This room is invite only. It's accessible only to you as a speaker, your optional co-speakers, your q&a session host and FOSDEM staff.
-  - The general audience room for your talk.
+    - You should have received an invitation by email. In case you have trouble getting in, any FOSDEM staff should be able to invite you here.
+    - TODO You'll have to explicitly accept 
+- Join the general audience room for your talk.
     - You should have received an invitation to this room.
     - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2021/schedule/events/). Examples: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
   
@@ -40,8 +44,15 @@ Your talk is happens in three stages:
 3. You can speak to the super interested fraction of your audience in the hallway track.
 
 ### 1. Prerecorded talk video broadcast
-Assuming you followed the steps outlined under "Before FOSDEM 2021", there's nothing you'll need to do.
+Did you follow the steps outlined under "Before FOSDEM 2021"? Then your talk will be broadcast at the [scheduled](https://fosdem.org/2021/schedule/events/) time, the FOSDEM audience will see a 30 seconds preroll slide, followed by your talk. These videos will be available in the following places:
+- https://fosdem.org : integrated into the page for your track.
+- https://live.fosdem.org/watch/<track> (example: https://live.fosdem.org/watch/dcollab) 
+- the FOSDEM matrix room for your talk (example: [https://chat.fosdem.org/#/room/#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org)
+- (most of) the FOSDEM apps available at https://fosdem.org/2021/schedule/mobile/
 
+You are supposed to be in the q&a room for your talk during this time, together with your room host.
+
+### 2. Answering audience questions during q&a
 
 ### Help! Something is wrong. Whom do I contact?
 You can reach the FOSDEM team in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
