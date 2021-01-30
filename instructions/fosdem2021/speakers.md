@@ -26,6 +26,9 @@ Please prepare well beforehand for the q&a session to go smoothly:
 - Make sure you have access to a comfortably large screen. >= 24" screen size and >= 1920x1080 resolution would be comfortable. Things will work on a 12" 1366x768 laptop screen, but usability will suffer. Juggling an outgoing video stream, chat messages and a question scoreboard on a small screen is not fun.
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
   - Potential spam issue with gmail.
+ 
+- (recommended, but optional). Add your matrix account to your https://penta.fosdem.org profile: person->im->matrix. This will help in assigning you the right  permissions as a speaker in https://chat.fosdem.org .
+![set your matrix id in penta](penta_matrix_id.png).
 
 - Join the backstage matrix room for your talk: [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
     - This room is invite only. It's accessible only to you as a speaker, your optional co-speakers, your q&a session host and FOSDEM staff.
