@@ -15,7 +15,7 @@ Here's what you'll need to do to get your talk video in:
   - Particularly check the end of the video. Make sure FOSDEM has the full recording.
 
 ### Talk Q&A: audience interaction using Matrix/Jitsi
-While your talk will be broadcast as prerecorded video, you will have a chance to interact with your talk audience in a live q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that.
+While your talk will be broadcast as prerecorded video, you will have a chance to interact with your talk audience in a live q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that. This is a **matrix server with FOSDEM specific enrichments** only available using the **https://chat.fosdem.org web client. Please do not use any other matrix client.**
 
 Here's what you'll need to do for the q&a session to go smoothly:
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
