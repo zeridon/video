@@ -29,8 +29,8 @@ Here's what you'll need to do for the q&a session to go smoothly:
     - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2021/schedule/events/). Examples: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
   
 ### Help! Something is wrong. Whom do I contact?
-- For issues regarding https://upload.video.fosdem.org , please email video@fosdem.org. You may also be able to reach wouter live in the #video:fosdem.org matrix room.
-- For issues regarding matrix, please email [experience@fosdem.org](mailto:experience@fosdem.org) . You may also be able to reach other speakers and the FOSDEM team live in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org matrix room.
+- For issues regarding https://upload.video.fosdem.org , please email [video@fosdem.org](mailto:video@fosdem.org). You may also be able to reach wouter live in the [#video:fosdem.org](https://chat.fosdem.org/#/room/#video:fosdem.org) matrix room.
+- For issues regarding matrix, please email [experience@fosdem.org](mailto:experience@fosdem.org) . You may also be able to reach other speakers and the FOSDEM team live in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
   
 ## During FOSDEM 2021
 Your talk is happens in three stages:
@@ -43,11 +43,11 @@ Assuming you followed the steps outlined under "Before FOSDEM 2021", there's not
 
 
 ### Help! Something is wrong. Whom do I contact?
-You can reach the FOSDEM team in the #speakers:fosdem.org matrix room.
+You can reach the FOSDEM team in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
 
 ## After FOSDEM 2021
 When agreeing to speak at FOSDEM, you explicitly granted FOSDEM vzw the right to publish your video under a CC BY-SA license. Your video will be uploaded to the FOSDEM video archive at https://video.fosdem.org .
 
 ### Help! Something is wrong. Whom do I contact?
-- For issues regarding your video at https://video.fosdem.org , please email video@fosdem.org .
-- For issues regarding the https://video.fosdem.org site in general, please email both video@fosdem.org and server@fosdem.org .
+- For issues regarding your video at https://video.fosdem.org , please email [video@fosdem.org](mailto:video@fosdem.org) .
+- For issues regarding the https://video.fosdem.org site in general, please email both [video@fosdem.org](mailto:video@fosdem.org) and [server@fosdem.org](mailto:server@fosdem.org) .
