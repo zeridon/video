@@ -2,7 +2,7 @@
 From ingestion to website, if things go wrong, you want to check where:
 - Is the prerecorded file there?
 
-  ```ssh root@<track>-vocto.video.fosdem.org ls -lh /mnt/video/*.mp4```
+  ```ssh root@<track>-vocto.video.fosdem.org ls -lh /mnt/video/<penta_id>.mp4```
 - Is the prerecorded file a sensible length?
 
   ```ssh root@<track>-vocto.video.fosdem.org ffprobe /mnt/video/<penta_id>.mp4 |& grep Duration```
