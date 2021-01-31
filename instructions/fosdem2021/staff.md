@@ -54,7 +54,9 @@ TODO
 ### General management:
 
 ```!conference inviteme <room>```         - Asks the bot to invite you to the given room.
+
 ```!conference inviteto <room> <user>```  - Asks the bot to invite the given user to the given room.
+
 ```!conference widgets <aud>```           - Creates all widgets for the auditorium and its talks.
 
 
