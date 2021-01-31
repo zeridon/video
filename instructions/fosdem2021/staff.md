@@ -34,7 +34,9 @@ If the bot isn't there, that doesn't work. In that case, use the normal invite m
 ```/invite @shin.ice:fosdem.org```
 
 ### Kick and ban someone from a public room
-TODO
+```/kick @shin.ice:fosdem.org```
+```/ban @shin.ice:fosdem.org```
+
 
 ## Conference bot help
 
