@@ -30,6 +30,9 @@ To invite someone else to an invite-only room:
 
 ```! conference inviteto #cloud-devroom_testing:fosdem.org @shin.ice:fosdem.org```
 
+If the bot isn't there, that doesn't work. In that case, use the normal invite mechanism:
+```/invite @shin.ice:fosdem.org```
+
 ### Kick and ban someone from a public room
 TODO
 
