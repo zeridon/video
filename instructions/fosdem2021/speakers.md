@@ -20,7 +20,7 @@ This is what will be broadcast at FOSDEM 2021. In case this looks good, no feedb
 ### Talk Q&A: audience interaction using Matrix/Jitsi
 After your talk has been broadcast as prerecorded video, you will have a chance to address your audio's questions in a live broadcast q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that.
 
-**Note:** This is a **matrix server with FOSDEM specific enrichments** only available using the **https://chat.fosdem.org web client. As a speaker, please do not use any other matrix client.**
+**Note:** This is a **matrix server with FOSDEM specific enrichments** only available using the **https://chat.fosdem.org web client. As a speaker, please do not use any other matrix client.** Using a matrix account with a different matrix server (eg: @yourname:matrix.org) is fine though.
 
 Please prepare well beforehand for the q&a session to go smoothly:
 - Make sure you have access to a comfortably large screen. >= 24" screen size and >= 1920x1080 resolution would be comfortable. Things will work on a 12" 1366x768 laptop screen, but usability will suffer. Juggling an outgoing video stream, chat messages and a question scoreboard on a small screen is not fun.
