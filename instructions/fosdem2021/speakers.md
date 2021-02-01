@@ -30,11 +30,15 @@ Please prepare well beforehand for the q&a session to go smoothly:
 - (recommended, but optional). Add your matrix account to your https://penta.fosdem.org profile: person->im->matrix. This will help in assigning you the right  permissions as a speaker in https://chat.fosdem.org .
 ![set your matrix id in penta](penta_set_matrix_id.png).
 
-- Join the backstage matrix room for your talk: [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
+- Join the following rooms:
+  - the backstage matrix room for your talk: [#talk-123456:fosdem.org](https://chat.fosdem.org/#/room/#talk-123456:fosdem.org)
     - This room is invite only. It's accessible only to you as a speaker, your optional co-speakers, your q&a session host and FOSDEM staff.
     - You should have received an invitation by email. In case you have trouble getting in, any FOSDEM staff should be able to invite you here.
     - TODO You'll have to explicitly accept 
-- Join the general audience room for your talk.
+  - [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org)
+    - This room is invite only. It's accessible to all speakers and FOSDEM staff.
+    - You should have received an invitation by email. In case you have trouble getting in, any FOSDEM staff should be able to invite you here.
+  - the general audience room for your talk.
     - You should have received an invitation to this room.
     - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2021/schedule/events/). Examples: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
   
