@@ -15,3 +15,8 @@ From ingestion to website, if things go wrong, you want to check where:
 - Is the public stream output nominal?
 
   ```mpv https://stream.fosdem.org/<track>.m3u8```
+
+## Adding frontends
+- Set up extra vm's:
+
+  ```hcloud server create --name streamfrontend10.video.fosdem.org --image debian-10 --datacenter fsn1-dc14 --type cx21 --network video-int --ssh-key vk --ssh-key mark@looksaus --ssh-key gerry@fosdem.org```
