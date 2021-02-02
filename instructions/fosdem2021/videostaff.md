@@ -8,7 +8,7 @@ From ingestion to website, if things go wrong, you want to check where:
   ```ssh root@<track>-vocto.video.fosdem.org ffprobe /mnt/video/<penta_id>.mp4 |& grep Duration```
 - Are all talks for this room properly scheduled?
 
-```ssh root@<track>-vocto.video.fosdem.org systemctl list-timers```
+  ```ssh root@<track>-vocto.video.fosdem.org systemctl list-timers```
 - Is the output of the voctomix mixer nominal?
 
   ```mpv http://<track>-vocto.video.fosdem.org:8899 checks the output of the vocto mixer for the room```
@@ -27,3 +27,8 @@ do
 	hcloud server create --name streamfrontend$n.video.fosdem.org --image debian-10 --datacenter fsn1-dc14 --type cx21 --network video-int --ssh-key vk --ssh-key mark@looksaus --ssh-key gerry@fosdem.org
 done
 </pre>
+
+## DNS records
+
+- generate AAAA records
+  ```hcloud server list | sed -e 's/  */ /g'|cut -d' ' -f 2,5 | sed -e 's/\(.*\) /\1\. AAAA /g' | sed -e 's/\/64/1/g' | grep vocto.video.fosdem.org```
