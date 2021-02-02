@@ -17,6 +17,7 @@ From ingestion to website, if things go wrong, you want to check where:
   ```mpv https://stream.fosdem.org/<track>.m3u8```
 
 ## Adding frontends
+### Spin up the machines
 - Get https://github.com/hetznercloud/cli and a read/write API key for the FOSDEM video project.
 - Set up extra vm's:
 
@@ -29,8 +30,13 @@ do
 done
 </pre>
 
-## DNS records
+### DNS records
 
 - generate AAAA records
 
   ```hcloud server list | sed -e 's/  */ /g'|cut -d' ' -f 2,5 | sed -e 's/\(.*\) /\1\. AAAA /g' | sed -e 's/\/64/1/g' | grep streamfrontend.video.fosdem.org```
+
+### Ansible deploy
+- You'll need to have a recent ansible install, your key in hetzner and the secrets set up. If you don't know about this, this is probably not for you.
+
+```ansible-playbook playbooks/site.yml --limit video-streamer-frontend -e "ansible_user=root"```
