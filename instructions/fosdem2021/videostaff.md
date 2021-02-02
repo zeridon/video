@@ -17,6 +17,7 @@ From ingestion to website, if things go wrong, you want to check where:
   ```mpv https://stream.fosdem.org/<track>.m3u8```
 
 ## Adding frontends
+- Get https://github.com/hetznercloud/cli and a read/write API key.
 - Set up extra vm's:
 
 <pre>
