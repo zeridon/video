@@ -31,4 +31,5 @@ done
 ## DNS records
 
 - generate AAAA records
+
   ```hcloud server list | sed -e 's/  */ /g'|cut -d' ' -f 2,5 | sed -e 's/\(.*\) /\1\. AAAA /g' | sed -e 's/\/64/1/g' | grep streamfrontend.video.fosdem.org```
