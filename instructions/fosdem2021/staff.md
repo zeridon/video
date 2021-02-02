@@ -1,8 +1,11 @@
 # FOSDEM 2021 video and matrix: staff manual
 
 ## Before FOSDEM 2021
+### Chat.fosdem.org account
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
   - Attention: Potential spam issue with gmail.
+
+### Channel subscribes
 - Subscribe to the following channels:
   - #general:fosdem.org . This is 
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
@@ -14,6 +17,47 @@
   - #volunteers:fosdem.org . This is the public room for volunteers.
 
 In case you need any help, try to get into #missioncontrol:fosdem.org first. Almost everything is solvable from there. @shin.ice:fosdem.org should be able to help you get in if needed. After checking your staff credentials, obviously.
+
+### Two bots: FOSDEM and mjolnir
+Much of the conference plumbing is run by two bots: mjolnir and FOSDEM .
+
+<pre>!mjolnir help
+Mjolnir help:
+
+!mjolnir                                                            - Print status information
+!mjolnir status                                                     - Print status information
+!mjolnir ban <list shortcode> <user|room|server> <glob> [reason]    - Adds an entity to the ban list
+!mjolnir unban <list shortcode> <user|room|server> <glob> [apply]   - Removes an entity from the ban list. If apply is 'true', the users matching the glob will actually be unbanned
+!mjolnir redact <user ID> [room alias/ID] [limit]                   - Redacts messages by the sender in the target room (or all rooms), up to a maximum number of events in the backlog (default 1000)
+!mjolnir redact <event permalink>                                   - Redacts a message by permalink
+!mjolnir kick <user ID> [room alias/ID] [reason]                    - Kicks a user in a particular room or all protected rooms
+!mjolnir rules                                                      - Lists the rules currently in use by Mjolnir
+!mjolnir sync                                                       - Force updates of all lists and re-apply rules
+!mjolnir verify                                                     - Ensures Mjolnir can moderate all your rooms
+!mjolnir list create <shortcode> <alias localpart>                  - Creates a new ban list with the given shortcode and alias
+!mjolnir watch <room alias/ID>                                      - Watches a ban list
+!mjolnir unwatch <room alias/ID>                                    - Unwatches a ban list
+!mjolnir import <room alias/ID> <list shortcode>                    - Imports bans and ACLs into the given list
+!mjolnir default <shortcode>                                        - Sets the default list for commands
+!mjolnir deactivate <user ID>                                       - Deactivates a user ID
+!mjolnir protections                                                - List all available protections
+!mjolnir enable <protection>                                        - Enables a particular protection
+!mjolnir disable <protection>                                       - Disables a particular protection
+!mjolnir rooms                                                      - Lists all the protected rooms
+!mjolnir rooms add <room alias/ID>                                  - Adds a protected room (may cause high server load)
+!mjolnir rooms remove <room alias/ID>                               - Removes a protected room
+!mjolnir move <room alias> <room alias/ID>                          - Moves a <room alias> to a new <room ID>
+!mjolnir directory add <room alias/ID>                              - Publishes a room in the server's room directory
+!mjolnir directory remove <room alias/ID>                           - Removes a room from the server's room directory
+!mjolnir alias add <room alias> <target room alias/ID>              - Adds <room alias> to <target room>
+!mjolnir alias remove <room alias>                                  - Deletes the room alias from whatever room it is attached to
+!mjolnir resolve <room alias>                                       - Resolves a room alias to a room ID
+!mjolnir shutdown room <room alias/ID>                              - Uses the bot's account to shut down a room, preventing access to the room on this server
+!mjolnir powerlevel <user ID> <power level> [room alias/ID]         - Sets the power level of the user in the specified room (or all protected rooms)
+!mjolnir help                                                       - This menu
+</pre>
+
+There are some undocumented shortcuts, but the critical thing to remember is that it matches * as "any character". So if you ban @travis:* then everyone with a username of travis will be banned. This extends to * on its own - this will destroy all of the rooms irrevocably.
 
 ## During FOSDEM 2021
 ### Step into an invite-only room
