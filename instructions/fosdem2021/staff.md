@@ -21,6 +21,10 @@ In case you need any help, try to get into #missioncontrol:fosdem.org first. Alm
 ### Two bots: FOSDEM and mjolnir
 Much of the conference plumbing is run by two bots: mjolnir and FOSDEM .
 
+#### Mjolnir
+https://github.com/matrix-org/mjolnir/blob/master/docs/moderators.md lists the basic commands.
+
+Full bot syntax:
 <pre>!mjolnir help
 Mjolnir help:
 
