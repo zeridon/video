@@ -19,4 +19,11 @@ From ingestion to website, if things go wrong, you want to check where:
 ## Adding frontends
 - Set up extra vm's:
 
-  ```hcloud server create --name streamfrontend10.video.fosdem.org --image debian-10 --datacenter fsn1-dc14 --type cx21 --network video-int --ssh-key vk --ssh-key mark@looksaus --ssh-key gerry@fosdem.org```
+<pre>
+#! /bin/bash
+
+for n in {11..70}
+do
+	hcloud server create --name streamfrontend$n.video.fosdem.org --image debian-10 --datacenter fsn1-dc14 --type cx21 --network video-int --ssh-key vk --ssh-key mark@looksaus --ssh-key gerry@fosdem.org
+done
+</pre>
