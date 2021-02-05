@@ -1,4 +1,4 @@
-*** WORK IN PROGRESS. PLEASE CHECK BACK OFTEN OR SUBSCRIBE TO THE CHANGES! ***
+*** THIS IS A LIVING DOCUMENT. PLEASE CHECK BACK OFTEN OR SUBSCRIBE TO THE CHANGES! ***
 # FOSDEM 2021 video: speakers manual
 
 In the below document, we'll assume that your talk's unique event id in the FOSDEM system is 123456 , and accessible at:
