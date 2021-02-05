@@ -32,12 +32,20 @@ To invite yourself to the invite-only room:
 
 ```!conference inviteme #cloud-devroom_testing:fosdem.org```
 
-### Invite someone to an invite-only room
-As staff, you have the ability to invite people into most any room, but only when you are in #missioncontrol:fosdem.org .
+### Invite a speaker into her invite-only q&a room
+As staff, you have the ability to manually invite speakers into invite only q&a rooms, but only when you are in #missioncontrol:fosdem.org .
 
-To invite someone else to an invite-only room:
+You'll need access to https://penta.fosdem.org to be able to verify things. Ask agk and johanvdw, possibly Gerry.
 
-```!conference inviteto #cloud-devroom_testing:fosdem.org @shin.ice:fosdem.org```
+**DO NOT inviting a speaker into their invite-only q&a room without checking the following in penta:** 
+  - Is their matrix id set? If not, ask them to enter their matrix id into their personal penta profile before doing anything.
+  - Are they really speaking at the talk in question? Check the event id. You'll need it to invite them anyway.
+
+The room you need to invite the speaker to is #talk-<penta_event_id>:fosdem.org . Example: #talk-11790:fosdem.org .
+
+To manually invite a speaker into their invite-only talk room:
+
+```#!conference inviteto #talk-11077:fosdem.org @claire.dross:fosdem.org```
 
 If the bot isn't there, that doesn't work. In that case, use the normal invite mechanism:
 ```/invite @shin.ice:fosdem.org```
