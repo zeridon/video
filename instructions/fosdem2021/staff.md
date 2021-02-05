@@ -3,7 +3,7 @@
 ## Before FOSDEM 2021
 
 ### Infodesk: Github issues
-- Make sure your github account has access to the private FOSDEM infodesk repo. Ask in #staff:fosdem.org .
+- Make sure your github account has access to the private [FOSDEM infodesk repo](https://github.com/FOSDEM/infodesk/issues/). Ask for access in #staff:fosdem.org .
 
 ### Chat.fosdem.org account
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
