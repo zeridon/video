@@ -42,7 +42,12 @@ Please prepare well beforehand for the q&a session to go smoothly:
 ### Help! Something is wrong. Who do I contact?
 - For issues regarding https://upload.video.fosdem.org, please email [video@fosdem.org](mailto:video@fosdem.org). You may also be able to reach wouter live in the [#video:fosdem.org](https://chat.fosdem.org/#/room/#video:fosdem.org) matrix room.
 - For issues regarding the https://video.fosdem.org site in general, please email both [video@fosdem.org](mailto:video@fosdem.org) and [server@fosdem.org](mailto:server@fosdem.org) .
-- For issues regarding matrix, please email [experience@fosdem.org](mailto:experience@fosdem.org) or try #fosdem on Freenode. You may also be able to reach other speakers and the FOSDEM team live in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
+- I have a problem connecting to https://chat.fosdem.org at all.
+  - Please email [experience@fosdem.org](mailto:experience@fosdem.org) or try irc://irc.freenode.net#fosdem .
+- I have an active matrix account, but a problem getting into my talk's private room for q&a.
+  - If you're speaking in a developer room, first try to contact your developer room manager. They are your first point of contact and should be able to let you in.
+  - If that doesn't work, you should be able to reach other speakers and some on the FOSDEM team live in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
+
 
 ## How to participate as a speaker at FOSDEM 2021
 
