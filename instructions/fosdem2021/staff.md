@@ -9,8 +9,9 @@
 - Subscribe to the following channels:
   - #general:fosdem.org . This is 
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
+  - #moderation:fosdem.org . This is obviously where the moderators are.
   - #speakers:fosdem.org . This is where we will help the speakers.
-  - #staff:fosdem.org . This is where we coordinate betwen staff.
+  - #staff:fosdem.org . This is where we coordinate between staff.
   - #stands:fosdem.org . This is where we will help the stand holders.
   - #missioncontrol:fosdem.org . This is the private "sudo" room. Staff and matrix people only. You'll need to be in here to moderate, invite etcetera.
   - #video:fosdem.org . This is the public room for video issues.
@@ -18,10 +19,31 @@
 
 In case you need any help, try to get into #missioncontrol:fosdem.org first. Almost everything is solvable from there. @shin.ice:fosdem.org should be able to help you get in if needed. After checking your staff credentials, obviously.
 
-### Syntax for the bots
+## During FOSDEM 2021
+### Step into an invite-only room
+As staff, you have the ability to step into most any room, but only when you are in #missioncontrol:fosdem.org .
+
+To invite yourself to the invite-only room:
+
+```!conference inviteme #cloud-devroom_testing:fosdem.org```
+
+### Invite someone to an invite-only room
+As staff, you have the ability to invite people into most any room, but only when you are in #missioncontrol:fosdem.org .
+
+To invite someone else to an invite-only room:
+
+```!conference inviteto #cloud-devroom_testing:fosdem.org @shin.ice:fosdem.org```
+
+If the bot isn't there, that doesn't work. In that case, use the normal invite mechanism:
+```/invite @shin.ice:fosdem.org```
+
+### Kick and ban someone from a public room
+- Do not kick or ban directly. Either use the bot (see the chapter about syntax below) or report in #moderation:fosdem.org .
+
+## Syntax for the bots
 Much of the conference plumbing is run by two bots: mjolnir and FOSDEM .
 
-#### Mjolnir
+### Mjolnir
 https://github.com/matrix-org/mjolnir/blob/master/docs/moderators.md lists the basic commands.
 
 Full bot syntax:
@@ -63,48 +85,27 @@ Mjolnir help:
 
 There are some undocumented shortcuts, but the critical thing to remember is that it matches * as "any character". So if you ban @travis:* then everyone with a username of travis will be banned. This extends to * on its own - this will destroy all of the rooms irrevocably.
 
-## During FOSDEM 2021
-### Step into an invite-only room
-As staff, you have the ability to step into most any room, but only when you are in #missioncontrol:fosdem.org .
-
-To invite yourself to the invite-only room:
-
-```!conference inviteme #cloud-devroom_testing:fosdem.org```
-
-### Invite someone to an invite-only room
-As staff, you have the ability to invite people into most any room, but only when you are in #missioncontrol:fosdem.org .
-
-To invite someone else to an invite-only room:
-
-```! conference inviteto #cloud-devroom_testing:fosdem.org @shin.ice:fosdem.org```
-
-If the bot isn't there, that doesn't work. In that case, use the normal invite mechanism:
-```/invite @shin.ice:fosdem.org```
-
-### Kick and ban someone from a public room
-```/kick @shin.ice:fosdem.org```
-```/ban @shin.ice:fosdem.org```
 
 
-## Conference bot help
+### Conference bot
 
-### General:
+#### General:
 
 ```!conference help```   - This menu.
 ```!conference build```  - Builds the basic conference structure needed to prepare the rest of the conference. This is based off the bot's config.
 
-### People management:
+#### People management:
 
 ```!conference verify <aud>```  - Dumps information about who would be invited to which rooms when the invite command is run for the auditorium.
 ```!conference invite [aud]```  - Issues invites to all the people to their relevant rooms. If an [aud] is supplied, only that auditorium will receive invites.
 ```!conference permissions```   - Updates moderator status for everyone that is supposed to have it.
 
-### Bridge management:
+#### Bridge management:
 
 ```!conference plumb-irc all```               - Plumbs all auditoriums into IRC channels.
 ```!conference plumb-irc <channel> <room>```  - Plumbs an IRC channel into a given room.
 
-### General management:
+#### General management:
 
 ```!conference inviteme <room>```         - Asks the bot to invite you to the given room.
 
