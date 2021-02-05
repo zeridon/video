@@ -46,7 +46,8 @@ done
 ### DNS records
 
 - generate A records
-```hcloud server list | sed -e 's/  */ /g'|cut -d' ' -f 2,4 | sed -e 's/\(.*\) /\1\. 10800 IN A /g'|grep streamfrontend```
+
+  ```hcloud server list | sed -e 's/  */ /g'|cut -d' ' -f 2,4 | sed -e 's/\(.*\) /\1\. 10800 IN A /g'|grep streamfrontend```
 
 - generate AAAA records
 
