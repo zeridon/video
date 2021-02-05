@@ -18,7 +18,7 @@
 
 In case you need any help, try to get into #missioncontrol:fosdem.org first. Almost everything is solvable from there. @shin.ice:fosdem.org should be able to help you get in if needed. After checking your staff credentials, obviously.
 
-### Two bots: FOSDEM and mjolnir
+### Syntax for the bots
 Much of the conference plumbing is run by two bots: mjolnir and FOSDEM .
 
 #### Mjolnir
