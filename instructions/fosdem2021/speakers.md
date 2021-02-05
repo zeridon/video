@@ -45,9 +45,11 @@ Please prepare well beforehand for the q&a session to go smoothly:
 - I have a problem connecting to https://chat.fosdem.org at all.
   - Please email [experience@fosdem.org](mailto:experience@fosdem.org) or try irc://irc.freenode.net#fosdem .
 - I have an active matrix account, but a problem getting into my talk's private room for q&a.
-  1) Make sure your matrix id is set in your profile in https://penta.fosdem.org .
-  2) If you're speaking in a developer room, first try to contact your developer room manager. They are your first point of contact and should be able to let you in.
-  3) If that doesn't work, you should be able to reach other speakers and some on the FOSDEM team live in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room.
+  1. Make sure your matrix id is set in your profile in https://penta.fosdem.org .
+  2. If you're speaking in a developer room, first try to contact your developer room manager. They are your first point of contact and should be able to let you in.
+  4. If that doesn't work, you should be able to reach other speakers and some on the FOSDEM team live in the [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org) matrix room. Have the following info ready to get help more quickly and efficiently:
+    - your personal penta id. Example: https://penta.fosdem.org/person/edit/8319 is your profile => 8319 is your personal penta id.
+    - your talk's penta id. Example:  https://penta.fosdem.org/event/edit/11164 is your talk profile => 11164 is your talk's penta id.
 
 
 ## How to participate as a speaker at FOSDEM 2021
