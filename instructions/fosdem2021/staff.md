@@ -1,6 +1,10 @@
 # FOSDEM 2021 video and matrix: staff manual
 
 ## Before FOSDEM 2021
+
+### Infodesk: Github issues
+- Make sure your github account has access to the private FOSDEM infodesk repo. Ask in #staff:fosdem.org .
+
 ### Chat.fosdem.org account
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
   - Attention: Potential spam issue with gmail.
