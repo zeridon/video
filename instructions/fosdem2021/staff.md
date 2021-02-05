@@ -7,7 +7,8 @@
 
 ### Channel subscribes
 - Subscribe to the following channels:
-  - #general:fosdem.org . This is 
+  - #devroom-managers:fosdem.org . This is our highest priority channel for supporting.
+  - #general:fosdem.org . No explanation needed.
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
   - #moderation:fosdem.org . This is obviously where the moderators are.
   - #speakers:fosdem.org . This is where we will help the speakers.
