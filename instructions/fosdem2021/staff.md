@@ -14,7 +14,7 @@
   - #devroom-managers:fosdem.org . This is our highest priority channel for supporting.
   - #general:fosdem.org . No explanation needed.
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
-  - ~~#moderation:fosdem.org . This is obviously where the moderators are.~~ (does not seem to exist anymore?)
+  - #moderation:fosdem.org . This is obviously where the moderators are.
   - #speakers:fosdem.org . This is where we will help the speakers.
   - #staff:fosdem.org . This is where we coordinate between staff. (aka FIT)
   - #stands:fosdem.org . This is where we will help the stand holders.
@@ -51,6 +51,7 @@ If the bot isn't there, that doesn't work. In that case, use the normal invite m
 ```/invite @shin.ice:fosdem.org```
 
 ### Kick and ban someone from a public room
+- **!mjolnir commands can only be executed from #moderation:fosdem.org**
 - Do not kick or ban directly. Either use the bot (see the chapter about syntax below) or report in #moderation:fosdem.org .
 - example: !mjolnir kick <user ID> [room alias/ID] [reason]
 
