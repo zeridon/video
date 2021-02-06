@@ -14,7 +14,7 @@
   - #devroom-managers:fosdem.org . This is our highest priority channel for supporting.
   - #general:fosdem.org . No explanation needed.
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
-  - #moderation:fosdem.org . This is obviously where the moderators are.
+  ~~- #moderation:fosdem.org . This is obviously where the moderators are.~~
   - #speakers:fosdem.org . This is where we will help the speakers.
   - #staff:fosdem.org . This is where we coordinate between staff.
   - #stands:fosdem.org . This is where we will help the stand holders.
