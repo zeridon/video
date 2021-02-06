@@ -132,7 +132,7 @@ As soon as your prerecorded talk is being broadcast,  immediately join the embed
 
 Monitor your track's public room for interesting general audience questions and think of intelligent answers. **Hints**:
   - Use the scoreboard widget. It gathers popular upvoted questions from the public room.
-  - Enlist the help of your backstage room host. (S)he is there to help you!
+  - Enlist the help of your backstage room host. They are there to help you!
 
 **IMPORTANT: How to know exactly when your q&a session goes live?**
 - A bot in the room will warn you when your q&a is to go live.
@@ -147,7 +147,7 @@ Monitor your track's public room for interesting general audience questions and 
 You now have the opportunity to answer audience questions in a q&a session.
 
 **Hints:**
-  - Use your talk host's help. (S)he can keep an eye on audience feedback from the public room chat.
+  - Use your talk host's help. They can keep an eye on audience feedback from the public room chat.
   - When your time is up, your talk will automatically switch over to the next talk.
 
 ### 3. Hallway track
