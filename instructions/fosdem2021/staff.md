@@ -14,7 +14,7 @@
   - #devroom-managers:fosdem.org . This is our highest priority channel for supporting.
   - #general:fosdem.org . No explanation needed.
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
-  - ~~#moderation:fosdem.org . This is obviously where the moderators are.~~
+  - ~~#moderation:fosdem.org . This is obviously where the moderators are.~~ (does not seem to exist anymore?)
   - #speakers:fosdem.org . This is where we will help the speakers.
   - #staff:fosdem.org . This is where we coordinate between staff. (aka FIT)
   - #stands:fosdem.org . This is where we will help the stand holders.
@@ -52,6 +52,7 @@ If the bot isn't there, that doesn't work. In that case, use the normal invite m
 
 ### Kick and ban someone from a public room
 - Do not kick or ban directly. Either use the bot (see the chapter about syntax below) or report in #moderation:fosdem.org .
+- example: !mjolnir kick <user ID> [room alias/ID] [reason]
 
 ## Syntax for the bots
 Much of the conference plumbing is run by two bots: mjolnir and FOSDEM .
@@ -105,17 +106,21 @@ There are some undocumented shortcuts, but the critical thing to remember is tha
 #### General:
 
 ```!conference help```   - This menu.
+
 ```!conference build```  - Builds the basic conference structure needed to prepare the rest of the conference. This is based off the bot's config.
 
 #### People management:
 
 ```!conference verify <aud>```  - Dumps information about who would be invited to which rooms when the invite command is run for the auditorium.
+
 ```!conference invite [aud]```  - Issues invites to all the people to their relevant rooms. If an [aud] is supplied, only that auditorium will receive invites.
+
 ```!conference permissions```   - Updates moderator status for everyone that is supposed to have it.
 
 #### Bridge management:
 
 ```!conference plumb-irc all```               - Plumbs all auditoriums into IRC channels.
+
 ```!conference plumb-irc <channel> <room>```  - Plumbs an IRC channel into a given room.
 
 #### General management:
