@@ -18,7 +18,7 @@ This is what will be broadcast at FOSDEM 2021. In case this looks good, no feedb
   - Particularly check the end of the video. Make sure FOSDEM has the full recording.
 
 ### Talk Q&A: audience interaction using Matrix/Jitsi
-After your talk has been broadcast as prerecorded video, you will have a chance to address your audio's questions in a live broadcast q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that.
+After your talk has been broadcast as prerecorded video, you will have a chance to address your audience's questions in a live broadcast q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that.
 
 **Note:** This is a **matrix client with FOSDEM specific tweaks only available using the https://chat.fosdem.org**. As a speaker, please do not use any other matrix client.** Using a matrix account with a different matrix server (eg: @yourname:matrix.org) is fine though.
 
