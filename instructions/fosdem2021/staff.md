@@ -16,7 +16,7 @@
   - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
   - ~~#moderation:fosdem.org . This is obviously where the moderators are.~~
   - #speakers:fosdem.org . This is where we will help the speakers.
-  - #staff:fosdem.org . This is where we coordinate between staff.
+  - #staff:fosdem.org . This is where we coordinate between staff. (aka FIT)
   - #stands:fosdem.org . This is where we will help the stand holders.
   - #missioncontrol:fosdem.org . This is the private "sudo" room. Staff and matrix people only. You'll need to be in here to moderate, invite etcetera.
   - #video:fosdem.org . This is the public room for video issues.
