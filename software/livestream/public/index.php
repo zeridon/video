@@ -22,7 +22,7 @@ $app->get('/', function () use ($app) {
 // watch
 $app->get('/watch/{room}', function ($room) use ($app) {
 	if (!isset($app['config']['rooms'][$room])) {
-		throw new \Exception('Unknown room');
+		return $app['twig']->render('nostream.twig', []);
 	}
 
 	$room_slug = str_replace('(', '', $app['config']['rooms'][$room]);
