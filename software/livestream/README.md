@@ -1,6 +1,6 @@
 # livestream
 
-This is what is running on http://live.fosdem.org/
+This is what is running on https://live.fosdem.org/
 
 ## Installing
 
