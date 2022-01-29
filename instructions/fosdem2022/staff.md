@@ -1,6 +1,8 @@
-# FOSDEM 2021 video and matrix: staff manual
+# FOSDEM 2022 video and matrix: staff manual
+# tl;dr full and better list on FIT wiki!
 
-## Before FOSDEM 2021
+## Before FOSDEM 2022
+
 
 ### Infodesk: Github issues
 - Make sure your github account has access to the private [FOSDEM infodesk repo](https://github.com/FOSDEM/infodesk/issues/). Ask for access in #staff:fosdem.org .
@@ -10,21 +12,11 @@
   - Attention: Potential spam issue with gmail.
 
 ### Channel subscribes
-- Subscribe to the following channels:
-  - #devroom-managers:fosdem.org . This is our highest priority channel for supporting.
-  - #general:fosdem.org . No explanation needed.
-  - #infodesk:fosdem.org . This is the conference's main virtual infodesk.
-  - #moderation:fosdem.org . This is obviously where the moderators are. (currently for CoC only?)
-  - #speakers:fosdem.org . This is where we will help the speakers.
-  - #staff:fosdem.org . This is where we coordinate between staff. (aka FIT)
-  - #stands:fosdem.org . This is where we will help the stand holders.
-  - #missioncontrol:fosdem.org . This is the private "sudo" room. Staff and matrix people only. You'll need to be in here to moderate, invite etcetera.
-  - #video:fosdem.org . This is the public room for video issues.
-  - #volunteers:fosdem.org . This is the public room for volunteers.
+- A list of all needed staff rooms are on the FIT wiki.
 
-In case you need any help, try to get into #missioncontrol:fosdem.org first. Almost everything is solvable from there. @shin.ice:fosdem.org should be able to help you get in if needed. After checking your staff credentials, obviously.
+In case you need any help get in touch with @shin.ice:fosdem.org.
 
-## During FOSDEM 2021
+## During FOSDEM 2022
 ### Step into an invite-only room
 As staff, you have the ability to step into most any room, but only when you are in #missioncontrol:fosdem.org .
 
@@ -51,9 +43,8 @@ If the bot isn't there, that doesn't work. In that case, use the normal invite m
 ```/invite @shin.ice:fosdem.org```
 
 ### Kick and ban someone from a public room
-- **!mjolnir commands can only be executed from #moderation:fosdem.org** (they moved the bot there from now!)
-- Do not kick or ban directly. Either use the bot (see the chapter about syntax below) or report in #moderation:fosdem.org .
-- example: !mjolnir kick <user ID> [room alias/ID] [reason]
+- Do not kick or ban directly. To get rid of such problems, report the message or get in touch with @shin.ice:fosdem.org or @gh0sty:fosdem.org
+
 
 ## Syntax for the bots
 Much of the conference plumbing is run by two bots: mjolnir and FOSDEM .
@@ -133,4 +124,4 @@ There are some undocumented shortcuts, but the critical thing to remember is tha
 ```!conference widgets <aud>```           - Creates all widgets for the auditorium and its talks.
 
 
-## After FOSDEM 2021
+## After FOSDEM 2022

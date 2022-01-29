@@ -1,11 +1,11 @@
 *** THIS IS A LIVING DOCUMENT. PLEASE CHECK BACK OFTEN OR SUBSCRIBE TO THE CHANGES! ***
-# FOSDEM 2021 video: speakers manual
+# FOSDEM 2022 video: speakers manual
 
 In the below document, we'll assume that your talk's unique event id in the FOSDEM system is 123456 , and accessible at:
-- https://penta.fosdem.org/submission/FOSDEM21/event/123456
+- https://penta.fosdem.org/submission/FOSDEM22/event/123456
 - https://penta.fosdem.org/event/edit/123456
 
-## Before FOSDEM 2021
+## Before FOSDEM 2022
 ### Talk video recordings
 Here's what you'll need to do to get your talk video in:
 - Submit your prerecorded video through https://penta.fosdem.org/submission/FOSDEM21/event/123456 .
@@ -13,12 +13,12 @@ Here's what you'll need to do to get your talk video in:
 - Make sure your room ends up marked with state "done" at https://upload.video.fosdem.org/overview .
 - Validate your final video using the link at the bottom of https://penta.fosdem.org/submission/FOSDEM21/event/123456 .
 ![penta submission Final Video URL](final_video_url.png)
-This is what will be broadcast at FOSDEM 2021. In case this looks good, no feedback is needed from you. In case of any issues, please contact [video@fosdem.org](mailto:video@fosdem.org) . Hints:
+This is what will be broadcast at FOSDEM 2022. In case this looks good, no feedback is needed from you. In case of any issues, please contact [video@fosdem.org](mailto:video@fosdem.org) . Hints:
   - Never share this link. Share your talk's unique event id.
   - Particularly check the end of the video. Make sure FOSDEM has the full recording.
 
 ### Talk Q&A: audience interaction using Matrix/Jitsi
-After your talk has been broadcast as prerecorded video, you will have a chance to address your audience's questions in a live broadcast q&a session. FOSDEM 2021 will use https://chat.fosdem.org for that.
+After your talk has been broadcast as prerecorded video, you will have a chance to address your audience's questions in a live broadcast q&a session. FOSDEM 2022 will use https://chat.fosdem.org for that.
 
 **Note:** This is a **matrix client with FOSDEM specific tweaks only available using the https://chat.fosdem.org**. As a speaker, please do not use any other matrix client.** Using a matrix account with a different matrix server (eg: @yourname:matrix.org) is fine though.
 
@@ -26,7 +26,7 @@ Please prepare well beforehand for the q&a session to go smoothly:
 - Make sure you have access to a comfortably large screen. >= 24" screen size and >= 1920x1080 resolution would be comfortable. Things will work on a 12" 1366x768 laptop screen, but usability will suffer. Juggling an outgoing video stream, chat messages and a question scoreboard on a small screen is not fun.
 - Accept your https://chat.fosdem.org invite. Create your matrix account on https://chat.fosdem.org .
 - Add your matrix account to your https://penta.fosdem.org profile: person->im->matrix. This will help in assigning you the right  permissions as a speaker in https://chat.fosdem.org .
-![set your matrix id in penta](penta_set_matrix_id.png).
+![set your matrix id in penta](penta_set_matrix_id.png)
 
 - Join the following rooms:
   - the backstage matrix room for your talk, which you will be invited to.
@@ -37,7 +37,7 @@ Please prepare well beforehand for the q&a session to go smoothly:
     - You should have received an invitation by email. In case you have trouble getting in, any FOSDEM staff should be able to invite you here.
   - the general audience room for your talk.
     - You should have received an invitation to this room.
-    - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2021/schedule/events/). Examples: D.cloud => [#cloud:fosdem.org](https://chat.fosdem.org/#/room/#cloud:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
+    - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2022/schedule/events/). Examples: D.cloud => [#cloud-devroom:fosdem.org](https://chat.fosdem.org/#/room/#cloud-devroom:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
   
 ### Help! Something is wrong. Who do I contact?
 - For issues regarding https://upload.video.fosdem.org, please email [video@fosdem.org](mailto:video@fosdem.org). You may also be able to reach wouter live in the [#video:fosdem.org](https://chat.fosdem.org/#/room/#video:fosdem.org) matrix room.
@@ -52,7 +52,7 @@ Please prepare well beforehand for the q&a session to go smoothly:
     - your talk's penta id. Example:  https://penta.fosdem.org/event/edit/11164 is your talk profile => 11164 is your talk's penta id.
 
 
-## How to participate as a speaker at FOSDEM 2021
+## How to participate as a speaker at FOSDEM 2022
 
 As a speaker, you need a Matrix account.  You should already have been invited by email (or Matrix, if we know your Matrix ID) to sign up to Matrix and join the relevant chatrooms.  If not, you can get a Matrix account at https://chat.fosdem.org.  Then, to receive the invites, please enter your Matrix ID (e.g. @matthew:fosdem.org) under your account details on https://penta.fosdem.org (look for the 'Add instant messaging address' button on your Person page) and you'll be invited shortly. We send out invites a few times a day.
 
@@ -112,7 +112,7 @@ Your video conference is then broadcast to the livestream so the audience can se
 The audience can then join the talk room to continue discussing your talk with you and your host.
 
 
-## During FOSDEM 2021 (alternative instructions):
+## During FOSDEM 2022 (alternative instructions):
 
 Your talk is happens in three stages:
 1. Your prerecorded video is broadcast.
@@ -120,11 +120,11 @@ Your talk is happens in three stages:
 3. You can speak to the super interested fraction of your audience in the hallway track.
 
 ### 1. Prerecorded talk video broadcast
-Did you follow the steps outlined under "Before FOSDEM 2021"? Then your talk will be broadcast at the [scheduled](https://fosdem.org/2021/schedule/events/) time, the FOSDEM audience will see a 30 seconds preroll slide, followed by your talk. These videos will be available in the following places:
+Did you follow the steps outlined under "Before FOSDEM 2022"? Then your talk will be broadcast at the [scheduled](https://fosdem.org/2022/schedule/events/) time, the FOSDEM audience will see a 30 seconds preroll slide, followed by your talk. These videos will be available in the following places:
 - https://fosdem.org : integrated into the page for your track.
 - https://live.fosdem.org/watch/<track> (example: https://live.fosdem.org/watch/dcollab) 
 - the FOSDEM matrix room for your talk (example: [https://chat.fosdem.org/#/room/#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org)
-- (most of) the FOSDEM apps available at https://fosdem.org/2021/schedule/mobile/
+- (most of) the FOSDEM apps available at https://fosdem.org/2022/schedule/mobile/
 
 Be in your talk's backstage room at the start of your talk's broadcast.
 
@@ -157,6 +157,6 @@ Once the live q&a is over, your backstage room will open up to the general audie
 
 If you want to make sure your audience finds its way to this hallway track, make some publicity around it near the end of your q&a session. Example: "Any further questions? Would you like to speak to me? Join me now in matrix room #talk-123456 for an interactive video chat.".
 
-## After FOSDEM 2021
+## After FOSDEM 2022
 When agreeing to speak at FOSDEM, you explicitly granted FOSDEM vzw the right to publish your video under a CC BY-SA license. Your video will be uploaded to the FOSDEM video archive at https://video.fosdem.org .
 
