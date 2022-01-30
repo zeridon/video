@@ -3,12 +3,14 @@ From ingestion to website, if things go wrong, you want to check where:
 - Is the prerecorded file there?
 
   ```ssh root@<track>-vocto.video.fosdem.org ls -lh /mnt/video/<penta_id>.mp4```
+ - if it is not , it should be on the root@validate.video.fosdem.org  /mnt/HC_Volume_15983445/orig/ 
 - Is the prerecorded file a sensible length?
 
   ```ssh root@<track>-vocto.video.fosdem.org ffprobe /mnt/video/<penta_id>.mp4 |& grep Duration```
 - Are all talks for this room properly scheduled?
 
   ```ssh root@<track>-vocto.video.fosdem.org systemctl list-timers```
+ - if not check penta 
 - Is the output of the voctomix mixer nominal?
 
   ```mpv http://<track>-vocto.video.fosdem.org:8899 checks the output of the vocto mixer for the room```
