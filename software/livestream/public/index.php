@@ -24,14 +24,22 @@ $app->get('/watch/{room}', function ($room) use ($app) {
 	if (!isset($app['config']['rooms'][$room])) {
 		return $app['twig']->render('nostream.twig', []);
 	}
+	
+	$room_slug = str_replace('(', '', $app['config']['rooms'][$room]);
+        $room_slug = str_replace(')', '', $room_slug);
+        $room_slug = str_replace('.', '', $room_slug);
+        $room_slug = str_replace(' ', '_', $room_slug);
+	$room_slug = str_replace('-', '_', $room_slug);
+	$room_slug = strtolower($room_slug);
 
-    	$room_slug = $app['config']['rooms'][$room];
+    	$chat_name = $app['config']['rooms'][$room];
 
-    	$chat_name = substr($room_slug, 2);
-    	if (substr($room_slug, 0, 1) =='D')
+    	$chat_name = substr($chat_name, 2);
+    	if (substr($room_slug, 0, 1) =='d')
     	{
     	    $chat_name.='-devroom';
-    	}
+	}
+
 
 	return $app['twig']->render('watch.twig', [
 		'title' => 'Stream ' . $app['config']['rooms'][$room],
