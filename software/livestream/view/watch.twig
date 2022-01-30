@@ -1,7 +1,6 @@
 {% extends "layout.base.twig" %}
 
 {% block content %}
-	{% set chatname = room|slice(1) %}
 
     <h1 id="track"></h1>
 
@@ -12,7 +11,6 @@
 	<p>
 		<i class="icon-play"></i> <strong>Direct link</strong>: <a href="https://stream.fosdem.org/{{ room }}.m3u8">https://stream.fosdem.org/{{ room }}.m3u8</a> <br />
 		<i class="icon-calendar"></i> <strong>Schedule</strong>: <a href="https://fosdem.org/schedule/room/{{ room_slug }}">https://fosdem.org/schedule/room/{{ room_slug }}</a> <br />
-
 	    <i class="icon-facetime-video"></i> <strong>Video with chat</strong>: <a href="https://chat.fosdem.org/#/room/#{{ chatname }}:fosdem.org">{{ room_name }}</a> <br />
 	    <i class="icon-comment"></i> <strong>Chat</strong>: <a href="https://matrix.to/#/#{{ chatname }}:fosdem.org?web-instance[element.io]=chat.fosdem.org">Join the conversation!</a> <br />
 	</p>
