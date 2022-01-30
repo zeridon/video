@@ -29,16 +29,14 @@ $app->get('/watch/{room}', function ($room) use ($app) {
         $room_slug = str_replace(')', '', $room_slug);
         $room_slug = str_replace('.', '', $room_slug);
         $room_slug = str_replace(' ', '_', $room_slug);
-	$room_slug = str_replace('-', '_', $room_slug);
-	$room_slug = strtolower($room_slug);
+	    $room_slug = str_replace('-', '_', $room_slug);
+	    $room_slug = strtolower($room_slug);
 
     	$chat_name = $app['config']['rooms'][$room];
 
     	$chat_name = substr($chat_name, 2);
-    	if (substr($room_slug, 0, 1) =='d')
-    	{
-    	    $chat_name.='-devroom';
-	}
+    	if (substr($room_slug, 0, 1) =='d') $chat_name.='-devroom';
+        if (substr($room_slug, 0, 1) == 'k') $chat_name = "fosdem-keynotes";
 
 
 	return $app['twig']->render('watch.twig', [
