@@ -10,7 +10,7 @@ From ingestion to website, if things go wrong, you want to check where:
 - Are all talks for this room properly scheduled?
 
   ```ssh root@<track>-vocto.video.fosdem.org systemctl list-timers```
- - if not check penta 
+  - if not, check penta 
 - Is the output of the voctomix mixer nominal?
 
   ```mpv http://<track>-vocto.video.fosdem.org:8899 checks the output of the vocto mixer for the room```
