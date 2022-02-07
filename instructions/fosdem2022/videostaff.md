@@ -59,3 +59,15 @@ done
 - You'll need to have a recent ansible install, your key in hetzner and the secrets set up. If you don't know about this, this is probably not for you.
 
 ```ansible-playbook playbooks/site.yml --limit video-streamer-frontend -e "ansible_user=root"```
+
+### Teardown
+- pull logs from voctos, streamfrontends
+- Delete frontends:
+ ```for n in {0-15}; do hcloud server delete streamfrontend$n.video.fosdem.org; done```
+- Delete voctos:
+<pre>
+grep '\-vocto\.' infrastructure/ansible/hosts > /tmp/voctos
+while read -r line; do
+  hcloud server delete $line;
+done < /tmp/voctos
+</pre>
