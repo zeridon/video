@@ -39,7 +39,7 @@ You can also use the IPs instead of the .local addresses.
 
 Quick and dirty:
 
-    cat README.md | grep "\-voctop" | sed -e 's/`//g' | sed -e 's/ //g' | cut -d'|' -f2 | while read mac; do wol $mac; done;
+    cat README.md | grep "| voctop" | sed -e 's/`//g' | sed -e 's/ //g' | cut -d'|' -f2 | while read mac; do wol $mac; done;
 
 ## Streaming
 
