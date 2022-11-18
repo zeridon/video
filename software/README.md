@@ -41,6 +41,15 @@ Quick and dirty:
 
     cat README.md | grep "| voctop" | sed -e 's/`//g' | sed -e 's/ //g' | cut -d'|' -f2 | while read mac; do wol $mac; done;
 
+## Re-installing a videobox
+
+The videoboxes will do PXE boot if they can not load an OS from the SD card.
+
+To re-install a videobox, simply make sure it will not boot properly by nuking
+the install on the SD card.
+
+    dd if=/dev/zero of=/dev/mmcblk0 bs=512 count=1
+
 ## Streaming
 
 ## Addressing plan
