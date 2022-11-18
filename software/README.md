@@ -172,7 +172,6 @@ addressing plan.
 | `02:c3:08:43:5b:43` | spare0-slides | 185.175.218.187 | check |
 | `00:13:14:01:63:cf` | spare1-slides | 185.175.218.188 | check (vasil, chineese box, can also be cam)|
 | `02:c8:06:c2:a8:37` | spare2-slides | 185.175.218.189 | check (was k4401-slides)
-| `02:0a:07:c2:77:08` | k4401-juggler | 185.175.218.190 | check (libv, k4401 test box)
 
 #### Staff laptops
 
