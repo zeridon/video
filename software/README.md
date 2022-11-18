@@ -99,7 +99,6 @@ addressing plan.
 
 | MAC | hostname | IP |
 |-----|----------|----|
-| `50:7b:9d:68:c1:25` | spare0-voctop | 185.175.218.93 |
 
 ### Video boxes
 
