@@ -171,6 +171,7 @@ addressing plan.
 | `02:c7:05:c1:ff:df` | ud2208-slides | slides-7 | 185.175.218.183 | check |
 | `02:c2:04:81:0a:97` | ud2218a-cam | cam-9 | 185.175.218.184 | check |
 | `02:09:0b:82:98:04` | ud2218a-slides | slides-8 | 185.175.218.185 | check |
+| `02:09:03:c2:f0:64` | n/a | slides-25 | 185.175.218.187 | check |
 
 #### Spares
 
