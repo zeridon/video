@@ -110,74 +110,62 @@ addressing plan.
 
 | MAC | hostname | new name | IP | Remarks |
 |-----|----------|----------|----|---------|
-| `02:88:09:40:dc:5a` | aw1120-cam | cam-14 | 185.175.218.128 | check |
-| `02:8e:06:02:95:26` | aw1120-slides | slides-12 | 185.175.218.129 | check |
-| `02:02:0a:82:05:40` | aw1121-cam | cam-13 | 185.175.218.130 | check |
-| `02:4e:0a:41:53:d5` | aw1121-slides | slides-19 | 185.175.218.131 | check |
-| `02:49:08:81:6a:b5` | aw1125-cam | cam-12 | 185.175.218.132 | check |
-| `02:d7:0a:42:1d:b3` | aw1125-slides | slides-11 | 185.175.218.133 | check |
-| `02:08:06:02:09:b4` | aw1126-cam | cam-11 | 185.175.218.134 | check |
-| `02:07:05:42:9e:60` | aw1126-slides | slides-14 | 185.175.218.135 | check |
-| `02:0e:0a:02:02:40` | h1301-cam | cam-2 | 185.175.218.136 | checked 20221119 |
-| `02:d9:08:42:05:87` | h1301-slides | slides-2 | 185.175.218.137 | checked |
-| `02:52:04:41:91:a9` | h1302-cam | cam-23 | 185.175.218.138 | check (vasil) |
-| `02:ce:09:c2:31:f3` | h1302-slides | slides-21 | 185.175.218.139 | check (vasil) |
-| `02:46:07:c2:47:6d` | h1308-cam | cam-18 | 185.175.218.140 | check (vasil) |
-| `02:86:05:83:34:62` | h1308-slides | slides-17 | 185.175.218.141 | check (vasil) |
-| `02:12:09:03:27:08` | h1309-cam | cam-19 | 185.175.218.142 | check |
-| `02:43:03:02:0d:e9` | h1309-slides | slides-18 | 185.175.218.143 | check |
-| `02:01:0a:81:22:f4` | h2213-cam | cam-8 | 185.175.218.144 | check |
-| `02:0c:02:02:6d:74` | h2213-slides | slides-6 | 185.175.218.145 | check |
-| `02:86:07:41:62:7e` | h2214-cam |  | 185.175.218.146 | check |
-| `02:c8:06:c2:a8:37` | h2214-slides |  | 185.175.218.147 | check |
-| `02:06:08:c0:ec:64` | h2215-cam |  | 185.175.218.148 | check |
-| `02:c8:08:42:75:07` | h2215-slides |  | 185.175.218.149 | check |
-| `02:17:0b:02:cb:fc` | janson-cam | cam-16 | 185.175.218.150 | check |
-| `02:91:07:c2:64:9a` | janson-slides | slides-15 | 185.175.218.151 | check |
-| `00:13:14:01:89:4b` | k1105-cam |  | 185.175.218.152 | check (vasil, chineese box) |
-| `00:13:14:01:89:19` | k1105-slides |  | 185.175.218.153 | check (vasil, chineese box) |
-| `00:13:14:01:89:39` | k3201-cam |  | 185.175.218.154 | check (vasil, chineese box)  |
-| `00:13:14:01:63:cb` | k3201-slides |  | 185.175.218.155 | check (vasil, chineese box) |
-| `02:06:06:41:82:58` | k3401-cam | cam-20 | 185.175.218.156 | check |
-| `02:43:08:01:5f:81` | k3401-slides | slides-24 | 185.175.218.157 | check |
-| `02:47:02:c2:33:95` | k4201-cam | cam-25 | 185.175.218.158 | check |
-| `02:09:07:82:a4:ec` | k4201-slides | slides-20 | 185.175.218.159 | check |
-| `02:08:07:81:3b:a4` | k4401-cam | cam-24 | 185.175.218.160 | check |
-| `02:16:01:c2:00:e0` | k4401-slides |  | 185.175.218.161 | check (libv, frankenbox) |
-| `02:07:03:42:41:d4` | k4601-cam |  | 185.175.218.162 | check |
-| `02:92:08:81:8f:0e` | k4601-slides | slides-22 | 185.175.218.163 | check |
-| `02:c9:04:81:73:97` | ua2114-cam | cam-1 | 185.175.218.164 | check |
-| `02:c9:08:c0:fd:47` | ua2114-slides | slides-0 | 185.175.218.165 | check |
-| `02:43:06:c2:9c:85` | ua2220-cam | cam-4 | 185.175.218.166 | check |
-| `02:01:05:82:32:30` | ua2220-slides | slides-3 | 185.175.218.167 | checked 20221119 |
-| `02:14:06:02:09:1c` | ub2147-cam | cam-21 | 185.175.218.168 | check |
-| `02:14:04:82:f6:fc` | ub2147-slides | slides-23 | 185.175.218.169 | check |
-| `02:c3:09:01:6f:4f` | ub2252a-cam | cam-17 | 185.175.218.170 | check |
-| `02:54:04:83:26:c1` | ub2252a-slides | slides-16 | 185.175.218.171 | check |
-| `02:12:0a:c2:05:60` | ub4136-cam | cam-5 | 185.175.218.172 | check |
-| `02:56:06:01:09:b9` | ub4136-slides | slides-5 | 185.175.218.173 | checked 20221119 |
-| `02:57:08:c3:27:d1` | ub5132-cam | cam-0 | 185.175.218.174 | check |
-| `02:83:09:03:4b:46` | ub5132-slides | slides-1 | 185.175.218.175 | check |
-| `02:48:06:c1:1c:a1` | ub5230-cam | cam-3 | 185.175.218.176 | checked 20221119 |
-| `02:56:03:42:ba:91` | ub5230-slides | slides-4 | 185.175.218.177 | check |
-| `02:8e:0a:02:61:82` | ud2119-cam | cam-10 | 185.175.218.178 | check |
-| `02:c3:08:81:00:17` | ud2119-slides | slides-10 | 185.175.218.179 | check |
-| `02:0e:07:01:d9:0c` | ud2120-cam | cam-7 | 185.175.218.180 | check |
-| `02:43:06:c2:4d:41` | ud2120-slides | slides-9 | 185.175.218.181 | check |
-| `02:55:0b:42:3e:91` | ud2208-cam | cam-6 | 185.175.218.182 | check |
-| `02:c7:05:c1:ff:df` | ud2208-slides | slides-7 | 185.175.218.183 | check |
-| `02:c2:04:81:0a:97` | ud2218a-cam | cam-9 | 185.175.218.184 | check |
-| `02:09:0b:82:98:04` | ud2218a-slides | slides-8 | 185.175.218.185 | check |
-| `02:09:03:c2:f0:64` | n/a | slides-25 | 185.175.218.187 | TODO scaler dead, splitter disconnected |
+| `02:57:08:c3:27:d1` | cam-0 | 185.175.128 | not checked |
+| `02:c9:04:81:73:97` | cam-1 | 185.175.129 | not checked |
+| `02:0e:0a:02:02:40` | cam-2 | 185.175.130 | not checked |
+| `02:48:06:c1:1c:a1` | cam-3 | 185.175.131 | not checked |
+| `02:43:06:c2:9c:85` | cam-4 | 185.175.132 | not checked |
+| `02:12:0a:c2:05:60` | cam-5 | 185.175.133 | not checked |
+| `02:55:0b:42:3e:91` | cam-6 | 185.175.134 | not checked |
+| `02:0e:07:01:d9:0c` | cam-7 | 185.175.135 | not checked |
+| `02:01:0a:81:22:f4` | cam-8 | 185.175.136 | not checked |
+| `02:c2:04:81:0a:97` | cam-9 | 185.175.137 | not checked |
+| `02:8e:0a:02:61:82` | cam-10 | 185.175.138 | not checked |
+| `02:08:06:02:09:b4` | cam-11 | 185.175.139 | not checked |
+| `02:49:08:81:6a:b5` | cam-12 | 185.175.140 | not checked |
+| `02:02:0a:82:05:40` | cam-13 | 185.175.141 | not checked |
+| `02:88:09:40:dc:5a` | cam-14 | 185.175.142 | not checked |
+| `02:07:0a:82:66:3c` | cam-15 | 185.175.143 | not checked |
+| `02:17:0b:02:cb:fc` | cam-16 | 185.175.144 | not checked |
+| `02:c3:09:01:6f:4f` | cam-17 | 185.175.145 | not checked |
+| `02:46:07:c2:47:6d` | cam-18 | 185.175.146 | not checked |
+| `02:12:09:03:27:08` | cam-19 | 185.175.147 | not checked |
+| `02:06:06:41:82:58` | cam-20 | 185.175.148 | not checked |
+| `02:14:06:02:09:1c` | cam-21 | 185.175.149 | not checked |
+| `02:52:04:41:91:a9` | cam-23 | 185.175.150 | not checked |
+| `02:08:07:81:3b:a4` | cam-24 | 185.175.151 | not checked |
+| `02:47:02:c2:33:95` | cam-25 | 185.175.152 | not checked |
+| `02:c9:08:c0:fd:47` | slides-0 | 185.175.153 | not checked |
+| `02:83:09:03:4b:46` | slides-1 | 185.175.154 | not checked |
+| `02:d9:08:42:05:87` | slides-2 | 185.175.155 | not checked |
+| `02:01:05:82:32:30` | slides-3 | 185.175.156 | not checked |
+| `02:56:03:42:ba:91` | slides-4 | 185.175.157 | not checked |
+| `02:56:06:01:09:b9` | slides-5 | 185.175.158 | not checked |
+| `02:0c:02:02:6d:74` | slides-6 | 185.175.159 | not checked |
+| `02:c7:05:c1:ff:df` | slides-7 | 185.175.160 | not checked |
+| `02:09:0b:82:98:04` | slides-8 | 185.175.161 | not checked |
+| `02:43:06:c2:4d:41` | slides-9 | 185.175.162 | not checked |
+| `02:c3:08:81:00:17` | slides-10 | 185.175.163 | not checked |
+| `02:d7:0a:42:1d:b3` | slides-11 | 185.175.164 | not checked |
+| `02:8e:06:02:95:26` | slides-12 | 185.175.165 | not checked |
+| `02:c3:08:43:5b:43` | slides-13 | 185.175.166 | not checked |
+| `02:07:05:42:9e:60` | slides-14 | 185.175.167 | not checked |
+| `02:91:07:c2:64:9a` | slides-15 | 185.175.168 | not checked |
+| `02:54:04:83:26:c1` | slides-16 | 185.175.169 | not checked |
+| `02:86:05:83:34:62` | slides-17 | 185.175.170 | not checked |
+| `02:43:03:02:0d:e9` | slides-18 | 185.175.171 | not checked |
+| `02:4e:0a:41:53:d5` | slides-19 | 185.175.172 | not checked |
+| `02:09:07:82:a4:ec` | slides-20 | 185.175.173 | not checked |
+| `02:ce:09:c2:31:f3` | slides-21 | 185.175.174 | not checked |
+| `02:92:08:81:8f:0e` | slides-22 | 185.175.175 | not checked |
+| `02:14:04:82:f6:fc` | slides-23 | 185.175.176 | not checked |
+| `02:43:08:01:5f:81` | slides-24 | 185.175.177 | not checked |
+| `02:09:03:c2:f0:64` | slides-25 | 185.175.178 | TODO scaler dead, splitter disconnected |
 
 #### Spares
 
 | MAC | hostname | new name | IP | Remarks |
 |-----|----------|----------|----|---------|
-| `02:07:0a:82:66:3c` | spare0-cam | cam-15 | 185.175.218.186 | check |
-| `02:c3:08:43:5b:43` | spare0-slides | slides-13 | 185.175.218.187 | check |
-| `00:13:14:01:63:cf` | spare1-slides |  | 185.175.218.188 | check (vasil, chineese box, can also be cam) |
-| `02:c8:06:c2:a8:37` | spare2-slides |  | 185.175.218.189 | check (was k4401-slides) |
 
 #### Staff laptops
 
