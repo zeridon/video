@@ -132,37 +132,36 @@ addressing plan.
 | `02:12:09:03:27:08` | cam19 | 185.175.218.147 | not checked |
 | `02:06:06:41:82:58` | cam20 | 185.175.218.148 | not checked |
 | `02:14:06:02:09:1c` | cam21 | 185.175.218.149 | not checked |
-| `02:52:04:41:91:a9` | cam23 | 185.175.218.150 | not checked |
-| `02:08:07:81:3b:a4` | cam24 | 185.175.218.151 | not checked |
-| `02:47:02:c2:33:95` | cam25 | 185.175.218.152 | not checked |
-| `02:c9:08:c0:fd:47` | slides0 | 185.175.218.153 | not checked |
-| `02:83:09:03:4b:46` | slides1 | 185.175.218.154 | not checked |
-| `02:d9:08:42:05:87` | slides2 | 185.175.218.155 | not checked |
-| `02:01:05:82:32:30` | slides3 | 185.175.218.156 | not checked |
-| `02:56:03:42:ba:91` | slides4 | 185.175.218.157 | not checked |
-| `02:56:06:01:09:b9` | slides5 | 185.175.218.158 | not checked |
-| `02:0c:02:02:6d:74` | slides6 | 185.175.218.159 | not checked |
-| `02:c7:05:c1:ff:df` | slides7 | 185.175.218.160 | not checked |
-| `02:09:0b:82:98:04` | slides8 | 185.175.218.161 | not checked |
-| `02:43:06:c2:4d:41` | slides9 | 185.175.218.162 | not checked |
-| `02:c3:08:81:00:17` | slides10 | 185.175.218.163 | not checked |
-| `02:d7:0a:42:1d:b3` | slides11 | 185.175.218.164 | not checked |
-| `02:8e:06:02:95:26` | slides12 | 185.175.218.165 | not checked |
-| `02:c3:08:43:5b:43` | slides13 | 185.175.218.166 | not checked |
-| `02:07:05:42:9e:60` | slides14 | 185.175.218.167 | not checked |
-| `02:91:07:c2:64:9a` | slides15 | 185.175.218.168 | not checked |
-| `02:54:04:83:26:c1` | slides16 | 185.175.218.169 | not checked |
-| `02:86:05:83:34:62` | slides17 | 185.175.218.170 | not checked |
-| `02:43:03:02:0d:e9` | slides18 | 185.175.218.171 | not checked |
-| `02:4e:0a:41:53:d5` | slides19 | 185.175.218.172 | not checked |
-| `02:09:07:82:a4:ec` | slides20 | 185.175.218.173 | not checked |
-| `02:ce:09:c2:31:f3` | slides21 | 185.175.218.174 | not checked |
-| `02:92:08:81:8f:0e` | slides22 | 185.175.218.175 | not checked |
-| `02:14:04:82:f6:fc` | slides23 | 185.175.218.176 | not checked |
-| `02:43:08:01:5f:81` | slides24 | 185.175.218.177 | not checked |
-| `02:09:03:c2:f0:64` | slides25 | 185.175.218.178 | TODO scaler dead, splitter disconnected |
-
-#### Spares
+| `02:07:03:42:41:d4` | cam22 | 185.175.218.150 | not checked |
+| `02:52:04:41:91:a9` | cam23 | 185.175.218.151 | not checked |
+| `02:08:07:81:3b:a4` | cam24 | 185.175.218.152 | not checked |
+| `02:47:02:c2:33:95` | cam25 | 185.175.218.153 | not checked |
+| `02:c9:08:c0:fd:47` | slides0 | 185.175.218.154 | not checked |
+| `02:83:09:03:4b:46` | slides1 | 185.175.218.155 | not checked |
+| `02:d9:08:42:05:87` | slides2 | 185.175.218.156 | not checked |
+| `02:01:05:82:32:30` | slides3 | 185.175.218.157 | not checked |
+| `02:56:03:42:ba:91` | slides4 | 185.175.218.158 | not checked |
+| `02:56:06:01:09:b9` | slides5 | 185.175.218.159 | not checked |
+| `02:0c:02:02:6d:74` | slides6 | 185.175.218.160 | not checked |
+| `02:c7:05:c1:ff:df` | slides7 | 185.175.218.161 | not checked |
+| `02:09:0b:82:98:04` | slides8 | 185.175.218.162 | not checked |
+| `02:43:06:c2:4d:41` | slides9 | 185.175.218.163 | not checked |
+| `02:c3:08:81:00:17` | slides10 | 185.175.218.164 | not checked |
+| `02:d7:0a:42:1d:b3` | slides11 | 185.175.218.165 | not checked |
+| `02:8e:06:02:95:26` | slides12 | 185.175.218.166 | not checked |
+| `02:c3:08:43:5b:43` | slides13 | 185.175.218.167 | not checked |
+| `02:07:05:42:9e:60` | slides14 | 185.175.218.168 | not checked |
+| `02:91:07:c2:64:9a` | slides15 | 185.175.218.169 | not checked |
+| `02:54:04:83:26:c1` | slides16 | 185.175.218.170 | not checked |
+| `02:86:05:83:34:62` | slides17 | 185.175.218.171 | not checked |
+| `02:43:03:02:0d:e9` | slides18 | 185.175.218.172 | not checked |
+| `02:4e:0a:41:53:d5` | slides19 | 185.175.218.173 | not checked |
+| `02:09:07:82:a4:ec` | slides20 | 185.175.218.174 | not checked |
+| `02:ce:09:c2:31:f3` | slides21 | 185.175.218.175 | not checked |
+| `02:92:08:81:8f:0e` | slides22 | 185.175.218.176 | not checked |
+| `02:14:04:82:f6:fc` | slides23 | 185.175.218.177 | not checked |
+| `02:43:08:01:5f:81` | slides24 | 185.175.218.178 | not checked |
+| `02:09:03:c2:f0:64` | slides25 | 185.175.218.179 | TODO scaler dead, splitter disconnected |#### Spares
 
 | MAC | hostname | IP | Remarks |
 |-----|----------|----|---------|
