@@ -108,7 +108,7 @@ addressing plan.
 
 ### Video boxes
 
-| MAC | hostname | new name | IP | Remarks |
+| MAC | hostname | IP | Remarks |
 |-----|----------|----------|----|---------|
 | `02:57:08:c3:27:d1` | cam-0 | 185.175.218.128 | not checked |
 | `02:c9:04:81:73:97` | cam-1 | 185.175.218.129 | not checked |
@@ -164,8 +164,8 @@ addressing plan.
 
 #### Spares
 
-| MAC | hostname | new name | IP | Remarks |
-|-----|----------|----------|----|---------|
+| MAC | hostname | IP | Remarks |
+|-----|----------|----|---------|
 
 #### Staff laptops
 
