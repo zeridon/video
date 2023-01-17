@@ -3,7 +3,7 @@
 This is what is running on https://live.fosdem.org/
 
 ## Installing
-- install some required packages: <pre>apt install composer git vim-scripts zip</pre>
+- install some required packages: <pre>apt install composer git nginx vim-scripts zip</pre>
 - ssh into live.fosdem.org as the non-root user: <pre>ssh fosdem@web0.video.fosdem.org</pre>
 - clone this repo: <pre>git clone git@github.com:FOSDEM/video.git</pre>
 - change into this directory: <pre>cd video/software/livestream</pre>
