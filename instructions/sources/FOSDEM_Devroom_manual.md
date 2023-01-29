@@ -12,6 +12,12 @@
 	* For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105.
 * Emergency: Vasil Kolev on `+359888508044` or Mark Van den Borre on `+32486961726`.
 
+## Remote questions
+
+There is a chatroom in Matrix for your devroom, in which people can see the live stream of the talk and add questions. The room is named after the devroom (not the physical room).
+
+If you have your Matrix ID in penta, you'll be pulled directly. If you have any issues with this, ask questions in the devroom managers' Matrix room.
+
 ## Starting a presentation
 
 * Connect the speaker's laptop to the HDMI in port of the video box. If the speaker has only VGA out, a limited number of VGA to HDMI adapters are available with the per-building video support team.
@@ -57,5 +63,3 @@ Be aware that whatever you choose to do will also end up in the final recordings
 ## Misc
 
 Because most rooms cannot have a dedicated volunteer to manage the camera and follow the speaker around, we recommend taping two stripes of duct tape or similar on the floor to mark the end of the camera's field of vision and notifying the speakers to keep in that area. The video team will prepare those for the rooms where those could be needed.
-
-Questions from remote users. If you want to take questions from remote users, please organise the channels for this in advance.
