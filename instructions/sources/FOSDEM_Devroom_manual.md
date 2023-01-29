@@ -1,9 +1,8 @@
 # FOSDEM 2020 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
-* On IRC: `irc.freenode.net, #fosdem-video`
-* On Matrix/riot.im: There's an app on `https://riot.im`, install that, register, and look for `#fosdem-video` or `#fosdem-video:matrix.org` (bridged to IRC).
-* For just web access to it, you can use `https://riot.im/app/`.
+* On IRC: `irc.libera.chat, #fosdem-video`
+* On Matrix: `#fosdem-video:matrix.org` (should be bridged to IRC)
 * In person: there is a per-building team in the following locations:
 	* **AW**: under the stairs (in front of AW1.124)
 	* **K**: third floor, near K.3601
@@ -53,7 +52,7 @@ Be aware that whatever you choose to do will also end up in the final recordings
 * All speakers will receive a link for reviewing their video.
 	* As a devroom manager, you'll be on CC: for such emails.
 * The video team in your building may be able to help you with this, depending on their workload.
-* Contact: Wouter Verhelst <wouter@fosdem.org>, `wouter` on `irc.freenode.net#fosdem-video`
+* Contact: Wouter Verhelst <wouter@fosdem.org>, `wouter` on `irc.libera.chat#fosdem-video`
 
 ## Misc
 
