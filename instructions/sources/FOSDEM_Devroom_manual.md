@@ -1,16 +1,13 @@
-# FOSDEM 2020 A/V devroom manager manual, day DAY, room ROOM
+# FOSDEM 2023 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
-* On IRC: `irc.libera.chat, #fosdem-video`
 * On Matrix: `#fosdem-video:matrix.org` (should be bridged to IRC)
-* In person: there is a per-building team in the following locations:
-	* **AW**: under the stairs (in front of AW1.124)
-	* **K**: third floor, near K.3601
-	* **H**: behind the info desk
-	* **UD**: in the corridor near UD2.120 (Chavanne)
-	* **UA**: in the corridor near UA2.118 (Henriot)
-	* For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105.
+* On IRC: `irc.libera.chat, #fosdem-video`
+* In person: there is a per-building team in every building, together with FIT or NOC.
+* For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105.
 * Emergency: Vasil Kolev on `+359888508044` or Mark Van den Borre on `+32486961726`.
+
+The best way would be to ask in the matrix chat, someone will respond shortly and see if people need to be dispatched your way.
 
 ## Remote questions
 
