@@ -33,11 +33,12 @@ $app->get('/watch/{room}', function ($room) use ($app) {
 	    $room_slug = strtolower($room_slug);
 
     	$chat_name = $app['config']['rooms'][$room];
-
-    	$chat_name = substr($chat_name, 2);
-    	if (substr($room_slug, 0, 1) =='d') $chat_name.='-devroom';
-        if (substr($room_slug, 0, 1) == 'k') $chat_name = "fosdem-keynotes";
-
+        $chat_name = str_replace('(', '', $chat_name);
+        $chat_name = str_replace(')', '_', $chat_name);
+        $chat_name = str_replace(' ', '_', $chat_name);
+    	if (substr($room_slug, 0, 1) =='d') $chat_name = substr($chat_name, 2);
+	$chat_name = strtolower($chat_name);
+    	$chat_name = '2023-'.$chat_name;
 
 	return $app['twig']->render('watch.twig', [
 		'title' => 'Stream ' . $app['config']['rooms'][$room],
