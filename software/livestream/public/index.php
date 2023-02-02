@@ -36,7 +36,6 @@ $app->get('/watch/{room}', function ($room) use ($app) {
         $chat_name = str_replace('(', '', $chat_name);
         $chat_name = str_replace(')', '_', $chat_name);
         $chat_name = str_replace(' ', '_', $chat_name);
-    	if (substr($room_slug, 0, 1) =='d') $chat_name = substr($chat_name, 2);
 	$chat_name = strtolower($chat_name);
     	$chat_name = '2023-'.$chat_name;
 
