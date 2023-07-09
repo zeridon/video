@@ -9,7 +9,7 @@ module rcube(size, radius) {
     }
 }
 
-rcube(size=[31,9,3], radius=3.5);
+rcube(size=[31,9.5,4], radius=3.5);
 
-translate([0,3.25,3])
-    cube(size=[31,2.5,2.5]);
+translate([0,3.25,4])
+    cube(size=[31,2.5,2.7]);
