@@ -9,7 +9,7 @@ module screwholder() { // 10mm high M3 screw holder with ledge
     }
 
     translate([1,0,0]) cube([4,3,9]);
-    translate([2,0,9]) cube([2,3,1]);
+    translate([2.1,0,9]) cube([1.8,3,1]);
 }
 
 module standembracer(height=9) {   
@@ -53,7 +53,6 @@ module frame() {
         }
 
         translate([3,90,-1]) cube([11,6,6.5]); // standembracer cut-out
-        //translate([8.2,13.1,-1]) cylinder(d=9, h=6.5); // low-profile screw hole cut-out first print
         translate([8.2,14,-1]) cylinder(d=8, h=6.5); // low-profile screw hole cut-out
     }
 }
@@ -64,8 +63,8 @@ frame();
 translate([8,93.5,0]) {
     standembracer(height=9);
     union() { // faking part of a screw holder to hold up the board
-        translate([0,-7.5,0]) cube([5,2,9]);
-        translate([2,-7,9]) cube([2,3,1]);
+        translate([3,-6.5,0]) cylinder(d=4, h=9);
+        translate([2.1,-7,9]) cube([1.8,3,1]);
     }
 }
 
