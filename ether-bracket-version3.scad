@@ -58,6 +58,17 @@ module frame() {
 }
 
 
+module letter(letter, size = 2, height = 0.5, font) {
+	linear_extrude(height = height) {
+		text(letter, size = size, font = font, halign = "center", valign = "center", $fn = 16);
+	}
+}
+
+translate([3,2,5]) rotate([0,0,90]) union() {
+    letter("v");
+    translate([1.5,0,0]) letter("2");
+}
+
 frame();
 
 translate([8,93.5,0]) {
