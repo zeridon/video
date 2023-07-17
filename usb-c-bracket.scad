@@ -2,15 +2,6 @@ include <modules/standembracer.scad>
 
 $fn = 100;
 
-module wall2() {
-    translate([0,4.2,0]) cube([25,3,12]);
-
-    translate([0,0,0]) cube([3.5,4.2,10]);
-    translate([7,0,0]) cube([3.5,4.2,10]);
-    translate([14,0,0]) cube([3.5,4.2,10]);
-    translate([21,0,0]) cube([3.5,4.2,10]);
-}
-
 module front() {
     // this is the front of the bracket, without the cooling fin fillers
     difference() {
@@ -28,34 +19,25 @@ module front() {
         cube([14,14,4]);
         translate([7,7,-1]) cylinder(d=8, h=6);
     }
-}
 
-module oldback() {
-    difference() {
-        union() {
-            cube(size=[56,5,12]);
-            cube(size=[10,9,12]);
-            translate([46,0,0])
-                cube(size=[10,9,12]);
-        }
-
-        translate([3,2,8])
-            cube(size=[50,10,2]);
-
-        translate([18.5,2,9])
-            cube(size=[20,10,4]);
-    }
+    translate([61.5,-4,0]) cube([3.8,4,10]); // protrusion to fit in between the cooling fins
 }
 
 module back() {
-    translate([32.5,3,0]) cube([12.5,87,3]); // tail
+    translate([14,3,0]) cube([6,87,3]); // left tail
+    translate([44,3,0]) cube([6,87,3]); // right tail
+    translate([14,5,0]) rotate([0,0,-20]) cube([4,90,3]); // cross tail
 
     difference() {
         translate([10,90,0]) cube([57,8,11]); // bar and towers
         translate([20,88,3]) cube([38,20,12]); // cut out middle of the bar/tower
         translate([13.8,88,7]) cube([7,8,2]); // left tower slot cut out
         translate([56,88,7]) cube([8,8,2]); // right tower slot cut out
+
+        translate([9,95,-1]) cube([3.2,4,4]); // left tower bottom corner standembracer cut out
     }
+
+    translate([7,99.5,0]) standembracer(4); // hugging the standoff in the case
 }
 
 module transversalbar() {
@@ -72,16 +54,10 @@ module transversalbar() {
     translate([33,1,2.4]) color("#0ff") cube([12,8.5,1]); // short pad
 }
 
-
 module bracket() {
     front();
     back();
-    //color("#faa",0.7) translate([66.75,98,-1]) rotate([0,0,180]) oldback();
 }
 
 bracket();
-translate([64,15,0]) rotate([0,0,90]) transversalbar();
-
-//wall2();
-//translate([0,13,12.5]) rotate([180,0,0]) transversalbar();
-
+translate([68,16,0]) rotate([0,0,90]) transversalbar();
