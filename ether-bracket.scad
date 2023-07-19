@@ -7,7 +7,6 @@ $fn=100;
 
 height=10; // height from the frame up
 
-include <modules/letter.scad>
 include <modules/standembracer.scad>
 
 // --------- modules --------- //
@@ -78,11 +77,6 @@ module strainrelief_clip() {
 
 
 // --------- assembly --------- //
-
-translate([4,4,5]) rotate([0,0,90]) union() {
-    letter("v");
-    translate([4,0,0]) letter("4");
-}
 
 frame();
 
