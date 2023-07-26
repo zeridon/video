@@ -46,12 +46,12 @@ module transversalbar() {
     // attempt to provide more rigidity
     difference() {
         cube([69.5,13,2]); // bar
-        translate([6.25,5,-1]) cylinder(d=3.2, h=4); // screwhole
-        translate([66.5,5,-1]) cylinder(d=3.2, h=4); // screwhole
+        translate([6.25,5,-1]) cylinder(d=3.6, h=4); // screwhole
+        translate([66.5,5,-1]) cylinder(d=3.6, h=4); // screwhole
     }
     
-    translate([24,1,2]) color("#0ff") cube([37,8.5,0.6]); // long pad
-    translate([33,1,2.4]) color("#0ff") cube([12,8.5,1]); // short pad
+    translate([24,1,2]) color("#0ff") cube([37,7,0.6]); // long pad
+    translate([33,1,2.4]) color("#0ff") cube([12,7,1]); // short pad
 }
 
 module bracket() {
