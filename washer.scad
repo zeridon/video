@@ -3,6 +3,6 @@
 $fn=100;
 
 difference() {
-    cylinder(d=10,h=1);
-    translate([0,0,-1]) cylinder(d=3.4,h=3);
+    cylinder(d=12,h=2);
+    translate([0,0,-1]) cylinder(d=3.6,h=4);
 }
