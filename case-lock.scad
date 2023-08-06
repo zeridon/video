@@ -1,4 +1,12 @@
-$fn=60;
+/**
+ * The case-lock replaces the stock slide-in case locks of the Gainta G17081U
+ * case. These come with rackmount ears, which we don't need and take up
+ * unnecessary space.
+ *
+ * You will need 4 of these per case.
+ */
+
+$fn=100;
 
 module rcube(size, radius) {
     hull() {

@@ -1,4 +1,7 @@
-// washer to fit on top of the low-profile screw things
+/**
+ * This 2mm thick washer will fit over the 4mm high low-profile screw hole.
+ * Together, these will accept 6mm screws.
+ */
 
 $fn=100;
 
