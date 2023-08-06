@@ -47,59 +47,70 @@ module frame() {
 }
 
 module strainrelief() {
-    cutout_d=8;
+    cutout_d=7.5;
 
     difference() {
         union() {
-            cube([17,30,4.5]);
-            translate([0,23,0]) cube([17,7,height-1.5]);
+            cube([17,29,4.5]);
+            translate([-1.5,22,0]) cube([20,7,12.5]);
         }
 
-        translate([0,23,0]) { // screwholes and cut-out
-            translate([3,3.5,height-9]) rotate([0,0,90]) cylinder(d=3, h=10);
-            translate([14,3.5,height-9]) rotate([0,0,90]) cylinder(d=3, h=10);
+        translate([0,22,0]) { // screwholes and cut-out
+            translate([1,3.5,height-9]) rotate([0,0,90]) cylinder(d=3, h=15);
+            translate([16,3.5,height-9]) rotate([0,0,90]) cylinder(d=3, h=15);
 
-            translate([8.5,-1,height-7+(cutout_d/2)+3.5]) rotate([0,90,90]) cylinder(d=cutout_d, h=9);
+            translate([8.5,-1,height-7+(cutout_d/2)+4]) rotate([0,90,90]) cylinder(d=cutout_d, h=9);
         }
     }
 }
 
 module strainrelief_clip() {
-    cutout_d=8;
-
     difference() {
-        cube([7,17,6]);
-        translate([-1,8.5,6.5]) rotate([0,90,0]) cylinder(d=cutout_d, h=9);
-        translate([3.5,3.5,height-11]) rotate([0,0,90]) cylinder(d=3.5, h=10);
-        translate([3.5,13.5,height-11]) rotate([0,0,90]) cylinder(d=3.5, h=10);
+        cube([7,20,2]);
+        translate([3.5,2.8,-1]) rotate([0,0,90]) cylinder(d=3.6, h=10);
+        translate([3.5,17.2,-1]) rotate([0,0,90]) cylinder(d=3.6, h=10);
     }
 }
 
+module dualwasher() { // two-hole oddly shaped washer, fits neatly in the case
+    difference() {
+        union() {
+            translate([6,0,0]) cylinder(d=12,h=1.5);
+            cube([9,20,1.5]);
+        }
+
+        translate([6,0,-1]) cylinder(d=3.6,h=3);
+        translate([6,16,-1]) cylinder(d=3.6,h=3);
+        translate([-1,6,-1]) cube([3,6,5]);
+    }
+}
 
 // --------- assembly --------- //
 
-frame();
+frame(); // main frame
 
-translate([0,40,0]) rotate([0,0,90]) strainrelief();
+translate([0,40,0]) rotate([0,0,90]) strainrelief(); // tail with USB cable support
 
-translate([15,40,0]) strainrelief_clip();
-
-translate([8,93.5,0]) {
-    standembracer(height-1); // standembracer needs to leave room to hold the board, so height-1
+translate([8,93.5,0]) { // cylinder with cross shape cut out, goes around the stand
+    standembracer(height-1); // leave room to hold the board, so height-1
     union() { // faking part of a screw holder to hold up the board
-        translate([3,-6.5,0]) cylinder(d=4, h=height-1);
-        translate([2.1,-7,height-1]) cube([1.8,3,1]);
+        translate([4,-6.5,0]) cylinder(d=4, h=height-1);
+        translate([3.1,-7,height-1]) cube([1.8,3,1]);
     }
 }
 
-translate([15,8,0]) {
+translate([16,8,0]) { // back right
     rotate([0,0,180]) screwholder();
 }
 
-translate([31,8,0]) {
+translate([32,8,0]) { // front right
     rotate([0,0,180]) screwholder();
 }
 
-translate([24,87,0]) {
+translate([25,87,0]) { // front left
     screwholder();
 }
+
+translate([10,30,0]) strainrelief_clip(); // square clip, fits on the strain relief
+
+translate([10,60,0])  dualwasher(); // oddly shaped washer
