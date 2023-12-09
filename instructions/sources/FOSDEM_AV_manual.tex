@@ -95,7 +95,7 @@
 Video is a big task, so there are many people working together to make it all happen. Here's all the teams:
 
 \subsection{AW, H, K, U and J teams}
-You should be a team of at least two per building: AW, H, K, UA and UD respectively. J (probably) has a dedicated knowledgeable volunteer.
+You should be a team of at least two per building: AW, H, K and U respectively. J (probably) has a dedicated knowledgeable volunteer.
 
 Coordination with video operations control (VOC) happens through walkies and chat: irc://irc.freenode.net\#fosdem-video or \#fosdem-video:matrix.org . The chat is web accessible through https://riot.im/app/\#/room/\#fosdem-video:matrix.org .
 
@@ -110,11 +110,9 @@ Your tasks before the conference starts:
 During the day, you'll have a fixed spot in the building. The below spots should also appear in https://nav.fosdem.org .
 \begin{itemize}
   \item AW: corner between AW1.117 and AW1.121
-  \item K: in front of K3.601
-  \item H: behind the info desk
-  \item UA: in the corridor near Henriot (UA2.118)
-  \item UB4\&5: between doors UB5132A and UB 5230B
-  \item UD: in the corridor near Chavanne (UD2.120)
+  \item K: NOC (K.1110)
+  \item H: room H.2111
+  \item U: room UB4.228 
 \end{itemize}
 
 Your job during the conference, with the backup from the VOC team, is to do the following in your building:
@@ -163,14 +161,14 @@ Access to those systems is provided on Friday. Every per-building team should ha
 
 
 \section{Rooms}
-We have 30 rooms: 14 small, 14 large and 2 extra large rooms. Each type of room has a different audio/video setup.
+We have 28 rooms: 12 small, 14 large and 2 extra large rooms. Each type of room has a different audio/video setup.
 \begin{itemize}
-  \item AW: AW1120 (S), AW1121 (S), AW1125 (S), AW1126 (S)
+  \item AW: AW1120 (S), AW1121 (S)
   \item K: K1105 (XXL), K3201 (S), K3401 (S), K4201 (S), K4401 (S), K4601 (S)
   \item H: H1301 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (L)
   \item UA: UA2214 (L), UA2118(L), UA2220 (L), UB2147 (S), UB2252A (L)
-  \item UD: UD2119 (S), UD2120 (L), UD2208 (L), UD2218A (L)
-  \item UB4: UB4136 (S), UB5132 (L, Sunday only), UB5230 (L, Sunday only)
+  \item UB4: UB4132 (S), UB4136 (S), UB5132 (L), UB5230 (L, spare)
+  \item UD: UD2120 (L), UD2208 (L), UD2218A (L)
   \item J: Janson (XXL)
 \end{itemize}
 
@@ -182,9 +180,10 @@ These have a projector and a tie pin microphone for the speaker. Audience questi
 The connections there are as follows:
 
 \begin{itemize}
+  \item USB cable from laptop to video-box (2 laptops/boxes)
   \item Network cable (video VLAN) to the presenter box (any port)
   \item Network cable form the presenter to camera box (any port, on each side)
-  \item Camera, presenter box, video box to the AC power
+  \item Laptops, camera, presenter box, video box to the AC power
   \item XLR cable from the microphone receiver to channel 1 (LEFT) of the camera
   \item USB powerbank to the microphone receiver
   \item HDMI from the camera to the HDMI port of the video box
@@ -201,22 +200,22 @@ The connections there are as follows:
 \end{figure}
 
 \subsection{Large rooms}
-These have a projector, a tie pin mic for the speaker and an audience microphone. They use the Sony HXR-NX100 camera. 
+These have a projector, a tie pin mic for the speaker and an audience microphone. They use the Sony HXR-NX100 camera. For the rooms that don't have a PA, there's also a dedicated speaker.
 
 The connections there are as follows:
 
 \begin{itemize}
+  \item USB cable from laptop to video-box (2 laptops/boxes)
   \item Network cable (video VLAN) to the presenter box (any port)
   \item Network cable form the presenter to camera box (any port, on each side)
-  \item Camera, presenter box, video box, audio mixer to the AC power
+  \item Laptops, camera, presenter box, video box, audio mixer to the AC power
   \item Microphone receiver for the speaker's microphone to channel 1 of the mixer
   \item Microphone receiver for the audience microphone to channel 2 of the mixer
   \item XLR cable from the left channel of the audio mixer to channel 1 (LEFT) of the camera
-  \item XLR cable from the right channel of the audio mixer to the audio of the room
+  \item XLR cable from the AUX channel of the audio mixer to the room PA or speaker
   \item USB powerbank to the microphone receivers
   \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
-  \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the pesenter box to the beamer in the room
   \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
 \end{itemize}
 \subsubsection{Cabling diagram}
@@ -233,13 +232,13 @@ These have a projector, a tie pin mic for the speaker and one or two audience mi
 The connections there are as follows:
 
 \begin{itemize}
+  \item USB cable from laptop to video-box (2 laptops/boxes)
   \item Network cable (video VLAN) to the presenter box (any port)
   \item Network cable form the presenter to camera box (any port, on each side)
-  \item Camera, presenter box, video box to the AC power
+  \item Laptops, camera, presenter box, video box to the AC power
   \item XLR cable from the left channel of the audio mixer (ULB provided) to channel 1 (LEFT) of the camera
   \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left VGA port to the beamer in the room (if the beamer is VGA)
-  \item HDMI cable from the pesenter box to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the pesenter box to the beamer in the room;
   \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
 \end{itemize}
 
@@ -294,7 +293,7 @@ The boxes report all this information to control while their network status is g
 We use the Manfrotto MVH 502. This should hopefully be self-explanatory. Please offer feedback to VOC if that is not the case.
 
 \section{Camera}
-FOSDEM 2023 will use one camera models: the Sony HXR-NX100.
+FOSDEM 2024 will use one camera models: the Sony HXR-NX100.
 
 \subsection{Standard camera settings and quick check list}
 \begin{tabular}{| l | l |}
