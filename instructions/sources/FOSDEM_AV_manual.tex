@@ -539,24 +539,43 @@ Another piece of software, ``audiofetcher`` reads the audio stream, pushes its s
 
 \subsection{video-control-server}
 
-Monitoring of sound levels
-monitoring of what is visible in the streams
-Database of what is in what room
-DHCP
+Partially implemented in role ``video-control-server``. Partially, because some of the stuff gets tweaked and updated on the running node before and during FOSDEM.
+
+The following tasks are handled by the control server:
+
+\begin{itemize}
+  \item A database (with interface) of the mapping room->voctop->camerabox->slidesbox. This is queried from the voctops and streambackend to know where to get the data for a particular room;
+  \item An InfluxDB database with sound levels to which the ``audiofetcher`` from the voctop pushes data;
+  \item A Grafana instance to plot the sound levels;
+  \item A preview page with all rooms (or selectable by building) that shows camera/slides/mix and sound levels for every room (``showbuilding.php``);
+  \item A control interface for every room that can be used to change the current video mix (``vocto.php``). It's authenticated with users/passwords provided to devroom managers;
+  \item DHCP and DNS server for the video VLAN
+\end{itemize}
+
+The majority of the traffic of the control server is the fetching of raw video frames from the voctops, it amounts to a steady 300Mbps. This was the initial reason to move this node on-site.
 
 \subsection{video-streambackend}
 
-Fetches video from voctops
-Writes HLS and large video fragments for sreview;
-Provides NFS for sreview;
+Implemented in the role ``video-streambackend``.
+
+This is a (currentl) single physical server outside of ULB that fetches all mixed video streams from the voctops, and creates:
+
+\begin{itemize}
+  \item A HLS stream with two video (selectable) streams for viewing by end users;
+  \item Half-hour dumps of video streams, to be processed by ``sreview``
+\end{itemize}
+
+These both are created by using ``ffmpeg``. The HLS stream is served via ``nginx`` to the streamfrontends, and the dumps are served via either ``ssh``/``sshfs`` or NFS to ``sreview``.
 
 \subsection{video-streamfrontend}
 
-Serves HLS fragments coming from the backend
+Implemented in the role ``video-streamfrontend``.
+
+This is a somewhat simple caching proxy implemented with ``nginx`` that presents the video streams from the streambackend to end users.
 
 \subsection{video-streamdump}
 
-The ``streamdump``'s role is to connect to all video-boxes and all voctops, and to stream the video they provide to record it to be used for restore for emergencies.
+The ``streamdump``'s role is to connect to all video-boxes and all voctops, to fetch the video they provide to record it to be used for restore for emergencies. There is usually one at ULB and one externally.
 
 \end{document}
  
