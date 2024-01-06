@@ -474,7 +474,7 @@ The system's code and recipes for deployment are available in FOSDEM's GitHub re
 \begin{itemize}
   \item Port 8899 - this provides the stream from the current point onward. This is used for normal video clients that want to access the stream as it's being pushed at the moment;
   \item Port 8898 - this provides the stream with half of what's currently in the buffer, to allow clients to quickly start displaying the stream. This is used mostly for debug purposes, as it just makes it faster to find a keyframe;
-  \item Port 8899 - this provides the stream from the current point onward, after it receives some HTTP headers. This was implemented for compatibility with some streaming devices for the 2020 edition.
+  \item Port 80 - this provides the stream from the current point onward, after it receives some HTTP headers. This was implemented for compatibility with some streaming devices for the 2020 edition.
 \end{itemize}
 
 The main use of \texttt{sproxy} is to allow multiple clients to access a MPEG-TS encapsulated video (H.264, AAC) in real time without the need of any previous setup. MPEG-TS allows this, as it's not relevant when in the stream the client starts reading, as the encapsulation is self-synchronizing.
