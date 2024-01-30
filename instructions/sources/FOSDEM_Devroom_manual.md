@@ -1,4 +1,4 @@
-# FOSDEM 2023 A/V devroom manager manual, day DAY, room ROOM
+# FOSDEM 2024 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
 * On Matrix: `#fosdem-video:matrix.org` (should be bridged to IRC)
