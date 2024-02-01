@@ -2,10 +2,19 @@
 # FOSDEM 2024 video: speakers manual
 
 ## Before FOSDEM
-
+### Slides: technical requirements
 Please create slides with a 16/9 aspect ratio. 1920x1080 (recommended) or 1280x720 (acceptable) will do.
 
-You may want to keep a copy with 4/3 aspect ratio handy for best results should the room projector have a native 4/3 resolution. 1280x960 will do.
+You may want to keep a copy with 4/3 aspect ratio handy for best results should the room projector in your room have a native 4/3 resolution. 1280x960 will do.
+
+### Matrix account
+As a speaker, you might want a Matrix account.  You should already have been invited by email (or Matrix, if we know your Matrix ID) to sign up to Matrix and join the relevant chatrooms.  If not, you can get a Matrix account at https://chat.fosdem.org.  Then, to receive the invites, please enter your Matrix ID (e.g. @matthew:fosdem.org) under your account details on [https://pretalx.fosdem.org](https://pretalx.fosdem.org/fosdem-2024/me/) (look for the 'Matrix-id' field) and you'll be invited shortly. We send out invites a few times a day.
+
+You should be invited to:
+ * [#speakers:fosdem.org](https://matrix.to/#/#speakers:fosdem.org) (the main coordination point for speakers)
+ * The backstage room for your devroom, where you can coordinate with the devroom organisers and your hosts
+ * The devroom itself.
+
 
 ## During FOSDEM
 ### Slides capture
@@ -42,29 +51,14 @@ You will have a chance to address your real life live audience's questions in a 
 
 ## How to participate as a speaker at FOSDEM 2024
 
-As a speaker, you need a Matrix account.  You should already have been invited by email (or Matrix, if we know your Matrix ID) to sign up to Matrix and join the relevant chatrooms.  If not, you can get a Matrix account at https://chat.fosdem.org.  Then, to receive the invites, please enter your Matrix ID (e.g. @matthew:fosdem.org) under your account details on https://pretalx.fosdem.org (look for the 'Add instant messaging address' button on your Person page) and you'll be invited shortly. We send out invites a few times a day.
-
-You should be invited to:
- * [#speakers:fosdem.org](https://matrix.to/#/#speakers:fosdem.org) (the main coordination point for speakers)
- * The backstage room for your devroom, where you can coordinate with the devroom organisers and your hosts
- * The devroom itself.
 
 ### Talk chat room
 
-The audience in the devroom is invited to join the talk room to continue discussing the talk or asking text based questions directly.  The chat history of the talk room is not visible to them. This room is equivalent to members of the audience coming to ask you questions in the hallway after your talk, and gives your talk a permenant chatroom for posterity.
+The audience in the devroom is invited to join the talk room to asking text based questions to be forwarded to you during your live talk.
 
 In case of moderation problems, the speaker and host (and any other moderators in that Matrix room) have permission to kick/mute users.  Users can also be kicked and banned from the Matrix room.  In case of difficulty, please ask for help in #speakers:fosdem.org.
 
 The FOSDEM bot will send updates into the talk room during the talk to let you know what's happening. 
-
-### The devroom
-
-### 3. Hallway track
-Think of this as a minority of the audience clustering around the speaker for an informal chat in the hallway after the talk has ended.
-
-Once the live q&a is over, your backstage room will open up to the general audience. Audience members can then come and talk to you.
-
-If you want to make sure your audience finds its way to this hallway track, make some publicity around it near the end of your q&a session. Example: "Any further questions? Would you like to speak to me? Join me now in matrix room #talk-123456 for an interactive video chat.".
 
 ## After FOSDEM
 When agreeing to speak at FOSDEM, you explicitly granted FOSDEM vzw the right to publish your video under a CC BY-SA license. Your video will be uploaded to the FOSDEM video archive at https://video.fosdem.org .
