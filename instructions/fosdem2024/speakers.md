@@ -49,5 +49,8 @@ You will have a chance to address your real life live audience's questions in a 
 - I have a problem connecting to https://chat.fosdem.org at all.
   - Speak to anyone in a blue (FOSDEM developer room manager), green (FOSDEM video) or yellow (FOSDEM staff) t-shirt.
 
-## After FOSDEM
+## After your talk & after FOSDEM
 When agreeing to speak at FOSDEM, you explicitly granted FOSDEM vzw the right to publish your video under a CC BY-SA license. Your video will be uploaded to the FOSDEM video archive at https://video.fosdem.org .
+
+### Video review
+Your developer room manager, one of his delegates and/or you should receive a [video review](https://review.video.fosdem.org) link by email. There, you can indicate proper start and end points for your talk video to be released at https://video.fosdem.org .
