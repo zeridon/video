@@ -49,16 +49,5 @@ You will have a chance to address your real life live audience's questions in a 
 - I have a problem connecting to https://chat.fosdem.org at all.
   - Speak to anyone in a blue (FOSDEM developer room manager), green (FOSDEM video) or yellow (FOSDEM staff) t-shirt.
 
-## How to participate as a speaker at FOSDEM 2024
-
-
-### Talk chat room
-
-The audience in the devroom is invited to join the talk room to asking text based questions to be forwarded to you during your live talk.
-
-In case of moderation problems, the speaker and host (and any other moderators in that Matrix room) have permission to kick/mute users.  Users can also be kicked and banned from the Matrix room.  In case of difficulty, please ask for help in #speakers:fosdem.org.
-
-The FOSDEM bot will send updates into the talk room during the talk to let you know what's happening. 
-
 ## After FOSDEM
 When agreeing to speak at FOSDEM, you explicitly granted FOSDEM vzw the right to publish your video under a CC BY-SA license. Your video will be uploaded to the FOSDEM video archive at https://video.fosdem.org .
