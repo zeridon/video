@@ -24,7 +24,7 @@ You will have a chance to address your live audience's questions in a live broad
     - You should have received an invitation by email. In case you have trouble getting in, any FOSDEM staff should be able to invite you here.
   - the general audience room for your talk.
     - You should have received an invitation to this room.
-    - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/2022/schedule/events/). Examples: D.cloud => [#cloud-devroom:fosdem.org](https://chat.fosdem.org/#/room/#cloud-devroom:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
+    - Alternatively, you can derive your matrix room from the [schedule](https://fosdem.org/schedule/events/). Examples: D.cloud => [#cloud-devroom:fosdem.org](https://chat.fosdem.org/#/room/#cloud-devroom:fosdem.org), M.misc => [#misc:fosdem.org](https://chat.fosdem.org/#/room/#misc:fosdem.org) .
   
 ### Help! Something is wrong. Who do I contact?
 - For practical issues regarding projection, capture and sound inside your room, live people in green FOSDEM video t-shirts are your best bet. There is one team per building:
@@ -42,7 +42,7 @@ You will have a chance to address your live audience's questions in a live broad
 
 ## How to participate as a speaker at FOSDEM 2024
 
-As a speaker, you need a Matrix account.  You should already have been invited by email (or Matrix, if we know your Matrix ID) to sign up to Matrix and join the relevant chatrooms.  If not, you can get a Matrix account at https://chat.fosdem.org.  Then, to receive the invites, please enter your Matrix ID (e.g. @matthew:fosdem.org) under your account details on https://penta.fosdem.org (look for the 'Add instant messaging address' button on your Person page) and you'll be invited shortly. We send out invites a few times a day.
+As a speaker, you need a Matrix account.  You should already have been invited by email (or Matrix, if we know your Matrix ID) to sign up to Matrix and join the relevant chatrooms.  If not, you can get a Matrix account at https://chat.fosdem.org.  Then, to receive the invites, please enter your Matrix ID (e.g. @matthew:fosdem.org) under your account details on https://pretalx.fosdem.org (look for the 'Add instant messaging address' button on your Person page) and you'll be invited shortly. We send out invites a few times a day.
 
 You should be invited to:
  * [#speakers:fosdem.org](https://matrix.to/#/#speakers:fosdem.org) (the main coordination point for speakers)
