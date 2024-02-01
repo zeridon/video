@@ -20,7 +20,7 @@ You should be invited to:
 ### Slides capture
 The slides capture system will accept hdmi input. Please bring your own whatever-to-hdmi adapter should you need any. Adapters for mini-dp, usb-c and possibly more will be provided on a best effort basis.
 
-Please mind the following recommendations:
+Please mind the following requirements:
 - 60 Hz or lower video output refresh rate
 - 1080p (1920x1080) or lower output resolution
 
