@@ -16,7 +16,7 @@ Please mind the following recommendations:
 - 1080p (1920x1080) or lower output resolution
 
 ### Talk Q&A: live audience interaction and text based questions from chat.fosdem.org
-You will have a chance to address your live audience's questions in a live broadcast q&a session. Your room manager may also relay questions from https://chat.fosdem.org .
+You will have a chance to address your live audience's questions in a live broadcast q&a session. Your room manager or his assistant may also relay questions from https://chat.fosdem.org .
 
 - You may want to join the following rooms:
   - [#speakers:fosdem.org](https://chat.fosdem.org/#/room/#speakers:fosdem.org)
