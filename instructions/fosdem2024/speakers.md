@@ -51,9 +51,9 @@ You should be invited to:
 
 ### Talk chat room
 
-Finally, at the end of the Q&A session, the audience in the devroom is invited to join the talk room to continue discussing the talk or asking questions directly (including joining the video conference if they wish).  The chat history of the talk room is not visible to them. This room is equivalent to members of the audience coming to ask you questions in the hallway after your talk, and gives your talk a permenant chatroom for posterity.
+The audience in the devroom is invited to join the talk room to continue discussing the talk or asking text based questions directly.  The chat history of the talk room is not visible to them. This room is equivalent to members of the audience coming to ask you questions in the hallway after your talk, and gives your talk a permenant chatroom for posterity.
 
-In case of moderation problems, the speaker and host (and any other moderators in that Matrix room) have permission to kick/mute users from the video conference - using the small `...` menu in the top right of that user's video feed.  Users can also be kicked and banned from the Matrix room.  In case of difficulty, please ask for help in #speakers:fosdem.org.
+In case of moderation problems, the speaker and host (and any other moderators in that Matrix room) have permission to kick/mute users.  Users can also be kicked and banned from the Matrix room.  In case of difficulty, please ask for help in #speakers:fosdem.org.
 
 The FOSDEM bot will send updates into the talk room during the talk to let you know what's happening. 
 
