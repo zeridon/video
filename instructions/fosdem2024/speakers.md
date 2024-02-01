@@ -13,7 +13,7 @@ The slides capture system will accept hdmi input. Please bring your own whatever
 
 Please mind the following recommendations:
 - 60 Hz or lower video output refresh rate
-- 1080p (1920x1080) output resolution
+- 1080p (1920x1080) or lower output resolution
 
 ### Talk Q&A: live audience interaction and text based questions from chat.fosdem.org
 You will have a chance to address your live audience's questions in a live broadcast q&a session. Your room manager may also relay questions from https://chat.fosdem.org .
