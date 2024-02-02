@@ -38,7 +38,7 @@ You will have a chance to address your real life live audience's questions in a 
 ### Help! Something is wrong. Who do I contact?
 - For practical issues regarding projection, capture and sound inside your room, live people in green FOSDEM video t-shirts are your best bet. There is one team per building:
   - [AW building](https://nav.fosdem.org/l/aw1125/): room AW1.125
-  - [H building](https://nav.fosdem.org/l/h2-infodesk/): H infodesk
+  - [H building](https://nav.fosdem.org/l/h2-infodesk/): H2.111
   - [J/Janson auditorium](https://nav.fosdem.org/l/janson/): near the audio mixing console, by the camera
   - [K1.105 "Lafontaine" main track auditorium](): near the camera, if not see K general
   - [K building](https://nav.fosdem.org/l/c:1:165.69:265.77/): behind the 1.105 ("Lafontaine") auditorium, bottom left when facing the stage
