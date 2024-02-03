@@ -3,6 +3,7 @@
 |`[ ]` Bring equipment to the room|
 |`[ ]` Notify VOC (message, in Matrix) of which box is used for which purpose (slides, cam)|
 | |
+|`[ ]` Write the room name on the whiteboard to point the camera to|
 |`[ ]` Identify camera placement|
 |`[ ]` Unpack tripod|
 |`[ ]` Install camera on tripod|
