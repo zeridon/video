@@ -74,15 +74,36 @@ function stack_streams_into_grid {
     echo "xstack=inputs=${n}:layout=${all_specs}[${out_stream}]"
 }
 
+function get_num_streams {
+    local stream_data="$(ffprobe "${1}" 2>&1 | grep -P 'Stream #.*(Video|Audio)')"
+    local num_video_streams="$(echo "${stream_data}" | grep -F "Video:" | wc -l)"
+    local num_audio_streams="$(echo "${stream_data}" | grep -F "Audio:" | wc -l)"
+    if [[ ${num_video_streams} -le 1 ]]; then
+        num_video_streams=1
+    fi
+    if [[ ${num_audio_streams} -le 1 ]]; then
+        num_audio_streams=1
+    fi
+    echo "${num_video_streams} ${num_audio_streams}"
+    msg "${1} has ${num_video_streams} video streams and ${num_audio_streams} audio streams"
+}
+
 function do_stream {
-    in_args=()
-    streams=()
-    i=0
+    local in_args=()
+    local streams=()
+    local i_audio=0
+    local i_video=0
     for arg in "${@}"; do
-        streams+=("${i}:v" "${i}:a")
+        read num_video_streams num_audio_streams < <(get_num_streams "${arg}")
+
+        streams+=("${i_video}:v" "${i_audio}:a")
         in_args+=("-i")
         in_args+=("${arg}")
-        i=$(( i + 1 ))
+
+        # take the first stream from each given source
+        # TODO: implement way to select non-first stream
+        i_audio=$(( i_audio + num_audio_streams ))
+        i_video=$(( i_video + num_video_streams ))
     done
 
     filters="$(stack_streams_into_grid vo "${streams[@]}")"
@@ -92,26 +113,36 @@ function do_stream {
     ffmpeg -y -r 24 "${in_args[@]}" \
         -filter_complex "${filters}" \
         -map '[vo]' -r "${restream_fps}" -c:v libx264 -crf 19 \
+        i=$(( i + 1 ))
         -f "${restream_format}" \
         "${restream_target}"
 }
 
 function do_play {
-    in_args=()
-    streams=()
-    i=0
+    local in_args=()
+    local streams=()
+    local i_audio=0
+    local i_video=0
     for arg in "${@}"; do
-        if [[ "${i}" -eq 0 ]]; then
+        read num_video_streams num_audio_streams < <(get_num_streams "${arg}")
+
+        if [[ "${i_audio}" -eq 0 ]]; then
+            # first source must be given as argument
             in_args+=("${arg}")
         else
             in_args+=("--external-file=${arg}")
         fi
-        streams+=("vid$(( i + 1 ))" "aid$(( i + 1 ))")
-        i=$(( i + 1 ))
+        streams+=("vid$(( i_video + 1 ))" "aid$(( i_audio + 1 ))")
+
+        # take the first stream from each given source
+        # TODO: implement way to select non-first stream
+        i_audio=$(( i_audio + num_audio_streams ))
+        i_video=$(( i_video + num_video_streams ))
     done
 
     filters="$(stack_streams_into_grid vo "${streams[@]}")"
     msg "filters: ${filters}" >&2
+    msg "files: ${in_args[@]}"
 
     mpv "${in_args[@]}" --lavfi-complex="${filters}" --alpha=no --no-resume-playback --pause=no
 }
