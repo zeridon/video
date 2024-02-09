@@ -1,8 +1,7 @@
 # FOSDEM 2024 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
-* On Matrix: `#fosdem-video:matrix.org` (should be bridged to IRC)
-* On IRC: `irc.libera.chat, #fosdem-video`
+* On Matrix: `#video:fosdem.org`
 * In person: there is a per-building team in every building, together with FIT or NOC.
 * For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105.
 * Emergency: Vasil Kolev on `+359888508044` or Mark Van den Borre on `+32486961726`.
@@ -55,7 +54,7 @@ Be aware that whatever you choose to do will also end up in the final recordings
 * All speakers will receive a link for reviewing their video.
 	* As a devroom manager, you'll be on CC: for such emails.
 * The video team in your building may be able to help you with this, depending on their workload.
-* Contact: Wouter Verhelst <wouter@fosdem.org>, `wouter` on `irc.libera.chat#fosdem-video`
+* Contact: Wouter Verhelst <wouter@fosdem.org>.
 
 ## Misc
 

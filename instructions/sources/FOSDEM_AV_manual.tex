@@ -1,4 +1,4 @@
- 
+
 \documentclass{article}
 
 \usepackage[titletoc,title]{appendix}
@@ -13,12 +13,12 @@
 \usepackage{hyperref}
 %\usepackage{fix-cm}                         % Custom fontsizes
 %\usepackage[margin=3.0cm]{geometry}
-\usepackage{lastpage} % number of last page 
+\usepackage{lastpage} % number of last page
 \usepackage[protrusion=true,expansion=true]{microtype}        % Better typography
 
 \usepackage{pifont}% http://ctan.org/pkg/pifont
 \usepackage{rotating}
-\usepackage[table]{xcolor} 
+\usepackage[table]{xcolor}
 \definecolor{ForestGreen}{RGB}{34,139,34}
 
 \rowcolors{2}{gray!25}{white}
@@ -33,11 +33,11 @@
 }
 
 % Definition of \maketitle
-\makeatletter         
+\makeatletter
 \def\@maketitle{
 \begin{center}
  FOSDEM AV Manual\\
-{\Large  \@author}\\[4ex] 
+{\Large  \@author}\\[4ex]
 \@date\\[8ex]
  \includegraphics[width = 80mm]{logo-gear}\\
 
@@ -98,7 +98,7 @@ Video is a big task, so there are many people working together to make it all ha
 \subsection{AW, H, K, U and J teams}
 You should be a team of at least three per building: AW, H, K and U respectively. J (probably) has a dedicated knowledgeable volunteer.
 
-Coordination with video operations control (VOC) happens through Matrix in \#fosdem-video, walkies.% and chat: irc://irc.freenode.net\#fosdem-video. The chat is web accessible through https://riot.im/app/\#/room/\#fosdem-video:matrix.org .
+Coordination with video operations control (VOC) happens through Matrix in \#video:fosdem.org, walkies. The chat is web accessible through https://chat.fosdem.org/\#/room/\#fosdem-video:fosdem.org .
 
 Your tasks before the conference starts:
 \begin{itemize}
@@ -113,7 +113,7 @@ During the day, you'll have a fixed spot in the building. The below spots should
   \item AW: corner between AW1.117 and AW1.121, or oneo of the top rooms (TBD)
   \item K: NOC (K.1110)
   \item H: room H.2111
-  \item U: room UB4.228 
+  \item U: room UB4.228
 \end{itemize}
 
 Your job during the conference, with the backup from the VOC team, is to do the following in your building:
@@ -131,7 +131,7 @@ Your job is to constantly monitor all the equipment and streams for problems, an
 
 Do not run out to fix problems yourselves. Delegate to the per building teams. Maintaining contact between everyone is your main priority.
 
-For more details on the monitoring, see ``Monitoring and control of video streams''. 
+For more details on the monitoring, see ``Monitoring and control of video streams''.
 
 
 \subsection{In the devroom}
@@ -229,7 +229,7 @@ The connections there are as follows:
 \end{figure}
 
 \subsection{Extra large rooms}
-These have a projector, a tie pin mic for the speaker and one or two audience microphones. They use the Sony HXR-NX100 camera. 
+These have a projector, a tie pin mic for the speaker and one or two audience microphones. They use the Sony HXR-NX100 camera.
 
 The connections there are as follows:
 
@@ -470,8 +470,8 @@ The correct way to wear a lapel mic is as follows:
   \item The speaker is notified that if he's not facing in the direction of the microphone (e.g. not looking straight) the audio will be less audible.
 \end{itemize}
 
-Video team members will be both monitoring remotely as well as visiting rooms with problems. If you have questions, concerns or problems and there is no video team member nearby, contact them 
-%through the \texttt{\#fosdem-video} channel on the Freenode IRC service or https://riot.im/app/\#/room/\#fosdem-video:matrix.org or 
+Video team members will be both monitoring remotely as well as visiting rooms with problems. If you have questions, concerns or problems and there is no video team member nearby, contact them
+%through the \texttt{\#video:fosdem.org} channel on Matrix https://chat.fosdem.org/\#/room/\#video:fosdem.org or
 in \texttt{FOSDEM Video}. If your video box shows issues on the LCD, most likely somebody is already on their way to you. When communicating with video team members, please mention the \emph{room number} as opposed to the devroom name. Devrooms move around, room numbers stay constant.
 
 \section{System infrastructure overview}
@@ -516,7 +516,7 @@ The laptop is used to:
   \item Provide status for the box and stream (upper left);
   \item Provide a terminal for debugging if needed (bottom left);
   \item Make a backup recording on its disk of the full stream for emergencies;
-  \item Show the nice purple FOSDEM color as a background. 
+  \item Show the nice purple FOSDEM color as a background.
 \end{itemize}
 
 \subsection{video-voctop}
@@ -589,4 +589,4 @@ This is a somewhat simple caching proxy implemented with \texttt{nginx} that pre
 The \texttt{streamdump}'s role is to connect to all video-boxes and all voctops, to fetch the video they provide to record it to be used for restore for emergencies. There is usually one at ULB and one externally.
 
 \end{document}
- 
+
