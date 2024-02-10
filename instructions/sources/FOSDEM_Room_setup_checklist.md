@@ -50,7 +50,7 @@
 |`[ ]` Repeat microphone test with VOC|
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Ask VOC member to call you, in Matrix |
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Make sure that a VOC member had ACKnowledged your request|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;When a VOC member is avaiable, they'll call via Matrix|
+|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;When a VOC member is available, they'll call via Matrix|
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Test both mics and confirm levels |
 ||
 |`[ ]` Make sure VOC sees both video sources|
