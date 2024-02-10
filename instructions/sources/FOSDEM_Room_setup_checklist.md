@@ -56,5 +56,5 @@
 |`[ ]` Make sure VOC sees both video sources|
 ||
 |`[ ]` If no issues are seen from the VOC:|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Connect micrphone batteries to chargers|
+|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Connect microphone batteries to chargers|
 |-----------|
