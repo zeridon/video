@@ -290,7 +290,7 @@ While the box contains a network switch (all four ports are connected), \emph{do
 For speakers with only VGA outputs, the per-building video team is required to ask them for their time machine license registration. Mini-DP and some other connectors might be available with the per-building team.
 The HDMI signal is automatically scaled to 1080p (1920x1080) at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
 
-\emph{The control latop display will inform you of all vital information about the current status of the box.} It shows the stream video on the right with the sound levels overlayed on its top left corner, signal and its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and others.
+\emph{The control laptop display will inform you of all vital information about the current status of the box.} It shows the stream video on the right with the sound levels overlayed on its top left corner, signal and its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and others.
 
 The boxes report all this information to control while their network status is good, where the control and monitoring team keeps on eye on all rooms. If something is wrong, they may send somebody your way to correct it. Please follow the instructions (if any) of video team members. Keeping an eye on the box vitals and correcting any problems you notice is encouraged.
 
@@ -476,8 +476,24 @@ in \texttt{FOSDEM Video}. If your video box shows issues on the LCD, most likely
 
 \section{System infrastructure overview}
 
-This section explains how the video streaming and recording works in general for FOSDEM, to use as a helper to understanding the system and dealing with issues.
-The system's code and recipes for deployment are available in FOSDEM's GitHub repo \texttt{infrastructure}, in the \texttt{ansible} subdirectory. Below is a list of components (some software, some whole-system) that are the pieces of the whole thing.
+This section explains how the video streaming and recording works in general
+for FOSDEM, to use as a helper to understanding the system and dealing with
+issues.
+
+The system's code and recipes for deployment are available in FOSDEM's GitHub
+repo \texttt{infrastructure}, in the \texttt{ansible} subdirectory.
+
+This is a general schema of the setup:
+
+\begin{figure}[H]
+  \begin{sideways}
+  \centering
+  \includegraphics[width = 200mm]{../../graph/overview.pdf}
+  \end{sideways}
+\end{figure}
+
+
+Below is a list of components (some software, some whole-system) that are the pieces of the whole thing.
 
 \subsection{sproxy}
 
@@ -489,9 +505,14 @@ The system's code and recipes for deployment are available in FOSDEM's GitHub re
   \item Port 80 - this provides the stream from the current point onward, after it receives some HTTP headers. This was implemented for compatibility with some streaming devices for the 2020 edition.
 \end{itemize}
 
-The main use of \texttt{sproxy} is to allow multiple clients to access a MPEG-TS encapsulated video (H.264, AAC) in real time without the need of any previous setup. MPEG-TS allows this, as it's not relevant when in the stream the client starts reading, as the encapsulation is self-synchronizing.
+The main use of \texttt{sproxy} is to allow multiple clients to access a
+MPEG-TS encapsulated video (H.264, AAC) in real time without the need of any
+previous setup. MPEG-TS allows this, as it's not relevant when in the stream
+the client starts reading, as the encapsulation is self-synchronizing.
 
-\texttt{sproxy} is the successor of multicast UDP running over the network, as that proved to create hard to debug problems with even moderate packet loss (which TCP doesn't have).
+\texttt{sproxy} is the successor of multicast UDP running over the network, as
+that proved to create hard to debug problems with even moderate packet loss
+(which TCP doesn't have).
 
 \subsection{video-box}
 
@@ -523,21 +544,33 @@ The laptop is used to:
 
 Implemented in role \texttt{video-voctop}.
 
-The \texttt{voctop} is the video mixer that fetches the streams for the camera and presenter from a room, and provides the ``finished'' video stream to the streaming and recording infrastructure. The finished stream is again presented via \texttt{sproxy}.
+The \texttt{voctop} is the video mixer that fetches the streams for the camera
+and presenter from a room, and provides the ``finished'' video stream to the
+streaming and recording infrastructure. The finished stream is again presented
+via \texttt{sproxy}.
 
-The mixing is done using \texttt{voctomix} (version 1). There are three sources for \texttt{voctomix}:
+The mixing is done using \texttt{voctomix} (version 1). There are three sources
+for \texttt{voctomix}:
 
 \begin{itemize}
   \item \texttt{cam}, fetched from the box marked to be camera in the room;
   \item \texttt{grabber}, fetched from the box marked to be slides/presenter in the room;
-  \item \texttt{background}.
+  \item \texttt{background} that contains artwork/the year, and is the thing most forgotten to be updated every year.
 \end{itemize}
 
-All streams are chewed and converted exactly to what voctomix requires (raw video, 1080p, 25fps, SAR/DAR 1:1) and via a single \texttt{ffmpeg} instance and two \texttt{sproxy} instances, a 720p and 1080p streams are provided for the streaming back-end to use.
+All streams are chewed and converted exactly to what voctomix requires (raw
+video, 1080p, 25fps, SAR/DAR 1:1) and via a single \texttt{ffmpeg} instance a
+MPEG-TS stream that contains video streams with 720p and 1080p is provided
+via an \texttt{sproxy} instance.
 
-The reason for using two outputs from the same \texttt{ffmpeg} instance is the laptop runs out of memory bandwidth if another copy of the raw stream is taken out of \texttt{voctomix}.
+The reason for mixing both video streams in the same MPEG-TS stream is that the
+laptop runs out of memory bandwidth if another copy of the raw stream is taken
+out of \texttt{voctomix}, and this also makes the preparation of the HLS
+easier.
 
-\texttt{voctomix} provides control via text protocol on port \texttt{9999} which is used by the control server to switch the possible views/mixes of the stream:
+\texttt{voctomix} provides control via text protocol on port \texttt{9999}
+which is used by the control server to switch the possible views/mixes of the
+stream:
 
 \begin{itemize}
   \item Full-screen camera;
@@ -563,30 +596,67 @@ The following tasks are handled by the control server:
   \item DHCP and DNS server for the video VLAN.
 \end{itemize}
 
-The majority of the traffic to the control server is the fetching of raw video frames from the voctops, and amounts to a steady 300Mbps. This was the initial reason to move this node on-site.
+The majority of the traffic to the control server is the fetching of raw video
+frames from the voctops, and amounts to a steady 300Mbps. This was the initial
+reason to move this node on-site.
 
 \subsection{video-streambackend}
 
 Implemented in the role \texttt{video-streambackend}.
 
-This is a (currently) single physical server outside of ULB that fetches all mixed video streams from the voctops, and creates:
+This is a (currently) single physical server outside of ULB that fetches all
+mixed video streams from the voctops, and creates:
 
 \begin{itemize}
   \item A HLS stream with two video (selectable) streams for viewing by end users;
   \item Half-hour dumps of video streams, to be processed by \texttt{sreview}
 \end{itemize}
 
-These are both created by using \texttt{ffmpeg}. The HLS stream is served via \texttt{nginx} to the streamfrontends, and the dumps are served via either \texttt{ssh}/\texttt{sshfs} or NFS to \texttt{sreview}.
+These are both created by using \texttt{ffmpeg}. The HLS stream is served via
+\texttt{nginx} to the streamfrontends, and the dumps are served via either
+\texttt{ssh}/\texttt{sshfs} or NFS to \texttt{sreview}.
 
 \subsection{video-streamfrontend}
 
 Implemented in the role \texttt{video-streamfrontend}.
 
-This is a somewhat simple caching proxy implemented with \texttt{nginx} that presents the video streams from the streambackend to end users.
+This is a somewhat simple caching proxy implemented with \texttt{nginx} that
+presents the video streams from the streambackend to end users.
 
 \subsection{video-streamdump}
 
-The \texttt{streamdump}'s role is to connect to all video-boxes and all voctops, to fetch the video they provide to record it to be used for restore for emergencies. There is usually one at ULB and one externally.
+The \texttt{streamdump}'s role is to connect to all video-boxes and all
+voctops, to fetch the video they provide to record it to be used for restore
+for emergencies. There is usually one at ULB and one externally.
+
+\subsection{HLS player}
+
+\texttt{web0}'s role is to host the HLS player (implemented in JavaScript)
+that end-users load to play the HLS stream with. It shows the video stream
+for the relevant room and allows for selecting the video quality that
+the users want so see.
+ 
+\section{Historical notes}
+
+Things done in the past that we moved away from:
+
+\subsection{mod\_nginx\_rtmp}
+
+The module is nice, but has serious limitations on multi-audio/video stream
+processing, strange failures, and at some point didn't have any updates or
+support. It was used to push from the voctops to the stereambackend. After its
+removal, all video transfers became pull-based.
+
+\subsection{multicast}
+
+Sending MPEG-TS over UDP over multicast saved bandwidth due to the multiple
+consumers of every stream. But packet loss in MPEG-TS was leading to subtle
+issues in \texttt{ffmpeg}'s parsing and processing and needing the restart of
+streams for issues that were hard to catch.
+
+Experiments were done with flow control (didn't help) and reliable multicast
+(the libraries didn't work, or at least Vasil was unable to make them), but
+nothing came out of that, so \texttt{sproxy} was born.
 
 \end{document}
 
