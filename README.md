@@ -8,3 +8,7 @@ The [Software](https://github.com/FOSDEM/video/tree/master/software "software") 
 
 The [Instructions](https://github.com/FOSDEM/video/tree/master/instructions "instructions") subfolder contains both source files and generated PDF files containing instructions and reference pictures for use during FOSDEM itself.
 
+The [Infrastructure repo](https://github.com/FOSDEM/infrastructure "infrastructure") repo contains the ansible recipes to deploy the video infrastructure.
+
+See also https://github.com/FOSDEM/video-ms213x-status and https://github.com/FOSDEM/video-sproxy.
+
