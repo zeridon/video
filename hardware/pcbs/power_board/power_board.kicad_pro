@@ -326,6 +326,30 @@
     [
       "4b166175-80a4-48c6-994d-6e62a6160b87",
       ""
+    ],
+    [
+      "91441b40-0438-4eff-8649-c295c7239fb6",
+      "USB Passthrough"
+    ],
+    [
+      "32f9baea-32bc-4a84-b83a-18c67cc6248e",
+      "Isolated charger 1"
+    ],
+    [
+      "5f362cd5-d351-4250-994a-9f336837035c",
+      "Isolated charger 4"
+    ],
+    [
+      "6373063e-1125-40d9-b0ec-3e2cb2886aea",
+      "Isolated charger 2"
+    ],
+    [
+      "bdb69c9c-123a-4faa-b5c1-7130aac5ebc2",
+      "Isolated charger 3"
+    ],
+    [
+      "2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75",
+      "Isolated chargers"
     ]
   ],
   "text_variables": {}
