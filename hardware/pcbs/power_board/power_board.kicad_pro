@@ -350,6 +350,10 @@
     [
       "2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75",
       "Isolated chargers"
+    ],
+    [
+      "f4395b92-97ec-456a-b4c2-238b75f494a2",
+      "Fan Controller"
     ]
   ],
   "text_variables": {}
