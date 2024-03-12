@@ -420,6 +420,8 @@
     (uuid 87c3691a-46dc-48d2-80a1-b06f7f0dec7a)
   )
 
+  (no_connect (at 153.67 95.25) (uuid 39eb43a7-3e45-411b-81f1-87bc1a106afb))
+
   (wire (pts (xy 153.67 100.33) (xy 175.26 100.33))
     (stroke (width 0) (type default))
     (uuid 029f96f3-a366-4507-bbbe-424180dd618b)
@@ -500,7 +502,7 @@
   (symbol (lib_id "Connector:USB3_B_Micro") (at 140.97 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7015dbeb-373f-4133-b728-168106ec1b55)
-    (property "Reference" "J?" (at 140.97 76.2 0)
+    (property "Reference" "J2" (at 140.97 76.2 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB3_B_Micro" (at 140.97 78.74 0)
@@ -529,7 +531,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "J?") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -538,7 +540,7 @@
   (symbol (lib_id "power:GND") (at 138.43 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 91e87253-15d1-4738-9371-34664ac28807)
-    (property "Reference" "#PWR01" (at 138.43 123.19 0)
+    (property "Reference" "#PWR06" (at 138.43 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 138.43 121.92 0)
@@ -554,7 +556,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -563,7 +565,7 @@
   (symbol (lib_id "power:GND") (at 190.5 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a7e0cb7-21c7-41ed-b0ec-090ad05421ba)
-    (property "Reference" "#PWR02" (at 190.5 123.19 0)
+    (property "Reference" "#PWR07" (at 190.5 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 121.92 0)
@@ -579,7 +581,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -588,7 +590,7 @@
   (symbol (lib_id "Connector:USB3_A") (at 187.96 95.25 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2ee19ca-1978-497f-9767-d2e9e17f3b37)
-    (property "Reference" "J?" (at 199.39 94.615 0)
+    (property "Reference" "J3" (at 199.39 94.615 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB3_A" (at 199.39 97.155 0)
@@ -616,7 +618,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "J?") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
