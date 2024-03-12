@@ -14,9 +14,9 @@ Internal connections:
 - 3x 12V outputs (2-pin screw terminals), one of which powers an SBC like the [Radxa X2L](https://radxa.com/products/x/x2l/), the others are spare
 - 2x 5V outputs (2-pin screw terminals), for misc purposes
 - 1x USB3-micro-B port for USB3 passthrough
-- 1x control header that connects to SBC's GPIO
-- 4x 3-pin fan connectors with pwm
-- 4x 3-pin connectors for buttons-with-LEDs or leds
+- 1x 3-pin I²C header that connects to the SBC's GPIO
+- 4x 4-pin fan connectors with pwm
+- 4x 4-pin connectors for buttons-with-LEDs or leds (VDD-LED-BTN-VDD)
 
 Panel components:
 - 1x optional 12V input barrel connector, in case we use an external PSU
