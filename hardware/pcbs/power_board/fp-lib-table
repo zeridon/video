@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "ics")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/ics.pretty")(options "")(descr ""))
   (lib (name "conn")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/conn.pretty")(options "")(descr ""))
+  (lib (name "extra")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/extra.pretty")(options "")(descr ""))
 )
