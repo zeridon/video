@@ -132,7 +132,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 90.17 71.12 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 478f8c6b-1357-4a70-b115-378e541395dd)
-    (property "Reference" "H?" (at 92.71 68.58 0)
+    (property "Reference" "H2" (at 92.71 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 92.71 71.12 0)
@@ -148,7 +148,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "H?") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
     )
@@ -157,7 +157,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 90.17 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 499d3b83-5766-424f-a4af-b72baf0ec4ba)
-    (property "Reference" "FID?" (at 92.71 83.82 0)
+    (property "Reference" "FID1" (at 92.71 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (at 92.71 86.36 0)
@@ -172,7 +172,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "FID?") (unit 1)
+          (reference "FID1") (unit 1)
         )
       )
     )
@@ -181,7 +181,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 90.17 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5293ef27-fad7-4e55-9db6-4efd64584f78)
-    (property "Reference" "FID?" (at 92.71 92.71 0)
+    (property "Reference" "FID2" (at 92.71 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (at 92.71 95.25 0)
@@ -196,7 +196,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "FID?") (unit 1)
+          (reference "FID2") (unit 1)
         )
       )
     )
@@ -205,7 +205,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 115.57 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 68dcc92b-7c67-480f-b03e-607c6d58f5ee)
-    (property "Reference" "FID?" (at 118.11 83.82 0)
+    (property "Reference" "FID3" (at 118.11 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (at 118.11 86.36 0)
@@ -220,7 +220,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "FID?") (unit 1)
+          (reference "FID3") (unit 1)
         )
       )
     )
@@ -229,7 +229,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 115.57 58.42 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 772f0bbb-6392-452c-b2b2-88aa57420eba)
-    (property "Reference" "H?" (at 118.11 55.88 0)
+    (property "Reference" "H3" (at 118.11 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 118.11 58.42 0)
@@ -245,7 +245,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "H?") (unit 1)
+          (reference "H3") (unit 1)
         )
       )
     )
@@ -254,7 +254,7 @@
   (symbol (lib_id "power:GND") (at 90.17 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f40c74e-c4d0-4026-83bf-89a5286d4d8a)
-    (property "Reference" "#PWR0106" (at 90.17 68.58 0)
+    (property "Reference" "#PWR077" (at 90.17 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 67.31 0)
@@ -270,7 +270,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -279,7 +279,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 115.57 71.12 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf08fa61-5307-4478-84ae-0f001a550949)
-    (property "Reference" "H?" (at 118.11 68.58 0)
+    (property "Reference" "H4" (at 118.11 68.58 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 118.11 71.12 0)
@@ -295,7 +295,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "H?") (unit 1)
+          (reference "H4") (unit 1)
         )
       )
     )
@@ -304,7 +304,7 @@
   (symbol (lib_id "power:GND") (at 115.57 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cb466da4-efc1-41d5-9f9e-6883db393f90)
-    (property "Reference" "#PWR0107" (at 115.57 68.58 0)
+    (property "Reference" "#PWR079" (at 115.57 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 115.57 67.31 0)
@@ -320,7 +320,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
       )
     )
@@ -329,7 +329,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 90.17 58.42 0) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e11bf71d-c3dd-4331-8496-5f476e582d22)
-    (property "Reference" "H?" (at 92.71 55.88 0)
+    (property "Reference" "H1" (at 92.71 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 92.71 58.42 0)
@@ -345,7 +345,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "H?") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
     )
@@ -354,7 +354,7 @@
   (symbol (lib_id "power:GND") (at 115.57 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e21dc05d-f6d0-46f1-83ff-f18c46903771)
-    (property "Reference" "#PWR0109" (at 115.57 81.28 0)
+    (property "Reference" "#PWR080" (at 115.57 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 115.57 80.01 0)
@@ -370,7 +370,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "#PWR0109") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -379,7 +379,7 @@
   (symbol (lib_id "power:GND") (at 90.17 74.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fbb7f209-792b-4023-ae44-415404ee0393)
-    (property "Reference" "#PWR0108" (at 90.17 81.28 0)
+    (property "Reference" "#PWR078" (at 90.17 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.17 80.01 0)
@@ -395,7 +395,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/99ad2a2c-266b-4765-b6d1-327c82d6c9e2"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
       )
     )
