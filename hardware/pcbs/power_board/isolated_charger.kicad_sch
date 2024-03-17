@@ -1001,7 +1001,7 @@
   (symbol (lib_id "power:GND") (at 67.31 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3a6c7e8a-2605-4306-89f1-ad3051b2ddd9)
-    (property "Reference" "#PWR018" (at 67.31 120.65 0)
+    (property "Reference" "#PWR019" (at 67.31 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 67.31 119.38 0)
@@ -1017,16 +1017,16 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -1197,9 +1197,9 @@
   )
 
   (symbol (lib_id "Connector:USB_A") (at 255.27 93.98 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid aacd62bf-d907-4305-9f89-f940db468c71)
-    (property "Reference" "J4" (at 261.62 92.71 0)
+    (property "Reference" "J5" (at 261.62 92.71 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB_A" (at 261.62 95.25 0)
@@ -1214,6 +1214,9 @@
     (property "Shop" "https://eu.mouser.com/ProductDetail/Amphenol-Commercial-Products/UE27AC5410H?qs=JOekRM69xWp%2FpXBIdMB8qQ%3D%3D" (at 255.27 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Purpose" "500mA CHG" (at 255.27 85.09 0)
+      (effects (font (size 1.27 1.27)))
+    )
     (pin "1" (uuid 1f0b3134-59e2-4563-a1bc-da8622e6b64a))
     (pin "4" (uuid f8b08996-93b6-4cfa-8caa-b82f386b5c82))
     (pin "3" (uuid d67bada9-608d-4700-aefb-ca7bcea8cc87))
@@ -1222,16 +1225,16 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-          (reference "J4") (unit 1)
-        )
-        (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
           (reference "J5") (unit 1)
         )
-        (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
+        (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
           (reference "J6") (unit 1)
         )
-        (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
+        (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
           (reference "J7") (unit 1)
+        )
+        (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
+          (reference "J8") (unit 1)
         )
       )
     )
@@ -1240,7 +1243,7 @@
   (symbol (lib_id "power:GND") (at 172.72 72.39 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aef70947-7e80-4070-9906-b1fd54e36fee)
-    (property "Reference" "#PWR020" (at 179.07 72.39 0)
+    (property "Reference" "#PWR021" (at 179.07 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 72.39 0)
@@ -1256,16 +1259,16 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -1575,7 +1578,7 @@
   (symbol (lib_id "power:GND") (at 78.74 114.3 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d8761c16-7726-49a1-a1fc-b1a6a4f0d308)
-    (property "Reference" "#PWR019" (at 78.74 120.65 0)
+    (property "Reference" "#PWR020" (at 78.74 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 78.74 119.38 0)
@@ -1591,16 +1594,16 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )

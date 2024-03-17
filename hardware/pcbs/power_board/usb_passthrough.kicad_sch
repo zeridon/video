@@ -658,12 +658,12 @@
   )
 
   (symbol (lib_id "conn:USB3_B_Micro_PassiveGND") (at 140.97 95.25 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid 7015dbeb-373f-4133-b728-168106ec1b55)
-    (property "Reference" "J2" (at 140.97 76.2 0)
+    (property "Reference" "J3" (at 124.46 96.52 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "USB3_B_Micro" (at 140.97 78.74 0)
+    (property "Value" "USB3_B_Micro" (at 123.19 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_USB:USB3_Micro-B_Connfly_DS1104-01" (at 144.78 91.44 0)
@@ -674,6 +674,9 @@
     )
     (property "Shop" "https://eu.mouser.com/ProductDetail/Amphenol-Commercial-Products/GSB343K33AHR?qs=8nwx9VzGl4ytGKVAGQNj7w%3D%3D" (at 140.97 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Purpose" "USB3 Ptru" (at 140.97 80.01 0)
+      (effects (font (size 1.27 1.27)))
     )
     (pin "4" (uuid 2db914b7-3200-42cd-a74e-8c339b8b2d15))
     (pin "8" (uuid 1fd1a342-ef33-419a-b233-584cd8df71da))
@@ -689,7 +692,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "J2") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -698,7 +701,7 @@
   (symbol (lib_id "power:GND") (at 138.43 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 91e87253-15d1-4738-9371-34664ac28807)
-    (property "Reference" "#PWR06" (at 138.43 123.19 0)
+    (property "Reference" "#PWR07" (at 138.43 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 138.43 121.92 0)
@@ -714,7 +717,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -723,7 +726,7 @@
   (symbol (lib_id "power:GND") (at 190.5 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a7e0cb7-21c7-41ed-b0ec-090ad05421ba)
-    (property "Reference" "#PWR08" (at 190.5 123.19 0)
+    (property "Reference" "#PWR09" (at 190.5 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 121.92 0)
@@ -739,16 +742,16 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
   )
 
   (symbol (lib_id "Connector:USB3_A") (at 187.96 95.25 0) (mirror y) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid d2ee19ca-1978-497f-9767-d2e9e17f3b37)
-    (property "Reference" "J3" (at 199.39 94.615 0)
+    (property "Reference" "J4" (at 199.39 94.615 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "USB3_A" (at 199.39 97.155 0)
@@ -763,6 +766,9 @@
     (property "Shop" "https://eu.mouser.com/ProductDetail/Amphenol-Commercial-Products/GSB3111311HR?qs=f9yNj16SXrLtdMOGrQx7ow%3D%3D" (at 187.96 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Purpose" "USB3 PTru" (at 187.96 80.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
     (pin "9" (uuid 196edf90-25de-48d2-acff-29a1d8638eb0))
     (pin "1" (uuid b81df229-f17a-44f9-ab8b-8afdc77baafc))
     (pin "10" (uuid 8197f34e-f696-4539-bedb-5dd4e97c14b2))
@@ -776,7 +782,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "J3") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -785,7 +791,7 @@
   (symbol (lib_id "power:GND") (at 163.83 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid de2719ab-1202-4093-b4be-c94660e90325)
-    (property "Reference" "#PWR07" (at 163.83 92.71 0)
+    (property "Reference" "#PWR08" (at 163.83 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 163.83 91.44 0)
@@ -801,7 +807,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )

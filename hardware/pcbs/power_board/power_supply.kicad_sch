@@ -1478,7 +1478,7 @@
   (symbol (lib_id "power:GND") (at 144.78 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 057eb4c7-6096-4e13-aa50-d80784ab376d)
-    (property "Reference" "#PWR084" (at 144.78 148.59 0)
+    (property "Reference" "#PWR085" (at 144.78 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 147.32 0)
@@ -1494,7 +1494,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR085") (unit 1)
         )
       )
     )
@@ -1503,7 +1503,7 @@
   (symbol (lib_id "conn:Screw_Terminal_01x02") (at 238.76 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07ece51d-0c57-439c-95ca-4f22cecfcee2)
-    (property "Reference" "J19" (at 248.92 86.36 0)
+    (property "Reference" "J20" (at 248.92 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ScrewTerminal_02" (at 238.76 91.44 0)
@@ -1532,7 +1532,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J19") (unit 1)
+          (reference "J20") (unit 1)
         )
       )
     )
@@ -1672,7 +1672,7 @@
   (symbol (lib_id "power:GND") (at 64.77 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 19fbcbd3-cd21-4b82-b3c2-65c28c412b5a)
-    (property "Reference" "#PWR077" (at 64.77 59.69 0)
+    (property "Reference" "#PWR078" (at 64.77 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.77 58.42 0)
@@ -1688,7 +1688,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
       )
     )
@@ -1697,7 +1697,7 @@
   (symbol (lib_id "conn:Screw_Terminal_01x02") (at 238.76 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1cfc2f32-a636-4468-a17a-37bcdcdcce90)
-    (property "Reference" "J20" (at 248.92 93.98 0)
+    (property "Reference" "J21" (at 248.92 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ScrewTerminal_02" (at 238.76 99.06 0)
@@ -1726,7 +1726,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J20") (unit 1)
+          (reference "J21") (unit 1)
         )
       )
     )
@@ -1760,7 +1760,7 @@
   (symbol (lib_id "power:GND") (at 214.63 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20391b30-659e-4839-8efa-2fbcbfc43046)
-    (property "Reference" "#PWR092" (at 214.63 148.59 0)
+    (property "Reference" "#PWR093" (at 214.63 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 214.63 147.32 0)
@@ -1776,7 +1776,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -1785,7 +1785,7 @@
   (symbol (lib_id "power:GND") (at 144.78 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22694420-7026-4647-8d12-cff07da67688)
-    (property "Reference" "#PWR083" (at 144.78 106.68 0)
+    (property "Reference" "#PWR084" (at 144.78 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 105.41 0)
@@ -1801,7 +1801,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
     )
@@ -1963,7 +1963,7 @@
   (symbol (lib_id "power:GND") (at 232.41 55.88 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35e2655c-e393-421e-9ed1-f716b0b83dae)
-    (property "Reference" "#PWR094" (at 226.06 55.88 0)
+    (property "Reference" "#PWR095" (at 226.06 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 55.88 0)
@@ -1979,7 +1979,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -1988,7 +1988,7 @@
   (symbol (lib_id "power:GND") (at 232.41 96.52 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 483ec190-5abf-4e66-9088-1fb9b8f5beaa)
-    (property "Reference" "#PWR097" (at 226.06 96.52 0)
+    (property "Reference" "#PWR098" (at 226.06 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 96.52 0)
@@ -2004,7 +2004,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR097") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -2013,7 +2013,7 @@
   (symbol (lib_id "power:GND") (at 205.74 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d2290d1-f634-4d62-b05d-291974f403a8)
-    (property "Reference" "#PWR089" (at 205.74 106.68 0)
+    (property "Reference" "#PWR090" (at 205.74 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 105.41 0)
@@ -2029,7 +2029,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -2074,7 +2074,7 @@
   (symbol (lib_id "power:GND") (at 177.8 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 56209829-1593-4d45-933e-1e7a382639da)
-    (property "Reference" "#PWR086" (at 177.8 148.59 0)
+    (property "Reference" "#PWR087" (at 177.8 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 147.32 0)
@@ -2090,7 +2090,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR086") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -2260,7 +2260,7 @@
   (symbol (lib_id "power:GND") (at 196.85 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7be08ba0-ec1d-4eaa-8a30-e8257350c7ed)
-    (property "Reference" "#PWR088" (at 196.85 148.59 0)
+    (property "Reference" "#PWR089" (at 196.85 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 147.32 0)
@@ -2276,7 +2276,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR089") (unit 1)
         )
       )
     )
@@ -2285,7 +2285,7 @@
   (symbol (lib_id "power:GND") (at 232.41 63.5 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e59b787-d20b-405b-991d-82c80c92397d)
-    (property "Reference" "#PWR095" (at 226.06 63.5 0)
+    (property "Reference" "#PWR096" (at 226.06 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 63.5 0)
@@ -2301,7 +2301,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -2335,7 +2335,7 @@
   (symbol (lib_id "power:GND") (at 232.41 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 840a7fd3-bb1f-42b8-9645-7420486cc22e)
-    (property "Reference" "#PWR096" (at 226.06 88.9 0)
+    (property "Reference" "#PWR097" (at 226.06 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 88.9 0)
@@ -2351,7 +2351,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR096") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -2360,7 +2360,7 @@
   (symbol (lib_id "power:GND") (at 205.74 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 85c796a3-c122-4423-8413-1f66b8047e96)
-    (property "Reference" "#PWR090" (at 205.74 148.59 0)
+    (property "Reference" "#PWR091" (at 205.74 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 147.32 0)
@@ -2376,7 +2376,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -2417,7 +2417,7 @@
   (symbol (lib_id "power:GND") (at 177.8 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 97bc21c7-311a-4345-ac43-f1f299423fab)
-    (property "Reference" "#PWR085" (at 177.8 106.68 0)
+    (property "Reference" "#PWR086" (at 177.8 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 105.41 0)
@@ -2433,7 +2433,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
     )
@@ -2467,7 +2467,7 @@
   (symbol (lib_id "power:GND") (at 232.41 48.26 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b565725-393d-4ead-acfa-b4aa96a71fee)
-    (property "Reference" "#PWR093" (at 226.06 48.26 0)
+    (property "Reference" "#PWR094" (at 226.06 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 48.26 0)
@@ -2483,7 +2483,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -2492,7 +2492,7 @@
   (symbol (lib_id "conn:Screw_Terminal_01x02") (at 238.76 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d680c85-e7f5-46be-a785-6d98d602fdde)
-    (property "Reference" "J17" (at 248.92 53.34 0)
+    (property "Reference" "J18" (at 248.92 53.34 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ScrewTerminal_02" (at 238.76 58.42 0)
@@ -2521,7 +2521,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J17") (unit 1)
+          (reference "J18") (unit 1)
         )
       )
     )
@@ -2530,7 +2530,7 @@
   (symbol (lib_id "power:GND") (at 118.11 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e23bd36-e8fe-4084-bf3f-8fa0c0ba9eff)
-    (property "Reference" "#PWR080" (at 118.11 148.59 0)
+    (property "Reference" "#PWR081" (at 118.11 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 147.32 0)
@@ -2546,7 +2546,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -2619,7 +2619,7 @@
   (symbol (lib_id "conn:Screw_Terminal_01x02") (at 38.1 38.1 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a92eb36e-3ca7-4966-b96b-43e8298b9ab7)
-    (property "Reference" "J15" (at 27.94 38.1 0)
+    (property "Reference" "J16" (at 27.94 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ScrewTerminal_02" (at 38.1 43.18 0)
@@ -2648,7 +2648,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J15") (unit 1)
+          (reference "J16") (unit 1)
         )
       )
     )
@@ -2689,7 +2689,7 @@
   (symbol (lib_id "conn:Screw_Terminal_01x02") (at 238.76 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b0f1cbc7-e5f3-46f4-b99e-c0a13ced67fd)
-    (property "Reference" "J16" (at 248.92 45.72 0)
+    (property "Reference" "J17" (at 248.92 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ScrewTerminal_02" (at 238.76 50.8 0)
@@ -2718,7 +2718,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J16") (unit 1)
+          (reference "J17") (unit 1)
         )
       )
     )
@@ -2727,7 +2727,7 @@
   (symbol (lib_id "conn:Conn_02x04_Odd_Even") (at 254 143.51 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b81382b4-11c8-46e3-a93c-8f18d6fca85d)
-    (property "Reference" "J21" (at 245.11 138.43 0)
+    (property "Reference" "J22" (at 245.11 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Header_02x04" (at 254 151.13 0)
@@ -2780,7 +2780,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J21") (unit 1)
+          (reference "J22") (unit 1)
         )
       )
     )
@@ -2821,7 +2821,7 @@
   (symbol (lib_id "power:GND") (at 127 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bec2dfd5-a3e2-4a53-8205-d5ddd321db83)
-    (property "Reference" "#PWR082" (at 127 148.59 0)
+    (property "Reference" "#PWR083" (at 127 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 147.32 0)
@@ -2837,7 +2837,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -2878,7 +2878,7 @@
   (symbol (lib_id "power:GND") (at 49.53 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c2c313ca-7086-440e-8b7a-0423ae8a9a28)
-    (property "Reference" "#PWR076" (at 49.53 76.2 0)
+    (property "Reference" "#PWR077" (at 49.53 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 49.53 74.93 0)
@@ -2894,7 +2894,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -2903,7 +2903,7 @@
   (symbol (lib_id "power:GND") (at 214.63 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c84f2002-db78-4445-a575-1aac5938688d)
-    (property "Reference" "#PWR091" (at 214.63 106.68 0)
+    (property "Reference" "#PWR092" (at 214.63 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 214.63 105.41 0)
@@ -2919,7 +2919,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
     )
@@ -2992,7 +2992,7 @@
   (symbol (lib_id "power:GND") (at 127 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf964912-44b7-49c3-bb8e-745acdd03164)
-    (property "Reference" "#PWR081" (at 127 106.68 0)
+    (property "Reference" "#PWR082" (at 127 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 105.41 0)
@@ -3008,7 +3008,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -3017,7 +3017,7 @@
   (symbol (lib_id "power:GND") (at 274.32 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2e0d78e-a5a6-4cda-9702-ee707f205b70)
-    (property "Reference" "#PWR098" (at 274.32 158.75 0)
+    (property "Reference" "#PWR099" (at 274.32 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 274.32 157.48 0)
@@ -3033,7 +3033,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR098") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -3074,7 +3074,7 @@
   (symbol (lib_id "Connector:Barrel_Jack_Switch") (at 35.56 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid dbd6839c-1caa-4ac3-82cf-d2cf918ba154)
-    (property "Reference" "J14" (at 26.67 59.69 0)
+    (property "Reference" "J15" (at 26.67 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PJ-102AH" (at 35.56 67.31 0)
@@ -3098,7 +3098,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J14") (unit 1)
+          (reference "J15") (unit 1)
         )
       )
     )
@@ -3107,7 +3107,7 @@
   (symbol (lib_id "power:GND") (at 196.85 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e0d3008e-33dd-4ffe-8c89-8b1d6736d1e2)
-    (property "Reference" "#PWR087" (at 196.85 106.68 0)
+    (property "Reference" "#PWR088" (at 196.85 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 105.41 0)
@@ -3123,7 +3123,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR087") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
     )
@@ -3132,7 +3132,7 @@
   (symbol (lib_id "power:GND") (at 83.82 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e1662319-6db0-46e8-a63d-75eadca292ac)
-    (property "Reference" "#PWR078" (at 83.82 59.69 0)
+    (property "Reference" "#PWR079" (at 83.82 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 58.42 0)
@@ -3148,7 +3148,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
       )
     )
@@ -3182,7 +3182,7 @@
   (symbol (lib_id "conn:Screw_Terminal_01x02") (at 238.76 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ee0c8d14-1191-47ce-aa54-2bd41dfc57c9)
-    (property "Reference" "J18" (at 248.92 60.96 0)
+    (property "Reference" "J19" (at 248.92 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ScrewTerminal_02" (at 238.76 66.04 0)
@@ -3211,7 +3211,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "J18") (unit 1)
+          (reference "J19") (unit 1)
         )
       )
     )
@@ -3220,7 +3220,7 @@
   (symbol (lib_id "power:GND") (at 118.11 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f2699f59-0f86-4df9-8bac-9405b4b1e9cb)
-    (property "Reference" "#PWR079" (at 118.11 106.68 0)
+    (property "Reference" "#PWR080" (at 118.11 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 105.41 0)
@@ -3236,7 +3236,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
       )
     )
