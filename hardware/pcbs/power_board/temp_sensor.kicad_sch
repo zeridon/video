@@ -286,7 +286,7 @@
   (symbol (lib_id "power:+3.3V") (at 149.86 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0681b04f-e559-407e-ab0b-a21e9dd3be23)
-    (property "Reference" "#PWR0101" (at 149.86 88.9 0)
+    (property "Reference" "#PWR0103" (at 149.86 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 149.86 80.01 0)
@@ -302,7 +302,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/cdb98711-4c38-429d-bf0b-859e4979d12f"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -343,7 +343,7 @@
   (symbol (lib_id "power:GND") (at 149.86 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 51cda4b8-8765-4074-bd4e-23ad8ed46160)
-    (property "Reference" "#PWR0102" (at 149.86 114.3 0)
+    (property "Reference" "#PWR0104" (at 149.86 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 113.03 0)
@@ -359,7 +359,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/cdb98711-4c38-429d-bf0b-859e4979d12f"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -378,6 +378,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.ti.com/lit/gpn/tmp1075" (at 149.86 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/TMP1075DR?qs=byeeYqUIh0MQFff6VZgmIA%3D%3D" (at 149.86 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "4" (uuid 4e94b47e-8909-49d2-b254-aeb3aee1b77d))
@@ -400,7 +403,7 @@
   (symbol (lib_id "power:+3.3V") (at 116.84 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 644bc886-c732-46b3-bd8d-889e4075f9fe)
-    (property "Reference" "#PWR097" (at 116.84 88.9 0)
+    (property "Reference" "#PWR099" (at 116.84 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 116.84 81.28 0)
@@ -416,7 +419,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/cdb98711-4c38-429d-bf0b-859e4979d12f"
-          (reference "#PWR097") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -425,7 +428,7 @@
   (symbol (lib_id "power:GND") (at 116.84 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8ed1971f-3bd4-4d2c-9ebb-beed09925235)
-    (property "Reference" "#PWR098" (at 116.84 114.3 0)
+    (property "Reference" "#PWR0100" (at 116.84 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 116.84 113.03 0)
@@ -441,7 +444,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/cdb98711-4c38-429d-bf0b-859e4979d12f"
-          (reference "#PWR098") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -450,7 +453,7 @@
   (symbol (lib_id "power:+3.3V") (at 135.89 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b7c31e32-88ab-48c2-9e52-0fb006bf04f9)
-    (property "Reference" "#PWR099" (at 135.89 88.9 0)
+    (property "Reference" "#PWR0101" (at 135.89 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 135.89 80.01 0)
@@ -466,7 +469,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/cdb98711-4c38-429d-bf0b-859e4979d12f"
-          (reference "#PWR099") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -475,7 +478,7 @@
   (symbol (lib_id "power:GND") (at 135.89 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ebd0c095-aaa3-4171-b9df-7e77b16eb8d3)
-    (property "Reference" "#PWR0100" (at 135.89 114.3 0)
+    (property "Reference" "#PWR0102" (at 135.89 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.89 113.03 0)
@@ -491,7 +494,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/cdb98711-4c38-429d-bf0b-859e4979d12f"
-          (reference "#PWR0100") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )

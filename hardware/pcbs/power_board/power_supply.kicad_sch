@@ -1358,7 +1358,7 @@
   (symbol (lib_id "power:GND") (at 144.78 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 057eb4c7-6096-4e13-aa50-d80784ab376d)
-    (property "Reference" "#PWR082" (at 144.78 148.59 0)
+    (property "Reference" "#PWR084" (at 144.78 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 147.32 0)
@@ -1374,7 +1374,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR082") (unit 1)
+          (reference "#PWR084") (unit 1)
         )
       )
     )
@@ -1386,7 +1386,7 @@
     (property "Reference" "J18" (at 248.92 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Screw_Terminal_01x02" (at 238.76 91.44 0)
+    (property "Value" "ScrewTerminal_02" (at 238.76 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" (at 238.76 86.36 0)
@@ -1403,6 +1403,9 @@
     )
     (property "Purpose Pin2" "GND" (at 241.3 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/284514-2?qs=woBvfblj%2FzwP8grZOAh0Gg%3D%3D" (at 238.76 86.36 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 770be9cf-8099-4e12-a8f7-4efb2ce84e73))
     (pin "2" (uuid b650dd22-7b2e-4273-907f-2ec0554a310c))
@@ -1453,7 +1456,7 @@
   (symbol (lib_id "Device:L") (at 171.45 78.74 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0af55739-6202-4c7f-8967-85e8c15bc1c2)
-    (property "Reference" "L?" (at 171.45 76.2 90)
+    (property "Reference" "L2" (at 171.45 76.2 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "6.8μH" (at 171.45 80.01 90)
@@ -1476,7 +1479,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "L?") (unit 1)
+          (reference "L2") (unit 1)
         )
       )
     )
@@ -1517,7 +1520,7 @@
   (symbol (lib_id "Device:L") (at 171.45 120.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 17c62a04-18f0-4dfd-9690-4aa88ab7a2ab)
-    (property "Reference" "L?" (at 171.45 118.11 90)
+    (property "Reference" "L3" (at 171.45 118.11 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "6.8μH" (at 171.45 121.92 90)
@@ -1540,7 +1543,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "L?") (unit 1)
+          (reference "L3") (unit 1)
         )
       )
     )
@@ -1549,7 +1552,7 @@
   (symbol (lib_id "power:GND") (at 64.77 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 19fbcbd3-cd21-4b82-b3c2-65c28c412b5a)
-    (property "Reference" "#PWR074" (at 64.77 59.69 0)
+    (property "Reference" "#PWR077" (at 64.77 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.77 58.42 0)
@@ -1565,7 +1568,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR074") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -1577,7 +1580,7 @@
     (property "Reference" "J19" (at 248.92 93.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Screw_Terminal_01x02" (at 238.76 99.06 0)
+    (property "Value" "ScrewTerminal_02" (at 238.76 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" (at 238.76 93.98 0)
@@ -1594,6 +1597,9 @@
     )
     (property "Purpose Pin2" "GND" (at 241.3 96.52 0)
       (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/284514-2?qs=woBvfblj%2FzwP8grZOAh0Gg%3D%3D" (at 238.76 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b514cfaf-752d-4282-b4bd-2325b71e2191))
     (pin "2" (uuid ff08a5c2-9074-4d59-8323-69b6d4ea8ba2))
@@ -1634,7 +1640,7 @@
   (symbol (lib_id "power:GND") (at 214.63 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20391b30-659e-4839-8efa-2fbcbfc43046)
-    (property "Reference" "#PWR090" (at 214.63 148.59 0)
+    (property "Reference" "#PWR092" (at 214.63 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 214.63 147.32 0)
@@ -1650,7 +1656,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR090") (unit 1)
+          (reference "#PWR092") (unit 1)
         )
       )
     )
@@ -1659,7 +1665,7 @@
   (symbol (lib_id "power:GND") (at 144.78 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22694420-7026-4647-8d12-cff07da67688)
-    (property "Reference" "#PWR081" (at 144.78 106.68 0)
+    (property "Reference" "#PWR083" (at 144.78 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 105.41 0)
@@ -1675,7 +1681,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR081") (unit 1)
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -1805,7 +1811,7 @@
   (symbol (lib_id "Device:R") (at 177.8 127 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2fc3aeb0-2c4a-4f38-9d2a-e0ffbae92ada)
-    (property "Reference" "R44" (at 180.34 124.46 0)
+    (property "Reference" "R47" (at 180.34 124.46 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "31.6kΩ" (at 180.34 127 0)
@@ -1828,7 +1834,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "R44") (unit 1)
+          (reference "R47") (unit 1)
         )
       )
     )
@@ -1837,7 +1843,7 @@
   (symbol (lib_id "power:GND") (at 232.41 55.88 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35e2655c-e393-421e-9ed1-f716b0b83dae)
-    (property "Reference" "#PWR092" (at 226.06 55.88 0)
+    (property "Reference" "#PWR094" (at 226.06 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 55.88 0)
@@ -1853,7 +1859,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR092") (unit 1)
+          (reference "#PWR094") (unit 1)
         )
       )
     )
@@ -1862,7 +1868,7 @@
   (symbol (lib_id "power:GND") (at 232.41 96.52 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 483ec190-5abf-4e66-9088-1fb9b8f5beaa)
-    (property "Reference" "#PWR095" (at 226.06 96.52 0)
+    (property "Reference" "#PWR097" (at 226.06 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 96.52 0)
@@ -1878,7 +1884,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -1887,7 +1893,7 @@
   (symbol (lib_id "power:GND") (at 205.74 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4d2290d1-f634-4d62-b05d-291974f403a8)
-    (property "Reference" "#PWR087" (at 205.74 106.68 0)
+    (property "Reference" "#PWR089" (at 205.74 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 105.41 0)
@@ -1903,7 +1909,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR087") (unit 1)
+          (reference "#PWR089") (unit 1)
         )
       )
     )
@@ -1948,7 +1954,7 @@
   (symbol (lib_id "power:GND") (at 177.8 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 56209829-1593-4d45-933e-1e7a382639da)
-    (property "Reference" "#PWR084" (at 177.8 148.59 0)
+    (property "Reference" "#PWR086" (at 177.8 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 147.32 0)
@@ -1964,7 +1970,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR084") (unit 1)
+          (reference "#PWR086") (unit 1)
         )
       )
     )
@@ -2134,7 +2140,7 @@
   (symbol (lib_id "power:GND") (at 196.85 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7be08ba0-ec1d-4eaa-8a30-e8257350c7ed)
-    (property "Reference" "#PWR086" (at 196.85 148.59 0)
+    (property "Reference" "#PWR088" (at 196.85 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 147.32 0)
@@ -2150,7 +2156,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR086") (unit 1)
+          (reference "#PWR088") (unit 1)
         )
       )
     )
@@ -2159,7 +2165,7 @@
   (symbol (lib_id "power:GND") (at 232.41 63.5 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e59b787-d20b-405b-991d-82c80c92397d)
-    (property "Reference" "#PWR093" (at 226.06 63.5 0)
+    (property "Reference" "#PWR095" (at 226.06 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 63.5 0)
@@ -2175,7 +2181,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR095") (unit 1)
         )
       )
     )
@@ -2209,7 +2215,7 @@
   (symbol (lib_id "power:GND") (at 232.41 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 840a7fd3-bb1f-42b8-9645-7420486cc22e)
-    (property "Reference" "#PWR094" (at 226.06 88.9 0)
+    (property "Reference" "#PWR096" (at 226.06 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 88.9 0)
@@ -2225,7 +2231,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR096") (unit 1)
         )
       )
     )
@@ -2234,7 +2240,7 @@
   (symbol (lib_id "power:GND") (at 205.74 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 85c796a3-c122-4423-8413-1f66b8047e96)
-    (property "Reference" "#PWR088" (at 205.74 148.59 0)
+    (property "Reference" "#PWR090" (at 205.74 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 205.74 147.32 0)
@@ -2250,7 +2256,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR088") (unit 1)
+          (reference "#PWR090") (unit 1)
         )
       )
     )
@@ -2291,7 +2297,7 @@
   (symbol (lib_id "power:GND") (at 177.8 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 97bc21c7-311a-4345-ac43-f1f299423fab)
-    (property "Reference" "#PWR083" (at 177.8 106.68 0)
+    (property "Reference" "#PWR085" (at 177.8 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 105.41 0)
@@ -2307,7 +2313,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR083") (unit 1)
+          (reference "#PWR085") (unit 1)
         )
       )
     )
@@ -2341,7 +2347,7 @@
   (symbol (lib_id "power:GND") (at 232.41 48.26 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b565725-393d-4ead-acfa-b4aa96a71fee)
-    (property "Reference" "#PWR091" (at 226.06 48.26 0)
+    (property "Reference" "#PWR093" (at 226.06 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 227.33 48.26 0)
@@ -2357,7 +2363,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR091") (unit 1)
+          (reference "#PWR093") (unit 1)
         )
       )
     )
@@ -2369,7 +2375,7 @@
     (property "Reference" "J16" (at 248.92 53.34 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Screw_Terminal_01x02" (at 238.76 58.42 0)
+    (property "Value" "ScrewTerminal_02" (at 238.76 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" (at 238.76 53.34 0)
@@ -2387,6 +2393,9 @@
     (property "Purpose Pin2" "GND" (at 241.3 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/284514-2?qs=woBvfblj%2FzwP8grZOAh0Gg%3D%3D" (at 238.76 53.34 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d120917b-b1a1-42a4-a926-e6fb500c75e1))
     (pin "2" (uuid 54bc6617-2182-4f47-8998-34b869373dad))
     (instances
@@ -2401,7 +2410,7 @@
   (symbol (lib_id "power:GND") (at 118.11 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9e23bd36-e8fe-4084-bf3f-8fa0c0ba9eff)
-    (property "Reference" "#PWR078" (at 118.11 148.59 0)
+    (property "Reference" "#PWR080" (at 118.11 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 147.32 0)
@@ -2417,7 +2426,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR078") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
       )
     )
@@ -2426,7 +2435,7 @@
   (symbol (lib_id "Device:R") (at 177.8 95.25 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e49f855-6d8b-4a38-a593-c15730e7be97)
-    (property "Reference" "R43" (at 180.34 92.71 0)
+    (property "Reference" "R46" (at 180.34 92.71 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "25.5kΩ" (at 180.34 95.25 0)
@@ -2449,7 +2458,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "R43") (unit 1)
+          (reference "R46") (unit 1)
         )
       )
     )
@@ -2458,7 +2467,7 @@
   (symbol (lib_id "Device:R") (at 177.8 137.16 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a34b7d8f-54f5-4a24-8e3c-5768d5d897e6)
-    (property "Reference" "R45" (at 180.34 134.62 0)
+    (property "Reference" "R48" (at 180.34 134.62 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "13.7kΩ" (at 180.34 137.16 0)
@@ -2481,7 +2490,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "R45") (unit 1)
+          (reference "R48") (unit 1)
         )
       )
     )
@@ -2493,7 +2502,7 @@
     (property "Reference" "J14" (at 27.94 38.1 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Screw_Terminal_01x02" (at 38.1 43.18 0)
+    (property "Value" "ScrewTerminal_02" (at 38.1 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" (at 38.1 38.1 0)
@@ -2510,6 +2519,9 @@
     )
     (property "Purpose Pin2" "GND" (at 35.56 40.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/284514-2?qs=woBvfblj%2FzwP8grZOAh0Gg%3D%3D" (at 38.1 38.1 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid d1eaf909-c69f-4721-a7d5-c926f1d69ca6))
     (pin "2" (uuid 170f5297-2302-4a2a-a539-5a4071b2e99e))
@@ -2560,7 +2572,7 @@
     (property "Reference" "J15" (at 248.92 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Screw_Terminal_01x02" (at 238.76 50.8 0)
+    (property "Value" "ScrewTerminal_02" (at 238.76 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" (at 238.76 45.72 0)
@@ -2577,6 +2589,9 @@
     )
     (property "Purpose Pin2" "GND" (at 241.3 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/284514-2?qs=woBvfblj%2FzwP8grZOAh0Gg%3D%3D" (at 238.76 45.72 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b0bdd09a-5b9d-4606-bd6c-5b983e3b458d))
     (pin "2" (uuid e57e9bb7-e1e8-4d4b-b24d-986da490cb03))
@@ -2595,7 +2610,7 @@
     (property "Reference" "J20" (at 245.11 138.43 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "PinHeader4x2" (at 254 151.13 0)
+    (property "Value" "Header_02x04" (at 254 151.13 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "conn:PinHeader_2x04_P2.54mm_Vertical" (at 266.7 143.51 0)
@@ -2630,6 +2645,9 @@
     )
     (property "Purpose" "LV OUT" (at 254 138.43 0)
       (effects (font (size 1.27 1.27)))
+    )
+    (property "Shop" "https://store.comet.bg/Catalogue/Product/44030/" (at 254 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 83003e38-9669-4acb-bf2a-18938fb618d1))
     (pin "2" (uuid 9ddfef92-3064-442e-b66d-048f3094ff45))
@@ -2683,7 +2701,7 @@
   (symbol (lib_id "power:GND") (at 127 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bec2dfd5-a3e2-4a53-8205-d5ddd321db83)
-    (property "Reference" "#PWR080" (at 127 148.59 0)
+    (property "Reference" "#PWR082" (at 127 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 147.32 0)
@@ -2699,7 +2717,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -2708,7 +2726,7 @@
   (symbol (lib_id "Device:R") (at 127 90.17 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bf798857-57a3-4aee-95b7-4bd711af2f81)
-    (property "Reference" "R40" (at 129.54 87.63 0)
+    (property "Reference" "R43" (at 129.54 87.63 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47kΩ" (at 129.54 90.17 0)
@@ -2731,7 +2749,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "R40") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
@@ -2740,7 +2758,7 @@
   (symbol (lib_id "power:GND") (at 49.53 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c2c313ca-7086-440e-8b7a-0423ae8a9a28)
-    (property "Reference" "#PWR073" (at 49.53 59.69 0)
+    (property "Reference" "#PWR076" (at 49.53 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 49.53 58.42 0)
@@ -2756,7 +2774,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR073") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -2765,7 +2783,7 @@
   (symbol (lib_id "power:GND") (at 214.63 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c84f2002-db78-4445-a575-1aac5938688d)
-    (property "Reference" "#PWR089" (at 214.63 106.68 0)
+    (property "Reference" "#PWR091" (at 214.63 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 214.63 105.41 0)
@@ -2781,7 +2799,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR089") (unit 1)
+          (reference "#PWR091") (unit 1)
         )
       )
     )
@@ -2790,7 +2808,7 @@
   (symbol (lib_id "Device:R") (at 177.8 85.09 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce11ece9-631a-4e20-a35c-20d16a94defd)
-    (property "Reference" "R42" (at 180.34 82.55 0)
+    (property "Reference" "R45" (at 180.34 82.55 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "102kΩ" (at 180.34 85.09 0)
@@ -2813,7 +2831,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "R42") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -2822,7 +2840,7 @@
   (symbol (lib_id "Device:R") (at 127 132.08 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cf7d1639-780a-4732-862b-563e2c1b8431)
-    (property "Reference" "R41" (at 129.54 129.54 0)
+    (property "Reference" "R44" (at 129.54 129.54 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "47kΩ" (at 129.54 132.08 0)
@@ -2845,7 +2863,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "R41") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -2854,7 +2872,7 @@
   (symbol (lib_id "power:GND") (at 127 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf964912-44b7-49c3-bb8e-745acdd03164)
-    (property "Reference" "#PWR079" (at 127 106.68 0)
+    (property "Reference" "#PWR081" (at 127 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 105.41 0)
@@ -2870,7 +2888,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -2879,7 +2897,7 @@
   (symbol (lib_id "power:GND") (at 274.32 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d2e0d78e-a5a6-4cda-9702-ee707f205b70)
-    (property "Reference" "#PWR096" (at 274.32 158.75 0)
+    (property "Reference" "#PWR098" (at 274.32 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 274.32 157.48 0)
@@ -2895,7 +2913,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR096") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
@@ -2936,7 +2954,7 @@
   (symbol (lib_id "power:GND") (at 196.85 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e0d3008e-33dd-4ffe-8c89-8b1d6736d1e2)
-    (property "Reference" "#PWR085" (at 196.85 106.68 0)
+    (property "Reference" "#PWR087" (at 196.85 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 105.41 0)
@@ -2952,7 +2970,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR085") (unit 1)
+          (reference "#PWR087") (unit 1)
         )
       )
     )
@@ -2961,7 +2979,7 @@
   (symbol (lib_id "power:GND") (at 83.82 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e1662319-6db0-46e8-a63d-75eadca292ac)
-    (property "Reference" "#PWR076" (at 83.82 59.69 0)
+    (property "Reference" "#PWR078" (at 83.82 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 58.42 0)
@@ -2977,7 +2995,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR076") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
       )
     )
@@ -3014,7 +3032,7 @@
     (property "Reference" "J17" (at 248.92 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Screw_Terminal_01x02" (at 238.76 66.04 0)
+    (property "Value" "ScrewTerminal_02" (at 238.76 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical" (at 238.76 60.96 0)
@@ -3032,6 +3050,9 @@
     (property "Purpose Pin2" "GND" (at 241.3 63.5 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
+    (property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/284514-2?qs=woBvfblj%2FzwP8grZOAh0Gg%3D%3D" (at 238.76 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid dd4b312d-ff8f-40e8-aa08-f4426a3dffa7))
     (pin "2" (uuid 1c2f6d94-d9df-4189-85fa-09ef8fd70494))
     (instances
@@ -3046,7 +3067,7 @@
   (symbol (lib_id "power:GND") (at 118.11 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f2699f59-0f86-4df9-8bac-9405b4b1e9cb)
-    (property "Reference" "#PWR077" (at 118.11 106.68 0)
+    (property "Reference" "#PWR079" (at 118.11 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 105.41 0)
@@ -3062,7 +3083,7 @@
     (instances
       (project "power_board"
         (path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-          (reference "#PWR077") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
       )
     )
