@@ -353,7 +353,7 @@
 	(pad "1" smd custom
 		(at -1.6125 0)
 		(size 15.225 12)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu")
 		(options
 			(clearance outline)
 			(anchor rect)
