@@ -14897,7 +14897,7 @@
 	(footprint "conn:USB_A_Amphenol_GSB19111KEU"
 		(layer "F.Cu")
 		(uuid "55ac453e-c137-41bf-bf92-6577ee0b1574")
-		(at 84 161.51 90)
+		(at 85 161.51 90)
 		(descr "USB A connector https://www.we-online.com/catalog/datasheet/614004134726.pdf")
 		(tags "USB_A Female Connector receptacle")
 		(property "Reference" "J7"
@@ -17747,7 +17747,7 @@
 	(footprint "conn:USB3_A_Amphenol_GSB3116344KHHR"
 		(layer "F.Cu")
 		(uuid "65829622-1b08-4e94-a1bc-1736074bdb4f")
-		(at 50 157.175 90)
+		(at 51 157.175 90)
 		(descr "USB A connector https://www.we-online.com/catalog/datasheet/614004134726.pdf")
 		(tags "USB_A Female Connector receptacle")
 		(property "Reference" "J4"
@@ -22263,7 +22263,7 @@
 	(footprint "conn:USB_A_Amphenol_GSB19111KEU"
 		(layer "F.Cu")
 		(uuid "810807b7-6cb9-4e27-b276-32bf3d7f6767")
-		(at 75 161.51 90)
+		(at 76 161.51 90)
 		(descr "USB A connector https://www.we-online.com/catalog/datasheet/614004134726.pdf")
 		(tags "USB_A Female Connector receptacle")
 		(property "Reference" "J6"
@@ -27810,7 +27810,7 @@
 	(footprint "extra:OSTSLT3E34X-3F3C"
 		(layer "F.Cu")
 		(uuid "95d1e896-fbf5-487d-96e6-514e7db9f182")
-		(at 42 168 90)
+		(at 43 168 90)
 		(property "Reference" "D1"
 			(at 0.3175 -3.175 90)
 			(unlocked yes)
@@ -36041,7 +36041,7 @@
 	(footprint "extra:OSTSLT3E34X-3F3C"
 		(layer "F.Cu")
 		(uuid "b99f7645-ae23-4087-a411-6c2f2399025c")
-		(at 58 168 90)
+		(at 59 168 90)
 		(property "Reference" "D2"
 			(at 0.3175 -3.175 90)
 			(unlocked yes)
@@ -36937,7 +36937,7 @@
 	(footprint "conn:USB_A_Amphenol_GSB19111KEU"
 		(layer "F.Cu")
 		(uuid "bb212230-a580-485d-ad25-64ba23726c8c")
-		(at 93 161.51 90)
+		(at 94 161.51 90)
 		(descr "USB A connector https://www.we-online.com/catalog/datasheet/614004134726.pdf")
 		(tags "USB_A Female Connector receptacle")
 		(property "Reference" "J8"
@@ -40639,7 +40639,7 @@
 	(footprint "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal"
 		(layer "F.Cu")
 		(uuid "c78f0b6f-0386-42aa-9b7c-f6abab493bb1")
-		(at 103.25 160)
+		(at 104.25 160)
 		(descr "Thin-pin DC Barrel Jack, https://cdn-shop.adafruit.com/datasheets/21mmdcjackDatasheet.pdf")
 		(tags "Power Jack")
 		(property "Reference" "J15"
@@ -41045,7 +41045,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 		(layer "F.Cu")
 		(uuid "c80c8bce-e43f-425a-9ace-b1e0a6862540")
-		(at 34 152)
+		(at 34 170)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H4"
@@ -42517,7 +42517,7 @@
 	(footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad"
 		(layer "F.Cu")
 		(uuid "ce6b8fb8-8393-4603-a0e3-b4e4d8f862df")
-		(at 106 152)
+		(at 116 170)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
 		(property "Reference" "H3"
@@ -44894,7 +44894,7 @@
 	(footprint "conn:USB_A_Amphenol_GSB19111KEU"
 		(layer "F.Cu")
 		(uuid "dbe2f0d7-e7fd-4c29-a828-557bff3aef61")
-		(at 66 161.51 90)
+		(at 67 161.51 90)
 		(descr "USB A connector https://www.we-online.com/catalog/datasheet/614004134726.pdf")
 		(tags "USB_A Female Connector receptacle")
 		(property "Reference" "J5"
@@ -49363,7 +49363,7 @@
 	)
 	(gr_rect
 		(start 30 34)
-		(end 110 174)
+		(end 120 174)
 		(stroke
 			(width 0.1)
 			(type default)
