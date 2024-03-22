@@ -354,6 +354,7 @@
 		(at -1.6125 0)
 		(size 15.225 12)
 		(layers "F.Cu")
+		(zone_connect 2)
 		(options
 			(clearance outline)
 			(anchor rect)
