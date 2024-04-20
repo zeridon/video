@@ -2996,7 +2996,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
 			(at 219.4052 106.68 0)
 			(effects
 				(font
@@ -3023,7 +3023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3785/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/29563/"
 			(at 218.44 102.87 0)
 			(effects
 				(font

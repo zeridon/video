@@ -2702,6 +2702,44 @@
 		)
 	)
 	(sheet
+		(at 185.42 81.28)
+		(size 40.64 10.16)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bf145c4c-69aa-4291-854e-cae968acbb49")
+		(property "Sheetname" "Power cycler"
+			(at 185.42 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_cycler.kicad_sch"
+			(at 185.42 92.0246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "power_board"
+				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 130.81 81.28)
 		(size 40.64 10.16)
 		(fields_autoplaced yes)
