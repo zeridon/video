@@ -76,6 +76,7 @@
 			(justify bottom)
 		)
 	)
+	(zone_connect 2)
 	(attr through_hole)
 	(fp_line
 		(start -16.5 -3.65)
