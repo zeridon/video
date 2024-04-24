@@ -1946,12 +1946,6 @@
 		(uuid "c4c19f61-6243-4293-ace6-43a6e66f64f0")
 	)
 	(junction
-		(at 67.31 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e11f0a62-75ca-439f-ab9f-d7d22d512247")
-	)
-	(junction
 		(at 218.44 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2097,7 +2091,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 88.9) (xy 67.31 88.9)
+			(xy 62.23 88.9) (xy 82.55 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2114,16 +2108,6 @@
 			(type default)
 		)
 		(uuid "3d4203b1-dc23-4db1-9d91-d11a5e8d6f96")
-	)
-	(wire
-		(pts
-			(xy 67.31 88.9) (xy 67.31 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4030b4c8-58aa-4b1b-a356-fb24e31d134c")
 	)
 	(wire
 		(pts
@@ -2337,16 +2321,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 106.68) (xy 67.31 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92ad32a9-a65f-49c0-be9f-dd5ce48c7f17")
-	)
-	(wire
-		(pts
 			(xy 245.11 91.44) (xy 245.11 93.98)
 		)
 		(stroke
@@ -2517,16 +2491,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 88.9) (xy 82.55 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6888139-625a-459b-853b-2efb684ecf7d")
-	)
-	(wire
-		(pts
 			(xy 152.4 52.07) (xy 152.4 54.61)
 		)
 		(stroke
@@ -2602,184 +2566,6 @@
 			(justify right)
 		)
 		(uuid "c355358c-1fa9-4bb4-9245-5c9d6734ad0e")
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 67.31 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a6c7e8a-2605-4306-89f1-ad3051b2ddd9")
-		(property "Reference" "#PWR020"
-			(at 67.31 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 67.31 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "53279ca8-b4f5-413c-882b-d4f79f1e6dd3")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
-					(reference "#PWR020")
-					(unit 1)
-				)
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
-					(reference "#PWR017")
-					(unit 1)
-				)
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-					(reference "#PWR011")
-					(unit 1)
-				)
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 67.31 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "41742fa6-591c-4c38-a57a-1de43f9db63a")
-		(property "Reference" "C2"
-			(at 68.58 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1μF"
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 68.2752 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.31 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Info" "25V"
-			(at 68.58 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/9031/"
-			(at 67.31 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9281e12c-2412-46ce-b853-538e6202bf5d")
-		)
-		(pin "2"
-			(uuid "19bff152-803c-4e8f-9b74-40919309fa95")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-					(reference "C2")
-					(unit 1)
-				)
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
-					(reference "C7")
-					(unit 1)
-				)
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
-					(reference "C12")
-					(unit 1)
-				)
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
-					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3269,7 +3055,7 @@
 	(symbol
 		(lib_id "Isolator:LTV-247")
 		(at 163.83 69.85 0)
-		(unit 1)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3382,19 +3168,19 @@
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
 					(reference "U2")
-					(unit 1)
+					(unit 4)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
 					(reference "U2")
-					(unit 2)
+					(unit 3)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
 					(reference "U2")
-					(unit 3)
+					(unit 2)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
 					(reference "U2")
-					(unit 4)
+					(unit 1)
 				)
 			)
 		)

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -627,8 +627,12 @@
       "Root"
     ],
     [
-      "57810585-f156-492a-bf7d-79d4dd7cffda",
-      "Balanced Stereo Output"
+      "d2279bc9-ec2b-479a-ab74-da4e2a01ee8d",
+      "Balanced Output 1"
+    ],
+    [
+      "aa0cd103-413f-4fce-9cca-58fa674d5ac9",
+      "Balanced Output 2"
     ],
     [
       "b81e28a5-cd61-4e93-a90e-a0949064d53e",
