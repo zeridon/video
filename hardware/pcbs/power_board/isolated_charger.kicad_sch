@@ -3055,7 +3055,7 @@
 	(symbol
 		(lib_id "Isolator:LTV-247")
 		(at 163.83 69.85 0)
-		(unit 4)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3168,19 +3168,19 @@
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
 					(reference "U2")
-					(unit 4)
+					(unit 1)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
 					(reference "U2")
-					(unit 3)
+					(unit 2)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
 					(reference "U2")
-					(unit 2)
+					(unit 3)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
 					(reference "U2")
-					(unit 1)
+					(unit 4)
 				)
 			)
 		)
