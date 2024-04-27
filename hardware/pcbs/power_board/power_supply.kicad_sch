@@ -6826,7 +6826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "TODO"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/29761/"
 			(at 177.8 95.25 0)
 			(effects
 				(font
@@ -7674,7 +7674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "TODO"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/24862/"
 			(at 177.8 85.09 0)
 			(effects
 				(font
