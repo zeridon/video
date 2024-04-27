@@ -2175,7 +2175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "FAN1"
+		(property "Purpose" "FAN5"
 			(at 203.2 67.31 0)
 			(do_not_autoplace yes)
 			(effects
@@ -2474,7 +2474,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "FAN5"
+		(property "Purpose" "FAN3"
 			(at 203.2 123.19 0)
 			(do_not_autoplace yes)
 			(effects
@@ -2958,7 +2958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "FAN4"
+		(property "Purpose" "FAN1"
 			(at 203.2 109.22 0)
 			(do_not_autoplace yes)
 			(effects
@@ -3540,7 +3540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "FAN2"
+		(property "Purpose" "FAN4"
 			(at 203.2 81.28 0)
 			(do_not_autoplace yes)
 			(effects
@@ -4439,7 +4439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "FAN3"
+		(property "Purpose" "FAN2"
 			(at 203.2 95.25 0)
 			(do_not_autoplace yes)
 			(effects

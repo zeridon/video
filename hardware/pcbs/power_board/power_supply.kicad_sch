@@ -3973,7 +3973,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "OUT"
+		(property "Purpose Pin1" "5V"
 			(at 245.11 86.36 0)
 			(effects
 				(font
@@ -4489,7 +4489,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "OUT"
+		(property "Purpose Pin1" "5V"
 			(at 245.11 93.98 0)
 			(effects
 				(font
@@ -6663,7 +6663,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "OUT"
+		(property "Purpose Pin1" "12V"
 			(at 241.3 53.34 0)
 			(effects
 				(font
@@ -7115,7 +7115,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "OUT"
+		(property "Purpose Pin1" "12V"
 			(at 241.3 45.72 0)
 			(effects
 				(font

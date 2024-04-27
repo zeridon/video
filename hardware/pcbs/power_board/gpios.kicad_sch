@@ -4395,7 +4395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose Pin1" "BTN1"
+		(property "Purpose Pin1" "B1"
 			(at 189.23 102.87 0)
 			(do_not_autoplace yes)
 			(effects
@@ -4415,7 +4415,7 @@
 				(justify right)
 			)
 		)
-		(property "Purpose Pin3" "BTN2"
+		(property "Purpose Pin3" "B2"
 			(at 189.23 105.41 0)
 			(do_not_autoplace yes)
 			(effects
@@ -4435,7 +4435,7 @@
 				(justify right)
 			)
 		)
-		(property "Purpose Pin5" "BTN3"
+		(property "Purpose Pin5" "B3"
 			(at 189.23 107.95 0)
 			(do_not_autoplace yes)
 			(effects
@@ -4455,7 +4455,7 @@
 				(justify right)
 			)
 		)
-		(property "Purpose" "Buttons"
+		(property "Purpose" "BTNs"
 			(at 201.93 100.33 0)
 			(do_not_autoplace yes)
 			(effects
