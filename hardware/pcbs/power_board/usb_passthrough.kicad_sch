@@ -1633,6 +1633,72 @@
 		)
 		(uuid "ff1ae550-d3ca-4bf1-beb5-812ebcabcc68")
 	)
+	(label "D+"
+		(at 154.94 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4863313f-5e49-49c9-a29c-6d4818f0ab3c")
+	)
+	(label "D-"
+		(at 154.94 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d70fbed-4b90-4488-aa87-902108abed6b")
+	)
+	(label "SSTX+"
+		(at 154.94 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "994a8a57-7440-481b-b792-144ca96ef783")
+	)
+	(label "SSTX-"
+		(at 154.94 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a651ec9-ecca-4bb8-99c7-8389c72e538e")
+	)
+	(label "SSRX-"
+		(at 154.94 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de3c68ce-b019-4000-adc5-af5b0ff7f467")
+	)
+	(label "SSRX+"
+		(at 154.94 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f13c9223-4868-4fb4-804c-64a67b4bef8d")
+	)
 	(hierarchical_label "SBC_POWERED"
 		(shape output)
 		(at 193.04 71.12 0)
