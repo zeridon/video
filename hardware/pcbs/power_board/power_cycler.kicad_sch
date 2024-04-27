@@ -1686,6 +1686,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 119.38 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8ac7be4f-27c9-478f-80f4-04c1d44e7ea9")
 		)
@@ -1765,6 +1774,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29105/"
+			(at 129.54 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C149504"
 			(at 129.54 109.22 0)
 			(effects
 				(font
@@ -2023,7 +2041,7 @@
 				)
 			)
 		)
-		(property "Value" "a nice diode"
+		(property "Value" "S2A"
 			(at 129.54 67.31 0)
 			(effects
 				(font
@@ -2077,6 +2095,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/48275/"
+			(at 129.54 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420368"
 			(at 129.54 71.12 0)
 			(effects
 				(font

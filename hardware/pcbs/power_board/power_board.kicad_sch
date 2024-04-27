@@ -1809,6 +1809,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 106.68 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f0a4cf27-11f2-4dc9-9eca-7104b984b9a0")
 		)
@@ -1889,6 +1898,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29102/"
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 96.52 72.39 0)
 			(effects
 				(font
@@ -2307,6 +2325,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29102/"
+			(at 101.6 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 101.6 72.39 0)
 			(effects
 				(font

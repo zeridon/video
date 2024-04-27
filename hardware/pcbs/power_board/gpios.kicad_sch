@@ -3212,6 +3212,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 91.44 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1f3b0987-217e-4dd2-b305-a3ab2ffc796f")
 		)
@@ -3547,6 +3556,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17398"
+			(at 210.82 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "eedd9c84-d240-468c-8d78-db074efdd0d4")
 		)
@@ -3834,6 +3852,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17398"
+			(at 210.82 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c21b8dde-84c7-4c65-9068-f00bb053e86d")
 		)
@@ -3982,6 +4009,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29105/"
+			(at 157.48 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C149504"
 			(at 157.48 53.34 0)
 			(effects
 				(font
@@ -4147,6 +4183,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C149504"
+			(at 162.56 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7f0c6556-5b07-4eac-a93b-e0fd9400e770")
 		)
@@ -4237,6 +4282,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C149504"
+			(at 167.64 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "de916bf6-22cb-4faa-b4a5-b13039d63f1d")
 		)
@@ -4319,6 +4373,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/3637/"
+			(at 210.82 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17398"
 			(at 210.82 88.9 0)
 			(effects
 				(font
@@ -4567,6 +4630,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29105/"
+			(at 172.72 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C149504"
 			(at 172.72 53.34 0)
 			(effects
 				(font
@@ -4930,6 +5002,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 81.28 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b2f92d9-8b0b-4ec6-96c4-37796e207828")
 		)
@@ -5010,6 +5091,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29105/"
+			(at 152.4 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C149504"
 			(at 152.4 53.34 0)
 			(effects
 				(font
@@ -5108,6 +5198,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C149504"
+			(at 177.8 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a1c5c270-0670-4d29-8b89-83b3128fbb98")
 		)
@@ -5179,6 +5278,15 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/TCA9534DWR?qs=0C8XhJW8e4qbMJz3FH5M3A%3D%3D"
+			(at 104.14 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2870609"
 			(at 104.14 102.87 0)
 			(effects
 				(font

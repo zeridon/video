@@ -2639,6 +2639,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C15850"
+			(at 120.65 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "22b4b8ff-abe1-4d68-89ad-6df2e0f1b4a6")
 		)
@@ -2731,6 +2740,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29101/"
+			(at 152.4 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17673"
 			(at 152.4 58.42 0)
 			(effects
 				(font
@@ -3116,6 +3134,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C115451"
+			(at 163.83 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "0b5da102-d6fe-4c87-8a96-5fd8225670b1")
 		)
@@ -3257,6 +3284,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 201.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b6f646e-6379-415f-919d-46d4a7f67071")
 		)
@@ -3356,6 +3392,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C4360"
+			(at 181.61 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cc869278-fe28-4870-8c92-a77d71372de5")
 		)
@@ -3447,6 +3492,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
+			(at 132.08 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C28323"
 			(at 132.08 102.87 0)
 			(effects
 				(font
@@ -3555,6 +3609,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17408"
+			(at 241.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00aabba1-127c-4dac-a691-114abf7a10ce")
 		)
@@ -3636,6 +3699,15 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/onsemi/NCP380LSNAJAAT1G?qs=YeOvDzlQW72URQT3jIb9qg%3D%3D"
+			(at 167.64 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C424485"
 			(at 167.64 93.98 0)
 			(effects
 				(font

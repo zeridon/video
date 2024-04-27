@@ -2773,6 +2773,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C621415"
+			(at 135.89 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "7a85918e-b0f2-4f52-b6a7-b1528922eb8e")
 		)
@@ -3207,6 +3216,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17673"
+			(at 153.67 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5469e2e0-f8dd-405c-8155-e7d65158eeac")
 		)
@@ -3286,6 +3304,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/44616/"
+			(at 224.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
 			(at 224.79 80.01 0)
 			(effects
 				(font
@@ -3381,6 +3408,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17633"
+			(at 105.41 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "116842fb-f620-48a4-afe0-1613c0dc57a4")
 		)
@@ -3460,6 +3496,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/44616/"
+			(at 224.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
 			(at 224.79 107.95 0)
 			(effects
 				(font
@@ -3921,6 +3966,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17673"
+			(at 157.48 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "47913631-5d69-4383-ad0e-5e7b1afcb420")
 		)
@@ -4144,6 +4198,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17673"
+			(at 168.91 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cd787287-f089-4b96-a0f0-babdbfa8e14b")
 		)
@@ -4224,6 +4287,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/3550/"
+			(at 101.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17475"
 			(at 101.6 64.77 0)
 			(effects
 				(font
@@ -4618,6 +4690,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C28323"
+			(at 73.66 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1270ce25-b1d9-4c3b-aa4d-56db5ca81d99")
 		)
@@ -4911,6 +4992,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17673"
+			(at 161.29 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d70a8d5f-f1e3-4ea2-8234-7ca906cd1bc6")
 		)
@@ -4993,6 +5083,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29101/"
+			(at 165.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17673"
 			(at 165.1 49.53 0)
 			(effects
 				(font

@@ -893,6 +893,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49678"
+			(at 116.84 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecea8c71-7297-4ed8-87d9-12f13a3100c1")
 		)
@@ -1031,6 +1040,15 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/TMP1075DR?qs=byeeYqUIh0MQFff6VZgmIA%3D%3D"
+			(at 149.86 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2878381"
 			(at 149.86 96.52 0)
 			(effects
 				(font

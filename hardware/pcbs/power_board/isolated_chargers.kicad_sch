@@ -1886,6 +1886,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C7420339"
+			(at 182.88 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a1634142-7d40-4a9e-93a6-7ff3b76d7e90")
 		)
@@ -1965,6 +1974,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29580/"
+			(at 170.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17415"
 			(at 170.18 101.6 0)
 			(effects
 				(font
@@ -2136,6 +2154,15 @@
 				(justify right)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 106.68 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2f30e4c7-048b-4766-be7c-77520c94ad94")
 		)
@@ -2215,6 +2242,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/44616/"
+			(at 87.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
 			(at 87.63 109.22 0)
 			(effects
 				(font
@@ -2435,6 +2471,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/29102/"
+			(at 185.42 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
 			(at 185.42 81.28 0)
 			(effects
 				(font
@@ -2797,6 +2842,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C15850"
+			(at 74.93 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d7ce2b11-6ef9-4f25-8310-3fed168cef1c")
 		)
@@ -2961,6 +3015,15 @@
 				(justify right)
 			)
 		)
+		(property "LCSC" "C17414"
+			(at 106.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9c8c0036-38b0-475d-8d97-19179fb9d8a6")
 		)
@@ -3114,6 +3177,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C17673"
+			(at 160.02 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f10051ae-3208-45ce-9c40-0fd8b731063d")
 		)
@@ -3196,6 +3268,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C223014"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
