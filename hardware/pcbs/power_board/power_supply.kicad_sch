@@ -5428,7 +5428,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm"
+		(property "Footprint" "ics:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
 			(at 144.78 143.51 0)
 			(effects
 				(font
@@ -6071,7 +6071,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm"
+		(property "Footprint" "ics:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm_ThermalVias"
 			(at 144.78 101.6 0)
 			(effects
 				(font
