@@ -6,7 +6,7 @@
 // lcd configuration
 const struct st7789_config lcd_config = {
     .spi      = spi1,
-    .gpio_din = 12,
+    .gpio_din = 11,
     .gpio_clk = 10,
     .gpio_cs  = 13,
     .gpio_dc  = 19,
@@ -21,7 +21,7 @@ void st7789_fill(uint16_t pixel)
 {
     int num_pixels = lcd_width * lcd_height;
 
-    st7789_set_window(0, 0, lcd_width, lcd_height);
+    st7789_set_window(0, lcd_width - 1, 0, lcd_width - 1);
 
     for (int i = 0; i < num_pixels; i++) {
         st7789_write(&pixel, sizeof(pixel));
