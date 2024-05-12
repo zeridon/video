@@ -6,4 +6,4 @@ pico_sdk_init()
 project(box_rp2040)
 
 add_subdirectory(./src)
-# add_subdirectory(./vendor/st7789-library-for-pico)
+add_subdirectory(./vendor/st7789 EXCLUDE_FROM_ALL)

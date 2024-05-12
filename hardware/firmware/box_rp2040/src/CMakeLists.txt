@@ -13,6 +13,7 @@ target_link_libraries(box_rp2040 PRIVATE
         pico_stdlib
         hardware_pio
         hardware_interp
+        pico_st7789
 )
 
 # create map/bin/hex file etc.

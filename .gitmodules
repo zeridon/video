@@ -1,0 +1,3 @@
+[submodule "hardware/firmware/box_rp2040/vendor/st7789"]
+	path = hardware/firmware/box_rp2040/vendor/st7789
+	url = git@github.com:mteam/st7789.git
