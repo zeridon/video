@@ -7,24 +7,45 @@
 
 #include <stdint.h>
 
-void io_init(void) {
+#define UART_ENABLED (UART_INSTANCE != NULL)
 
+void io_init(void) {
+    if (UART_ENABLED) {
+        uart_init(UART_INSTANCE, UART_BAUD);
+        gpio_set_function(UART_PIN_TX, GPIO_FUNC_UART);
+        gpio_set_function(UART_PIN_RX, GPIO_FUNC_UART);
+    }
+}
+
+void io_say_n(char* buf, int n) {
+    if (USB_ENABLED) {
+        tud_cdc_write(buf, n);
+    }
+    if (UART_ENABLED) {
+        uart_write_blocking(UART_INSTANCE, buf, n);
+    }
+    if (USB_ENABLED) {
+        tud_cdc_write_flush();
+    }
+}
+
+void io_say(char* buf) {
+    io_say_n(buf, strlen(buf));
 }
 
 void io_handle_char(char chr) {
     char buf[15] = "you said: ";
-    buf[11] = chr;
-    buf[12] = '\r';
-    buf[13] = '\n';
-    buf[14] = '\0';
-    tud_cdc_write(buf, 14);
-    tud_cdc_write_flush();
+    buf[10] = chr;
+    buf[11] = '\r';
+    buf[12] = '\n';
+    buf[13] = '\0';
+
     if (chr == '!') {
         strcpy(buf, "bye\r\n");
-        tud_cdc_write(buf, 5);
-        tud_cdc_write_flush();
+        io_say(buf);
         reset_usb_boot(0, 0);
     }
+    io_say(buf);
 }
 
 void io_usb_cdc_task() {
