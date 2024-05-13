@@ -1,3 +1,3 @@
 #pragma once
 
-void io_handle_char(char chr);
+void io_handle_cmd(const char*);
