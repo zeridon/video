@@ -3,6 +3,7 @@
 #include "usb.h"
 
 #include "pico/stdlib.h"
+#include "pico/bootrom.h"
 
 #include <stdint.h>
 
@@ -18,10 +19,16 @@ void io_handle_char(char chr) {
     buf[14] = '\0';
     tud_cdc_write(buf, 14);
     tud_cdc_write_flush();
+    if (chr == '!') {
+        strcpy(buf, "bye\r\n");
+        tud_cdc_write(buf, 5);
+        tud_cdc_write_flush();
+        reset_usb_boot(0, 0);
+    }
 }
 
 void io_usb_cdc_task() {
-    if (!tud_cdc_connected() || !tud_cdc_available()) {
+    if (!USB_ENABLED || !tud_cdc_connected() || !tud_cdc_available()) {
         return;
     }
 

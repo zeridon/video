@@ -4,39 +4,36 @@
 
 #include "pico/stdlib.h"
 #include "pico/st7789.h"
+#include "config.h"
 
 // lcd configuration
 const struct st7789_config lcd_config = {
-    .spi      = spi1,
-    .gpio_din = 11,
-    .gpio_clk = 10,
-    .gpio_cs  = 13,
-    .gpio_dc  = 19,
-    .gpio_rst = 20,
-    .gpio_bl  = 22,
+    .spi      = DISPLAY_SPI,
+    .gpio_din = DISPLAY_PIN_DAT,
+    .gpio_clk = DISPLAY_PIN_CLK,
+    .gpio_cs  = DISPLAY_PIN_CS,
+    .gpio_dc  = DISPLAY_PIN_DC,
+    .gpio_rst = DISPLAY_PIN_RST,
+    .gpio_bl  = DISPLAY_PIN_BL,
 };
-
-const int lcd_width = 320;
-const int lcd_height = 240;
-const enum st7789_rotation lcd_rotation = ST7789_LANDSCAPE;
 
 void st7789_fill(uint16_t pixel)
 {
-    int num_pixels = lcd_width * lcd_height;
+    int num_pixels = DISPLAY_WIDTH * DISPLAY_HEIGHT;
 
-    st7789_set_window(0, lcd_width - 1, 0, lcd_width - 1);
+    st7789_set_window(0, DISPLAY_WIDTH - 1, 0, DISPLAY_WIDTH - 1);
 
-    uint16_t pixels[lcd_width];
-    for (int i = 0; i < lcd_width; i++) {
+    uint16_t pixels[DISPLAY_WIDTH];
+    for (int i = 0; i < DISPLAY_WIDTH; i++) {
         pixels[i] = pixel;
     }
-    for (int i = 0; i < lcd_height; i++) {
+    for (int i = 0; i < DISPLAY_HEIGHT; i++) {
         st7789_write(pixels, sizeof(pixels));
     }
 }
 
 void display_init(void) {
-    st7789_init(&lcd_config, lcd_width, lcd_height, lcd_rotation);
+    st7789_init(&lcd_config, DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_ROTATION);
 }
 
 void display_task(void) {

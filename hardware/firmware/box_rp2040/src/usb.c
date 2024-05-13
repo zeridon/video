@@ -3,9 +3,15 @@
 // TODO: implement vendor-reset interface
 
 void usb_init(void) {
-    tud_init(BOARD_TUD_RHPORT);
+    if (!USB_ENABLED) {
+        return;
+    }
+    tud_init(USB_INSTANCE);
 }
 
 void usb_task(void) {
+    if (!USB_ENABLED) {
+        return;
+    }
     tud_task();
 }
