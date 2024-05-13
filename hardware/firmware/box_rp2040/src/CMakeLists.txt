@@ -9,6 +9,7 @@ target_sources(box_rp2040 PRIVATE
         main.c
         display.c
         io.c
+        io_commands.c
         usb.c
         network_switch_status_reader.c
 

@@ -1,9 +1,9 @@
 #include "io.h"
+#include "io_commands.h"
 
 #include "usb.h"
 
 #include "pico/stdlib.h"
-#include "pico/bootrom.h"
 
 #include <stdint.h>
 
@@ -31,21 +31,6 @@ void io_say_n(char* buf, int n) {
 
 void io_say(char* buf) {
     io_say_n(buf, strlen(buf));
-}
-
-void io_handle_char(char chr) {
-    char buf[15] = "you said: ";
-    buf[10] = chr;
-    buf[11] = '\r';
-    buf[12] = '\n';
-    buf[13] = '\0';
-
-    if (chr == '!') {
-        strcpy(buf, "bye\r\n");
-        io_say(buf);
-        reset_usb_boot(0, 0);
-    }
-    io_say(buf);
 }
 
 void io_usb_cdc_task(void) {

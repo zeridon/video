@@ -221,7 +221,7 @@ uint32_t smi_read(uint32_t mAddrs)
         _smi_readBit(1, &ACK);		/* ACK for issuing READ command */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_read_0...timeout!\r\n");
+    if (ACK != 0) io_say("smi_read_0...timeout!\n");
 
     _smi_writeBit((mAddrs & 0xff), 8);	/* Set reg_addr[7:0] */
 
@@ -231,7 +231,7 @@ uint32_t smi_read(uint32_t mAddrs)
         _smi_readBit(1, &ACK);		/* ACK for setting reg_addr[7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_read_1...timeout!\r\n");
+    if (ACK != 0) io_say("smi_read_1...timeout!\n");
 
     _smi_writeBit((mAddrs >> 8), 8);	/* Set reg_addr[15:8] */
 
@@ -241,7 +241,7 @@ uint32_t smi_read(uint32_t mAddrs)
         _smi_readBit(1, &ACK);		/* ACK by RTL836x */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_read_2...timeout!\r\n");
+    if (ACK != 0) io_say("smi_read_2...timeout!\n");
 
     _smi_readBit(8, &rawData);		/* Read DATA [7:0] */
     rData = rawData & 0xff;
@@ -273,7 +273,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for issuing WRITE command */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_write_0...timeout!\r\n");
+    if (ACK != 0) io_say("smi_write_0...timeout!\n");
 
     _smi_writeBit((mAddrs & 0xff), 8);	/* Set reg_addr[7:0] */
 
@@ -283,7 +283,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for setting reg_addr[7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_write_1...timeout!\r\n");
+    if (ACK != 0) io_say("smi_write_1...timeout!\n");
 
     _smi_writeBit((mAddrs >> 8), 8);	/* Set reg_addr[15:8] */
 
@@ -293,7 +293,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK or setting reg_addr[15:8] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_write_2...timeout!\r\n");
+    if (ACK != 0) io_say("smi_write_2...timeout!\n");
 
     _smi_writeBit(rData & 0xff, 8);		/* Write Data [7:0] out */
 
@@ -303,7 +303,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for writting data [7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_write_3...timeout!\r\n");
+    if (ACK != 0) io_say("smi_write_3...timeout!\n");
 
     _smi_writeBit(rData >> 8, 8);		/* Write Data [15:8] out */
 
@@ -313,7 +313,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for writting data [15:8] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) printf("smi_write_4...timeout!\r\n");
+    if (ACK != 0) io_say("smi_write_4...timeout!\n");
 
     _smi_stop();
 }

@@ -16,9 +16,9 @@ void init(void) {
 }
 
 void update(void) {
+    usb_task();
     display_task();
     io_task();
-    usb_task();
 }
 
 int main(void) {
