@@ -19,6 +19,8 @@ void io_handle_char(char chr) {
 
     if (n > sizeof(in_buf) - 2) {
         if (is_terminator(chr)) {
+            n = 0;
+            in_buf[0] = '\0';
             io_say("line too long\n");
         }
         return;
