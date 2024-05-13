@@ -45,7 +45,8 @@ void io_handle_char(char chr) {
         io_say(print_buf);
         return;
     case '!':
-        io_say("bye\n");
+        io_say("\nrestarting into bootloader, bye\n");
+        sleep_ms(50);
         reset_usb_boot(0, 0);
         return;
     }

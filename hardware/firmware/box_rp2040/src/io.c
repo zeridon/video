@@ -19,13 +19,10 @@ void io_init(void) {
 
 void io_say_n(char* buf, int n) {
     if (USB_ENABLED) {
-        tud_cdc_write(buf, n);
+        usb_cdc_write(buf, n);
     }
     if (UART_ENABLED) {
         uart_write_blocking(UART_INSTANCE, buf, n);
-    }
-    if (USB_ENABLED) {
-        tud_cdc_write_flush();
     }
 }
 
@@ -34,12 +31,8 @@ void io_say(char* buf) {
 }
 
 void io_usb_cdc_task(void) {
-    if (!USB_ENABLED || !tud_cdc_connected() || !tud_cdc_available()) {
-        return;
-    }
-
     int32_t chr;
-    while ( (chr = tud_cdc_read_char()) >= 0 ) {
+    while ( (chr = usb_cdc_read_char()) >= 0 ) {
         io_handle_char((char)chr);
     }
 }
