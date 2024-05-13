@@ -48,7 +48,7 @@ void io_handle_char(char chr) {
     io_say(buf);
 }
 
-void io_usb_cdc_task() {
+void io_usb_cdc_task(void) {
     if (!USB_ENABLED || !tud_cdc_connected() || !tud_cdc_available()) {
         return;
     }
@@ -59,7 +59,16 @@ void io_usb_cdc_task() {
     }
 }
 
-void io_task(void) {
-    io_usb_cdc_task();
+void io_uart_task(void) {
+    if (!UART_ENABLED) {
+        return;
+    }
+    while (uart_is_readable(UART_INSTANCE)) {
+        io_handle_char(uart_getc(UART_INSTANCE));
+    }
 }
 
+void io_task(void) {
+    io_usb_cdc_task();
+    io_uart_task();
+}

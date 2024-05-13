@@ -6,11 +6,13 @@
 #include "usb.h"
 #include "display.h"
 #include "io.h"
+#include "network_switch_status_reader.h"
 
 void init(void) {
     display_init();
     usb_init();
     io_init();
+    ns_init();
 }
 
 void update(void) {

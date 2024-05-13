@@ -2,12 +2,12 @@
 
 #include <stdio.h>
 
+#include "config.h"
+#include "io.h"
+
 #include "pico/stdio.h"
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
-
-#define PIN_SDA 26
-#define PIN_SCK 27
 
 #define LOW 0
 #define HIGH 1
@@ -114,28 +114,28 @@
 void _smi_start()
 {
     /* change GPIO pin to Output only */
-    gpio_set_dir(PIN_SCK, GPIO_OUT);
-    gpio_set_dir(PIN_SDA, GPIO_OUT);
+    gpio_set_dir(NSW_PIN_SCL, GPIO_OUT);
+    gpio_set_dir(NSW_PIN_SDA, GPIO_OUT);
 
     /* Initial state: SCK: 0, SDA: 1 */
-    gpio_put(PIN_SCK, LOW);
-    gpio_put(PIN_SDA, HIGH);
+    gpio_put(NSW_PIN_SCL, LOW);
+    gpio_put(NSW_PIN_SDA, HIGH);
     CLK_DURATION(DELAY);
 
     /* CLK 1: 0 -> 1, 1 -> 0 */
-    gpio_put(PIN_SCK, HIGH);
+    gpio_put(NSW_PIN_SCL, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, LOW);
+    gpio_put(NSW_PIN_SCL, LOW);
     CLK_DURATION(DELAY);
 
     /* CLK 2: */
-    gpio_put(PIN_SCK, HIGH);
+    gpio_put(NSW_PIN_SCL, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SDA, LOW);
+    gpio_put(NSW_PIN_SDA, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, LOW);
+    gpio_put(NSW_PIN_SCL, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SDA, HIGH);
+    gpio_put(NSW_PIN_SDA, HIGH);
 }
 
 void _smi_writeBit(uint16_t signal, uint32_t bitLen)
@@ -145,15 +145,15 @@ void _smi_writeBit(uint16_t signal, uint32_t bitLen)
 
         /* prepare data */
         if (signal & (1UL << (bitLen - 1)))
-            gpio_put(PIN_SDA, HIGH);
+            gpio_put(NSW_PIN_SDA, HIGH);
         else
-            gpio_put(PIN_SDA, LOW);
+            gpio_put(NSW_PIN_SDA, LOW);
         CLK_DURATION(DELAY);
 
         /* clocking */
-        gpio_put(PIN_SCK, HIGH);
+        gpio_put(NSW_PIN_SCL, HIGH);
         CLK_DURATION(DELAY);
-        gpio_put(PIN_SCK, LOW);
+        gpio_put(NSW_PIN_SCL, LOW);
     }
 }
 
@@ -162,47 +162,47 @@ void _smi_readBit(uint32_t bitLen, uint32_t *rData)
     unsigned long u;
 
     /* change GPIO pin to Input only */
-    gpio_set_dir(PIN_SDA, GPIO_IN);
+    gpio_set_dir(NSW_PIN_SDA, GPIO_IN);
 
     for (*rData = 0; bitLen > 0; bitLen--) {
         CLK_DURATION(DELAY);
 
         /* clocking */
-        gpio_put(PIN_SCK, HIGH);
+        gpio_put(NSW_PIN_SCL, HIGH);
         CLK_DURATION(DELAY);
-        u = (gpio_get(PIN_SDA) == HIGH) ? 1 : 0;
-        gpio_put(PIN_SCK, LOW);
+        u = (gpio_get(NSW_PIN_SDA) == HIGH) ? 1 : 0;
+        gpio_put(NSW_PIN_SCL, LOW);
 
         *rData |= (u << (bitLen - 1));
     }
 
     /* change GPIO pin to Output only */
-    gpio_set_dir(PIN_SDA, GPIO_OUT);
+    gpio_set_dir(NSW_PIN_SDA, GPIO_OUT);
 }
 
 void _smi_stop()
 {
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SDA, LOW);
-    gpio_put(PIN_SCK, HIGH);
+    gpio_put(NSW_PIN_SDA, LOW);
+    gpio_put(NSW_PIN_SCL, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SDA, HIGH);
+    gpio_put(NSW_PIN_SDA, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, HIGH);
+    gpio_put(NSW_PIN_SCL, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, LOW);
+    gpio_put(NSW_PIN_SCL, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, HIGH);
+    gpio_put(NSW_PIN_SCL, HIGH);
 
     /* add a click */
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, LOW);
+    gpio_put(NSW_PIN_SCL, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(PIN_SCK, HIGH);
+    gpio_put(NSW_PIN_SCL, HIGH);
 
     /* change GPIO pin to Input only */
-    gpio_set_dir(PIN_SDA, GPIO_IN);
-    gpio_set_dir(PIN_SCK, GPIO_IN);
+    gpio_set_dir(NSW_PIN_SDA, GPIO_IN);
+    gpio_set_dir(NSW_PIN_SCL, GPIO_IN);
 }
 
 uint32_t smi_read(uint32_t mAddrs)
@@ -333,8 +333,9 @@ uint32_t smi_read_port(int port, int reg) {
 }
 
 void ns_init(void) {
-    gpio_init(PIN_SDA);
-    gpio_init(PIN_SCK);
+    gpio_init(NSW_PIN_SDA);
+    gpio_init(NSW_PIN_SCL);
+    gpio_disable_pulls(NSW_PIN_SDA);
 }
 
 void ns_identify(uint32_t* id, uint32_t* ver) {
@@ -346,8 +347,10 @@ void ns_identify(uint32_t* id, uint32_t* ver) {
 }
 
 void ns_read_and_print(void) {
+    char print_buf[50];
     for(int port = 0; port < 5; port++) {
-        printf("Port %d: ", port);
+        snprintf(print_buf, sizeof(print_buf), "Port %d: ", port);
+        io_say(print_buf);
         uint32_t bmcr = smi_read_port(port, MII_BMCR); // Basic mode control register
         uint32_t bmsr = smi_read_port(port, MII_BMSR); // Basic mode status register
         uint32_t an = smi_read_port(port, MII_AN); // Auto negotiation settings
@@ -391,14 +394,15 @@ void ns_read_and_print(void) {
         }
 
         if(!link) {
-            printf("No link\n");
+            io_say("No link\n");
             continue;
         } else {
-            printf("%d Mbps ", speed);
+            snprintf(print_buf, sizeof(print_buf), "%d Mbps ", speed);
+            io_say(print_buf);
             if(fd) {
-                printf("Full-duplex\n");
+                io_say("Full-duplex\n");
             } else {
-                printf("Half-duplex\n");
+                io_say("Half-duplex\n");
             }
         }
     }

@@ -24,3 +24,7 @@
 #define DISPLAY_WIDTH       320
 #define DISPLAY_HEIGHT      240
 #define DISPLAY_ROTATION    ST7789_LANDSCAPE
+
+// ****** NETWORK SWITCH INTERFACE *******
+#define NSW_PIN_SDA 26
+#define NSW_PIN_SCL 27
