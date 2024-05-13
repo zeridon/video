@@ -10,10 +10,10 @@ target_sources(box_rp2040 PRIVATE
         display.c
         io.c
         io_commands.c
-        usb.c
         network_switch_status_reader.c
 
         usb/usb_descriptors.c
+        usb/usb.c
 )
 
 target_link_libraries(box_rp2040 PRIVATE
