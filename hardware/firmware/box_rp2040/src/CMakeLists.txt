@@ -1,5 +1,7 @@
 add_executable(box_rp2040)
 
+add_subdirectory(./text)
+
 target_include_directories(box_rp2040 PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
         usb
@@ -18,7 +20,9 @@ target_sources(box_rp2040 PRIVATE
 
 target_link_libraries(box_rp2040 PRIVATE
         pico_stdlib
+
         pico_st7789
+        mcufont_decoder
 
         tinyusb_device
         tinyusb_board
