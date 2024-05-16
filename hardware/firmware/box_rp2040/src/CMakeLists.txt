@@ -22,7 +22,7 @@ target_link_libraries(box_rp2040 PRIVATE
         pico_stdlib
 
         pico_st7789
-        mcufont_decoder
+        mcufont_text
 
         tinyusb_device
         tinyusb_board
