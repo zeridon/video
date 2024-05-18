@@ -4,3 +4,6 @@
 [submodule "hardware/firmware/box_rp2040/vendor/mcufont"]
 	path = hardware/firmware/box_rp2040/vendor/mcufont
 	url = git@github.com:mcufont/mcufont.git
+[submodule "hardware/firmware/box_rp2040/vendor/comic-shanns"]
+	path = hardware/firmware/box_rp2040/vendor/comic-shanns
+	url = git@github.com:shannpersand/comic-shanns.git

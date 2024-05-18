@@ -1,6 +1,7 @@
 #include "display.h"
 
 #include <stdbool.h>
+#include <string.h>
 
 #include "pico/stdlib.h"
 #include "pico/st7789.h"
@@ -9,10 +10,18 @@
 #include "mcufont.h"
 #include "fonts.h"
 
+const uint16_t colours[] = {
+    0xc924, 0x94a3, 0xd4c4, 0x4431, 0xb310, 0x6ced, 0xd2e2
+};
+
 typedef struct {
     uint16_t bg_colour;
     uint16_t fg_colour;
+    uint8_t fg_colour_idx;
+    const struct mf_font_s* font;
 } display_text_state_t;
+
+uint16_t framebuffer[DISPLAY_HEIGHT][DISPLAY_WIDTH];
 
 // Fast RGB565 pixel blending
 // Found in a pull request for the Adafruit framebuffer library. Clever!
@@ -40,19 +49,21 @@ uint16_t alpha_blend(uint32_t fg, uint32_t bg, uint8_t alpha) {
 
 static void pixel_callback(int16_t x, int16_t y, uint8_t count, uint8_t alpha, void* v_state) {
     display_text_state_t* state = v_state;
-    uint16_t pixels[count];
     uint16_t colour = alpha_blend(state->fg_colour, state->bg_colour, alpha);
 
-    for (uint8_t i = 0; i < count; i++) {
-        pixels[i] = colour;
+    while (count--) {
+        if (x < DISPLAY_WIDTH && y < DISPLAY_HEIGHT) {
+            framebuffer[y][x] = colour;
+            x++;
+        }
     }
-
-    st7789_set_window(x, x + count, y, y);
-    st7789_write(pixels, sizeof(pixels));
 }
 
-static uint8_t char_callback(int16_t x0, int16_t y0, mf_char character, void *state) {
-    return mf_render_character(&mf_rlefont_dejavu_sans_12.font, x0, y0, character, &pixel_callback, state);
+static uint8_t char_callback(int16_t x0, int16_t y0, mf_char character, void* v_state) {
+    display_text_state_t* state = v_state;
+    state->fg_colour_idx = (state->fg_colour_idx + 1) % (sizeof(colours) / sizeof(uint16_t));
+    state->fg_colour = colours[state->fg_colour_idx];
+    return mf_render_character(state->font, x0, y0, character, &pixel_callback, state);
 }
 
 // lcd configuration
@@ -66,18 +77,19 @@ const struct st7789_config lcd_config = {
     .gpio_bl  = DISPLAY_PIN_BL,
 };
 
-void st7789_fill(uint16_t pixel)
-{
-    int num_pixels = DISPLAY_WIDTH * DISPLAY_HEIGHT;
+void fill_whole_buf(uint16_t colour) {
+    for (int x = 0; x < DISPLAY_WIDTH; x++) {
+        for (int y = 0; y < DISPLAY_HEIGHT; y++) {
+            framebuffer[y][x] = colour;
+        }
+    }
+}
 
+void update_display() {
     st7789_set_window(0, DISPLAY_WIDTH - 1, 0, DISPLAY_HEIGHT - 1);
 
-    uint16_t pixels[DISPLAY_WIDTH];
-    for (int i = 0; i < DISPLAY_WIDTH; i++) {
-        pixels[i] = pixel;
-    }
     for (int i = 0; i < DISPLAY_HEIGHT; i++) {
-        st7789_write(pixels, sizeof(pixels));
+        st7789_write(framebuffer, sizeof(framebuffer));
     }
 }
 
@@ -92,25 +104,37 @@ void display_task(void) {
     const uint16_t colour_b = 0xdd8c;
     static uint16_t colour;
     display_text_state_t text_state;
+    text_state.font = &mf_rlefont_comic_shanns_18.font;
+    text_state.bg_colour = 0x2945;
+    static uint8_t i = 0;
+    text_state.fg_colour_idx = i;
+    i = (i + 1) % (sizeof(colours) / sizeof(uint16_t));
+    static const char text[128][128] = {
+        "He took his vorpal sword",
+        "    in hand;",
+        "Long time the manxome foe",
+        "    he sought",
+        "So rested he by the Tumtum tree",
+        "And stood awhile in thought.",
+        "And, as in uffish thought",
+            "he stood,",
+        "",
+        "The Jabberwock,",
+        "   with eyes of flame",
+    };
     if (now - last_switch >= 1500 * 1000) {
-        if (colour == colour_a) {
-            colour = colour_b;
-            text_state.bg_colour = colour_b;
-            text_state.fg_colour = colour_a;
-        } else {
-            colour = colour_a;
-            text_state.bg_colour = colour_a;
-            text_state.fg_colour = colour_b;
-        }
-        st7789_fill(colour);
-        last_switch = now;
+        fill_whole_buf(text_state.bg_colour);
+        // last_switch = now;
 
-        mf_render_aligned(
-            &mf_rlefont_dejavu_sans_12.font,
-            0, 0,
-            MF_ALIGN_LEFT,
-            "Hello, World!", 13,
-            &char_callback, &text_state
-        );
+        for (uint8_t j = 0; j < sizeof(text) / sizeof(text[0]); j++) {
+            mf_render_aligned(
+                text_state.font,
+                0, 18 * j,
+                MF_ALIGN_LEFT,
+                text[j], strlen(text[j]),
+                &char_callback, &text_state
+            );
+        }
+        update_display();
     }
 }

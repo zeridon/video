@@ -28,7 +28,7 @@ function(GENERATE_FONT NAME SRC GLYPHS SIZE)
         COMMAND cp ${SRC} ${DEST}.ttf
         COMMAND "${MCUFONT_ENCODER}" import_ttf ${DEST}.ttf ${SIZE}
         COMMAND "${MCUFONT_ENCODER}" filter ${DEST}${SIZE}.dat ${GLYPHS}
-        COMMAND "${MCUFONT_ENCODER}" rlefont_optimize ${DEST}${SIZE}.dat 2
+        COMMAND "${MCUFONT_ENCODER}" rlefont_optimize ${DEST}${SIZE}.dat 50
         COMMAND "${MCUFONT_ENCODER}" rlefont_export ${DEST}${SIZE}.dat ${DEST}
         DEPENDS ${SRC}
         DEPENDS mcufont_encoder
@@ -37,16 +37,22 @@ function(GENERATE_FONT NAME SRC GLYPHS SIZE)
 endfunction()
 
 # specify required fonts here
-generate_font(dejavu_sans_12
-    ${MCUFONT_DIR}/fonts/DejaVuSans.ttf
-    "0-255 0x2010-0x2015"
-    12
-)
+# generate_font(dejavu_sans_12
+#     ${MCUFONT_DIR}/fonts/DejaVuSans.ttf
+#     "0-255 0x2010-0x2015"
+#     12
+# )
+#
+# generate_font(dejavu_serif_12
+#     ${MCUFONT_DIR}/fonts/DejaVuSerif.ttf
+#     "0-255 0x2010-0x2015"
+#     12
+# )
 
-generate_font(dejavu_serif_12
-    ${MCUFONT_DIR}/fonts/DejaVuSerif.ttf
+generate_font(comic_shanns_18
+    "${CMAKE_CURRENT_LIST_DIR}/../../vendor/comic-shanns/v2/comic shanns 2.ttf"
     "0-255 0x2010-0x2015"
-    12
+    18
 )
 
 set(MCUFONT_CONF_HEADER ${CMAKE_CURRENT_LIST_DIR}/mf_config.h)
