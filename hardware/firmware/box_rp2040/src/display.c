@@ -2,13 +2,16 @@
 
 #include <stdbool.h>
 #include <string.h>
+#include <stdio.h>
 
 #include "pico/stdlib.h"
 #include "pico/st7789.h"
 #include "config.h"
 
 #include "mcufont.h"
+#include "mf_config.h"
 #include "fonts.h"
+#include "io.h"
 
 const uint16_t colours[] = {
     0xc924, 0x94a3, 0xd4c4, 0x4431, 0xb310, 0x6ced, 0xd2e2
@@ -88,9 +91,7 @@ void fill_whole_buf(uint16_t colour) {
 void update_display() {
     st7789_set_window(0, DISPLAY_WIDTH - 1, 0, DISPLAY_HEIGHT - 1);
 
-    for (int i = 0; i < DISPLAY_HEIGHT; i++) {
-        st7789_write(framebuffer, sizeof(framebuffer));
-    }
+    st7789_write(framebuffer, sizeof(framebuffer));
 }
 
 void display_init(void) {
@@ -104,11 +105,12 @@ void display_task(void) {
     const uint16_t colour_b = 0xdd8c;
     static uint16_t colour;
     display_text_state_t text_state;
-    text_state.font = &mf_rlefont_comic_shanns_18.font;
+    text_state.font = &MF_DEFAULT_FONT;
     text_state.bg_colour = 0x2945;
     static uint8_t i = 0;
     text_state.fg_colour_idx = i;
     i = (i + 1) % (sizeof(colours) / sizeof(uint16_t));
+    char sbuf[100];
     static const char text[128][128] = {
         "He took his vorpal sword",
         "    in hand;",
@@ -122,9 +124,10 @@ void display_task(void) {
         "The Jabberwock,",
         "   with eyes of flame",
     };
-    if (now - last_switch >= 1500 * 1000) {
+    if (now - last_switch >= 100 * 1000) {
+        last_switch = now;
+        uint32_t t_render = time_us_32();
         fill_whole_buf(text_state.bg_colour);
-        // last_switch = now;
 
         for (uint8_t j = 0; j < sizeof(text) / sizeof(text[0]); j++) {
             mf_render_aligned(
@@ -135,6 +138,12 @@ void display_task(void) {
                 &char_callback, &text_state
             );
         }
+        t_render = time_us_32() - t_render;
+        uint32_t t_update = time_us_32();
         update_display();
+        t_update = time_us_32() - t_update;
+
+        snprintf(sbuf, sizeof(sbuf), "t_render: %dus, t_update: %dus\n", t_render, t_update);
+        io_say(sbuf);
     }
 }

@@ -101,5 +101,6 @@ target_include_directories(mcufont_text
         ${COMPILED_FONT_DIR}
     PUBLIC
         ${FONT_HEADER_DIR}
+        ${CMAKE_CURRENT_LIST_DIR}
         ${MCUFONT_DIR}/decoder
 )

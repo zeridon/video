@@ -1,18 +1,11 @@
 /* Configuration constants for mcufont. */
 
-#ifndef _MF_CONFIG_H_
-#define _MF_CONFIG_H_
+#pragma once
 
-#ifdef __AVR__
-  #include <avr/pgmspace.h>
-#elif defined(ARDUINO_ARCH_ESP8266) || defined(ARDUINO_ARCH_ESP32)
- #include <pgmspace.h>
-#else
- #include <stdint.h>
- #define PROGMEM
- #define pgm_read_byte(addr) (*(const unsigned char *)(addr))
- #define pgm_read_word(addr) (*(const uint16_t *)(addr))
-#endif /* __AVR__ */
+#include <stdint.h>
+#define PROGMEM
+#define pgm_read_byte(addr) (*(const unsigned char *)(addr))
+#define pgm_read_word(addr) (*(const uint16_t *)(addr))
 
 
 /*******************************************************
@@ -24,6 +17,7 @@
 #define MF_FONT_FILE_NAME "fonts_internal.cin"
 #endif
 
+#define MF_DEFAULT_FONT mf_rlefont_comic_shanns_18.font
 
 /*****************************************
  * Configuration settings related to API *
@@ -89,23 +83,25 @@
 /* Enable or disable the kerning module.
  * Disabling it saves some code size and run time, but causes the spacing
  * between characters to be less consistent.
+ * Can be safely disabled when using a monospace font.
+ * Makes text rendering about twice slower.
  */
 #ifndef MF_USE_KERNING
-#define MF_USE_KERNING 1
+#define MF_USE_KERNING 0
 #endif
 
 /* Enable or disable the advanced word wrap algorithm.
  * If disabled, uses a simpler algorithm.
  */
 #ifndef MF_USE_ADVANCED_WORDWRAP
-#define MF_USE_ADVANCED_WORDWRAP 1
+#define MF_USE_ADVANCED_WORDWRAP 0
 #endif
 
 /* Enable of disable the justification algorithm.
  * If disabled, mf_render_justified renders just left-aligned.
  */
 #ifndef MF_USE_JUSTIFY
-#define MF_USE_JUSTIFY 1
+#define MF_USE_JUSTIFY 0
 #endif
 
 /* Enable or disable the center and right alignment code.
@@ -119,7 +115,7 @@
  * If disabled, tabs will be rendered as regular space character.
  */
 #ifndef MF_USE_TABS
-#define MF_USE_TABS 1
+#define MF_USE_TABS 0
 #endif
 
 /* Number of vertical zones to use when computing kerning.
@@ -130,16 +126,3 @@
 #ifndef MF_KERNING_ZONES
 #define MF_KERNING_ZONES 16
 #endif
-
-
-
-/* Add extern "C" when used from C++. */
-#ifdef __cplusplus
-#define MF_EXTERN extern "C"
-#else
-#define MF_EXTERN extern
-#endif
-
-#endif
-
-
