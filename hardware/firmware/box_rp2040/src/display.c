@@ -123,6 +123,10 @@ void display_fill(uint16_t colour) {
     }
 }
 
+void display_clear(void) {
+    display_fill(bg_colour);
+}
+
 void display_text_line(uint8_t line_no, const char* line_text) {
     // FIXME: this approach is stupid, since we use  the font
     // height instead of line_height, which makes the line spacing too big.
