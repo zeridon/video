@@ -7,3 +7,6 @@
 [submodule "hardware/firmware/box_rp2040/vendor/comic-shanns"]
 	path = hardware/firmware/box_rp2040/vendor/comic-shanns
 	url = git@github.com:shannpersand/comic-shanns.git
+[submodule "hardware/firmware/box_rp2040/vendor/pico-sdk"]
+	path = hardware/firmware/box_rp2040/vendor/pico-sdk
+	url = git@github.com:raspberrypi/pico-sdk.git

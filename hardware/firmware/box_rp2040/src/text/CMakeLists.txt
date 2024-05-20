@@ -4,6 +4,8 @@ project(mcufont)
 
 set(MCUFONT_DIR ${CMAKE_CURRENT_LIST_DIR}/../../vendor/mcufont)
 
+include(ExternalProject)
+
 ExternalProject_Add(mcufont_encoder
     PREFIX mcufont_encoder
     SOURCE_DIR ${MCUFONT_DIR}/encoder
