@@ -17,7 +17,7 @@ void io_init(void) {
     }
 }
 
-void io_say_n(char* buf, int n) {
+void io_say_n(const char* buf, int n) {
     if (USB_ENABLED) {
         usb_cdc_write(buf, n);
     }
@@ -26,12 +26,16 @@ void io_say_n(char* buf, int n) {
     }
 }
 
-void io_say(char* buf) {
+void io_say(const char* buf) {
     io_say_n(buf, strlen(buf));
 }
 
 bool is_terminator(char c) {
     return c == '\n' || c == '\r' || c == '\0';
+}
+
+bool is_terminator_or_whitespace(char c) {
+    return is_terminator(c) || c == ' ' || c == '\t';
 }
 
 void io_handle_char(char chr) {
