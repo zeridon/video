@@ -26,6 +26,8 @@
 #define DISPLAY_HEIGHT              240
 #define DISPLAY_ROTATION            ST7789_LANDSCAPE
 
+#define COLOUR_SCHEME_GRUVBOX
+
 // ****** NETWORK SWITCH INTERFACE *******
 #define NSW_PIN_SDA                 26
 #define NSW_PIN_SCL                 27

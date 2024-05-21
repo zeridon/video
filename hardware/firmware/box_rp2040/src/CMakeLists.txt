@@ -10,6 +10,7 @@ target_include_directories(box_rp2040 PRIVATE
 target_sources(box_rp2040 PRIVATE
         main.c
         display.c
+        colour_schemes.c
         io.c
         io_commands.c
         network_switch_status_reader.c
