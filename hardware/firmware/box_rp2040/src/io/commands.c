@@ -1,6 +1,6 @@
-#include "io.h"
-#include "display.h"
-#include "network_switch_status_reader.h"
+#include "io/serial.h"
+#include "display/display.h"
+#include "network_switch/network_switch_status_reader.h"
 
 #include "pico/bootrom.h"
 #include "pico/stdlib.h"
@@ -8,47 +8,6 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
-
-void skip_whitespace(char** buf) {
-    while (**buf == ' ') {
-        (*buf)++;
-    }
-}
-
-uint16_t parse_number(char** buf) {
-    skip_whitespace(buf);
-    uint16_t result = 0;
-    while (**buf >= '0' && **buf <= '9') {
-        result *= 10;
-        result += (**buf) - '0';
-        (*buf)++;
-    }
-
-    if (**buf == ' ') {
-        *buf++;
-    }
-    return result;
-}
-
-bool hop_word(char** ext_buf, const char* word) {
-    char* buf = *ext_buf;
-    skip_whitespace(&buf);
-
-    while (*word != 0 && !is_terminator_or_whitespace(*buf) && *buf == *word) {
-        buf++;
-        word++;
-    }
-
-
-    if (*word != '\0' || !is_terminator_or_whitespace(*buf)) {
-        return false;
-    }
-
-    skip_whitespace(&buf);
-
-    *ext_buf = buf;
-    return true;
-}
 
 void help(void) {
     io_say("available commands:\n");

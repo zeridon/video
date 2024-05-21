@@ -1,7 +1,8 @@
-#include "io.h"
-#include "io_commands.h"
+#include "io/serial.h"
+#include "io/utils.h"
+#include "io/commands.h"
 
-#include "usb.h"
+#include "usb/usb.h"
 
 #include "pico/stdlib.h"
 
@@ -28,14 +29,6 @@ void io_say_n(const char* buf, int n) {
 
 void io_say(const char* buf) {
     io_say_n(buf, strlen(buf));
-}
-
-bool is_terminator(char c) {
-    return c == '\n' || c == '\r' || c == '\0';
-}
-
-bool is_terminator_or_whitespace(char c) {
-    return is_terminator(c) || c == ' ' || c == '\t';
 }
 
 void io_handle_char(char chr) {

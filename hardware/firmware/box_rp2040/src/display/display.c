@@ -10,10 +10,10 @@
 #include "config.h"
 
 #include "mcufont.h"
-#include "mf_config.h"
 #include "fonts.h"
-#include "io.h"
-#include "colour_schemes.h"
+#include "mf_config.h"
+#include "io/serial.h"
+#include "display/colour_schemes.h"
 
 typedef struct {
     colour_t colour_bg;

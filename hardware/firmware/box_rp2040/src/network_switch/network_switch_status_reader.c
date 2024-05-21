@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 #include "config.h"
-#include "io.h"
+#include "io/serial.h"
 
 #include "pico/stdio.h"
 #include "pico/stdlib.h"

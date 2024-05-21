@@ -9,11 +9,12 @@ target_include_directories(box_rp2040 PRIVATE
 
 target_sources(box_rp2040 PRIVATE
         main.c
-        display.c
-        colour_schemes.c
-        io.c
-        io_commands.c
-        network_switch_status_reader.c
+        display/display.c
+        display/colour_schemes.c
+        io/serial.c
+        io/commands.c
+        io/utils.c
+        network_switch/network_switch_status_reader.c
 
         usb/usb_descriptors.c
         usb/usb.c
