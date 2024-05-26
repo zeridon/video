@@ -1,4 +1,5 @@
 #include "io/serial.h"
+#include "io/utils.h"
 #include "display/display.h"
 #include "network_switch/network_switch_status_reader.h"
 
