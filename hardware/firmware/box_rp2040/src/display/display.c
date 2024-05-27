@@ -15,8 +15,11 @@
 #include "io/serial.h"
 #include "display/colour_schemes.h"
 
+colour_t img_buffer[DISPLAY_HEIGHT][DISPLAY_WIDTH];
+char text_buffer[DISPLAY_TEXT_LINES][DISPLAY_TEXT_COLS];
+uint16_t text_lines_dmg;
+
 typedef struct {
-    colour_t colour_bg;
     colour_t colour_fg;
     enum { colour_status_unset, colour_status_set, colour_status_pending } colour_status;
     const struct mf_font_s* font;
@@ -49,11 +52,11 @@ colour_t alpha_blend(uint32_t fg, uint32_t bg, uint8_t alpha) {
 
 static void pixel_callback(int16_t x, int16_t y, uint8_t count, uint8_t alpha, void* v_state) {
     display_text_state_t* state = v_state;
-    colour_t colour = alpha_blend(state->colour_fg, state->colour_bg, alpha);
 
     while (count--) {
         if (x < DISPLAY_WIDTH && y < DISPLAY_HEIGHT) {
-            state->line_buf[y * DISPLAY_WIDTH + x] = colour;
+            colour_t* cell = &state->line_buf[y * DISPLAY_WIDTH + x];
+            *cell = alpha_blend(state->colour_fg, *cell, alpha);
             x++;
         }
     }
@@ -92,8 +95,8 @@ const struct st7789_config lcd_config = {
 
 void display_init(void) {
     st7789_init(&lcd_config, DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_ROTATION);
+    display_img_clear();
 
-    display_fill(colour_bg);
     display_text_line(0, "Would you like them in a house?");
     display_text_line(1, "Would you like them with a mouse?");
     display_text_line(2, "");
@@ -103,25 +106,44 @@ void display_init(void) {
     display_text_line(6, "I do not like them anywhere.");
     display_text_line(7, "I do not like green eggs and ham.");
     display_text_line(8, "I do not like them, Sam-I-am.");
+
+    display_refresh();
 }
 
-void display_fill(uint16_t colour) {
-    uint16_t buf[DISPLAY_WIDTH];
-    for (uint16_t i = 0; i < DISPLAY_WIDTH; i++) {
-        buf[i] = colour;
-    }
-
-    st7789_set_window(0, DISPLAY_WIDTH - 1, 0, DISPLAY_HEIGHT - 1);
-    for (uint16_t i = 0; i < DISPLAY_HEIGHT; i++) {
-        st7789_write(buf, sizeof(buf));
-    }
+void display_full_dmg(void) {
+    text_lines_dmg = 0xffff;
 }
 
-void display_clear(void) {
-    display_fill(colour_bg);
+void display_img_fill(uint16_t colour) {
+    for (uint16_t y = 0; y < DISPLAY_HEIGHT; y++) {
+        for (uint16_t x = 0; x < DISPLAY_WIDTH; x++) {
+            img_buffer[y][x] = colour;
+        }
+    }
+    display_full_dmg();
+}
+
+void display_img_clear(void) {
+    display_img_fill(colour_bg);
+}
+
+void display_text_clear(void) {
+    for (uint8_t i = 0; i < DISPLAY_TEXT_LINES; i++) {
+        text_buffer[i][0] = '\0';
+    }
+    display_full_dmg();
 }
 
 void display_text_line(uint8_t line_no, const char* line_text) {
+    uint8_t i;
+    for (i = 0; line_text[i] != '\0' && i < (DISPLAY_TEXT_COLS - 1); i++) {
+        text_buffer[line_no][i] = line_text[i];
+    }
+    text_lines_dmg |= (1 << line_no);
+    text_buffer[line_no][i] = '\0';
+}
+
+void display_render_line(uint8_t line_no, const char* line_text) {
     // FIXME: this approach is stupid, since we use  the font
     // height instead of line_height, which makes the line spacing too big.
     // However, there isn't a clear approach to drawing just a single line
@@ -131,13 +153,17 @@ void display_text_line(uint8_t line_no, const char* line_text) {
     // keeping all the text, between renders, etc
     display_text_state_t text_state;
     text_state.font = &MF_DEFAULT_FONT;
-    text_state.colour_bg = colour_bg;
     text_state.colour_status = colour_status_unset;
     uint16_t num_pixels = text_state.font->height * DISPLAY_WIDTH;
     uint16_t buf_size = num_pixels * sizeof(colour_t);
     text_state.line_buf = alloca(buf_size);
-    for (uint16_t i = 0; i < num_pixels; i++) {
-        text_state.line_buf[i] = text_state.colour_bg;
+
+    uint16_t i = 0;
+    for (uint16_t y = 0; y < text_state.font->height; y++) {
+        for (uint16_t x = 0; x < DISPLAY_WIDTH; x++) {
+            text_state.line_buf[i] = img_buffer[y][x];
+            i++;
+        }
     }
 
     mf_render_aligned(
@@ -155,4 +181,12 @@ void display_text_line(uint8_t line_no, const char* line_text) {
 
     st7789_set_window(x_start, x_end, y_start, y_end);
     st7789_write(text_state.line_buf, buf_size);
+}
+
+void display_refresh(void) {
+    for (uint8_t i = 0; i < DISPLAY_TEXT_LINES; i++) {
+        if (text_lines_dmg & (1 << i)) {
+            display_render_line(i, text_buffer[i]);
+        }
+    }
 }

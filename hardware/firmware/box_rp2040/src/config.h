@@ -25,6 +25,8 @@
 #define DISPLAY_WIDTH               320
 #define DISPLAY_HEIGHT              240
 #define DISPLAY_ROTATION            ST7789_LANDSCAPE
+#define DISPLAY_TEXT_COLS           30
+#define DISPLAY_TEXT_LINES          10
 
 #define COLOUR_SCHEME_GRUVBOX
 

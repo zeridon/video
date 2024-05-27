@@ -12,10 +12,12 @@
 
 void help(void) {
     io_say("available commands:\n");
-    io_say("    switch          -- respond with network switch info\n");
-    io_say("    line            -- show text on the display (call without arguments for usage)\n");
-    io_say("    clear           -- clear the display\n");
-    io_say("    bootloader      -- reboot into bootloader\n");
+    io_say("    switch              -- respond with network switch info\n");
+    io_say("    display.text.line   -- show text on the display\n");
+    io_say("    display.text.clear  -- clear text shown on display\n");
+    io_say("    display.refresh     -- commit all previously called display commands\n");
+    io_say("    bootloader          -- reboot into bootloader\n");
+    io_say("call a command without arguments for usage\n");
 }
 
 void io_handle_cmd(char* line) {
@@ -33,22 +35,29 @@ void io_handle_cmd(char* line) {
         return;
     }
 
-    if (hop_word(&cmd_buf, "line") || hop_word(&cmd_buf, "d")) {
+    if (hop_word(&cmd_buf, "display.text.line")) {
         if (cmd_buf[0] == '\0') {
-            io_say("usage: line <line number> <line text>\n");
+            io_say("usage: display.text.line <line number> <line text>\n");
+            io_say("changes the text of the given display line\n");
             io_say("line text may contain colour escape sequences\n");
             io_say("a 0x1b byte followed by a colour index (0-17) sets the colour\n");
             return;
         }
         uint16_t n = parse_number(&cmd_buf);
         display_text_line(n, cmd_buf);
-        io_say("ok display line\n");
+        io_say("ok display.text.line\n");
         return;
     }
 
-    if (hop_word(&cmd_buf, "clear") || hop_word(&cmd_buf, "a")) {
-        display_clear();
-        io_say("ok display clear\n");
+    if (hop_word(&cmd_buf, "display.text.clear")) {
+        display_text_clear();
+        io_say("ok display.text.clear\n");
+        return;
+    }
+
+    if (hop_word(&cmd_buf, "display.refresh")) {
+        display_refresh();
+        io_say("ok display.refresh\n");
         return;
     }
 
