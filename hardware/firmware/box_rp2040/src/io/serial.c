@@ -3,6 +3,7 @@
 #include "io/commands.h"
 
 #include "usb/usb.h"
+#include "config.h"
 
 #include "pico/stdlib.h"
 
