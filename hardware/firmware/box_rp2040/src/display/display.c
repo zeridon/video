@@ -134,7 +134,7 @@ void display_text_line(uint8_t line_no, const char* line_text) {
     text_state.colour_bg = colour_bg;
     text_state.colour_status = colour_status_unset;
     uint16_t num_pixels = text_state.font->height * DISPLAY_WIDTH;
-    uint16_t buf_size = num_pixels * sizeof(sizeof(colour_t));
+    uint16_t buf_size = num_pixels * sizeof(colour_t);
     text_state.line_buf = alloca(buf_size);
     for (uint16_t i = 0; i < num_pixels; i++) {
         text_state.line_buf[i] = text_state.colour_bg;
