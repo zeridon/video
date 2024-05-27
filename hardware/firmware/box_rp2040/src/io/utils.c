@@ -24,7 +24,7 @@ uint16_t parse_number(char** buf) {
     }
 
     if (**buf == ' ') {
-        *buf++;
+        (*buf)++;
     }
     return result;
 }

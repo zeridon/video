@@ -43,8 +43,9 @@ void io_handle_char(char chr) {
         }
         return;
     }
-    in_buf[n++] = chr;
+    in_buf[n] = chr;
     if (!is_terminator(chr)) {
+        n++;
         return;
     }
     in_buf[n] = '\0';
