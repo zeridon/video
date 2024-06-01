@@ -162,10 +162,11 @@ void display_render_line(uint8_t line_no, const char* line_text) {
     for (uint16_t y = 0; y < line_height; y++) {
         uint16_t global_y = line_no * line_height + y;
         for (uint16_t x = 0; x < DISPLAY_WIDTH; x++) {
-            if (y >= DISPLAY_HEIGHT) {
-                break;
+            if (global_y <= DISPLAY_HEIGHT) {
+                text_state.line_buf[y * DISPLAY_WIDTH + x] = img_buffer[global_y][x];
+            } else {
+                text_state.line_buf[y * DISPLAY_WIDTH + x] = colour_bg;
             }
-            text_state.line_buf[y * DISPLAY_WIDTH + x] = img_buffer[global_y][x];
         }
     }
 
@@ -227,9 +228,22 @@ bool display_img_stream_push(char b) {
     uint16_t x = pixel_idx % display_img_stream_state.rect_w + display_img_stream_state.rect_x;
     uint16_t y = pixel_idx / display_img_stream_state.rect_w + display_img_stream_state.rect_y;
 
-    if (display_img_stream_state.px_format == display_px_format_565) {
-        img_buffer[y][x] <<= 8;
-        img_buffer[y][x] |= b;
+    switch (display_img_stream_state.px_format) {
+        case display_px_format_565:
+            img_buffer[y][x] <<= 8;
+            img_buffer[y][x] |= b;
+            break;
+        case display_px_format_rgba:
+            display_img_stream_state.rgba <<= 8;
+            display_img_stream_state.rgba |= b;
+            if (display_img_stream_state.byte_idx == 3) {
+                img_buffer[y][x] = alpha_blend(
+                    RGB_888_TO_565(display_img_stream_state.rgba >> 8),
+                    img_buffer[y][x],
+                    display_img_stream_state.rgba & 0xff
+                );
+            }
+            break;
     }
 
     display_img_stream_state.byte_idx++;
