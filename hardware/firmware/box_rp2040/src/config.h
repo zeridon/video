@@ -21,10 +21,10 @@
 // pin numbers and not the silkscreen ones
 // 3v3 pins are coloured yellow (or was it red?)
 // and gnd pins are coloured black (colours are correct)
-#define DISPLAY_PIN_DAT             11  // radxa pin10 (next to 3v3)
-#define DISPLAY_PIN_CLK             10  // radxa pin12 (next to gnd)
-#define DISPLAY_PIN_CS              13  // radxa pin17
-#define DISPLAY_PIN_DC              19  // radxa pin25 (between two gnd's)
+#define DISPLAY_PIN_DAT             11  // radxa pin 10 (next to 3v3)
+#define DISPLAY_PIN_CLK             10  // radxa pin 12 (next to gnd)
+#define DISPLAY_PIN_CS              13  // radxa pin 17
+#define DISPLAY_PIN_DC              19  // radxa pin 25 (between two gnd's)
 #define DISPLAY_PIN_RST             20  // radxa pin 37 (next to gnd)
 #define DISPLAY_PIN_BL              22  // radxa pin 33 (next to gnd), not present on all displays
 
