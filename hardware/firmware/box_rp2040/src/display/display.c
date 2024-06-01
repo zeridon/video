@@ -158,11 +158,14 @@ void display_render_line(uint8_t line_no, const char* line_text) {
     uint16_t buf_size = num_pixels * sizeof(colour_t);
     text_state.line_buf = alloca(buf_size);
 
-    uint16_t i = 0;
-    for (uint16_t y = 0; y < text_state.font->height; y++) {
+    uint16_t line_height = text_state.font->height;
+    for (uint16_t y = 0; y < line_height; y++) {
+        uint16_t global_y = line_no * line_height + y;
         for (uint16_t x = 0; x < DISPLAY_WIDTH; x++) {
-            text_state.line_buf[i] = img_buffer[y][x];
-            i++;
+            if (y >= DISPLAY_HEIGHT) {
+                break;
+            }
+            text_state.line_buf[y * DISPLAY_WIDTH + x] = img_buffer[global_y][x];
         }
     }
 
@@ -189,4 +192,50 @@ void display_refresh(void) {
             display_render_line(i, text_buffer[i]);
         }
     }
+    text_lines_dmg = 0;
+}
+
+struct {
+    display_px_format_t px_format;
+    uint16_t rect_x;
+    uint16_t rect_y;
+    uint16_t rect_w;
+    uint16_t rect_h;
+    uint16_t byte_idx;
+    uint32_t rgba;
+    uint8_t bytes_per_px;
+    uint16_t total_bytes;
+} display_img_stream_state;
+
+void display_img_stream_begin(display_px_format_t px_format, uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
+    display_img_stream_state.px_format = px_format;
+    display_img_stream_state.rect_x = x;
+    display_img_stream_state.rect_y = y;
+    display_img_stream_state.rect_w = w;
+    display_img_stream_state.rect_h = h;
+    display_img_stream_state.byte_idx = 0;
+    if (px_format == display_px_format_rgba) {
+        display_img_stream_state.bytes_per_px = 4;
+    } else {
+        display_img_stream_state.bytes_per_px = 2;
+    }
+    display_img_stream_state.total_bytes = display_img_stream_state.bytes_per_px * w * h;
+}
+
+bool display_img_stream_push(char b) {
+    uint16_t pixel_idx = display_img_stream_state.byte_idx / display_img_stream_state.bytes_per_px;
+    uint16_t x = pixel_idx % display_img_stream_state.rect_w + display_img_stream_state.rect_x;
+    uint16_t y = pixel_idx / display_img_stream_state.rect_w + display_img_stream_state.rect_y;
+
+    if (display_img_stream_state.px_format == display_px_format_565) {
+        img_buffer[y][x] <<= 8;
+        img_buffer[y][x] |= b;
+    }
+
+    display_img_stream_state.byte_idx++;
+    bool finished = (display_img_stream_state.byte_idx >= display_img_stream_state.total_bytes);
+    if (finished) {
+        display_full_dmg();
+    }
+    return finished;
 }

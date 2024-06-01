@@ -33,29 +33,35 @@ void io_say(const char* buf) {
 }
 
 void io_handle_char(char chr) {
-    static char in_buf[100];
+    static char line_buf[100];
     static int n = 0;
+    static io_state_t state = io_state_cmdline;
 
-    if (n > sizeof(in_buf) - 2) {
+    if (state != io_state_cmdline) {
+        io_handle_raw_byte(chr, &state);
+        return;
+    }
+
+    if (n > sizeof(line_buf) - 2) {
         if (is_terminator(chr)) {
             n = 0;
-            in_buf[0] = '\0';
+            line_buf[0] = '\0';
             io_say("line too long\n");
         }
         return;
     }
-    in_buf[n] = chr;
+    line_buf[n] = chr;
     if (!is_terminator(chr)) {
         n++;
         return;
     }
-    in_buf[n] = '\0';
+    line_buf[n] = '\0';
     n = 0;
-    if (in_buf[0] == '\0') {
+    if (line_buf[0] == '\0') {
         return; // empty line
     }
 
-    io_handle_cmd(in_buf);
+    io_handle_cmd(line_buf, &state);
 }
 
 void io_usb_cdc_task(void) {
