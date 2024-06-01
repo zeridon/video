@@ -196,6 +196,12 @@ void display_refresh(void) {
     text_lines_dmg = 0;
 }
 
+void display_imgonly(void) {
+    st7789_set_window(0, DISPLAY_WIDTH - 1, 0, DISPLAY_HEIGHT - 1);
+    st7789_write(img_buffer, sizeof(img_buffer));
+    display_full_dmg();
+}
+
 struct {
     display_px_format_t px_format;
     uint16_t rect_x;

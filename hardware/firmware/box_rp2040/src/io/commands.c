@@ -18,7 +18,9 @@ void help(void) {
     io_say("    display.text.line   -- show text on the display\n");
     io_say("    display.text.clear  -- clear text shown on display\n");
     io_say("    display.img         -- display an image\n");
+    io_say("    display.img.clear   -- clear image(s) shown on display\n");
     io_say("    display.refresh     -- commit all previously called display commands\n");
+    io_say("    display.imgonly     -- like display.refresh, but hides all text. very fast.\n");
     io_say("    bootloader          -- reboot into bootloader\n");
     io_say("call a command without arguments for usage\n");
 }
@@ -55,6 +57,12 @@ void io_handle_cmd(char* line, io_state_t* state) {
     if (hop_word(&cmd_buf, "display.text.clear")) {
         display_text_clear();
         io_say("ok display.text.clear\n");
+        return;
+    }
+
+    if (hop_word(&cmd_buf, "display.img.clear")) {
+        display_img_clear();
+        io_say("ok display.img.clear\n");
         return;
     }
 
@@ -101,6 +109,12 @@ void io_handle_cmd(char* line, io_state_t* state) {
     if (hop_word(&cmd_buf, "display.refresh")) {
         display_refresh();
         io_say("ok display.refresh\n");
+        return;
+    }
+
+    if (hop_word(&cmd_buf, "display.imgonly")) {
+        display_imgonly();
+        io_say("ok display.imgonly\n");
         return;
     }
 
