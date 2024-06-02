@@ -1,5 +1,6 @@
 #include "usb.h"
 #include "config.h"
+#include "pico/bootrom.h"
 
 // TODO: implement vendor-reset interface
 
@@ -56,4 +57,13 @@ int32_t usb_cdc_read_char(void) {
     }
 
     return tud_cdc_read_char();
+}
+
+// Invoked when cdc when line state changed e.g connected/disconnected
+void tud_cdc_line_coding_cb(uint8_t itf, cdc_line_coding_t const* p_line_coding) {
+    uint32_t baud = p_line_coding->bit_rate;
+    if (baud == USB_MAGIC_BAUD_RESTART_BL) {
+        // when baud is set to the magic number, restart into bootloader
+        reset_usb_boot(0, 0);
+    }
 }
