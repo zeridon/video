@@ -208,10 +208,10 @@ struct {
     uint16_t rect_y;
     uint16_t rect_w;
     uint16_t rect_h;
-    uint16_t byte_idx;
+    uint32_t byte_idx;
     uint32_t rgba;
     uint8_t bytes_per_px;
-    uint16_t total_bytes;
+    uint32_t total_bytes;
 } display_img_stream_state;
 
 void display_img_stream_begin(display_px_format_t px_format, uint16_t x, uint16_t y, uint16_t w, uint16_t h) {
@@ -230,7 +230,7 @@ void display_img_stream_begin(display_px_format_t px_format, uint16_t x, uint16_
 }
 
 bool display_img_stream_push(char b) {
-    uint16_t pixel_idx = display_img_stream_state.byte_idx / display_img_stream_state.bytes_per_px;
+    uint32_t pixel_idx = display_img_stream_state.byte_idx / display_img_stream_state.bytes_per_px;
     uint16_t x = pixel_idx % display_img_stream_state.rect_w + display_img_stream_state.rect_x;
     uint16_t y = pixel_idx / display_img_stream_state.rect_w + display_img_stream_state.rect_y;
 
@@ -242,7 +242,7 @@ bool display_img_stream_push(char b) {
         case display_px_format_rgba:
             display_img_stream_state.rgba <<= 8;
             display_img_stream_state.rgba |= b;
-            if (display_img_stream_state.byte_idx == 3) {
+            if (display_img_stream_state.byte_idx % 4 == 3) {
                 img_buffer[y][x] = alpha_blend(
                     RGB_888_TO_565(display_img_stream_state.rgba >> 8),
                     img_buffer[y][x],
