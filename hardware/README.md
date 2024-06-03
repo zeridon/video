@@ -83,7 +83,7 @@ together nicely.
   * [Case lock](case-lock.scad) (4x)
   * Bolts
     * M3x6 (14x)
-    * M3x12 (8x)
+    * M3x10 (8x)
     * M3x25 (4x)
   * Nuts
     * M3 (8x)
@@ -96,7 +96,7 @@ colour better. All bolts have 2mm HEX heads.
 The brand and thread size don't matter, but this is what we used:
 
   * M3x6 Bossard 1348663 (galvanised)
-  * M3x10 Bossard 1020536 (black)
+  * M3x10 Bossard 1020528 (black)
   * M3x25 Bossard 1135015 (black)
 
 You will also need a handful of M3 nuts. Again, the specific type doesn't matter
