@@ -709,6 +709,12 @@
         },
         {
           "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
           "show": true
@@ -838,13 +844,37 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin11",
+          "name": "Purpose Pin11",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin12",
+          "name": "Purpose Pin12",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin10",
+          "name": "Purpose Pin10",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin9",
+          "name": "Purpose Pin9",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "name": "",
       "sort_asc": false,
-      "sort_field": "${DNP}"
+      "sort_field": "Description"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -933,10 +963,6 @@
     [
       "61c6854b-d478-45fd-8007-466db156e311",
       "Power supply"
-    ],
-    [
-      "bf145c4c-69aa-4291-854e-cae968acbb49",
-      "Power cycler"
     ],
     [
       "cdb98711-4c38-429d-bf0b-859e4979d12f",

@@ -2811,7 +2811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 219.4052 106.68 0)
 			(effects
 				(font
@@ -2838,7 +2838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/29563/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/3785/"
 			(at 218.44 102.87 0)
 			(effects
 				(font
@@ -2854,6 +2854,15 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Part" "RK1C101M-RBD11"
+			(at 218.44 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3808,7 +3817,16 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://www.digikey.com/en/products/detail/mornsun-america-llc/VRB1205S-6WR3/16348304?s=N4IgTCBcDaIGoCUBCBGMAGArAZQLQDYB1BAZhAF0BfIA"
+		(property "Shop" "https://www.digikey.com/en/products/detail/mean-well-usa-inc/SPBW06F-05/7707011 or https://www.digikey.com/en/products/detail/mornsun-america-llc/VRB1205S-6WR3/16348304?s=N4IgTCBcDaIGoCUBCBGMAGArAZQLQDYB1BAZhAF0BfIA"
+			(at 95.25 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "VRB_S-6WR3 or SPBW06F-05"
 			(at 95.25 96.52 0)
 			(effects
 				(font

@@ -23,3 +23,12 @@ Panel components:
 - 1x USB3-A passthrough port
 - 4x USB2-A charging connectors
 
+Proposed changes:
+- make the fan connectors 4 instead of 5
+- make the fan controller support 3-pin 5v fans instead of 4-pin 12v fans
+- make the fan connectors be 3-pin screw terminals (now that I think of it, this is probably a bad idea... screw terminals are huge - maybe it's better to use molex connectors after all, but this would mean having to attach a male connector to every single fan, e.g. 600 of them - I'm not sure what the good tradeoff here is)
+- remove the 3 software-controlled leds (but keep the extra gpio pin header)
+- remove the 12V input connector, leave only the barrel jack
+- remove all internal "spare power" connectors and replace them with a single header that has all voltages
+- make the board in such a shape that it doesn't cover the hole that will be used for mounting the bracket
+- outset the barrel connector a bit to the outside, since it's supposed to go through the front panel (as opposed to the USBs, which are supposed to be behind)

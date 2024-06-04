@@ -728,126 +728,6 @@
 				)
 			)
 		)
-		(symbol "power:+6V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+6V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+6V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+6V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+6V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -1079,7 +959,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 55.88) (xy 173.99 55.88)
+			(xy 171.45 66.04) (xy 173.99 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1179,7 +1059,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 48.26) (xy 173.99 48.26)
+			(xy 171.45 60.96) (xy 173.99 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1449,16 +1329,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 50.8) (xy 173.99 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb41d4bf-7bf4-41c2-adad-3e49ee7fcd26")
-	)
-	(wire
-		(pts
 			(xy 181.61 137.16) (xy 181.61 119.38)
 		)
 		(stroke
@@ -1469,7 +1339,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 53.34) (xy 173.99 53.34)
+			(xy 171.45 63.5) (xy 173.99 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1662,73 +1532,6 @@
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+6V")
-		(at 173.99 50.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d4e74a3-2592-4f31-8d1d-2a36030f6090")
-		(property "Reference" "#PWR05"
-			(at 170.18 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+6V"
-			(at 177.8 50.7999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+6V\""
-			(at 173.99 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "906070d7-168c-4377-ac67-bddb8beb51ab")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -1932,7 +1735,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 173.99 48.26 270)
+		(at 173.99 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1940,7 +1743,7 @@
 		(dnp no)
 		(uuid "873c45fc-994f-4532-97ab-a509cf810741")
 		(property "Reference" "#PWR04"
-			(at 170.18 48.26 0)
+			(at 170.18 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,7 +1752,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 180.34 48.26 90)
+			(at 180.34 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1957,7 +1760,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 48.26 0)
+			(at 173.99 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1966,7 +1769,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 48.26 0)
+			(at 173.99 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1975,7 +1778,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 48.26 0)
+			(at 173.99 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,7 +1800,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 173.99 55.88 270)
+		(at 173.99 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2006,7 +1809,7 @@
 		(fields_autoplaced yes)
 		(uuid "b0ecb391-be58-45a0-ade6-d982b707a218")
 		(property "Reference" "#PWR07"
-			(at 170.18 55.88 0)
+			(at 170.18 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2015,7 +1818,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 177.8 55.88 90)
+			(at 177.8 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +1827,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 55.88 0)
+			(at 173.99 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,7 +1836,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 55.88 0)
+			(at 173.99 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2042,7 +1845,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 55.88 0)
+			(at 173.99 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +1867,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 173.99 53.34 270)
+		(at 173.99 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2073,7 +1876,7 @@
 		(fields_autoplaced yes)
 		(uuid "dd567609-9144-4e39-b614-0367d1d3392c")
 		(property "Reference" "#PWR06"
-			(at 170.18 53.34 0)
+			(at 170.18 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2082,7 +1885,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 177.8 53.34 90)
+			(at 177.8 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2091,7 +1894,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 53.34 0)
+			(at 173.99 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2100,7 +1903,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 53.34 0)
+			(at 173.99 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2109,7 +1912,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 173.99 53.34 0)
+			(at 173.99 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2704,8 +2507,8 @@
 		)
 	)
 	(sheet
-		(at 130.81 45.72)
-		(size 40.64 12.7)
+		(at 130.81 58.42)
+		(size 40.64 10.16)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2716,7 +2519,7 @@
 		)
 		(uuid "61c6854b-d478-45fd-8007-466db156e311")
 		(property "Sheetname" "Power supply"
-			(at 130.81 45.0084 0)
+			(at 130.81 57.7084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2725,7 +2528,7 @@
 			)
 		)
 		(property "Sheetfile" "power_supply.kicad_sch"
-			(at 130.81 59.0046 0)
+			(at 130.81 69.1646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2734,7 +2537,7 @@
 			)
 		)
 		(pin "3.3V OUT" output
-			(at 171.45 55.88 0)
+			(at 171.45 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2744,7 +2547,7 @@
 			(uuid "517878ef-f0f9-4ac5-9aa0-9a9f8133cbda")
 		)
 		(pin "12V OUT" output
-			(at 171.45 48.26 0)
+			(at 171.45 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2754,7 +2557,7 @@
 			(uuid "297b2c42-c2d6-4426-bbc1-93746e4c7957")
 		)
 		(pin "5V OUT" output
-			(at 171.45 53.34 0)
+			(at 171.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2762,16 +2565,6 @@
 				(justify right)
 			)
 			(uuid "34bf484f-69e3-4389-924a-4e80c6054b1d")
-		)
-		(pin "6V OUT" output
-			(at 171.45 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "df588464-475a-4b80-88cf-25aa3c45dda5")
 		)
 		(instances
 			(project "power_board"
@@ -2931,44 +2724,6 @@
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
 					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 130.81 64.77)
-		(size 40.64 10.16)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bf145c4c-69aa-4291-854e-cae968acbb49")
-		(property "Sheetname" "Power cycler"
-			(at 130.81 64.0584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_cycler.kicad_sch"
-			(at 130.81 75.5146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(page "14")
 				)
 			)
 		)
