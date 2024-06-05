@@ -1516,6 +1516,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "CH31042V200"
+			(at 67.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "26132b3f-a7e8-4d1d-a7c9-2781b47afe4d")
 		)
@@ -1808,7 +1817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0ecb391-be58-45a0-ade6-d982b707a218")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR06"
 			(at 170.18 66.04 0)
 			(effects
 				(font
@@ -1859,7 +1868,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR07")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -1875,7 +1884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd567609-9144-4e39-b614-0367d1d3392c")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 170.18 63.5 0)
 			(effects
 				(font
@@ -1926,7 +1935,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2032,6 +2041,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/17821/"
+			(at 67.31 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CH31042V200"
 			(at 67.31 114.3 0)
 			(effects
 				(font
