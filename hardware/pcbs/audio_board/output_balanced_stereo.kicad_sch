@@ -1229,7 +1229,7 @@
 		(uuid "434c1fd7-8359-44e4-8923-80b3996f571e")
 	)
 	(junction
-		(at 35.56 39.37)
+		(at 33.02 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4424aa75-7ec1-4ef8-b304-a44031819ef0")
@@ -1373,7 +1373,7 @@
 		(uuid "a75d912e-3052-445d-b184-e08ab748a6cc")
 	)
 	(junction
-		(at 35.56 57.15)
+		(at 33.02 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8a30ba9-c05e-4c47-9dfb-d7e214ded81e")
@@ -1582,7 +1582,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 40.64) (xy 35.56 39.37)
+			(xy 33.02 39.37) (xy 33.02 38.1)
 		)
 		(stroke
 			(width 0)
@@ -1882,7 +1882,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 39.37) (xy 46.99 45.72)
+			(xy 44.45 38.1) (xy 44.45 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2012,7 +2012,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 55.88) (xy 35.56 57.15)
+			(xy 33.02 54.61) (xy 33.02 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2092,7 +2092,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 38.1) (xy 35.56 39.37)
+			(xy 33.02 36.83) (xy 33.02 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2502,7 +2502,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 57.15) (xy 46.99 57.15)
+			(xy 33.02 55.88) (xy 44.45 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2592,7 +2592,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 50.8) (xy 46.99 57.15)
+			(xy 44.45 49.53) (xy 44.45 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2682,7 +2682,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 39.37) (xy 46.99 39.37)
+			(xy 33.02 38.1) (xy 44.45 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3042,7 +3042,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 58.42) (xy 35.56 57.15)
+			(xy 33.02 57.15) (xy 33.02 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5760,7 +5760,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 35.56 38.1 0)
+		(at 33.02 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5769,7 +5769,7 @@
 		(fields_autoplaced yes)
 		(uuid "79b30951-6233-400a-aecc-42d965962fd4")
 		(property "Reference" "#PWR028"
-			(at 35.56 41.91 0)
+			(at 33.02 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5778,7 +5778,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 35.56 34.5981 0)
+			(at 33.02 33.3281 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5786,7 +5786,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 38.1 0)
+			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5795,7 +5795,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 38.1 0)
+			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5804,7 +5804,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 35.56 38.1 0)
+			(at 33.02 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6483,7 +6483,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 58.42 0)
+		(at 33.02 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6492,7 +6492,7 @@
 		(fields_autoplaced yes)
 		(uuid "9de4ad62-1bc8-402b-b609-2556442c8509")
 		(property "Reference" "#PWR026"
-			(at 35.56 64.77 0)
+			(at 33.02 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6501,7 +6501,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 63.5 0)
+			(at 33.02 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6509,7 +6509,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 58.42 0)
+			(at 33.02 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6518,7 +6518,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 58.42 0)
+			(at 33.02 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6527,7 +6527,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 58.42 0)
+			(at 33.02 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6549,7 +6549,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 46.99 48.26 0)
+		(at 44.45 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6558,7 +6558,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3f4e29a-5ec0-4d9b-b492-6ee8ed1e6075")
 		(property "Reference" "C35"
-			(at 49.53 46.9962 0)
+			(at 46.99 45.7262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6567,7 +6567,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 49.53 49.5362 0)
+			(at 46.99 48.2662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +6576,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 46.99 48.26 0)
+			(at 44.45 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6585,7 +6585,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 46.99 48.26 0)
+			(at 44.45 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6594,7 +6594,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 46.99 48.26 0)
+			(at 44.45 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6603,7 +6603,7 @@
 			)
 		)
 		(property "LCSC" "C14663"
-			(at 46.99 48.26 0)
+			(at 44.45 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6612,7 +6612,7 @@
 			)
 		)
 		(property "MPN" "885012206046"
-			(at 46.99 48.26 0)
+			(at 44.45 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7656,7 +7656,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:NE5532")
-		(at 38.1 48.26 0)
+		(at 35.56 46.99 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7665,7 +7665,7 @@
 		(fields_autoplaced yes)
 		(uuid "e0ec1b25-b4b6-49d4-ba36-5ad842ac639c")
 		(property "Reference" "U7"
-			(at 36.83 46.9899 0)
+			(at 34.29 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7674,7 +7674,7 @@
 			)
 		)
 		(property "Value" "NE5532"
-			(at 36.83 49.5299 0)
+			(at 34.29 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7683,7 +7683,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 38.1 48.26 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7692,7 +7692,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne5532.pdf"
-			(at 38.1 48.26 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7701,7 +7701,7 @@
 			)
 		)
 		(property "Description" "Dual Low-Noise Operational Amplifiers, DIP-8/SOIC-8"
-			(at 38.1 48.26 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7710,7 +7710,7 @@
 			)
 		)
 		(property "LCSC" "C7426"
-			(at 38.1 48.26 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7719,7 +7719,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 38.1 48.26 0)
+			(at 35.56 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)

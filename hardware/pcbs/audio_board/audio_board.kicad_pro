@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -58,7 +58,18 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|124238783|131708707|1f3f9051-1a48-41f9-9f55-d5f45c7a3ab3|64d98e70-6d78-4ed9-8f97-d567cc152047",
+        "courtyards_overlap|125510001|131873826|1f3f9051-1a48-41f9-9f55-d5f45c7a3ab3|9d2dbede-b349-41bd-b7d9-b355d4610908",
+        "courtyards_overlap|151738783|131708707|9bd8c409-cbc9-4291-a3a0-82e794faf022|9d2dbede-b349-41bd-b7d9-b355d4610908",
+        "courtyards_overlap|152510001|131743896|9bd8c409-cbc9-4291-a3a0-82e794faf022|0a0109eb-5a78-4f2d-8f76-0ec1113c0626",
+        "courtyards_overlap|178809999|137765587|acdeae5d-75dd-48be-9fe3-ddbec24dd712|0a0109eb-5a78-4f2d-8f76-0ec1113c0626",
+        "courtyards_overlap|179510001|131713600|acdeae5d-75dd-48be-9fe3-ddbec24dd712|1fcbd6a4-4449-4cac-89fe-eed5802c869f",
+        "courtyards_overlap|205738783|131708707|6e305342-4729-43cc-8280-cdfe6b025f7d|1fcbd6a4-4449-4cac-89fe-eed5802c869f",
+        "courtyards_overlap|78066125|129955001|a3a7b656-ac98-418d-aaed-43bb7cf2a549|f1d64927-3555-4486-a313-20724f1214dc",
+        "courtyards_overlap|97488783|131708707|89d57b31-783f-4455-85f8-1215e6d55a8a|a3a7b656-ac98-418d-aaed-43bb7cf2a549",
+        "courtyards_overlap|98510001|131794552|89d57b31-783f-4455-85f8-1215e6d55a8a|64d98e70-6d78-4ed9-8f97-d567cc152047"
+      ],
       "meta": {
         "version": 2
       },
@@ -517,7 +528,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "enclosure/mixolydian-4x4-board.step",
+      "step": "../../../../cadbox/mixolydian-4x4-board.step",
       "svg": "",
       "vrml": ""
     },
@@ -627,12 +638,8 @@
       "Root"
     ],
     [
-      "d2279bc9-ec2b-479a-ab74-da4e2a01ee8d",
-      "Balanced Output 1"
-    ],
-    [
-      "aa0cd103-413f-4fce-9cca-58fa674d5ac9",
-      "Balanced Output 2"
+      "57810585-f156-492a-bf7d-79d4dd7cffda",
+      "Balanced Stereo Output"
     ],
     [
       "b81e28a5-cd61-4e93-a90e-a0949064d53e",

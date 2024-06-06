@@ -1948,7 +1948,7 @@
 		)
 		(uuid "fb32e20b-ac88-4fa2-bba9-50ef4dc38c16")
 	)
-	(text "2.5V"
+	(text "6V"
 		(exclude_from_sim no)
 		(at 145.796 91.948 0)
 		(effects
