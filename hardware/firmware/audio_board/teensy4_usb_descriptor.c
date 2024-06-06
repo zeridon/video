@@ -1,0 +1,66 @@
+#include <stdint.h>
+#include <stddef.h>
+
+#define ENDPOINT_TRANSMIT_UNUSED	0x00020000
+#define ENDPOINT_TRANSMIT_ISOCHRONOUS	0x00C40000
+#define ENDPOINT_TRANSMIT_BULK		0x00C80000
+#define ENDPOINT_TRANSMIT_INTERRUPT	0x00CC0000
+#define ENDPOINT_RECEIVE_UNUSED		0x00000002
+#define ENDPOINT_RECEIVE_ISOCHRONOUS	0x000000C4
+#define ENDPOINT_RECEIVE_BULK		0x000000C8
+#define ENDPOINT_RECEIVE_INTERRUPT	0x000000CC
+  
+#define VENDOR_ID		0x16C0
+#define PRODUCT_ID		0x048A
+#define MANUFACTURER_NAME	{'F','O','S','D','E','M'}
+#define MANUFACTURER_NAME_LEN	6
+#define PRODUCT_NAME		{'A','u','d','i','o',' ','B','o','a','r','d'}
+#define PRODUCT_NAME_LEN	11
+#define EP0_SIZE		64
+#define NUM_ENDPOINTS         6
+#define NUM_INTERFACE		6
+#define CDC_IAD_DESCRIPTOR	1
+#define CDC_STATUS_INTERFACE	0
+#define CDC_DATA_INTERFACE	1	// Serial
+#define CDC_ACM_ENDPOINT	2
+#define CDC_RX_ENDPOINT       3
+#define CDC_TX_ENDPOINT       3
+#define CDC_ACM_SIZE          16
+#define CDC_RX_SIZE_480       512
+#define CDC_TX_SIZE_480       512
+#define CDC_RX_SIZE_12        64
+#define CDC_TX_SIZE_12        64
+#define MIDI_INTERFACE        2	// MIDI
+#define MIDI_NUM_CABLES       1
+#define MIDI_TX_ENDPOINT      4
+#define MIDI_TX_SIZE_12       64
+#define MIDI_TX_SIZE_480      512
+#define MIDI_RX_ENDPOINT      4
+#define MIDI_RX_SIZE_12       64
+#define MIDI_RX_SIZE_480      512
+#define AUDIO_INTERFACE	3	// Audio (uses 3 consecutive interfaces)
+#define AUDIO_TX_ENDPOINT     5
+#define AUDIO_RX_ENDPOINT     5
+#define AUDIO_SYNC_ENDPOINT	6
+#define ENDPOINT2_CONFIG	ENDPOINT_RECEIVE_UNUSED + ENDPOINT_TRANSMIT_INTERRUPT
+#define ENDPOINT3_CONFIG	ENDPOINT_RECEIVE_BULK + ENDPOINT_TRANSMIT_BULK
+#define ENDPOINT4_CONFIG	ENDPOINT_RECEIVE_BULK + ENDPOINT_TRANSMIT_BULK
+#define ENDPOINT5_CONFIG	ENDPOINT_RECEIVE_ISOCHRONOUS + ENDPOINT_TRANSMIT_ISOCHRONOUS
+#define ENDPOINT6_CONFIG	ENDPOINT_RECEIVE_UNUSED + ENDPOINT_TRANSMIT_ISOCHRONOUS
+
+
+
+#include "avr/pgmspace.h"
+#include "usb_names.h"
+
+PROGMEM extern struct usb_string_descriptor_struct usb_string_manufacturer_name = {
+    2 + MANUFACTURER_NAME_LEN * 2,
+    3,
+    MANUFACTURER_NAME
+};
+
+PROGMEM extern struct usb_string_descriptor_struct usb_string_product_name = {
+    2 + PRODUCT_NAME_LEN * 2,
+    3,
+    PRODUCT_NAME
+};

@@ -1,0 +1,18 @@
+image: alpine/edge
+packages:
+  - cmake
+  - gcc-arm-none-eabi
+  - g++-arm-none-eabi
+  - binutils-arm-none-eabi
+  - newlib-arm-none-eabi
+
+tasks:
+  - build: |
+      cd mixolydian-4x4-fw
+      mkdir build
+      cd build
+      cmake ..
+      cmake --build .
+
+artifacts:
+  - mixolydian-4x4-fw/build/teensy_audio.hex
