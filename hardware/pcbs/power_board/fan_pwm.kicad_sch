@@ -1340,6 +1340,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C551467"
+			(at 143.51 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "13"
 			(uuid "6a8695df-baba-44cb-bfc0-9f58c09ccc35")
 		)
@@ -1582,7 +1591,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17415"
 			(at 156.21 91.44 0)
 			(effects
 				(font
@@ -1764,6 +1773,15 @@
 			)
 		)
 		(property "Shop" "https://store.comet.bg/Catalogue/Product/9062/"
+			(at 166.37 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20917"
 			(at 166.37 91.44 0)
 			(effects
 				(font

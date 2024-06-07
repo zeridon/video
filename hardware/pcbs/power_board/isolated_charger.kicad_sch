@@ -3844,7 +3844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://www.digikey.com/en/products/detail/mean-well-usa-inc/SPBW06F-05/7707011 or https://www.digikey.com/en/products/detail/mornsun-america-llc/VRB1205S-6WR3/16348304?s=N4IgTCBcDaIGoCUBCBGMAGArAZQLQDYB1BAZhAF0BfIA"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/MEAN-WELL/SPBW06F-05?qs=5aG0NVq1C4xl9jmeoQl1uw%3D%3D"
 			(at 95.25 96.52 0)
 			(effects
 				(font

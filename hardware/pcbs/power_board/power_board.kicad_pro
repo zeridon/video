@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -669,7 +670,7 @@
       "specctra_dsn": "",
       "step": "",
       "svg": "",
-      "vrml": ""
+      "vrml": "../../../../../../../tmp/power_board.wrl"
     },
     "page_layout_descr_file": ""
   },
@@ -677,13 +678,13 @@
     "annotate_start_num": 0,
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
-      "field_delimiter": ",",
+      "field_delimiter": "\t",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "CSV",
+      "name": "TSV",
       "ref_delimiter": ",",
       "ref_range_delimiter": "",
-      "string_delimiter": "\""
+      "string_delimiter": ""
     },
     "bom_presets": [],
     "bom_settings": {
@@ -709,18 +710,6 @@
         },
         {
           "group_by": false,
-          "label": "Part",
-          "name": "Part",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "LCSC",
-          "name": "LCSC",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
           "show": false
@@ -741,6 +730,18 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
           "show": true
         },
         {

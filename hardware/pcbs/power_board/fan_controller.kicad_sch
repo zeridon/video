@@ -3649,6 +3649,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C551467"
+			(at 245.11 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "13"
 			(uuid "6a8695df-baba-44cb-bfc0-9f58c09ccc35")
 		)
