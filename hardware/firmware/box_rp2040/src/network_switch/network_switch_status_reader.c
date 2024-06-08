@@ -114,28 +114,28 @@
 void _smi_start()
 {
     /* change GPIO pin to Output only */
-    gpio_set_dir(NSW_PIN_SCL, GPIO_OUT);
-    gpio_set_dir(NSW_PIN_SDA, GPIO_OUT);
+    gpio_set_dir(NSW_PIN_CLK, GPIO_OUT);
+    gpio_set_dir(NSW_PIN_DAT, GPIO_OUT);
 
     /* Initial state: SCK: 0, SDA: 1 */
-    gpio_put(NSW_PIN_SCL, LOW);
-    gpio_put(NSW_PIN_SDA, HIGH);
+    gpio_put(NSW_PIN_CLK, LOW);
+    gpio_put(NSW_PIN_DAT, HIGH);
     CLK_DURATION(DELAY);
 
     /* CLK 1: 0 -> 1, 1 -> 0 */
-    gpio_put(NSW_PIN_SCL, HIGH);
+    gpio_put(NSW_PIN_CLK, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, LOW);
+    gpio_put(NSW_PIN_CLK, LOW);
     CLK_DURATION(DELAY);
 
     /* CLK 2: */
-    gpio_put(NSW_PIN_SCL, HIGH);
+    gpio_put(NSW_PIN_CLK, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SDA, LOW);
+    gpio_put(NSW_PIN_DAT, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, LOW);
+    gpio_put(NSW_PIN_CLK, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SDA, HIGH);
+    gpio_put(NSW_PIN_DAT, HIGH);
 }
 
 void _smi_writeBit(uint16_t signal, uint32_t bitLen)
@@ -145,15 +145,15 @@ void _smi_writeBit(uint16_t signal, uint32_t bitLen)
 
         /* prepare data */
         if (signal & (1UL << (bitLen - 1)))
-            gpio_put(NSW_PIN_SDA, HIGH);
+            gpio_put(NSW_PIN_DAT, HIGH);
         else
-            gpio_put(NSW_PIN_SDA, LOW);
+            gpio_put(NSW_PIN_DAT, LOW);
         CLK_DURATION(DELAY);
 
         /* clocking */
-        gpio_put(NSW_PIN_SCL, HIGH);
+        gpio_put(NSW_PIN_CLK, HIGH);
         CLK_DURATION(DELAY);
-        gpio_put(NSW_PIN_SCL, LOW);
+        gpio_put(NSW_PIN_CLK, LOW);
     }
 }
 
@@ -162,47 +162,47 @@ void _smi_readBit(uint32_t bitLen, uint32_t *rData)
     unsigned long u;
 
     /* change GPIO pin to Input only */
-    gpio_set_dir(NSW_PIN_SDA, GPIO_IN);
+    gpio_set_dir(NSW_PIN_DAT, GPIO_IN);
 
     for (*rData = 0; bitLen > 0; bitLen--) {
         CLK_DURATION(DELAY);
 
         /* clocking */
-        gpio_put(NSW_PIN_SCL, HIGH);
+        gpio_put(NSW_PIN_CLK, HIGH);
         CLK_DURATION(DELAY);
-        u = (gpio_get(NSW_PIN_SDA) == HIGH) ? 1 : 0;
-        gpio_put(NSW_PIN_SCL, LOW);
+        u = (gpio_get(NSW_PIN_DAT) == HIGH) ? 1 : 0;
+        gpio_put(NSW_PIN_CLK, LOW);
 
         *rData |= (u << (bitLen - 1));
     }
 
     /* change GPIO pin to Output only */
-    gpio_set_dir(NSW_PIN_SDA, GPIO_OUT);
+    gpio_set_dir(NSW_PIN_DAT, GPIO_OUT);
 }
 
 void _smi_stop()
 {
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SDA, LOW);
-    gpio_put(NSW_PIN_SCL, HIGH);
+    gpio_put(NSW_PIN_DAT, LOW);
+    gpio_put(NSW_PIN_CLK, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SDA, HIGH);
+    gpio_put(NSW_PIN_DAT, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, HIGH);
+    gpio_put(NSW_PIN_CLK, HIGH);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, LOW);
+    gpio_put(NSW_PIN_CLK, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, HIGH);
+    gpio_put(NSW_PIN_CLK, HIGH);
 
     /* add a click */
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, LOW);
+    gpio_put(NSW_PIN_CLK, LOW);
     CLK_DURATION(DELAY);
-    gpio_put(NSW_PIN_SCL, HIGH);
+    gpio_put(NSW_PIN_CLK, HIGH);
 
     /* change GPIO pin to Input only */
-    gpio_set_dir(NSW_PIN_SDA, GPIO_IN);
-    gpio_set_dir(NSW_PIN_SCL, GPIO_IN);
+    gpio_set_dir(NSW_PIN_DAT, GPIO_IN);
+    gpio_set_dir(NSW_PIN_CLK, GPIO_IN);
 }
 
 uint32_t smi_read(uint32_t mAddrs)
@@ -333,9 +333,9 @@ uint32_t smi_read_port(int port, int reg) {
 }
 
 void ns_init(void) {
-    gpio_init(NSW_PIN_SDA);
-    gpio_init(NSW_PIN_SCL);
-    gpio_disable_pulls(NSW_PIN_SDA);
+    gpio_init(NSW_PIN_DAT);
+    gpio_init(NSW_PIN_CLK);
+    gpio_disable_pulls(NSW_PIN_DAT);
 }
 
 void ns_identify(uint32_t* id, uint32_t* ver) {

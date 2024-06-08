@@ -38,5 +38,9 @@
 #define COLOUR_SCHEME_GRUVBOX
 
 // ****** NETWORK SWITCH INTERFACE *******
-#define NSW_PIN_SDA                 26
-#define NSW_PIN_SCL                 27
+// on the switch itself, the pins are in the following order:
+//      GND, DAT, CLK, NC (we don't use the last one)
+// you can recognise the GND by the fact that it is solid-connected
+// to the GND filled plane
+#define NSW_PIN_DAT                 14  // radxa pin 19 (next to gnd)
+#define NSW_PIN_CLK                 15  // radxa pin 18
