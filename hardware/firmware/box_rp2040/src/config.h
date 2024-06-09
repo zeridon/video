@@ -44,3 +44,5 @@
 // to the GND filled plane
 #define NSW_PIN_DAT                 14  // radxa pin 19 (next to gnd)
 #define NSW_PIN_CLK                 15  // radxa pin 18
+
+#define NSW_NUM_PORTS               5

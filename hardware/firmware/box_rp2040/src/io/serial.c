@@ -28,6 +28,22 @@ void io_say_n(const char* buf, int n) {
     }
 }
 
+void io_say_uint(uint32_t x) {
+    char buf[10];
+    int8_t i = sizeof(buf) - 1;
+
+    buf[i] = '\0';
+    for (i--; i >= 0; i--) {
+        buf[i] = (x % 10) + '0';
+        x /= 10;
+        if (x == 0) {
+            break;
+        }
+    }
+
+    io_say(&buf[i]);
+}
+
 void io_say(const char* buf) {
     io_say_n(buf, strlen(buf));
 }

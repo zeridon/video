@@ -1,11 +1,8 @@
 #include "network_switch_status_reader.h"
 
-#include <stdio.h>
-
 #include "config.h"
 #include "io/serial.h"
 
-#include "pico/stdio.h"
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
@@ -350,22 +347,6 @@ bool nsw_identify(uint32_t* id, uint32_t* ver) {
     return true;
 }
 
-typedef struct {
-    uint32_t bmcr;  // Basic mode control register
-    uint32_t bmsr;  // Basic mode status register
-    uint32_t an;    // Auto negotiation settings
-    uint32_t lpa ;  // Link partner ability
-    uint32_t gbec;
-    uint32_t gbes;
-} nsw_port_regs_t;
-
-typedef enum {
-    nsw_link_unknown,
-    nsw_link_down,
-    nsw_link_full_duplex,
-    nsw_link_half_duplex
-} nsw_link_state_t;
-
 bool nsw_read_port_regs(uint8_t port, nsw_port_regs_t* regs) {
     if (!smi_read_port(port, MII_BMCR, &regs->bmcr))  { return false; }
     if (!smi_read_port(port, MII_BMSR, &regs->bmsr))  { return false; }
@@ -418,67 +399,4 @@ uint16_t nsw_link_speed_mbps(nsw_port_regs_t* regs) {
         }
     }
     return 0;
-}
-
-void nsw_read_and_print(void) {
-    char print_buf[50];
-    nsw_port_regs_t port_regs;
-    for (uint8_t port = 0; port < 5; port++) {
-        snprintf(print_buf, sizeof(print_buf), "Port %d: ", port);
-        io_say(print_buf);
-
-        if (!nsw_read_port_regs(port, &port_regs)) {
-            io_say("fail\n");
-            continue;
-        }
-
-        bool link = true;
-        int speed = 0;
-        bool fd = false;
-        // https://github.com/torvalds/linux/blob/master/drivers/net/mii.c
-        if(port_regs.bmcr & MII_BMCR_AUTONEG_ENABLE) {
-            // Auto negotiation is enabled on the interface
-            if(port_regs.bmsr & MII_BMSR_AUTONEG_COMPLETE) {
-                // Auto negotiaten complete
-
-                if ((port_regs.gbes & MII_GBES_1000BaseTFD) && (port_regs.gbec & MII_GBEC_1000BaseTFD)) {
-                    fd = true;
-                    speed = 1000;
-                } else if ((port_regs.gbes & MII_GBES_1000BaseTHD) && (port_regs.gbec & MII_GBEC_1000BaseTHD)) {
-                    fd = false;
-                    speed = 1000;
-                } else if ( (port_regs.lpa & MII_LPA_100BaseTXFD) && (port_regs.an & MII_AN_100BaseTXFD )) {
-                    fd = true;
-                    speed = 100;
-                } else if ((port_regs.lpa & MII_LPA_100BaseTXHD) && (port_regs.an & MII_AN_100BaseTXHD)) {
-                    fd = false;
-                    speed = 100;
-                } else if ((port_regs.lpa & MII_LPA_10BaseTFD) && (port_regs.an & MII_AN_10BaseTFD)) {
-                    fd = true;
-                    speed = 10;
-                } else if ((port_regs.lpa & MII_LPA_10BaseTHD) && (port_regs.an & MII_AN_10BaseTHD)) {
-                    fd = false;
-                    speed = 10;
-                }
-
-            } else {
-                // Auto negotiation failed
-                link = false;
-            }
-        }
-
-        if(!link) {
-            io_say("No link\n");
-            continue;
-        } else {
-            snprintf(print_buf, sizeof(print_buf), "%d Mbps ", speed);
-            io_say(print_buf);
-            if(fd) {
-                io_say("Full-duplex\n");
-            } else {
-                io_say("Half-duplex\n");
-            }
-        }
-    }
-
 }
