@@ -12,7 +12,7 @@ void init(void) {
     display_init();
     usb_init();
     io_init();
-    ns_init();
+    nsw_init();
 }
 
 void update(void) {

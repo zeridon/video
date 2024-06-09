@@ -205,12 +205,14 @@ void _smi_stop()
     gpio_set_dir(NSW_PIN_CLK, GPIO_IN);
 }
 
-uint32_t smi_read(uint32_t mAddrs)
+bool smi_read(uint32_t mAddrs, uint32_t* rData)
 {
-    uint32_t rawData = 0, rData = 0, ACK = 0;
+    uint32_t rawData = 0, ACK = 0;
     uint8_t con;
 
-    _smi_start();				/* Start SMI */
+    *rData = 0;
+
+    _smi_start();				    /* Start SMI */
     _smi_writeBit(0x0b, 4);			/* CTRL code: 4'b1011 for RTL8370 */
     _smi_writeBit(0x4, 3);			/* CTRL code: 3'b100 */
     _smi_writeBit(0x1, 1);			/* 1: issue READ command */
@@ -221,7 +223,7 @@ uint32_t smi_read(uint32_t mAddrs)
         _smi_readBit(1, &ACK);		/* ACK for issuing READ command */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_read_0...timeout!\n");
+    if (ACK != 0) { return false; }
 
     _smi_writeBit((mAddrs & 0xff), 8);	/* Set reg_addr[7:0] */
 
@@ -231,7 +233,7 @@ uint32_t smi_read(uint32_t mAddrs)
         _smi_readBit(1, &ACK);		/* ACK for setting reg_addr[7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_read_1...timeout!\n");
+    if (ACK != 0) { return false; }
 
     _smi_writeBit((mAddrs >> 8), 8);	/* Set reg_addr[15:8] */
 
@@ -241,23 +243,23 @@ uint32_t smi_read(uint32_t mAddrs)
         _smi_readBit(1, &ACK);		/* ACK by RTL836x */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_read_2...timeout!\n");
+    if (ACK != 0) { return false; }
 
     _smi_readBit(8, &rawData);		/* Read DATA [7:0] */
-    rData = rawData & 0xff;
+    *rData = rawData & 0xff;
 
     _smi_writeBit(0x00, 1);			/* ACK by CPU */
     _smi_readBit(8, &rawData);		/* Read DATA [15: 8] */
     _smi_writeBit(0x01, 1);			/* ACK by CPU */
 
-    rData |= (rawData << 8);
+    *rData |= (rawData << 8);
 
     _smi_stop();
 
-    return rData;
+    return true;
 }
 
-void smi_write(uint32_t mAddrs, uint32_t rData)
+bool smi_write(uint32_t mAddrs, uint32_t rData)
 {
     int8_t con;
     uint32_t ACK = 0;
@@ -273,7 +275,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for issuing WRITE command */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_write_0...timeout!\n");
+    if (ACK != 0) return false;
 
     _smi_writeBit((mAddrs & 0xff), 8);	/* Set reg_addr[7:0] */
 
@@ -283,7 +285,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for setting reg_addr[7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_write_1...timeout!\n");
+    if (ACK != 0) return false;
 
     _smi_writeBit((mAddrs >> 8), 8);	/* Set reg_addr[15:8] */
 
@@ -293,7 +295,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK or setting reg_addr[15:8] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_write_2...timeout!\n");
+    if (ACK != 0) return false;
 
     _smi_writeBit(rData & 0xff, 8);		/* Write Data [7:0] out */
 
@@ -303,7 +305,7 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for writting data [7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_write_3...timeout!\n");
+    if (ACK != 0) return false;
 
     _smi_writeBit(rData >> 8, 8);		/* Write Data [15:8] out */
 
@@ -313,76 +315,148 @@ void smi_write(uint32_t mAddrs, uint32_t rData)
         _smi_readBit(1, &ACK);		/* ACK for writting data [15:8] */
     } while ((ACK != 0) && (con < ack_timer));
 
-    if (ACK != 0) io_say("smi_write_4...timeout!\n");
+    if (ACK != 0) return false;
 
     _smi_stop();
-}
-/* End smi */
 
-uint32_t smi_read_port(int port, int reg) {
+    return true;
+}
+
+bool smi_read_port(int port, int reg, uint32_t* buf) {
     uint32_t offset = REG_PHY_BASE + (32*port) + reg;
 
     // write address
-    smi_write(0x1f02, offset);
+    if (!smi_write(0x1f02, offset)) { return false; }
 
     // Send read command
-    smi_write(0x1f00, 1 );
+    if (!smi_write(0x1f00, 1)) { return false; }
 
     // Read result
-    return smi_read(0x1f04);
+    return smi_read(0x1f04, buf);
 }
 
-void ns_init(void) {
+void nsw_init(void) {
     gpio_init(NSW_PIN_DAT);
     gpio_init(NSW_PIN_CLK);
     gpio_disable_pulls(NSW_PIN_DAT);
 }
 
-void ns_identify(uint32_t* id, uint32_t* ver) {
+bool nsw_identify(uint32_t* id, uint32_t* ver) {
     // https://github.com/torvalds/linux/blob/7e90b5c295ec1e47c8ad865429f046970c549a66/drivers/net/dsa/realtek/rtl8365mb.c#L2045
-    smi_write(REG_MAGIC, REG_MAGIC_VAL);
-    *id = smi_read(REG_CHIP_ID);
-    *ver = smi_read(REG_CHIP_VER);
-    smi_write(REG_MAGIC, 0);
+    if (!smi_write(REG_MAGIC, REG_MAGIC_VAL)) { return false; }
+    if (!smi_read(REG_CHIP_ID, id)) { return false; }
+    if (!smi_read(REG_CHIP_VER, ver)) { return false; }
+    if (!smi_write(REG_MAGIC, 0)) { return false; }
+    return true;
 }
 
-void ns_read_and_print(void) {
+typedef struct {
+    uint32_t bmcr;  // Basic mode control register
+    uint32_t bmsr;  // Basic mode status register
+    uint32_t an;    // Auto negotiation settings
+    uint32_t lpa ;  // Link partner ability
+    uint32_t gbec;
+    uint32_t gbes;
+} nsw_port_regs_t;
+
+typedef enum {
+    nsw_link_unknown,
+    nsw_link_down,
+    nsw_link_full_duplex,
+    nsw_link_half_duplex
+} nsw_link_state_t;
+
+bool nsw_read_port_regs(uint8_t port, nsw_port_regs_t* regs) {
+    if (!smi_read_port(port, MII_BMCR, &regs->bmcr))  { return false; }
+    if (!smi_read_port(port, MII_BMSR, &regs->bmsr))  { return false; }
+    if (!smi_read_port(port, MII_AN,   &regs->an))    { return false; }
+    if (!smi_read_port(port, MII_LPA,  &regs->lpa))   { return false; }
+    if (!smi_read_port(port, MII_GBEC, &regs->gbec))  { return false; }
+    if (!smi_read_port(port, MII_GBES, &regs->gbes))  { return false; }
+    return true;
+}
+
+nsw_link_state_t nsw_link_state(nsw_port_regs_t* regs) {
+    // https://github.com/torvalds/linux/blob/master/drivers/net/mii.c
+    if(regs->bmcr & MII_BMCR_AUTONEG_ENABLE) {
+        if(regs->bmsr & MII_BMSR_AUTONEG_COMPLETE) {
+            if ((regs->gbes & MII_GBES_1000BaseTFD) && (regs->gbec & MII_GBEC_1000BaseTFD)) {
+                return nsw_link_full_duplex;
+            } else if ((regs->gbes & MII_GBES_1000BaseTHD) && (regs->gbec & MII_GBEC_1000BaseTHD)) {
+                return nsw_link_half_duplex;
+            } else if ( (regs->lpa & MII_LPA_100BaseTXFD) && (regs->an & MII_AN_100BaseTXFD )) {
+                return nsw_link_full_duplex;
+            } else if ((regs->lpa & MII_LPA_100BaseTXHD) && (regs->an & MII_AN_100BaseTXHD)) {
+                return nsw_link_half_duplex;
+            } else if ((regs->lpa & MII_LPA_10BaseTFD) && (regs->an & MII_AN_10BaseTFD)) {
+                return nsw_link_full_duplex;
+            } else if ((regs->lpa & MII_LPA_10BaseTHD) && (regs->an & MII_AN_10BaseTHD)) {
+                return nsw_link_half_duplex;
+            }
+        } else {
+            return nsw_link_down;
+        }
+    } else {
+        return nsw_link_unknown;
+    }
+}
+
+uint16_t nsw_link_speed_mbps(nsw_port_regs_t* regs) {
+    if ((regs->bmcr & MII_BMCR_AUTONEG_ENABLE) && (regs->bmsr & MII_BMSR_AUTONEG_COMPLETE)) {
+        if ((regs->gbes & MII_GBES_1000BaseTFD) && (regs->gbec & MII_GBEC_1000BaseTFD)) {
+            return 1000;
+        } else if ((regs->gbes & MII_GBES_1000BaseTHD) && (regs->gbec & MII_GBEC_1000BaseTHD)) {
+            return 1000;
+        } else if ( (regs->lpa & MII_LPA_100BaseTXFD) && (regs->an & MII_AN_100BaseTXFD )) {
+            return 100;
+        } else if ((regs->lpa & MII_LPA_100BaseTXHD) && (regs->an & MII_AN_100BaseTXHD)) {
+            return 100;
+        } else if ((regs->lpa & MII_LPA_10BaseTFD) && (regs->an & MII_AN_10BaseTFD)) {
+            return 10;
+        } else if ((regs->lpa & MII_LPA_10BaseTHD) && (regs->an & MII_AN_10BaseTHD)) {
+            return 10;
+        }
+    }
+    return 0;
+}
+
+void nsw_read_and_print(void) {
     char print_buf[50];
-    for(int port = 0; port < 5; port++) {
+    nsw_port_regs_t port_regs;
+    for (uint8_t port = 0; port < 5; port++) {
         snprintf(print_buf, sizeof(print_buf), "Port %d: ", port);
         io_say(print_buf);
-        uint32_t bmcr = smi_read_port(port, MII_BMCR); // Basic mode control register
-        uint32_t bmsr = smi_read_port(port, MII_BMSR); // Basic mode status register
-        uint32_t an = smi_read_port(port, MII_AN); // Auto negotiation settings
-        uint32_t lpa  = smi_read_port(port, MII_LPA); // Link partner ability
-        uint32_t gbec = smi_read_port(port, MII_GBEC);
-        uint32_t gbes = smi_read_port(port, MII_GBES);
+
+        if (!nsw_read_port_regs(port, &port_regs)) {
+            io_say("fail\n");
+            continue;
+        }
 
         bool link = true;
         int speed = 0;
         bool fd = false;
         // https://github.com/torvalds/linux/blob/master/drivers/net/mii.c
-        if(bmcr & MII_BMCR_AUTONEG_ENABLE) {
+        if(port_regs.bmcr & MII_BMCR_AUTONEG_ENABLE) {
             // Auto negotiation is enabled on the interface
-            if(bmsr & MII_BMSR_AUTONEG_COMPLETE) {
+            if(port_regs.bmsr & MII_BMSR_AUTONEG_COMPLETE) {
                 // Auto negotiaten complete
 
-                if ((gbes & MII_GBES_1000BaseTFD) && (gbec & MII_GBEC_1000BaseTFD)) {
+                if ((port_regs.gbes & MII_GBES_1000BaseTFD) && (port_regs.gbec & MII_GBEC_1000BaseTFD)) {
                     fd = true;
                     speed = 1000;
-                } else if ((gbes & MII_GBES_1000BaseTHD) && (gbec & MII_GBEC_1000BaseTHD)) {
+                } else if ((port_regs.gbes & MII_GBES_1000BaseTHD) && (port_regs.gbec & MII_GBEC_1000BaseTHD)) {
                     fd = false;
                     speed = 1000;
-                } else if ( (lpa & MII_LPA_100BaseTXFD) && (an & MII_AN_100BaseTXFD )) {
+                } else if ( (port_regs.lpa & MII_LPA_100BaseTXFD) && (port_regs.an & MII_AN_100BaseTXFD )) {
                     fd = true;
                     speed = 100;
-                } else if ((lpa & MII_LPA_100BaseTXHD) && (an & MII_AN_100BaseTXHD)) {
+                } else if ((port_regs.lpa & MII_LPA_100BaseTXHD) && (port_regs.an & MII_AN_100BaseTXHD)) {
                     fd = false;
                     speed = 100;
-                } else if ((lpa & MII_LPA_10BaseTFD) && (an & MII_AN_10BaseTFD)) {
+                } else if ((port_regs.lpa & MII_LPA_10BaseTFD) && (port_regs.an & MII_AN_10BaseTFD)) {
                     fd = true;
                     speed = 10;
-                } else if ((lpa & MII_LPA_10BaseTHD) && (an & MII_AN_10BaseTHD)) {
+                } else if ((port_regs.lpa & MII_LPA_10BaseTHD) && (port_regs.an & MII_AN_10BaseTHD)) {
                     fd = false;
                     speed = 10;
                 }

@@ -14,7 +14,7 @@
 
 void help(void) {
     io_say("available commands:\n");
-    io_say("    switch              -- respond with network switch info\n");
+    io_say("    netswitch.info      -- respond with network switch info\n");
     io_say("    display.text.line   -- show text on the display\n");
     io_say("    display.text.clear  -- clear text shown on display\n");
     io_say("    display.img         -- display an image\n");
@@ -31,12 +31,16 @@ void io_handle_cmd(char* line, io_state_t* state) {
 
     char* cmd_buf = line;
 
-    if (hop_word(&cmd_buf, "switch")) {
+    if (hop_word(&cmd_buf, "netswitch.info")) {
         uint32_t id;
         uint32_t ver;
-        ns_identify(&id, &ver);
-        snprintf(print_buf, sizeof(print_buf), "network switch with id %d and ver %d\n", id, ver);
-        io_say(print_buf);
+        if (nsw_identify(&id, &ver)) {
+            snprintf(print_buf, sizeof(print_buf), "network switch with id %d and ver %d\n", id, ver);
+            io_say(print_buf);
+            nsw_read_and_print();
+        } else {
+            io_say("fail switch\n");
+        }
         return;
     }
 
