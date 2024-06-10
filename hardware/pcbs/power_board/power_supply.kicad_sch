@@ -3635,6 +3635,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0805"
+			(at 224.79 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3c1604cd-f182-4a48-8539-2fee41f5129d")
 		)
@@ -4361,6 +4370,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 1μF 16V 0805"
+			(at 215.9 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9d66b67a-42a4-44c6-9391-31285fd13d8d")
 		)
@@ -4620,6 +4638,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 50V 0805"
+			(at 128.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "11536fbf-413c-435d-b1d3-bec58cb4ea19")
 		)
@@ -4708,6 +4735,15 @@
 			)
 		)
 		(property "LCSC" "C17623"
+			(at 187.96 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 31.6kΩ 125mW 1% 0805"
 			(at 187.96 128.27 0)
 			(effects
 				(font
@@ -4871,6 +4907,15 @@
 			)
 		)
 		(property "LCSC" "C28323"
+			(at 207.01 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 1μF 16V 0805"
 			(at 207.01 63.5 0)
 			(effects
 				(font
@@ -5244,6 +5289,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 50V 0805"
+			(at 172.72 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "984fd663-e8fd-4f67-acc5-2d2b6a726832")
 		)
@@ -5267,7 +5321,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "625d01b5-76c7-48aa-981b-f5e538eb55c6")
 		(property "Reference" "J15"
 			(at 38.1 73.66 0)
@@ -5455,6 +5509,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 50V 0805"
+			(at 128.27 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0f2a4e1b-ece2-47dd-b281-85638e92e433")
 		)
@@ -5543,6 +5606,15 @@
 			)
 		)
 		(property "LCSC" "C49678"
+			(at 172.72 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 50V 0805"
 			(at 172.72 115.57 0)
 			(effects
 				(font
@@ -6232,6 +6304,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 20kΩ 125mW 1% 0805"
+			(at 187.96 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fa4b1942-40d0-48c8-8246-ea522635110e")
 		)
@@ -6320,6 +6401,15 @@
 			)
 		)
 		(property "LCSC" "C17448"
+			(at 187.96 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 13.7kΩ 125mW 1% 0805"
 			(at 187.96 138.43 0)
 			(effects
 				(font
@@ -6646,6 +6736,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 47kΩ 125mW 5% 0805"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce129306-3f5d-4c8b-96d5-6f5ec2496adf")
 		)
@@ -6876,6 +6975,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 100kΩ 125mW 1% 0805"
+			(at 187.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6b800124-3b69-43e4-8944-76ceb56fd8cb")
 		)
@@ -6964,6 +7072,15 @@
 			)
 		)
 		(property "LCSC" "C17713"
+			(at 137.16 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 47kΩ 125mW 5% 0805"
 			(at 137.16 133.35 0)
 			(effects
 				(font
@@ -7480,6 +7597,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0805"
+			(at 224.79 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d3fd4ed7-b7c8-4188-afcf-4dd5a16ed841")
 		)
@@ -7635,6 +7761,15 @@
 			)
 		)
 		(property "LCSC" "C28323"
+			(at 215.9 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 1μF 16V 0805"
 			(at 215.9 92.71 0)
 			(effects
 				(font

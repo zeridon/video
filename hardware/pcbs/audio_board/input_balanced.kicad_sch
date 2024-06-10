@@ -2041,6 +2041,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 0603"
+			(at 113.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0a99ddcf-d265-4304-aa9f-b1c7ec527ab4")
 		)
@@ -2127,6 +2136,15 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 168.91 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 0603 "
 			(at 168.91 77.47 0)
 			(effects
 				(font
@@ -2231,6 +2249,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 33nF 16V 0603"
+			(at 212.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0eddf1b8-5043-4397-b1e0-56bd7240a22f")
 		)
@@ -2299,6 +2326,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 72.39 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "NC3FAH1"
+			(at 72.39 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/568-NC3FAH1"
 			(at 72.39 72.39 0)
 			(effects
 				(font
@@ -2398,6 +2443,15 @@
 			)
 		)
 		(property "MPN" "885012107014"
+			(at 149.86 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 10μ 16V 0805"
 			(at 149.86 125.73 0)
 			(effects
 				(font
@@ -2577,6 +2631,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 137.16 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8450c41-7621-4eb1-977e-01d2918516dd")
 		)
@@ -2662,6 +2725,15 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 146.05 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 0603"
 			(at 146.05 68.58 0)
 			(effects
 				(font
@@ -2838,6 +2910,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 10μ 16V 0805"
+			(at 101.6 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2174ad5d-58a4-40e7-8432-90af3360c513")
 		)
@@ -2923,6 +3004,15 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 168.91 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 0603 "
 			(at 168.91 82.55 0)
 			(effects
 				(font
@@ -3018,6 +3108,24 @@
 			)
 		)
 		(property "MPN" ""
+			(at 182.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "NE5532DR"
+			(at 182.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/17010/"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3139,6 +3247,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "NE5532DR"
+			(at 102.87 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/17010/"
+			(at 102.87 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "7"
 			(uuid "bc1a29b2-a257-4efa-8079-fc033bfe06a3")
 		)
@@ -3251,6 +3377,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 0603 "
+			(at 125.73 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fd08e50d-f838-4dde-a517-f6ec3e89b9d5")
 		)
@@ -3339,6 +3474,15 @@
 			)
 		)
 		(property "MPN" "885012206046"
+			(at 113.03 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
 			(at 113.03 125.73 0)
 			(effects
 				(font
@@ -3441,6 +3585,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 220Ω 0603"
+			(at 205.74 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "75a1c5a7-0eba-48f6-b78c-73e42f6b8d6b")
 		)
@@ -3527,6 +3680,15 @@
 			)
 		)
 		(property "MPN" "885012107014"
+			(at 101.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 10μ 16V 0805"
 			(at 101.6 74.93 0)
 			(effects
 				(font
@@ -3629,6 +3791,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100pF 16V 0603"
+			(at 182.88 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2c08aa4a-63c6-4401-9e3b-b5b03b0e843d")
 		)
@@ -3715,6 +3886,15 @@
 			)
 		)
 		(property "MPN" "885012107014"
+			(at 196.85 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 10μ 16V 0805"
 			(at 196.85 80.01 0)
 			(effects
 				(font
@@ -3891,6 +4071,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 0603"
+			(at 113.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "985d8de0-6f9e-4e45-8e38-432db4eabbe0")
 		)
@@ -3977,6 +4166,15 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 120.65 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 0603 "
 			(at 120.65 115.57 0)
 			(effects
 				(font
@@ -4072,6 +4270,24 @@
 			)
 		)
 		(property "MPN" ""
+			(at 144.78 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "NE5532DR"
+			(at 144.78 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/17010/"
 			(at 144.78 77.47 0)
 			(effects
 				(font
@@ -4192,6 +4408,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 0603 "
+			(at 128.27 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3b98937b-5b49-49fe-bf7e-9e7dde0cf04b")
 		)
@@ -4278,6 +4503,15 @@
 			)
 		)
 		(property "MPN" "885012006023"
+			(at 146.05 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100pF 16V 0603"
 			(at 146.05 58.42 0)
 			(effects
 				(font
@@ -4446,6 +4680,15 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 182.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 0603 "
 			(at 182.88 69.85 0)
 			(effects
 				(font

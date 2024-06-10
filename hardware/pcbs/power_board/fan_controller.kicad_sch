@@ -2838,6 +2838,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 10μF 25V 0805"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fba71454-c142-4fc8-bb43-9b00f9c801a9")
 		)
@@ -2926,6 +2935,15 @@
 			)
 		)
 		(property "LCSC" "C17633"
+			(at 93.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 33kΩ 125mW 1% 0805"
 			(at 93.98 86.36 0)
 			(effects
 				(font
@@ -3497,6 +3515,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 15kΩ 125mW 1% 0805"
+			(at 90.17 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ac6def46-f650-42d7-8669-a31f54f1c141")
 		)
@@ -3983,6 +4010,15 @@
 			)
 		)
 		(property "LCSC" "C28323"
+			(at 73.66 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 1μF 16V 0805"
 			(at 73.66 115.57 0)
 			(effects
 				(font

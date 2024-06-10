@@ -902,6 +902,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0805"
+			(at 116.84 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ecea8c71-7297-4ed8-87d9-12f13a3100c1")
 		)

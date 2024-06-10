@@ -1892,6 +1892,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 1μF 16V 0603"
+			(at 162.56 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7e4e96f4-b210-4cf6-b40d-273d2ac852d6")
 		)
@@ -2025,6 +2034,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 1μF 16V 0603"
 			(at 162.56 87.63 0)
 			(effects
 				(font
@@ -2186,6 +2204,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 154.94 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2443c5a0-a890-4bbe-982e-4ca731e8edad")
 		)
@@ -2330,6 +2357,15 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 142.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
 			(at 142.24 63.5 0)
 			(effects
 				(font
@@ -2550,6 +2586,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 1μF 16V 0603"
+			(at 121.92 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30296b8b-bc51-41fe-9b30-dc199dfae2f9")
 		)
@@ -2624,6 +2669,15 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 129.54 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
 			(at 129.54 63.5 0)
 			(effects
 				(font
@@ -2707,6 +2761,24 @@
 			)
 		)
 		(property "LCSC" "C2651833"
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "SGTL5000XNLA3R2 "
+			(at 142.24 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/NXP-Semiconductors/SGTL5000XNLA3R2?qs=g5o6z0NmdpRyTqz1GkwAeA%3D%3D"
 			(at 142.24 97.79 0)
 			(effects
 				(font
@@ -2923,6 +2995,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 162.56 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "05def646-5a18-4cbe-8799-aa75348bc705")
 		)
@@ -2986,6 +3067,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 121.92 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 1μF 16V 0603"
 			(at 121.92 87.63 0)
 			(effects
 				(font

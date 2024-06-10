@@ -1215,7 +1215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Info" "125mW 10%"
+		(property "Info" "125mW 5%"
 			(at 129.54 85.09 0)
 			(effects
 				(font
@@ -1234,6 +1234,15 @@
 			)
 		)
 		(property "LCSC" "C17414"
+			(at 132.08 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 5% 0805"
 			(at 132.08 82.55 0)
 			(effects
 				(font
@@ -1494,6 +1503,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 5% 0805"
+			(at 146.05 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aa04e3e4-e251-4c68-ada7-281482305a98")
 		)
@@ -1574,7 +1592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Info" "125mW 10%"
+		(property "Info" "125mW 5%"
 			(at 156.21 96.52 90)
 			(effects
 				(font
@@ -1592,6 +1610,15 @@
 			)
 		)
 		(property "LCSC" "C17415"
+			(at 156.21 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10Ω 125mW 5% 0805"
 			(at 156.21 91.44 0)
 			(effects
 				(font

@@ -641,6 +641,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 0603"
+			(at 105.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "06e8a91b-4426-4ac9-98a0-aacb921762d0")
 		)
@@ -710,6 +719,24 @@
 			)
 		)
 		(property "MPN" "490-SJ1-3533NG"
+			(at 82.55 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" " SJ1-3533NG "
+			(at 82.55 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/490-SJ1-3533NG"
 			(at 82.55 96.52 0)
 			(effects
 				(font
@@ -790,6 +817,15 @@
 			)
 		)
 		(property "LCSC" "C25804"
+			(at 105.41 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 0603"
 			(at 105.41 96.52 0)
 			(effects
 				(font

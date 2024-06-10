@@ -3296,6 +3296,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 100kΩ 125mW 5% 0805"
+			(at 157.48 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4cef331b-79a4-4b1e-8250-c4d5d5fe4156")
 		)
@@ -3462,6 +3471,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 100kΩ 125mW 5% 0805"
+			(at 162.56 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7f0c6556-5b07-4eac-a93b-e0fd9400e770")
 		)
@@ -3553,6 +3571,15 @@
 			)
 		)
 		(property "LCSC" "C149504"
+			(at 167.64 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 100kΩ 125mW 5% 0805"
 			(at 167.64 78.74 0)
 			(effects
 				(font
@@ -3896,6 +3923,15 @@
 			)
 		)
 		(property "LCSC" "C149504"
+			(at 172.72 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 100kΩ 125mW 5% 0805"
 			(at 172.72 78.74 0)
 			(effects
 				(font
@@ -4268,6 +4304,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 1μF 16V 0805"
+			(at 81.28 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b2f92d9-8b0b-4ec6-96c4-37796e207828")
 		)
@@ -4357,6 +4402,15 @@
 			)
 		)
 		(property "LCSC" "C149504"
+			(at 152.4 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 100kΩ 125mW 5% 0805"
 			(at 152.4 78.74 0)
 			(effects
 				(font
@@ -4523,6 +4577,15 @@
 			)
 		)
 		(property "LCSC" "C149504"
+			(at 177.8 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 100kΩ 125mW 5% 0805"
 			(at 177.8 78.74 0)
 			(effects
 				(font
