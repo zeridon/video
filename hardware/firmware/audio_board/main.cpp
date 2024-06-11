@@ -7,6 +7,8 @@
 
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include <OSCMessage.h>
+#include <SLIPEncodedSerial.h>
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
@@ -14,6 +16,8 @@
 #define OLED_RESET (-1)
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 #endif
+
+SLIPEncodedUSBSerial slip(Serial);
 
 // GUItool: begin automatically generated code
 AudioInputI2SQuad i2s_quad1;      //xy=336,677
@@ -209,6 +213,12 @@ set_crosspoint(int channel, int bus, float gain)
 	matrix[bus][channel / 4]->gain(channel % 4, gain);
 }
 
+float
+get_crosspoint(int channel, int bus)
+{
+	return matrix[bus][channel / 4]->getGain(channel % 4);
+}
+
 void
 set_mix(int bus, float in1, float in2, float in3, float in4, float in5, float in6)
 {
@@ -242,12 +252,68 @@ reset_state()
 }
 
 void
+onOscChannel(OSCMessage &msg, int patternOffset)
+{
+	char buf[12];
+	int channel = -1;
+	int addr;
+	int offset;
+
+	// /ch/<num>
+	for (int i = 0; i < 6; i++) {
+		sprintf(buf, "/%d", i);
+		offset = msg.match(buf, patternOffset);
+		if (offset) {
+			channel = i;
+			addr = offset + patternOffset;
+			break;
+		}
+	}
+	if (channel < 0) return;
+
+	// /ch/<num>/mix
+	offset = msg.match("/mix", addr);
+	addr += offset;
+	if (offset < 1) return;
+
+	// /ch/<num>/mix/<bus>/level
+	int bus = -1;
+	for (int i = 0; i < 6; i++) {
+		sprintf(buf, "/%d/level", i);
+		int offset = msg.match(buf, addr);
+		if (offset) {
+			bus = i;
+			break;
+		}
+	}
+	if (bus < 0) return;
+
+	if (msg.isFloat(0)) {
+		set_crosspoint(channel, bus, msg.getFloat(0));
+	} else {
+		char address[22];
+		snprintf(address, 22, "/ch/%d/mix/%d/level", channel, bus);
+		OSCMessage response(address);
+		response.add(get_crosspoint(channel, bus));
+		slip.beginPacket();
+		response.send(slip);
+		slip.endPacket();
+	}
+}
+
+void
+onPacketReceived(OSCMessage msg)
+{
+	msg.route("/ch", onOscChannel);
+}
+
+void
 setup()
 {
 
 #ifdef DISPLAY
 	if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-		Serial.println(F("SSD1306 allocation failed"));
+		//Serial.println(F("SSD1306 allocation failed"));
 	}
 	display.display();
 	delay(200);
@@ -261,12 +327,16 @@ setup()
 	sgtl5000_1.inputSelect(AUDIO_INPUT_LINEIN);
 	sgtl5000_1.volume(0.5);
 	sgtl5000_1.lineInLevel(0, 0);
+	sgtl5000_1.adcHighPassFilterDisable();
 
 	sgtl5000_2.setWire(1);
 	sgtl5000_2.enable();
 	sgtl5000_2.inputSelect(AUDIO_INPUT_LINEIN);
 	sgtl5000_2.volume(0.5);
 	sgtl5000_2.lineInLevel(0, 0);
+	sgtl5000_2.adcHighPassFilterDisable();
+
+	slip.begin(115200);
 }
 
 float
@@ -282,108 +352,20 @@ float levels_peak[12];
 
 
 void
-print_channel_gain(const char *name, int channel)
-{
-	float gains[6] = {};
-	gains[0] = matrix[channel][0]->getGain(0);
-	gains[1] = matrix[channel][0]->getGain(1);
-	gains[2] = matrix[channel][0]->getGain(2);
-	gains[3] = matrix[channel][0]->getGain(3);
-	gains[4] = matrix[channel][1]->getGain(0);
-	gains[5] = matrix[channel][1]->getGain(1);
-	Serial.printf("%-6s", name);
-	for (float gain: gains) {
-		Serial.printf("%-3d  ", (int) (gain * 100));
-	}
-	Serial.printf("\r\n");
-}
-
-void
-do_cmd()
-{
-	char cmd = cmdbuffer[0];
-	switch (cmd) {
-		case 'l': {
-			int channel = cmdbuffer[1] - '1';
-			if (channel > 5 || channel < 0) {
-				Serial.printf("usage: l<channel> in range 1-6\r\n");
-				return;
-			}
-			float gains[] = {
-				matrix[channel][0]->getGain(0),
-				matrix[channel][0]->getGain(1),
-				matrix[channel][0]->getGain(2),
-				matrix[channel][0]->getGain(3),
-				matrix[channel][1]->getGain(0),
-				matrix[channel][1]->getGain(1),
-			};
-			for (float gain: gains) {
-				Serial.printf("%d ", (int) (gain * 100));
-			}
-			Serial.printf("\r\n");
-			break;
-		}
-		case 's': {
-			int input = cmdbuffer[1] - '1';
-			int output = cmdbuffer[2] - '1';
-			int gain = cmdbuffer.substring(3).toInt();
-			set_crosspoint(input, output, (float) gain / 100.0f);
-			Serial.printf("%d -> %d = %d\r\n", input, output, gain);
-			break;
-		}
-		case 'e': {
-			// Use e0 and e1 to disable or enable uart echo
-			echo = cmdbuffer[1] == '1';
-			break;
-		}
-		case 'h': {
-			Serial.printf("Audio mixer commands:\r\n");
-			Serial.printf("e<0|1>            set the UART echo state\r\n");
-			Serial.printf("s<in><out><gain>  set the gain for one crosspoint\r\n");
-			Serial.printf("l<out>            print the levels sent to a specific output\r\n");
-			Serial.printf("[lf]              print the whole human-readable mixing matrix\r\n");
-		}
-		case 13:
-			// Special case, print human readable status
-			Serial.printf("      IN1  IN2  IN3  PC   USB1 USB2\r\n");
-			print_channel_gain("OUT1", 0);
-			print_channel_gain("OUT2", 1);
-			print_channel_gain("HP L", 2);
-			print_channel_gain("HP R", 3);
-			print_channel_gain("USB1", 4);
-			print_channel_gain("USB2", 5);
-			break;
-		case 27:
-		case 91:
-			// Catch escape sequences
-			break;
-		default:
-			Serial.printf("cmd: %d\r\n", cmd);
-	}
-
-}
-
-void
-do_uart()
-{
-	while (Serial.available()) {
-		char inChar = (char) Serial.read();
-		if (echo) {
-			Serial.write(inChar);
-		}
-		cmdbuffer += inChar;
-		if (inChar == 13) {
-			do_cmd();
-			cmdbuffer = "";
-		}
-	}
-}
-
-void
 loop()
 {
-	if (Serial.available()) {
-		do_uart();
+	int size;
+	OSCMessage msg;
+	if (slip.available()) {
+		while (!slip.endofPacket()) {
+			if ((size = slip.available()) > 0) {
+				while (size--)
+					msg.fill(slip.read());
+			}
+		}
+		if (!msg.hasError()) {
+			onPacketReceived(msg);
+		}
 	}
 
 	if (rms1.available()) {

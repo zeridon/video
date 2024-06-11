@@ -90,6 +90,7 @@ set_property(SOURCE ${VENDOR_ROOT}/Audio/memcpy_audio.S PROPERTY LANGUAGE C)
 import_arduino_library(${VENDOR_ROOT} Adafruit-GFX-Library)
 import_arduino_library(${VENDOR_ROOT} Adafruit_BusIO)
 import_arduino_library(${VENDOR_ROOT} Adafruit_SSD1306)
+import_arduino_library(${VENDOR_ROOT} OSC)
 
 # Build this project
 add_executable(${PROJECT_NAME}.elf main.cpp teensy4_usb_descriptor.c ${TEENSY_SOURCES} ${TEENSY_LIB_SOURCES})

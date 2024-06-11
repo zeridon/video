@@ -22,3 +22,6 @@
 [submodule "vendor/Adafruit-GFX-Library"]
 	path = vendor/Adafruit-GFX-Library
 	url = https://github.com/adafruit/Adafruit-GFX-Library
+[submodule "vendor/OSC"]
+	path = vendor/OSC
+	url = https://github.com/CNMAT/OSC
