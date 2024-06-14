@@ -9,14 +9,14 @@ if [[ $# -ne 1 ]] || [[ ! -f "${1}" ]]; then
     exit 1
 fi
 
-if [[ -e "${tty}" ]]; then
-    echo 'firmware is currently running: telling it to restart to bootloader'
-    stty -F "${tty}" 134
-fi
-
 if ! picotool version | grep -qE '^picotool v[1-9]'; then
     echo "picotool v1.0 or greater not available on $(hostname), quitting" >&2
     exit 1
+fi
+
+if [[ -e "${tty}" ]]; then
+    echo 'firmware is currently running: telling it to restart to bootloader'
+    stty -F "${tty}" 134
 fi
 
 i=0

@@ -10,3 +10,18 @@
 [submodule "hardware/firmware/box_rp2040/vendor/pico-sdk"]
 	path = hardware/firmware/box_rp2040/vendor/pico-sdk
 	url = git@github.com:raspberrypi/pico-sdk.git
+[submodule "hardware/firmware/audio_board/vendor/Wire"]
+	path = hardware/firmware/audio_board/vendor/Wire
+	url = https://github.com/PaulStoffregen/Wire.git
+[submodule "hardware/firmware/audio_board/vendor/SPI"]
+	path = hardware/firmware/audio_board/vendor/SPI
+	url = https://github.com/PaulStoffregen/SPI.git
+[submodule "hardware/firmware/audio_board/vendor/Adafruit-GFX-Library"]
+	path = hardware/firmware/audio_board/vendor/Adafruit-GFX-Library
+	url = https://github.com/adafruit/Adafruit-GFX-Library
+[submodule "hardware/firmware/audio_board/vendor/Adafruit_BusIO"]
+	path = hardware/firmware/audio_board/vendor/Adafruit_BusIO
+	url = https://github.com/adafruit/Adafruit_BusIO
+[submodule "hardware/firmware/audio_board/vendor/Adafruit_SSD1306"]
+	path = hardware/firmware/audio_board/vendor/Adafruit_SSD1306
+	url = https://github.com/adafruit/Adafruit_SSD1306
