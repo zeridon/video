@@ -25,3 +25,6 @@
 [submodule "hardware/firmware/audio_board/vendor/Adafruit_SSD1306"]
 	path = hardware/firmware/audio_board/vendor/Adafruit_SSD1306
 	url = https://github.com/adafruit/Adafruit_SSD1306
+[submodule "hardware/firmware/audio_board/vendor/OSC"]
+	path = hardware/firmware/audio_board/vendor/OSC
+	url = https://github.com/CNMAT/OSC
