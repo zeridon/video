@@ -41,6 +41,7 @@
 #define USB_INSTANCE                0
 #define USB_CDC_WRITE_TIMEOUT_US    500000
 #define USB_MAGIC_BAUD_RESTART_BL   134
+#define USB_READ_BUF_SIZE           1024
 
 // ********* UART ***********
 // set to uart0, etc to enable or to NULL to disable UART

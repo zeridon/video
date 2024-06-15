@@ -12,4 +12,4 @@ void usb_task(void);
 
 bool usb_cdc_connected(void);
 void usb_cdc_write(const char *buf, int length);
-int32_t usb_cdc_read_char(void);
+int32_t usb_cdc_read(char* buf, uint32_t size);

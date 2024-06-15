@@ -81,9 +81,10 @@ void io_handle_char(char chr) {
 }
 
 void io_usb_cdc_task(void) {
-    int32_t chr;
-    while ( (chr = usb_cdc_read_char()) >= 0 ) {
-        io_handle_char((char)chr);
+    static char buf[USB_READ_BUF_SIZE];
+    int32_t n = usb_cdc_read(buf, sizeof(buf));
+    for (int32_t i = 0; i < n; i++) {
+        io_handle_char(buf[i]);
     }
 }
 

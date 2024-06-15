@@ -51,12 +51,12 @@ void usb_cdc_write(const char *buf, int length) {
     }
 }
 
-int32_t usb_cdc_read_char(void) {
+int32_t usb_cdc_read(char* buf, uint32_t size) {
     if (!usb_cdc_connected()) {
         return -1;
     }
 
-    return tud_cdc_read_char();
+    return tud_cdc_read(buf, size);
 }
 
 // Invoked when cdc when line state changed e.g connected/disconnected
