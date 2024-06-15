@@ -133,7 +133,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
         uint16_t w = parse_number(&line);
         uint16_t h = parse_number(&line);
 
-        if (!(x < DISPLAY_WIDTH && y < DISPLAY_HEIGHT && w < DISPLAY_WIDTH && h < DISPLAY_HEIGHT && w > 0 && h > 0)) {
+        if (!(x < DISPLAY_WIDTH && y < DISPLAY_HEIGHT && w <= DISPLAY_WIDTH && h <= DISPLAY_HEIGHT && w > 0 && h > 0)) {
             io_say("given rectangle has a very stupid size\n");
             return;
         }
