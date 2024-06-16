@@ -22,6 +22,8 @@ void help(void) {
     io_say("    display.imgonly     -- like display.refresh, but hides all text. very fast.\n");
     io_say("    bootloader          -- reboot into bootloader\n");
     io_say("call a command without arguments for usage\n");
+    io_say("every command's output ends with '^ok .*\\n'\n");
+    io_say("ok help\n");
 }
 
 void io_handle_cmd(char* line, io_state_t* state) {
@@ -70,9 +72,9 @@ void io_handle_cmd(char* line, io_state_t* state) {
                 io_say("\n");
             }
 
-            io_say("end netswitch.info\n");
+            io_say("ok netswitch.info\n");
         } else {
-            io_say("fail netswitch.info\n");
+            io_say("ok fail netswitch.info\n");
             return;
         }
         return;
@@ -84,6 +86,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
             io_say("changes the text of the given display line\n");
             io_say("line text may contain colour escape sequences\n");
             io_say("a 0x1b byte followed by a colour index (0-17) sets the colour\n");
+            io_say("ok help\n");
             return;
         }
         uint16_t n = parse_number(&line);
@@ -115,6 +118,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
             io_say("rgba allows smoothly compositing images with the background and\n");
             io_say("with each other, but is slower.\n");
             io_say("once I receive the image, I will listen for commands again.\n");
+            io_say("ok help\n");
             return;
         }
 
@@ -124,7 +128,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
         } else if (hop_word(&line, "565")) {
             px_fmt = display_px_format_565;
         } else {
-            io_say("unknown pixel format specified\n");
+            io_say("ok unknown pixel format specified\n");
             return;
         }
 
@@ -134,7 +138,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
         uint16_t h = parse_number(&line);
 
         if (!(x < DISPLAY_WIDTH && y < DISPLAY_HEIGHT && w <= DISPLAY_WIDTH && h <= DISPLAY_HEIGHT && w > 0 && h > 0)) {
-            io_say("given rectangle has a very stupid size\n");
+            io_say("ok given rectangle has a very stupid size\n");
             return;
         }
 
@@ -157,7 +161,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
     }
 
     if (hop_word(&line, "bootloader") || hop_word(&line, "!")) {
-        io_say("\nrestarting into bootloader, bye\n");
+        io_say("\nok restarting into bootloader, bye\n");
         sleep_ms(50);
         reset_usb_boot(0, 0);
         return;
@@ -171,7 +175,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
 
     io_say("no such command: ");
     io_say(line);
-    io_say("\nsay 'help' for help\n");
+    io_say("\nsay 'help' for help\nok\n");
     return;
 }
 
