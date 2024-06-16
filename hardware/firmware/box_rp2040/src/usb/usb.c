@@ -53,7 +53,7 @@ void usb_cdc_write(const char *buf, int length) {
 
 int32_t usb_cdc_read(char* buf, uint32_t size) {
     if (!usb_cdc_connected()) {
-        return -1;
+        return -2;
     }
 
     return tud_cdc_read(buf, size);

@@ -48,11 +48,11 @@ void io_say(const char* buf) {
     io_say_n(buf, strlen(buf));
 }
 
-void io_handle_char(char chr) {
-    static char line_buf[100];
-    static int n = 0;
-    static io_state_t state = io_state_cmdline;
+char line_buf[100];
+int n = 0;
+io_state_t state = io_state_cmdline;
 
+void io_handle_char(char chr) {
     if (state != io_state_cmdline) {
         io_handle_raw_byte(chr, &state);
         return;
@@ -80,9 +80,17 @@ void io_handle_char(char chr) {
     io_handle_cmd(line_buf, &state);
 }
 
+void io_read_reset(void) {
+    n = 0;
+    state = io_state_cmdline;
+}
+
 void io_usb_cdc_task(void) {
     static char buf[USB_READ_BUF_SIZE];
     int32_t n = usb_cdc_read(buf, sizeof(buf));
+    if (n < -1) {   // terminal handle disconnected
+        io_read_reset();
+    }
     for (int32_t i = 0; i < n; i++) {
         io_handle_char(buf[i]);
     }

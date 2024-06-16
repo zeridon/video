@@ -175,7 +175,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
 
     io_say("no such command: ");
     io_say(line);
-    io_say("\nsay 'help' for help\nok\n");
+    io_say("\nsay 'help' for help\nfail\n");
     return;
 }
 
