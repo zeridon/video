@@ -22,7 +22,7 @@ void help(void) {
     io_say("    display.imgonly     -- like display.refresh, but hides all text. very fast.\n");
     io_say("    bootloader          -- reboot into bootloader\n");
     io_say("call a command without arguments for usage\n");
-    io_say("every command's output ends with '^ok .*\\n'\n");
+    io_say("every command's output ends with '^(ok|fail) .*\\n'\n");
     io_say("ok help\n");
 }
 
@@ -74,7 +74,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
 
             io_say("ok netswitch.info\n");
         } else {
-            io_say("ok fail netswitch.info\n");
+            io_say("fail netswitch.info\n");
             return;
         }
         return;
@@ -138,7 +138,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
         uint16_t h = parse_number(&line);
 
         if (!(x < DISPLAY_WIDTH && y < DISPLAY_HEIGHT && w <= DISPLAY_WIDTH && h <= DISPLAY_HEIGHT && w > 0 && h > 0)) {
-            io_say("ok given rectangle has a very stupid size\n");
+            io_say("fail given rectangle has a very stupid size\n");
             return;
         }
 
