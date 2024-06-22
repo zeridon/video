@@ -87,9 +87,10 @@ import_arduino_library(${VENDOR_ROOT} Audio)
 import_arduino_library(${VENDOR_ROOT} Audio/utility)
 set_property(SOURCE ${VENDOR_ROOT}/Audio/memcpy_audio.S PROPERTY LANGUAGE C)
 
-import_arduino_library(${VENDOR_ROOT} Adafruit-GFX-Library)
-import_arduino_library(${VENDOR_ROOT} Adafruit_BusIO)
-import_arduino_library(${VENDOR_ROOT} Adafruit_SSD1306)
+#import_arduino_library(${VENDOR_ROOT} Adafruit-GFX-Library)
+#import_arduino_library(${VENDOR_ROOT} Adafruit_BusIO)
+#import_arduino_library(${VENDOR_ROOT} Adafruit_SSD1306)
+import_arduino_library(${VENDOR_ROOT} ST7735_t3/src)
 import_arduino_library(${VENDOR_ROOT} OSC)
 
 # Build this project

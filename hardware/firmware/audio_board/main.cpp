@@ -3,18 +3,59 @@
 
 #define DISPLAY 1
 
-#ifdef DISPLAY
-
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
 #include <OSCMessage.h>
 #include <SLIPEncodedSerial.h>
 
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+#ifdef DISPLAY
+
+#include <ST7735_t3.h>
+
+#endif
+
+
+#define TFT_DC (12)
+#define TFT_CS (10)
+#define TFT_MOSI (11)
+#define TFT_RST (0xFF)
+#define TFT_SCK (13)
+
+#define SCREEN_WIDTH 80 // OLED display width, in pixels
+#define SCREEN_HEIGHT 160 // OLED display height, in pixels
 #define SCREEN_ADDRESS 0x3C
 #define OLED_RESET (-1)
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+typedef struct ChanInfo {
+		uint16_t color;
+		char label[4];
+		char desc[16];
+		uint8_t link;
+} ChanInfo;
+
+#define RGB(r, g, b) (((r&0xF8)<<8)|((g&0xFC)<<3)|(b>>3))
+
+#define CHAN_WHITE RGB(255, 255, 255)
+#define CHAN_YELLOW RGB(255, 255, 80)
+#define CHAN_MAGENTA RGB(255, 140, 255)
+#define CHAN_GREEN RGB(100, 255, 100)
+
+ChanInfo channel_info[] = {
+	{CHAN_WHITE,   "1",   "XLR 1",       0},
+	{CHAN_WHITE,   "2",   "XLR 2",       0},
+	{CHAN_WHITE,   "3",   "XLR 3",       0},
+	{CHAN_YELLOW,  "P",   "PC",          0},
+	{CHAN_MAGENTA, "USB", "USB L",       1},
+	{CHAN_MAGENTA, "USB", "USB R",       2},
+
+	{CHAN_WHITE,   "1",   "XLR 1",       0},
+	{CHAN_WHITE,   "2",   "XLR 2",       0},
+	{CHAN_GREEN,   "AFL", "Headphone L", 1},
+	{CHAN_GREEN,   "AFL", "Headphone R", 2},
+	{CHAN_MAGENTA, "USB", "USB L",       1},
+	{CHAN_MAGENTA, "USB", "USB R",       2},
+};
+
+#ifdef DISPLAY
+ST7735_t3 display = ST7735_t3(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCK, TFT_RST);
 #endif
 
 SLIPEncodedUSBSerial slip(Serial);
@@ -68,22 +109,30 @@ AudioAnalyzePeak peak10;         //xy=1342,366
 AudioAnalyzePeak peak8;          //xy=1343,303
 AudioAnalyzePeak peak11;         //xy=1343,397
 AudioAnalyzePeak peak12;         //xy=1343,428
-AudioConnection patchCord1(i2s_quad1, 1, peak1, 0);
-AudioConnection patchCord2(i2s_quad1, 1, rms1, 0);
-AudioConnection patchCord3(i2s_quad1, 1, mixer1, 0);
-AudioConnection patchCord4(i2s_quad1, 1, mixer4, 0);
-AudioConnection patchCord5(i2s_quad1, 1, mixer7, 0);
-AudioConnection patchCord6(i2s_quad1, 1, mixer10, 0);
-AudioConnection patchCord7(i2s_quad1, 1, mixer13, 0);
-AudioConnection patchCord8(i2s_quad1, 1, mixer16, 0);
-AudioConnection patchCord9(i2s_quad1, 0, mixer1, 1);
-AudioConnection patchCord10(i2s_quad1, 0, mixer4, 1);
-AudioConnection patchCord11(i2s_quad1, 0, mixer7, 1);
-AudioConnection patchCord12(i2s_quad1, 0, mixer10, 1);
-AudioConnection patchCord13(i2s_quad1, 0, mixer13, 1);
-AudioConnection patchCord14(i2s_quad1, 0, mixer16, 1);
-AudioConnection patchCord15(i2s_quad1, 0, peak2, 0);
-AudioConnection patchCord16(i2s_quad1, 0, rms2, 0);
+AudioConnection patchCord9(i2s_quad1, 2, mixer1, 1);
+AudioConnection patchCord10(i2s_quad1, 2, mixer4, 1);
+AudioConnection patchCord11(i2s_quad1, 2, mixer7, 1);
+AudioConnection patchCord12(i2s_quad1, 2, mixer10, 1);
+AudioConnection patchCord13(i2s_quad1, 2, mixer13, 1);
+AudioConnection patchCord14(i2s_quad1, 2, mixer16, 1);
+AudioConnection patchCord15(i2s_quad1, 2, peak2, 0);
+AudioConnection patchCord16(i2s_quad1, 2, rms2, 0);
+AudioConnection patchCord1(i2s_quad1, 0, peak1, 0);
+AudioConnection patchCord2(i2s_quad1, 0, rms1, 0);
+AudioConnection patchCord3(i2s_quad1, 0, mixer1, 0);
+AudioConnection patchCord4(i2s_quad1, 0, mixer4, 0);
+AudioConnection patchCord5(i2s_quad1, 0, mixer7, 0);
+AudioConnection patchCord6(i2s_quad1, 0, mixer10, 0);
+AudioConnection patchCord7(i2s_quad1, 0, mixer13, 0);
+AudioConnection patchCord8(i2s_quad1, 0, mixer16, 0);
+AudioConnection patchCord25(i2s_quad1, 1, mixer1, 3);
+AudioConnection patchCord26(i2s_quad1, 1, mixer4, 3);
+AudioConnection patchCord27(i2s_quad1, 1, mixer7, 3);
+AudioConnection patchCord28(i2s_quad1, 1, mixer10, 3);
+AudioConnection patchCord29(i2s_quad1, 1, mixer13, 3);
+AudioConnection patchCord30(i2s_quad1, 1, mixer16, 3);
+AudioConnection patchCord31(i2s_quad1, 1, peak4, 0);
+AudioConnection patchCord32(i2s_quad1, 1, rms4, 0);
 AudioConnection patchCord17(i2s_quad1, 3, mixer1, 2);
 AudioConnection patchCord18(i2s_quad1, 3, mixer4, 2);
 AudioConnection patchCord19(i2s_quad1, 3, mixer7, 2);
@@ -92,14 +141,6 @@ AudioConnection patchCord21(i2s_quad1, 3, mixer13, 2);
 AudioConnection patchCord22(i2s_quad1, 3, mixer16, 2);
 AudioConnection patchCord23(i2s_quad1, 3, peak3, 0);
 AudioConnection patchCord24(i2s_quad1, 3, rms3, 0);
-AudioConnection patchCord25(i2s_quad1, 2, mixer1, 3);
-AudioConnection patchCord26(i2s_quad1, 2, mixer4, 3);
-AudioConnection patchCord27(i2s_quad1, 2, mixer7, 3);
-AudioConnection patchCord28(i2s_quad1, 2, mixer10, 3);
-AudioConnection patchCord29(i2s_quad1, 2, mixer13, 3);
-AudioConnection patchCord30(i2s_quad1, 2, mixer16, 3);
-AudioConnection patchCord31(i2s_quad1, 2, peak4, 0);
-AudioConnection patchCord32(i2s_quad1, 2, rms4, 0);
 AudioConnection patchCord33(pink1, 0, mixer2, 3);
 AudioConnection patchCord34(pink1, 0, mixer5, 3);
 AudioConnection patchCord35(pink1, 0, mixer8, 3);
@@ -203,7 +244,6 @@ AudioAnalyzePeak *ent_peak[12] = {
 	&peak12,
 };
 
-String cmdbuffer = "";
 bool echo = false;
 bool send_meters = false;
 
@@ -255,6 +295,7 @@ void
 onOscChannel(OSCMessage &msg, int patternOffset)
 {
 	char buf[12];
+	char address[22];
 	int channel = -1;
 	int addr;
 	int offset;
@@ -270,6 +311,20 @@ onOscChannel(OSCMessage &msg, int patternOffset)
 		}
 	}
 	if (channel < 0) return;
+
+	if (msg.match("/config/name", addr) > 0) {
+		if (msg.isString(0)) {
+			msg.getString(0, channel_info[channel].desc, sizeof(channel_info[channel].desc));
+		} else {
+			snprintf(address, 22, "/ch/%d/config/name", channel);
+			OSCMessage response(address);
+			response.add(channel_info[channel].desc);
+			slip.beginPacket();
+			response.send(slip);
+			slip.endPacket();
+		}
+		return;
+	}
 
 	// /ch/<num>/mix
 	offset = msg.match("/mix", addr);
@@ -291,7 +346,6 @@ onOscChannel(OSCMessage &msg, int patternOffset)
 	if (msg.isFloat(0)) {
 		set_crosspoint(channel, bus, msg.getFloat(0));
 	} else {
-		char address[22];
 		snprintf(address, 22, "/ch/%d/mix/%d/level", channel, bus);
 		OSCMessage response(address);
 		response.add(get_crosspoint(channel, bus));
@@ -302,9 +356,47 @@ onOscChannel(OSCMessage &msg, int patternOffset)
 }
 
 void
+onOscBus(OSCMessage &msg, int patternOffset)
+{
+	char buf[12];
+	char address[22];
+	int bus = -1;
+	int addr;
+	int offset;
+
+	// /bus/<num>
+	for (int i = 0; i < 6; i++) {
+		sprintf(buf, "/%d", i);
+		offset = msg.match(buf, patternOffset);
+		if (offset) {
+			bus = i;
+			addr = offset + patternOffset;
+			break;
+		}
+	}
+	if (bus < 0) return;
+
+	if (msg.match("/config/name", addr) > 0) {
+		if (msg.isString(0)) {
+			msg.getString(0, channel_info[bus + 6].desc, sizeof(channel_info[bus + 6].desc));
+		} else {
+			snprintf(address, 22, "/ch/%d/config/name", bus);
+			OSCMessage response(address);
+			response.add(channel_info[bus + 6].desc);
+			slip.beginPacket();
+			response.send(slip);
+			slip.endPacket();
+		}
+		return;
+	}
+}
+
+
+void
 onPacketReceived(OSCMessage msg)
 {
 	msg.route("/ch", onOscChannel);
+	msg.route("/bus", onOscBus);
 }
 
 void
@@ -312,12 +404,10 @@ setup()
 {
 
 #ifdef DISPLAY
-	if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
-		//Serial.println(F("SSD1306 allocation failed"));
-	}
-	display.display();
-	delay(200);
-	display.clearDisplay();
+	display.initR(INITR_MINI160x80_ST7735S);
+	display.useFrameBuffer(true);
+	display.fillScreen(ST7735_RED);
+	display.updateScreen();
 #endif
 
 	AudioMemory(64);
@@ -330,6 +420,7 @@ setup()
 	sgtl5000_1.adcHighPassFilterDisable();
 
 	sgtl5000_2.setWire(1);
+
 	sgtl5000_2.enable();
 	sgtl5000_2.inputSelect(AUDIO_INPUT_LINEIN);
 	sgtl5000_2.volume(0.5);
@@ -350,6 +441,37 @@ rmsToDb(float rms_in)
 float levels_rms[12];
 float levels_peak[12];
 
+#ifdef DISPLAY
+
+void
+drawMeter(int16_t x, int16_t y, int16_t w, int16_t h, float level)
+{
+	int16_t red_thresh = h / 4 * 3;
+	int16_t yellow_thresh = h / 2;
+	int16_t value = (int16_t) (level * (float) h);
+
+	// display.drawLine(x - 1, y, x - 1, y + h, ST7735_CYAN);
+
+	// Green section
+	int gfill = max(min(value, yellow_thresh), 0);
+	display.fillRect(x, y + h - gfill, w, gfill, ST7735_GREEN);
+	display.fillRect(x, y + h - yellow_thresh, w, yellow_thresh - gfill, RGB(0, 100, 0));
+
+	// Yellow section
+	int yfill = max(min(value, red_thresh), yellow_thresh) - yellow_thresh;
+	display.fillRect(x, y + h - yellow_thresh - yfill, w, yfill, ST7735_YELLOW);
+	display.fillRect(x, y + h - red_thresh, w, red_thresh - yellow_thresh - yfill, RGB(100, 100, 0));
+
+	// Red section
+	int rfill = max(min(value, h), red_thresh) - red_thresh;
+	display.fillRect(x, y + h - red_thresh - rfill, w, rfill, ST7735_RED);
+	display.fillRect(x, y, w, h - red_thresh - rfill, RGB(100, 0, 0));
+}
+
+#endif
+
+
+unsigned long last_draw = 0;
 
 void
 loop()
@@ -368,55 +490,47 @@ loop()
 		}
 	}
 
+	float temp;
 	if (rms1.available()) {
 		for (int i = 0; i < 12; i++) {
-			levels_rms[i] = ent_rms[i]->read();
+			temp = ent_rms[i]->read();
+			// VU meter drains slowly after a peak
+			if (temp < levels_rms[i]) {
+				levels_rms[i] *= 0.97;
+			} else {
+				levels_rms[i] = temp;
+			}
 			levels_peak[i] = ent_peak[i]->read();
 		}
 
 #ifdef DISPLAY
-		display.clearDisplay();
-
-		for (int i = 0; i < 12; i++) {
-			uint16_t offset = i > 5 ? 8 : 0;
-			display.fillRect(10 * i + 1 + offset,
-				SCREEN_HEIGHT - 11 - (int16_t) (((rmsToDb(levels_rms[i]) + 40.0f) / 47.0f) * SCREEN_HEIGHT), 6,
-				SCREEN_HEIGHT, SSD1306_WHITE);
-		}
-
-		display.fillRect(0, SCREEN_HEIGHT - 11, SCREEN_WIDTH, 11, SSD1306_BLACK);
-		display.fillRoundRect(0, SCREEN_HEIGHT - 10, 10, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(10, SCREEN_HEIGHT - 10, 10, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(20, SCREEN_HEIGHT - 10, 10, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(30, SCREEN_HEIGHT - 10, 10, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(40, SCREEN_HEIGHT - 10, 20, 10, 1, SSD1306_WHITE);
-
-		display.fillRoundRect(68, SCREEN_HEIGHT - 10, 10, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(78, SCREEN_HEIGHT - 10, 10, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(88, SCREEN_HEIGHT - 10, 20, 10, 1, SSD1306_WHITE);
-		display.fillRoundRect(108, SCREEN_HEIGHT - 10, 20, 10, 1, SSD1306_WHITE);
+		display.fillScreen(RGB(0, 0, 0));
 
 		display.setTextSize(1);
-		display.setTextColor(SSD1306_BLACK);
-		for (int i = 0; i < 4; i++) {
-			display.setCursor(i * 10 + 2, SCREEN_HEIGHT - 9);
-			display.write('1' + i);
+		display.setTextColor(RGB(0, 0, 0));
+
+		for (int i = 0; i < 12; i++) {
+			uint16_t offset = 0;
+			if (i < 6) {
+			} else {
+				// Outputs
+				offset += (SCREEN_HEIGHT / 2);
+			}
+			uint16_t w = channel_info[i].link == 0 ? 12 : 24;
+			if (channel_info[i].link != 2) {
+				display.fillRoundRect(4 + ((i % 6) * 12), offset + (SCREEN_HEIGHT / 2) - 11, w, 10, 1,
+					channel_info[i].color);
+
+				display.drawString(channel_info[i].label, 5 + ((i % 6) * 12), offset + (SCREEN_HEIGHT / 2) - 9);
+			}
+			drawMeter(6 + (12 * (i % 6)), offset + 1, 10, (SCREEN_HEIGHT / 2) - 13,
+				(rmsToDb(levels_rms[i]) + 40.0f) / 47.0f);
+
 		}
-		display.setCursor(41, SCREEN_HEIGHT - 9);
-		display.write("USB");
-
-		display.setCursor(70, SCREEN_HEIGHT - 9);
-		display.write('1');
-		display.setCursor(80, SCREEN_HEIGHT - 9);
-		display.write('2');
-
-		display.setCursor(89, SCREEN_HEIGHT - 9);
-		display.write("AFL");
-
-		display.setCursor(109, SCREEN_HEIGHT - 9);
-		display.write("USB");
-
-		display.display();
+		if (last_draw < (millis() - 16)) {
+			display.updateScreen();
+			last_draw = millis();
+		}
 #endif
 	}
 
