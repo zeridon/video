@@ -1281,7 +1281,7 @@
 	(symbol
 		(lib_id "4xxx:4069")
 		(at 143.51 91.44 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1404,19 +1404,19 @@
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2/67d89172-f710-42f2-b66a-20a713f3ef78"
 					(reference "U11")
-					(unit 1)
+					(unit 2)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2/1f2356c2-5114-44bd-9e00-8022e0f5b6a5"
 					(reference "U11")
-					(unit 2)
+					(unit 4)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2/ba1e0391-72e2-478c-ae36-437899b49871"
 					(reference "U11")
-					(unit 3)
+					(unit 1)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2/06607c2e-df57-4ef0-bf70-954d4a07371a"
 					(reference "U11")
-					(unit 4)
+					(unit 3)
 				)
 			)
 		)
