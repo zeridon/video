@@ -125,6 +125,145 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016) hide)
@@ -6589,6 +6728,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 276.86) (xy 217.17 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6281c47a-d9b3-4d1d-aab0-0bd70c6771a1")
+	)
+	(wire
+		(pts
 			(xy 288.29 172.72) (xy 288.29 173.99)
 		)
 		(stroke
@@ -7059,6 +7208,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 271.78) (xy 217.17 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f3053f0-19ed-4c9b-b7b5-65ff50bbab86")
+	)
+	(wire
+		(pts
 			(xy 349.25 100.33) (xy 356.87 100.33)
 		)
 		(stroke
@@ -7206,6 +7365,16 @@
 			(type default)
 		)
 		(uuid "a424d0a5-fc8c-4c88-a754-fba2ad420fe0")
+	)
+	(wire
+		(pts
+			(xy 217.17 274.32) (xy 218.44 274.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a72f5701-b1d1-47dc-a9cd-2f9d21a3733b")
 	)
 	(wire
 		(pts
@@ -8119,6 +8288,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 269.24) (xy 217.17 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe02a808-6a55-44e7-acd1-082f2f7e0785")
+	)
+	(wire
+		(pts
 			(xy 201.93 158.75) (xy 201.93 161.29)
 		)
 		(stroke
@@ -8830,7 +9009,7 @@
 			(uuid "fab2eec3-5994-4ec3-b357-e68c6b248aff")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R26")
 					(unit 1)
@@ -8896,7 +9075,7 @@
 			(uuid "47e1d723-e1a3-47e6-a7cb-4d6c990aad3a")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR062")
 					(unit 1)
@@ -8961,7 +9140,7 @@
 			(uuid "0bf57cf0-a4e6-4d04-be04-0c352ed2fbbd")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR033")
 					(unit 1)
@@ -9038,7 +9217,7 @@
 			(uuid "247b7d39-99d0-4cef-a87e-4fffc91fb12b")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "L2")
 					(unit 1)
@@ -9104,7 +9283,7 @@
 			(uuid "dc087787-a2a1-4340-aa2a-ba056129460f")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR052")
 					(unit 1)
@@ -9170,7 +9349,7 @@
 			(uuid "44783e33-a97d-44e7-b5c4-7a437f11f73e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR074")
 					(unit 1)
@@ -9237,7 +9416,7 @@
 			(uuid "2d38a3b6-3edc-4ca1-a12b-d8bfb6e3f902")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR041")
 					(unit 1)
@@ -9316,7 +9495,7 @@
 			(uuid "9bff4033-6cad-452d-91f8-f9ef706105ec")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C28")
 					(unit 1)
@@ -9382,7 +9561,7 @@
 			(uuid "6cd56857-30f9-490b-a5c2-640a67d22aaa")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR075")
 					(unit 1)
@@ -9448,7 +9627,7 @@
 			(uuid "1fff7767-77b2-4b98-b8c1-e50b3c3f64dd")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR048")
 					(unit 1)
@@ -9514,7 +9693,7 @@
 			(uuid "563b4595-7670-4b5c-bceb-2e14f9b5e776")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR035")
 					(unit 1)
@@ -9593,7 +9772,7 @@
 			(uuid "9085799c-9486-43b0-b127-966a696f38f2")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C7")
 					(unit 1)
@@ -9660,7 +9839,7 @@
 			(uuid "805d5092-6faa-411e-aee7-3036e0452cc5")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "TP2")
 					(unit 1)
@@ -9726,7 +9905,7 @@
 			(uuid "411eb4fe-ebbd-44c9-9f4b-c8908817f6a9")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR042")
 					(unit 1)
@@ -9791,7 +9970,7 @@
 			(uuid "881515f0-b726-4277-86e0-2cae19d2c690")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR027")
 					(unit 1)
@@ -9870,7 +10049,7 @@
 			(uuid "9cb7fc04-8378-46b3-9e66-9d0e4d23f5c8")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R42")
 					(unit 1)
@@ -9958,7 +10137,7 @@
 			(uuid "04a62afc-bdec-4d0a-8dca-b7a6890259d9")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C12")
 					(unit 1)
@@ -10026,7 +10205,7 @@
 			(uuid "d4f6e73a-7288-48d8-a624-b4dff2c052d9")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "H1")
 					(unit 1)
@@ -10105,7 +10284,7 @@
 			(uuid "23733380-f87a-4536-adf6-588eaf8d1ce2")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C10")
 					(unit 1)
@@ -10184,7 +10363,7 @@
 			(uuid "cc04860c-950b-4c9d-8b1b-f0366225af03")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R16")
 					(unit 1)
@@ -10250,7 +10429,7 @@
 			(uuid "20f9c155-702f-443c-9b5a-93ee2196bfe4")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR054")
 					(unit 1)
@@ -10316,7 +10495,7 @@
 			(uuid "e5e1943a-6d6a-428a-820c-72c500c4a1b1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR015")
 					(unit 1)
@@ -10382,7 +10561,7 @@
 			(uuid "9644ce83-7ba5-4ea8-a8a7-ac7a0a9bcb72")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR049")
 					(unit 1)
@@ -10455,7 +10634,7 @@
 			(uuid "4df745d4-cd42-476c-80b2-4f1267e5a320")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "JP1")
 					(unit 1)
@@ -10534,7 +10713,7 @@
 			(uuid "c41e9658-0ae3-449c-b39d-d488e9c17155")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R13")
 					(unit 1)
@@ -10599,7 +10778,7 @@
 			(uuid "89bd1a8c-469d-43c1-b871-db68eeb99eb5")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR038")
 					(unit 1)
@@ -10665,7 +10844,7 @@
 			(uuid "f8f085fb-1f3a-41be-9439-6c06044b777e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR03")
 					(unit 1)
@@ -10744,7 +10923,7 @@
 			(uuid "00c2bfb8-741c-4a09-8fe3-c24777ee0e55")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R2")
 					(unit 1)
@@ -10823,7 +11002,7 @@
 			(uuid "eeda58aa-bdfe-42c1-a3cd-97708aff7b67")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R44")
 					(unit 1)
@@ -10891,7 +11070,7 @@
 			(uuid "f72bfb5d-8377-4c21-abbd-f5a7541549e4")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "H4")
 					(unit 1)
@@ -10970,7 +11149,7 @@
 			(uuid "e96be29d-bdb1-434f-96ee-95c56c0071b0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R48")
 					(unit 1)
@@ -11426,7 +11605,7 @@
 			(uuid "69efcd43-db93-4eed-a9ab-248f5dc4fcca")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "U1")
 					(unit 1)
@@ -11508,7 +11687,7 @@
 			(uuid "302b3018-8738-48bf-b086-c9e4e09b22b7")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "J6")
 					(unit 1)
@@ -11574,7 +11753,7 @@
 			(uuid "0425a59c-c2a2-4b22-adb0-81dc4a3da74f")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR055")
 					(unit 1)
@@ -11664,7 +11843,7 @@
 			(uuid "1d967e4e-c55c-43d1-8e0b-393a1f8cb8c1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "U2")
 					(unit 1)
@@ -11730,7 +11909,7 @@
 			(uuid "b1bbb766-fa99-4d81-8ca9-2689adc0f34a")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR023")
 					(unit 1)
@@ -11796,7 +11975,7 @@
 			(uuid "06ce861e-d3b9-411d-a9d4-baeadba0ef4c")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR046")
 					(unit 1)
@@ -11884,7 +12063,7 @@
 			(uuid "bfef0ee3-5fa2-4e5c-a35e-4bc331b68675")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C24")
 					(unit 1)
@@ -11950,7 +12129,7 @@
 			(uuid "bb4f1993-a57c-49b6-99c5-d4b362a4240b")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR029")
 					(unit 1)
@@ -12016,7 +12195,7 @@
 			(uuid "d90bb887-b5ed-4468-bf48-63a79d24a8dc")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR079")
 					(unit 1)
@@ -12082,7 +12261,7 @@
 			(uuid "da8f899d-cdf5-4227-896d-8778fa7c589d")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR034")
 					(unit 1)
@@ -12161,7 +12340,7 @@
 			(uuid "2f3acc66-0b2c-49bd-986d-0d0881b6cf16")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R8")
 					(unit 1)
@@ -12238,7 +12417,7 @@
 			(uuid "8ae0260c-f5d4-4b79-9d1f-71c8ce390924")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "L1")
 					(unit 1)
@@ -12304,7 +12483,7 @@
 			(uuid "3da3bcfc-557c-4372-a4ce-18967a291820")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR036")
 					(unit 1)
@@ -12370,7 +12549,7 @@
 			(uuid "b17963d0-1553-46ce-aea4-7a8ed260cda0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR024")
 					(unit 1)
@@ -12436,7 +12615,7 @@
 			(uuid "47ec3087-6f98-49d0-9150-5a18392dbc23")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR012")
 					(unit 1)
@@ -12502,7 +12681,7 @@
 			(uuid "a0b902ed-f0d7-4875-9d6d-d85e461c3cfa")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR044")
 					(unit 1)
@@ -12581,7 +12760,7 @@
 			(uuid "1fe9be11-4790-4f39-beca-d77030f96bba")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R11")
 					(unit 1)
@@ -12647,7 +12826,7 @@
 			(uuid "80e40f49-be0a-4b6a-99b5-884e15feb5b4")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR045")
 					(unit 1)
@@ -12713,7 +12892,7 @@
 			(uuid "ac593b7b-f89f-4a86-8091-94ec3c1fbbf1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR068")
 					(unit 1)
@@ -12779,7 +12958,7 @@
 			(uuid "d1c8c4e1-1d33-4562-a116-a93229c9449c")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR080")
 					(unit 1)
@@ -12845,7 +13024,7 @@
 			(uuid "438a015a-2e41-4747-b01d-e6855d9a1e2e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR065")
 					(unit 1)
@@ -12911,7 +13090,7 @@
 			(uuid "d5ff674c-62a8-45f8-8dea-51dd06d7703e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR021")
 					(unit 1)
@@ -12977,7 +13156,7 @@
 			(uuid "f2ec0467-3165-4451-808c-b084966ed3ea")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR070")
 					(unit 1)
@@ -13056,7 +13235,7 @@
 			(uuid "1709e864-da3e-44b6-8c72-e2c68759332d")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R46")
 					(unit 1)
@@ -13135,7 +13314,7 @@
 			(uuid "07146046-4b4e-4230-bd82-e57e26fd13bf")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C6")
 					(unit 1)
@@ -13214,7 +13393,7 @@
 			(uuid "40ed6b3e-8a00-46e6-a6a7-a5a69e6840e8")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C34")
 					(unit 1)
@@ -13279,7 +13458,7 @@
 			(uuid "877ea823-69de-43c2-8c1e-d2de4f7efca0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR040")
 					(unit 1)
@@ -13345,7 +13524,7 @@
 			(uuid "c1d8cf61-b404-4a0d-8d95-9f13a1fd6a3b")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR04")
 					(unit 1)
@@ -13412,7 +13591,7 @@
 			(uuid "350c4d5e-a4e1-4c23-8fe7-c4282fc64e06")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "TP3")
 					(unit 1)
@@ -13478,7 +13657,7 @@
 			(uuid "7838733a-4867-44b0-b6f7-bfb6e217b467")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR02")
 					(unit 1)
@@ -13544,7 +13723,7 @@
 			(uuid "db65ffa3-3a0c-498c-9047-76e5599fcde2")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR028")
 					(unit 1)
@@ -13629,7 +13808,7 @@
 			(uuid "c6f5914f-6892-4442-acf7-4726756edbcd")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C20")
 					(unit 1)
@@ -13708,9 +13887,79 @@
 			(uuid "3b9ad5b4-0bcd-4bc8-b3cb-205afd32ec3b")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 223.52 271.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ada4314-9f49-4f48-9423-3cd17c0855a5")
+		(property "Reference" "J7"
+			(at 226.06 271.7799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Power"
+			(at 226.06 274.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Library:mta100_01x2_P2.54_647050-2"
+			(at 223.52 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 223.52 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 223.52 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "08977ca4-f559-4614-adc5-093bee6f72f5")
+		)
+		(pin "1"
+			(uuid "be9af358-70a5-49da-ab9d-eae960b99958")
+		)
+		(instances
+			(project "switch_board"
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -13787,7 +14036,7 @@
 			(uuid "07c23b52-981e-4fea-9a42-f6ad718bb3a1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C1")
 					(unit 1)
@@ -13875,7 +14124,7 @@
 			(uuid "b0b4652f-e074-4542-b5df-1461503267d1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C22")
 					(unit 1)
@@ -13941,7 +14190,7 @@
 			(uuid "32173d62-28cc-434c-988a-39f9f79c3b44")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR064")
 					(unit 1)
@@ -14007,7 +14256,7 @@
 			(uuid "87b526d6-0a16-4e06-903d-fef16567e6e6")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR031")
 					(unit 1)
@@ -14086,7 +14335,7 @@
 			(uuid "58e36e32-7d6e-4507-953c-fa76c66a6efa")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C3")
 					(unit 1)
@@ -14152,7 +14401,7 @@
 			(uuid "3f9f4776-95ef-48eb-921e-1b2df5bed029")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR030")
 					(unit 1)
@@ -14218,7 +14467,7 @@
 			(uuid "4c8754bf-44da-4f57-9f75-0489cae6ba64")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR025")
 					(unit 1)
@@ -14297,7 +14546,7 @@
 			(uuid "ca09b4fd-908f-4a0d-b4da-5611405638e5")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R27")
 					(unit 1)
@@ -14362,7 +14611,7 @@
 			(uuid "3923f271-cd06-46f1-95dc-611393b2218a")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR09")
 					(unit 1)
@@ -14428,7 +14677,7 @@
 			(uuid "cd5b1f9f-85b3-4ccd-9908-221f7ec14ba1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR026")
 					(unit 1)
@@ -14507,7 +14756,7 @@
 			(uuid "4ad1ea59-3f0f-4282-9aaf-394ce639f3db")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R39")
 					(unit 1)
@@ -14573,7 +14822,7 @@
 			(uuid "0658f925-be33-433e-976c-4db6a6e5ddb0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#FLG02")
 					(unit 1)
@@ -14655,9 +14904,75 @@
 			(uuid "272552ab-6736-4893-9f84-030b9dd16124")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 217.17 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99d369e0-dca1-4ee7-a94d-b0527406def5")
+		(property "Reference" "#PWR073"
+			(at 217.17 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 217.17 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 217.17 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "803fd5ff-6126-42c6-af7a-9e12de36b813")
+		)
+		(instances
+			(project "switch_board"
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -14734,7 +15049,7 @@
 			(uuid "f16b126a-7ec4-4975-b832-d86d5fe486dd")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R3")
 					(unit 1)
@@ -14806,7 +15121,7 @@
 			(uuid "eb15efc0-2462-477a-b6e5-66251843f124")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "JP3")
 					(unit 1)
@@ -14871,7 +15186,7 @@
 			(uuid "c3faf827-8452-427a-bffe-5fc66e24af98")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR037")
 					(unit 1)
@@ -14943,7 +15258,7 @@
 			(uuid "f42fb416-916a-4d07-ab1f-ca0eebecaec0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "JP4")
 					(unit 1)
@@ -15009,7 +15324,7 @@
 			(uuid "ebcf11a4-d925-44b1-b971-b9b8579a5169")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR08")
 					(unit 1)
@@ -15075,7 +15390,7 @@
 			(uuid "0f82d30b-f0fa-4517-8081-d1012651be76")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR066")
 					(unit 1)
@@ -15141,7 +15456,7 @@
 			(uuid "59a2825a-03f0-48c6-ba3a-f0f730bef043")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR067")
 					(unit 1)
@@ -15207,7 +15522,7 @@
 			(uuid "d1d9ea35-f931-40e8-a7fb-15614398104f")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR059")
 					(unit 1)
@@ -15294,7 +15609,7 @@
 			(uuid "028ad07a-d752-4e9a-ad7e-1e96bbd3c148")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "U5")
 					(unit 1)
@@ -15362,7 +15677,7 @@
 			(uuid "2c918e16-1ce8-4410-9577-7109dfc74aa8")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "H2")
 					(unit 1)
@@ -15450,7 +15765,7 @@
 			(uuid "6bef3dac-0ac1-4895-843f-9d6606130980")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C23")
 					(unit 1)
@@ -15516,9 +15831,75 @@
 			(uuid "094ff99a-58ea-4822-80c1-c32cafcdf3a5")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 217.17 276.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5bb6009-3a9e-464d-9799-b7dc212fbed5")
+		(property "Reference" "#PWR071"
+			(at 217.17 283.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 217.17 281.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 217.17 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "636bee15-f798-4ba7-b697-abefeed66baa")
+		)
+		(instances
+			(project "switch_board"
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -15582,7 +15963,7 @@
 			(uuid "a657a6ba-6c88-4899-b02d-3f3b4df57b81")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR063")
 					(unit 1)
@@ -15648,7 +16029,7 @@
 			(uuid "d11ea5a9-c119-4e01-a239-211ba758f9b1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR053")
 					(unit 1)
@@ -15727,7 +16108,7 @@
 			(uuid "b72d3ec6-aef8-499e-8f81-a6e78e45611a")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R38")
 					(unit 1)
@@ -15815,7 +16196,7 @@
 			(uuid "ba841392-8263-4207-9ed4-8d74d476f4fc")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C21")
 					(unit 1)
@@ -15881,7 +16262,7 @@
 			(uuid "ccf869f0-3f48-4079-b55b-50d4083588f0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR022")
 					(unit 1)
@@ -15947,7 +16328,7 @@
 			(uuid "c5bfbbcc-7430-4f15-9d55-f5f3beadd98e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR078")
 					(unit 1)
@@ -16013,7 +16394,7 @@
 			(uuid "604e9e59-540f-40f4-93e8-dc7e6c6c2dd7")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR057")
 					(unit 1)
@@ -16101,7 +16482,7 @@
 			(uuid "af95f60b-eeba-4203-9071-5ba7b56e0e76")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C27")
 					(unit 1)
@@ -16167,7 +16548,7 @@
 			(uuid "518971e2-4a7d-482d-b7bf-54b831d8dd4a")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR056")
 					(unit 1)
@@ -16233,7 +16614,7 @@
 			(uuid "8b56d90b-84f9-4181-b8f9-3d3409f26442")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR07")
 					(unit 1)
@@ -16312,7 +16693,7 @@
 			(uuid "b387234a-dafa-438a-8644-d243ae89af23")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R14")
 					(unit 1)
@@ -16391,7 +16772,7 @@
 			(uuid "8eab1156-ffda-4987-bc7e-dedcefaa9162")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C4")
 					(unit 1)
@@ -16457,7 +16838,7 @@
 			(uuid "83a25d8a-9850-4db9-9ed2-dd9dfdc4bac4")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR043")
 					(unit 1)
@@ -16536,7 +16917,7 @@
 			(uuid "d38ff8b1-7c7d-4113-9835-59ffd09f2ed1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R45")
 					(unit 1)
@@ -16615,7 +16996,7 @@
 			(uuid "be0b52a1-adcd-439b-866e-60d331c9d180")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R32")
 					(unit 1)
@@ -16681,7 +17062,7 @@
 			(uuid "f948abaf-ec4c-424d-81cf-580e5232a1ab")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR051")
 					(unit 1)
@@ -16747,7 +17128,7 @@
 			(uuid "25afff83-9b20-4ec6-84e2-400360f9bb00")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#FLG01")
 					(unit 1)
@@ -16825,7 +17206,7 @@
 			(uuid "9cf38c38-09ce-4176-b7c2-7563da6dcf47")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R12")
 					(unit 1)
@@ -16904,7 +17285,7 @@
 			(uuid "5c329d7a-c372-47fb-8ff7-d21b5b3711ef")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R40")
 					(unit 1)
@@ -16970,7 +17351,7 @@
 			(uuid "beaa46fa-d81d-4dff-b169-38be561347c3")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR047")
 					(unit 1)
@@ -17038,7 +17419,7 @@
 			(uuid "91f8dd35-cae5-4977-8377-eefe40e86786")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "H3")
 					(unit 1)
@@ -17111,7 +17492,7 @@
 			(uuid "dd8813c7-778f-4159-a074-671a2a5e0f51")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "J8")
 					(unit 1)
@@ -17199,7 +17580,7 @@
 			(uuid "1819a9ae-24a4-468e-b07b-9eb506fb646a")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "U4")
 					(unit 1)
@@ -17278,7 +17659,7 @@
 			(uuid "5c29f2dd-28fe-4fa9-b465-4ba6891a6170")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C2")
 					(unit 1)
@@ -17363,7 +17744,7 @@
 			(uuid "0b8cd90e-31b5-479c-a21e-3683465c169d")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C11")
 					(unit 1)
@@ -17429,7 +17810,7 @@
 			(uuid "32c161cf-1e7d-4d0e-80a7-e314c0d21058")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR05")
 					(unit 1)
@@ -17508,7 +17889,7 @@
 			(uuid "bcb73eac-bf4d-4061-9c28-45a0ba47cd64")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C5")
 					(unit 1)
@@ -17574,7 +17955,7 @@
 			(uuid "c6435f28-7312-444c-b585-d90037b0d90c")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR06")
 					(unit 1)
@@ -17662,7 +18043,7 @@
 			(uuid "fdc1cd52-47d9-43c6-af27-68ef056023c5")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C13")
 					(unit 1)
@@ -17741,7 +18122,7 @@
 			(uuid "f666961b-8b2d-48f1-9e29-b7d7680c764f")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C8")
 					(unit 1)
@@ -17829,7 +18210,7 @@
 			(uuid "2bddeec6-1f5f-4acc-887f-e635b4f795f1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C26")
 					(unit 1)
@@ -17895,7 +18276,7 @@
 			(uuid "38186c9e-2695-4470-b2a7-a9e2b3bf5edc")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR076")
 					(unit 1)
@@ -17960,7 +18341,7 @@
 			(uuid "97b2c9bd-28e0-43ba-b0a0-c33a0b6888e4")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR039")
 					(unit 1)
@@ -18027,7 +18408,7 @@
 			(uuid "e3daa32e-1ba7-42c4-9a96-28af3b0fa3d0")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "TP1")
 					(unit 1)
@@ -18093,7 +18474,7 @@
 			(uuid "5fe42b7b-6331-450e-8f94-c60bce456e63")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR081")
 					(unit 1)
@@ -18172,7 +18553,7 @@
 			(uuid "c7475856-0108-4513-8aaf-d3e90819e77b")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R37")
 					(unit 1)
@@ -18260,7 +18641,7 @@
 			(uuid "2b15199b-a339-4a80-bde7-242c8a763560")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C19")
 					(unit 1)
@@ -18326,7 +18707,7 @@
 			(uuid "2ac6b51e-398a-4e71-b235-650fefc93d8f")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR069")
 					(unit 1)
@@ -18392,7 +18773,7 @@
 			(uuid "a5f81206-f299-421f-9e12-4a9472e1f75e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR018")
 					(unit 1)
@@ -18471,7 +18852,7 @@
 			(uuid "6d025d85-5e84-40e3-948d-46fca5160666")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R15")
 					(unit 1)
@@ -18561,7 +18942,7 @@
 			(uuid "1269de6e-72ca-45ed-af24-894b7f347ab8")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "U3")
 					(unit 1)
@@ -18627,7 +19008,7 @@
 			(uuid "a612d7da-d957-4cb4-8fd2-6fe8046430ab")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR01")
 					(unit 1)
@@ -18700,7 +19081,7 @@
 			(uuid "7ab95ed7-b4df-43c9-8f07-80b61b6f5b5f")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "JP2")
 					(unit 1)
@@ -18766,7 +19147,7 @@
 			(uuid "a760d5cf-8f08-4cb1-86eb-821b90bfa130")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR072")
 					(unit 1)
@@ -18845,7 +19226,7 @@
 			(uuid "f4be6c66-b380-48f8-bd50-2d472d4d2a43")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C9")
 					(unit 1)
@@ -18911,7 +19292,7 @@
 			(uuid "f853497c-27aa-45ea-bc71-6e5190f9efe1")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR032")
 					(unit 1)
@@ -18977,7 +19358,7 @@
 			(uuid "b15c3c8f-9a1f-4ac8-ade4-b7b44ecfc521")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "#PWR058")
 					(unit 1)
@@ -19056,7 +19437,7 @@
 			(uuid "f31736a1-cc0f-441a-b7be-603ac9627df9")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "R9")
 					(unit 1)
@@ -19144,7 +19525,7 @@
 			(uuid "c58430a1-56a5-41b5-b0d5-5d1ceca10974")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(reference "C25")
 					(unit 1)
@@ -19282,7 +19663,7 @@
 			(uuid "0cb6a008-e4f0-4999-b84d-ee6a4e4b727e")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(page "5")
 				)
@@ -19419,7 +19800,7 @@
 			(uuid "ec8f717c-18a0-4da3-ba9c-ad2dd07cbfb2")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(page "4")
 				)
@@ -19556,7 +19937,7 @@
 			(uuid "7d4d7cb3-5c14-4835-9c1a-986269c8befc")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(page "2")
 				)
@@ -19693,7 +20074,7 @@
 			(uuid "d00fa1e3-7cfc-418b-9245-819ed52bd136")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(page "3")
 				)
@@ -19830,7 +20211,7 @@
 			(uuid "572da322-4049-4676-894e-4ce96cb4dbb2")
 		)
 		(instances
-			(project "fosdem-switch"
+			(project "switch_board"
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e"
 					(page "6")
 				)
