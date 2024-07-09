@@ -86,9 +86,9 @@
 #define DISPLAY_PIN_RST             20  // radxa pin 37 (next to gnd)
 #define DISPLAY_PIN_BL              22  // radxa pin 33 (next to gnd), not present on all displays
 
-#define DISPLAY_WIDTH               320
+#define DISPLAY_WIDTH               240
 #define DISPLAY_HEIGHT              240
-#define DISPLAY_ROTATION            ST7789_LANDSCAPE
+#define DISPLAY_ROTATION            ST7789_PORTRAIT
 #define DISPLAY_TEXT_COLS           42
 #define DISPLAY_TEXT_LINES          10
 
