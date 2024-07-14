@@ -1,0 +1,622 @@
+---
+
+####
+####
+## Templates
+####
+####
+
+templates:
+
+  ##
+  # Connectors
+  ##
+
+  # Power
+
+  - &co_pwr_barrel # TODO: define part number
+    type: Locking barrel jack
+    subtype: female
+    pincount: 2
+    image:
+      src: resources/panel-dc-socket.jpg
+
+  - &co_pwr_naked # TODO: define part number
+    type: Naked two-wire stranded copper
+    subtype: male
+    pincount: 2
+    image:
+      src: resources/naked-2w.jpg
+
+  # USB 2
+
+  - &co_usb2_a # TODO: define part number
+    type: Generic USB 2 A connector
+    subtype: male
+    pincount: 1
+    image:
+      src: resources/usb2-a.jpg
+
+  - &co_usb2_micro_b # TODO: define part number
+    type: Generic USB 2 micro B connector
+    subtype: male
+    pincount: 1
+    image:
+      src: resources/usb2-micro-b.jpg
+
+  # USB 3
+
+  - &co_usb3_a # TODO: define part number
+    type: Generic USB 3 A connector
+    subtype: male
+    pincount: 1
+    image:
+      src: resources/usb3-a.jpg
+
+  - &co_usb3_micro_b # TODO: define part number
+    type: Generic USB 3 micro B connector
+    subtype: male
+    pincount: 1
+    image:
+      src: resources/usb3-micro-b.jpg
+
+  - &co_usb3_c # TODO: define part number
+    type: Generic USB 3 C connector
+    subtype: male
+    pincount: 1
+    image:
+      src: resources/usb3-c.jpg
+
+  # MTA 100
+
+  - &co_mta100
+    type: MTA100
+    subtype: female
+    manufacturer: TE
+
+  - &co_mta100_2
+    <<: *co_mta100
+    pincount: 2
+    mpn: 3-643814-2
+    image:
+      src: resources/mta100-te-3-643814-2.jpg
+
+  - &co_mta100_3
+    <<: *co_mta100
+    pincount: 3
+    mpn: 3-643814-3
+    image:
+      src: resources/mta100-te-3-643814-3.jpg
+
+  - &co_mta100_4
+    <<: *co_mta100
+    pincount: 4
+    mpn: 3-643814-4
+    image:
+      src: resources/mta100-te-3-643814-4.jpg
+
+  - &co_mta100_6
+    <<: *co_mta100
+    pincount: 6
+    mpn: 3-643814-6
+    image:
+      src: resources/mta100-te-3-643814-6.jpg
+
+  - &co_mta100_7
+    <<: *co_mta100
+    pincount: 7
+    mpn: 3-643814-7
+    image:
+      src: resources/mta100-te-3-643814-7.jpg
+
+  - &co_mta100_8
+    <<: *co_mta100
+    pincount: 8
+    mpn: 3-643814-8
+    image:
+      src: resources/mta100-te-3-643814-8.jpg
+
+  # HDMI
+
+  - &co_hdmi
+    type: Generic HDMI connector
+    pincount: 1 #simplified
+    image:
+      src: resources/hdmi.jpg
+
+  # RJ45
+
+  - &co_rj45
+    type: Generic RJ45 connector
+    pincount: 1 #simplified
+    image:
+      src: resources/rj45.jpg
+
+  # Fan
+
+  - &co_fan # this is not really a connector but the wire terminates there so...
+    type: Sunon MF35100V1-G99-A
+    pincount: 3
+    image:
+      src: resources/fan.jpg
+
+  ##
+  # Cables
+  ##
+
+  # Power
+
+  - &cb_pw
+    type: 2-wire stranded
+    gauge: 0.75 mm2
+    wirecount: 2
+
+  # USB
+
+  - &cb_usb2
+    type: USB 2
+    gauge: 28 AWG
+    colors: [PK] # [RD, WH, GN, BK]
+
+  - &cb_usb3
+    type: USB 3
+    gauge: 28 AWG
+    colors: [PK] # [RD, WH, GN, BK, BU, YE, BK, VT, OG, WH]
+
+
+  # HDMI
+
+  - &cb_hdmi
+    type: HDMI
+    gauge: 28 AWG
+    colors: [PK] # simplified to 1 cable
+
+  # UTP
+
+  - &cb_utp
+    type: UTP
+    gauge: 28 AWG
+    colors: [PK] # simplified to 1 cable
+
+  # Signal
+
+  - &cb_sig
+    gauge: 30 AWG
+
+  - &cb_sig2
+    <<: *cb_sig
+    type: 2-wire signal cable
+    wirecount: 2
+
+  - &cb_sig3
+    <<: *cb_sig
+    type: 3-wire signal cable
+    wirecount: 3
+
+  - &cb_sig4
+    <<: *cb_sig
+    type: 4-wire signal cable
+    wirecount: 4
+
+  - &cb_sig6
+    <<: *cb_sig
+    type: 6-wire signal cable
+    wirecount: 6
+
+  - &cb_sig7
+    <<: *cb_sig
+    type: 7-wire signal cable
+    wirecount: 7
+
+  - &cb_sig8
+    <<: *cb_sig
+    type: 8-wire signal cable
+    wirecount: 8
+
+
+####
+####
+## Connectors
+####
+####
+
+connectors:
+
+  ##
+  # Panel
+  ##
+
+  PNL-PW:
+    <<: *co_pwr_barrel
+    notes: "Power input, back panel"
+
+  PNL-HDMI:
+    <<: *co_hdmi
+    notes: "HDMI loop-out, back panel (into a Neutrik)"
+
+  ##
+  # Power board
+  ##
+
+  PWB-IN:
+    <<: *co_pwr_naked
+    notes: "Power input on the power board"
+
+  PWB-OUT-NSW:
+    <<: *co_mta100_2
+    notes: "Power output to the switch"
+
+  PWB-OUT-DSP:
+    <<: *co_mta100_2
+    notes: "Power output to the display"
+
+  PWB-OUT-RXA:
+    <<: *co_pwr_naked
+    notes: "Power output to the Radxa"
+
+  PWB-CTL:
+    <<: *co_mta100_4
+    notes: "Control wire to the Radxa"
+
+  PWB-USB3-PT:
+    <<: *co_usb3_micro_b
+    notes: "USB 3 passthrough"
+
+  PWB-FAN-1:
+    <<: *co_mta100_3
+    notes: "Control and power for fan 1"
+
+  PWB-FAN-2:
+    <<: *co_mta100_3
+    notes: "Control and power for fan 2"
+
+  PWB-FAN-3:
+    <<: *co_mta100_3
+    notes: "Control and power for fan 3"
+
+  PWB-FAN-4:
+    <<: *co_mta100_3
+    notes: "Control and power for fan 4"
+
+  ##
+  # Radxa
+  ##
+
+  RXA-PW:
+    <<: *co_usb3_c
+    pincount: 2
+    notes: "Power in via USB-C"
+
+  RXA-CTL-PWB:
+    <<: *co_mta100_4
+    notes: "Control wire to the power board (hat)"
+
+  RXA-USB3-1:
+    <<: *co_usb3_a
+    notes: "USB 3 passthrough via power board"
+
+  RXA-USB3-2:
+    <<: *co_usb3_a
+    notes: "USB 3 image capture"
+
+  RXA-USB2-1:
+    <<: *co_usb2_a
+    notes: "USB 2 audio"
+
+  RXA-HDMI:
+    <<: *co_hdmi
+    notes: "HDMI loop-out"
+
+  RXA-CTL-NSW:
+    <<: *co_mta100_6
+    notes: "Control wire to the network switch (hat)"
+
+  RXA-SPI-DSP:
+    <<: *co_mta100_7
+    notes: "SPI to the display (hat)"
+
+  RXA-NW:
+    <<: *co_rj45
+    notes: "SPI to the display (hat)"
+
+  ##
+  # Network switch
+  ##
+
+  NSW-PW:
+    <<: *co_mta100_2
+    notes: "Switch power input"
+
+  NSW-CTL:
+    <<: *co_mta100_6
+    notes: "Control wire to the Radxa"
+
+  NSW-RXA:
+    <<: *co_rj45
+    notes: "Network to the Radza"
+
+
+  ##
+  # Display
+  ##
+
+  DSP-PW:
+    <<: *co_mta100_2
+    notes: "Display power input"
+
+  DSP-SPI-RXA:
+    <<: *co_mta100_7
+    notes: "Display SPI (radxa)"
+
+  DSP-SPI-AUD:
+    <<: *co_mta100_8
+    notes: "Display SPI (audio)"
+
+
+  ##
+  # Onlyfans
+  ##
+
+  FAN-1:
+    <<: *co_fan
+
+  FAN-2:
+    <<: *co_fan
+
+  FAN-3:
+    <<: *co_fan
+
+  FAN-4:
+    <<: *co_fan
+
+  ##
+  # HDMI capture (Hagibis)
+  ##
+
+  HGB-USB:
+    <<: *co_usb3_a
+
+  ##
+  # Audio
+  ##
+
+  AUD-USB:
+    <<: *co_usb2_micro_b
+
+  AUD-SPI-DSP:
+    <<: *co_mta100_8
+
+
+####
+####
+## Cables
+####
+####
+
+cables:
+  CB1:
+    <<: *cb_pw
+
+  CB2:
+    <<: *cb_sig2
+
+  CB3:
+    <<: *cb_sig2
+
+  CB4:
+    <<: *cb_sig4
+
+  CB5:
+    <<: *cb_pw
+    colors: [RD, BK]
+    notes: Thickest wire possible, only power, no data
+
+  CB6:
+    <<: *cb_usb3
+    notes: Simplified; actually standard USB3
+
+  CB7:
+    <<: *cb_sig3
+
+  CB8:
+    <<: *cb_sig3
+
+  CB9:
+    <<: *cb_sig3
+
+  CB10:
+    <<: *cb_sig3
+
+  CB11:
+    <<: *cb_hdmi
+    notes: Simplified; actually standard HDMI
+
+  CB12:
+    <<: *cb_usb3
+    notes: Simplified; actually standard USB3
+
+  CB13:
+    <<: *cb_sig6
+
+  CB14:
+    <<: *cb_sig7
+
+  CB15:
+    <<: *cb_utp
+    notes: Simplified; actually 4-pair UTP
+
+  CB16:
+    <<: *cb_usb2
+    notes: Simplified; actually standard USB2
+
+  CB17:
+    <<: *cb_sig8
+
+
+####
+####
+## Connections
+####
+####
+
+connections:
+  -
+    - PNL-PW: [1-2]
+    - CB1: [1-2]
+    - PWB-IN: [1-2]
+
+  -
+    - PWB-OUT-NSW: [1-2]
+    - CB2: [1-2]
+    - NSW-PW: [1-2]
+
+  -
+    - PWB-OUT-DSP: [1-2]
+    - CB3: [1-2]
+    - DSP-PW: [1-2]
+
+  -
+    - PWB-CTL: [1-4]
+    - CB4: [1-4]
+    - RXA-CTL-PWB: [1-4]
+
+  -
+    - PWB-OUT-RXA: [1-2]
+    - CB5: [1-2]
+    - RXA-PW: [1-2]
+
+  -
+    - PWB-USB3-PT: 1
+    - CB6: 1
+    - RXA-USB3-1: 1
+
+  -
+    - PWB-FAN-1: [1-3]
+    - CB7: [1-3]
+    - FAN-1: [1-3]
+
+  -
+    - PWB-FAN-2: [1-3]
+    - CB8: [1-3]
+    - FAN-2: [1-3]
+
+  -
+    - PWB-FAN-3: [1-3]
+    - CB9: [1-3]
+    - FAN-3: [1-3]
+
+  -
+    - PWB-FAN-4: [1-3]
+    - CB10: [1-3]
+    - FAN-4: [1-3]
+
+  -
+    - RXA-HDMI: 1
+    - CB11: 1
+    - PNL-HDMI: 1
+
+  -
+    - RXA-USB3-2: 1
+    - CB12: 1
+    - HGB-USB: 1
+
+  -
+    - RXA-CTL-NSW: [1-6]
+    - CB13: [1-6]
+    - NSW-CTL: [1-6]
+
+  -
+    - RXA-SPI-DSP: [1-7]
+    - CB14: [1-7]
+    - DSP-SPI-RXA: [1-7]
+
+  -
+    - RXA-NW: 1
+    - CB15: 1
+    - NSW-RXA: 1
+
+  -
+    - RXA-USB2-1: 1
+    - CB16: 1
+    - AUD-USB: 1
+
+  -
+    - AUD-SPI-DSP: [1-8]
+    - CB17: [1-8]
+    - DSP-SPI-AUD: [1-8]
+
+
+####
+####
+## Grouping
+####
+####
+
+tweak:
+  append: |
+    subgraph cluster1 {
+      label="Panel"
+      style=dashed
+      "PNL-PW"
+      "PNL-HDMI"
+    }
+    subgraph cluster2 {
+      label="Power board"
+      style=dashed
+      "PWB-IN"
+      "PWB-OUT-NSW"
+      "PWB-OUT-DSP"
+      "PWB-OUT-RXA"
+      "PWB-CTL"
+      "PWB-USB3-PT"
+      "PWB-FAN-1"
+      "PWB-FAN-2"
+      "PWB-FAN-3"
+      "PWB-FAN-4"
+    }
+    subgraph cluster3 {
+      label="Network switch"
+      style=dashed
+      "NSW-PW"
+      "NSW-CTL"
+      "NSW-RXA"
+    }
+    subgraph cluster4 {
+      label="Display"
+      style=dashed
+      "DSP-PW"
+      "DSP-SPI-RXA"
+      "DSP-SPI-AUD"
+    }
+    subgraph cluster5 {
+      label="Radxa"
+      style=dashed
+      "RXA-CTL-PWB"
+      "RXA-PW"
+      "RXA-NW"
+      "RXA-USB3-1"
+      "RXA-USB3-2"
+      "RXA-USB2-1"
+      "RXA-HDMI"
+      "RXA-CTL-NSW"
+      "RXA-SPI-DSP"
+    }
+    subgraph cluster6 {
+      label="Fans"
+      style=dashed
+      "FAN-1"
+      "FAN-2"
+      "FAN-3"
+      "FAN-4"
+    }
+    subgraph cluster7 {
+      label="HDMI capture (Hagibis)"
+      style=dashed
+      "HGB-USB"
+    }
+    subgraph cluster8 {
+      label="Audio board (+teensy)"
+      style=dashed
+      "AUD-USB"
+      "AUD-SPI-DSP"
+    }
