@@ -2217,7 +2217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a786a32-e20c-49ed-9a62-4bd74631a16e")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR039"
 			(at 245.11 101.6 0)
 			(effects
 				(font
@@ -2267,7 +2267,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "#PWR038")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -2515,7 +2515,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1579de00-098f-4501-afb5-f3373cddee62")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR038"
 			(at 229.87 132.08 0)
 			(effects
 				(font
@@ -2566,7 +2566,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "#PWR037")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4129,7 +4129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be0fd785-6ad3-4312-af0d-d1df854fde9e")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR040"
 			(at 245.11 132.08 0)
 			(effects
 				(font
@@ -4180,7 +4180,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4368,7 +4368,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3fd559b-0d1f-4db8-b434-cc18227bf07f")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR036"
 			(at 208.28 57.15 0)
 			(effects
 				(font
@@ -4419,7 +4419,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "#PWR0106")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -4502,7 +4502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e22a8823-5086-4ce8-bd58-acaed23cc4e7")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 229.87 101.6 0)
 			(effects
 				(font
@@ -4552,7 +4552,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
