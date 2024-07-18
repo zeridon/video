@@ -3,4 +3,5 @@
   (lib (name "ics")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/ics.pretty")(options "")(descr ""))
   (lib (name "conn")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/conn.pretty")(options "")(descr ""))
   (lib (name "extra")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/extra.pretty")(options "")(descr ""))
+  (lib (name "Connector_MTA-100")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/mta100/mta100/Connector_MTA-100.pretty")(options "")(descr ""))
 )

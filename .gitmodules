@@ -22,3 +22,6 @@
 [submodule "hardware/firmware/audio_board/vendor/ST7735_t3"]
 	path = hardware/firmware/audio_board/vendor/ST7735_t3
 	url = https://github.com/PaulStoffregen/ST7735_t3
+[submodule "hardware/pcbs/kicad_libs/mta100"]
+	path = hardware/pcbs/kicad_libs/mta100
+	url = https://github.com/MartijnBraam/MTA-100
