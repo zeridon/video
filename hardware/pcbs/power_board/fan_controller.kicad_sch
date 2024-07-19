@@ -1227,9 +1227,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1327,8 +1327,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1347,9 +1347,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1447,8 +1447,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1467,9 +1467,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1543,8 +1543,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1575,6 +1575,10 @@
 	(no_connect
 		(at 137.16 127)
 		(uuid "84a398b8-1e81-4151-938f-fe81541b0b54")
+	)
+	(no_connect
+		(at 137.16 129.54)
+		(uuid "9f5c21a3-6144-45f9-b710-a908c3b45c13")
 	)
 	(no_connect
 		(at 227.33 31.75)
@@ -2282,7 +2286,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10e70e74-88c4-4e64-8b1a-568ff6c3d918")
-		(property "Reference" "J9"
+		(property "Reference" "J8"
 			(at 201.93 83.8199 0)
 			(effects
 				(font
@@ -2368,7 +2372,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "J9")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -2581,7 +2585,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "18aa0a5c-5ee9-407a-932c-f14bd6cc6fde")
-		(property "Reference" "J11"
+		(property "Reference" "J10"
 			(at 201.93 114.2999 0)
 			(effects
 				(font
@@ -2667,7 +2671,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "J11")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -2754,46 +2758,46 @@
 			)
 		)
 		(pin "13"
-			(uuid "6a8695df-baba-44cb-bfc0-9f58c09ccc35")
+			(uuid "6a8695df-baba-44cb-bfc0-9f58c09ccc36")
 		)
 		(pin "8"
-			(uuid "f99e2f32-bae6-4089-8cbb-95ff93f48c4e")
+			(uuid "f99e2f32-bae6-4089-8cbb-95ff93f48c4f")
 		)
 		(pin "9"
-			(uuid "5d0cd9b8-cfd0-4e91-8358-35c581667c74")
+			(uuid "5d0cd9b8-cfd0-4e91-8358-35c581667c75")
 		)
 		(pin "10"
-			(uuid "6eefc7e0-967e-4f54-adbc-fba249af24a0")
+			(uuid "6eefc7e0-967e-4f54-adbc-fba249af24a1")
 		)
 		(pin "2"
 			(uuid "9a1ee319-008d-4d9d-8483-2b5451318379")
 		)
 		(pin "6"
-			(uuid "665af6ad-276a-49b1-88b3-6331e164dd70")
+			(uuid "665af6ad-276a-49b1-88b3-6331e164dd71")
 		)
 		(pin "1"
 			(uuid "75db9626-de56-41ce-a08a-ffaaef6325a3")
 		)
 		(pin "4"
-			(uuid "5dcfe5ee-3465-41f6-8342-8d40309b7498")
+			(uuid "5dcfe5ee-3465-41f6-8342-8d40309b7499")
 		)
 		(pin "12"
-			(uuid "09c04989-d1fb-4cb8-84ef-1dae73f65bfe")
+			(uuid "09c04989-d1fb-4cb8-84ef-1dae73f65bff")
 		)
 		(pin "11"
-			(uuid "484ee5db-1db5-4d4c-adc4-aabec5a0212f")
+			(uuid "484ee5db-1db5-4d4c-adc4-aabec5a02130")
 		)
 		(pin "3"
-			(uuid "325d56ce-bb93-4e25-9552-a46e819ac52e")
+			(uuid "325d56ce-bb93-4e25-9552-a46e819ac52f")
 		)
 		(pin "14"
-			(uuid "f13e9639-df69-44d8-9662-fd7611cd7f4d")
+			(uuid "f13e9639-df69-44d8-9662-fd7611cd7f4e")
 		)
 		(pin "7"
-			(uuid "5a9ca821-b903-4516-bce5-3ea2114eaaf0")
+			(uuid "5a9ca821-b903-4516-bce5-3ea2114eaaf1")
 		)
 		(pin "5"
-			(uuid "4b51201e-4521-4d18-b4f5-8e952ad0eccf")
+			(uuid "4b51201e-4521-4d18-b4f5-8e952ad0ecd0")
 		)
 		(instances
 			(project "power_board"
@@ -3292,7 +3296,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6143a160-e158-40f8-a393-acea58c03180")
-		(property "Reference" "J10"
+		(property "Reference" "J9"
 			(at 201.93 99.0599 0)
 			(effects
 				(font
@@ -3378,7 +3382,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "J10")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -3590,7 +3594,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8bf3613c-078f-4025-8d60-aa0077ff3be4")
-		(property "Reference" "J12"
+		(property "Reference" "J11"
 			(at 201.93 129.5399 0)
 			(effects
 				(font
@@ -3676,7 +3680,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
-					(reference "J12")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -4002,7 +4006,7 @@
 			)
 		)
 		(pin "13"
-			(uuid "6a8695df-baba-44cb-bfc0-9f58c09ccc35")
+			(uuid "6a8695df-baba-44cb-bfc0-9f58c09ccc37")
 		)
 		(pin "8"
 			(uuid "8275f3d7-597d-4166-beda-f2f131d968e2")
@@ -4011,37 +4015,37 @@
 			(uuid "124d5387-97e0-4a96-ac16-4a546764a795")
 		)
 		(pin "10"
-			(uuid "6eefc7e0-967e-4f54-adbc-fba249af24a0")
+			(uuid "6eefc7e0-967e-4f54-adbc-fba249af24a2")
 		)
 		(pin "2"
 			(uuid "0cd92626-a339-430c-a38b-a2027a51efd7")
 		)
 		(pin "6"
-			(uuid "665af6ad-276a-49b1-88b3-6331e164dd70")
+			(uuid "665af6ad-276a-49b1-88b3-6331e164dd72")
 		)
 		(pin "1"
 			(uuid "dfa733ed-b0e7-4014-b6b1-1940eb02d9b3")
 		)
 		(pin "4"
-			(uuid "5dcfe5ee-3465-41f6-8342-8d40309b7498")
+			(uuid "5dcfe5ee-3465-41f6-8342-8d40309b749a")
 		)
 		(pin "12"
-			(uuid "09c04989-d1fb-4cb8-84ef-1dae73f65bfe")
+			(uuid "09c04989-d1fb-4cb8-84ef-1dae73f65c00")
 		)
 		(pin "11"
-			(uuid "484ee5db-1db5-4d4c-adc4-aabec5a0212f")
+			(uuid "484ee5db-1db5-4d4c-adc4-aabec5a02131")
 		)
 		(pin "3"
-			(uuid "325d56ce-bb93-4e25-9552-a46e819ac52e")
+			(uuid "325d56ce-bb93-4e25-9552-a46e819ac530")
 		)
 		(pin "14"
-			(uuid "f13e9639-df69-44d8-9662-fd7611cd7f4d")
+			(uuid "f13e9639-df69-44d8-9662-fd7611cd7f4f")
 		)
 		(pin "7"
-			(uuid "5a9ca821-b903-4516-bce5-3ea2114eaaf0")
+			(uuid "5a9ca821-b903-4516-bce5-3ea2114eaaf2")
 		)
 		(pin "5"
-			(uuid "4b51201e-4521-4d18-b4f5-8e952ad0eccf")
+			(uuid "4b51201e-4521-4d18-b4f5-8e952ad0ecd1")
 		)
 		(instances
 			(project "power_board"

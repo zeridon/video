@@ -223,9 +223,9 @@
 		)
 		(symbol "power:+12V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -323,8 +323,8 @@
 			(symbol "+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+12V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -343,9 +343,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -443,8 +443,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -463,9 +463,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -563,8 +563,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -583,9 +583,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -659,8 +659,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -680,7 +680,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 121.92) (xy 138.43 121.92)
+			(xy 135.89 106.68) (xy 138.43 106.68)
 		)
 		(stroke
 			(width 0)
@@ -701,26 +701,6 @@
 	(wire
 		(pts
 			(xy 138.43 104.14) (xy 135.89 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5af58a2c-3799-401a-b644-99e7771adb19")
-	)
-	(wire
-		(pts
-			(xy 138.43 111.76) (xy 135.89 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e4bfaab-64fc-47e6-a087-308963f0fc2d")
-	)
-	(wire
-		(pts
-			(xy 138.43 119.38) (xy 135.89 119.38)
 		)
 		(stroke
 			(width 0)
@@ -750,26 +730,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 106.68) (xy 138.43 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4762510-01de-4a7b-b58a-18880a6c5a62")
-	)
-	(wire
-		(pts
-			(xy 135.89 114.3) (xy 138.43 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d040bc32-d101-44ca-b90e-849b081f4f7c")
-	)
-	(wire
-		(pts
 			(xy 135.89 99.06) (xy 138.43 99.06)
 		)
 		(stroke
@@ -780,187 +740,6 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 135.89 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09aa0be9-5f4e-42a0-be93-fdae9874809d")
-		(property "Reference" "#PWR0109"
-			(at 139.7 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 132.08 119.3799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59b957a1-9f2d-4f49-a41e-99c54a29dc31")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "conn:Screw_Terminal_01x02")
-		(at 143.51 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0bea5127-0877-498f-bcf0-fc78b1c8035e")
-		(property "Reference" "J18"
-			(at 152.4 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MTA100_02"
-			(at 143.51 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" "3V3 OUT"
-			(at 152.4 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin1" "3V3"
-			(at 146.05 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin2" "GND"
-			(at 146.05 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-2?qs=%2F35zJ5USjomRu3EJQJgZCQ%3D%3D"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "640456-2"
-			(at 143.51 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "00572b67-525e-4a8b-bba8-389feae1aa9c")
-		)
-		(pin "2"
-			(uuid "ae7bf9ef-8136-4ff0-ab4d-f4d35dfa47cd")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "J18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
 		(at 135.89 104.14 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -968,8 +747,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1cde6c1a-a4b3-4f60-8721-d753acd87b07")
-		(property "Reference" "#PWR0105"
+		(uuid "09aa0be9-5f4e-42a0-be93-fdae9874809d")
+		(property "Reference" "#PWR0104"
 			(at 139.7 104.14 0)
 			(effects
 				(font
@@ -1015,12 +794,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2a27e67c-c4a4-4125-9a66-cb1263788276")
+			(uuid "59b957a1-9f2d-4f49-a41e-99c54a29dc31")
 		)
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0105")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 			)
@@ -1036,7 +815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fbea3ac-11fa-4247-9cbe-9c2cfd203ce8")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR0101"
 			(at 129.54 91.44 0)
 			(effects
 				(font
@@ -1087,7 +866,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0102")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
@@ -1103,7 +882,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37bfc0dc-d60e-455c-976e-10c3c3b2854f")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0102"
 			(at 139.7 96.52 0)
 			(effects
 				(font
@@ -1154,188 +933,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "conn:Screw_Terminal_01x02")
-		(at 143.51 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4189050e-6ceb-455d-b515-47c6cea780e6")
-		(property "Reference" "J19"
-			(at 152.4 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MTA100_02"
-			(at 143.51 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_MTA-100:mta100_01x2_P2.54_647050-2"
-			(at 143.51 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 143.51 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 143.51 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" "5V OUT"
-			(at 152.4 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin1" "5V"
-			(at 146.05 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin2" "GND"
-			(at 146.05 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-2?qs=%2F35zJ5USjomRu3EJQJgZCQ%3D%3D"
-			(at 143.51 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "640456-2"
-			(at 143.51 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef660caf-18f3-43c4-a55b-1c0fab9e1637")
-		)
-		(pin "2"
-			(uuid "4cb6c210-5c9c-4cc8-98f9-ebe5a31f7bb0")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "J19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 135.89 114.3 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57b8e5e3-181c-45cc-af71-f4036ecadaa5")
-		(property "Reference" "#PWR0108"
-			(at 129.54 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec08229f-7ed7-4780-9074-4bac8a95b824")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0108")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -1351,7 +949,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5faa1500-2de2-4222-ad28-653ef955bc62")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR0103"
 			(at 129.54 99.06 0)
 			(effects
 				(font
@@ -1402,7 +1000,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0104")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -1410,7 +1008,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 121.92 270)
+		(at 135.89 106.68 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1418,8 +1016,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60676692-7a38-45ab-9e3e-f53c194ae67e")
-		(property "Reference" "#PWR0110"
-			(at 129.54 121.92 0)
+		(property "Reference" "#PWR0105"
+			(at 129.54 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1026,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 121.92 0)
+			(at 130.81 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,7 +1035,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 121.92 0)
+			(at 135.89 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,7 +1044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 121.92 0)
+			(at 135.89 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1455,7 +1053,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 121.92 0)
+			(at 135.89 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1469,7 +1067,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0110")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -1484,7 +1082,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "70e3e3df-837b-4f20-bbee-ad073b5ed455")
-		(property "Reference" "J16"
+		(property "Reference" "J15"
 			(at 152.4 88.9 0)
 			(effects
 				(font
@@ -1583,74 +1181,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "J16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 135.89 106.68 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4df8854-8043-488c-ad30-0cc059162d03")
-		(property "Reference" "#PWR0106"
-			(at 129.54 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22e03dcc-bee6-4239-9c23-d9847ecc6346")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0106")
+					(reference "J15")
 					(unit 1)
 				)
 			)
@@ -1665,7 +1196,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "abda72b6-98b2-4d26-abdf-bc1c9f5cf924")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR0100"
 			(at 139.7 88.9 0)
 			(effects
 				(font
@@ -1715,7 +1246,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0101")
+					(reference "#PWR0100")
 					(unit 1)
 				)
 			)
@@ -1723,15 +1254,15 @@
 	)
 	(symbol
 		(lib_id "conn:Screw_Terminal_01x02")
-		(at 143.51 119.38 0)
+		(at 143.51 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b65f1e06-37d9-423d-bf06-b3c6e1048544")
-		(property "Reference" "J20"
-			(at 152.4 119.38 0)
+		(property "Reference" "J17"
+			(at 152.4 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1740,7 +1271,7 @@
 			)
 		)
 		(property "Value" "MTA100_02"
-			(at 143.51 124.46 0)
+			(at 143.51 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1748,8 +1279,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "conn:TerminalBlock_4Ucon_1x02_P3.50mm_Vertical"
-			(at 143.51 119.38 0)
+		(property "Footprint" "Connector_MTA-100:mta100_01x2_P2.54_647050-2"
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,7 +1289,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 119.38 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1767,7 +1298,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 143.51 119.38 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,7 +1307,7 @@
 			)
 		)
 		(property "Purpose" "3V3 OUT"
-			(at 152.4 121.92 0)
+			(at 152.4 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1785,7 +1316,7 @@
 			)
 		)
 		(property "Purpose Pin1" "3V3"
-			(at 146.05 119.38 0)
+			(at 146.05 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,7 +1325,7 @@
 			)
 		)
 		(property "Purpose Pin2" "GND"
-			(at 146.05 121.92 0)
+			(at 146.05 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1803,7 +1334,7 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-2?qs=%2F35zJ5USjomRu3EJQJgZCQ%3D%3D"
-			(at 143.51 119.38 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1812,7 +1343,7 @@
 			)
 		)
 		(property "Part" "640456-2"
-			(at 143.51 119.38 0)
+			(at 143.51 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,7 +1360,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "J20")
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -1844,7 +1375,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6eb9cc1-2fd2-4df7-aea3-43ef5b7384e6")
-		(property "Reference" "J17"
+		(property "Reference" "J16"
 			(at 152.4 96.52 0)
 			(effects
 				(font
@@ -1943,74 +1474,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "J17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 135.89 111.76 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ea362f8e-9790-47c6-811a-eb9c7922e433")
-		(property "Reference" "#PWR0107"
-			(at 139.7 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 132.08 111.7599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "09f7a6df-04df-4c3e-b3fd-6db649e7a5bf")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/eb6931d2-84dc-4c44-a536-817b4a1688b3"
-					(reference "#PWR0107")
+					(reference "J16")
 					(unit 1)
 				)
 			)

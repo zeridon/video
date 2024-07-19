@@ -370,9 +370,9 @@
 		)
 		(symbol "power:+12V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -470,8 +470,8 @@
 			(symbol "+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+12V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -490,9 +490,9 @@
 		)
 		(symbol "power:+3.3V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -590,8 +590,8 @@
 			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -610,9 +610,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -710,8 +710,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -730,9 +730,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -806,8 +806,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -838,12 +838,6 @@
 		(uuid "22115d0c-0028-4584-b0ad-fea8bbbd2a8e")
 	)
 	(junction
-		(at 81.28 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a721454-b61d-43a0-9ad7-b990eeef22c3")
-	)
-	(junction
 		(at 181.61 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -860,12 +854,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8cf67033-7272-4cbe-9123-43564373fdb0")
-	)
-	(junction
-		(at 83.82 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99b768e7-6038-4b97-b07c-ddf91a6e983b")
 	)
 	(junction
 		(at 96.52 106.68)
@@ -886,26 +874,10 @@
 		(uuid "ca423709-4bf5-4272-8bc9-15d4d6ebc009")
 	)
 	(junction
-		(at 78.74 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de476a42-92d6-4434-ad95-64d380bea7c5")
-	)
-	(junction
 		(at 106.68 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e96aec69-b4cb-49cf-aa59-d97d4929e912")
-	)
-	(wire
-		(pts
-			(xy 81.28 86.36) (xy 101.6 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "037e803b-5175-4080-82b7-261def439635")
 	)
 	(wire
 		(pts
@@ -929,7 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 83.82) (xy 78.74 83.82)
+			(xy 72.39 83.82) (xy 106.68 83.82)
 		)
 		(stroke
 			(width 0)
@@ -976,26 +948,6 @@
 			(type default)
 		)
 		(uuid "121544f2-e4ae-4bff-bfec-20c8363a079e")
-	)
-	(wire
-		(pts
-			(xy 72.39 116.84) (xy 83.82 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1389d097-ad4c-4269-b7c6-c4d2e662f474")
-	)
-	(wire
-		(pts
-			(xy 72.39 119.38) (xy 73.66 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16007b99-da76-4559-be1f-5d16cd7b3209")
 	)
 	(wire
 		(pts
@@ -1089,7 +1041,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 86.36) (xy 81.28 86.36)
+			(xy 72.39 86.36) (xy 101.6 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1119,16 +1071,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 111.76) (xy 78.74 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73ba7cf6-db1a-48a8-8b5a-12ee6370598e")
-	)
-	(wire
-		(pts
 			(xy 176.53 139.7) (xy 176.53 124.46)
 		)
 		(stroke
@@ -1136,16 +1078,6 @@
 			(type default)
 		)
 		(uuid "76cc189b-f576-490e-8b0d-0b2c88a977b8")
-	)
-	(wire
-		(pts
-			(xy 72.39 111.76) (xy 78.74 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77915632-e3b3-43f8-a082-6a8c1d1150ba")
 	)
 	(wire
 		(pts
@@ -1179,16 +1111,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 114.3) (xy 81.28 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81bf447d-10c1-4426-b400-7c4626a8b0cc")
-	)
-	(wire
-		(pts
 			(xy 101.6 63.5) (xy 101.6 66.04)
 		)
 		(stroke
@@ -1199,16 +1121,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 83.82) (xy 106.68 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ea51381-dc50-44b0-9125-8d58a85dcb07")
-	)
-	(wire
-		(pts
 			(xy 101.6 104.14) (xy 130.81 104.14)
 		)
 		(stroke
@@ -1216,16 +1128,6 @@
 			(type default)
 		)
 		(uuid "93e97cb9-115d-45f3-a77a-8dbd1cfa00de")
-	)
-	(wire
-		(pts
-			(xy 81.28 114.3) (xy 81.28 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d22c6e2-0b9f-45b8-af31-699b1e1cc294")
 	)
 	(wire
 		(pts
@@ -1266,26 +1168,6 @@
 			(type default)
 		)
 		(uuid "af12b613-68cc-4da6-b0c2-204420085193")
-	)
-	(wire
-		(pts
-			(xy 83.82 88.9) (xy 96.52 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af54de9c-072d-499d-ac41-0856b8f8f02d")
-	)
-	(wire
-		(pts
-			(xy 83.82 116.84) (xy 83.82 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b0f1bb6c-ea78-479c-92b9-f03f3451d302")
 	)
 	(wire
 		(pts
@@ -1389,7 +1271,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 88.9) (xy 83.82 88.9)
+			(xy 72.39 88.9) (xy 96.52 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1410,8 +1292,7 @@
 	)
 	(symbol
 		(lib_id "conn:Conn_01x04")
-		(at 67.31 86.36 0)
-		(mirror y)
+		(at 67.31 88.9 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1419,7 +1300,7 @@
 		(dnp no)
 		(uuid "342168d2-0f50-4186-a251-27b160258920")
 		(property "Reference" "J1"
-			(at 62.23 81.28 0)
+			(at 62.23 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1309,7 @@
 			)
 		)
 		(property "Value" "Header_01x04"
-			(at 62.23 93.98 0)
+			(at 62.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,7 +1318,7 @@
 			)
 		)
 		(property "Footprint" "Connector_MTA-100:mta100_01x4_P2.54_647050-4"
-			(at 67.31 86.36 0)
+			(at 67.31 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,7 +1327,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 86.36 0)
+			(at 67.31 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1455,7 +1336,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 86.36 0)
+			(at 67.31 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1464,41 +1345,14 @@
 			)
 		)
 		(property "Purpose" "I2C CTRL"
-			(at 62.23 93.98 0)
+			(at 62.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Purpose Pin1" "SDA"
-			(at 67.31 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin2" "SCL"
-			(at 67.31 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin3" "~{INT}"
-			(at 67.31 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin4" "GND"
+		(property "Purpose Pin1" "GND"
 			(at 67.31 91.44 0)
 			(effects
 				(font
@@ -1507,8 +1361,35 @@
 				(justify left)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
+		(property "Purpose Pin2" "~{INT}"
+			(at 67.31 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin3" "SCL"
 			(at 67.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin4" "SDA"
+			(at 67.31 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
+			(at 67.31 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,7 +1398,7 @@
 			)
 		)
 		(property "Part" "640456-4"
-			(at 67.31 86.36 0)
+			(at 67.31 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1769,7 +1650,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "873c45fc-994f-4532-97ab-a509cf810741")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 170.18 60.96 0)
 			(effects
 				(font
@@ -1819,7 +1700,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -1835,7 +1716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0ecb391-be58-45a0-ade6-d982b707a218")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 170.18 66.04 0)
 			(effects
 				(font
@@ -1886,7 +1767,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -1902,7 +1783,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd567609-9144-4e39-b614-0367d1d3392c")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 170.18 63.5 0)
 			(effects
 				(font
@@ -1953,145 +1834,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "conn:Conn_01x04")
-		(at 67.31 114.3 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "de3affd4-37b9-405e-b1d0-1b27182b43fb")
-		(property "Reference" "J2"
-			(at 62.23 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Header_01x04"
-			(at 62.23 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_MTA-100:mta100_01x4_P2.54_647050-4"
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" "I2C AUX"
-			(at 62.23 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Purpose Pin1" "SDA"
-			(at 67.31 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin2" "SCL"
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin3" "~{INT}"
-			(at 67.31 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin4" "GND"
-			(at 67.31 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "640456-4"
-			(at 67.31 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "88419d8a-f4fb-4d90-bdbc-a3dd89969d3e")
-		)
-		(pin "1"
-			(uuid "27a78f05-acea-4ba0-814d-9f3accb139aa")
-		)
-		(pin "2"
-			(uuid "35f5337d-0de2-4a7b-b61c-6caefd1c5ee0")
-		)
-		(pin "3"
-			(uuid "0aab39be-ecfd-449e-a65f-6713bd28de37")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "J2")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2215,7 +1958,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e024b276-a5bb-49b1-9b8d-b68fa47b127c")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR02"
 			(at 101.6 67.31 0)
 			(effects
 				(font
@@ -2261,73 +2004,6 @@
 		)
 		(pin "1"
 			(uuid "3ffbb68a-b8cb-4f61-a919-9a924650a6fc")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.66 119.38 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e6c14d99-db99-420f-8b40-e96f1a917bca")
-		(property "Reference" "#PWR02"
-			(at 80.01 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 78.74 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48642b5f-1971-449d-b2d3-ad036030868b")
 		)
 		(instances
 			(project "power_board"

@@ -39,7 +39,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 3.81 -1.27 0)
 				(effects
 					(font
@@ -1802,9 +1802,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1878,8 +1878,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2920,7 +2920,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aacd62bf-d907-4305-9f89-f940db468c71")
-		(property "Reference" "J5"
+		(property "Reference" "J4"
 			(at 261.62 92.71 0)
 			(effects
 				(font
@@ -3009,19 +3009,19 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/32f9baea-32bc-4a84-b83a-18c67cc6248e"
-					(reference "J5")
+					(reference "J4")
 					(unit 1)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/5f362cd5-d351-4250-994a-9f336837035c"
-					(reference "J6")
+					(reference "J5")
 					(unit 1)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/6373063e-1125-40d9-b0ec-3e2cb2886aea"
-					(reference "J7")
+					(reference "J6")
 					(unit 1)
 				)
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/bdb69c9c-123a-4faa-b5c1-7130aac5ebc2"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -3037,7 +3037,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aef70947-7e80-4070-9906-b1fd54e36fee")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR011"
 			(at 179.07 72.39 0)
 			(effects
 				(font
@@ -3968,7 +3968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8761c16-7726-49a1-a1fc-b1a6a4f0d308")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR010"
 			(at 78.74 120.65 0)
 			(effects
 				(font
