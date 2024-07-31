@@ -413,18 +413,23 @@ setup()
 	AudioMemory(64);
 	reset_state();
 
+	uint8_t adcGain = 0;
+
 	sgtl5000_1.enable();
 	sgtl5000_1.inputSelect(AUDIO_INPUT_LINEIN);
 	sgtl5000_1.volume(0.5);
-	sgtl5000_1.lineInLevel(0, 0);
+	sgtl5000_1.lineOutLevel(13);
+	sgtl5000_1.lineInLevel(adcGain, adcGain);
 	sgtl5000_1.adcHighPassFilterDisable();
+	sgtl5000_1.muteHeadphone();
 
 	sgtl5000_2.setWire(1);
 
 	sgtl5000_2.enable();
 	sgtl5000_2.inputSelect(AUDIO_INPUT_LINEIN);
 	sgtl5000_2.volume(0.5);
-	sgtl5000_2.lineInLevel(0, 0);
+	sgtl5000_2.lineOutLevel(13);
+	sgtl5000_2.lineInLevel(adcGain, adcGain);
 	sgtl5000_2.adcHighPassFilterDisable();
 
 	slip.begin(115200);
@@ -433,12 +438,35 @@ setup()
 float
 rmsToDb(float rms_in)
 {
-	// -40 - +7
-	float dB = 20.0f * log10f(rms_in * 2.0f) + 6.0f;
+	// 0.64 == +4 dBu
+	// 0.57 == +2 dBu
+	// 0.47 = 0 dBu
+	// 0.37 = -2 dBu
+	// 0.3  = -4 dBu
+	// 0.24 = -6 dBu
+	// 0.19 = -8 dBu
+	// 0.15 = -10 dBu
+	// 0.12 = -12 dBu
+	// 0.09 = -14 dBu
+	// 0.07 = -16 dBu
+	// 0.06 = -18 dBu
+	// 0.048 = -20 dBu
+	// 0.037 = -22 dBu
+
+	float Vrms = rms_in * 1.648f;
+	float dB = 20.0f * log10f(Vrms / 0.775f);
 	return dB;
 }
 
+float
+DbtoLevel(float db)
+{
+	float e = 2.71828f;
+	return 0.79306f * powf(e, db * 0.0527087f);
+}
+
 float levels_rms[12];
+float levels_smooth[12];
 float levels_peak[12];
 
 #ifdef DISPLAY
@@ -494,6 +522,8 @@ loop()
 	if (rms1.available()) {
 		for (int i = 0; i < 12; i++) {
 			temp = ent_rms[i]->read();
+			levels_smooth[i] = ((levels_smooth[i] * 9) + temp) / 10;
+			temp = levels_smooth[i];
 			// VU meter drains slowly after a peak
 			if (temp < levels_rms[i]) {
 				levels_rms[i] *= 0.97;
@@ -524,7 +554,7 @@ loop()
 				display.drawString(channel_info[i].label, 5 + ((i % 6) * 12), offset + (SCREEN_HEIGHT / 2) - 9);
 			}
 			drawMeter(6 + (12 * (i % 6)), offset + 1, 10, (SCREEN_HEIGHT / 2) - 13,
-				(rmsToDb(levels_rms[i]) + 40.0f) / 47.0f);
+				DbtoLevel(rmsToDb(levels_rms[i])));
 
 		}
 		if (last_draw < (millis() - 16)) {
