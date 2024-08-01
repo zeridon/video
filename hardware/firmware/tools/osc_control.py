@@ -65,6 +65,17 @@ def main():
 
     client = SLIPClient(args.device, 1152000)
 
+    for ch in range(0, 6):
+        message = OscMessageBuilder(f"/ch/{ch}/config/name").build()
+        client.send(message)
+        response = client.receive()
+        inputs[ch] = response.params[0]
+    for ch in range(0, 6):
+        message = OscMessageBuilder(f"/bus/{ch}/config/name").build()
+        client.send(message)
+        response = client.receive()
+        outputs[ch] = response.params[0]
+
     if args.set is not None:
         for change in args.set:
             crosspoint, gain = change.split(':', maxsplit=1)
