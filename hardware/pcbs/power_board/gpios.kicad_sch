@@ -3455,7 +3455,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
+		(property "Footprint" "conn:PinHeader_2x06_P2.54mm_Vertical"
 			(at 189.23 81.788 0)
 			(effects
 				(font
@@ -3602,7 +3602,7 @@
 				(justify right)
 			)
 		)
-		(property "Purpose" "Header"
+		(property "Purpose" "GPIOs"
 			(at 201.295 91.44 0)
 			(effects
 				(font

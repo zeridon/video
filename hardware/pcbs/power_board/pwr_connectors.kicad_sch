@@ -1315,7 +1315,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "3V3"
+		(property "Purpose Pin1" "+3.3V"
 			(at 146.05 104.14 0)
 			(effects
 				(font
@@ -1429,7 +1429,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "5V"
+		(property "Purpose Pin1" "+5V"
 			(at 146.05 96.52 0)
 			(effects
 				(font
