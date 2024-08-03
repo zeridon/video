@@ -258,7 +258,7 @@
 				)
 			)
 		)
-		(symbol "Connector_Audio:NC3FAH1"
+		(symbol "Connector_Audio:NC3FAH2"
 			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -271,7 +271,7 @@
 					)
 				)
 			)
-			(property "Value" "NC3FAH1"
+			(property "Value" "NC3FAH2"
 				(at 0 6.35 0)
 				(effects
 					(font
@@ -279,7 +279,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Connector_Audio:Jack_XLR_Neutrik_NC3FAH1_Horizontal"
+			(property "Footprint" "Connector_Audio:Jack_XLR_Neutrik_NC3FAH2_Horizontal"
 				(at 0 0 0)
 				(effects
 					(font
@@ -288,7 +288,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.neutrik.com/en/product/nc3fah1"
+			(property "Datasheet" "https://www.neutrik.com/en/product/nc3fah2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -297,7 +297,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "A Series, 3 pole female XLR receptacle, grounding: mating connector shell to pin1 and front panel, horizontal PCB mount"
+			(property "Description" "A Series, 3 pole female XLR receptacle, grounding: separate ground contact to mating connector shell and front panel, horizontal PCB mount"
 				(at 0 0 0)
 				(effects
 					(font
@@ -324,7 +324,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NC3FAH1_0_1"
+			(symbol "NC3FAH2_0_1"
 				(circle
 					(center -3.556 0)
 					(radius 1.016)
@@ -350,6 +350,18 @@
 				(polyline
 					(pts
 						(xy -5.08 0) (xy -4.572 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -5.08) (xy -2.54 -4.445)
 					)
 					(stroke
 						(width 0)
@@ -479,6 +491,26 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "NC3FAH2_1_1"
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -780,6 +812,175 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1021,6 +1222,126 @@
 				)
 			)
 		)
+		(symbol "power:+5VA"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5VA"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5VA\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5VA_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5VA_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -1131,6 +1452,12 @@
 		(uuid "1db11b86-0a37-44f2-a772-55d21f79d5c1")
 	)
 	(junction
+		(at 54.61 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b728bf5-1235-4582-bdd8-d7e30d2caa6a")
+	)
+	(junction
 		(at 134.62 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1147,6 +1474,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "698312ea-3587-4876-a74e-9fefa2d6ec99")
+	)
+	(junction
+		(at 62.23 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8819b310-364d-4f13-8e87-ed2fae278b41")
 	)
 	(junction
 		(at 128.27 80.01)
@@ -1250,6 +1583,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 113.03) (xy 54.61 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044a8a01-69e6-4954-8252-6f4f113fb303")
+	)
+	(wire
+		(pts
 			(xy 149.86 68.58) (xy 156.21 68.58)
 		)
 		(stroke
@@ -1267,6 +1610,16 @@
 			(type default)
 		)
 		(uuid "0e9a2a40-8f98-46c0-a78e-6546832e62e4")
+	)
+	(wire
+		(pts
+			(xy 46.99 135.89) (xy 54.61 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ee05b46-0bb8-4044-84ba-a9ecfe7bd273")
 	)
 	(wire
 		(pts
@@ -1290,6 +1643,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 123.19) (xy 54.61 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1481a017-7993-420e-8b24-1d986b19ba2e")
+	)
+	(wire
+		(pts
 			(xy 173.99 59.69) (xy 173.99 69.85)
 		)
 		(stroke
@@ -1307,6 +1670,16 @@
 			(type default)
 		)
 		(uuid "1a8d4b3a-b507-4036-976b-5a5fe77e885f")
+	)
+	(wire
+		(pts
+			(xy 66.04 133.35) (xy 66.04 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c454cef-0c8f-4a2b-931d-d584a728f579")
 	)
 	(wire
 		(pts
@@ -1360,6 +1733,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 115.57) (xy 66.04 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34aa9fe1-27ca-441f-8def-1b846bd4e22b")
+	)
+	(wire
+		(pts
 			(xy 142.24 68.58) (xy 134.62 68.58)
 		)
 		(stroke
@@ -1410,6 +1793,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 81.28) (xy 62.23 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "467b6786-fb40-402c-8cc1-bbf3577b09c6")
+	)
+	(wire
+		(pts
 			(xy 148.59 58.42) (xy 156.21 58.42)
 		)
 		(stroke
@@ -1417,6 +1810,16 @@
 			(type default)
 		)
 		(uuid "497654a7-5460-43cf-b7a9-6402635171e0")
+	)
+	(wire
+		(pts
+			(xy 66.04 123.19) (xy 66.04 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5029f220-4cfa-42ff-b6eb-841e998191d3")
 	)
 	(wire
 		(pts
@@ -1490,6 +1893,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 80.01) (xy 69.85 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63c7e52f-5981-41f3-b9a4-b75a1eefff36")
+	)
+	(wire
+		(pts
 			(xy 137.16 133.35) (xy 125.73 133.35)
 		)
 		(stroke
@@ -1537,6 +1950,16 @@
 			(type default)
 		)
 		(uuid "70295938-c3b6-4119-80fc-5caaca62b17c")
+	)
+	(wire
+		(pts
+			(xy 54.61 133.35) (xy 54.61 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72beebc3-1ade-40aa-8a39-a64564622de9")
 	)
 	(wire
 		(pts
@@ -1680,6 +2103,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 81.28) (xy 62.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7765691-ef01-4a09-b78e-b89142f063b4")
+	)
+	(wire
+		(pts
 			(xy 137.16 128.27) (xy 137.16 133.35)
 		)
 		(stroke
@@ -1727,6 +2160,16 @@
 			(type default)
 		)
 		(uuid "bff466e9-3a4c-4081-831d-b6e51c979b95")
+	)
+	(wire
+		(pts
+			(xy 66.04 113.03) (xy 54.61 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0066ec5-5151-4fc1-a0e2-7a2075503d95")
 	)
 	(wire
 		(pts
@@ -1787,6 +2230,16 @@
 			(type default)
 		)
 		(uuid "d16aa60e-130f-466c-a527-ea62426cc03a")
+	)
+	(wire
+		(pts
+			(xy 46.99 138.43) (xy 66.04 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3caa3e6-90f2-49f8-8aa9-75fe9f8c89a5")
 	)
 	(wire
 		(pts
@@ -1890,7 +2343,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 72.39) (xy 62.23 83.82)
+			(xy 62.23 72.39) (xy 62.23 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1930,6 +2383,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 111.76) (xy 54.61 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f64784c1-0861-4db7-93f2-d93b4dc6a804")
+	)
+	(wire
+		(pts
 			(xy 173.99 77.47) (xy 173.99 69.85)
 		)
 		(stroke
@@ -1958,6 +2421,18 @@
 		)
 		(uuid "df916dac-8f5f-4916-a841-7f770761fdd3")
 	)
+	(hierarchical_label "LED2"
+		(shape input)
+		(at 46.99 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6c40846b-9443-4ce8-87c6-8d58d93ed817")
+	)
 	(hierarchical_label "OUTPUT"
 		(shape output)
 		(at 223.52 80.01 0)
@@ -1969,6 +2444,18 @@
 			(justify left)
 		)
 		(uuid "bcf80e66-22d4-43a8-acc5-b150abbb3586")
+	)
+	(hierarchical_label "LED1"
+		(shape input)
+		(at 46.99 135.89 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c15a0353-7118-4f70-9e81-9c79ec5ecfe9")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2041,15 +2528,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 10kΩ 0603"
-			(at 113.03 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "0a99ddcf-d265-4304-aa9f-b1c7ec527ab4")
 		)
@@ -2068,6 +2546,84 @@
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
 					(reference "R59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 54.61 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "2d5c2b03-a393-4f8a-a2a4-98112d598f7a")
+		(property "Reference" "R15"
+			(at 57.15 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 57.15 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 52.832 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 54.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9dc4ea82-ba70-44a3-9c5d-6c93997ebe14")
+		)
+		(pin "2"
+			(uuid "2dc5349a-356d-4c29-81de-62c4cd05e93b")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
+					(reference "R15")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
+					(reference "R7")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2136,15 +2692,6 @@
 			)
 		)
 		(property "MPN" "560112116022 "
-			(at 168.91 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "R 22kΩ 0603 "
 			(at 168.91 77.47 0)
 			(effects
 				(font
@@ -2249,15 +2796,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 33nF 16V 0603"
-			(at 212.09 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "0eddf1b8-5043-4397-b1e0-56bd7240a22f")
 		)
@@ -2282,7 +2820,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Audio:NC3FAH1")
+		(lib_id "Connector_Audio:NC3FAH2")
 		(at 72.39 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2292,7 +2830,7 @@
 		(fields_autoplaced yes)
 		(uuid "386bccad-87ed-43c3-8dd2-8295973e1ff6")
 		(property "Reference" "J1"
-			(at 72.39 64.4271 0)
+			(at 72.39 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2300,14 +2838,14 @@
 			)
 		)
 		(property "Value" "NC3FAH1"
-			(at 72.39 66.3481 0)
+			(at 72.39 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Library:Jack_XLR_Neutrik_NC3FAH1_Horizontal"
+		(property "Footprint" "Library:Jack_XLR_Neutrik_NC3FAH2-LR-DAE_Horizontal"
 			(at 72.39 72.39 0)
 			(effects
 				(font
@@ -2316,7 +2854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.neutrik.com/en/product/nc3fah1"
+		(property "Datasheet" "https://www.neutrik.com/en/product/nc3fah2"
 			(at 72.39 72.39 0)
 			(effects
 				(font
@@ -2325,25 +2863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 72.39 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "NC3FAH1"
-			(at 72.39 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/568-NC3FAH1"
+		(property "Description" "A Series, 3 pole female XLR receptacle, grounding: separate ground contact to mating connector shell and front panel, horizontal PCB mount"
 			(at 72.39 72.39 0)
 			(effects
 				(font
@@ -2361,6 +2881,9 @@
 		(pin "3"
 			(uuid "8d732566-6192-4bdd-ae6f-04cab03cd075")
 		)
+		(pin "G"
+			(uuid "d8a91e41-4839-4243-8ff1-a1b52aca347e")
+		)
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
@@ -2373,6 +2896,84 @@
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 66.04 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "41c8a491-d04f-4a31-a249-08db4cc509be")
+		(property "Reference" "R66"
+			(at 68.58 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 68.58 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 64.262 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 66.04 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6ab4fb7-89f1-49bb-a1f3-257c789b5a97")
+		)
+		(pin "2"
+			(uuid "ee727326-fb95-4b78-8e71-1ea50f28b7f1")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
+					(reference "R66")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
+					(reference "R67")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
+					(reference "R68")
 					(unit 1)
 				)
 			)
@@ -2443,15 +3044,6 @@
 			)
 		)
 		(property "MPN" "885012107014"
-			(at 149.86 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "C 10μ 16V 0805"
 			(at 149.86 125.73 0)
 			(effects
 				(font
@@ -2559,6 +3151,80 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 54.61 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "590b1882-574a-4bec-84b4-7fc553fafb5f")
+		(property "Reference" "#PWR039"
+			(at 54.61 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 54.61 108.2581 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 54.61 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a6f4821-47dc-4eee-ba5d-7b989e07d98a")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
+					(reference "#PWR039")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
+					(reference "#PWR040")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 137.16 125.73 0)
 		(unit 1)
@@ -2623,15 +3289,6 @@
 			)
 		)
 		(property "MPN" "885012206046"
-			(at 137.16 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "C 100nF 16V 0603"
 			(at 137.16 125.73 0)
 			(effects
 				(font
@@ -2725,15 +3382,6 @@
 			)
 		)
 		(property "MPN" "560112116023 "
-			(at 146.05 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "R 10kΩ 0603"
 			(at 146.05 68.58 0)
 			(effects
 				(font
@@ -2840,6 +3488,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 66.04 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "71a4ebb6-f84a-4ea0-8f81-4758aa39b4c4")
+		(property "Reference" "D4"
+			(at 69.85 119.6974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 69.85 122.2374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3556c6bd-33e9-4cae-a14b-11b0388a6df2")
+		)
+		(pin "1"
+			(uuid "6a15ddb0-f7fc-41fe-955f-ca6e6e16f24d")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
+					(reference "D4")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
+					(reference "D5")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 101.6 80.01 270)
 		(mirror x)
@@ -2902,15 +3628,6 @@
 			)
 		)
 		(property "MPN" "885012107014"
-			(at 101.6 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "C 10μ 16V 0805"
 			(at 101.6 80.01 0)
 			(effects
 				(font
@@ -3012,15 +3729,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 22kΩ 0603 "
-			(at 168.91 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "eead7668-c441-45ae-af5b-3d412f0107a8")
 		)
@@ -3108,24 +3816,6 @@
 			)
 		)
 		(property "MPN" ""
-			(at 182.88 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "NE5532DR"
-			(at 182.88 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/17010/"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3247,24 +3937,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "NE5532DR"
-			(at 102.87 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/17010/"
-			(at 102.87 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "7"
 			(uuid "bc1a29b2-a257-4efa-8079-fc033bfe06a3")
 		)
@@ -3377,15 +4049,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 22kΩ 0603 "
-			(at 125.73 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "fd08e50d-f838-4dde-a517-f6ec3e89b9d5")
 		)
@@ -3474,15 +4137,6 @@
 			)
 		)
 		(property "MPN" "885012206046"
-			(at 113.03 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "C 100nF 16V 0603"
 			(at 113.03 125.73 0)
 			(effects
 				(font
@@ -3585,15 +4239,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 220Ω 0603"
-			(at 205.74 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "75a1c5a7-0eba-48f6-b78c-73e42f6b8d6b")
 		)
@@ -3688,15 +4333,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 10μ 16V 0805"
-			(at 101.6 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "ac49d7b5-7459-4931-9743-7d39d3508429")
 		)
@@ -3715,6 +4351,84 @@
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
 					(reference "C65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 54.61 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "aaaa14fc-2f32-4922-9bcc-99fa4dd30c20")
+		(property "Reference" "D2"
+			(at 58.42 119.6974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 58.42 122.2374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 54.61 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 54.61 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4be99586-6271-4a96-b584-57b1c2900504")
+		)
+		(pin "1"
+			(uuid "69b471dd-0ebf-4dd6-aa0c-1d1331920f6d")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
+					(reference "D2")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
+					(reference "D1")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -3783,15 +4497,6 @@
 			)
 		)
 		(property "MPN" "885012006023"
-			(at 182.88 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "C 100pF 16V 0603"
 			(at 182.88 59.69 0)
 			(effects
 				(font
@@ -3894,15 +4599,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 10μ 16V 0805"
-			(at 196.85 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "860e54f9-655d-4a14-af9e-0e77521ec40b")
 		)
@@ -3921,80 +4617,6 @@
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
 					(reference "C67")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 100.33 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b962401f-b011-47cc-9b11-4208ac4ca3dc")
-		(property "Reference" "#PWR07"
-			(at 100.33 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 100.33 108.2581 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 100.33 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 100.33 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ac6d3a6-1498-46f6-9750-ddc197fd74f0")
-		)
-		(instances
-			(project "audio_board"
-				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
-					(reference "#PWR07")
-					(unit 1)
-				)
-				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
-					(reference "#PWR012")
-					(unit 1)
-				)
-				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4063,15 +4685,6 @@
 			)
 		)
 		(property "MPN" "560112116023 "
-			(at 113.03 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "R 10kΩ 0603"
 			(at 113.03 74.93 0)
 			(effects
 				(font
@@ -4174,15 +4787,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 22kΩ 0603 "
-			(at 120.65 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "f490ea87-4191-4adc-9796-9e04b5af20cf")
 		)
@@ -4270,24 +4874,6 @@
 			)
 		)
 		(property "MPN" ""
-			(at 144.78 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "NE5532DR"
-			(at 144.78 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/17010/"
 			(at 144.78 77.47 0)
 			(effects
 				(font
@@ -4408,15 +4994,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 22kΩ 0603 "
-			(at 128.27 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "3b98937b-5b49-49fe-bf7e-9e7dde0cf04b")
 		)
@@ -4511,15 +5088,6 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 100pF 16V 0603"
-			(at 146.05 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "970cc7f7-3571-4285-b29d-4dc961bfe374")
 		)
@@ -4538,6 +5106,80 @@
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
 					(reference "C63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5VA")
+		(at 100.33 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef9b7c9c-21ba-4c9b-8853-8de1a283abab")
+		(property "Reference" "#PWR07"
+			(at 100.33 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5VA"
+			(at 100.33 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5VA\""
+			(at 100.33 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27ce7c29-435c-493b-b330-53f419cb24d7")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/5b0fac4a-5011-489c-aafe-863d8fba9d37"
+					(reference "#PWR07")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/628f5b7d-7fcf-4615-84f2-b38ac81f35f8"
+					(reference "#PWR012")
+					(unit 1)
+				)
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/6796bf9a-1dbf-4df3-b089-6c673bf91b8f"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4680,15 +5322,6 @@
 			)
 		)
 		(property "MPN" "560112116022 "
-			(at 182.88 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "R 22kΩ 0603 "
 			(at 182.88 69.85 0)
 			(effects
 				(font
