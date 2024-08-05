@@ -2974,7 +2974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "500mA CHG"
+		(property "Purpose" "CHG"
 			(at 255.27 85.09 0)
 			(effects
 				(font

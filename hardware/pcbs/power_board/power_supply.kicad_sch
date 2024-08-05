@@ -6783,7 +6783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal"
+		(property "Footprint" "conn:BarrelJack_Horizontal"
 			(at 45.72 55.626 0)
 			(effects
 				(font

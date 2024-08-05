@@ -2343,6 +2343,24 @@
 				)
 			)
 		)
+		(property "Part" "640456-9"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-9?qs=%2F35zJ5USjokUKOCQQwb90w%3D%3D"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "6923e4b5-b468-4c6e-bb8d-7c7dffb878d9")
 		)

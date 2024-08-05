@@ -36,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -48,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,20 +62,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
-		)
-	)
-	(property "${Purpose}" "USB"
-		(at 8 0 -90)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "b0d61127-f651-40b9-91de-7cb98d0ff75c")
-		(effects
-			(font
-				(size 1.2 1.2)
-				(thickness 0.2)
-			)
-			(justify bottom)
 		)
 	)
 	(zone_connect 2)
@@ -237,6 +227,19 @@
 		)
 		(layer "F.Fab")
 		(uuid "d82aeffb-2a5e-4ae3-9c5b-2b473612e5fc")
+	)
+	(fp_text user "${Purpose}"
+		(at 9.2075 0 90)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "223c0a91-1bd7-48c1-9160-582bf18db145")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify bottom)
+		)
 	)
 	(fp_text user "${REFERENCE}"
 		(at -2.855 0 0)
