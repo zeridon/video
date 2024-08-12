@@ -3771,7 +3771,7 @@
 				)
 			)
 		)
-		(property "Value" "NE5532"
+		(property "Value" "OPA1678 "
 			(at 182.88 87.63 0)
 			(effects
 				(font
@@ -3806,7 +3806,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7426"
+		(property "LCSC" "C192421"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3815,7 +3815,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "595-OPA1678IDR "
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3883,7 +3883,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NE5532"
+		(property "Value" "OPA1678 "
 			(at 101.346 125.222 0)
 			(effects
 				(font
@@ -3919,7 +3919,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7426"
+		(property "LCSC" "C192421"
 			(at 102.87 124.46 0)
 			(effects
 				(font
@@ -3928,7 +3928,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "595-OPA1678IDR "
 			(at 102.87 124.46 0)
 			(effects
 				(font
@@ -4221,7 +4221,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23345"
+		(property "LCSC" "C22962"
 			(at 205.74 80.01 0)
 			(effects
 				(font
@@ -4819,18 +4819,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e266a063-8e79-43cc-9712-551673395d56")
 		(property "Reference" "U3"
-			(at 144.78 87.63 0)
+			(at 143.764 71.628 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "NE5532"
-			(at 144.78 85.09 0)
+		(property "Value" "OPA1678 "
+			(at 150.368 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4864,7 +4863,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7426"
+		(property "LCSC" "C192421"
 			(at 144.78 77.47 0)
 			(effects
 				(font
@@ -4873,7 +4872,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "595-OPA1678IDR "
 			(at 144.78 77.47 0)
 			(effects
 				(font
