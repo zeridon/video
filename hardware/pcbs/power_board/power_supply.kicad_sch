@@ -3277,109 +3277,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 181.61 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0af55739-6202-4c7f-8967-85e8c15bc1c2")
-		(property "Reference" "L2"
-			(at 181.61 78.74 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6.8μH"
-			(at 181.61 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-50xx"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/NRS5030T6R8MMGJ?qs=CNQs48zzdnpAiW9XGfaUKw%3D%3D"
-			(at 181.61 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Info" "2A"
-			(at 181.61 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C222938"
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "NRS5030T6R8MMGJ "
-			(at 181.61 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2548f86d-a495-4f9f-8f01-0d639f05cf7a")
-		)
-		(pin "2"
-			(uuid "583ad9f1-0693-4a6b-acd4-320a86089db5")
-		)
-		(instances
-			(project "power_board"
-				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
-					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 207.01 69.85 0)
 		(unit 1)
@@ -3559,7 +3456,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8μH"
+		(property "Value" "15μH"
 			(at 181.61 123.19 90)
 			(effects
 				(font
@@ -3567,7 +3464,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_NR-50xx"
+		(property "Footprint" "Inductor_SMD:L_Changjiang_FNR6045S"
 			(at 181.61 121.92 0)
 			(effects
 				(font
@@ -3594,7 +3491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TAIYO-YUDEN/NRS5030T6R8MMGJ?qs=CNQs48zzdnpAiW9XGfaUKw%3D%3D"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/49990/"
 			(at 181.61 121.92 90)
 			(effects
 				(font
@@ -3612,7 +3509,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C222938"
+		(property "LCSC" ""
 			(at 181.61 121.92 0)
 			(effects
 				(font
@@ -3621,7 +3518,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "NRS5030T6R8MMGJ "
+		(property "Part" "NRS6045T150MMGK"
 			(at 181.61 121.92 0)
 			(effects
 				(font
@@ -6169,6 +6066,109 @@
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 181.61 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bb28ba01-8770-4014-8705-9ae3e918a009")
+		(property "Reference" "L2"
+			(at 181.61 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "15μH"
+			(at 181.61 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_Changjiang_FNR6045S"
+			(at 181.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/49990/"
+			(at 181.61 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Info" "2A"
+			(at 181.61 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 181.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "NRS6045T150MMGK"
+			(at 181.61 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "22a566ca-3241-4a61-9541-8d5eebdb9c76")
+		)
+		(pin "2"
+			(uuid "12c385d0-de03-4c3f-af85-1fcba2393a68")
+		)
+		(instances
+			(project "power_board"
+				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/61c6854b-d478-45fd-8007-466db156e311"
+					(reference "L2")
 					(unit 1)
 				)
 			)
