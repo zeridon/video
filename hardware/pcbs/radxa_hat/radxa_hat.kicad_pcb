@@ -7,6 +7,9 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(comment 4 "AISLER Project ID: AAMJXCDQ")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -3786,6 +3789,30 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "db8b670d-1968-4201-962a-778b125cdb84")
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 95.25 105.7275 180)
+		(layer "B.SilkS")
+		(uuid "0c0f164d-fa64-4727-ae9d-ed0dc61a0cd1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "FOSDEM radxa hat rev. A"
+		(at 90.4875 107.315 180)
+		(layer "B.SilkS")
+		(uuid "2cd3829e-32eb-4d37-9aae-6031ed52f26b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(segment
 		(start 114.245221 88.9)
