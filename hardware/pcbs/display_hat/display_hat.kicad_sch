@@ -3992,7 +3992,7 @@
 			(uuid "83da570e-cc57-409a-aaa0-242f584d48e1")
 		)
 		(instances
-			(project ""
+			(project "display_hat"
 				(path "/052b9242-0509-4017-8d2f-5b1a55978321"
 					(reference "#FLG01")
 					(unit 1)
@@ -5478,6 +5478,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "Header_2x20"
+			(at 63.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "33"
 			(uuid "d9686ca8-d043-42f3-b64d-944ec9de40e9")
 		)
@@ -5599,7 +5608,7 @@
 			(uuid "de3f4456-4f58-4c2f-9051-09c527aa7155")
 		)
 		(instances
-			(project ""
+			(project "display_hat"
 				(path "/052b9242-0509-4017-8d2f-5b1a55978321"
 					(reference "J1")
 					(unit 1)
@@ -5911,7 +5920,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Header_01x08"
+		(property "Value" "MTA100_08"
 			(at 161.036 109.22 0)
 			(effects
 				(font
@@ -6034,6 +6043,24 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Part" "640456-8"
+			(at 156.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
+			(at 156.21 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -6769,7 +6796,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Header_01x08"
+		(property "Value" "MTA100_08"
 			(at 161.036 55.88 0)
 			(effects
 				(font
@@ -6894,6 +6921,24 @@
 				(justify left)
 			)
 		)
+		(property "Part" "640456-8"
+			(at 156.21 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
+			(at 156.21 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "8dd5cb58-6ef3-428b-83ae-571e42ed5dee")
 		)
@@ -6919,7 +6964,7 @@
 			(uuid "ed819367-b193-4f15-bd68-1621aa834de0")
 		)
 		(instances
-			(project ""
+			(project "display_hat"
 				(path "/052b9242-0509-4017-8d2f-5b1a55978321"
 					(reference "J2")
 					(unit 1)

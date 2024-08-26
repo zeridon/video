@@ -542,11 +542,101 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Info",
+          "name": "Info",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Purpose",
+          "name": "Purpose",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin1",
+          "name": "Purpose Pin1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin2",
+          "name": "Purpose Pin2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin3",
+          "name": "Purpose Pin3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin4",
+          "name": "Purpose Pin4",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin5",
+          "name": "Purpose Pin5",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin6",
+          "name": "Purpose Pin6",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin7",
+          "name": "Purpose Pin7",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purpose Pin8",
+          "name": "Purpose Pin8",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Shop",
+          "name": "Shop",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

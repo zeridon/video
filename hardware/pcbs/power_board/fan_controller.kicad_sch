@@ -4690,7 +4690,7 @@
 			(uuid "2d35081a-113e-4973-b142-41c65344ca08")
 		)
 		(instances
-			(project ""
+			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/f4395b92-97ec-456a-b4c2-238b75f494a2"
 					(reference "J8")
 					(unit 1)

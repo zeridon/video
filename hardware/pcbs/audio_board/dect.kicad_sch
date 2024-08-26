@@ -1030,6 +1030,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "2x Header_1x06"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
 			(uuid "bebd689f-4796-4f3c-8b33-5fd58135afdf")
 		)

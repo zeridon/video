@@ -9002,6 +9002,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 160.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 160.02 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3f0784d1-8245-4ec1-bb94-e547eca60035")
 		)
@@ -9203,6 +9221,24 @@
 		)
 		(property "LCSC" "C702825"
 			(at 250.19 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "BWVF005050201R5T00"
+			(at 250.19 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Pulse-Electronics/BWVF005050201R5T00?qs=rSMjJ%252B1ewcTE78FzK12cIA%3D%3D"
+			(at 250.19 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9488,6 +9524,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 377.19 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 377.19 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b64c7e0a-ccc6-45c8-9c15-ad4c6a652bd9")
 		)
@@ -9765,6 +9819,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "95e071b1-6c75-45aa-8b76-2167c6db7ffa")
 		)
@@ -9785,7 +9857,7 @@
 		(at 273.05 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -9827,6 +9899,24 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 273.05 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 273.05 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 273.05 157.48 0)
 			(effects
 				(font
@@ -10042,6 +10132,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 279.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 279.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "433c165a-b8a3-4378-b4ed-9c8b0ca7362e")
 		)
@@ -10130,6 +10238,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 191.77 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
+			(at 191.77 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "da98695c-2070-48fc-b970-ae8587543a21")
 		)
@@ -10193,6 +10319,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 358.14 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 358.14 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 358.14 238.76 0)
 			(effects
 				(font
@@ -10277,6 +10421,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 31.75 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 31.75 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9c5fd315-8091-42f0-85e6-78f9cbcb77d4")
 		)
@@ -10348,6 +10510,24 @@
 			)
 		)
 		(property "LCSC" "C22978"
+			(at 257.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 3.3kΩ 125mW 1% 0603"
+			(at 257.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9936/"
 			(at 257.81 107.95 0)
 			(effects
 				(font
@@ -10624,6 +10804,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" ""
+			(at 160.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
+			(at 160.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4cdc028c-8c51-4c4f-9ed8-f49f7194826a")
 		)
@@ -10698,6 +10896,24 @@
 			)
 		)
 		(property "LCSC" "C145071"
+			(at 53.34 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 2.49kΩ 125mW 1% 0402"
+			(at 53.34 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.tme.eu/lv/en/details/rc0402fr-072k49l/smd-resistors/yageo/"
 			(at 53.34 229.87 0)
 			(effects
 				(font
@@ -10916,6 +11132,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.99kΩ 125mW 1% 0603"
+			(at 257.81 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35342/"
+			(at 257.81 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a7679c0b-379a-444b-8e80-dba95476ee23")
 		)
@@ -10995,6 +11229,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 334.01 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 334.01 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8f33bc9a-6792-4586-90eb-cbe569df7758")
 		)
@@ -11058,6 +11310,24 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
+			(at 384.81 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 384.81 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 384.81 238.76 0)
 			(effects
 				(font
@@ -11142,6 +11412,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 346.71 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 346.71 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8b958531-79dc-4aef-a830-46ab790daf26")
 		)
@@ -11212,6 +11500,24 @@
 			)
 		)
 		(property "LCSC" "C2760849"
+			(at 63.5 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "RTL8367S"
+			(at 63.5 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/C2760849.html"
 			(at 63.5 88.9 0)
 			(effects
 				(font
@@ -11668,6 +11974,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "640454-6"
+			(at 226.06 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640454-6?qs=%2F35zJ5USjonV0oil6hzIeQ%3D%3D"
+			(at 226.06 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "f78a9247-f456-468c-88a9-4934663903fe")
 		)
@@ -11816,6 +12140,24 @@
 			)
 		)
 		(property "LCSC" "C2070899"
+			(at 224.79 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "TPS562231DRLR"
+			(at 224.79 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.mouser.bg/ProductDetail/Texas-Instruments/TPS562231DRLR?qs=l4Gc20tDgJK5KnXgCyg0Bw%3D%3D"
 			(at 224.79 161.29 0)
 			(effects
 				(font
@@ -12048,6 +12390,24 @@
 			)
 		)
 		(property "LCSC" "C96446"
+			(at 201.93 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 201.93 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
 			(at 201.93 163.83 0)
 			(effects
 				(font
@@ -12333,6 +12693,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 39kΩ 125mW 1% 0603"
+			(at 257.81 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4781/"
+			(at 257.81 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "11e4cc34-d63a-4f23-9a93-8a110372b623")
 		)
@@ -12403,6 +12781,24 @@
 		)
 		(property "LCSC" "C702825"
 			(at 250.19 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "BWVF005050201R5T00"
+			(at 250.19 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Pulse-Electronics/BWVF005050201R5T00?qs=rSMjJ%252B1ewcTE78FzK12cIA%3D%3D"
+			(at 250.19 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12745,6 +13141,24 @@
 			)
 		)
 		(property "LCSC" "C23162"
+			(at 308.61 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 308.61 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
 			(at 308.61 31.75 0)
 			(effects
 				(font
@@ -13228,6 +13642,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 360.68 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 360.68 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f6a9b103-d76b-48ac-81d7-2bd10c33df7e")
 		)
@@ -13307,6 +13739,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 49.53 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 49.53 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "27760511-8dea-4e6e-ae22-3fa1066cc9d0")
 		)
@@ -13378,6 +13828,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 373.38 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 373.38 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
 			(at 373.38 156.21 0)
 			(effects
 				(font
@@ -13537,7 +14005,7 @@
 		(at 273.05 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -13579,6 +14047,24 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 273.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 273.05 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 273.05 101.6 0)
 			(effects
 				(font
@@ -13801,6 +14287,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 240.03 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 240.03 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e30ed4ff-1d3a-4e18-8629-31534e279399")
 		)
@@ -13880,6 +14384,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 1kΩ 125mW 1% 0603"
+			(at 353.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
+			(at 353.06 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e5310e13-f415-4eb7-b401-233166a35892")
 		)
@@ -13942,6 +14464,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 223.52 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "640454-2"
+			(at 223.52 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640454-2?qs=%2F35zJ5USjomXuMPFoVTCPQ%3D%3D"
 			(at 223.52 271.78 0)
 			(effects
 				(font
@@ -14021,6 +14561,24 @@
 			)
 		)
 		(property "LCSC" "C107045"
+			(at 92.71 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 27pF 16V 0603"
+			(at 92.71 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/5610/"
 			(at 92.71 242.57 0)
 			(effects
 				(font
@@ -14109,6 +14667,24 @@
 			)
 		)
 		(property "LCSC" "C59461"
+			(at 278.13 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 278.13 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
 			(at 278.13 114.3 0)
 			(effects
 				(font
@@ -14328,6 +14904,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 96.52 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 96.52 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "875cb858-d68d-4d25-b46b-cc02cd981937")
 		)
@@ -14531,6 +15125,24 @@
 			)
 		)
 		(property "LCSC" "C23162"
+			(at 160.02 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 160.02 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
 			(at 160.02 52.07 0)
 			(effects
 				(font
@@ -14749,6 +15361,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 250.19 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 250.19 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5df2dc75-6003-4af2-a5c8-1f2a92b19b59")
 		)
@@ -14883,6 +15513,24 @@
 			)
 		)
 		(property "LCSC" "C9006"
+			(at 97.79 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "X322525MOB4SI"
+			(at 97.79 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Crystals_YXC-Crystal-Oscillators-X322525MOB4SI_C9006.html"
 			(at 97.79 238.76 0)
 			(effects
 				(font
@@ -15042,6 +15690,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 257.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 257.81 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6a1cdc3a-5678-411f-80a1-ad1acdde23e1")
 		)
@@ -15103,6 +15769,24 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
+			(at 250.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 250.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 250.19 41.91 0)
 			(effects
 				(font
@@ -15240,6 +15924,24 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
+			(at 334.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 334.01 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 334.01 41.91 0)
 			(effects
 				(font
@@ -15584,6 +16286,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" ""
+			(at 365.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
+			(at 365.76 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "6410517d-700a-410f-8d50-2365057c7aad")
 		)
@@ -15673,6 +16393,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" ""
+			(at 367.03 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
+			(at 367.03 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2c918e16-1ce8-4410-9577-7109dfc74aa8")
 		)
@@ -15750,6 +16488,24 @@
 			)
 		)
 		(property "LCSC" "C59461"
+			(at 288.29 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 288.29 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
 			(at 288.29 114.3 0)
 			(effects
 				(font
@@ -16101,6 +16857,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 219.71 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 219.71 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "78e440a8-8728-4772-bcd8-0cf6aa06f3a4")
 		)
@@ -16181,6 +16955,24 @@
 			)
 		)
 		(property "LCSC" "C96446"
+			(at 191.77 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 191.77 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
 			(at 191.77 107.95 0)
 			(effects
 				(font
@@ -16475,6 +17267,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 288.29 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 288.29 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5f7639fb-4c20-4e4d-ace4-387fa39e2867")
 		)
@@ -16686,6 +17496,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 31.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 31.75 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4e5e2b29-d493-480d-aa1c-4cfda12a9c87")
 		)
@@ -16757,6 +17585,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 106.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 106.68 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
 			(at 106.68 78.74 0)
 			(effects
 				(font
@@ -16910,6 +17756,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 334.01 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 334.01 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "712e8e73-2a7a-45f9-b10a-8e44f02e7e23")
 		)
@@ -16981,6 +17845,24 @@
 			)
 		)
 		(property "LCSC" "C23162"
+			(at 190.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 190.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
 			(at 190.5 31.75 0)
 			(effects
 				(font
@@ -17199,6 +18081,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 1kΩ 125mW 1% 0603"
+			(at 41.91 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
+			(at 41.91 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "61c4d10d-a5ef-4f26-9518-f4a8ab0d1342")
 		)
@@ -17270,6 +18170,24 @@
 			)
 		)
 		(property "LCSC" "C23162"
+			(at 250.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 250.19 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
 			(at 250.19 52.07 0)
 			(effects
 				(font
@@ -17415,6 +18333,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" ""
+			(at 375.92 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
+			(at 375.92 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91f8dd35-cae5-4977-8377-eefe40e86786")
 		)
@@ -17432,7 +18368,7 @@
 		(at 226.06 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -17474,6 +18410,24 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 226.06 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 226.06 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 226.06 248.92 0)
 			(effects
 				(font
@@ -17547,6 +18501,24 @@
 			)
 		)
 		(property "Description" "32Mb Serial Flash Memory, Standard/Dual/Quad SPI, SOIC-8"
+			(at 367.03 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 367.03 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 367.03 100.33 0)
 			(effects
 				(font
@@ -17652,6 +18624,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 27pF 16V 0603"
+			(at 102.87 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/5610/"
+			(at 102.87 242.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e99bbc93-94cf-4568-87d0-f4bac0f3e26b")
 		)
@@ -17729,6 +18719,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 240.03 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 240.03 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
 			(at 240.03 161.29 0)
 			(effects
 				(font
@@ -17874,6 +18882,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 116.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 116.84 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
 			(at 116.84 78.74 0)
 			(effects
 				(font
@@ -18036,6 +19062,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 201.93 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
+			(at 201.93 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1b2c452e-2847-4997-8095-5cb732680ad3")
 		)
@@ -18107,6 +19151,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 46.99 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 46.99 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
 			(at 46.99 78.74 0)
 			(effects
 				(font
@@ -18195,6 +19257,24 @@
 			)
 		)
 		(property "LCSC" "C59461"
+			(at 278.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 278.13 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
 			(at 278.13 170.18 0)
 			(effects
 				(font
@@ -18354,7 +19434,7 @@
 		(at 335.28 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -18396,6 +19476,24 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 335.28 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" ""
+			(at 335.28 240.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
 			(at 335.28 240.03 0)
 			(effects
 				(font
@@ -18546,6 +19644,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 219.71 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 219.71 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3c41f086-ab6a-46df-a977-a01e0141c5d7")
 		)
@@ -18626,6 +19742,24 @@
 			)
 		)
 		(property "LCSC" "C59461"
+			(at 267.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 267.97 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
 			(at 267.97 114.3 0)
 			(effects
 				(font
@@ -18845,6 +19979,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 6.2kΩ 125mW 1% 0603"
+			(at 257.81 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9992/"
+			(at 257.81 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "51edb1d8-4fa0-40ea-9084-38dd43ea15af")
 		)
@@ -18915,6 +20067,24 @@
 			)
 		)
 		(property "LCSC" "C2070899"
+			(at 224.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "TPS562231DRLR"
+			(at 224.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.mouser.bg/ProductDetail/Texas-Instruments/TPS562231DRLR?qs=l4Gc20tDgJK5KnXgCyg0Bw%3D%3D"
 			(at 224.79 105.41 0)
 			(effects
 				(font
@@ -19071,6 +20241,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" ""
+			(at 219.71 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" ""
+			(at 219.71 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3eba1c12-505e-4f21-9ab7-020958833f95")
 		)
@@ -19211,6 +20399,24 @@
 			)
 		)
 		(property "LCSC" "C14663"
+			(at 40.64 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 40.64 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
 			(at 40.64 78.74 0)
 			(effects
 				(font
@@ -19430,6 +20636,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 257.81 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 257.81 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c7890554-7c96-4b7e-86e9-0fa6d72587b4")
 		)
@@ -19510,6 +20734,24 @@
 			)
 		)
 		(property "LCSC" "C59461"
+			(at 267.97 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 267.97 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
 			(at 267.97 170.18 0)
 			(effects
 				(font

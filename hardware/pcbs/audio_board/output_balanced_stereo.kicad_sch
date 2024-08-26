@@ -3384,6 +3384,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 189.23 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 189.23 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "15071a1e-2dad-4501-a8f3-7f82495c12fa")
 		)
@@ -3527,6 +3545,24 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 166.37 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 166.37 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
 			(at 166.37 57.15 0)
 			(effects
 				(font
@@ -3687,6 +3723,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 133.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+			(at 133.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dc4528e6-3571-4de7-899d-794de5b76291")
 		)
@@ -3839,6 +3893,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100pF 16V 0603"
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/37094/"
+			(at 114.3 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d966e0fc-3d3f-4ca7-97aa-1db17e087761")
 		)
@@ -3917,6 +3989,24 @@
 			)
 		)
 		(property "MPN" "885012106032"
+			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 16V 0805"
+			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9624/"
 			(at 210.82 130.81 0)
 			(effects
 				(font
@@ -4013,6 +4103,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 120.65 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 120.65 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5cd724ff-badd-42e3-a837-c616f7a0e1f1")
 		)
@@ -4046,7 +4154,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 114.554 45.212 0)
 			(effects
 				(font
@@ -4091,6 +4199,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 114.3 52.07 0)
 			(effects
 				(font
@@ -4151,7 +4277,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 109.22 85.0899 0)
 			(effects
 				(font
@@ -4197,6 +4323,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 110.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 110.49 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 110.49 83.82 0)
 			(effects
 				(font
@@ -4309,6 +4453,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 128.27 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+			(at 128.27 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "708fe548-d805-475b-84ac-03dfab08f806")
 		)
@@ -4342,7 +4504,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 192.786 49.53 0)
 			(effects
 				(font
@@ -4387,6 +4549,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 189.23 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 189.23 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 189.23 54.61 0)
 			(effects
 				(font
@@ -4498,6 +4678,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 95.25 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 95.25 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b6f285d6-caa5-46ed-896d-fc5b42ca5540")
 		)
@@ -4530,7 +4728,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 192.786 68.072 0)
 			(effects
 				(font
@@ -4575,6 +4773,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 189.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 189.23 72.39 0)
 			(effects
 				(font
@@ -4687,6 +4903,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 133.35 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+			(at 133.35 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a44cf7dd-d5db-4c6c-b0de-79dc903b3aad")
 		)
@@ -4764,6 +4998,24 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 95.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 95.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
 			(at 95.25 49.53 0)
 			(effects
 				(font
@@ -4860,6 +5112,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 120.65 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 120.65 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "94d3ff2b-5ca1-4f1e-a994-8f2909784031")
 		)
@@ -4937,6 +5207,24 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 166.37 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 166.37 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
 			(at 166.37 142.24 0)
 			(effects
 				(font
@@ -5096,6 +5384,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ea27ce8b-ad6c-4472-83cf-f43b0b5fd637")
 		)
@@ -5181,6 +5487,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 228.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 228.6 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "74931316-5b0f-46c0-841c-fd78a9a23b11")
 		)
@@ -5258,6 +5582,24 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 233.68 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 233.68 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
 			(at 233.68 147.32 0)
 			(effects
 				(font
@@ -5417,6 +5759,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 95.25 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+			(at 95.25 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "60a89a41-e626-4a25-a4fc-befcca64ff2b")
 		)
@@ -5503,6 +5863,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 47Ω 125mW 1% 0603"
+			(at 219.71 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4392/"
+			(at 219.71 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "905cc946-4ff3-4dcc-a13b-944efa7aadab")
 		)
@@ -5581,6 +5959,24 @@
 			)
 		)
 		(property "MPN" "885012106032"
+			(at 86.36 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 16V 0805"
+			(at 86.36 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9624/"
 			(at 86.36 49.53 0)
 			(effects
 				(font
@@ -5743,6 +6139,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 144.78 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 144.78 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "759622a6-f114-412c-b875-77bb9536fb3f")
 		)
@@ -5829,6 +6243,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 22μF 16V 0805"
+			(at 210.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9624/"
+			(at 210.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "12142daa-d300-4c72-b9a8-9e6776030da5")
 		)
@@ -5906,6 +6338,24 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 166.37 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 166.37 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
 			(at 166.37 129.54 0)
 			(effects
 				(font
@@ -6068,6 +6518,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 144.78 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ad0e87ae-3ef8-4747-95aa-64f7e1cda8ad")
 		)
@@ -6154,6 +6622,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 22μF 16V 0805"
+			(at 86.36 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9624/"
+			(at 86.36 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "28ebea94-4153-464d-a1e9-fc03e533e1f4")
 		)
@@ -6231,6 +6717,24 @@
 			)
 		)
 		(property "MPN" "560112116022 "
+			(at 95.25 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 95.25 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
 			(at 95.25 127 0)
 			(effects
 				(font
@@ -6325,6 +6829,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 22μF 16V 0805"
+			(at 210.82 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9624/"
+			(at 210.82 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "09a6a8c4-0d59-4cbd-9b4d-a103a700b1f1")
 		)
@@ -6386,6 +6908,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 265.43 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "NC3MAH"
+			(at 265.43 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Neutrik/NC3MAH?qs=MO8z%252B%252BLepAHrH1t47qrfbA%3D%3D"
 			(at 265.43 60.96 0)
 			(effects
 				(font
@@ -6554,6 +7094,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 44.45 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 44.45 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "23f7774f-ec7c-43ce-b8ff-23afe2b90fb1")
 		)
@@ -6705,6 +7263,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 166.37 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 166.37 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2051e73f-12ea-4384-a87b-fcee6c4970b1")
 		)
@@ -6782,6 +7358,24 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 166.37 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 166.37 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
 			(at 166.37 69.85 0)
 			(effects
 				(font
@@ -6878,6 +7472,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 10μF 16V 0805"
+			(at 157.48 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/36934/"
+			(at 157.48 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8fa6c07b-0bb5-45d4-93bf-559c256918ae")
 		)
@@ -6912,7 +7524,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 109.22 157.4799 0)
 			(effects
 				(font
@@ -6958,6 +7570,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 110.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 110.49 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 110.49 156.21 0)
 			(effects
 				(font
@@ -7062,6 +7692,24 @@
 			)
 		)
 		(property "MPN" "885012006023"
+			(at 189.23 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100pF 16V 0603"
+			(at 189.23 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/37094/"
 			(at 189.23 35.56 0)
 			(effects
 				(font
@@ -7222,6 +7870,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 47Ω 125mW 1% 0603"
+			(at 219.71 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4392/"
+			(at 219.71 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8a0c6cf-de60-4707-8127-0714cc2a4999")
 		)
@@ -7299,6 +7965,24 @@
 			)
 		)
 		(property "MPN" "885012006023"
+			(at 189.23 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 100pF 16V 0603"
+			(at 189.23 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/37094/"
 			(at 189.23 107.95 0)
 			(effects
 				(font
@@ -7393,6 +8077,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 47Ω 125mW 1% 0603"
+			(at 219.71 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4392/"
+			(at 219.71 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "898c4b99-25ef-4536-9de6-0dfd8882120e")
 		)
@@ -7479,6 +8181,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 47Ω 125mW 1% 0603"
+			(at 219.71 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4392/"
+			(at 219.71 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "400e7f42-fd8e-4e9b-b7d2-f22fbdd75a6a")
 		)
@@ -7540,6 +8260,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 265.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "NC3MAH"
+			(at 265.43 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Neutrik/NC3MAH?qs=MO8z%252B%252BLepAHrH1t47qrfbA%3D%3D"
 			(at 265.43 133.35 0)
 			(effects
 				(font
@@ -7639,6 +8377,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 228.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 228.6 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cd91d05b-0053-4924-bfbc-1aedb2c55cd7")
 		)
@@ -7673,7 +8429,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 34.29 48.2599 0)
 			(effects
 				(font
@@ -7719,6 +8475,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 35.56 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 35.56 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 35.56 46.99 0)
 			(effects
 				(font
@@ -7830,6 +8604,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 6.81kΩ 125mW 1% 0603"
+			(at 114.3 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.tme.eu/lv/en/details/crcw06036k81fktabc/smd-resistors/vishay/"
+			(at 114.3 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f1b41593-2c7f-4084-8b0f-0885ae20c2aa")
 		)
@@ -7916,6 +8708,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100pF 16V 0603"
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/37094/"
+			(at 114.3 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4d7b76c9-78c1-499d-91bb-c51c71fe4d37")
 		)
@@ -7949,7 +8759,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 189.738 133.35 0)
 			(effects
 				(font
@@ -7994,6 +8804,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 189.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 189.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 189.23 127 0)
 			(effects
 				(font
@@ -8105,6 +8933,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 6.81kΩ 125mW 1% 0603"
+			(at 114.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.tme.eu/lv/en/details/crcw06036k81fktabc/smd-resistors/vishay/"
+			(at 114.3 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e78cf7c0-111f-4f58-8e1c-beb34d06e3c5")
 		)
@@ -8138,7 +8984,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 114.808 130.81 0)
 			(effects
 				(font
@@ -8183,6 +9029,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 114.3 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 114.3 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 114.3 124.46 0)
 			(effects
 				(font
@@ -8294,6 +9158,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 233.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 233.68 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1c7997fe-4af5-46db-bc56-42a1e52355df")
 		)
@@ -8379,6 +9261,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 189.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 189.23 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "40a69dde-92f3-4667-8bd7-a018ad24412c")
 		)
@@ -8411,7 +9311,7 @@
 				)
 			)
 		)
-		(property "Value" "OPA1678 "
+		(property "Value" "OPA1678"
 			(at 189.484 151.638 0)
 			(effects
 				(font
@@ -8456,6 +9356,24 @@
 			)
 		)
 		(property "MPN" "595-OPA1678IDR "
+			(at 189.23 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "OPA1678IDR "
+			(at 189.23 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Texas-Instruments/OPA1678IDR?qs=Mv7BduZupUj21oI9QX1tVA%3D%3D"
 			(at 189.23 144.78 0)
 			(effects
 				(font
@@ -8568,6 +9486,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 22kΩ 125mW 1% 0603"
+			(at 128.27 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+			(at 128.27 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e3891904-e5e6-40c8-9528-95b0efbc134e")
 		)
@@ -8656,6 +9592,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 10μF 16V 0805"
+			(at 157.48 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/36934/"
+			(at 157.48 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6e4ffb6f-a48b-4319-bad7-c3bbfc5c3c97")
 		)
@@ -8734,6 +9688,24 @@
 			)
 		)
 		(property "MPN" "885012106032"
+			(at 210.82 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "C 22μF 16V 0805"
+			(at 210.82 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9624/"
 			(at 210.82 58.42 0)
 			(effects
 				(font

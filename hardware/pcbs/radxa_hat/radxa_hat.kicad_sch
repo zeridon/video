@@ -4977,7 +4977,7 @@
 			(uuid "b10fb835-1868-4339-a34f-7898a51b62da")
 		)
 		(instances
-			(project ""
+			(project "radxa_hat"
 				(path "/9fb68e6f-3a80-4125-99a9-9e938d51af87"
 					(reference "#PWR012")
 					(unit 1)
@@ -5110,7 +5110,7 @@
 			(uuid "23a17fb5-e537-4310-afcf-d6b3833a7a37")
 		)
 		(instances
-			(project ""
+			(project "radxa_hat"
 				(path "/9fb68e6f-3a80-4125-99a9-9e938d51af87"
 					(reference "#PWR03")
 					(unit 1)
@@ -5376,6 +5376,24 @@
 				(justify left)
 			)
 		)
+		(property "Part" "640456-6"
+			(at 210.82 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-6?qs=%2F35zJ5USjomb%252BGgX%252BBnrrQ%3D%3D"
+			(at 210.82 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7220c198-8707-436d-8745-18de09f3b1bc")
 		)
@@ -5395,7 +5413,7 @@
 			(uuid "39da5ede-9f41-499b-9d28-fbaf83d6a2f0")
 		)
 		(instances
-			(project ""
+			(project "radxa_hat"
 				(path "/9fb68e6f-3a80-4125-99a9-9e938d51af87"
 					(reference "J2")
 					(unit 1)
@@ -5723,6 +5741,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 1Ω 125mW 1% 0805"
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9926/"
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8cddf6b7-6f21-4241-905c-a52a80e9c771")
 		)
@@ -5730,7 +5766,7 @@
 			(uuid "63cc5ec8-d0e0-4f95-966f-9d1c2ae67626")
 		)
 		(instances
-			(project ""
+			(project "radxa_hat"
 				(path "/9fb68e6f-3a80-4125-99a9-9e938d51af87"
 					(reference "R1")
 					(unit 1)
@@ -5850,6 +5886,24 @@
 		)
 		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 90.424 77.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "CB91402V100"
+			(at 138.43 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/10029/"
+			(at 138.43 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6263,6 +6317,24 @@
 				(justify left)
 			)
 		)
+		(property "Part" "640456-8"
+			(at 210.82 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
+			(at 210.82 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3d0be621-b3aa-44ea-8c84-d2b5b011fccd")
 		)
@@ -6288,7 +6360,7 @@
 			(uuid "94603741-c04d-4a90-8532-47514c37a106")
 		)
 		(instances
-			(project ""
+			(project "radxa_hat"
 				(path "/9fb68e6f-3a80-4125-99a9-9e938d51af87"
 					(reference "J4")
 					(unit 1)
@@ -6340,6 +6412,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 199.39 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 1Ω 125mW 1% 0805"
+			(at 199.39 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9926/"
 			(at 199.39 116.84 0)
 			(effects
 				(font

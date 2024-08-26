@@ -1163,7 +1163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "15EDGVC-3.5-02P-14-00AH and 15EDGKA-3.5-02P-14-100AH"
+		(property "Part" "15EDGVC-3.5-02P-14-00AH, 15EDGKA-3.5-02P-14-100AH"
 			(at 143.51 88.9 0)
 			(effects
 				(font

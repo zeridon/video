@@ -641,7 +641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 10kΩ 0603"
+		(property "Part" "R 10kΩ 125mW 1% 0603"
 			(at 105.41 93.98 0)
 			(effects
 				(font
@@ -651,6 +651,15 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 105.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
 			(at 105.41 93.98 0)
 			(effects
 				(font
@@ -834,7 +843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 10kΩ 0603"
+		(property "Part" "R 10kΩ 125mW 1% 0603"
 			(at 105.41 96.52 0)
 			(effects
 				(font
@@ -844,6 +853,15 @@
 			)
 		)
 		(property "MPN" "560112116023 "
+			(at 105.41 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
 			(at 105.41 96.52 0)
 			(effects
 				(font

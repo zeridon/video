@@ -3904,7 +3904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "207daed0-3762-47f7-9acc-10c322e107d1")
-		(property "Reference" "TR5"
+		(property "Reference" "TR3"
 			(at 95.25 76.2 0)
 			(effects
 				(font
@@ -3948,6 +3948,24 @@
 			)
 		)
 		(property "LCSC" "C507595"
+			(at 95.25 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "G2406S"
+			(at 95.25 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/RJ45-Transformer_CND-tek-G2406S_C507595.html"
 			(at 95.25 101.6 0)
 			(effects
 				(font
@@ -4030,20 +4048,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "TR5")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "TR1")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "TR3")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "TR2")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "TR3")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "TR5")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "TR1")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4063,7 +4081,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "38274649-2fdb-4f14-ba63-94e9ef5e8964")
-		(property "Reference" "R22"
+		(property "Reference" "R30"
 			(at 111.7601 114.3 0)
 			(effects
 				(font
@@ -4117,6 +4135,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 110.49 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 110.49 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "be783e51-9284-4dee-8adb-c9b0f47c6c3c")
 		)
@@ -4125,20 +4161,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "R22")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "R6")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "R30")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "R24")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "R30")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "R22")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "R6")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4158,7 +4194,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "42615c5d-739b-4c77-ad62-0adef630896f")
-		(property "Reference" "R17"
+		(property "Reference" "R25"
 			(at 111.7601 83.82 0)
 			(effects
 				(font
@@ -4212,6 +4248,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 110.49 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 110.49 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6db6369e-df49-415c-959b-52c3c0b65738")
 		)
@@ -4220,20 +4274,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "R17")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "R1")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "R25")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "R7")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "R25")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "R17")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "R1")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4253,7 +4307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46450d17-e748-4f89-a290-702c900a025f")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR017"
 			(at 115.57 132.08 0)
 			(effects
 				(font
@@ -4302,20 +4356,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "#PWR061")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "#PWR011")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "#PWR017")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "#PWR014")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "#PWR017")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "#PWR061")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "#PWR011")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4335,7 +4389,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47781999-7d08-40c4-98e5-e48877dd80f1")
-		(property "Reference" "J5"
+		(property "Reference" "J3"
 			(at 157.48 118.11 0)
 			(effects
 				(font
@@ -4396,6 +4450,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "MJ88-B211-JRS3"
+			(at 157.48 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors-RJ45-RJ11_Heling-MJ88-B211-JRS3_C2895614.html"
+			(at 157.48 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "9a5cfd64-dd95-4ac6-8de3-1bd4c4989c09")
 		)
@@ -4425,20 +4497,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "J5")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "J1")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "J3")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "J2")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "J3")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "J5")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "J1")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4458,7 +4530,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d9e769e-74b8-4340-9229-76d48dd5940b")
-		(property "Reference" "R21"
+		(property "Reference" "R29"
 			(at 111.7601 104.14 0)
 			(effects
 				(font
@@ -4512,6 +4584,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 110.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 110.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8013336c-0b5b-48b2-a5e3-b2d7b7472e9f")
 		)
@@ -4520,20 +4610,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "R21")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "R5")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "R29")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "R23")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "R29")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "R21")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "R5")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4553,7 +4643,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7d050119-f25c-4016-8770-2e3bda585901")
-		(property "Reference" "C29"
+		(property "Reference" "C32"
 			(at 81.28 121.9262 0)
 			(effects
 				(font
@@ -4607,6 +4697,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 83.82 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 83.82 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "19b3b4df-305f-471b-9e7f-0fbfc1862b33")
 		)
@@ -4615,20 +4723,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "C29")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "C30")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "C32")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "C31")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "C32")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "C29")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "C30")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4648,7 +4756,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ddbabffa-d331-48f0-9463-9ea937e9d26b")
-		(property "Reference" "R20"
+		(property "Reference" "R28"
 			(at 111.7601 93.98 0)
 			(effects
 				(font
@@ -4702,6 +4810,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 110.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 110.49 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "50ff498d-9d6c-4493-ac91-48d077aab1ac")
 		)
@@ -4710,20 +4836,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "R20")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "R4")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "R28")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "R10")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "R28")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "R20")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "R4")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4743,7 +4869,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e91b9553-eb59-49c4-9f35-21afd0ebb071")
-		(property "Reference" "C14"
+		(property "Reference" "C17"
 			(at 118.11 121.9262 0)
 			(effects
 				(font
@@ -4797,6 +4923,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "C 1nF 16V 0603"
+			(at 115.57 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6036/"
+			(at 115.57 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ab13b8cd-780b-4434-8227-e012163e751d")
 		)
@@ -4805,20 +4949,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "C14")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "C15")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "C17")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "C16")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "C17")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "C14")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "C15")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
@@ -4838,7 +4982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f548b74a-9ae2-4f51-9690-a759d9096ccb")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR019"
 			(at 83.82 132.08 0)
 			(effects
 				(font
@@ -4887,20 +5031,20 @@
 		)
 		(instances
 			(project "switch_board"
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
-					(reference "#PWR010")
-					(unit 1)
-				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
-					(reference "#PWR013")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
+					(reference "#PWR019")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/2f650628-848b-4e64-9ac1-9b2777c50c91"
 					(reference "#PWR016")
 					(unit 1)
 				)
-				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/0a3fac22-a34d-4ac9-9a68-8014f3502aae"
-					(reference "#PWR019")
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/3e389b82-9ea2-48ed-a7af-86e532354ab4"
+					(reference "#PWR010")
+					(unit 1)
+				)
+				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/8781d588-2916-495b-84e5-2fe91a110768"
+					(reference "#PWR013")
 					(unit 1)
 				)
 				(path "/7783af51-c8f6-42f9-a95e-4af6d8f54c2e/d849c9c9-e1c7-4ba8-92fa-241403764dec"
