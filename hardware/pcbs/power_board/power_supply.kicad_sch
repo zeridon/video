@@ -3415,7 +3415,7 @@
 				(justify left)
 			)
 		)
-		(property "Part" "RK1C101M-RBD11"
+		(property "Part" "CP 100μF 16V P2"
 			(at 207.01 133.35 0)
 			(effects
 				(font
@@ -3681,7 +3681,7 @@
 				(justify left)
 			)
 		)
-		(property "Part" "RK1C101M-RBD11"
+		(property "Part" "CP 100μF 16V P2"
 			(at 207.01 92.71 0)
 			(effects
 				(font
@@ -4150,7 +4150,7 @@
 				(justify left)
 			)
 		)
-		(property "Part" "RK1E221M-RBE11"
+		(property "Part" "CP 220μF 16V P3.5"
 			(at 102.87 59.69 0)
 			(effects
 				(font

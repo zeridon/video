@@ -2874,7 +2874,7 @@
 				(justify left)
 			)
 		)
-		(property "Part" "RK1C101M-RBD11"
+		(property "Part" "CP 100μF 16V P2"
 			(at 218.44 102.87 0)
 			(effects
 				(font

@@ -8926,7 +8926,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CP 120μF 16V P2"
+		(property "Part" "CP 220μF 16V P2"
 			(at 241.3 50.8 0)
 			(effects
 				(font
@@ -9469,7 +9469,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "2x Header_1x24, Teensy 4.1"
+		(property "Part" "2x HeaderSocket_1x24, Teensy 4.1"
 			(at 38.1 48.26 0)
 			(effects
 				(font
@@ -9956,7 +9956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CP 120μF 16V P2"
+		(property "Part" "CP 220μF 16V P2"
 			(at 255.27 50.8 0)
 			(effects
 				(font

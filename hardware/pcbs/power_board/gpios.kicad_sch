@@ -3610,7 +3610,7 @@
 				)
 			)
 		)
-		(property "Part" "CH85122VA01"
+		(property "Part" "Header_2x06"
 			(at 201.93 97.79 0)
 			(effects
 				(font

@@ -5893,7 +5893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CB91402V100"
+		(property "Part" "HeaderSocket_2x20"
 			(at 138.43 77.47 0)
 			(effects
 				(font
