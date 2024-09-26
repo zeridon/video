@@ -481,7 +481,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/tmp/fosdem_fab/display_hat/designators/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

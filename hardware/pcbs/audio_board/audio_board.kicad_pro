@@ -522,7 +522,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/tmp/fosdem_fab/audio_board/values/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "export/mixolydian-4x4-board.step",

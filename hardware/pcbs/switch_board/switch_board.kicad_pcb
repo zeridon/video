@@ -105,8 +105,8 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(pcbplotparams
-			(layerselection 0x00010fc_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x0030000_7ffffff8)
+			(plot_on_all_layers_selection 0x0001000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
 			(usegerberattributes yes)
@@ -130,16 +130,16 @@
 			(psnegative no)
 			(psa4output no)
 			(plotreference yes)
-			(plotvalue yes)
+			(plotvalue no)
 			(plotfptext yes)
 			(plotinvisibletext no)
-			(sketchpadsonfab no)
+			(sketchpadsonfab yes)
 			(subtractmaskfromsilk no)
-			(outputformat 1)
+			(outputformat 4)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "/tmp/fosdem_fab/switch_board/designators/")
 		)
 	)
 	(net 0 "")
@@ -177,7 +177,7 @@
 	(net 32 "+1V1")
 	(net 33 "Net-(U1-EN_SWR)")
 	(net 34 "Net-(U1-MDIREF)")
-	(net 35 "HV_SWR_0")
+	(net 35 "unconnected-(J1-PadSH)_1")
 	(net 36 "+5V")
 	(net 37 "/SCL")
 	(net 38 "/RESET")
@@ -318,15 +318,15 @@
 	(net 173 "Net-(JP2-B)")
 	(net 174 "Net-(JP2-A)")
 	(net 175 "unconnected-(J1-PadSH)")
-	(net 176 "unconnected-(J1-PadSH)_0")
+	(net 176 "unconnected-(J2-PadSH)_1")
 	(net 177 "unconnected-(J2-PadSH)")
-	(net 178 "unconnected-(J2-PadSH)_0")
+	(net 178 "unconnected-(J3-PadSH)_1")
 	(net 179 "unconnected-(J3-PadSH)")
-	(net 180 "unconnected-(J3-PadSH)_0")
+	(net 180 "unconnected-(J4-PadSH)_1")
 	(net 181 "unconnected-(J4-PadSH)")
-	(net 182 "unconnected-(J4-PadSH)_0")
+	(net 182 "unconnected-(J5-PadSH)_1")
 	(net 183 "unconnected-(J5-PadSH)")
-	(net 184 "unconnected-(J5-PadSH)_0")
+	(net 184 "HV_SWR_1")
 	(footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "012cf090-870e-44b2-9572-f4f43aeb681f")
@@ -414,6 +414,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0cc0a677-1273-460b-8f50-916f26562e95")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b62adfcc-436e-4009-ad09-00f650f61438")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df5b9252-0b68-4213-9992-afee5cce1de8")
 			(effects
 				(font
 					(size 1 1)
@@ -648,6 +674,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d05c79b8-7633-411f-92a8-768a297fc677")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f387d1f-045c-4f2c-b6b0-901951842099")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ab231efa-62c1-42d3-b6ed-8232e9e6fbda")
 		(sheetname "Root")
@@ -875,6 +927,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "decf2757-a8b0-4188-8d4b-ede409a0aeb4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cea1185-40c7-4588-83b5-9f6499e674da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c916d59e-2527-4250-968e-3e08e1ea0c9b")
 		(sheetname "Root")
@@ -1095,6 +1173,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "609776c3-c826-4b90-a867-f9514c4b2929")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "TPS562231DRLR"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c82c54d4-6534-4654-b6e9-20397c82a155")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.mouser.bg/ProductDetail/Texas-Instruments/TPS562231DRLR?qs=l4Gc20tDgJK5KnXgCyg0Bw%3D%3D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e3aa9b9-2a8e-4acb-bdf5-4da603b71a89")
 			(effects
 				(font
 					(size 1 1)
@@ -1406,6 +1510,32 @@
 				)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b6f0e34-d5f2-4a37-9982-d10a72408a36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c661fea5-fec5-4823-b479-f5a3ffa335cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ff89a9cb-9279-4691-b3ee-a509b9ffca13")
 		(sheetname "Root")
@@ -1626,6 +1756,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "904b4f1c-4c3f-4b20-9043-49df344c192b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c8f51b0-0c18-4f71-94a6-8fde6c401f6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "385c6f17-2001-4e7b-a88d-431fcaef9682")
 			(effects
 				(font
 					(size 1 1)
@@ -1860,6 +2016,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7cb962c-a6f0-4829-bb45-65f6fba668a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "845bf501-72e7-4da7-8525-aa2477811531")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3e389b82-9ea2-48ed-a7af-86e532354ab4/38274649-2fdb-4f14-ba63-94e9ef5e8964")
 		(sheetname "Port back")
@@ -2070,6 +2252,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "296da5dd-51aa-4d15-a84a-d29344a6f201")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57d2e23b-911c-4300-81d6-1eec6c13a4fe")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2391,11 +2599,37 @@
 				)
 			)
 		)
+		(property "Part" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cefa9740-58e2-4511-9662-2bf848b69a11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56332182-cf20-4b85-9052-0c06bd4393ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/e8c5caa4-1824-438a-831d-4306bacbc140")
 		(sheetname "Root")
 		(sheetfile "switch_board.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start -1.2 1.2)
 			(end 3.7 1.2)
@@ -2605,6 +2839,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2e0fc60a-107b-470d-92d6-a7e92da8b106")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 1nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "11adc9e6-e250-4354-90af-5639cc092e60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6036/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0b745b9-6a4e-45e6-bcd8-89b1ab47fda5")
 			(effects
 				(font
 					(size 1 1)
@@ -2840,6 +3100,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c26640c6-26aa-4e63-87e7-bcda62de4a4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faee6467-fc7c-44d7-b280-6fb811060484")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/d849c9c9-e1c7-4ba8-92fa-241403764dec/4d9e769e-74b8-4340-9229-76d48dd5940b")
 		(sheetname "Port 4")
@@ -3067,6 +3353,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f3b85ffe-c8ee-4f01-a510-134bc1bc5dc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a806757-42a3-455f-ab65-bf96885193e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/912366fc-d1fd-4eee-afd8-e2b957678d1b")
 		(sheetname "Root")
@@ -3277,6 +3589,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1070300d-c608-407f-9ceb-6110d14e99a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b020a2a7-86f8-435d-a73d-06dfbdc0dea3")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3603,11 +3941,37 @@
 				)
 			)
 		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15d47d21-9b51-4f20-953e-24f7b8d9cc1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba86c97e-f733-478f-9028-2e946be0ce36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/75cac05b-817f-47e6-bc70-60d89f9dda2c")
 		(sheetname "Root")
 		(sheetfile "switch_board.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.2 -1.2)
 			(end 1.2 -1.2)
@@ -3786,6 +4150,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1e3e79ac-91a1-4aa3-a1ac-7b4ea6c1830c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b004af76-3f56-4046-9858-de6ab6d642c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d2ebfd8-0854-401e-92f5-39c57f734a74")
 			(effects
 				(font
 					(size 1 1)
@@ -4007,11 +4397,37 @@
 				)
 			)
 		)
+		(property "Part" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "005d6ff8-b33b-485f-999c-854dbe37876e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64d75150-9999-454e-a80b-bf8f1b0172cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d08ea8e6-5047-4558-813f-131c7460a789")
 		(sheetname "Root")
 		(sheetfile "switch_board.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_bom)
 		(fp_line
 			(start 0.695 0.685)
 			(end 0.695 2.56)
@@ -4319,6 +4735,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fee70da-1633-4438-9475-d8139ed39bec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e6d80698-adf4-4575-95fa-aaaedd5e9328")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c2f56fa2-3f29-4804-a9e8-70af608d1757")
 		(sheetname "Root")
@@ -4546,6 +4988,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3347a865-c5a5-4c77-aaa5-bf7ea24a2638")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e2d033b-84de-4420-817e-19c9714543cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/97cdc87b-2ae2-4748-bb50-5b5be74277e5")
 		(sheetname "Root")
@@ -4766,6 +5234,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b400157a-eea7-4615-ab9d-93841d8307a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a805536f-3749-4ab1-a373-e349f52e6c43")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1f7ff4a-db08-4ff9-8539-2886ef9f7875")
 			(effects
 				(font
 					(size 1 1)
@@ -5013,6 +5507,32 @@
 				)
 			)
 		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e543c94-0f55-4415-9bf5-128f2c509eec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1bedf96f-83dd-495c-aec7-cf730c321347")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e103b0de-c1a4-4e95-8c2a-7ea5c717d1f8")
 		(sheetname "Root")
@@ -5253,6 +5773,32 @@
 				)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a28e5655-2313-4a3f-b308-5dd75c702b50")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a420e93f-0dc4-4f09-a3c8-a6f2a6647fa9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8215921a-df80-4514-b222-83e97c20a8b2")
 		(sheetname "Root")
@@ -5473,6 +6019,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f024c808-51df-4d6b-8f04-86ab4ae5e8e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 39kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee10c5fb-411d-4541-8aa9-2372806c9471")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4781/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "177ec113-57b2-441a-8fad-cff425f5e32b")
 			(effects
 				(font
 					(size 1 1)
@@ -5720,6 +6292,32 @@
 				)
 			)
 		)
+		(property "Part" "MJ88-B211-JRS3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1e55898-83e4-4871-b630-0fa4cd37f4ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors-RJ45-RJ11_Heling-MJ88-B211-JRS3_C2895614.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "711f3a8f-3a0f-4132-ab9a-7cc9985c9156")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*")
 		(path "/d849c9c9-e1c7-4ba8-92fa-241403764dec/47781999-7d08-40c4-98e5-e48877dd80f1")
 		(sheetname "Port 4")
@@ -5908,7 +6506,7 @@
 			(at -3.735 14.52)
 			(size 3.12 2.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 182 "unconnected-(J4-PadSH)_0")
+			(net 180 "unconnected-(J4-PadSH)_1")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "54b2332d-e9e8-4350-94e4-14a9a3c762a0")
@@ -5997,6 +6595,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d104cb0-8a9e-4379-8148-d6e4ca59632c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca26802c-1ec4-48b8-844d-052025ac21e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a7e8657-f2f4-41df-aa1d-352d8b762db1")
 			(effects
 				(font
 					(size 1 1)
@@ -6231,6 +6855,32 @@
 				)
 			)
 		)
+		(property "Part" "R 1kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "adce59d9-b9eb-407b-aabc-88f6d8602bc5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5066fbf-70cf-4986-ba62-3d47ca79bdc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/793fa408-a916-4fd5-afc1-b5ad03867048")
 		(sheetname "Root")
@@ -6451,6 +7101,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1259577c-48be-4a2d-ae42-41ec212db900")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4388ca5-604a-4878-912d-0159220aa634")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e950b9ad-de33-4d2e-89f6-461ee1db940d")
 			(effects
 				(font
 					(size 1 1)
@@ -6686,6 +7362,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0ac25ff-c673-44b9-b598-7438045cfaa2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "278f5041-9dc5-41a7-9b64-51a5ddd9586b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0a3fac22-a34d-4ac9-9a68-8014f3502aae/ddbabffa-d331-48f0-9463-9ea937e9d26b")
 		(sheetname "Port 3")
@@ -6906,6 +7608,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "08531938-8486-4d1a-a0d7-93584d4e6446")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 27pF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b088b0f-fdf1-425b-bbdd-afd65a635d69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/5610/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49ef82d5-4ef7-4c62-82eb-a5b27355af4d")
 			(effects
 				(font
 					(size 1 1)
@@ -7140,6 +7868,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc58b276-82f1-4db8-8a4b-6949e7c52b16")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "307b0d30-6129-4d4f-8d26-8856d19dbd14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2f650628-848b-4e64-9ac1-9b2777c50c91/42615c5d-739b-4c77-ad62-0adef630896f")
 		(sheetname "Port 2")
@@ -7360,6 +8114,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "82ee10d0-662f-4e0e-b74f-b5e98bedb56a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a381ace-7310-4f5d-a340-ab0219c7629a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d4d14bb-47bf-4ba3-b917-d16c5046db67")
 			(effects
 				(font
 					(size 1 1)
@@ -7594,6 +8374,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d04cb3e-48a2-4315-887d-8e2fd90c4a34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7eb60962-a0e8-4874-a2ef-0bc5fcd1fb6a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3e389b82-9ea2-48ed-a7af-86e532354ab4/7d050119-f25c-4016-8770-2e3bda585901")
 		(sheetname "Port back")
@@ -7814,6 +8620,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f608edd4-a67f-48ab-8229-d79ca841c557")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d59a027-1a6a-4b49-931d-1caf67253724")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7c8dda8a-9d8b-48f8-a93f-5eb3030946db")
 			(effects
 				(font
 					(size 1 1)
@@ -8061,6 +8893,32 @@
 				)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91e411af-bcb8-4116-80fe-5059e4f70486")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29cd74b0-127c-4a87-8039-855b208d8ee8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/ee832547-c65b-43bf-91d8-ff6aac44027b")
 		(sheetname "Root")
@@ -8301,6 +9159,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "297d9b61-41b8-4ba6-bc5f-5fe322d7cd1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b073104e-ef97-4cd7-9bea-98bddfde1ea3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d6df4f3a-4ca5-4ffd-ab2b-087f7790d2b4")
 		(sheetname "Root")
@@ -8528,6 +9412,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ccb7d5a-d7f7-42da-8fd3-47f6f59a2df3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3e99d25-70fd-4b14-ae7d-4a4f652e80f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/141aa497-b94e-47ef-aefc-24dd0d8fbbf8")
 		(sheetname "Root")
@@ -8748,6 +9658,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9bcc2954-0b5e-4dc2-b6a8-7f3f2bccd30c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "G2406S"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "123063ed-2a45-4ec3-8ffd-a51d132ce5b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/RJ45-Transformer_CND-tek-G2406S_C507595.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fbaee61-40f4-44f7-b135-bd9390191253")
 			(effects
 				(font
 					(size 1 1)
@@ -9292,6 +10228,32 @@
 				)
 			)
 		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55299da0-5e3d-4b55-800d-7abd793fec7f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "faff1d4f-05ce-4042-8168-e9b5285f3563")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4b46a808-439c-4e28-bb30-59098771a7af")
 		(sheetname "Root")
@@ -9519,6 +10481,32 @@
 				)
 			)
 		)
+		(property "Part" "BWVF005050201R5T00 or 74404054015"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abf2563e-9de2-429c-b532-6dbe4c12865e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Pulse-Electronics/BWVF005050201R5T00?qs=rSMjJ%252B1ewcTE78FzK12cIA%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c7579d7-e872-499f-8a3a-30d13ff3f630")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/53470388-e57b-41da-bda2-9cc34f06ad1f")
 		(sheetname "Root")
@@ -9737,6 +10725,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e1b613b0-04cf-4c4b-962a-2db6c05c67b6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "068a98cd-67b1-4206-b511-254687e87850")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6045055c-3f26-428d-ab02-3673b17fe966")
 			(effects
 				(font
 					(size 1 1)
@@ -9971,6 +10985,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4012ad4-9e2b-44bc-b44f-cec6d0aa6e4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9c1d06a-0c8d-45ba-abeb-2c586e4a9fef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3e389b82-9ea2-48ed-a7af-86e532354ab4/42615c5d-739b-4c77-ad62-0adef630896f")
 		(sheetname "Port back")
@@ -10191,6 +11231,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "92535c59-a546-44e3-8e59-e0f8a1327f1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 1kΩ 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce083cda-4768-402e-8dbd-adf16bafe035")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1f2a8b0f-a79f-4758-bde6-8fc8440e9e76")
 			(effects
 				(font
 					(size 1 1)
@@ -10425,6 +11491,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3b97b6a-368d-42a5-b14e-22e7591dd004")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "076374f7-22af-4488-8a9c-e0119197aca8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1ba859cf-3684-44eb-9493-7de4b7c3090b")
 		(sheetname "Root")
@@ -10645,6 +11737,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "af31288d-bd62-4bb7-a6c9-cc55b8d498f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "G2406S"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c593585b-39b5-4f5f-9eec-eb767c2a6009")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/RJ45-Transformer_CND-tek-G2406S_C507595.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09289eb8-d90a-47de-88e9-35b73bd04bbb")
 			(effects
 				(font
 					(size 1 1)
@@ -11176,6 +12294,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "870a2786-4ef3-49a5-abfb-e01d832e588d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "289ca76c-4256-45b9-8b53-c409021ea6c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/ebd27975-50e4-48af-8a3e-56db56667bdc")
 		(sheetname "Root")
@@ -11396,6 +12540,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e7a1cdd2-fa0c-4e39-a2c0-12fe79735444")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "G2406S"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6fbe4d1-5d3f-4a7f-925b-f7a81d24c950")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/RJ45-Transformer_CND-tek-G2406S_C507595.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04a01996-d741-490e-a55a-ab507a476a98")
 			(effects
 				(font
 					(size 1 1)
@@ -11927,6 +13097,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.99kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4ea2985-df7d-4da3-a220-aea778b520d5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35342/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a21578ab-d3e9-4aa0-af57-7d8e436bd848")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/34a6c5f0-31b9-4681-a03e-9defbff3066d")
 		(sheetname "Root")
@@ -12148,6 +13344,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "48466d25-19b3-47ef-988b-0f14135e5fed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c6cc6cc-e177-4890-8a90-8ad6e9298707")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dbace27e-dc98-480d-af08-ae87e96c9a22")
 			(effects
 				(font
 					(size 1 1)
@@ -12382,6 +13604,32 @@
 				)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b937dd98-93a8-4310-9c64-e717fdfa0fb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d604c30-518e-4d66-96c0-1800ce6ad3b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f924ec93-9641-47ce-b26d-ada928099722")
 		(sheetname "Root")
@@ -12603,6 +13851,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "49b6d196-de8a-41e1-8385-b7771825bf86")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34be549f-e52f-4125-a3a1-0702e058109b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4801d0db-95c1-42d3-8a94-bd566ac42d88")
 			(effects
 				(font
 					(size 1 1)
@@ -12850,6 +14124,32 @@
 				)
 			)
 		)
+		(property "Part" "MJ88-B211-JRS3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bec451b0-9733-4aec-91dd-426a23ed6593")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors-RJ45-RJ11_Heling-MJ88-B211-JRS3_C2895614.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7f522f3-ccb2-4224-8e52-1f2ef0fb0c3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*")
 		(path "/0a3fac22-a34d-4ac9-9a68-8014f3502aae/47781999-7d08-40c4-98e5-e48877dd80f1")
 		(sheetname "Port 3")
@@ -13047,7 +14347,7 @@
 			(at 12.615 14.52)
 			(size 3.12 2.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 180 "unconnected-(J3-PadSH)_0")
+			(net 178 "unconnected-(J3-PadSH)_1")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "d548c62b-f9d9-49d4-baf2-d554b41bf575")
@@ -13117,6 +14417,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b31629e-399d-4ad7-919f-70ca649ceca6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bb1fed2-d3e4-469d-ba38-df5f2e74a728")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -13470,6 +14796,32 @@
 				)
 			)
 		)
+		(property "Part" "MJ88-B211-JRS3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96ff049c-f0f8-4965-8295-9ab3c581cd62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors-RJ45-RJ11_Heling-MJ88-B211-JRS3_C2895614.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "22305cdb-e25a-4992-9c43-0a9e8c9957d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*")
 		(path "/8781d588-2916-495b-84e5-2fe91a110768/47781999-7d08-40c4-98e5-e48877dd80f1")
 		(sheetname "Port 1")
@@ -13658,7 +15010,7 @@
 			(at -3.735 14.52)
 			(size 3.12 2.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 176 "unconnected-(J1-PadSH)_0")
+			(net 35 "unconnected-(J1-PadSH)_1")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "6520aa2a-a3bd-4bc0-ab3a-e63f56e8a832")
@@ -13740,11 +15092,37 @@
 				)
 			)
 		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "225d3ce9-174e-4d21-a899-307b9e587e36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "995ca578-5b8f-4802-8a33-59c3f0348924")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/1cda4d70-f315-4401-b91a-556b2f1a648c")
 		(sheetname "Root")
 		(sheetfile "switch_board.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.2 -1.2)
 			(end 1.2 -1.2)
@@ -13923,6 +15301,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b78f6b5a-245e-4693-b7b9-4eb14a29ed91")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "458bd11d-31a7-455c-9e52-b8e829a073cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3845064e-6c26-4207-b207-3ce59e06756d")
 			(effects
 				(font
 					(size 1 1)
@@ -14157,6 +15561,32 @@
 				)
 			)
 		)
+		(property "Part" "C 1nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf25209b-8338-4e93-b238-47581471c826")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6036/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2577f28d-0ae3-44d1-a93a-11b1f2f2f590")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/8781d588-2916-495b-84e5-2fe91a110768/e91b9553-eb59-49c4-9f35-21afd0ebb071")
 		(sheetname "Port 1")
@@ -14384,6 +15814,32 @@
 				)
 			)
 		)
+		(property "Part" "R 3.3kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f604b768-6704-4081-aebc-e14ab1be0167")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9936/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be0328d8-67d1-45ca-ba7e-29412a5a7e77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23e09a3b-b627-47f8-8f56-c58666ba546a")
 		(sheetname "Root")
@@ -14595,6 +16051,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "640454-6"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b296f58b-090b-4046-ae21-42f337ce1e52")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640454-6?qs=%2F35zJ5USjonV0oil6hzIeQ%3D%3D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2da7fd5-a76d-4453-8da8-79aba5e6bb57")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -14867,6 +16349,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8706be1-a74f-44b8-b366-20945cd2bbdf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cac57d70-997e-44dd-8ef3-8f0567fed8b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8781d588-2916-495b-84e5-2fe91a110768/38274649-2fdb-4f14-ba63-94e9ef5e8964")
 		(sheetname "Port 1")
@@ -15087,6 +16595,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6b0894fc-2cf8-49d3-847c-0f1711ea7f70")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 2.49kΩ 125mW 1% 0402"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cad0c23-8f92-435d-9046-fee1e2cc67d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.tme.eu/lv/en/details/rc0402fr-072k49l/smd-resistors/yageo/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "449a1a66-5dc6-4167-92d3-02e6b0135363")
 			(effects
 				(font
 					(size 1 1)
@@ -15321,6 +16855,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00445ead-015a-436f-9135-89a4f54a2fb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06784955-7173-4d2e-b1a8-82e66acb1f19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e5b9307c-45b8-4839-a6fc-64139ce15926")
 		(sheetname "Root")
@@ -15541,6 +17101,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "60b4aa52-eeac-4469-afd6-35a4636bce81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71e021fe-d040-4392-a624-9a04232166f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09fd6e21-f32c-4441-981b-e82561b70e93")
 			(effects
 				(font
 					(size 1 1)
@@ -15775,6 +17361,32 @@
 				)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cff87854-e851-4782-995d-54235eb04313")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08ac9edc-26e8-40f2-9129-98d6af5e806e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9fb6fecd-d129-4503-89c9-105886e6659a")
 		(sheetname "Root")
@@ -15985,6 +17597,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90e0653c-37d4-4e4b-9e0d-556530de766f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d213489f-27aa-4041-9532-bb80888f1800")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16325,6 +17963,32 @@
 				)
 			)
 		)
+		(property "Part" "BWVF005050201R5T00 or 74404054015"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3058a8d1-4e91-4232-859e-0fdee79cbaba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Pulse-Electronics/BWVF005050201R5T00?qs=rSMjJ%252B1ewcTE78FzK12cIA%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "628d39ef-d9a6-440d-8436-cd0b2c8356d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/0a78bd70-2253-4dc6-a6bf-0fbdd601a01f")
 		(sheetname "Root")
@@ -16543,6 +18207,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "04d2ecd7-7a7d-4814-aa16-433e4aba8df4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "708f2192-66b3-483d-8f7e-ae138b5e3ce9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86bfa761-fd81-4476-82b0-6530dddeacfe")
 			(effects
 				(font
 					(size 1 1)
@@ -16777,6 +18467,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53f2fbe6-e650-4170-95e0-e2282853ef65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a041bae-e1ca-4081-bf69-02a57632d059")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0a3fac22-a34d-4ac9-9a68-8014f3502aae/7d050119-f25c-4016-8770-2e3bda585901")
 		(sheetname "Port 3")
@@ -16997,6 +18713,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c1d5fcf6-90fe-41a1-980d-c44de663f600")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5775272-500c-4513-83f0-64fc07a70f28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70edb980-f930-4f1a-bf0e-1d8ab40a2cad")
 			(effects
 				(font
 					(size 1 1)
@@ -17232,6 +18974,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38cb79a1-75b4-4c55-9ab8-3fd9794944a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56f28bfe-c64d-41d9-9088-56ed1e41a49d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0a3fac22-a34d-4ac9-9a68-8014f3502aae/4d9e769e-74b8-4340-9229-76d48dd5940b")
 		(sheetname "Port 3")
@@ -17443,6 +19211,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97102874-c73b-44e6-bea9-3b80a0fd0574")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "30fe7eba-3aa8-4bae-8a6f-cdcb689878b9")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -17674,6 +19468,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df761281-1a82-4998-a333-844c3402c1c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5458cb85-f05c-4ca2-ab60-b3b1721cf9b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c6ab424e-2bfb-4a70-9fc5-b7d7075afbf7")
 		(sheetname "Root")
@@ -17889,6 +19709,32 @@
 				)
 			)
 		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f82ca35-34ed-48a6-a5fe-5170f0eff8c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6eb1b94f-4592-4656-8046-8be0b06f224c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/383d826e-9b8b-4903-aeb7-f597bafa84b6")
 		(sheetname "Root")
@@ -18099,6 +19945,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdbc7c10-a9a6-492c-9751-9e842f98b095")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17e4b3bb-c0f6-4871-a12f-b830d329d513")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18343,6 +20215,32 @@
 				)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e1f7f43-7f44-4846-9a91-f2a49250e991")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9631b96-7616-4766-a824-d76f12b135da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/a45f289c-e810-47dc-96fe-6d6ee0123eb9")
 		(sheetname "Root")
@@ -18554,6 +20452,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18f0ab71-0a9f-4185-8a08-a6ce6caa7094")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "895a005a-5489-4ead-9824-809f1d57d62b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18785,6 +20709,32 @@
 				)
 			)
 		)
+		(property "Part" "C 1nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4e051c5b-c64c-412c-8e99-8bf284f90c3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6036/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fae0d5c2-0013-4780-8b19-aa1bd5796164")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3e389b82-9ea2-48ed-a7af-86e532354ab4/e91b9553-eb59-49c4-9f35-21afd0ebb071")
 		(sheetname "Port back")
@@ -19005,6 +20955,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ba6f1da9-32f4-4ba3-9d0c-c716636ba1a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8c55019-2846-4d5d-a00f-9cfb34940fa7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7def8108-47c9-4e37-b622-f2ee90250c3d")
 			(effects
 				(font
 					(size 1 1)
@@ -19240,6 +21216,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08e1b05e-8645-42b0-8ac7-1246bc6000b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3997c9d4-15c9-4bfa-9886-a34472b26c15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8781d588-2916-495b-84e5-2fe91a110768/4d9e769e-74b8-4340-9229-76d48dd5940b")
 		(sheetname "Port 1")
@@ -19467,6 +21469,32 @@
 				)
 			)
 		)
+		(property "Part" "C 1nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f090ecf8-1e7a-44a7-a567-82667b26c74c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6036/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d05ae4f7-83b6-45b5-882b-7cc738ea5a63")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0a3fac22-a34d-4ac9-9a68-8014f3502aae/e91b9553-eb59-49c4-9f35-21afd0ebb071")
 		(sheetname "Port 3")
@@ -19687,6 +21715,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "103986a5-c058-44cf-be5d-47c491d274ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0b1c09a-cbb1-4542-ad46-219981bbdf45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e62415a2-6b64-421f-a0e4-88832dbe8a99")
 			(effects
 				(font
 					(size 1 1)
@@ -19934,6 +21988,32 @@
 				)
 			)
 		)
+		(property "Part" "MJ88-B211-JRS3"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae11ea96-885a-41e9-9c51-0539614ea45a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors-RJ45-RJ11_Heling-MJ88-B211-JRS3_C2895614.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3086dea-c728-4b28-87eb-a656db580c99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*")
 		(path "/2f650628-848b-4e64-9ac1-9b2777c50c91/47781999-7d08-40c4-98e5-e48877dd80f1")
 		(sheetname "Port 2")
@@ -20122,7 +22202,7 @@
 			(at -3.735 14.52)
 			(size 3.12 2.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 178 "unconnected-(J2-PadSH)_0")
+			(net 176 "unconnected-(J2-PadSH)_1")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "e298afb5-add6-4bbd-8641-3a41cc5ab044")
@@ -20224,6 +22304,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ba9c1ac5-229b-4cf9-8026-7ea9a80376af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "952f174f-c18c-48aa-bd69-d18b21e3ca40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0910ed11-14f1-41b8-9e59-83a493b7535d")
 			(effects
 				(font
 					(size 1 1)
@@ -20451,6 +22557,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cf30dd5c-d647-4046-8a05-4ca386040fa3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "TPS562231DRLR"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f3f201c-4fee-4920-b4a0-1b62ffb78eb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.mouser.bg/ProductDetail/Texas-Instruments/TPS562231DRLR?qs=l4Gc20tDgJK5KnXgCyg0Bw%3D%3D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea4de443-8250-4d24-a63c-6fcb188749c3")
 			(effects
 				(font
 					(size 1 1)
@@ -20749,6 +22881,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc420b19-c0de-4366-8920-9cb6608fe47f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4158dd7-bfa7-4f6a-bedb-aaa979ddab96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d9d7499e-f15c-42ff-b3e9-16c4c1433cb1")
 		(sheetname "Root")
@@ -20960,6 +23118,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "640454-2"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd081c2a-e4d7-4101-a495-022d4766cd9d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640454-2?qs=%2F35zJ5USjomXuMPFoVTCPQ%3D%3D"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "affecbf5-e63d-4e3c-92c8-4dc20a846f82")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -21180,6 +23364,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "57280617-bc21-42a4-98f1-5f2219cbbfef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c019c8d4-47e8-49fa-9594-4c6f5dcc9ab7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "587ed5bd-acb7-4bac-9eb7-e79066b77310")
 			(effects
 				(font
 					(size 1 1)
@@ -21415,6 +23625,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f304e84c-b1f2-4900-bc03-286189502671")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8d0152c-4bba-4ffe-980e-246e215f41ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0a3fac22-a34d-4ac9-9a68-8014f3502aae/38274649-2fdb-4f14-ba63-94e9ef5e8964")
 		(sheetname "Port 3")
@@ -21635,6 +23871,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "428dde07-f800-4e92-a328-1909915ea8eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "083c8caf-a937-4635-9640-ab17c2055e74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eeadd312-3f79-4213-84b6-31b69310a903")
 			(effects
 				(font
 					(size 1 1)
@@ -21870,6 +24132,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c028f38b-dbeb-42ae-9f91-95fbcb92b129")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f0501395-97d8-452c-a028-eaa6b5ebe7e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2f650628-848b-4e64-9ac1-9b2777c50c91/ddbabffa-d331-48f0-9463-9ea937e9d26b")
 		(sheetname "Port 2")
@@ -22090,6 +24378,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f80d2321-e6f1-411a-aac6-0edef12e6f9d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "RTL8367S"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cfde6bf2-5fc9-49c0-8dd7-4f6651f60944")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/C2760849.html"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df87c3c3-eeb9-45e1-83fa-4f6bcf99a84c")
 			(effects
 				(font
 					(size 1 1)
@@ -23139,7 +25453,7 @@
 			(size 1.475 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 35 "HV_SWR_0")
+			(net 184 "HV_SWR_1")
 			(pinfunction "HV_SWR")
 			(pintype "power_in+no_connect")
 			(uuid "f5231238-d093-4e5a-a181-244e8ae5bb13")
@@ -23867,6 +26181,32 @@
 				)
 			)
 		)
+		(property "Part" "R 6.2kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13dc1816-ec27-4b28-b765-5c34ccf52387")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/9992/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "107312ef-9843-4722-b82f-fd5899d126f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/f31bb5e9-dbc4-4e5b-9257-1a46401b6b05")
 		(sheetname "Root")
@@ -24107,6 +26447,32 @@
 				)
 			)
 		)
+		(property "Part" "MJ88-B211-JRS3"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d9bdc6b-50be-4afe-9a2a-28e77ba8029a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Ethernet-Connectors-Modular-Connectors-RJ45-RJ11_Heling-MJ88-B211-JRS3_C2895614.html"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25c93eaf-bf97-4e85-82c1-61cfcf6073a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "8P8C* RJ31* RJ32* RJ33* RJ34* RJ35* RJ41* RJ45* RJ49* RJ61*")
 		(path "/3e389b82-9ea2-48ed-a7af-86e532354ab4/47781999-7d08-40c4-98e5-e48877dd80f1")
 		(sheetname "Port back")
@@ -24295,7 +26661,7 @@
 			(at -3.735 14.52 180)
 			(size 3.12 2.54)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 184 "unconnected-(J5-PadSH)_0")
+			(net 182 "unconnected-(J5-PadSH)_1")
 			(pintype "passive+no_connect")
 			(thermal_bridge_angle 45)
 			(uuid "74ad387f-8c3e-42b2-863a-d5df0b75113a")
@@ -24384,6 +26750,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f4a2b3d2-e4a9-4b71-92fc-100a4b8e3de0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 27pF 16V 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c9102d2-2ecb-4477-87fb-e16ca859ebdf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/5610/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d62c9877-3f40-4782-a175-fadeda7729f4")
 			(effects
 				(font
 					(size 1 1)
@@ -24618,6 +27010,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26eebef3-2c34-4286-8536-b306bfdf6df8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8679042-f50b-4907-be62-d1591edba39f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/564500fb-31ee-4c7e-aba9-020b691e0585")
 		(sheetname "Root")
@@ -24828,6 +27246,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32e58cb6-8d43-4881-a498-c90224ad1348")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6fb17c49-e421-4d2e-b908-3ba64a723f85")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -25168,6 +27612,32 @@
 				)
 			)
 		)
+		(property "Part" "C 1nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65b37fed-01ba-4390-8132-e5cd1f885423")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6036/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c801132c-c747-40d1-8a1e-c9d16501d87a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d849c9c9-e1c7-4ba8-92fa-241403764dec/e91b9553-eb59-49c4-9f35-21afd0ebb071")
 		(sheetname "Port 4")
@@ -25408,6 +27878,32 @@
 				)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "efe00f18-bec1-4c5c-bcc7-ad86a35171e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4fa1d6f-d065-463d-ab92-d872fe9b27de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e6a1e711-6a1a-4575-a8e7-950e570c0b98")
 		(sheetname "Root")
@@ -25628,6 +28124,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "180f70b3-d665-437a-b498-8a85ae579ffa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e73aae2d-9d1b-49f1-ad76-1c9bcd0769e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd045e5f-7ff5-47d0-b494-d022f990d1ff")
 			(effects
 				(font
 					(size 1 1)
@@ -25862,6 +28384,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92cd2ec9-ee56-4246-9686-1d57346efd62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "823e71a1-8aa6-49d5-890e-02567f4df7f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/08598ba3-5204-45c1-8ab6-ed65a7c1ab82")
 		(sheetname "Root")
@@ -26089,6 +28637,32 @@
 				)
 			)
 		)
+		(property "Part" "R 4.7kΩ 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a7c0b79-beac-4e6a-ab13-66ffc9fc3bae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4411/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea686558-bda7-4033-9371-a6b6c6674c3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/390955ef-d8f9-4826-9342-5cbe64fdd3af")
 		(sheetname "Root")
@@ -26309,6 +28883,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "19853b4f-26d5-44bf-a8d9-bedb536be833")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "X322525MOB4SI"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5800db7-60a9-4297-9b8c-a980fa48162e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/Crystals_YXC-Crystal-Oscillators-X322525MOB4SI_C9006.html"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a0ec8c9f-9ca4-4de7-a3cb-0c5061218101")
 			(effects
 				(font
 					(size 1 1)
@@ -26604,6 +29204,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "09fc4e7e-67af-4466-9af8-2bcb9cd2bb14")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "G2406S"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eca8881a-2826-4b84-8155-1c83729997b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/RJ45-Transformer_CND-tek-G2406S_C507595.html"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "24cad2da-7ddf-4c96-b9ab-71fc42dd9510")
 			(effects
 				(font
 					(size 1 1)
@@ -27148,6 +29774,32 @@
 				)
 			)
 		)
+		(property "Part" "C 22μF 6.3V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cc9e9fd-fada-4e07-bf85-4c381a665032")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/50230/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1aed03bb-74c3-44cd-b3d1-51fc657ed131")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/be09d9b3-2b94-4b83-8e9c-a033f6fa7128")
 		(sheetname "Root")
@@ -27376,6 +30028,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f3c11e8-2e39-427c-b526-f401f73c7157")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5446ebf-a3a0-4b75-a42d-70317cf9847a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/d849c9c9-e1c7-4ba8-92fa-241403764dec/ddbabffa-d331-48f0-9463-9ea937e9d26b")
 		(sheetname "Port 4")
@@ -27596,6 +30274,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90243cbb-3cc8-4232-9b0b-f2c1f7c58574")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "G2406S"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f53fda8c-a987-4d8d-9dbe-280108653095")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://www.lcsc.com/product-detail/RJ45-Transformer_CND-tek-G2406S_C507595.html"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bbf6fdf-0d6d-418b-9066-8b129088debe")
 			(effects
 				(font
 					(size 1 1)
@@ -28127,6 +30831,32 @@
 				)
 			)
 		)
+		(property "Part" "R 75Ω 125mW 1% 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86b46984-02b2-4b35-be9a-fc8ee2b71aa9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/35534/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5a528be-0669-4a74-9aa0-058de773c938")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/3e389b82-9ea2-48ed-a7af-86e532354ab4/ddbabffa-d331-48f0-9463-9ea937e9d26b")
 		(sheetname "Port back")
@@ -28367,6 +31097,32 @@
 				)
 			)
 		)
+		(property "Part" "C 10μF 10V 0603"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b849bba3-f9d6-499f-a8ab-4b377c47ba1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/43703/"
+			(at 0 0 -90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad10905f-2bdf-4d4e-b7ae-e76403f9a9f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/adae73ef-2cf1-45ee-a352-68330fb0bc30")
 		(sheetname "Root")
@@ -28587,6 +31343,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "abf76910-4a72-4437-87a7-068593e71962")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "928b2524-35b2-46a1-aa00-518f709e474c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fd3da7f3-03d0-4010-8f98-ec041c930953")
 			(effects
 				(font
 					(size 1 1)
@@ -28821,6 +31603,32 @@
 				)
 			)
 		)
+		(property "Part" "C 100nF 16V 0603"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13014939-e58b-4de5-8093-8682c4ad0e0e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/38000/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10bfd98b-fff8-42bb-b88b-f721596feed7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/215e0e6e-0a21-4d18-96cf-e440e1d874e4")
 		(sheetname "Root")
@@ -29035,6 +31843,34 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Part" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6c00481a-728f-43c6-a0bc-7f8747790850")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Shop" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "40dd09c2-4300-4a2d-97b8-32327f3afb14")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
