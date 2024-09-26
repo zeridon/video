@@ -119,11 +119,11 @@ module onlyfans() {
 }
 
 module hdmi_holes() {
-    translate([4,54,0]) circle(d=3);
-    translate([54,54,0]) circle(d=3);
+    translate([4,54,0]) circle(r=1.6);
+    translate([54,54,0]) circle(r=1.6);
 
-    translate([4,4,0]) circle(d=3);
-    translate([54,4,0]) circle(d=3);
+    translate([4,4,0]) circle(r=1.6);
+    translate([54,4,0]) circle(r=1.6);
 }
 
 module hdmi() {
@@ -136,21 +136,19 @@ module hdmi() {
 }
 
 module radxa_x2l_holes() {
-    // top holes
-    translate([151,76,0]) circle(d=2);
-    translate([4,76,0]) circle(d=2);
-
-    // bottom holes
-    translate([4,18,0]) circle(d=2);
-    translate([151,18,0]) circle(d=2);
+    translate([4, 3.8, 0]) circle(r=1.05);
+    translate([4, 3.8+58.4, 0]) circle(r=1.05);
+    translate([4+58.2, 3.8, 0]) circle(r=1.05);
+    translate([4+58.2, 3.8+49.2, 0]) circle(r=1.05);
+    translate([4+148.2, 3.8, 0]) circle(r=1.05);
+    translate([4+148.2, 3.8+58.4, 0]) circle(r=1.05);
 }
 
 module radxa_x2l() {
-    // fixme: re-measure
     // precise measurements available at https://dl.radxa.com/x/x2l/radxa_x2l_product_brief.pdf
     linear_extrude(brd_thickness)
     difference() {
-        rrect(155,80,2);
+        rrect(155.6,80.6,2);
         radxa_x2l_holes();
     }
 }
@@ -167,6 +165,7 @@ module radxa_x4_holes() {
 
 
 module radxa_x4() {
+    // precise measurements available at 
     // https://dl.radxa.com/x/x4/radxa_x4_product_brief.pdf
     color("#ebac54")
     linear_extrude(brd_thickness)
@@ -182,8 +181,8 @@ module radxa_x4() {
 switch_transl = [187.5,53,0];
 power_transl = [523.5,-60,0];
 audio_transl = [170,150,0];
-radxa_x2l_transl = [160,110,0];
-radxa_x4_transl = [170,133,0];
+radxa_x2l_transl = [265,191,0];
+radxa_x4_transl = [120,133,0];
 hdmi_transl = [329.5,136.9,0];
 
 module case_with_holes() {
@@ -193,7 +192,7 @@ module case_with_holes() {
         translate(switch_transl) rotate(180) scale([1, -1, 1]) switch_holes();
         translate(power_transl) rotate(180) scale([1, -1, 1]) power_holes();
         translate(audio_transl) scale([1, -1, 1]) audio_holes();
-        translate(radxa_x2l_transl) radxa_x2l_holes();
+        translate(radxa_x2l_transl) rotate(180) radxa_x2l_holes();
         translate(radxa_x4_transl) radxa_x4_holes();
         translate(hdmi_transl) hdmi_holes();
     };
@@ -203,11 +202,11 @@ module boards() {
     translate(switch_transl) rotate(180) switch();
     translate(power_transl) rotate(180) power();
     translate(audio_transl) audio();
-    translate(radxa_x2l_transl) radxa_x2l();
+    translate(radxa_x2l_transl) rotate(180) radxa_x2l();
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) hdmi();
     translate([0,33,0]) onlyfans();
 }
 
-// boards();
+boards();
 case_with_holes();
