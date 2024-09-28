@@ -75,6 +75,7 @@ addressing plan.
 | `d0:67:26:cc:86:56` | streamdump0 | 185.175.218.10 |
 | `70:85:c2:a2:d2:16` | control | 185.175.218.11 |
 | `00:26:99:c4:a3:42` | voctop-sw | 185.175.218.12 |
+| `bc:24:11:62:76:a9` | fpbx | 185.175.218.13 |
 
 #### Voctops and video boxes
 
