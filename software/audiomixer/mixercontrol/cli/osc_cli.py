@@ -86,6 +86,10 @@ def cli(ctx: click.Context, device: click.File):
         def quit():
             raise ExitReplException()
 
+        @cli.command(hidden=True)
+        def exit():
+            raise ExitReplException()
+
         @cli.command(name='?', hidden=True)
         def question():
             click.echo(ctx.get_help())
