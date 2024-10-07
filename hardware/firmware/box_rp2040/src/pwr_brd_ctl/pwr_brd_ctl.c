@@ -34,6 +34,30 @@ bool temp_sensor_get_temp_raw(uint8_t* dest) {
     return (i2c_read_blocking_until(PWR_BRD_I2C_INST, PWR_BRD_TEMP_SENS_ADDR, dest, 1, false, make_timeout_time_ms(20)) >= 0);
 }
 
+bool pwr_brd_i2c_read_reg(uint8_t dev_addr, uint8_t reg_id, uint8_t* dest, uint8_t num_bytes) {
+    int ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, &reg_id, 1, false, make_timeout_time_ms(20));
+    if (ret != 1) {
+        return false;
+    }
+    ret = i2c_read_blocking_until(PWR_BRD_I2C_INST, dev_addr, dest, num_bytes, false, make_timeout_time_ms(20));
+    if (ret != num_bytes) {
+        return false;
+    }
+    return true;
+}
+
+bool pwr_brd_i2c_write_reg(uint8_t dev_addr, uint8_t reg_id, uint8_t* src, uint8_t num_bytes) {
+    int ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, &reg_id, 1, false, make_timeout_time_ms(20));
+    if (ret != 1) {
+        return false;
+    }
+    ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, src, num_bytes, false, make_timeout_time_ms(20));
+    if (ret != num_bytes) {
+        return false;
+    }
+    return true;
+}
+
 void pwr_brd_i2c_bus_scan() {
     io_say("begin pb.i2c.scan:\n");
 
@@ -46,10 +70,11 @@ void pwr_brd_i2c_bus_scan() {
         // Skip over any reserved addresses.
         int ret;
         uint8_t rxdata;
-        if (reserved_addr(addr))
+        if (reserved_addr(addr)) {
             ret = PICO_ERROR_GENERIC;
-        else
+        } else {
             ret = i2c_read_blocking_until(PWR_BRD_I2C_INST, addr, &rxdata, 1, false, make_timeout_time_ms(20));
+        }
 
         if (ret >= 0) {
             io_say("found device at ");
@@ -68,7 +93,7 @@ void pwr_brd_i2c_dump_all_regs(uint8_t addr) {
         io_say("reg ");
         io_say_uint(reg);
         io_say(": ");
-        if (i2c_read_timeout_us(PWR_BRD_I2C_INST, addr, &val, 1, false, 200000) < 1) {
+        if(pwr_brd_i2c_read_reg(addr, reg, &val, 1)) {
             io_say_uint(val);
         } else {
             io_say("fail");

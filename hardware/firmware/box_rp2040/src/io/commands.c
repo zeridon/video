@@ -26,6 +26,9 @@ void help(void) {
     io_say("    pb.temp.raw             -- show raw power board temperature reading\n");
     io_say("    pb.i2c.scan             -- scan for devices on the power board i²c bus\n");
     io_say("    pb.i2c.dump_all_regs    -- try to dump all registers of an i²c device\n");
+    io_say("    pb.fan.speed.get        -- get fan speed\n");
+    io_say("    pb.fan.speed.target     -- set fan speed\n");
+    io_say("    pb.fan.pwm              -- get fan pwm duty cycle\n");
     io_say("    bootloader              -- reboot into bootloader\n");
     io_say("call a command without arguments for usage\n");
     io_say("every command's output ends with '^(ok|fail) .*\\n'\n");
@@ -233,6 +236,42 @@ void io_handle_cmd(char* line, io_state_t* state) {
             io_say("\n");
         } else {
             io_say("fail pb.fan.speed.get\n");
+        }
+        return;
+    }
+
+    if (hop_word(&line, "pb.fan.pwm")) {
+        if (line[0] == '\0') {
+            io_say("usage: pb.fan.pwm <fan id>\n");
+            io_say("reads the current pwm duty cycle for the given fan from the fan controller\n");
+            return;
+        }
+        uint16_t fan_id = parse_number(&line);
+
+        uint8_t pwm;
+        if (fan_ctl_get_pwm(fan_id, &pwm)) {
+            io_say("ok pb.fan.pwm: ");
+            io_say_uint(pwm);
+            io_say("\n");
+        } else {
+            io_say("fail pb.fan.pwm\n");
+        }
+        return;
+    }
+
+    if (hop_word(&line, "pb.fan.speed.target")) {
+        if (line[0] == '\0') {
+            io_say("usage: pb.fan.speed.get <fan id> <speed>\n");
+            io_say("sets the speed target for the given fan from the fan controller\n");
+            return;
+        }
+        uint16_t fan_id = parse_number(&line);
+        uint16_t speed = parse_number(&line);
+
+        if (fan_ctl_set_fan_speed(fan_id, speed)) {
+            io_say("ok pb.fan.speed.target\n");
+        } else {
+            io_say("fail pb.fan.speed.target\n");
         }
         return;
     }
