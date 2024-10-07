@@ -30,4 +30,13 @@ while ! lsusb | grep -qE '\<16c0:0478\>'; do
 done
 
 echo 'flashing'
-teensy_loader_cli --mcu TEENSY41 -v -w "${1}"
+for i in {1..3}; do
+    if teensy_loader_cli --mcu TEENSY41 -v -w "${1}"; then
+        echo 'flashed successfully'
+        exit 0
+    else
+        echo "flashing attempt ${i} failed"
+    fi
+done
+echo 'giving up'
+exit 1
