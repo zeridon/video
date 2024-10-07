@@ -3,6 +3,8 @@
 #include "io/serial.h"
 #include "io/utils.h"
 #include "display/display.h"
+#include "pwr_brd_ctl/pwr_brd_ctl.h"
+#include "pwr_brd_ctl/fan_ctl.h"
 #include "network_switch/network_switch_status_reader.h"
 
 #include "pico/bootrom.h"
@@ -13,14 +15,18 @@
 
 void help(void) {
     io_say("available commands:\n");
-    io_say("    netswitch.info      -- respond with network switch info\n");
-    io_say("    display.text.line   -- show text on the display\n");
-    io_say("    display.text.clear  -- clear text shown on display\n");
-    io_say("    display.img         -- display an image\n");
-    io_say("    display.img.clear   -- clear image(s) shown on display\n");
-    io_say("    display.refresh     -- commit all previously called display commands\n");
-    io_say("    display.imgonly     -- like display.refresh, but hides all text. very fast.\n");
-    io_say("    bootloader          -- reboot into bootloader\n");
+    io_say("    netswitch.info          -- respond with network switch info\n");
+    io_say("    display.text.line       -- show text on the display\n");
+    io_say("    display.text.clear      -- clear text shown on display\n");
+    io_say("    display.img             -- display an image\n");
+    io_say("    display.img.clear       -- clear image(s) shown on display\n");
+    io_say("    display.refresh         -- commit all previously called display commands\n");
+    io_say("    display.imgonly         -- like display.refresh, but hides all text. very fast.\n");
+    io_say("    pb.gpio.read.raw        -- read raw GPIO status on the power board\n");
+    io_say("    pb.temp.raw             -- show raw power board temperature reading\n");
+    io_say("    pb.i2c.scan             -- scan for devices on the power board i²c bus\n");
+    io_say("    pb.i2c.dump_all_regs    -- try to dump all registers of an i²c device\n");
+    io_say("    bootloader              -- reboot into bootloader\n");
     io_say("call a command without arguments for usage\n");
     io_say("every command's output ends with '^(ok|fail) .*\\n'\n");
     io_say("ok help\n");
@@ -157,6 +163,77 @@ void io_handle_cmd(char* line, io_state_t* state) {
     if (hop_word(&line, "display.imgonly")) {
         display_imgonly();
         io_say("ok display.imgonly\n");
+        return;
+    }
+
+    if (hop_word(&line, "pb.gpio.read.raw")) {
+        uint8_t val = 0;
+        if (pwr_brd_raw_gpio_read(&val)) {
+            io_say("ok pbgpio.read.raw: ");
+            io_say_uint(val);
+            io_say("\n");
+        } else {
+            io_say("fail pbgpio.read.raw\n");
+        }
+        return;
+    }
+
+    if (hop_word(&line, "pb.temp.raw")) {
+        uint8_t temp = 0;
+        if (temp_sensor_get_temp_raw(&temp)) {
+            io_say("ok pb.temp.raw: ");
+            io_say_uint(temp);
+            io_say("\n");
+        } else {
+            io_say("fail pb.temp.raw\n");
+        }
+        return;
+    }
+
+    if (hop_word(&line, "pb.i2c.scan")) {
+        pwr_brd_i2c_bus_scan();
+        return;
+    }
+
+    if (hop_word(&line, "pb.i2c.dump_all_regs")) {
+        if (line[0] == '\0') {
+            io_say("usage: pb.i2c.dump_all_regs <i2c address>\n");
+            io_say("loops over all possible i²c addresses and tries to read them\n");
+            return;
+        }
+        uint16_t addr = parse_number(&line);
+        pwr_brd_i2c_dump_all_regs(addr);
+        return;
+    }
+
+    if (hop_word(&line, "pb.fan.status")) {
+        uint8_t status;
+        if (fan_ctl_get_fan_status(&status)) {
+            io_say("ok pb.fan.status: ");
+            io_say_uint(status);
+            io_say("\n");
+        } else {
+            io_say("fail pb.fan.status\n");
+        }
+        return;
+    }
+
+    if (hop_word(&line, "pb.fan.speed.get")) {
+        if (line[0] == '\0') {
+            io_say("usage: pb.fan.speed.get <fan id>\n");
+            io_say("reads the speed of the given fan from the fan controller\n");
+            return;
+        }
+        uint16_t fan_id = parse_number(&line);
+
+        uint16_t speed;
+        if (fan_ctl_get_fan_speed(fan_id, &speed)) {
+            io_say("ok pb.fan.speed.get: ");
+            io_say_uint(speed);
+            io_say("\n");
+        } else {
+            io_say("fail pb.fan.speed.get\n");
+        }
         return;
     }
 

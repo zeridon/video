@@ -15,6 +15,8 @@ target_sources(box_rp2040 PRIVATE
         io/commands.c
         io/utils.c
         network_switch/network_switch_status_reader.c
+        pwr_brd_ctl/pwr_brd_ctl.c
+        pwr_brd_ctl/fan_ctl.c
 
         usb/usb_descriptors.c
         usb/usb.c
@@ -25,6 +27,7 @@ target_link_libraries(box_rp2040 PRIVATE
 
         pico_st7789
         mcufont_text
+        tca9534
 
         tinyusb_device
         tinyusb_board

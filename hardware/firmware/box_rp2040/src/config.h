@@ -1,4 +1,7 @@
 #pragma once
+#include <hardware/i2c.h>
+#include <pico/stdlib.h>
+
 // For wiring GPIO pins to the Radxa X2L, you can use the following pinout
 // of the Radxa GPIO connector:
 //
@@ -45,7 +48,7 @@
 
 // ********* UART ***********
 // set to uart0, etc to enable or to NULL to disable UART
-#define UART_INSTANCE               NULL
+#define UART_INST                   NULL
 #define UART_BAUD                   115200
 #define UART_PIN_TX                 0
 #define UART_PIN_RX                 1
@@ -103,3 +106,13 @@
 #define NSW_PIN_CLK                 15  // radxa pin 18
 
 #define NSW_NUM_PORTS               5
+
+#define PWR_BRD_I2C_INST            i2c1
+#define PWR_BRD_I2C_SDA             26
+#define PWR_BRD_I2C_SCL             27
+#define PWR_BRD_I2C_INT             17
+#define PWR_BRD_I2C_INT_AUX         18
+#define PWR_BRD_I2C_BAUD            (100 * 1000)
+#define PWR_BRD_FAN_CTL_ADDR        0x4d
+
+#define PWR_BRD_TEMP_SENS_ADDR      0x4b
