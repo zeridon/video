@@ -16,7 +16,12 @@ module case() {
 
             // screw stands
             // outer
-            translate([20.4,33.85,0]) circle(d=screwd);
+            hull() {
+                // this hole is too close to the fan
+                // cutout, so merge the cut
+                translate([12,40,0]) circle(d=screwd);
+                translate([20.4,33.85,0]) circle(d=screwd);
+            }
             translate([20.4,161.15,0]) circle(d=screwd);
             translate([403.05,33.85,0]) circle(d=screwd);
             translate([403.05,161.15,0]) circle(d=screwd);
@@ -113,9 +118,31 @@ module power() {
     }
 }
 
+onlyfans_size_x = 16.5;
+onlyfans_size_y = 105;
+
+module onlyfans_holes() {
+    translate([3, -3]) circle(r=1.6);
+    translate([12, -3]) circle(r=1.6);
+    translate([3, 3 + onlyfans_size_y]) circle(r=1.6);
+    translate([12, 3 + onlyfans_size_y]) circle(r=1.6);
+}
+
+module onlyfans_footprint() {
+    union() {
+        rrect(onlyfans_size_x, onlyfans_size_y, 2);
+        square([3, onlyfans_size_y]);
+    } 
+}
+
+module onlyfans_cutout() {
+    onlyfans_holes();
+    onlyfans_footprint();
+}
+
 module onlyfans() {
     linear_extrude(20)
-    square([15,101]);
+    onlyfans_cutout();
 }
 
 module hdmi_holes() {
@@ -182,8 +209,9 @@ switch_transl = [187.5,53,0];
 power_transl = [523.5,-60,0];
 audio_transl = [170,150,0];
 radxa_x2l_transl = [265,191,0];
-radxa_x4_transl = [120,133,0];
+radxa_x4_transl = [150,133,0];
 hdmi_transl = [329.5,136.9,0];
+onlyfans_transl = [0, 34.5, 0];
 
 module case_with_holes() {
     difference() {
@@ -195,6 +223,7 @@ module case_with_holes() {
         translate(radxa_x2l_transl) rotate(180) radxa_x2l_holes();
         translate(radxa_x4_transl) radxa_x4_holes();
         translate(hdmi_transl) hdmi_holes();
+        translate(onlyfans_transl) onlyfans_cutout();
     };
 }
 
@@ -205,8 +234,7 @@ module boards() {
     translate(radxa_x2l_transl) rotate(180) radxa_x2l();
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) hdmi();
-    translate([0,33,0]) onlyfans();
+    translate(onlyfans_transl) onlyfans();
 }
-
-boards();
+// boards();
 case_with_holes();
