@@ -2407,7 +2407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caad9862-1b4f-44bb-908f-2711be65094d")
-		(property "Reference" "#FLG07"
+		(property "Reference" "#FLG01"
 			(at 128.27 84.455 0)
 			(effects
 				(font
@@ -2458,7 +2458,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/91441b40-0438-4eff-8649-c295c7239fb6"
-					(reference "#FLG07")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
