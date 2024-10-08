@@ -3106,7 +3106,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 91.44) (xy 205.74 91.44)
+			(xy 182.88 88.9) (xy 205.74 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3346,7 +3346,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 88.9) (xy 205.74 88.9)
+			(xy 182.88 91.44) (xy 205.74 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3366,7 +3366,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 93.98) (xy 205.74 93.98)
+			(xy 182.88 86.36) (xy 205.74 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3696,7 +3696,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 86.36) (xy 205.74 86.36)
+			(xy 203.2 93.98) (xy 205.74 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3817,7 +3817,7 @@
 		(uuid "111ff482-dde8-4200-9ed3-e9531942ca06")
 	)
 	(label "NSW_SCL"
-		(at 193.04 64.77 0)
+		(at 193.04 62.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3839,7 +3839,7 @@
 		(uuid "1c95d8cf-b4a4-4492-917a-6e01ad90cbff")
 	)
 	(label "NSW_SDA"
-		(at 193.04 62.23 0)
+		(at 193.04 64.77 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3861,7 +3861,7 @@
 		(uuid "3513bb14-e448-42b9-876e-2a5093623109")
 	)
 	(label "PWR_BRD_SDA"
-		(at 182.88 93.98 0)
+		(at 182.88 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3993,7 +3993,7 @@
 		(uuid "7a030f1a-72fb-4421-9973-e0e7c87aa43b")
 	)
 	(label "PWR_BRD_SCL"
-		(at 182.88 91.44 0)
+		(at 182.88 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4037,7 +4037,7 @@
 		(uuid "a864fc8c-0e77-485e-b16f-17a3c4c7ea0a")
 	)
 	(label "PWR_BRD_INT"
-		(at 182.88 88.9 0)
+		(at 182.88 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4303,7 +4303,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 86.36 270)
+		(at 203.2 93.98 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4312,7 +4313,7 @@
 		(fields_autoplaced yes)
 		(uuid "12520b2e-585c-4b93-be6f-9402814a3170")
 		(property "Reference" "#PWR015"
-			(at 196.85 86.36 0)
+			(at 196.85 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4321,7 +4322,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 86.36 0)
+			(at 198.12 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4330,7 +4331,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 86.36 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4339,7 +4340,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 86.36 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4348,7 +4349,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 86.36 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4499,7 @@
 				)
 			)
 		)
-		(property "Purpose Pin1" "SDA"
+		(property "Purpose Pin1" "GND"
 			(at 210.82 93.98 0)
 			(effects
 				(font
@@ -4507,7 +4508,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin2" "SCL"
+		(property "Purpose Pin2" "INT"
 			(at 210.82 91.44 0)
 			(effects
 				(font
@@ -4516,7 +4517,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin3" "INT"
+		(property "Purpose Pin3" "SCL"
 			(at 210.82 88.9 0)
 			(effects
 				(font
@@ -4525,7 +4526,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin4" "GND"
+		(property "Purpose Pin4" "SDA"
 			(at 210.82 86.36 0)
 			(effects
 				(font
@@ -5337,7 +5338,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin4" "SCL"
+		(property "Purpose Pin4" "SDA"
 			(at 210.82 64.77 0)
 			(do_not_autoplace yes)
 			(effects
@@ -5347,7 +5348,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin5" "SDA"
+		(property "Purpose Pin5" "SCL"
 			(at 210.82 62.23 0)
 			(do_not_autoplace yes)
 			(effects
@@ -6176,7 +6177,8 @@
 	)
 	(symbol
 		(lib_id "conn:Conn_01x08")
-		(at 210.82 106.68 0)
+		(at 210.82 119.38 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6184,7 +6186,7 @@
 		(dnp no)
 		(uuid "f43400c6-3bbc-48c7-9822-7fabcdf9a747")
 		(property "Reference" "J4"
-			(at 223.52 111.7599 0)
+			(at 223.52 114.3001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6193,7 +6195,7 @@
 			)
 		)
 		(property "Value" "Header_01x08"
-			(at 215.646 124.46 0)
+			(at 215.646 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6202,7 +6204,7 @@
 			)
 		)
 		(property "Footprint" "Connector_MTA-100:mta100_01x8_P2.54_640455-8"
-			(at 210.82 102.362 0)
+			(at 210.82 123.698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6211,7 +6213,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 106.68 0)
+			(at 210.82 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6220,7 +6222,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 211.074 102.362 0)
+			(at 211.074 123.698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6228,77 +6230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose Pin1" "GND"
-			(at 210.82 104.14 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin2" "+3.3V"
-			(at 210.82 106.68 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin3" "CS"
-			(at 210.82 109.22 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin4" "DC"
-			(at 210.82 111.76 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin5" "CLK"
-			(at 210.82 114.3 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin6" "DAT"
-			(at 210.82 116.84 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin7" "BL"
-			(at 210.82 119.38 0)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin8" "RST"
+		(property "Purpose Pin1" "RST"
 			(at 210.82 121.92 0)
 			(do_not_autoplace yes)
 			(effects
@@ -6308,8 +6240,78 @@
 				(justify left)
 			)
 		)
+		(property "Purpose Pin2" "BL"
+			(at 210.82 119.38 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin3" "DAT"
+			(at 210.82 116.84 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin4" "CLK"
+			(at 210.82 114.3 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin5" "DC"
+			(at 210.82 111.76 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin6" "CS"
+			(at 210.82 109.22 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin7" "+3.3V"
+			(at 210.82 106.68 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin8" "GND"
+			(at 210.82 104.14 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Purpose" "DISPLAY"
-			(at 212.09 124.46 0)
+			(at 212.09 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6318,7 +6320,7 @@
 			)
 		)
 		(property "Part" "640456-8"
-			(at 210.82 106.68 0)
+			(at 210.82 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6327,7 +6329,7 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
-			(at 210.82 106.68 0)
+			(at 210.82 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6589,7 +6591,8 @@
 	)
 	(symbol
 		(lib_id "conn:Conn_01x04")
-		(at 210.82 133.35 0)
+		(at 210.82 135.89 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6597,7 +6600,7 @@
 		(dnp no)
 		(uuid "f95b9de2-25f7-455f-8305-e06846aa955a")
 		(property "Reference" "J5"
-			(at 213.36 128.27 0)
+			(at 213.36 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6606,7 +6609,7 @@
 			)
 		)
 		(property "Value" "Header_01x04"
-			(at 215.9 140.97 0)
+			(at 215.9 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6615,7 +6618,7 @@
 			)
 		)
 		(property "Footprint" "Connector_MTA-100:mta100_01x4_P2.54_640455-4"
-			(at 210.82 133.35 0)
+			(at 210.82 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6624,7 +6627,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 210.82 133.35 0)
+			(at 210.82 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6633,7 +6636,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 210.82 133.35 0)
+			(at 210.82 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6642,41 +6645,14 @@
 			)
 		)
 		(property "Purpose" "EXTRA"
-			(at 215.9 140.97 0)
+			(at 215.9 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Purpose Pin1" "RX"
-			(at 210.82 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin2" "TX"
-			(at 210.82 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin3" "GP29"
-			(at 210.82 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Purpose Pin4" "GP28"
+		(property "Purpose Pin1" "GP28"
 			(at 210.82 138.43 0)
 			(effects
 				(font
@@ -6685,8 +6661,35 @@
 				(justify left)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
+		(property "Purpose Pin2" "GP29"
+			(at 210.82 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin3" "TX"
 			(at 210.82 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Purpose Pin4" "RX"
+			(at 210.82 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
+			(at 210.82 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6695,7 +6698,7 @@
 			)
 		)
 		(property "Part" "640456-4"
-			(at 210.82 133.35 0)
+			(at 210.82 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -3151,7 +3151,7 @@
 		)
 		(uuid "fe25166e-f39c-4199-a1d8-26957906f30f")
 	)
-	(label "FB6V"
+	(label "FB5V"
 		(at 177.8 92.71 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5791,7 +5791,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "20kΩ"
+		(property "Value" "7.5kΩ"
 			(at 190.5 97.79 0)
 			(effects
 				(font
@@ -5827,7 +5827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/29761/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/3545/"
 			(at 187.96 97.79 0)
 			(effects
 				(font
@@ -5845,7 +5845,7 @@
 				(justify right)
 			)
 		)
-		(property "LCSC" "C4328"
+		(property "LCSC" ""
 			(at 187.96 97.79 0)
 			(effects
 				(font
@@ -5854,7 +5854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 20kΩ 125mW 1% 0805"
+		(property "Part" "R 7.5kΩ 125mW 1% 0805"
 			(at 187.96 97.79 0)
 			(effects
 				(font
@@ -6498,7 +6498,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100kΩ"
+		(property "Value" "30kΩ"
 			(at 190.5 87.63 0)
 			(effects
 				(font
@@ -6534,7 +6534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/24862/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/3554/"
 			(at 187.96 87.63 0)
 			(effects
 				(font
@@ -6552,7 +6552,7 @@
 				(justify right)
 			)
 		)
-		(property "LCSC" "C149504"
+		(property "LCSC" ""
 			(at 187.96 87.63 0)
 			(effects
 				(font
@@ -6561,7 +6561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 100kΩ 125mW 1% 0805"
+		(property "Part" "R 30kΩ 125mW 1% 0805"
 			(at 187.96 87.63 0)
 			(effects
 				(font
@@ -7162,7 +7162,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4007")
-		(at 73.66 60.96 90)
+		(at 73.66 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7176,7 +7176,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "S2A"
@@ -7185,11 +7185,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 78.105 60.96 0)
+			(at 69.215 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)

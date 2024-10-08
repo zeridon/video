@@ -8543,7 +8543,7 @@
 		(uuid "2ea13158-f058-425b-b0e2-acf825238cb5")
 	)
 	(label "SCL"
-		(at 212.09 217.17 0)
+		(at 212.09 214.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8675,7 +8675,7 @@
 		(uuid "6e85f5e8-81a4-419a-81ef-44a7d29bf309")
 	)
 	(label "SDA"
-		(at 53.34 198.12 0)
+		(at 53.34 200.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8829,7 +8829,7 @@
 		(uuid "d5c7725d-9e86-41c5-88bb-b4692c04dab7")
 	)
 	(label "SDA"
-		(at 212.09 214.63 0)
+		(at 212.09 217.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8873,7 +8873,7 @@
 		(uuid "eb04a9e9-0bd1-4885-a98c-ed09da8d801e")
 	)
 	(label "SCL"
-		(at 53.34 200.66 0)
+		(at 53.34 198.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11921,16 +11921,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 226.06 217.17 0)
+		(at 226.06 219.71 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3f33d05d-d64b-41c9-b8bf-32a96ff8b689")
 		(property "Reference" "J6"
-			(at 228.6 217.1699 0)
+			(at 228.6 219.7101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11939,7 +11939,7 @@
 			)
 		)
 		(property "Value" "I/O"
-			(at 228.6 219.7099 0)
+			(at 228.6 217.1701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11948,7 +11948,7 @@
 			)
 		)
 		(property "Footprint" "Library:mta100_01x6_P2.54_647050-6"
-			(at 226.06 217.17 0)
+			(at 226.06 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11957,7 +11957,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 226.06 217.17 0)
+			(at 226.06 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11966,7 +11966,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 226.06 217.17 0)
+			(at 226.06 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11975,7 +11975,7 @@
 			)
 		)
 		(property "Part" "640454-6"
-			(at 226.06 217.17 0)
+			(at 226.06 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11984,7 +11984,7 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640454-6?qs=%2F35zJ5USjonV0oil6hzIeQ%3D%3D"
-			(at 226.06 217.17 0)
+			(at 226.06 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14425,7 +14425,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7ada4314-9f49-4f48-9423-3cd17c0855a5")
 		(property "Reference" "J7"
 			(at 226.06 271.7799 0)

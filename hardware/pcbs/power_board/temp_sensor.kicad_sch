@@ -721,7 +721,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 166.37 93.98 0)
+		(at 166.37 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -733,7 +733,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
-		(at 166.37 96.52 0)
+		(at 166.37 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
