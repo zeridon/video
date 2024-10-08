@@ -41,6 +41,14 @@ module case() {
     }
 }
 
+module nuthole_m2() {
+    circle(r=1.055);
+}
+
+module nuthole_m3() {
+    circle(r=1.61);
+}
+
 module rrect(w,l,r) {
     translate([r,r,0]) {
         minkowski() {
@@ -51,14 +59,10 @@ module rrect(w,l,r) {
 }
 
 module switch_holes() {
-    translate([172, 100, -1])
-        circle(r=1.6);
-    translate([119, 64, -1])
-        circle(r=1.6);
-    translate([166, 64, -1])
-        circle(r=1.6);
-    translate([99, 99, -1])
-        circle(r=1.6);
+    translate([172, 100, -1]) nuthole_m3();
+    translate([119,  64, -1]) nuthole_m3();
+    translate([166,  64, -1]) nuthole_m3();
+    translate([ 99,  99, -1]) nuthole_m3();
 }
 
 module switch() {
@@ -76,13 +80,13 @@ module audio_holes() {
     translate([153.4, 116.2, -1])
         circle(r=4.4);
     translate([217.75, 129, -1])
-        circle(r=1.6);
+        nuthole_m3();
     translate([74.75, 93.25, -1])
-        circle(r=1.6);
+        nuthole_m3();
     translate([217.75, 93.25, -1])
-        circle(r=1.6);
+        nuthole_m3();
     translate([74.75, 129, -1])
-        circle(r=1.6);
+        nuthole_m3();
 }
 
 module audio() {
@@ -98,13 +102,13 @@ module audio() {
 
 module power_holes() {
     translate([493, 132, -1])
-        circle(r=1.6);
+        nuthole_m3();
     translate([433, 66.5, -1])
-        circle(r=1.6);
+        nuthole_m3();
     translate([498, 85, -1])
-        circle(r=1.6);
+        nuthole_m3();
     translate([433, 132, -1])
-        circle(r=1.6);
+        nuthole_m3();
 }
 
 module power() {
@@ -124,18 +128,19 @@ module display_footprint() {
     union() {
         rrect(display_size_x, display_size_y, 2);
         square([display_size_x, 2]);
-    } 
+    }
 }
 
+harness_hole_spacing = 4.5;
 module display_holes() {
     half_hole_spacing_x = (128.4175 - 70.4175) / 2;
     centre_x = display_size_x / 2;
-    translate([-3, 3]) circle(r=1.6);
-    translate([-3, 16]) circle(r=1.6);
-    translate([display_size_x + 3, 3]) circle(r=1.6);
-    translate([display_size_x + 3, 16]) circle(r=1.6);
-    translate([centre_x - half_hole_spacing_x, 3 + display_size_y]) circle(r=1.6);
-    translate([centre_x + half_hole_spacing_x, 3 + display_size_y]) circle(r=1.6);
+    translate([-harness_hole_spacing, harness_hole_spacing]) nuthole_m3();
+    translate([-harness_hole_spacing, 16]) nuthole_m3();
+    translate([display_size_x + harness_hole_spacing, harness_hole_spacing]) nuthole_m3();
+    translate([display_size_x + harness_hole_spacing, 16]) nuthole_m3();
+    translate([centre_x - half_hole_spacing_x, harness_hole_spacing + display_size_y]) nuthole_m3();
+    translate([centre_x + half_hole_spacing_x, harness_hole_spacing + display_size_y]) nuthole_m3();
 }
 
 module display_cutout() {
@@ -152,17 +157,17 @@ onlyfans_size_x = 16.5;
 onlyfans_size_y = 105;
 
 module onlyfans_holes() {
-    translate([3, -3]) circle(r=1.6);
-    translate([12, -3]) circle(r=1.6);
-    translate([3, 3 + onlyfans_size_y]) circle(r=1.6);
-    translate([12, 3 + onlyfans_size_y]) circle(r=1.6);
+    translate([harness_hole_spacing, -harness_hole_spacing]) nuthole_m3();
+    translate([12, -harness_hole_spacing]) nuthole_m3();
+    translate([harness_hole_spacing, harness_hole_spacing + onlyfans_size_y]) nuthole_m3();
+    translate([12, harness_hole_spacing + onlyfans_size_y]) nuthole_m3();
 }
 
 module onlyfans_footprint() {
     union() {
         rrect(onlyfans_size_x, onlyfans_size_y, 2);
         square([3, onlyfans_size_y]);
-    } 
+    }
 }
 
 module onlyfans_cutout() {
@@ -176,11 +181,11 @@ module onlyfans() {
 }
 
 module hdmi_holes() {
-    translate([4,54,0]) circle(r=1.6);
-    translate([54,54,0]) circle(r=1.6);
+    translate([4,54,0]) nuthole_m3();
+    translate([54,54,0]) nuthole_m3();
 
-    translate([4,4,0]) circle(r=1.6);
-    translate([54,4,0]) circle(r=1.6);
+    translate([4,4,0]) nuthole_m3();
+    translate([54,4,0]) nuthole_m3();
 }
 
 module hdmi() {
@@ -193,12 +198,12 @@ module hdmi() {
 }
 
 module radxa_x2l_holes() {
-    translate([4, 3.8, 0]) circle(r=1.05);
-    translate([4, 3.8+58.4, 0]) circle(r=1.05);
-    translate([4+58.2, 3.8, 0]) circle(r=1.05);
-    translate([4+58.2, 3.8+49.2, 0]) circle(r=1.05);
-    translate([4+148.2, 3.8, 0]) circle(r=1.05);
-    translate([4+148.2, 3.8+58.4, 0]) circle(r=1.05);
+    translate([4, 3.8, 0]) nuthole_m2();
+    translate([4, 3.8+58.4, 0]) nuthole_m2();
+    translate([4+58.2, 3.8, 0]) nuthole_m2();
+    translate([4+58.2, 3.8+49.2, 0]) nuthole_m2();
+    translate([4+148.2, 3.8, 0]) nuthole_m2();
+    translate([4+148.2, 3.8+58.4, 0]) nuthole_m2();
 }
 
 module radxa_x2l() {
@@ -211,10 +216,10 @@ module radxa_x2l() {
 }
 
 module radxa_x4_holes() {
-    translate([3.53,3.5,0]) circle(d=3);
-    translate([3.53,56-3.5,0]) circle(d=3);
-    translate([3.53+58,3.5,0]) circle(d=3);
-    translate([3.53+58,56-3.5,0]) circle(d=3);
+    translate([3.53,3.5,0]) nuthole_m3();
+    translate([3.53,56-3.5,0]) nuthole_m3();
+    translate([3.53+58,3.5,0]) nuthole_m3();
+    translate([3.53+58,56-3.5,0]) nuthole_m3();
 
     // hole for power inductors to fit into (they are tall)
     translate([8, 6, 0]) rrect(10, 45, 2);
@@ -222,7 +227,7 @@ module radxa_x4_holes() {
 
 
 module radxa_x4() {
-    // precise measurements available at 
+    // precise measurements available at
     // https://dl.radxa.com/x/x4/radxa_x4_product_brief.pdf
     color("#ebac54")
     linear_extrude(brd_thickness)
