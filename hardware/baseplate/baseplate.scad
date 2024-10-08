@@ -117,6 +117,36 @@ module power() {
         translate([0, 0, -1]) linear_extrude(brd_thickness+2) power_holes();
     }
 }
+display_size_x = 70;
+display_size_y = 22.5;
+
+module display_footprint() {
+    union() {
+        rrect(display_size_x, display_size_y, 2);
+        square([display_size_x, 2]);
+    } 
+}
+
+module display_holes() {
+    half_hole_spacing_x = (128.4175 - 70.4175) / 2;
+    centre_x = display_size_x / 2;
+    translate([-3, 3]) circle(r=1.6);
+    translate([-3, 16]) circle(r=1.6);
+    translate([display_size_x + 3, 3]) circle(r=1.6);
+    translate([display_size_x + 3, 16]) circle(r=1.6);
+    translate([centre_x - half_hole_spacing_x, 3 + display_size_y]) circle(r=1.6);
+    translate([centre_x + half_hole_spacing_x, 3 + display_size_y]) circle(r=1.6);
+}
+
+module display_cutout() {
+    display_holes();
+    display_footprint();
+}
+
+module display() {
+    linear_extrude(20)
+    display_cutout();
+}
 
 onlyfans_size_x = 16.5;
 onlyfans_size_y = 105;
@@ -212,6 +242,7 @@ radxa_x2l_transl = [265,191,0];
 radxa_x4_transl = [150,133,0];
 hdmi_transl = [329.5,136.9,0];
 onlyfans_transl = [0, 34.5, 0];
+display_transl = [120, 0, 0];
 
 module case_with_holes() {
     difference() {
@@ -224,6 +255,7 @@ module case_with_holes() {
         translate(radxa_x4_transl) radxa_x4_holes();
         translate(hdmi_transl) hdmi_holes();
         translate(onlyfans_transl) onlyfans_cutout();
+        translate(display_transl) display_cutout();
     };
 }
 
@@ -235,6 +267,8 @@ module boards() {
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) hdmi();
     translate(onlyfans_transl) onlyfans();
+    translate(display_transl) display();
 }
+
 // boards();
 case_with_holes();
