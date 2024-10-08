@@ -112,7 +112,7 @@
 #define PWR_BRD_I2C_SCL             27
 #define PWR_BRD_I2C_INT             17
 #define PWR_BRD_I2C_INT_AUX         18
-#define PWR_BRD_I2C_BAUD            (100 * 1000)
+#define PWR_BRD_I2C_BAUD            (10 * 1000)
 #define PWR_BRD_FAN_CTL_ADDR        0x4d
 
 #define PWR_BRD_TEMP_SENS_ADDR      0x4b

@@ -26,9 +26,11 @@ void help(void) {
     io_say("    pb.temp.raw             -- show raw power board temperature reading\n");
     io_say("    pb.i2c.scan             -- scan for devices on the power board i²c bus\n");
     io_say("    pb.i2c.dump_all_regs    -- try to dump all registers of an i²c device\n");
+    io_say("    pb.fan.status           -- get a magic number whose bits encode fan statuses");
     io_say("    pb.fan.speed.get        -- get fan speed\n");
     io_say("    pb.fan.speed.target     -- set fan speed\n");
     io_say("    pb.fan.pwm              -- get fan pwm duty cycle\n");
+    io_say("    pb.fan.pwm.force        -- force fan into raw pwm mode\n");
     io_say("    bootloader              -- reboot into bootloader\n");
     io_say("call a command without arguments for usage\n");
     io_say("every command's output ends with '^(ok|fail) .*\\n'\n");
@@ -259,9 +261,26 @@ void io_handle_cmd(char* line, io_state_t* state) {
         return;
     }
 
+    if (hop_word(&line, "pb.fan.pwm.force")) {
+        if (line[0] == '\0') {
+            io_say("usage: pb.fan.pwm.force <fan id> <duty>\n");
+            io_say("force the fan into raw pwm mode\n");
+            return;
+        }
+        uint16_t fan_id = parse_number(&line);
+        uint16_t duty = parse_number(&line);
+
+        if (fan_ctl_set_pwm(fan_id, duty)) {
+            io_say("ok pb.fan.pwm.force\n");
+        } else {
+            io_say("fail pb.fan.pwm.force\n");
+        }
+        return;
+    }
+
     if (hop_word(&line, "pb.fan.speed.target")) {
         if (line[0] == '\0') {
-            io_say("usage: pb.fan.speed.get <fan id> <speed>\n");
+            io_say("usage: pb.fan.speed.target <fan id> <speed>\n");
             io_say("sets the speed target for the given fan from the fan controller\n");
             return;
         }

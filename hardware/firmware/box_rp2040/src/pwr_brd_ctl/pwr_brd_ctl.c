@@ -35,7 +35,7 @@ bool temp_sensor_get_temp_raw(uint8_t* dest) {
 }
 
 bool pwr_brd_i2c_read_reg(uint8_t dev_addr, uint8_t reg_id, uint8_t* dest, uint8_t num_bytes) {
-    int ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, &reg_id, 1, false, make_timeout_time_ms(20));
+    int ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, &reg_id, 1, true, make_timeout_time_ms(20));
     if (ret != 1) {
         return false;
     }
@@ -47,12 +47,21 @@ bool pwr_brd_i2c_read_reg(uint8_t dev_addr, uint8_t reg_id, uint8_t* dest, uint8
 }
 
 bool pwr_brd_i2c_write_reg(uint8_t dev_addr, uint8_t reg_id, uint8_t* src, uint8_t num_bytes) {
-    int ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, &reg_id, 1, false, make_timeout_time_ms(20));
-    if (ret != 1) {
+    uint8_t buf[9];
+    if (num_bytes > 8) {
         return false;
     }
-    ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, src, num_bytes, false, make_timeout_time_ms(20));
-    if (ret != num_bytes) {
+    for (uint8_t i = 0; i < num_bytes; i++) {
+        buf[i + 1] = src[i];
+    }
+    buf[0] = reg_id;
+    uint8_t ret = i2c_write_blocking_until(PWR_BRD_I2C_INST, dev_addr, buf, num_bytes + 1, false, make_timeout_time_ms(20));
+    if (ret != num_bytes + 1) {
+        io_say("wrote ");
+        io_say_uint(ret);
+        io_say(" instead of ");
+        io_say_uint(num_bytes + 1);
+        io_say("\n");
         return false;
     }
     return true;
