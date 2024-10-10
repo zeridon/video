@@ -5,6 +5,7 @@ module case() {
     screwd=7.5;
     color("red", 0.1) {
         difference() {
+            // TODO: make case shorter
             square(size=[423.8,195.0]);
 
             // case lock things

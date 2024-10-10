@@ -6,6 +6,7 @@ module radxa_x4_holes() {
     translate([3.53+58,3.5,0]) nuthole_m3();
     translate([3.53+58,56-3.5,0]) nuthole_m3();
 
+    // TODO: proper cutouts under radxa
     // hole for power inductors to fit into (they are tall)
     translate([8, 6, 0]) rrect(10, 45, 2);
 }

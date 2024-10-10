@@ -1,6 +1,7 @@
 use <nuts.scad>
 
 module radxa_x2l_holes() {
+    // TODO: cutout for nvme (and maybe some other stuff?)
     translate([4, 3.8, 0]) nuthole_m2();
     translate([4, 3.8+58.4, 0]) nuthole_m2();
     translate([4+148.2-58.2, 3.8, 0]) nuthole_m2();

@@ -10,7 +10,7 @@ module hdmi_holes() {
 
 module hdmi() {
     brd_thickness = 1.6;
-    // fixme: re-measure
+    // TODO: proper hole positions
     linear_extrude(brd_thickness)
     difference() {
         rrect(58,58,2);
