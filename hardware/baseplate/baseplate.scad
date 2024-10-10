@@ -59,10 +59,10 @@ module rrect(w,l,r) {
 }
 
 module switch_holes() {
-    translate([172, 100, -1]) nuthole_m3();
-    translate([119,  64, -1]) nuthole_m3();
-    translate([166,  64, -1]) nuthole_m3();
-    translate([ 99,  99, -1]) nuthole_m3();
+    translate([172, 100, 0]) nuthole_m3();
+    translate([119,  64, 0]) nuthole_m3();
+    translate([166,  64, 0]) nuthole_m3();
+    translate([ 99,  99, 0]) nuthole_m3();
 }
 
 module switch() {
@@ -77,15 +77,15 @@ module switch() {
 }
 
 module audio_holes() {
-    translate([153.4, 116.2, -1])
+    translate([153.4, 116.2, 0])
         circle(r=4.4);
-    translate([217.75, 129, -1])
+    translate([217.75, 129, 0])
         nuthole_m3();
-    translate([74.75, 93.25, -1])
+    translate([74.75, 93.25, 0])
         nuthole_m3();
-    translate([217.75, 93.25, -1])
+    translate([217.75, 93.25, 0])
         nuthole_m3();
-    translate([74.75, 129, -1])
+    translate([74.75, 129, 0])
         nuthole_m3();
 }
 
@@ -101,14 +101,24 @@ module audio() {
 }
 
 module power_holes() {
-    translate([493, 132, -1])
+    translate([493, 132, 0])
         nuthole_m3();
-    translate([433, 66.5, -1])
+    translate([433, 66.5, 0])
         nuthole_m3();
-    translate([498, 85, -1])
+    translate([498, 85, 0])
         nuthole_m3();
-    translate([433, 132, -1])
+    translate([433, 132, 0])
         nuthole_m3();
+        
+    // ensure inductors on the bottom of the board have holes to fit through
+    hull() {
+        translate([433 - 116.5 + 144.8275, 132 - 130.5 + 111.2125, 0])
+            circle(d=12);
+        translate([433 - 116.5 + 144.8275, 132 - 130.5 + 118.8325, 0])
+            circle(d=12);
+    }
+    translate([433 - 116.5 + 175.3075, 132 - 130.5 + 102.3225, 0])
+        circle(d=10.5);
 }
 
 module power() {
