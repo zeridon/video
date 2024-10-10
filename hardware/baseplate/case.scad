@@ -3,16 +3,19 @@ use <nuts.scad>
 module case() {
     supportd=10.5;
     screwd=7.5;
+
+    margin_x = 1;
+    case_lock_grow_y = 0.3;
+
     color("red", 0.1) {
         difference() {
-            // TODO: make case shorter
-            square(size=[423.8,195.0]);
+            translate([margin_x, 0, 0]) square(size=[423.8 - 2*margin_x,195.0]);
 
             // case lock things
-            translate([0,6.5,0]) square(size=[6.5,14.5]);
-            translate([0,173.5,0]) square(size=[6.5,14.5]);
-            translate([417.3,7,0]) square(size=[6.5,14.5]);
-            translate([417.3,173.5,0]) square(size=[6.5,14.5]);
+            translate([0 + margin_x,6.5 - case_lock_grow_y,0]) square(size=[6.5,14.5 + case_lock_grow_y*2]);
+            translate([0 + margin_x,173.5 - case_lock_grow_y,0]) square(size=[6.5,14.5 + case_lock_grow_y*2]);
+            translate([417.3 - margin_x,7 - case_lock_grow_y,0]) square(size=[6.5,14.5 + case_lock_grow_y*2]);
+            translate([417.3 - margin_x,173.5 - case_lock_grow_y,0]) square(size=[6.5,14.5 + case_lock_grow_y*2]);
 
             // screw stands
             // outer
