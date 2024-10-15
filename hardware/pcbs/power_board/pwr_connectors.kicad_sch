@@ -690,7 +690,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 88.9) (xy 138.43 88.9)
+			(xy 135.89 91.44) (xy 138.43 91.44)
 		)
 		(stroke
 			(width 0)
@@ -710,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 91.44) (xy 138.43 91.44)
+			(xy 135.89 88.9) (xy 138.43 88.9)
 		)
 		(stroke
 			(width 0)
@@ -807,7 +807,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 91.44 270)
+		(at 135.89 88.9 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -816,7 +817,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fbea3ac-11fa-4247-9cbe-9c2cfd203ce8")
 		(property "Reference" "#PWR0102"
-			(at 129.54 91.44 0)
+			(at 129.54 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -825,7 +826,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 91.44 0)
+			(at 130.81 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -834,7 +835,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 91.44 0)
+			(at 135.89 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -843,7 +844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 91.44 0)
+			(at 135.89 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -852,7 +853,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 91.44 0)
+			(at 135.89 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1136,7 +1137,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin1" "12V"
+		(property "Purpose Pin1" "GND"
 			(at 146.05 88.9 0)
 			(effects
 				(font
@@ -1145,7 +1146,7 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin2" "GND"
+		(property "Purpose Pin2" "12V"
 			(at 146.05 91.44 0)
 			(effects
 				(font
@@ -1189,7 +1190,8 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 135.89 88.9 90)
+		(at 135.89 91.44 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1197,7 +1199,7 @@
 		(dnp no)
 		(uuid "abda72b6-98b2-4d26-abdf-bc1c9f5cf924")
 		(property "Reference" "#PWR0101"
-			(at 139.7 88.9 0)
+			(at 139.7 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1206,7 +1208,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 129.54 88.9 90)
+			(at 129.54 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1214,7 +1216,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 88.9 0)
+			(at 135.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1223,7 +1225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 88.9 0)
+			(at 135.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,7 +1234,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 135.89 88.9 0)
+			(at 135.89 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
