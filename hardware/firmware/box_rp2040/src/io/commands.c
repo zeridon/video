@@ -24,6 +24,7 @@ void help(void) {
     io_say("    display.imgonly         -- like display.refresh, but hides all text. very fast.\n");
     io_say("    pb.gpio.read.raw        -- read raw GPIO status on the power board\n");
     io_say("    pb.temp.raw             -- show raw power board temperature reading\n");
+    io_say("    pb.chargers.on          -- turn chargers on or off\n");
     io_say("    pb.i2c.scan             -- scan for devices on the power board i²c bus\n");
     io_say("    pb.i2c.dump_all_regs    -- try to dump all registers of an i²c device\n");
     io_say("    pb.fan.status           -- get a magic number whose bits encode fan statuses");
@@ -174,11 +175,11 @@ void io_handle_cmd(char* line, io_state_t* state) {
     if (hop_word(&line, "pb.gpio.read.raw")) {
         uint8_t val = 0;
         if (pwr_brd_raw_gpio_read(&val)) {
-            io_say("ok pbgpio.read.raw: ");
+            io_say("ok pb.gpio.read.raw: ");
             io_say_uint(val);
             io_say("\n");
         } else {
-            io_say("fail pbgpio.read.raw\n");
+            io_say("fail pb.gpio.read.raw\n");
         }
         return;
     }
@@ -208,6 +209,23 @@ void io_handle_cmd(char* line, io_state_t* state) {
         }
         uint16_t addr = parse_number(&line);
         pwr_brd_i2c_dump_all_regs(addr);
+        return;
+    }
+
+    if (hop_word(&line, "pb.chargers.on")) {
+        if (line[0] == '\0') {
+            io_say("usage: pb.chargers.on [0|1]\n");
+            io_say("turns the chargers on or off\n");
+            return;
+        }
+
+        bool on = parse_number(&line);
+
+        if (pwr_brd_charger_power(on)) {
+            io_say("ok pb.chargers.on\n");
+        } else {
+            io_say("fail pb.chargers.on\n");
+        }
         return;
     }
 

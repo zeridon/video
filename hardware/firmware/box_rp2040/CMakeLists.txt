@@ -8,4 +8,4 @@ pico_sdk_init()
 
 add_subdirectory(./src)
 add_subdirectory(vendor/st7789 EXCLUDE_FROM_ALL)
-add_subdirectory(vendor/tca9534/tca9534 EXCLUDE_FROM_ALL)
+add_subdirectory(vendor/rp2040_tca9534/tca9534 EXCLUDE_FROM_ALL)

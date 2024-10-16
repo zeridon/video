@@ -1,29 +1,51 @@
 #include "pwr_brd_ctl.h"
 #include "config.h"
 #include "io/serial.h"
-#include "rp2040_tca9534.h"
+#include "tca9534.h"
 #include <pico/stdlib.h>
 #include <hardware/i2c.h>
 
-TCA9534 expander;
+expander_t expander;
 
 void pwr_brd_ctl_init() {
-    // gpio_init(PWR_BRD_I2C_SDA);
-    // gpio_init(PWR_BRD_I2C_SCL);
     i2c_init(PWR_BRD_I2C_INST, PWR_BRD_I2C_BAUD);
     gpio_pull_up(PWR_BRD_I2C_SDA);
     gpio_pull_up(PWR_BRD_I2C_SCL);
     gpio_set_function(PWR_BRD_I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(PWR_BRD_I2C_SCL, GPIO_FUNC_I2C);
-    expander = tca9534_Init(TCA9534_ADDR, PWR_BRD_I2C_INST);
+    expander_init(&expander, PWR_BRD_I2C_INST, PWR_BRD_EXPANDER_ADDR, PWR_BRD_I2C_TIMEOUT_US);
 }
 
 bool pwr_brd_raw_gpio_read(uint8_t* val) {
-    bool result = tca9534_ReadRegister(&expander, InputPort);
-    if (result) {
-        *val = expander.input_reg;
+    return expander_read_inputs(&expander, val);
+}
+
+bool ensure_expander_output_dirs(void) {
+    static bool is_setup = false;
+    if (!is_setup) {
+        if (!expander_set_pin_directions(&expander, PWR_BRD_EXPANDER_PIN_DIRS)) {
+            return false;
+        }
+        is_setup = true;
     }
-    return result;
+    return true;
+}
+
+bool pwr_brd_set_gpio_outs(uint8_t outs) {
+    ensure_expander_output_dirs();
+    return expander_write_outputs(&expander, outs);
+}
+
+bool pwr_brd_charger_power(bool on) {
+    uint8_t output_state = expander.last_output_state;
+
+    if (on) {
+        output_state |= (1 << PWR_BRD_EXPANDER_PIN_CHG_PWR);
+    } else {
+        output_state &= ~(1 << PWR_BRD_EXPANDER_PIN_CHG_PWR);
+    }
+
+    return pwr_brd_set_gpio_outs(output_state);
 }
 
 bool reserved_addr(uint8_t addr) {

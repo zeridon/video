@@ -28,3 +28,6 @@
 [submodule "hardware/firmware/box_rp2040/vendor/tca9534"]
 	path = hardware/firmware/box_rp2040/vendor/tca9534
 	url = git@github.com:bear-fighter/RP2040_TCA9534-Driver.git
+[submodule "hardware/firmware/box_rp2040/vendor/rp2040_tca9534"]
+	path = hardware/firmware/box_rp2040/vendor/rp2040_tca9534
+	url = git@github.com:dexterlb/rp2040_tca9534.git
