@@ -43,3 +43,5 @@ module case() {
         }
     }
 }
+
+linear_extrude(2) case();
