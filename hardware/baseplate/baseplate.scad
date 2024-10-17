@@ -19,7 +19,7 @@ radxa_x2l_transl = [315,191,0];
 radxa_x4_transl = [155,130,0];
 hdmi_transl = [394, 194.8, 0];
 onlyfans_transl = [0, 34.5, 0];
-display_transl = [120, 0, 0];
+display_transl = [135, 0, 0];
 
 module case_with_holes() {
     difference() {
