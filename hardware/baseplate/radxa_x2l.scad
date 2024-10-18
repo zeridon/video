@@ -17,8 +17,10 @@ module radxa_x2l_mounting_holes() {
 
 module radxa_x2l_protrusion_cutouts() {
     // nvme
-    translate([0, 14.5, 0])
-    rrect(89, 25, 2);
+    // commented out because we couldn't find a way to fit the x2l
+    // in the box without a stud right under the nvme...
+    // translate([0, 14.5, 0])
+    // rrect(89, 25, 2);
 }
 
 module radxa_x2l() {

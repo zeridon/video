@@ -21,9 +21,13 @@ hdmi_transl = [394, 194.8, 0];
 onlyfans_transl = [0, 34.5, 0];
 display_transl = [135, 0, 0];
 
-module case_with_holes() {
+module baseplate() {
+    color("#d5c5a4") linear_extrude(2) baseplate_shape();
+}
+
+module baseplate_shape() {
     difference() {
-        case();
+        case_fit_shape();
 
         translate(switch_transl) rotate(180) scale([1, -1, 1]) switch_holes();
         translate(power_transl) rotate(180) scale([1, -1, 1]) power_holes();
@@ -47,5 +51,6 @@ module boards() {
     translate(display_transl) display();
 }
 
-boards();
-case_with_holes();
+translate([0, 0, 4]) boards();
+case();
+baseplate();

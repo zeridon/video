@@ -1,6 +1,6 @@
 use <nuts.scad>
 
-module case() {
+module case_fit_shape() {
     supportd=10.5;
     screwd=7.5;
 
@@ -44,4 +44,10 @@ module case() {
     }
 }
 
-linear_extrude(2) case();
+module case() {
+    color("gray")
+    translate([285, 158.5, -4]) import("box.stl");
+}
+
+case();
+linear_extrude(2) case_fit_shape();
