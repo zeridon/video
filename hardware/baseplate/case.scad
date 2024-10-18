@@ -2,7 +2,7 @@ use <nuts.scad>
 
 module case_fit_shape() {
     supportd=10.5;
-    screwd=7.5;
+    screwd=7.64;
 
     margin_x = 1;
     case_lock_grow_y = 0.3;
@@ -23,23 +23,23 @@ module case_fit_shape() {
                 // this hole is too close to the fan
                 // cutout, so merge the cut
                 translate([12,40,0]) circle(d=screwd);
-                translate([20.4,33.85,0]) circle(d=screwd);
+                translate([21.15,33.85,0]) circle(d=screwd);
             }
-            translate([20.4,161.15,0]) circle(d=screwd);
-            translate([403.05,33.85,0]) circle(d=screwd);
-            translate([403.05,161.15,0]) circle(d=screwd);
+            translate([21.15,160.85,0]) circle(d=screwd);
+            translate([402.2,33.85,0]) circle(d=screwd);
+            translate([402.2,160.85,0]) circle(d=screwd);
 
             // inner
-            translate([148.15,33.85,0]) circle(d=screwd);
-            translate([148.15,161.15,0]) circle(d=screwd);
-            translate([275.65,33.85,0]) circle(d=screwd);
-            translate([275.65,161.15,0]) circle(d=screwd);
+            translate([148.25,33.85,0]) circle(d=screwd);
+            translate([148.25,160.85,0]) circle(d=screwd);
+            translate([275.25,33.85,0]) circle(d=screwd);
+            translate([275.25,160.85,0]) circle(d=screwd);
 
             // support stands
             translate([100.05,33.85,0]) circle(d=supportd);
-            translate([100.05,161.15,0]) circle(d=supportd);
-            translate([323.5,33.85,0]) circle(d=supportd);
-            translate([323.5,161.15,0]) circle(d=supportd);
+            translate([100.05,160.85,0]) circle(d=supportd);
+            translate([323.3,33.85,0]) circle(d=supportd);
+            translate([323.3,160.85,0]) circle(d=supportd);
         }
     }
 }

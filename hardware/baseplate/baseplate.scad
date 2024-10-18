@@ -51,6 +51,11 @@ module boards() {
     translate(display_transl) display();
 }
 
-translate([0, 0, 4]) boards();
-case();
-baseplate();
+module box() {
+    translate([0, 0, 4]) boards();
+    case();
+    baseplate();
+}
+
+// box()
+baseplate_shape();
