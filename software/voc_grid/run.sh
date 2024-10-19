@@ -43,6 +43,12 @@ function stack_streams_into_grid {
     local out_stream="${1}"
     shift
 
+    if [[ $# -eq 2 ]]; then
+        # only one stream
+        make_video_with_volume "${1}" "${2}" "${out_stream}"
+        return 0
+    fi
+
     local n=0
     local strm
     local all_specs=""
@@ -113,7 +119,7 @@ function do_play {
     filters="$(stack_streams_into_grid vo "${streams[@]}")"
     msg "filters: ${filters}" >&2
 
-    mpv "${in_args[@]}" --lavfi-complex="${filters}" --alpha=no --no-resume-playback --pause=no
+    mpv "${in_args[@]}" --lavfi-complex="${filters}" --no-resume-playback --pause=no --background=color
 }
 
 if [[ $# -eq 0 ]]; then
