@@ -27,7 +27,7 @@ void help(void) {
     io_say("    pb.chargers.on          -- turn chargers on or off\n");
     io_say("    pb.i2c.scan             -- scan for devices on the power board i²c bus\n");
     io_say("    pb.i2c.dump_all_regs    -- try to dump all registers of an i²c device\n");
-    io_say("    pb.fan.status           -- get a magic number whose bits encode fan statuses");
+    io_say("    pb.fan.status           -- get a magic number whose bits encode fan statuses\n");
     io_say("    pb.fan.speed.get        -- get fan speed\n");
     io_say("    pb.fan.speed.target     -- set fan speed\n");
     io_say("    pb.fan.pwm              -- get fan pwm duty cycle\n");
