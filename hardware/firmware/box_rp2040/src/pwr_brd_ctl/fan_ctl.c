@@ -46,7 +46,13 @@ bool fan_ctl_get_fan_speed(uint8_t fan_id, uint16_t* dest) {
     // To avoid doubles, the fan pole multiplier was multiplied by 2 to make it an integer.
     // Here, we divide it (and the -1 in the bracket) by 2 to bring it back to its proper value.
     // *dest = 60 * tachMinRPMMultiplier_ * TACHO_FREQUENCY * (tachFanPolesMultiplier_ - 2) / 2 / fanPoleCount_ / tachoCount;
-    *dest = tacho;
+
+    // Based on the FOSDEM fans, documentation and guesswork
+    // rpm = 7864320 / tacho
+
+    uint16_t rpm = 7864320 / tacho;
+
+    *dest = rpm;
     return true;
 }
 
