@@ -150,7 +150,7 @@
 				)
 			)
 			(property "Footprint" "conn:PinHeader_1x04_P2.54mm_Vertical"
-				(at 0 0 0)
+				(at 1.016 3.302 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -168,7 +168,7 @@
 				)
 			)
 			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
+				(at 0.508 4.064 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -178,6 +178,7 @@
 			)
 			(property "Purpose Pin1" "PIN 1"
 				(at 0 2.54 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -187,6 +188,7 @@
 			)
 			(property "Purpose Pin2" "PIN 2"
 				(at 0 -2.54 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -196,6 +198,7 @@
 			)
 			(property "Purpose Pin3" "PIN 3"
 				(at 0 0 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -205,6 +208,7 @@
 			)
 			(property "Purpose Pin4" "PIN 4"
 				(at 0 -5.08 0)
+				(do_not_autoplace)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2121,7 +2125,7 @@
 			)
 			(uuid "39e7eac4-b68d-4169-b991-dfaf01742d46")
 		)
-		(pin "EN" input
+		(pin "~{EN}" input
 			(at 185.42 119.38 180)
 			(effects
 				(font
@@ -2129,7 +2133,7 @@
 				)
 				(justify left)
 			)
-			(uuid "3b7bde9b-3e71-4f0d-9958-945b208690e5")
+			(uuid "15e99a59-1b05-4796-bcca-e56de7bfca93")
 		)
 		(instances
 			(project "power_board"
