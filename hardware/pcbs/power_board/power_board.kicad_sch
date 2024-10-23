@@ -836,22 +836,28 @@
 		(uuid "153d0102-1182-4669-b614-3d34ba4c1c51")
 	)
 	(junction
+		(at 184.15 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18df481b-2d20-4665-9d93-42fc9397e5d5")
+	)
+	(junction
 		(at 101.6 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "22115d0c-0028-4584-b0ad-fea8bbbd2a8e")
 	)
 	(junction
-		(at 181.61 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4c3f4e84-63fe-4ac2-b332-0b7a1354ad22")
-	)
-	(junction
 		(at 96.52 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d4ca4a2-220a-4458-869f-971d816886fb")
+	)
+	(junction
+		(at 187.96 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d09d3f0-fb74-45e3-8560-fdfa8a4b0ced")
 	)
 	(junction
 		(at 101.6 66.04)
@@ -864,12 +870,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b21ca359-6b46-49fc-8ed2-29297d09d2a6")
-	)
-	(junction
-		(at 176.53 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c7a82af9-3d93-47f6-982d-45f56a2dd0cc")
 	)
 	(junction
 		(at 106.68 83.82)
@@ -885,7 +885,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 119.38) (xy 181.61 119.38)
+			(xy 171.45 119.38) (xy 187.96 119.38)
 		)
 		(stroke
 			(width 0)
@@ -895,7 +895,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 139.7) (xy 176.53 139.7)
+			(xy 193.04 139.7) (xy 184.15 139.7)
 		)
 		(stroke
 			(width 0)
@@ -915,7 +915,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 142.24) (xy 185.42 142.24)
+			(xy 171.45 142.24) (xy 193.04 142.24)
 		)
 		(stroke
 			(width 0)
@@ -942,16 +942,6 @@
 			(type default)
 		)
 		(uuid "0e197b85-a8fe-446d-a015-b43fa65c62ed")
-	)
-	(wire
-		(pts
-			(xy 171.45 124.46) (xy 176.53 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "121544f2-e4ae-4bff-bfec-20c8363a079e")
 	)
 	(wire
 		(pts
@@ -1045,6 +1035,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 124.46) (xy 173.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58f70df8-14ce-436d-92b2-dca70676d8a1")
+	)
+	(wire
+		(pts
 			(xy 72.39 86.36) (xy 101.6 86.36)
 		)
 		(stroke
@@ -1075,23 +1075,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 139.7) (xy 176.53 124.46)
+			(xy 184.15 139.7) (xy 184.15 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "76cc189b-f576-490e-8b0d-0b2c88a977b8")
-	)
-	(wire
-		(pts
-			(xy 176.53 124.46) (xy 185.42 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7924ef88-17dc-4520-ba9d-2cf40f4a2f72")
 	)
 	(wire
 		(pts
@@ -1135,7 +1125,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 137.16) (xy 181.61 137.16)
+			(xy 193.04 137.16) (xy 187.96 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1165,13 +1155,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 119.38) (xy 185.42 119.38)
+			(xy 187.96 119.38) (xy 193.04 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "af12b613-68cc-4da6-b0c2-204420085193")
+		(uuid "ab545592-9e91-42cd-b563-eb549252e442")
 	)
 	(wire
 		(pts
@@ -1215,7 +1205,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 137.16) (xy 181.61 119.38)
+			(xy 187.96 137.16) (xy 187.96 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1235,6 +1225,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 124.46) (xy 193.04 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7b5717f-952a-4af4-9b7a-cbb8d51f4357")
+	)
+	(wire
+		(pts
 			(xy 106.68 83.82) (xy 106.68 101.6)
 		)
 		(stroke
@@ -1242,6 +1242,16 @@
 			(type default)
 		)
 		(uuid "f26180e8-0e84-4f21-98a6-3c04774fd1e2")
+	)
+	(wire
+		(pts
+			(xy 181.61 124.46) (xy 184.15 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d48240-f3cd-49f6-acd6-4d719218b8d5")
 	)
 	(wire
 		(pts
@@ -1293,6 +1303,109 @@
 			(justify left bottom)
 		)
 		(uuid "c3bb572d-bfae-4e8f-a196-bf623b0f6f4d")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 124.46 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30a61c1a-f2d4-4db7-a8c6-238324c2c3e3")
+		(property "Reference" "R4"
+			(at 177.8 124.46 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 177.8 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 177.8 126.238 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Info" "125mW 5%"
+			(at 177.8 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/29102/"
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17414"
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 5% 0805"
+			(at 177.8 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cbd0a26-348e-47d9-9610-72dada651669")
+		)
+		(pin "2"
+			(uuid "68ca8f0f-cd30-4894-bac2-a2d9042d543c")
+		)
+		(instances
+			(project "power_board"
+				(path "/4b166175-80a4-48c6-994d-6e62a6160b87"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "conn:Conn_01x04")
@@ -2086,7 +2199,7 @@
 		)
 	)
 	(sheet
-		(at 185.42 116.84)
+		(at 193.04 116.84)
 		(size 40.64 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -2098,7 +2211,7 @@
 		)
 		(uuid "2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75")
 		(property "Sheetname" "Isolated chargers"
-			(at 185.42 116.1284 0)
+			(at 193.04 116.1284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2107,7 +2220,7 @@
 			)
 		)
 		(property "Sheetfile" "isolated_chargers.kicad_sch"
-			(at 185.42 127.5846 0)
+			(at 193.04 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2116,7 +2229,7 @@
 			)
 		)
 		(pin "OVERCURRENT" output
-			(at 185.42 124.46 180)
+			(at 193.04 124.46 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2126,7 +2239,7 @@
 			(uuid "39e7eac4-b68d-4169-b991-dfaf01742d46")
 		)
 		(pin "~{EN}" input
-			(at 185.42 119.38 180)
+			(at 193.04 119.38 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2348,7 +2461,7 @@
 		)
 	)
 	(sheet
-		(at 185.42 81.28)
+		(at 193.04 81.28)
 		(size 39.37 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -2360,7 +2473,7 @@
 		)
 		(uuid "99ad2a2c-266b-4765-b6d1-327c82d6c9e2")
 		(property "Sheetname" "Mechanical"
-			(at 185.42 80.5684 0)
+			(at 193.04 80.5684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2369,7 +2482,7 @@
 			)
 		)
 		(property "Sheetfile" "mechanical.kicad_sch"
-			(at 185.42 92.0246 0)
+			(at 193.04 92.0246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2386,7 +2499,7 @@
 		)
 	)
 	(sheet
-		(at 185.42 134.62)
+		(at 193.04 134.62)
 		(size 40.64 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -2398,7 +2511,7 @@
 		)
 		(uuid "9db409a6-3616-4139-9d4b-1b510fbe4a7d")
 		(property "Sheetname" "Indicator LEDs"
-			(at 185.42 133.9084 0)
+			(at 193.04 133.9084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +2520,7 @@
 			)
 		)
 		(property "Sheetfile" "indicator_leds.kicad_sch"
-			(at 185.42 145.3646 0)
+			(at 193.04 145.3646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,7 +2529,7 @@
 			)
 		)
 		(pin "OVERLOAD" input
-			(at 185.42 139.7 180)
+			(at 193.04 139.7 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2426,7 +2539,7 @@
 			(uuid "3b7878fc-0fa5-47c2-a0d8-c9760d6d02f7")
 		)
 		(pin "SBC_ON" input
-			(at 185.42 142.24 180)
+			(at 193.04 142.24 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2436,7 +2549,7 @@
 			(uuid "a6c1d7a6-8092-43c4-9b99-15e5f3774e84")
 		)
 		(pin "CHG_ON" input
-			(at 185.42 137.16 180)
+			(at 193.04 137.16 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2522,7 +2635,7 @@
 		)
 	)
 	(sheet
-		(at 185.42 58.42)
+		(at 193.04 58.42)
 		(size 39.37 10.16)
 		(fields_autoplaced yes)
 		(stroke
@@ -2534,7 +2647,7 @@
 		)
 		(uuid "eb6931d2-84dc-4c44-a536-817b4a1688b3")
 		(property "Sheetname" "Power connectors"
-			(at 185.42 57.7084 0)
+			(at 193.04 57.7084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,7 +2656,7 @@
 			)
 		)
 		(property "Sheetfile" "pwr_connectors.kicad_sch"
-			(at 185.42 69.1646 0)
+			(at 193.04 69.1646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
