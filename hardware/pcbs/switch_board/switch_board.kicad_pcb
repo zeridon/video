@@ -7,6 +7,9 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(comment 4 "AISLER Project ID: LLNDIKVT")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(1 "In1.Cu" signal)
@@ -27106,7 +27109,7 @@
 		(descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP2"
-			(at 2.365876 1.284637 270)
+			(at 2.365876 1.284637 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "61b7d082-2509-46a4-9553-e25ed244e2ee")
@@ -32234,8 +32237,8 @@
 		(uuid "5341a39b-28fa-4990-9dab-e1116d96fe2d")
 	)
 	(gr_line
-		(start 156 67.5)
-		(end 155 67.5)
+		(start 159.5 67.5)
+		(end 158.5 67.5)
 		(stroke
 			(width 0.2)
 			(type default)
@@ -32257,8 +32260,8 @@
 		(uuid "a7623a02-344b-4d41-9041-61d6502507a3")
 	)
 	(gr_line
-		(start 159 67.5)
-		(end 160 67.5)
+		(start 156 67.5)
+		(end 157 67.5)
 		(stroke
 			(width 0.2)
 			(type default)
@@ -32366,8 +32369,8 @@
 		(uuid "c6a378ea-e53d-4faf-841d-041243afa808")
 	)
 	(gr_line
-		(start 159.5 67)
-		(end 159.5 68)
+		(start 156.5 67)
+		(end 156.5 68)
 		(stroke
 			(width 0.2)
 			(type default)
@@ -32598,7 +32601,7 @@
 		)
 	)
 	(gr_text "SDA"
-		(at 144.78 66.9925 -90)
+		(at 144.78 66.4925 -90)
 		(layer "F.SilkS")
 		(uuid "0df99a14-f615-4452-a0fb-659f916fec67")
 		(effects
@@ -32646,7 +32649,7 @@
 		)
 	)
 	(gr_text "+5V"
-		(at 149.86 67 -90)
+		(at 149.86 66.5 -90)
 		(layer "F.SilkS")
 		(uuid "626a6e94-5184-46b6-add8-b078ef4ca768")
 		(effects
@@ -32682,7 +32685,7 @@
 		)
 	)
 	(gr_text "RST"
-		(at 139.7 67 -90)
+		(at 139.7 66.5 -90)
 		(layer "F.SilkS")
 		(uuid "74efd239-abfc-4f03-8a29-c5701fa9e7c7")
 		(effects
@@ -32706,7 +32709,7 @@
 		)
 	)
 	(gr_text "SCL"
-		(at 147.32 67 -90)
+		(at 147.32 66.5 -90)
 		(layer "F.SilkS")
 		(uuid "b7b51269-3fec-4582-8f97-f0d62c2b0298")
 		(effects
@@ -32718,7 +32721,7 @@
 		)
 	)
 	(gr_text "INT"
-		(at 142.24 67 -90)
+		(at 142.24 66.5 -90)
 		(layer "F.SilkS")
 		(uuid "d0c00c72-8b8d-4e22-b4d8-f2363ce6b6ce")
 		(effects
@@ -32730,7 +32733,7 @@
 		)
 	)
 	(gr_text "GND"
-		(at 137.15 67 -90)
+		(at 137.15 66.5 -90)
 		(layer "F.SilkS")
 		(uuid "f0f6f0cf-6c08-4397-b7b5-ad103299d8f3")
 		(effects
