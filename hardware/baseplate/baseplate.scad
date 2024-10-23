@@ -13,7 +13,7 @@ $fn=120;
 
 
 switch_transl = [187.5,53,0];
-power_transl = [523.5,-60,0];
+power_transl = [176.5 - 493 + 523.5, 132 - 130.5 - 60,0];
 audio_transl = [170,150,0];
 radxa_x2l_transl = [315,191,0];
 radxa_x4_transl = [155,130,0];
@@ -40,10 +40,7 @@ module baseplate_shape() {
     };
 }
 
-module boards() {
-    translate(switch_transl) rotate(180) switch();
-    translate(power_transl) rotate(180) power();
-    translate(audio_transl) audio();
+module thirdparty_boards() {
     translate(radxa_x2l_transl) rotate(180) radxa_x2l();
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) rotate(180) hdmi();
@@ -51,11 +48,28 @@ module boards() {
     translate(display_transl) display();
 }
 
+module boards() {
+    translate(switch_transl) rotate(180) switch();
+    translate(power_transl) rotate(180) power();
+    translate(power_transl) rotate(180) power_old();
+    translate(audio_transl) audio();
+    thirdparty_boards();
+}
+
+module 3d_boards() {
+    translate(switch_transl) rotate(180) import("pcb_3dmodels/switch_board.stl");
+    translate(power_transl) rotate(180) import("pcb_3dmodels/power_board.stl");
+    translate(audio_transl) import("pcb_3dmodels/audio_board.stl");
+    thirdparty_boards();
+}
+
+
 module box() {
-    translate([0, 0, 4]) boards();
+    translate([0, 0, 4]) 3d_boards();
+    // translate([0, 0, 4]) boards();
     case();
     baseplate();
 }
 
-// box()
-baseplate_shape();
+box();
+// baseplate_shape();
