@@ -9478,6 +9478,15 @@
 				(hide yes)
 			)
 		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/10086/"
+			(at 38.1 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "0"
 			(uuid "1cfb74b6-73f6-43fd-825e-730863ee6fdf")
 		)
