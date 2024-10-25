@@ -11992,6 +11992,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C593126"
+			(at 226.06 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "f78a9247-f456-468c-88a9-4934663903fe")
 		)
@@ -14481,6 +14490,15 @@
 			)
 		)
 		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640454-2?qs=%2F35zJ5USjomXuMPFoVTCPQ%3D%3D"
+			(at 223.52 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C86501"
 			(at 223.52 271.78 0)
 			(effects
 				(font
