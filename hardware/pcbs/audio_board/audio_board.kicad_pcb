@@ -22270,6 +22270,19 @@
 				)
 			)
 		)
+		(property "LCSC" "C93636"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25de72c8-2550-4abb-94f4-6886fff3dd99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/26464be5-716f-4e49-9e6b-22c4d6ec050c")
 		(sheetname "Root")
@@ -50612,6 +50625,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d97d155d-6299-4e49-aac2-f123b5dfcb6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/10086/"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d666a7ae-6569-404e-8d1d-87c96a36e509")
 			(effects
 				(font
 					(size 1 1)

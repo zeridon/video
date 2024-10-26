@@ -2048,7 +2048,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-8"
+		(property "Part" "640457-8"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2062,7 +2062,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640457-8?qs=%2F35zJ5USjokX8LSglMnOhw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2619,7 +2619,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640457-4?qs=%2F35zJ5USjomT7VbYP4Jl7Q%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2633,7 +2633,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-4"
+		(property "Part" "640457-4"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3086,7 +3086,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-6"
+		(property "Part" "640457-6"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3100,7 +3100,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-6?qs=%2F35zJ5USjomb%252BGgX%252BBnrrQ%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640457-6?qs=%2F35zJ5USjomeIT6dNVSouw%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3591,7 +3591,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-4?qs=%2F35zJ5USjokX5rl%252BbVBc4g%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640457-4?qs=%2F35zJ5USjomT7VbYP4Jl7Q%3D%3D"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3605,7 +3605,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-4"
+		(property "Part" "640457-4"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")

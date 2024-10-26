@@ -2056,7 +2056,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-2?qs=%2F35zJ5USjomRu3EJQJgZCQ%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640457-2?qs=%2F35zJ5USjomWpIT3n5epmg%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2070,7 +2070,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-2"
+		(property "Part" "640457-2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2485,7 +2485,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-8"
+		(property "Part" "640457-8"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -2499,7 +2499,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640457-8?qs=%2F35zJ5USjokX8LSglMnOhw%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3112,7 +3112,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Part" "640456-8"
+		(property "Part" "640457-8"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3126,7 +3126,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity-AMP/640456-8?qs=%2F35zJ5USjomho1287DA4QA%3D%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/TE-Connectivity/640457-8?qs=%2F35zJ5USjokX8LSglMnOhw%3D%3D"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")

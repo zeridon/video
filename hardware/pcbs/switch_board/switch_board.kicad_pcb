@@ -6402,14 +6402,14 @@
 		(pad "" np_thru_hole circle
 			(at -1.275 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "c17ecfe9-fb2a-4dbf-b07f-a40e7b757351")
 		)
 		(pad "" np_thru_hole circle
 			(at 10.155 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "ba24a653-85e9-4405-849d-89d4286f4f1e")
 		)
@@ -14207,14 +14207,14 @@
 		(pad "" np_thru_hole circle
 			(at -1.275 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "d2837c42-c5f8-4d43-a758-265a1414dabc")
 		)
 		(pad "" np_thru_hole circle
 			(at 10.155 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "1eb1d6be-c540-4978-8a41-a59549b80df7")
 		)
@@ -14878,14 +14878,14 @@
 		(pad "" np_thru_hole circle
 			(at -1.275 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "d10b31dc-30c3-4fe9-8359-9017cba59ca3")
 		)
 		(pad "" np_thru_hole circle
 			(at 10.155 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "6b22e0c0-73f2-469a-a860-48e2376f6377")
 		)
@@ -16007,7 +16007,7 @@
 				)
 			)
 		)
-		(property "Part" "640454-6"
+		(property "Part" "640456-6"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16026,6 +16026,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d2da7fd5-a76d-4453-8da8-79aba5e6bb57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C86506"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d3b49fb-af2f-4cf5-ad20-486dd06537ed")
 			(effects
 				(font
 					(size 1 1)
@@ -22048,14 +22061,14 @@
 		(pad "" np_thru_hole circle
 			(at -1.275 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "b7921a2d-68d4-4697-abc1-015af1bb3cc7")
 		)
 		(pad "" np_thru_hole circle
 			(at 10.155 11.47)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "b91f2adc-a873-4981-bc14-93c4c0e8a349")
 		)
@@ -23052,7 +23065,7 @@
 				)
 			)
 		)
-		(property "Part" "640454-2"
+		(property "Part" "640456-2"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23071,6 +23084,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "affecbf5-e63d-4e3c-92c8-4dc20a846f82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C86502"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64f5972e-821f-46bb-91a8-67e824cda3d9")
 			(effects
 				(font
 					(size 1 1)
@@ -26496,14 +26522,14 @@
 		(pad "" np_thru_hole circle
 			(at -1.275 11.47 180)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "cf6cd944-d4be-4f50-97bd-b8d4067fa243")
 		)
 		(pad "" np_thru_hole circle
 			(at 10.155 11.47 180)
 			(size 3.25 3.25)
-			(drill 3.3)
+			(drill 3.25)
 			(layers "F&B.Cu" "*.Mask")
 			(uuid "0730507e-6f9c-456a-9f18-90966d529e4a")
 		)
@@ -32587,6 +32613,18 @@
 		)
 		(layer "User.6")
 		(uuid "e844bcb0-e614-4f40-8231-31c5f2c90d02")
+	)
+	(gr_text "JLCJLCJLCJLC"
+		(at 144.4625 101.9175 -0)
+		(layer "B.SilkS")
+		(uuid "0ab09f08-3d63-45b7-a52f-d44bead1f8d9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
 	)
 	(gr_text "FOSDEM Switch rev C"
 		(at 147.275 130.75 0)
