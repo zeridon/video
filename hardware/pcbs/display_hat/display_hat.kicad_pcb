@@ -457,7 +457,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6645/"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1479,7 +1479,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/6645/"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
