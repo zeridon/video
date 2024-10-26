@@ -11974,7 +11974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "640454-6"
+		(property "Part" "640456-6"
 			(at 226.06 219.71 0)
 			(effects
 				(font
@@ -11992,7 +11992,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C593126"
+		(property "LCSC" "C86506"
 			(at 226.06 219.71 0)
 			(effects
 				(font
@@ -14480,7 +14480,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "640454-2"
+		(property "Part" "640456-2"
 			(at 223.52 271.78 0)
 			(effects
 				(font
@@ -14498,7 +14498,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C86501"
+		(property "LCSC" "C86502"
 			(at 223.52 271.78 0)
 			(effects
 				(font
