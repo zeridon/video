@@ -27,6 +27,15 @@ module baseplate() {
     color("#d5c5a4") linear_extrude(2) baseplate_shape();
 }
 
+module cable_tie_holes() {
+    translate([55, 93, 0]) nuthole_m3();
+    translate([120, 93, 0]) nuthole_m3();
+    translate([180, 60, 0]) nuthole_m3();
+    translate([220, 93, 0]) nuthole_m3();
+    translate([280, 93, 0]) nuthole_m3();
+    translate([350, 93, 0]) nuthole_m3();
+}
+
 module baseplate_shape() {
     difference() {
         case_fit_shape();
@@ -39,6 +48,7 @@ module baseplate_shape() {
         translate(hdmi_transl) rotate(180) hdmi_holes();
         translate(onlyfans_transl) onlyfans_cutout();
         translate(display_transl) display_cutout();
+        cable_tie_holes();
     };
 }
 
