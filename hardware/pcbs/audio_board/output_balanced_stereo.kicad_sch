@@ -3997,7 +3997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 210.82 130.81 0)
 			(effects
 				(font
@@ -5967,7 +5967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 86.36 49.53 0)
 			(effects
 				(font
@@ -6243,7 +6243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 210.82 68.58 0)
 			(effects
 				(font
@@ -6622,7 +6622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 86.36 121.92 0)
 			(effects
 				(font
@@ -6829,7 +6829,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 210.82 140.97 0)
 			(effects
 				(font
@@ -9696,7 +9696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 210.82 58.42 0)
 			(effects
 				(font

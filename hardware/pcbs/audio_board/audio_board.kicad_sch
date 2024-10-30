@@ -6126,7 +6126,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 34.29 25.4 0)
 			(effects
 				(font
@@ -6538,7 +6538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 26.67 25.4 0)
 			(effects
 				(font
@@ -7049,7 +7049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 48.26 25.4 0)
 			(effects
 				(font
@@ -8489,7 +8489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 40.64 25.4 0)
 			(effects
 				(font
@@ -8935,7 +8935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CP 220μF 16V P2"
+		(property "Part" "CP 220μF 10V P2"
 			(at 241.3 50.8 0)
 			(effects
 				(font
@@ -9974,7 +9974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "CP 220μF 16V P2"
+		(property "Part" "CP 220μF 10V P2"
 			(at 255.27 50.8 0)
 			(effects
 				(font

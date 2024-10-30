@@ -4237,7 +4237,7 @@
 				(justify left)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/24725/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
 			(at 128.27 133.35 0)
 			(effects
 				(font
@@ -4333,7 +4333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/Bourns/CR1206-FX-3162ELF?qs=sGAEpiMZZMvdGkrng054t%252BRNGJdg958R4Syzj%252BoTzfo%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Bourns/CR0805-FX-3162ELF?qs=4vGXhLEMbUxw0LpIaWR6Eg%3D%3D"
 			(at 187.96 128.27 0)
 			(effects
 				(font
@@ -4821,7 +4821,7 @@
 				(justify left)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/24725/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
 			(at 172.72 74.93 0)
 			(effects
 				(font
@@ -5040,7 +5040,7 @@
 				(justify left)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/24725/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
 			(at 128.27 92.71 0)
 			(effects
 				(font
@@ -5145,7 +5145,7 @@
 				(justify left)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/24725/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/16789/"
 			(at 172.72 115.57 0)
 			(effects
 				(font
@@ -5931,7 +5931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/Bourns/CR0603-FX-1372ELF?qs=sGAEpiMZZMvdGkrng054t%2Fh5BnJxeWSz2MQjIqgi9jc%3D"
+		(property "Shop" "https://eu.mouser.com/ProductDetail/Bourns/CR0805-FX-1372ELF?qs=Hqdsf0hGw%2FCg%2FaUiKya1YA%3D%3D"
 			(at 187.96 138.43 0)
 			(effects
 				(font
