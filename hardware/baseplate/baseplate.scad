@@ -8,6 +8,7 @@ use <onlyfans.scad>
 use <display.scad>
 use <case.scad>
 use <nuts.scad>
+use <../brackets/cable-holder.scad>
 
 $fn=120;
 
@@ -27,13 +28,21 @@ module baseplate() {
     color("#d5c5a4") linear_extrude(2) baseplate_shape();
 }
 
-module cable_tie_holes() {
-    translate([55, 93, 0]) nuthole_m3();
-    translate([120, 93, 0]) nuthole_m3();
-    translate([180, 60, 0]) nuthole_m3();
-    translate([220, 93, 0]) nuthole_m3();
-    translate([280, 93, 0]) nuthole_m3();
-    translate([350, 93, 0]) nuthole_m3();
+module cable_holders_holes() {
+    translate([55, 93, 0]) rotate([0, 0, 90]) cable_holder_holes();
+    translate([120, 93, 0]) rotate([0, 0, 90]) cable_holder_holes();
+    translate([180, 60, 0]) cable_holder_holes();
+    translate([220, 85, 0]) rotate([0, 0, 90]) cable_holder_holes();
+    translate([280, 85, 0]) rotate([0, 0, 90]) cable_holder_holes();
+    translate([340, 85, 0]) rotate([0, 0, 90]) cable_holder_holes();
+}
+module cable_holders() {
+    translate([55, 93, 0]) rotate([0, 0, 90]) cable_holder();
+    translate([120, 93, 0]) rotate([0, 0, 90]) cable_holder();
+    translate([180, 60, 0]) cable_holder();
+    translate([220, 85, 0]) rotate([0, 0, 90]) cable_holder();
+    translate([280, 85, 0]) rotate([0, 0, 90]) cable_holder();
+    translate([340, 85, 0]) rotate([0, 0, 90]) cable_holder();
 }
 
 module baseplate_shape() {
@@ -48,7 +57,7 @@ module baseplate_shape() {
         translate(hdmi_transl) rotate(180) hdmi_holes();
         translate(onlyfans_transl) onlyfans_cutout();
         translate(display_transl) display_cutout();
-        cable_tie_holes();
+        cable_holders_holes();
     };
 }
 
@@ -56,6 +65,7 @@ module thirdparty_boards() {
     translate(radxa_x2l_transl) rotate(180) radxa_x2l();
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) rotate(180) hdmi();
+    cable_holders();
 }
 
 module boards() {
