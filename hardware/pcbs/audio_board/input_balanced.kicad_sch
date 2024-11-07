@@ -5744,7 +5744,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "180k"
 			(at 182.88 66.04 90)
 			(effects
 				(font
@@ -5779,7 +5779,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C31850"
+		(property "LCSC" ""
 			(at 182.88 69.85 0)
 			(effects
 				(font
@@ -5788,7 +5788,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "560112116022 "
+		(property "MPN" ""
 			(at 182.88 69.85 0)
 			(effects
 				(font
@@ -5797,7 +5797,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 22kΩ 125mW 1% 0603"
+		(property "Part" "R 180kΩ 125mW 1% 0603"
 			(at 182.88 69.85 0)
 			(effects
 				(font
@@ -5806,7 +5806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4787/"
 			(at 182.88 69.85 0)
 			(effects
 				(font

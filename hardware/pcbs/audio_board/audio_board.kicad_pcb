@@ -1950,7 +1950,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3257,7 +3257,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5813,7 +5813,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6343,7 +6343,7 @@
 				)
 			)
 		)
-		(property "Part" "CP 220μF 16V P2"
+		(property "Part" "CP 220μF 10V P2"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8986,7 +8986,7 @@
 				)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15418,7 +15418,7 @@
 				)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20348,7 +20348,7 @@
 				)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23570,7 +23570,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "180k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "2fb59642-c3c5-4f90-a23b-011c2336b765")
@@ -23620,7 +23620,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C31850"
+		(property "LCSC" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23633,7 +23633,7 @@
 				)
 			)
 		)
-		(property "MPN" "560112116022 "
+		(property "MPN" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23646,7 +23646,7 @@
 				)
 			)
 		)
-		(property "Part" "R 22kΩ 125mW 1% 0603"
+		(property "Part" "R 180kΩ 125mW 1% 0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23659,7 +23659,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4787/"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31936,7 +31936,7 @@
 				)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -36195,7 +36195,7 @@
 				)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38435,7 +38435,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "180k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4c1c45e9-c8ed-4ad4-8d1b-218128c25aaa")
@@ -38485,7 +38485,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C31850"
+		(property "LCSC" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38498,7 +38498,7 @@
 				)
 			)
 		)
-		(property "MPN" "560112116022 "
+		(property "MPN" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38511,7 +38511,7 @@
 				)
 			)
 		)
-		(property "Part" "R 22kΩ 125mW 1% 0603"
+		(property "Part" "R 180kΩ 125mW 1% 0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38524,7 +38524,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4787/"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -39041,7 +39041,7 @@
 				)
 			)
 		)
-		(property "Part" "C 22μF 16V 0805"
+		(property "Part" "C 22μF 25V 0805"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40427,7 +40427,7 @@
 				)
 			)
 		)
-		(property "Part" "CP 220μF 16V P2"
+		(property "Part" "CP 220μF 10V P2"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47074,7 +47074,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "180k"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "9deefdfc-5216-4b85-8a05-61deac47a1f1")
@@ -47124,7 +47124,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C31850"
+		(property "LCSC" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47137,7 +47137,7 @@
 				)
 			)
 		)
-		(property "MPN" "560112116022 "
+		(property "MPN" ""
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47150,7 +47150,7 @@
 				)
 			)
 		)
-		(property "Part" "R 22kΩ 125mW 1% 0603"
+		(property "Part" "R 180kΩ 125mW 1% 0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47163,7 +47163,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/4419/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4787/"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -48815,7 +48815,7 @@
 				)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3458/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4405/"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
