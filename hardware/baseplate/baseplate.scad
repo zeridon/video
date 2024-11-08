@@ -52,7 +52,7 @@ module baseplate_shape() {
         translate(switch_transl) rotate(180) scale([1, -1, 1]) switch_holes();
         translate(power_transl) rotate(180) scale([1, -1, 1]) power_holes();
         translate(audio_transl) scale([1, -1, 1]) audio_holes();
-        translate(radxa_x2l_transl) rotate(180) radxa_x2l_holes();
+        // translate(radxa_x2l_transl) rotate(180) radxa_x2l_holes();
         translate(radxa_x4_transl) radxa_x4_holes();
         translate(hdmi_transl) rotate(180) hdmi_holes();
         translate(onlyfans_transl) onlyfans_cutout();
@@ -62,7 +62,7 @@ module baseplate_shape() {
 }
 
 module thirdparty_boards() {
-    translate(radxa_x2l_transl) rotate(180) radxa_x2l();
+    // translate(radxa_x2l_transl) rotate(180) radxa_x2l();
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) rotate(180) hdmi();
     cable_holders();
