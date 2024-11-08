@@ -46,7 +46,7 @@ module case_fit_shape() {
 
 module case() {
     color("gray")
-    translate([285, 158.5, -4]) import("thirdparty_3dmodels/box.stl");
+    translate([285, 158.5, -4 + 0.15]) import("thirdparty_3dmodels/box.stl");
 }
 
 case();

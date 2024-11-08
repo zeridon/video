@@ -89,7 +89,7 @@ module 3d_boards() {
 
 
 module box() {
-    translate([0, 0, 4]) 3d_boards();
+    translate([0, 0, 4 + 0.8]) 3d_boards();
     // translate([0, 0, 4]) boards();
     case();
     baseplate();
