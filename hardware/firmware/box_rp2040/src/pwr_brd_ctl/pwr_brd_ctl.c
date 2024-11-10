@@ -14,6 +14,7 @@ void pwr_brd_ctl_init() {
     gpio_set_function(PWR_BRD_I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(PWR_BRD_I2C_SCL, GPIO_FUNC_I2C);
     expander_init(&expander, PWR_BRD_I2C_INST, PWR_BRD_EXPANDER_ADDR, PWR_BRD_I2C_TIMEOUT_US);
+    pwr_brd_fan_init();
 }
 
 bool pwr_brd_raw_gpio_read(uint8_t* val) {

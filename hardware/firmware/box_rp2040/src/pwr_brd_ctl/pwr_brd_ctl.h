@@ -3,7 +3,16 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#define FAN_WAIT_LOOPS (1000)
+#define CMD_WAIT_TIME_US (1000*1000)
+#define DESIRED_RPM (3000)
+#define DESIRED_RPM_THRESH (1000)
+#define NUMFAN (5)
+
+
 void pwr_brd_ctl_init();
+void pwr_brd_fan_task();
+void pwr_brd_fan_init();
 bool pwr_brd_raw_gpio_read(uint8_t* val);
 void pwr_brd_i2c_bus_scan();
 void pwr_brd_i2c_dump_all_regs(uint8_t addr);
