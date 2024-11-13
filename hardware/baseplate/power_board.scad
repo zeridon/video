@@ -2,10 +2,10 @@ use <nuts.scad>
 
 
 module power_holes() {
-    translate([176.5, 130.5, -1]) nuthole_m3();
-    translate([116.5, 65, -1]) nuthole_m3();
-    translate([181.5, 83.5, -1]) nuthole_m3();
-    translate([116.5, 130.5, -1]) nuthole_m3();
+    translate([176.5, 130.5, -1]) hole_for_standoff_m3_4mm();
+    translate([116.5, 65, -1]) hole_for_standoff_m3_4mm();
+    translate([181.5, 83.5, -1]) hole_for_standoff_m3_4mm();
+    translate([116.5, 130.5, -1]) hole_for_standoff_m3_4mm();
     
     // ensure inductors on the bottom of the board have holes to fit through
     translate([176.5 - 493, 130.5 - 132, 0])

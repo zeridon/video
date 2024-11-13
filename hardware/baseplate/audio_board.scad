@@ -150,13 +150,13 @@ module audio_holes() {
     translate([153.4, 116.2, 0])
         circle(r=5.2);
     translate([217.75, 129, 0])
-        nuthole_m3();
+        hole_for_standoff_m3_2mm();
     translate([74.75, 93.25, 0])
-        nuthole_m3();
+        hole_for_standoff_m3_2mm();
     translate([217.75, 93.25, 0])
-        nuthole_m3();
+        hole_for_standoff_m3_2mm();
     translate([74.75, 129, 0])
-        nuthole_m3();
+        hole_for_standoff_m3_2mm();
     scale([1, -1, 1]) th_standoff_holes();
 }
 

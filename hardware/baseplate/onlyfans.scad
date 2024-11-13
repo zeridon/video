@@ -5,10 +5,10 @@ onlyfans_size_y = 105;
 holder_hole_spacing = 4.5;
 
 module onlyfans_holes() {
-    translate([holder_hole_spacing, -holder_hole_spacing]) nuthole_m3();
-    translate([12, -holder_hole_spacing]) nuthole_m3();
-    translate([holder_hole_spacing, holder_hole_spacing + onlyfans_size_y]) nuthole_m3();
-    translate([12, holder_hole_spacing + onlyfans_size_y]) nuthole_m3();
+    translate([holder_hole_spacing, -holder_hole_spacing]) hole_for_standoff_m3_2mm();
+    translate([12, -holder_hole_spacing]) hole_for_standoff_m3_2mm();
+    translate([holder_hole_spacing, holder_hole_spacing + onlyfans_size_y]) hole_for_standoff_m3_2mm();
+    translate([12, holder_hole_spacing + onlyfans_size_y]) hole_for_standoff_m3_2mm();
 }
 
 module onlyfans_footprint() {

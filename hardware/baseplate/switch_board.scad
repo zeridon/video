@@ -1,10 +1,10 @@
 use <nuts.scad>
 
 module switch_holes() {
-    translate([172, 100, 0]) nuthole_m3();
-    translate([119,  64, 0]) nuthole_m3();
-    translate([166,  64, 0]) nuthole_m3();
-    translate([ 99,  99, 0]) nuthole_m3();
+    translate([172, 100, 0]) hole_for_standoff_m3_4mm();
+    translate([119,  64, 0]) hole_for_standoff_m3_4mm();
+    translate([166,  64, 0]) hole_for_standoff_m3_4mm();
+    translate([ 99,  99, 0]) hole_for_standoff_m3_4mm();
 }
 
 module switch() {
