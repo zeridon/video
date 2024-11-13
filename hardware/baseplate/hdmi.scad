@@ -8,10 +8,14 @@ module hdmi_holes() {
     margin = hdmi_centre - hdmi_hole_half_dist;
     far = hdmi_centre + hdmi_hole_half_dist;
 
-    translate([margin,far,0]) nuthole_m4();
-    translate([far,far,0]) nuthole_m4();
-    translate([margin,margin,0]) nuthole_m4();
-    translate([far,margin,0]) nuthole_m4();
+    translate([margin,far,0]) hole_for_standoff_m4_6mm();
+    translate([far,far,0]) hole_for_standoff_m4_6mm();
+
+    // make front holes M3 since theire is no space for M4
+    // hope that if back holes are screwed in first, the
+    // hagibis will not move around too much
+    translate([margin,margin,0]) hole_for_standoff_m3_6mm();
+    translate([far,margin,0]) hole_for_standoff_m3_6mm();
 }
 
 module hdmi_connectors() {

@@ -6,10 +6,10 @@ module radxa_x4_holes() {
 }
 
 module radxa_x4_mounting_holes() {
-    translate([3.53,3.5,0]) nuthole_m25();
-    translate([3.53,56-3.5,0]) nuthole_m25();
-    translate([3.53+58,3.5,0]) nuthole_m25();
-    translate([3.53+58,56-3.5,0]) nuthole_m25();
+    translate([3.53,3.5,0]) hole_for_standoff_m25_2mm();
+    translate([3.53,56-3.5,0]) hole_for_standoff_m25_2mm();
+    translate([3.53+58,3.5,0]) hole_for_standoff_m25_2mm();
+    translate([3.53+58,56-3.5,0]) hole_for_standoff_m25_2mm();
 }
 
 module radxa_x4_protrusion_cutouts() {

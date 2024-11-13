@@ -29,20 +29,20 @@ module baseplate() {
 }
 
 module cable_holders_holes() {
-    // translate([55, 93, 0]) rotate([0, 0, 90]) cable_holder_holes();
-    // translate([120, 93, 0]) rotate([0, 0, 90]) cable_holder_holes();
-    // translate([180, 60, 0]) cable_holder_holes();
-    // translate([220, 85, 0]) rotate([0, 0, 90]) cable_holder_holes();
-    // translate([280, 85, 0]) rotate([0, 0, 90]) cable_holder_holes();
-    // translate([340, 85, 0]) rotate([0, 0, 90]) cable_holder_holes();
+    translate([ 58, 88, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([125, 75, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([135, 88, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([180, 60, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([240, 85, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([337, 85, 0]) hole_for_threaded_pin_m3_8mm();
 }
 module cable_holders() {
-    translate([55, 93, 0]) rotate([0, 0, 90]) cable_tie();
-    translate([120, 93, 0]) rotate([0, 0, 90]) cable_tie();
+    translate([ 58, 88, 0]) rotate([0, 0, 90]) cable_tie();
+    translate([125, 75, 0]) rotate([0, 0, 180]) cable_tie();
+    translate([135, 88, 0]) rotate([0, 0, 90]) cable_tie();
     translate([180, 60, 0]) cable_tie();
-    translate([220, 85, 0]) rotate([0, 0, 90]) cable_tie();
-    translate([280, 85, 0]) rotate([0, 0, 90]) cable_tie();
-    translate([340, 85, 0]) rotate([0, 0, 90]) cable_tie();
+    translate([240, 85, 0]) rotate([0, 0, 90]) cable_tie();
+    translate([337, 85, 0]) rotate([0, 0, 90]) cable_tie();
 }
 
 module baseplate_shape() {
