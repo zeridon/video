@@ -87,7 +87,7 @@ bool fan_ctl_set_pwm(uint8_t fan_id, uint8_t duty) {
 }
 
 bool fan_ctl_set_fan_speed(uint8_t fan_id, uint16_t speed) {
-    if (speed < 100 || speed > 12000)
+    if (speed > 12000)
         return false;
 
     desired_fan_speed[fan_id] = speed;
@@ -106,7 +106,7 @@ bool fan_ctl_get_fan_status(uint8_t* dest) {
 
 Standard fan control:
 
-- if fan speed is 0, go to max
+- if fan speed is 0 and desired fan speed is not 0, go to max
 - if fan speed is above needed by more than 2x, lower pwm = pwm / 2
 - if fan speed is above needed by less than 2x, lower pwm = pwm - 1
 - if fan speed is below needed, pwm = pwm + 1
@@ -134,10 +134,14 @@ void pwr_brd_fan_task() {
             uint8_t pwm;
 
             fan_ctl_get_fan_speed(i, &fanspeed);
-            if (fanspeed > desired_fan_speed[i] - DESIRED_RPM_THRESH && fanspeed < desired_fan_speed[i] + DESIRED_RPM_THRESH) {
-                continue;
-            } else if (fanspeed == 0) {
+            if (fanspeed == 0 && desired_fan_speed[i] != 0 ) {
                 fan_ctl_set_pwm(i, 255);
+            } else if (fanspeed != 0 && desired_fan_speed[i] == 0) {
+                fan_ctl_set_pwm(i, 0);
+            } else if (fanspeed == 0 && desired_fan_speed[i] == 0) {
+                goto end;
+            } else if (fanspeed > desired_fan_speed[i] - DESIRED_RPM_THRESH && fanspeed < desired_fan_speed[i] + DESIRED_RPM_THRESH) {
+                goto end;
             } else if (fanspeed > desired_fan_speed[i] * 2) {
                 fan_ctl_get_pwm(i, &pwm);
                 fan_ctl_set_pwm(i, pwm / 2 );
@@ -148,6 +152,7 @@ void pwr_brd_fan_task() {
                 fan_ctl_get_pwm(i, &pwm);
                 fan_ctl_set_pwm(i, pwm + 1 );
             }
+end:
             time_last_cmd[i] = now;
         }
     }
