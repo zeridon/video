@@ -2238,7 +2238,7 @@
 			)
 			(uuid "39e7eac4-b68d-4169-b991-dfaf01742d46")
 		)
-		(pin "~{EN}" input
+		(pin "EN" input
 			(at 193.04 119.38 180)
 			(effects
 				(font
@@ -2246,7 +2246,7 @@
 				)
 				(justify left)
 			)
-			(uuid "15e99a59-1b05-4796-bcca-e56de7bfca93")
+			(uuid "72df5d13-e8c0-4cc8-8105-6bf7be32f375")
 		)
 		(instances
 			(project "power_board"

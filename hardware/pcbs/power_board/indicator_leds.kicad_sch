@@ -1502,7 +1502,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "21925ce0-5712-4fb9-af3e-eefca47ebb04")
-		(property "Reference" "R40"
+		(property "Reference" "R44"
 			(at 123.19 93.98 90)
 			(effects
 				(font
@@ -1589,7 +1589,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/9db409a6-3616-4139-9d4b-1b510fbe4a7d"
-					(reference "R40")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -1604,7 +1604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30f7600b-58cc-487c-b513-4a933ab5c398")
-		(property "Reference" "R42"
+		(property "Reference" "R46"
 			(at 123.19 129.54 90)
 			(effects
 				(font
@@ -1691,7 +1691,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/9db409a6-3616-4139-9d4b-1b510fbe4a7d"
-					(reference "R42")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -1901,7 +1901,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59d1876c-f4dd-4a31-8c83-c1e7e9c31feb")
-		(property "Reference" "R45"
+		(property "Reference" "R49"
 			(at 152.4 60.96 0)
 			(effects
 				(font
@@ -1993,7 +1993,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/9db409a6-3616-4139-9d4b-1b510fbe4a7d"
-					(reference "R45")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -2143,7 +2143,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b119d7b3-f743-4106-b2d7-86e870089ae5")
-		(property "Reference" "R44"
+		(property "Reference" "R48"
 			(at 147.32 60.96 0)
 			(effects
 				(font
@@ -2235,7 +2235,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/9db409a6-3616-4139-9d4b-1b510fbe4a7d"
-					(reference "R44")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -2384,7 +2384,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd27ea08-77d1-43da-99ad-bd2a0e75645c")
-		(property "Reference" "R41"
+		(property "Reference" "R45"
 			(at 123.19 111.76 90)
 			(effects
 				(font
@@ -2471,7 +2471,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/9db409a6-3616-4139-9d4b-1b510fbe4a7d"
-					(reference "R41")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -2656,7 +2656,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb997772-2c19-4f7f-bf25-2d5c144f834d")
-		(property "Reference" "R43"
+		(property "Reference" "R47"
 			(at 142.24 60.96 0)
 			(effects
 				(font
@@ -2746,7 +2746,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/9db409a6-3616-4139-9d4b-1b510fbe4a7d"
-					(reference "R43")
+					(reference "R47")
 					(unit 1)
 				)
 			)

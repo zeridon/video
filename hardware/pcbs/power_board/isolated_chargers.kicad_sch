@@ -1825,7 +1825,7 @@
 		)
 		(uuid "e7628291-a85e-421a-a93b-ed43dff64f0d")
 	)
-	(hierarchical_label "~{EN}"
+	(hierarchical_label "EN"
 		(shape input)
 		(at 101.6 140.97 180)
 		(fields_autoplaced yes)
@@ -2093,7 +2093,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "67d6ef0f-383a-42e0-8c98-048b73b175b4")
-		(property "Reference" "R24"
+		(property "Reference" "R28"
 			(at 182.88 83.82 90)
 			(effects
 				(font
@@ -2180,7 +2180,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75"
-					(reference "R24")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -2260,9 +2260,9 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6bcf59ce-29f6-4022-91d5-0830c86e8a58")
-		(property "Reference" "R21"
+		(property "Reference" "R25"
 			(at 105.41 129.54 0)
 			(effects
 				(font
@@ -2325,7 +2325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Chargers OFF by default"
+		(property "Purpose" "Chargers ON by default"
 			(at 105.41 137.16 0)
 			(effects
 				(font
@@ -2361,7 +2361,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75"
-					(reference "R21")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -2614,7 +2614,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8045ef67-b396-4596-8539-0722897335de")
-		(property "Reference" "R25"
+		(property "Reference" "R29"
 			(at 200.66 63.5 0)
 			(effects
 				(font
@@ -2704,7 +2704,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75"
-					(reference "R25")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -3091,9 +3091,9 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "d7e6196c-0e27-4948-9c71-72c57305df5c")
-		(property "Reference" "R22"
+		(property "Reference" "R26"
 			(at 105.41 144.78 0)
 			(effects
 				(font
@@ -3156,7 +3156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purpose" "Chargers ON by default"
+		(property "Purpose" "Chargers OFF by default"
 			(at 105.41 152.4 0)
 			(effects
 				(font
@@ -3183,7 +3183,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75"
-					(reference "R22")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -3264,7 +3264,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9833c1e-90b9-4f3d-a26b-935ebd7fb29d")
-		(property "Reference" "R23"
+		(property "Reference" "R27"
 			(at 171.45 63.5 0)
 			(effects
 				(font
@@ -3354,7 +3354,7 @@
 		(instances
 			(project "power_board"
 				(path "/4b166175-80a4-48c6-994d-6e62a6160b87/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75"
-					(reference "R23")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -3605,16 +3605,6 @@
 			)
 			(uuid "4e922965-5285-4079-8cad-d5661ab8d7c7")
 		)
-		(pin "EN" input
-			(at 127 88.9 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "22b82f5e-b174-48e4-9266-7fb8211abfba")
-		)
 		(pin "~{OVERCURRENT}" output
 			(at 167.64 86.36 0)
 			(effects
@@ -3624,6 +3614,16 @@
 				(justify right)
 			)
 			(uuid "05576fa9-e38c-4ed0-99cb-3193be5c6697")
+		)
+		(pin "~{EN}" input
+			(at 127 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9b5f1d50-5a37-4f28-9a15-5b0fbbb6e61d")
 		)
 		(instances
 			(project "power_board"
@@ -3673,16 +3673,6 @@
 			)
 			(uuid "76219687-bbe5-4206-8c47-060255a00466")
 		)
-		(pin "EN" input
-			(at 127 130.81 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1ae3778d-f240-4e57-a635-d6904365d1c7")
-		)
 		(pin "~{OVERCURRENT}" output
 			(at 167.64 128.27 0)
 			(effects
@@ -3692,6 +3682,16 @@
 				(justify right)
 			)
 			(uuid "b794da8e-b017-400a-bb0e-f63b1eb0b29b")
+		)
+		(pin "~{EN}" input
+			(at 127 130.81 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "01ea9a60-3a1f-4bf9-b08e-478b6bdd79b5")
 		)
 		(instances
 			(project "power_board"
@@ -3741,16 +3741,6 @@
 			)
 			(uuid "ab97daa5-99a3-4ca6-856c-e946e54fed20")
 		)
-		(pin "EN" input
-			(at 127 102.87 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4c1fc732-b32b-482c-be7f-2996e5dcd701")
-		)
 		(pin "~{OVERCURRENT}" output
 			(at 167.64 100.33 0)
 			(effects
@@ -3760,6 +3750,16 @@
 				(justify right)
 			)
 			(uuid "2d1c0a09-cab2-42db-b6fc-a9f3d6a55b2d")
+		)
+		(pin "~{EN}" input
+			(at 127 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "14256946-1284-4ea2-a93b-498dab621755")
 		)
 		(instances
 			(project "power_board"
@@ -3809,16 +3809,6 @@
 			)
 			(uuid "acbcb2c3-110c-456d-b879-ea5d9e3894e0")
 		)
-		(pin "EN" input
-			(at 127 116.84 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "28998c5b-021b-4027-89dd-d1c028271da6")
-		)
 		(pin "~{OVERCURRENT}" output
 			(at 167.64 114.3 0)
 			(effects
@@ -3828,6 +3818,16 @@
 				(justify right)
 			)
 			(uuid "92ad393a-7de5-483e-b408-b435acda433b")
+		)
+		(pin "~{EN}" input
+			(at 127 116.84 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "80bd2802-d347-4cd7-9788-bfaaeb9d06bf")
 		)
 		(instances
 			(project "power_board"
