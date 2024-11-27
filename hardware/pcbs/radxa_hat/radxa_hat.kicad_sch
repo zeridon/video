@@ -5318,8 +5318,8 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin2" "INT"
-			(at 210.82 67.31 0)
+		(property "Purpose Pin2" "RST"
+			(at 210.82 69.85 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5328,8 +5328,8 @@
 				(justify left)
 			)
 		)
-		(property "Purpose Pin3" "RST"
-			(at 210.82 69.85 0)
+		(property "Purpose Pin3" "INT"
+			(at 210.82 67.31 0)
 			(do_not_autoplace yes)
 			(effects
 				(font
