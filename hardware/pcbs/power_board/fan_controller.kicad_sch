@@ -3717,7 +3717,7 @@
 			)
 		)
 		(property "Value" "4069"
-			(at 245.11 105.41 0)
+			(at 245.11 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
