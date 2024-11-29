@@ -57078,7 +57078,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP?14*")
-		(path "/f4395b92-97ec-456a-b4c2-238b75f494a2/2664aa16-ffd2-45f5-a1fb-f7b042d09469")
+		(path "/f4395b92-97ec-456a-b4c2-238b75f494a2/ae6b3237-d8cf-4747-a7de-bc118e2cc3e5")
 		(sheetname "Fan Controller")
 		(sheetfile "fan_controller.kicad_sch")
 		(attr smd)
