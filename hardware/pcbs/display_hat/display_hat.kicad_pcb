@@ -767,7 +767,7 @@
 		(descr "Through hole angled pin header, 1x02, 2.54mm pitch, 6mm pin length, single row")
 		(tags "Through hole angled pin header THT 1x02 2.54mm single row")
 		(property "Reference" "JP2"
-			(at 11.895 2.8575 360)
+			(at 11.895 2.8575 0)
 			(layer "F.SilkS")
 			(uuid "7706179a-d885-4a56-93e2-5183e0794b8b")
 			(effects
@@ -1956,7 +1956,7 @@
 		(descr "Through hole angled pin header, 1x02, 2.54mm pitch, 6mm pin length, single row")
 		(tags "Through hole angled pin header THT 1x02 2.54mm single row")
 		(property "Reference" "JP1"
-			(at 12.2125 -0.635 360)
+			(at 12.2125 -0.635 0)
 			(layer "F.SilkS")
 			(uuid "a82a1e00-1b8a-4ccd-9c2b-8b62aa44029d")
 			(effects
