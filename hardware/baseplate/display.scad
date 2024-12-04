@@ -3,7 +3,7 @@ use <nuts.scad>
 display_size_x = 70;
 display_size_y = 22.5;
 
-holder_hole_spacing = 4.5;
+holder_hole_spacing = 5;
 
 module display_footprint() {
     union() {

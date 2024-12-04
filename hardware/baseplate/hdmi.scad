@@ -47,7 +47,7 @@ module hdmi_connectors() {
 
 module hdmi() {
     brd_thickness = 1;
-    // TODO: proper hole positions
+    
     union() {
         color("gray") translate([0, 0, brd_thickness]) hdmi_connectors();
         linear_extrude(brd_thickness)

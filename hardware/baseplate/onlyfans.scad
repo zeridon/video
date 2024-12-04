@@ -2,13 +2,13 @@ use <nuts.scad>
 
 onlyfans_size_x = 16.5;
 onlyfans_size_y = 105;
-holder_hole_spacing = 4.5;
+holder_hole_spacing = 5;
 
 module onlyfans_holes() {
     translate([holder_hole_spacing, -holder_hole_spacing]) hole_for_standoff_m3_2mm();
-    translate([12, -holder_hole_spacing]) hole_for_standoff_m3_2mm();
+    translate([onlyfans_size_x + holder_hole_spacing, onlyfans_size_y / 2]) hole_for_standoff_m3_2mm();
+    translate([onlyfans_size_x + holder_hole_spacing, 28]) hole_for_standoff_m3_2mm();
     translate([holder_hole_spacing, holder_hole_spacing + onlyfans_size_y]) hole_for_standoff_m3_2mm();
-    translate([12, holder_hole_spacing + onlyfans_size_y]) hole_for_standoff_m3_2mm();
 }
 
 module onlyfans_footprint() {

@@ -18,7 +18,7 @@ power_transl = [176.5 - 493 + 523.5, 132 - 130.5 - 60,0];
 audio_transl = [170,150,0];
 radxa_x2l_transl = [315,191,0];
 radxa_x4_transl = [155,130,0];
-hdmi_transl = [394, 194.8, 0];
+hdmi_transl = [394, 195 + 3.35 - 4.4, 0];
 onlyfans_transl = [0, 34.5, 0];
 display_transl = [135, 0, 0];
 radxa_hat_over_x4_transl = [30.8, 273.85, 10];
@@ -29,20 +29,22 @@ module baseplate() {
 }
 
 module cable_holders_holes() {
+    translate([220, 35, 0]) hole_for_threaded_pin_m3_8mm();
     translate([ 58, 88, 0]) hole_for_threaded_pin_m3_8mm();
-    translate([125, 75, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([125, 70, 0]) hole_for_threaded_pin_m3_8mm();
     translate([135, 88, 0]) hole_for_threaded_pin_m3_8mm();
-    translate([180, 60, 0]) hole_for_threaded_pin_m3_8mm();
-    translate([240, 85, 0]) hole_for_threaded_pin_m3_8mm();
-    translate([337, 85, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([180, 77, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([240, 100, 0]) hole_for_threaded_pin_m3_8mm();
+    translate([334, 100, 0]) hole_for_threaded_pin_m3_8mm();
 }
 module cable_holders() {
+    translate([220, 35, 0]) rotate([0, 0, 90]) cable_tie();
     translate([ 58, 88, 0]) rotate([0, 0, 90]) cable_tie();
-    translate([125, 75, 0]) rotate([0, 0, 180]) cable_tie();
+    translate([125, 70, 0]) rotate([0, 0, -90]) cable_tie();
     translate([135, 88, 0]) rotate([0, 0, 90]) cable_tie();
-    translate([180, 60, 0]) cable_tie();
-    translate([240, 85, 0]) rotate([0, 0, 90]) cable_tie();
-    translate([337, 85, 0]) rotate([0, 0, 90]) cable_tie();
+    translate([180, 77, 0]) rotate([0, 0, 180]) cable_tie();
+    translate([240, 100, 0]) rotate([0, 0, -90]) cable_tie();
+    translate([334, 100, 0]) rotate([0, 0, -90]) cable_tie();
 }
 
 module baseplate_shape() {
@@ -95,5 +97,5 @@ module box() {
     baseplate();
 }
 
-box();
-// baseplate_shape();
+// box();
+baseplate_shape();

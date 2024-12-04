@@ -22,7 +22,7 @@ module case_fit_shape() {
             hull() {
                 // this hole is too close to the fan
                 // cutout, so merge the cut
-                translate([12,40,0]) circle(d=screwd);
+                translate([12,40,0]) circle(d=5);
                 translate([21.15 - 0.5,33.85 - 0.2,0]) circle(d=screwd);
             }
             translate([21.15 - 0.5,160.85 + 0.2,0]) circle(d=screwd);
