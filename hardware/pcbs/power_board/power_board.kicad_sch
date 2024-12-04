@@ -2238,7 +2238,7 @@
 			)
 			(uuid "39e7eac4-b68d-4169-b991-dfaf01742d46")
 		)
-		(pin "EN" input
+		(pin "~{EN}" input
 			(at 193.04 119.38 180)
 			(effects
 				(font
@@ -2246,7 +2246,7 @@
 				)
 				(justify left)
 			)
-			(uuid "72df5d13-e8c0-4cc8-8105-6bf7be32f375")
+			(uuid "270a5c19-46ee-4157-b220-0d4472e7f4fc")
 		)
 		(instances
 			(project "power_board"
@@ -2548,7 +2548,7 @@
 			)
 			(uuid "a6c1d7a6-8092-43c4-9b99-15e5f3774e84")
 		)
-		(pin "CHG_ON" input
+		(pin "CHG_OFF" input
 			(at 193.04 137.16 180)
 			(effects
 				(font
@@ -2556,7 +2556,7 @@
 				)
 				(justify left)
 			)
-			(uuid "6d6addd1-53fb-4ac6-b0e7-61b127fbc8b3")
+			(uuid "79d0e379-6389-4d0b-b8a9-0b584ba5109b")
 		)
 		(instances
 			(project "power_board"

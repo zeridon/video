@@ -2809,10 +2809,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "3.9kΩ"
+		(property "Value" "100kΩ"
 			(at 60.96 96.52 0)
 			(effects
 				(font
@@ -2857,7 +2857,7 @@
 				(justify right)
 			)
 		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/3539/"
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/29105/"
 			(at 59.69 96.52 0)
 			(effects
 				(font
@@ -2875,7 +2875,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "R 3.9kΩ 125mW 5% 0805"
+		(property "Part" "R 100kΩ 125mW 5% 0805"
 			(at 59.69 96.52 0)
 			(effects
 				(font
@@ -4204,7 +4204,7 @@
 				)
 			)
 		)
-		(property "Value" "SPBW06F-05"
+		(property "Value" "VRB1205S-6WR3"
 			(at 95.25 83.82 0)
 			(effects
 				(font
@@ -4239,7 +4239,7 @@
 				(hide yes)
 			)
 		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/MEAN-WELL/SPBW06F-05?qs=5aG0NVq1C4xl9jmeoQl1uw%3D%3D"
+		(property "Shop" "https://www.digikey.bg/en/products/detail/mornsun-america-llc/VRB1205S-6WR3/16348304"
 			(at 95.25 96.52 0)
 			(effects
 				(font
@@ -4248,7 +4248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" "VRB_S-6WR3 or SPBW06F-05"
+		(property "Part" "VRB1205S-6WR3"
 			(at 95.25 96.52 0)
 			(effects
 				(font
