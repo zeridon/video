@@ -51336,6 +51336,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 5% 0805"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bacfd9c9-8358-428c-953f-fa4ea8ba112c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2e2b9578-5dbd-4b2d-88fb-256ac9c8dd75/d7e6196c-0e27-4948-9c71-72c57305df5c")
 		(sheetname "Isolated chargers")

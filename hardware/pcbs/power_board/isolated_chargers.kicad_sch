@@ -3174,6 +3174,15 @@
 				(hide yes)
 			)
 		)
+		(property "Part" "R 10kΩ 125mW 5% 0805"
+			(at 107.95 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9c8c0036-38b0-475d-8d97-19179fb9d8a6")
 		)
