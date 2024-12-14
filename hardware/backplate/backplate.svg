@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="5.2793712"
-     inkscape:cx="1438.5236"
-     inkscape:cy="93.098209"
+     inkscape:zoom="0.83496849"
+     inkscape:cx="616.78974"
+     inkscape:cy="-167.07217"
      inkscape:window-width="2160"
      inkscape:window-height="1278"
      inkscape:window-x="0"
@@ -74,4 +74,12 @@
        id="rect3358-0-9-3-7"
        style="fill:none;stroke:#ff0000;stroke-width:0.333512;stop-color:#000000"
        d="M 39.217062,23.866885 H 55.18355 v 4.912008 c -1.933439,2.054481 0,0 -1.933439,2.054481 H 40.727096 l -1.510034,-2.144252 z"
-       sodipodi:nodetypes="ccccccc" /></g></svg>
+       sodipodi:nodetypes="ccccccc" /><path
+       id="path11218"
+       style="fill:none;stroke:#ff0000;stroke-width:0.138563;stop-color:#000000"
+       d="m 304.31477,17.26939 a 6.4309406,6.4307184 0 0 0 -6.00015,4.121195 v 4.61884 a 6.4309406,6.4307184 0 0 0 6.00015,4.121195 6.4309406,6.4307184 0 0 0 6.00015,-4.121195 v -4.622974 a 6.4309406,6.4307184 0 0 0 -6.00015,-4.117061 z" /><rect
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:0.3;stop-color:#000000"
+       id="rect11299"
+       height="7.0643263"
+       x="317.30872"
+       y="18.591595" /></g></svg>
