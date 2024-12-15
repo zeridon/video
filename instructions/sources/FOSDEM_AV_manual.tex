@@ -96,7 +96,7 @@
 Video is a big task, so there are many people working together to make it all happen. Here's all the teams:
 
 \subsection{AW, H, K, U and J teams}
-You should be a team of at least three per building: AW, H, K and U respectively. J (probably) has a dedicated knowledgeable volunteer.
+You should be a team of at least three per building: AW, H, K, UB and UD respectively. J (probably) has a dedicated knowledgeable volunteer.
 
 Coordination with video operations control (VOC) happens through Matrix in \#video:fosdem.org, walkies. The chat is web accessible through https://chat.fosdem.org/\#/room/\#fosdem-video:fosdem.org .
 
@@ -110,10 +110,11 @@ Your tasks before the conference starts:
 
 During the day, you'll have a fixed spot in the building. The below spots should also appear in https://nav.fosdem.org .
 \begin{itemize}
-  \item AW: corner between AW1.117 and AW1.121, or oneo of the top rooms (TBD)
+  \item AW: AW.1125
   \item K: NOC (K.1110)
   \item H: room H.2111
-  \item U: room UB4.228
+  \item UB: room UB4.228
+  \item UD: room UD2.119
 \end{itemize}
 
 Your job during the conference, with the backup from the VOC team, is to do the following in your building:
@@ -162,15 +163,16 @@ Access to those systems is provided on Friday. Every per-building team should ha
 
 
 \section{Rooms}
-We have 28 rooms: 12 small, 14 large and 2 extra large rooms. Each type of room has a different audio/video setup.
+We have 30 rooms: 13 small, 15 large and 2 extra large rooms. Each type of room has a different audio/video setup.
 \begin{itemize}
   \item AW: AW1120 (S), AW1121 (S)
-  \item K: K1105 (XXL), K3201 (S), K3401 (S), K4201 (S), K4401 (S), K4601 (S)
+  \item K: K1105 (XXL), K3201 (S), K3401 (S), K3601 (S), K4201 (S), K4401 (S), K4601 (S)
   \item H: H1301 (L), H1302 (L), H1308 (L), H1309 (L), H2213 (S), H2214 (S), H2215 (L)
   \item UA: UA2214 (L), UA2118(L), UA2220 (L), UB2147 (S), UB2252A (L)
-  \item UB4: UB4132 (S), UB4136 (S), UB5132 (L), UB5230 (L, spare)
+  \item UB4: UB4132 (S), UB4136 (S), UB5132 (L), UB5230 (L)
   \item UD: UD2120 (L), UD2208 (L), UD2218A (L)
-  \item J: Janson (XXL)
+  \item UD6: UD6215 (L)
+  \item J: Janson (XXL), J.1106 (S, spare)
 \end{itemize}
 
 Your team's flight case comes with a printed map of where the video gear goes in your rooms. Audio and power cabling should be arranged loose on the floor, or taped down after coordination with the network team! When taping down XLR cables, please provide sufficient slack for getting up to the camera. It is about 2m above ground level!
@@ -178,19 +180,19 @@ Your team's flight case comes with a printed map of where the video gear goes in
 \subsection{Small rooms}
 These have a projector and a tie pin microphone for the speaker. Audience questions are picked up by the camera's internal microphone.
 
+If available, a loudspeaker is also connected to amplify the speaker for the room.
+
 The connections there are as follows:
 
 \begin{itemize}
-  \item USB cable from laptop to video-box (2 laptops/boxes)
   \item Network cable (video VLAN) to the presenter box (any port)
-  \item Network cable form the presenter to camera box (any port, one on each box)
-  \item Laptops, camera to AC power
-  \item XLR cable from the microphone receiver to channel 1 (LEFT) of the camera
-  \item USB powerbank to the microphone receiver
-  \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left HDMI port to the beamer in the room (if the beamer is VGA; use the provided adapter)
-  \item HDMI cable from the presenter box to the beamer in the room (if the beamer is HDMI)
-  \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
+  \item Network cable from the presenter to camera box (any port, one on each box)
+  \item camera to AC power
+  \item Microphone receiver in channel 1 (LEFT) of the camera
+  \item USB power bank to the microphone receiver
+  \item HDMI from the camera to the HDMI IN port of the video box
+  \item HDMI cable from the presenter box HDMI OUT to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the speaker's laptop to the HDMI IN port of the presenter box
 \end{itemize}
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
@@ -201,24 +203,22 @@ The connections there are as follows:
 \end{figure}
 
 \subsection{Large rooms}
-These have a projector, a tie pin mic for the speaker and an audience microphone. They use the Sony HXR-NX100 camera. For the rooms that don't have a PA, there's also a dedicated speaker.
+These have a projector, a tie pin mic for the speaker and an audience microphone. They use the Sony HXR-NX100 camera. For the rooms that don't have a PA, there's also a dedicated loudspeaker.
 
 The connections there are as follows:
 
 \begin{itemize}
-  \item USB cable from laptop to video-box (2 laptops/boxes)
   \item Network cable (video VLAN) to the presenter box (any port)
-  \item Network cable form the presenter to camera box (any port, one on each box)
-  \item Laptops, camera, audio mixer to AC power
-  \item Microphone receiver for the speaker microphone to channel 1 of the mixer
-  \item Microphone receiver for the audience microphone to channel 2 of the mixer
-  \item XLR cable from the left channel of the audio mixer to channel 1 (LEFT) of the camera
-  \item XLR cable from the AUX channel of the audio mixer to the room PA or speaker
-  \item USB powerbank to the microphone receivers
-  \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left HDMI port to the beamer in the room (if the beamer is VGA; use the provided adapter)
-  \item HDMI cable from the presenter box to the beamer in the room (if the beamer is HDMI)
-  \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
+  \item Network cable from the presenter to camera box (any port, one on each box)
+  \item Camera, to AC power
+  \item Microphone receiver for the speaker microphone to channel IN 3 of the mixer of the presenter's videobox
+  \item Microphone receiver for the audience microphone to channel IN 2 of the mixer of the presenter's videobox
+  \item XLR cable from the OUT 1 channel of the audio mixer of the presenter's videobox to channel 1 (LEFT) of the camera
+  \item XLR cable from the OUT 2 channel of the audio mixer of the presenter's videobox the room PA or speaker
+  \item USB for charging from the presenter's videobox charging ports to the receivers in the mixer of the presenter's videobox
+  \item HDMI from the camera to the HDMI port of the camera videobox
+  \item HDMI cable from the presenter's video box HDMI OUT to the beamer in the room (if the beamer is HDMI)
+  \item HDMI cable from the speaker's laptop to the HDMI IN HDMI port of the presenter's videobox
 \end{itemize}
 \subsubsection{Cabling diagram}
 \begin{figure}[H]
@@ -229,20 +229,19 @@ The connections there are as follows:
 \end{figure}
 
 \subsection{Extra large rooms}
-These have a projector, a tie pin mic for the speaker and one or two audience microphones. They use the Sony HXR-NX100 camera.
+It has a projector, and all audio id handled by ULB. They use the Sony HXR-NX100 camera.
 
 The connections there are as follows:
 
 \begin{itemize}
-  \item USB cable from laptop to video-box (2 laptops/boxes)
   \item Network cable (video VLAN) to the presenter box (any port)
-  \item Network cable form the presenter to camera box (any port, one on each box)
-  \item Laptops, camera to AC power
-  \item XLR cable from the left channel of the audio mixer (ULB provided) to channel 1 (LEFT) of the camera
-  \item HDMI from the camera to the HDMI port of the video box
-  \item VGA cable from the presenter box left HDMI port to the beamer in the room (if the beamer is VGA; use the provided adapter)
-  \item HDMI cable from the presenter box to the beamer in the room (if the beamer is HDMI)
-  \item HDMI cable from the speaker's laptop to the right HDMI port of the presenter box
+  \item Network cable from the presenter to camera box (any port, one on each box)
+  \item Camera, to AC power
+  \item XLR cable from ULB's audio mixer to channel 1 (LEFT) of the camera
+  \item XLR cable from the OUT 2 channel of the audio mixer of the presenter's videobox the room PA
+  \item HDMI from the camera to the HDMI port of the camera videobox
+  \item HDMI cable from the presenter's video box HDMI OUT to the beamer in the room
+  \item HDMI cable from the speaker's laptop to the HDMI IN HDMI port of the presenter's videobox
 \end{itemize}
 
 \subsubsection{Cabling diagram}
@@ -254,7 +253,7 @@ The connections there are as follows:
 \end{figure}
 
 \section{FOSDEM video boxes}
-The FOSDEM video box and its control laptop will take care of the streaming and recording.
+The FOSDEM video box will take care of the streaming and recording.
 There is no need to operate the controls on the camera (once on and in the correct video mode, which the setup team will have done). The setup team should also have connected the following:
 \begin{itemize}
   \item at least one network cable
@@ -270,19 +269,11 @@ There is no need to operate the controls on the camera (once on and in the corre
     \end{itemize}
 \end{itemize}
 
-\iffalse
-The power switch is at the back, on a standard power supply:
-\begin{figure}[H]
-  \centering
-  \includegraphics[width = 120mm]{videobox_psu.jpg}
-\end{figure}
-\fi
-
 Order of connections and powering on does not matter, each order will work. There is no need to reboot the box after connections have changed.
-Fully booting the laptop takes about a minute, and it should show a graphical interface with data on the left and video on the right.
+Fully booting the box takes about a minute, and it should show its status on the display, which every few seconds is replaced with the video input it receives.
 
 \emph{Do not attempt to power off the box unassisted, as this may damage the integrity of the system.}
-In the event of power loss or accidental unplugging, the system should stay up due to the built-in battery, we don't expect it to stay without power long enough to actually go down. If you suspect it may be malfunctioning and there is not enough diagnostic information, contact the control and monitoring team (see chapter ``During the event'' for full details). They may already be aware of the problem, but quick reporting helps cut down on reaction times.
+If you suspect it may be malfunctioning and there is not enough diagnostic information, contact the control and monitoring team (see chapter ``During the event'' for full details). They may already be aware of the problem, but quick reporting helps cut down on reaction times.
 
 While the box contains a network switch (all four ports are connected), \emph{do not connect your own equipment} to the box. The boxes are on a special subnet with reserved bandwidth for the video streaming, and any other equipment may compromise the quality of the broadcast.
 
@@ -290,7 +281,7 @@ While the box contains a network switch (all four ports are connected), \emph{do
 For speakers with only VGA outputs, the per-building video team is required to ask them for their time machine license registration. Mini-DP and some other connectors might be available with the per-building team.
 The HDMI signal is automatically scaled to 1080p (1920x1080) at 50Hz. Matching this on the presenter laptop is a good idea, but not a requirement.
 
-\emph{The control laptop display will inform you of all vital information about the current status of the box.} It shows the stream video on the right with the sound levels overlayed on its top left corner, signal and its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and others.
+\emph{The display on the box will show all vital information about the current status of the box.} It shows a snapshot of the stream video, replaced with signal and its network status (connected/disconnected), the recording status (yes/no), the streaming status (yes/no) and others every few seconds. The sides of the display show the audio levels of the built-in audio mixer.
 
 The boxes report all this information to control while their network status is good, where the control and monitoring team keeps on eye on all rooms. If something is wrong, they may send somebody your way to correct it. Please follow the instructions (if any) of video team members. Keeping an eye on the box vitals and correcting any problems you notice is encouraged.
 
@@ -520,24 +511,15 @@ Implemented in role \texttt{video-box}.
 
 The \texttt{video-box} is in general a capture device that provides \texttt{sproxy} interface from its video and audio capture, plus some monitoring functions.
 
-Its hardware consists of a laptop and a box that connects to the laptop via a short USB 3 USB-C cable. In the box you can find:
+In the box you can find:
 
 \begin{itemize}
   \item HDMI capture device, based on the MacroSilicon MS2131 chip. The two HDMI ports on the box are connected to it;
-  \item A 4-port USB network controller that also acts as switch;
-  \item An USB hub (dock), that is used to connect both the above devices to the laptop.
-\end{itemize}
-
-The laptop is used to:
-
-\begin{itemize}
-  \item Capture video and audio from the HDMI capture device, synchronize them (with a fixed offset) and encode them using the hardware acceleration available in the CPU/GPU;
-  \item Present the captured video via \texttt{sproxy} to the network;
-  \item Provide a preview of the video on the screen with a bar to show the sound levels (upper right);
-  \item Provide status for the box and stream (upper left);
-  \item Provide a terminal for debugging if needed (bottom left);
-  \item Make a backup recording on its disk of the full stream for emergencies;
-  \item Show the nice purple FOSDEM color as a background.
+  \item A 5-port Ethernet switch;
+  \item A 5-port audio mixer with 2 XLR outputs and 3 XLR inputs, all for line level;
+  \item A power-board that handles powering all the components and provides 4 x USB-A power ports at 250 mW and one USB-A port that should be pass-through to the control board;
+  \item A Radxa X4 board, which controls everything (a normal x86_64 single-board computer);
+  \item A three-section display;
 \end{itemize}
 
 \subsection{video-voctop}
