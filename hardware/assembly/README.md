@@ -206,6 +206,11 @@ Preparation is now done, and we can begin cable management.
 #### Verify blue smoke still inside (`verify_blue_smoke_still_inside`)
 - **FIXME**: undocumented
 
+#### Record box id and MAC address (`record_box_id_and_mac_address`)
+- Check DHCP for the mac address of the box
+- Record it with its number in a file
+- Label the box with its number
+
 #### Click both bootsel btns (`click_both_bootsel_btns`)
 - **FIXME**: undocumented
 
