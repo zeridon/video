@@ -18,7 +18,7 @@ function topo_sort {
 }
 
 function extract_steps {
-    cat "${1}" | grep -E '^`\w+`:$' | grep -oE '\w+'
+    cat "${1}" | grep -oE '`\w+`' | grep -oE '\w+'
 }
 
 function topo_diff {

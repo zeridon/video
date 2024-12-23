@@ -12,7 +12,7 @@
 <g id="node1" class="node">
 <title>base_assembled</title>
 <polygon fill="none" stroke="black" points="1028.87,-1548 863.74,-1548 821.26,-1512 986.39,-1512 1028.87,-1548"/>
-<a xlink:href="#base_assembled"><text text-anchor="middle" x="925.07" y="-1524.95" font-family="Times,serif" font-size="14.00">base_assembled</text></a>
+<text text-anchor="middle" x="925.07" y="-1524.95" font-family="Times,serif" font-size="14.00">base_assembled</text>
 </g>
 <!-- connect_all_6_mta100_cables -->
 <g id="node29" class="node">
