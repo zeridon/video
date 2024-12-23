@@ -16,6 +16,27 @@
 `cut_pwr_cable`:
 - **FIXME**: undocumented
 
+`strip_ends_of_pwr_cable`:
+- **FIXME**: undocumented
+
+`tin_ends_of_pwr_cable`:
+- **FIXME**: undocumented
+
+`remove_ring_from_barrel_jack`:
+- **FIXME**: undocumented
+
+`solder_pwr_cable_to_barrel_jack`:
+- **FIXME**: undocumented
+
+`insert_pwr_cable_through_back_panel`:
+- **FIXME**: undocumented
+
+`insert_ring_on_barrel_jack`:
+- **FIXME**: undocumented
+
+`attach_terminal_to_pwr_cable`:
+- **FIXME**: undocumented
+
 `dilate_radxa_holes`:
 - **FIXME**: undocumented
 
@@ -37,16 +58,10 @@
 `remove_artifacts_from_display_holders`:
 - **FIXME**: undocumented
 
-`remove_ring_from_barrel_jack`:
-- **FIXME**: undocumented
-
 `strip_ends_of_radxa_pwr_cable`:
 - **FIXME**: undocumented
 
 `connect_micro_hdmi_cable`:
-- **FIXME**: undocumented
-
-`strip_ends_of_pwr_cable`:
 - **FIXME**: undocumented
 
 `clean_radxa_cpu`:
@@ -55,19 +70,10 @@
 `attach_terminal_to_radxa_pwr_cable`:
 - **FIXME**: undocumented
 
-`tin_ends_of_pwr_cable`:
-- **FIXME**: undocumented
-
 `stick_thermal_pad_on_radxa`:
 - **FIXME**: undocumented
 
-`solder_pwr_cable_to_barrel_jack`:
-- **FIXME**: undocumented
-
 `mount_radxa_on_baseplate`:
-- **FIXME**: undocumented
-
-`insert_pwr_cable_through_back_panel`:
 - **FIXME**: undocumented
 
 `mount_display_holders_on_baseplate`:
@@ -79,16 +85,10 @@
 `mount_sap_on_baseplate`:
 - **FIXME**: undocumented
 
-`insert_ring_on_barrel_jack`:
-- **FIXME**: undocumented
-
 `place_display_hat_on_display_holders`:
 - **FIXME**: undocumented
 
 `mount_hagibis_front_on_baseplate`:
-- **FIXME**: undocumented
-
-`attach_terminal_to_pwr_cable`:
 - **FIXME**: undocumented
 
 `place_radxa_hat_on_radxa_without_connecting`:
@@ -97,7 +97,7 @@
 `connect_pwr_cable_to_pwr_board`:
 - **FIXME**: undocumented
 
-`base_assembled`:
+`base_assembled`:<a name="base_assembled"></a>
 - **FIXME**: undocumented
 
 `connect_all_6_mta100_cables`:

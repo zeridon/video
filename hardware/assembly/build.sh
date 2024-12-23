@@ -22,8 +22,19 @@ function extract_steps {
 }
 
 function topo_diff {
-    if ! diff_result="$(diff -u <(topo_sort "${1}") <(extract_steps "${2}"))"; then
-        msg "the following items differ between ${1} and ${2}:"
+    diff_result="$(comm -2 -3 <(topo_sort "${1}" | sort) <(extract_steps "${2}" | sort))"
+    if [[ -n "${diff_result}" ]]; then
+        msg "the following items are missing from ${2}:"
+        for item in $(topo_sort "${1}"); do
+            if grep -qFx "${item}" <<< "${diff_result}"; then
+                echo "${item}"
+            fi
+        done
+    fi
+
+    diff_result="$(comm -1 -3 <(topo_sort "${1}" | sort) <(extract_steps "${2}" | sort))"
+    if [[ -n "${diff_result}" ]]; then
+        msg "the following items are missing from ${1}:"
         msg "${diff_result}"
     fi
 }

@@ -10,7 +10,7 @@
 <polygon fill="white" stroke="none" points="-4,4 -4,-2056 1692.41,-2056 1692.41,4 -4,4"/>
 <!-- base_assembled -->
 <g id="node1" class="node">
-<title>base_assembled</title>
+<a xlink:href="#base_assembled"><title>base_assembled</title></a>
 <polygon fill="none" stroke="black" points="1028.87,-1548 863.74,-1548 821.26,-1512 986.39,-1512 1028.87,-1548"/>
 <text text-anchor="middle" x="925.07" y="-1524.95" font-family="Times,serif" font-size="14.00">base_assembled</text>
 </g>
