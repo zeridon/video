@@ -22,6 +22,11 @@ Discarded parts should be kept in separate containers for further usage.
 
 ![assembly flowchart](assembly.svg)
 
+Legend (colours to be removed after assembly on 2024-12-28):
+- Green means already done before assembly
+- Red means skip (will be done later or not at all)
+- Yellow means optional (do only for some of the boxes)
+
 ### Outline of steps
 
 #### Attach neutrik connector to back plate (`attach_neutrik_connector_to_back_plate`)
