@@ -32,10 +32,6 @@ Legend (colours to be removed after assembly on 2024-12-28):
 #### Attach neutrik connector to back plate (`attach_neutrik_connector_to_back_plate`)
 - Use the M3x10 bolts and respective nuts to attach the connector
 
-#### Clean baseplate thermal area (`clean_baseplate_thermal_area`)
-- Use a cotton swab and isopropyl alcohol to clean the area where the CPU will contact the baseplate.
-This is between the two rectangular cutouts under the Radxa X4.
-
 #### Crimp fan connectors (`crimp_fan_connectors`)
 - Cut the fan wires to about 70mm
 - Hold the [connector](https://www.te.com/en/product-3-640443-3.html) in a vise with the wire slots pointing up. The vise should have a rubber grip. Do not tighten more than needed (the connector should not deform)
@@ -114,6 +110,10 @@ Looking at the terminal from the front (holes), the pin order is the following:
 
 #### Clean radxa cpu (`clean_radxa_cpu`)
 - Use a cotton swab and isopropyl alcohol to clean the CPU crystal
+
+#### Clean baseplate thermal area (`clean_baseplate_thermal_area`)
+- Use a cotton swab and isopropyl alcohol to clean the area where the CPU will contact the baseplate.
+This is between the two rectangular cutouts under the Radxa X4.
 
 #### Stick thermal pad on radxa (`stick_thermal_pad_on_radxa`)
 - Cut an approx 18x20mm rectangle of 1.5mm thick thermal pad
