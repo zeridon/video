@@ -177,8 +177,26 @@ Preparation is now done, and we can begin cable management.
 - Insert the terminal into the left terminal (labeled "PWR OUT").
 - Do not swap the two terminals!
 
+#### [Mark](https://github.com/markvdb) confusing MTA100 cables (`mark_duped_mta100_cables`):
+- Use red paint (or nail polish) to mark the two end connectors of the following MTA100 cables:
+    - The AudioBoard:DisplayHat cable (8pins, 225mm; the longer 8pin one)
+    - The PowerBoard:Switch cable (2pins, 215mm; this is half of the 2pin cables)
+
+#### [Mark](https://github.com/markvdb) confusing MTA100 connectors (`mark_duped_mta100_connectors`):
+- Use red paint (or nail polish) to mark the two end connectors of the following MTA100 cables:
+    - The 8-pin connector on the Audio Board
+    - The 8-pin connector labeled "SIDE" on the Display Hat
+    - The 2-pin connector on the Switch Board
+    - The 2-pin connector on the Power Board labeled "+5V"
+
 #### Connect all 6 mta100 cables (`connect_all_6_mta100_cables`)
-- **FIXME**: undocumented
+Connect The following cables:
+    - RadxaHat:Switch, 6pin, 275mm
+    - RadxaHat:DisplayHat, 8pin, 185mm
+    - RadxaHat:PowerBoard, 4pin, 180mm
+    - PowerBoard:Switch, marked red, 2pin, 215mm
+    - PowerBoard:DisplayHat, 2pin, 215mm
+    - AudioBoard:DisplayHat, marked red, 8pin, 225mm
 
 #### Connect audio jack cable (`connect_audio_jack_cable`)
 - **FIXME**: undocumented
