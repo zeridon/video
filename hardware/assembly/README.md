@@ -190,7 +190,7 @@ Preparation is now done, and we can begin cable management.
     - The 2-pin connector on the Power Board labeled "+5V"
 
 #### Connect all 6 mta100 cables (`connect_all_6_mta100_cables`)
-Connect The following cables:
+- Connect The following cables:
     - RadxaHat:Switch, 6pin, 275mm
     - RadxaHat:DisplayHat, 8pin, 185mm
     - RadxaHat:PowerBoard, 4pin, 180mm
