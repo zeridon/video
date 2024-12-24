@@ -23,6 +23,7 @@ digraph {
     mount_teensy_on_audio_brd -> mount_sap_on_baseplate;
     mount_radxa_on_baseplate -> mount_sap_on_baseplate;
     mount_radxa_on_baseplate -> mount_hagibis_rear_on_baseplate;
+    disassemble_hagibis_if_needed -> mount_hagibis_rear_on_baseplate;
     mount_hagibis_rear_on_baseplate -> mount_hagibis_front_on_baseplate;
     mount_fuse_on_pwr_brd -> mount_sap_on_baseplate;
     remove_artifacts_from_display_holders -> mount_display_holders_on_baseplate;
@@ -65,6 +66,7 @@ digraph {
     attach_cables_to_baseplate -> base_wired;
     base_wired -> attach_front_panel_to_audio_brd;
     attach_front_panel_to_audio_brd -> slide_base_and_panels_into_box;
+    prepare_box -> slide_base_and_panels_into_box;
     slide_base_and_panels_into_box -> attach_base_to_box;
     slide_base_and_panels_into_box -> attach_onlyfans_to_box;
     attach_onlyfans_to_box -> connect_box_to_power_and_network;
@@ -76,7 +78,7 @@ digraph {
     attach_radxa_hat -> run_provisioning_script;
     run_provisioning_script -> verify_status_on_display;
     verify_status_on_display -> close_box;
-    insert_3d_printed_aligners_into_box_slits -> close_box;
+    insert_case_locks -> close_box;
     close_box -> screw_box_shut;
 
     screw_box_shut -> done;

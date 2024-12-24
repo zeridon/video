@@ -1,4 +1,17 @@
-## Disassembly of old box
+## Box assembly process
+
+![assembly flowchart](assembly.svg)
+
+Legend (colours to be removed after assembly on 2024-12-28):
+- Green means already done before assembly
+- Red means skip (will be done later or not at all)
+- Yellow means optional (do only for some of the boxes)
+
+### Before we begin
+
+#### Dissassemble old box (`prepare_box`)
+When salvaging a pre-2024 FOSDEM box, it should be fully disassembled.
+
 The box should be fully disassembled using a 2mm HEX screwdriver.
 The following parts should be salvaged for the new box:
 
@@ -9,6 +22,21 @@ The following parts should be salvaged for the new box:
 
 Everything else can be discarded (not used for the new box).
 
+#### Prepare a new box (`prepare_box`)
+In case of using a brand new box ([G17081UBK](https://www.gainta.com/en/g17081ubk.html)), it should be prepared in the following way:
+
+- Discard the unused parts
+    - Only the top/bottom halves are used, everything else (front/back covers, planks) is discarded
+- Drill the 4mm high screw holes with a 2.8mm drill bit
+    - 2.8mm drill bits are very uncommon, make sure you have them available
+    - It is best to use a tabletop drill press
+    - Do not drill through the whole box, just drill about 3.5mm deep
+- Drill through the supports on the bottom half
+    - The lid and bottom of the box are identical and each have 4 support columns
+    - The bottom supports should be drilled through with a 3mm drill, so that the box can be screwed together
+- 3D-printed inserts ([case locks](https://github.com/FOSDEM/video/blob/master/hardware/brackets/case-lock.scad)) for the four corners should be made available
+
+#### Disassemble enclosed Hagibis capture card (`disassemble_hagibis_if_needed`)
 If the Hagibis capture card is inside its case, it should be disassembled:
 - Remove bumpers on bottom together with any glue residue
 - Remove the screws from under the bumper
@@ -18,16 +46,7 @@ If the Hagibis capture card is inside its case, it should be disassembled:
 
 Discarded parts should be kept in separate containers for further usage.
 
-## Assembly of new box
-
-![assembly flowchart](assembly.svg)
-
-Legend (colours to be removed after assembly on 2024-12-28):
-- Green means already done before assembly
-- Red means skip (will be done later or not at all)
-- Yellow means optional (do only for some of the boxes)
-
-### Outline of steps
+### Box assembly
 
 #### Attach neutrik connector to back plate (`attach_neutrik_connector_to_back_plate`)
 - Use the M3x10 bolts and respective nuts to attach the connector
@@ -223,7 +242,7 @@ Preparation is now done, and we can begin cable management.
 #### Verify status on display (`verify_status_on_display`)
 - **FIXME**: undocumented
 
-#### Insert 3d printed aligners into box slits (`insert_3d_printed_aligners_into_box_slits`)
+#### Insert 3D printed case locks into box slits (`insert_case_locks`)
 - **FIXME**: undocumented
 
 #### Close box (`close_box`)

@@ -22,7 +22,7 @@ function extract_steps {
 }
 
 function topo_diff {
-    diff_result="$(comm -2 -3 <(topo_sort "${1}" | sort) <(extract_steps "${2}" | sort))"
+    diff_result="$(comm -2 -3 <(topo_sort "${1}" | sort | uniq) <(extract_steps "${2}" | sort | uniq))"
     if [[ -n "${diff_result}" ]]; then
         msg "the following items are missing from ${2}:"
         for item in $(topo_sort "${1}"); do
@@ -32,7 +32,7 @@ function topo_diff {
         done
     fi
 
-    diff_result="$(comm -1 -3 <(topo_sort "${1}" | sort) <(extract_steps "${2}" | sort))"
+    diff_result="$(comm -1 -3 <(topo_sort "${1}" | sort | uniq) <(extract_steps "${2}" | sort | uniq))"
     if [[ -n "${diff_result}" ]]; then
         msg "the following items are missing from ${1}:"
         msg "${diff_result}"
