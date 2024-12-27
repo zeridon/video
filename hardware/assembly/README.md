@@ -251,7 +251,7 @@ Preparation is now done, and we can begin cable management.
 
 #### [Mark](https://github.com/markvdb) confusing MTA100 connectors (`mark_duped_mta100_connectors`):
 
-- Use red paint (or nail polish) to mark the two end connectors of the following MTA100 cables:
+- Use red paint (or nail polish) to mark the following connectors on the PCBs:
     - The 8-pin connector on the Audio Board
     - The 8-pin connector labeled "SIDE" on the Display Hat
     - The 2-pin connector on the Switch Board
