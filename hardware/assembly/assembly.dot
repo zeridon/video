@@ -18,6 +18,7 @@ digraph {
     dilate_radxa_holes -> clean_radxa_cpu;
     prepare_thermal_pad -> stick_thermal_pad_on_radxa;
     clean_radxa_cpu -> stick_thermal_pad_on_radxa;
+    apply_threadlock_to_baseplate -> clean_baseplate_thermal_area;
     clean_baseplate_thermal_area -> mount_radxa_on_baseplate;
     stick_thermal_pad_on_radxa -> mount_radxa_on_baseplate;
     mount_teensy_on_audio_brd -> mount_sap_on_baseplate;

@@ -92,7 +92,8 @@ Do not forget to do this before attaching the terminal!
 #### Insert ring on barrel jack (`insert_ring_on_barrel_jack`)
 Do not forget to do this before attaching the terminal!
 
-#### Attach terminal to power cable (`attach_terminal_to_pwr_cable`)
+#### Attach terminal to power cables (`attach_terminal_to_pwr_cable`, `attach_terminal_to_radxa_pwr_cable`))
+- Use 1.5mm flathead screwdriver
 - Attach a [Plug-in terminal](https://store.comet.bg/Catalogue/Product/45028/) to the wires.
 Looking at the terminal from the front (holes), the pin order is the following:
     - Left pin is +12V (red)
@@ -102,41 +103,44 @@ Looking at the terminal from the front (holes), the pin order is the following:
 #### Strip ends of radxa power cable (`strip_ends_of_radxa_pwr_cable`)
 - The cables come with the ends stripped to about 2mm - they should instead be stripped to 5mm
 
-#### Attach terminal to radxa power cable (`attach_terminal_to_radxa_pwr_cable`)
-- **FIXME**: undocumented
-
 #### Mount fuse on power brd (`mount_fuse_on_pwr_brd`)
-- **FIXME**: undocumented
+- Snap the fuse onto the fuse holder
 
 #### Mount teensy on audio brd (`mount_teensy_on_audio_brd`)
-- **FIXME**: undocumented
+- The teensy's direction is indicated by the "USB" label on the silkscreen
+- Lay the audio board on a flat, soft surface
+- Gently push the teensy downwards with two fingers placed symmetrically
 
 #### Place display on display hat (`place_display_on_display_hat`)
-- **FIXME**: undocumented
-
-#### Prepare thermal pad (`prepare_thermal_pad`)
-- **FIXME**: undocumented
+- Push the display onto the header, in a way that all holes align
 
 #### Remove artifacts from display holders (`remove_artifacts_from_display_holders`)
-- **FIXME**: undocumented
+- Use a 4mm drill bit or a knife to remove artifacts from the bottom of the holes
 
 #### Connect micro hdmi cable (`connect_micro_hdmi_cable`)
-- **FIXME**: undocumented
+- The cable should be connected between the port labeled **HDMI1** on the Radxa and the neutrik connector on the back panel
 
 #### Dilate radxa holes (`dilate_radxa_holes`)
 - Use a 3mm drill to drill through the holes on the Radxa X4
 - Use a paintbrush/vacuum cleaner to remove dust
 
-#### Clean radxa cpu (`clean_radxa_cpu`)
-- Use a cotton swab and isopropyl alcohol to clean the CPU crystal
+#### Apply threadlock to baseplate (`apply_threadlock_to_baseplate`)
+- Drop a single drop of [Loctite 242](https://www.henkel-adhesives.com/us/en/product/threadlockers/loctite_2430.1329467.html)
+into the threaded standoffs that will be used
 
 #### Clean baseplate thermal area (`clean_baseplate_thermal_area`)
 - Use a cotton swab and isopropyl alcohol to clean the area where the CPU will contact the baseplate.
 This is between the two rectangular cutouts under the Radxa X4.
 
-#### Stick thermal pad on radxa (`stick_thermal_pad_on_radxa`)
+
+#### Clean radxa cpu (`clean_radxa_cpu`)
+- Use a cotton swab and isopropyl alcohol to clean the CPU crystal
+
+#### Prepare thermal pad (`prepare_thermal_pad`)
 - Cut an approx 18x20mm rectangle of 1.5mm thick thermal pad
 - Remove protecting films from both sides
+
+#### Stick thermal pad on radxa (`stick_thermal_pad_on_radxa`)
 - Stick thermal pad onto CPU crystal
 
 #### Mount radxa on baseplate (`mount_radxa_on_baseplate`)
@@ -199,49 +203,63 @@ Preparation is now done, and we can begin cable management.
     - AudioBoard:DisplayHat, marked red, 8pin, 225mm
 
 #### Connect audio jack cable (`connect_audio_jack_cable`)
-- **FIXME**: undocumented
+- Connect the 3.5mm audio cable between the Hagibis audio output and the Audio Board's internal input
 
 #### Connect fans to power brd (`connect_fans_to_pwr_brd`)
-- **FIXME**: undocumented
+- Connect the fans to the FAN1 and FAN2 connectors on the power board
 
 #### Connect micro usb cable (`connect_micro_usb_cable`)
-- **FIXME**: undocumented
+- Connect the USBA-MicroUSB cable between the USB-2 port of the radxa (coloured black, not blue) and the teensy
 
 #### Connect ptru usb cable (`connect_ptru_usb_cable`)
-- **FIXME**: undocumented
+- Connect an USB-3 A-A cable between the Power Board internal USB-A connector and an USB-3 port on the Radxa
 
 #### Connect hagibis usb cable (`connect_hagibis_usb_cable`)
-- **FIXME**: undocumented
+- Connect an USB-3 A-A cable between the Hagibis internal USB-A connector and an USB-3 port on the Radxa
 
 #### Connect ethernet cable (`connect_ethernet_cable`)
-- **FIXME**: undocumented
+- Connect an RJ45 patch cable between the internal RJ45 port of the switch and the RJ45 port on the Radxa
 
 #### Attach cables to baseplate (`attach_cables_to_baseplate`)
-- **FIXME**: undocumented
+- Use screw-in cable ties to attach the cables to the baseplate
+- Fix the cable ties in place with flanged nuts
+- Use an already-built box as a template for the topology. If one is not available, use your imagination!
 
 #### Base wired (`base_wired`)
-- **FIXME**: undocumented
+- We are now done with everything on the baseplate!
 
 #### Attach front panel to audio brd (`attach_front_panel_to_audio_brd`)
-- **FIXME**: undocumented
+- Be careful with the XLR connector pins
+- Make sure the XLR connectors fit nicely into the holes
 
 #### Slide base and panels into box (`slide_base_and_panels_into_box`)
-- **FIXME**: undocumented
+- Make sure that the bottom half of the box is actually a bottom and not a lid
+(the holes are drilled through, and if the box is an old one, one of the grill bars is broken)
+- If the box is an old one, make sure the slit for fans on the baseplate is not oriented
+towards the broken grill
+- Slide the front panel and base assembly in
 
 #### Attach onlyfans to box (`attach_onlyfans_to_box`)
-- **FIXME**: undocumented
+- Use 3x 2.5mm-wide cable ties to tie through the bottom holes of the fans
+    - One of them ties the two middle holes (next to each other) to one of the box bars
+    - The other two tie the faraway holes on the two sides
+- Make sure the tying happens on the inside, and not on the outside
 
 #### Attach base to box (`attach_base_to_box`)
-- **FIXME**: undocumented
+- On all 6 accessible plastic columns, arrange the following:
+    - 2x 1mm washers with 8mm internal diameter (bkp washers)
+    - 1x 1mm washer with 3mm internal diameter
+- Use M3x4 screws to fix them
+    - **DO NOT TIGHTEN** - the plastic thread is very easy to snap!
 
 #### Stick battery to baseplate (`stick_battery_to_baseplate`)
-- **FIXME**: undocumented
+- Choose an appropriate slot to stick the battery, so that it doesn't dangle off the Radxa
 
 #### Connect box to power and network (`connect_box_to_power_and_network`)
-- **FIXME**: undocumented
+You know how to do this.
 
 #### Verify blue smoke still inside (`verify_blue_smoke_still_inside`)
-- **FIXME**: undocumented
+You know how to do this.
 
 #### Record box id and MAC address (`record_box_id_and_mac_address`)
 - Check DHCP for the mac address of the box
@@ -249,24 +267,27 @@ Preparation is now done, and we can begin cable management.
 - Label the box with its number
 
 #### Click both bootsel btns (`click_both_bootsel_btns`)
-- **FIXME**: undocumented
+- The RP2040 bootsel button on the top side of the Radxa
+- The Teensy bootsel button on the teensy
 
 #### Attach radxa hat (`attach_radxa_hat`)
-- **FIXME**: undocumented
+- Press the Radxa hat down firmly onto the header
 
 #### Run provisioning script (`run_provisioning_script`)
-- **FIXME**: undocumented
+- **FIXME**: undocumented (do some ansible magic)
 
 #### Verify status on display (`verify_status_on_display`)
-- **FIXME**: undocumented
+- The audio displays should show levels
+- The main display should show video-status (and not dr seus)
 
 #### Insert 3D printed case locks into box slits (`insert_case_locks`)
-- **FIXME**: undocumented
+- 4 locks
 
 #### Close box (`close_box`)
-- **FIXME**: undocumented
+- Make sure the front and back panels are firmly enclosed in their slits
 
 #### Screw box shut (`screw_box_shut`)
-- **FIXME**: undocumented
+- **FIXME**: I have no idea how to do this
 
 #### Done (`done`)
+- Drink some Rakia
