@@ -193,7 +193,7 @@ This is between the two rectangular cutouts under the Radxa X4.
 
 #### Mount display holders on baseplate (`mount_display_holders_on_baseplate`)
 
-- Screw the display holders onto the baseplate with M3x5 bolts
+- Screw the display holders onto the baseplate with M3x6 bolts
 
 <img src="pics/mount_display_holders_on_baseplate.png" height="150px" />
 
