@@ -218,11 +218,9 @@ This is between the two rectangular cutouts under the Radxa X4.
 - The display hat PCB slides into the rear slit, while the display slides into the front slit
 - The MTA100 connectors should be on top
 
-#### Place radxa hat on radxa without connecting (`place_radxa_hat_on_radxa_without_connecting`)
+#### Attach radxa hat (`attach_radxa_hat`)
 
-- We will later have to click the bootsel button that is under the radxa hat, so
-there's no need to plug the hat in now - just place it on top of the Radxa, so that the
-cabling layout can be realistic.
+- Press the Radxa hat down firmly onto the header
 
 #### Base assembled (`base_assembled`)
 
@@ -349,14 +347,9 @@ You know how to do this.
 - Record it with its number in a file
 - Label the box with its number
 
-#### Click both bootsel btns (`click_both_bootsel_btns`)
+#### Click teensy bootsel btn (`click_teensy_bootsel_btn`)
 
-- The RP2040 bootsel button on the top side of the Radxa
 - The Teensy bootsel button on the teensy
-
-#### Attach radxa hat (`attach_radxa_hat`)
-
-- Press the Radxa hat down firmly onto the header
 
 #### Run provisioning script (`run_provisioning_script`)
 

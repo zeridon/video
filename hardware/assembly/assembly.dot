@@ -31,14 +31,14 @@ digraph {
     mount_radxa_on_baseplate -> mount_display_holders_on_baseplate;
     place_display_on_display_hat -> place_display_hat_on_display_holders;
     mount_display_holders_on_baseplate -> place_display_hat_on_display_holders;
-    place_display_hat_on_display_holders -> place_radxa_hat_on_radxa_without_connecting;
+    place_display_hat_on_display_holders -> attach_radxa_hat;
     mark_duped_mta100_cables -> connect_all_6_mta100_cables;
     mark_duped_mta100_connectors -> mount_sap_on_baseplate;
     mark_duped_mta100_connectors -> place_display_hat_on_display_holders;
 
     mount_sap_on_baseplate -> base_assembled;
     mount_hagibis_front_on_baseplate -> base_assembled;
-    place_radxa_hat_on_radxa_without_connecting -> base_assembled;
+    attach_radxa_hat -> base_assembled;
 
     base_assembled -> connect_all_6_mta100_cables;
     crimp_fan_connectors -> connect_fans_to_pwr_brd;
@@ -78,9 +78,8 @@ digraph {
     stick_battery_to_baseplate -> connect_box_to_power_and_network;
     connect_box_to_power_and_network -> verify_blue_smoke_still_inside;
     verify_blue_smoke_still_inside -> record_box_id_and_mac_address;
-    record_box_id_and_mac_address -> click_both_bootsel_btns;
-    click_both_bootsel_btns -> attach_radxa_hat;
-    attach_radxa_hat -> run_provisioning_script;
+    record_box_id_and_mac_address -> click_teensy_bootsel_btn;
+    click_teensy_bootsel_btn -> run_provisioning_script;
     run_provisioning_script -> verify_status_on_display;
     verify_status_on_display -> close_box;
     insert_case_locks -> close_box;
