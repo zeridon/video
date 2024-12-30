@@ -380,7 +380,7 @@ onOscBus(OSCMessage &msg, int patternOffset)
 		if (msg.isString(0)) {
 			msg.getString(0, channel_info[bus + 6].desc, sizeof(channel_info[bus + 6].desc));
 		} else {
-			snprintf(address, 22, "/ch/%d/config/name", bus);
+			snprintf(address, 22, "/bus/%d/config/name", bus);
 			OSCMessage response(address);
 			response.add(channel_info[bus + 6].desc);
 			slip.beginPacket();
