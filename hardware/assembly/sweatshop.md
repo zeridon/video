@@ -64,14 +64,14 @@ Requires a drill.
 
 ### Team 11 - prep for cabling
 
-- Input: baseplate with mounted boards, back panel, USB-3 USB-A cable, USB2 micro-USB to USB-A cable, radxa power cable, 6 MTA100 cables, ethernet cable
+- Input: baseplate with mounted boards, back panel, USB-3 USB-A cable, USB2 micro-USB to USB-A cable, radxa power cable, 6 MTA100 cables, ethernet cable, display
 - Output: baseplate with cables on top
 
 ### Team 12 - cabling
 
 - Input: baseplate and box with all boards, cables
 - Output: cabled box
-- Steps: `connect_pwr_cable_to_pwr_board`, `connect_radxa_to_pwr_board`, `connect_all_6_mta100_cables`, `connect_fans_to_pwr_brd`, `connect_micro_usb_cable`, `connect_hagibis_usb_cable`, `connect_ethernet_cable`, `attach_cables_to_baseplate`
+- Steps: `connect_pwr_cable_to_pwr_board`, `connect_radxa_to_pwr_board`, `connect_all_6_mta100_cables`, `connect_fans_to_pwr_brd`, `connect_micro_usb_cable`, `connect_hagibis_usb_cable`, `connect_ethernet_cable`, `attach_cables_to_baseplate`, `place_display_on_display_hat`
 
 ### Team 13 - boxing
 
