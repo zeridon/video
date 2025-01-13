@@ -17,5 +17,5 @@ bool fan_ctl_get_pwm(uint8_t fan_id, uint8_t* dest);
 bool fan_ctl_set_pwm(uint8_t fan_id, uint8_t duty);
 bool fan_ctl_set_fan_speed(uint8_t fan_id, uint16_t speed);
 bool fan_ctl_set_fan_speed_target(uint8_t fan_id, uint16_t speed);
-void fan_ctl_init();
-void fan_ctl_task();
+void fan_ctl_init(void);
+void fan_ctl_task(void);

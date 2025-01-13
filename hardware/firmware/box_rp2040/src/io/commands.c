@@ -33,6 +33,7 @@ void help(void) {
     io_say("    pb.fan.pwm              -- get fan pwm duty cycle\n");
     io_say("    pb.fan.pwm.force        -- force fan into raw pwm mode\n");
     io_say("    bootloader              -- reboot into bootloader\n");
+    io_say("    status                  -- general human-readable status\n");
     io_say("call a command without arguments for usage\n");
     io_say("every command's output ends with '^(ok|fail) .*\\n'\n");
     io_say("ok help\n");
@@ -255,7 +256,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
 
         bool on = parse_number(&line);
 
-        if (pwr_brd_charger_power(on)) {
+        if (pwr_brd_charger_power_set(on)) {
             io_say("ok pb.chargers.on\n");
         } else {
             io_say("fail pb.chargers.on\n");
@@ -344,6 +345,19 @@ void io_handle_cmd(char* line, io_state_t* state) {
         } else {
             io_say("fail pb.fan.speed.target\n");
         }
+        return;
+    }
+
+    if (hop_word(&line, "status")) {
+        io_say("gpio works: ");
+        io_say_bool(pwr_brd_gpio_works());
+        io_say("\n");
+        io_say("chargers on: ");
+        io_say_bool(pwr_brd_charger_power());
+        io_say("\n");
+        io_say("overload: ");
+        io_say_bool(pwr_brd_has_overload());
+        io_say("\n");
         return;
     }
 

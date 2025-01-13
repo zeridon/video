@@ -7,8 +7,11 @@
 #include <hardware/i2c.h>
 
 expander_t expander;
+uint8_t expander_input_state = 0;
+bool overload = false;
+bool gpio_works = false;
 
-void pwr_brd_ctl_init() {
+void pwr_brd_ctl_init(void) {
     i2c_init(PWR_BRD_I2C_INST, PWR_BRD_I2C_BAUD);
     gpio_pull_up(PWR_BRD_I2C_SDA);
     gpio_pull_up(PWR_BRD_I2C_SCL);
@@ -16,14 +19,6 @@ void pwr_brd_ctl_init() {
     gpio_set_function(PWR_BRD_I2C_SCL, GPIO_FUNC_I2C);
     expander_init(&expander, PWR_BRD_I2C_INST, PWR_BRD_EXPANDER_ADDR, PWR_BRD_I2C_TIMEOUT_US);
     fan_ctl_init();
-}
-
-void pwr_brd_ctl_task() {
-    fan_ctl_task();
-}
-
-bool pwr_brd_raw_gpio_read(uint8_t* val) {
-    return expander_read_inputs(&expander, val);
 }
 
 bool ensure_expander_output_dirs(void) {
@@ -37,12 +32,47 @@ bool ensure_expander_output_dirs(void) {
     return true;
 }
 
+void pwr_brd_ctl_task(void) {
+    ensure_expander_output_dirs();
+    if (expander_read_inputs(&expander, &expander_input_state)) {
+        gpio_works = true;
+        if ((expander_input_state & (1 << PWR_BRD_EXPANDER_PIN_OVERLOAD)) > 0) {
+            overload = true;
+        }
+    } else {
+        gpio_works = false;
+    }
+    fan_ctl_task();
+}
+
+bool pwr_brd_gpio_works(void) {
+    return gpio_works;
+}
+
+bool pwr_brd_has_overload(void) {
+    bool result = overload;
+    overload = false;
+    return result;
+}
+
+bool pwr_brd_raw_gpio_read(uint8_t* val) {
+    if (!gpio_works) {
+        return false;
+    }
+    *val = expander_input_state;
+    return true;
+}
+
 bool pwr_brd_set_gpio_outs(uint8_t outs) {
     ensure_expander_output_dirs();
     return expander_write_outputs(&expander, outs);
 }
 
-bool pwr_brd_charger_power(bool on) {
+bool pwr_brd_charger_power(void) {
+    return gpio_works && ((expander_input_state & (1 << PWR_BRD_EXPANDER_PIN_CHG_PWR)) == 0);
+}
+
+bool pwr_brd_charger_power_set(bool on) {
     uint8_t output_state = expander.last_output_state;
 
     if (!on) {
