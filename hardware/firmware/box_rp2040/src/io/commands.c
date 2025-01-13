@@ -39,6 +39,130 @@ void help(void) {
     io_say("ok help\n");
 }
 
+bool io_print_netswitch_port_info(void) {
+    bool has_internal_port = false;
+    bool has_external_port = false;
+
+    nsw_port_regs_t port_regs;
+    for (uint8_t port = 0; port < NSW_NUM_PORTS; port++) {
+        io_say("    port ");
+        io_say_uint(port);
+        io_say(": ");
+        if (!nsw_read_port_regs(port, &port_regs)) {
+            io_say("unknown (failure getting port info)\n");
+            continue;
+        }
+
+        bool link_up = false;
+        switch (nsw_link_state(&port_regs)) {
+            case nsw_link_unknown:
+                io_say("unknown");
+                break;
+            case nsw_link_down:
+                io_say("down");
+                break;
+            case nsw_link_full_duplex:
+                io_say("up full-duplex");
+                link_up = true;
+                if (port == 0) {
+                    has_internal_port = true;
+                } else {
+                    has_external_port = true;
+                }
+                break;
+            case nsw_link_half_duplex:
+                io_say("up half-duplex");
+                link_up = true;
+                break;
+        }
+        if (link_up) {
+            io_say(" ");
+            io_say_uint(nsw_link_speed_mbps(&port_regs));
+            io_say("mbps");
+        }
+        io_say("\n");
+    }
+
+    return (has_internal_port && has_external_port);
+}
+
+bool io_print_fan_speeds(void) {
+    uint16_t speed;
+    uint8_t num_healthy_fans;
+
+    for (uint8_t i = 0; i < 5; i++) {
+        io_say("    fan ");
+        io_say_uint(i);
+        io_say(": ");
+        if (fan_ctl_get_fan_speed(i, &speed)) {
+            io_say_uint(speed);
+            if (speed < FAN_MAX_HEALTHY_RPM && speed > FAN_MIN_HEALTHY_RPM) {
+                num_healthy_fans++;
+            }
+        } else {
+            io_say("dead");
+        }
+        io_say("\n");
+    }
+    return (num_healthy_fans >= 2);
+}
+
+void io_print_status(void) {
+    io_say("begin status\n");
+
+    bool healthy = true;
+    bool gpio_works = pwr_brd_gpio_works();
+    healthy &= gpio_works;
+    io_say("gpio works: ");
+    io_say_bool(gpio_works);
+    io_say("\n");
+
+    io_say("chargers on: ");
+    io_say_bool(pwr_brd_charger_power());
+    io_say("\n");
+
+    bool overload = pwr_brd_has_overload();
+    healthy &= !overload;
+    io_say("overload: ");
+    io_say_bool(overload);
+    io_say("\n");
+
+    io_say("network switch ports:\n");
+    bool nsw_ok = io_print_netswitch_port_info();
+    io_say("network switch ok: ");
+    io_say_bool(nsw_ok);
+    io_say("\n");
+
+    io_say("fan speeds:\n");
+    bool fans_ok = io_print_fan_speeds();
+    io_say("fans ok: ");
+    io_say_bool(fans_ok);
+    io_say("\n");
+
+    uint8_t temp;
+    bool too_hot = false;
+    io_say("temperature: ");
+    if (temp_sensor_get_temp_raw(&temp)) {
+        io_say_uint(temp);
+        if (temp > MAX_TEMPERATURE) {
+            too_hot = true;
+        }
+    } else {
+        io_say("unknown");
+        too_hot = true;
+    }
+    io_say("\ntoo hot: ");
+    io_say_bool(too_hot);
+    io_say("\n");
+    healthy |= too_hot;
+
+    io_say("\nhealthy: ");
+    io_say_bool(healthy);
+    io_say("\n");
+
+    io_say("ok status\n");
+};
+
 void io_handle_cmd(char* line, io_state_t* state) {
     if (hop_word(&line, "netswitch.info")) {
         uint32_t id;
@@ -50,40 +174,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
             io_say_uint(ver);
             io_say(")\n");
 
-            nsw_port_regs_t port_regs;
-            for (uint8_t port = 0; port < NSW_NUM_PORTS; port++) {
-                io_say("port ");
-                io_say_uint(port);
-                io_say(": ");
-                if (!nsw_read_port_regs(port, &port_regs)) {
-                    io_say("unknown (failure getting port info)\n");
-                    continue;
-                }
-
-                bool link_up = false;
-                switch (nsw_link_state(&port_regs)) {
-                    case nsw_link_unknown:
-                        io_say("unknown");
-                        break;
-                    case nsw_link_down:
-                        io_say("down");
-                        break;
-                    case nsw_link_full_duplex:
-                        io_say("up full-duplex");
-                        link_up = true;
-                        break;
-                    case nsw_link_half_duplex:
-                        io_say("up half-duplex");
-                        link_up = true;
-                        break;
-                }
-                if (link_up) {
-                    io_say(" ");
-                    io_say_uint(nsw_link_speed_mbps(&port_regs));
-                    io_say("mbps");
-                }
-                io_say("\n");
-            }
+            io_print_netswitch_port_info();
 
             io_say("ok netswitch.info\n");
         } else {
@@ -349,15 +440,7 @@ void io_handle_cmd(char* line, io_state_t* state) {
     }
 
     if (hop_word(&line, "status")) {
-        io_say("gpio works: ");
-        io_say_bool(pwr_brd_gpio_works());
-        io_say("\n");
-        io_say("chargers on: ");
-        io_say_bool(pwr_brd_charger_power());
-        io_say("\n");
-        io_say("overload: ");
-        io_say_bool(pwr_brd_has_overload());
-        io_say("\n");
+        io_print_status();
         return;
     }
 
