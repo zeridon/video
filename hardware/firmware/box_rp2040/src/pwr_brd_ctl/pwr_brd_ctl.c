@@ -45,7 +45,7 @@ bool pwr_brd_set_gpio_outs(uint8_t outs) {
 bool pwr_brd_charger_power(bool on) {
     uint8_t output_state = expander.last_output_state;
 
-    if (on) {
+    if (!on) {
         output_state |= (1 << PWR_BRD_EXPANDER_PIN_CHG_PWR);
     } else {
         output_state &= ~(1 << PWR_BRD_EXPANDER_PIN_CHG_PWR);
