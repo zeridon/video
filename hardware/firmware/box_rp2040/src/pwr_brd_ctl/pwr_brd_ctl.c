@@ -1,4 +1,5 @@
 #include "pwr_brd_ctl.h"
+#include "fan_ctl.h"
 #include "config.h"
 #include "io/serial.h"
 #include "tca9534.h"
@@ -14,7 +15,11 @@ void pwr_brd_ctl_init() {
     gpio_set_function(PWR_BRD_I2C_SDA, GPIO_FUNC_I2C);
     gpio_set_function(PWR_BRD_I2C_SCL, GPIO_FUNC_I2C);
     expander_init(&expander, PWR_BRD_I2C_INST, PWR_BRD_EXPANDER_ADDR, PWR_BRD_I2C_TIMEOUT_US);
-    pwr_brd_fan_init();
+    fan_ctl_init();
+}
+
+void pwr_brd_ctl_task() {
+    fan_ctl_task();
 }
 
 bool pwr_brd_raw_gpio_read(uint8_t* val) {

@@ -10,7 +10,7 @@
 uint64_t time_next_cmd[NUMFAN];
 uint16_t desired_fan_speed[NUMFAN];
 
-void pwr_brd_fan_init() {
+void fan_ctl_init() {
     uint64_t now = time_us_64();
 
     for (int i = 0; i < NUMFAN; i++) {
@@ -135,7 +135,7 @@ Standard fan control:
 
 */
 
-void pwr_brd_fan_task() {
+void fan_ctl_task() {
     uint64_t now = time_us_64();
 
     for (int i = 0; i < NUMFAN; i++) {
