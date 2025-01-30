@@ -21,7 +21,7 @@ jobs:
     - run: apt-get update
     - run: >
         apt-get install -y \
-          git findutils \
+          git \
           build-essential cmake \
           gcc-arm-none-eabi binutils-arm-none-eabi libstdc++-arm-none-eabi-newlib \
           libusb-1.0.0-dev libfreetype-dev \
@@ -71,7 +71,7 @@ jobs:
   release:
     executor: github
     steps:
-    - run: apk add fakeroot
+    - run: apk add fakeroot findutils
     - attach_workspace:
         at: .
     - run: mkdir -v -p release
