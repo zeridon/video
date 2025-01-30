@@ -56,10 +56,10 @@ jobs:
     - run: mkdir -v -p release
     - run: >
         fpm -n fosdem-firmware -s dir -t deb -a amd64 -v ${CIRCLE_TAG#v} -p release \
-           firmware_build/audio_board_teensy.hex=/lib/firmware/FOSDEM/audio_board_teensy.hex \
-           firmware_build/box_rp2040.elf=/lib/firmware/FOSDEM/box_rp2040.elf \
-           hardware/firmware/tools/flash_rp2040_firmware.sh=/lib/firmware/FOSDEM/flash_rp2040_firmware.sh \
-           hardware/firmware/tools/flash_audio_board_firmware.sh=/lib/firmware/FOSDEM/flash_audio_board_firmware.sh
+           firmware_build/audio_board_teensy.hex=/usr/share/fosdem_firmware/audio_board_teensy.hex \
+           firmware_build/box_rp2040.elf=/usr/share/fosdem_firmware/box_rp2040.elf \
+           hardware/firmware/tools/flash_rp2040_firmware.sh=/usr/share/fosdem_firmware/flash_rp2040_firmware.sh \
+           hardware/firmware/tools/flash_audio_board_firmware.sh=/usr/share/fosdem_firmware/flash_audio_board_firmware.sh
     - run: package_cloud push fosdem/video-team/debian/bookworm release/*deb
     - store_artifacts:
         path: release
