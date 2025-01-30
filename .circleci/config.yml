@@ -75,7 +75,7 @@ jobs:
     - attach_workspace:
         at: .
     - run: mkdir -v -p release
-    - run: fakeroot tar -czvf release/fosdem-firmware-${CIRCLE_TAG}.amd64.tar.gz -C firmware_build fosdem-firmware
+    - run: fakeroot tar -czvf release/fosdem-firmware-${CIRCLE_TAG}.amd64.tar.gz -C firmware_build $(find firmware_build -mindepth 1 -maxdepth 1 -printf '%f\n')
     - run: cd release && sha256sum fosdem-firmware-*.tar.gz *deb > sha256sums.txt
     - run: >
         ghr \
