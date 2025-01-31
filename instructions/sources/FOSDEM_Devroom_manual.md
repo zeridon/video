@@ -1,9 +1,9 @@
-# FOSDEM 2024 A/V devroom manager manual, day DAY, room ROOM
+# FOSDEM 2025 A/V devroom manager manual, day DAY, room ROOM
 ## Where to get help
 
-* On Matrix: `#video:fosdem.org`
-* In person: there is a per-building team in every building, together with FIT or NOC.
-* For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105.
+* On Matrix: `#video:fosdem.org`. When using matrix, always mention your room name. Best way is to change your nick name in the room by typing `/myroomnick [k3401] your_nick_name`
+* In person: there is a per-building team in every building, together with FIT or NOC (AW.1125, H.2111, UB4.228, UD2.119)
+* For core issues, the NOC/VOC is in K at the end of corridor in front of K.1.105. Please come to that room only for emergencies.
 * Emergency: Vasil Kolev on `+359888508044` or Mark Van den Borre on `+32486961726`.
 
 The best way would be to ask in the matrix chat, someone will respond shortly and see if people need to be dispatched your way.
@@ -12,7 +12,7 @@ The best way would be to ask in the matrix chat, someone will respond shortly an
 
 There is a chatroom in Matrix for your devroom, in which people can see the live stream of the talk and add questions. The room is named after the devroom (not the physical room).
 
-If you have your Matrix ID in penta, you'll be pulled directly. If you have any issues with this, ask questions in the devroom managers' Matrix room.
+If you have your Matrix ID in pretalx, you'll be pulled directly. If you have any issues with this, ask questions in the devroom managers' Matrix room.
 
 ## Starting a presentation
 

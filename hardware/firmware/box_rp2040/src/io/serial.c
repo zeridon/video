@@ -44,6 +44,14 @@ void io_say_uint(uint32_t x) {
     io_say(&buf[i]);
 }
 
+void io_say_bool(bool x) {
+    if (x) {
+        io_say("true");
+    } else {
+        io_say("false");
+    }
+}
+
 void io_say(const char* buf) {
     io_say_n(buf, strlen(buf));
 }

@@ -1,0 +1,113 @@
+version: 2.1
+
+executors:
+  go:
+    docker:
+    - image: cimg/go:1.23
+  debian:
+    docker:
+    - image: debian:bookworm
+  ruby:
+    docker:
+    - image: cimg/ruby:3.4
+  github:
+    docker:
+    - image: cibuilds/github:0.13
+
+jobs:
+  build_firmware:
+    executor: debian
+    steps:
+    - run: apt-get update
+    - run: >
+        apt-get install -y \
+          git \
+          build-essential cmake \
+          gcc-arm-none-eabi binutils-arm-none-eabi libstdc++-arm-none-eabi-newlib \
+          libusb-1.0.0-dev libfreetype-dev \
+          python3
+
+    # I have no idea why git fails locally otherwise, but...
+    - run: git config --global --add safe.directory /tmp/_circleci_local_build_repo
+    - checkout
+    - run: chown -R $(id -nu):$(id -ng) . # another fix for wrong permissions in local builds
+
+    - run: bash ./hardware/firmware/box_rp2040/build.sh
+    - run: bash ./hardware/firmware/audio_board/build.sh
+    - run: mkdir firmware_build
+    - run: cp -v hardware/firmware/audio_board/build/teensy_audio.hex firmware_build/audio_board_teensy.hex
+    - run: cp -v hardware/firmware/box_rp2040/build/src/box_rp2040.elf firmware_build/box_rp2040.elf
+
+    - persist_to_workspace:
+        root: .
+        paths:
+        - firmware_build
+    - store_artifacts:
+        path: firmware_build
+
+  package:
+    executor: ruby
+    steps:
+    - run: gem install fpm
+    - checkout
+    - attach_workspace:
+        at: .
+    - run: gem install package_cloud
+    - run: mkdir -v -p release
+    - run: >
+        fpm -n fosdem-firmware -s dir -t deb -a amd64 -v ${CIRCLE_TAG#v} -p release \
+           firmware_build/audio_board_teensy.hex=/usr/share/fosdem_firmware/audio_board_teensy.hex \
+           firmware_build/box_rp2040.elf=/usr/share/fosdem_firmware/box_rp2040.elf \
+           hardware/firmware/tools/flash_rp2040_firmware.sh=/usr/share/fosdem_firmware/flash_rp2040_firmware.sh \
+           hardware/firmware/tools/flash_audio_board_firmware.sh=/usr/share/fosdem_firmware/flash_audio_board_firmware.sh
+    - run: package_cloud push fosdem/video-team/debian/bookworm release/*deb
+    - store_artifacts:
+        path: release
+    - persist_to_workspace:
+        root: .
+        paths:
+        - release
+
+  release:
+    executor: github
+    steps:
+    - run: apk add fakeroot findutils
+    - attach_workspace:
+        at: .
+    - run: mkdir -v -p release
+    - run: fakeroot tar -czvf release/fosdem-firmware-${CIRCLE_TAG}.amd64.tar.gz -C firmware_build $(find firmware_build -mindepth 1 -maxdepth 1 -printf '%f\n')
+    - run: cd release && sha256sum fosdem-firmware-*.tar.gz *deb > sha256sums.txt
+    - run: >
+        ghr \
+          -u "${CIRCLE_PROJECT_USERNAME}" \
+          -r "${CIRCLE_PROJECT_REPONAME}" \
+          -c "${CIRCLE_SHA1}" \
+          -delete \
+          "${CIRCLE_TAG}" \
+          ./release/
+
+workflows:
+  build:
+    jobs:
+    - build_firmware:
+        filters:
+          tags:
+            only: /.*/
+    - package:
+        requires:
+        - build_firmware
+        filters:
+          tags:
+            only: /.*/
+          branches:
+            ignore: /.*/
+    - release:
+        requires:
+        - build_firmware
+        - package
+        filters:
+          tags:
+            only: /.*/
+          branches:
+            ignore: /.*/
+  version: 2

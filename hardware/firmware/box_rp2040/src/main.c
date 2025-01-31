@@ -20,7 +20,7 @@ void init(void) {
 void update(void) {
     usb_task();
     io_task();
-    pwr_brd_fan_task();
+    pwr_brd_ctl_task();
 }
 
 int main(void) {

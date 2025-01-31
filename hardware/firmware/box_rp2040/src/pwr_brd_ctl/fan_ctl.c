@@ -10,6 +10,15 @@
 uint64_t time_next_cmd[NUMFAN];
 uint16_t desired_fan_speed[NUMFAN];
 
+void fan_ctl_init() {
+    uint64_t now = time_us_64();
+
+    for (int i = 0; i < NUMFAN; i++) {
+        time_next_cmd[i] = now;
+        desired_fan_speed[i] = DESIRED_RPM;
+    }
+}
+
 bool fan_ctl_i2c_read(uint8_t reg_id, uint8_t* dest) {
     return pwr_brd_i2c_read_reg(PWR_BRD_FAN_CTL_ADDR, reg_id, dest, 1);
 }
@@ -147,7 +156,7 @@ Standard fan control:
 
 */
 
-void pwr_brd_fan_task() {
+void fan_ctl_task() {
     uint64_t now = time_us_64();
 
     for (int i = 0; i < NUMFAN; i++) {
