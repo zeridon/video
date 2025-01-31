@@ -337,7 +337,7 @@ void onPacketReceived(OSCMessage msg) {
 void setup() {
     if (CrashReport) {
         // Wait until the debug interface is ready
-        while (!SerialUSB1)
+        while (!SerialUSB1 && millis() < 1500)
             ;
         SerialUSB1.print(CrashReport);
     }
