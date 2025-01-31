@@ -56,6 +56,15 @@ void io_say(const char* buf) {
     io_say_n(buf, strlen(buf));
 }
 
+void io_say_f(const char *fmt, ...) {
+    char buffer[1024];
+    va_list args;
+    va_start(args, fmt);
+    vsnprintf(buffer, 1024, fmt, args);
+    va_end(args);
+    io_say(buffer);
+}
+
 char line_buf[100];
 int n = 0;
 io_state_t state = io_state_cmdline;

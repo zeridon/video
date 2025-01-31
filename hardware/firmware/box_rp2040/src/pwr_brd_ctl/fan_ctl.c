@@ -1,5 +1,5 @@
 #include <stdint.h>
-
+#include <math.h>
 #include <hardware/i2c.h>
 
 #include "config.h"
@@ -25,6 +25,27 @@ bool fan_ctl_i2c_read(uint8_t reg_id, uint8_t* dest) {
 
 bool fan_ctl_i2c_write(uint8_t reg_id, uint8_t val) {
     return pwr_brd_i2c_write_reg(PWR_BRD_FAN_CTL_ADDR, reg_id, &val, 1);
+}
+
+bool fan_ctl_set_pwm_frequency(uint8_t fan1, uint8_t fan2, uint8_t fan3, uint8_t fan4, uint8_t fan5) {
+    uint8_t f123 = fan1 | (fan2<<2) | (fan3<<4);
+    bool ret = fan_ctl_i2c_write(0x2D, f123);
+    if (!ret) {
+        return ret;
+    }
+
+    uint8_t f45 = fan4 | (fan5<<2);
+    return fan_ctl_i2c_write(0x2C, f45);
+}
+
+void pwr_brd_fan_init() {
+    uint64_t now = time_us_64();
+
+    fan_ctl_set_pwm_frequency(0, 0, 0, 0, 0);
+    for (int i = 0; i < NUMFAN; i++) {
+        time_next_cmd[i] = now;
+        desired_fan_speed[i] = DESIRED_RPM;
+    }
 }
 
 bool fan_ctl_i2c_write_and_check(uint8_t reg_id, uint8_t val) {
@@ -160,18 +181,12 @@ void fan_ctl_task() {
             continue;
         }
 
-        // in all cases below, fan should be on
-
-        if (
-            fanspeed > desired_fan_speed[i] - DESIRED_RPM_THRESH_LOWER &&
-            fanspeed < desired_fan_speed[i] + DESIRED_RPM_THRESH_UPPER
-        ) {
-            // fan is within threshold, do nothing
-            continue;
-        }
-
+	int difference = desired_fan_speed[i] - fanspeed;
         uint8_t pwm;
         fan_ctl_get_pwm(i, &pwm);
+	float smooth = 0.0005f;
+	pwm += ((difference>>2) * (1.0f - exp(-smooth)));
+        fan_ctl_set_pwm(i, pwm);
 
         if (pwm > FAN_MAX_PWM) {
             // PWM was set by the fan controller's default power on value
@@ -195,39 +210,5 @@ void fan_ctl_task() {
             continue;
         }
 
-        if (fanspeed > desired_fan_speed[i] * 2) {
-            // fan is way too fast, dividing PWM in half
-            fan_ctl_set_pwm(i, pwm >> 1);
-            continue;
-        }
-
-        if (fanspeed > desired_fan_speed[i] + DESIRED_RPM_THRESH_UPPER) {
-            // fan is a bit too fast
-
-            if (pwm < 1) {
-                // fan is already at minimum PWN, nothing to do
-                continue;
-            }
-
-            // decrease PWM by 1
-            fan_ctl_set_pwm(i, pwm - 1);
-
-            // give it more time to spin down
-            time_next_cmd[i] = now + 2 * CMD_WAIT_TIME_US;
-            continue;
-        }
-
-        if (fanspeed < desired_fan_speed[i] - DESIRED_RPM_THRESH_LOWER) {
-            // fan is a bit too slow
-
-            if (pwm >= FAN_MAX_PWM) {
-                // fan is already at max PWM, nothing to do
-                continue;
-            }
-
-            // increase PWM by 1
-            fan_ctl_set_pwm(i, pwm + 1);
-            continue;
-        }
     }
 }

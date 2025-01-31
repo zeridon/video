@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 #define FAN_TACH_CONSTANT (7864320)
-#define CMD_WAIT_TIME_US (1000*1000)
+#define CMD_WAIT_TIME_US (3000 * 1000)
 #define DESIRED_RPM (5000)
 #define DESIRED_RPM_THRESH_UPPER (1000)
 #define DESIRED_RPM_THRESH_LOWER (2000)
