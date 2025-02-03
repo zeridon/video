@@ -299,7 +299,7 @@ bool smi_write(uint32_t mAddrs, uint32_t rData)
     con = 0;
     do {
         con++;
-        _smi_readBit(1, &ACK);		/* ACK for writting data [7:0] */
+        _smi_readBit(1, &ACK);		/* ACK for writing data [7:0] */
     } while ((ACK != 0) && (con < ack_timer));
 
     if (ACK != 0) return false;
@@ -309,7 +309,7 @@ bool smi_write(uint32_t mAddrs, uint32_t rData)
     con = 0;
     do {
         con++;
-        _smi_readBit(1, &ACK);		/* ACK for writting data [15:8] */
+        _smi_readBit(1, &ACK);		/* ACK for writing data [15:8] */
     } while ((ACK != 0) && (con < ack_timer));
 
     if (ACK != 0) return false;
