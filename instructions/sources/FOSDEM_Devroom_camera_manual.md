@@ -1,7 +1,10 @@
+
+# This document is not up to date, pelase recheck before giving to volunteers
+
 # FOSDEM 201N A/V devroom camera operator manual, day DAY, room ROOM
 ## Where to get help
 
-* On IRC: `irc.freenode.net, #fosdem-video`
+* On Matrix: #video:fosdem.org
 * In person: there is a per-building team in the following locations:
 	* **AW**: under the stairs (in front of AW1.124)
 	* **K**: NOC (end of corridor in front of K.1.105)
