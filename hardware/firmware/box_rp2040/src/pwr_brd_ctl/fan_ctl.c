@@ -6,6 +6,7 @@
 #include "fan_ctl.h"
 #include "fan_ctl_regs.h"
 #include "pwr_brd_ctl.h"
+#include "io/serial.h"
 
 uint16_t desired_fan_speed[NUMFAN];
 uint16_t fan_calibrated[NUMFAN][FAN_MAX_PWM+1];
@@ -17,11 +18,11 @@ void fan_ctl_init() {
 
     for (int i = 0; i < NUMFAN; i++) {
         desired_fan_speed[i] = DESIRED_RPM;
-	fan_error[i] = false;
-	
-	for (int j = 0; j < FAN_MAX_PWM; j++) {
+        fan_error[i] = false;
+
+        for (int j = 0; j < FAN_MAX_PWM; j++) {
             fan_calibrated[i][j] = 0;
-	}
+        }
     }
 
     // Turn off the second fan by default, having both fans on makes it very noisy
@@ -168,7 +169,7 @@ uint8_t fan_get_stall_speed(uint8_t fan_id) {
     for (int i = FAN_MAX_PWM; i > 0; i-- ) {
         if (fan_calibrated[fan_id][i] == 0) {
             return i;
-	}
+        }
     }
 }
 
@@ -177,7 +178,7 @@ void fan_ctl_task_calibrate() {
     static uint8_t fancal_step = FAN_MAX_PWM;
     uint64_t now = time_us_64();
     if (now < (fancal_last + 2000000)) {
-	return;
+        return;
     }
 
     io_say_f("Calibration step %d\r\n", fancal_step);
@@ -189,13 +190,13 @@ void fan_ctl_task_calibrate() {
             fan_ctl_get_fan_speed(i, &fanspeed);
             fan_calibrated[i][fancal_step] = fanspeed;
 
-	    if (fancal_step == FAN_MAX_PWM && fanspeed == 0) {
+            if (fancal_step == FAN_MAX_PWM && fanspeed == 0) {
                 fan_error[i] = true;
-	    }
+            }
         }
-	fancal_step--;
-	if (fancal_step == 0) {
-	    // End calibration and move to the next state
+        fancal_step--;
+        if (fancal_step == 0) {
+            // End calibration and move to the next state
             fan_state = FAN_STATE_RUN;
             /*
             io_say_f("Calibration finished\r\n");
@@ -209,16 +210,16 @@ void fan_ctl_task_calibrate() {
                     }
                 }
                 io_say_f("\r\n");
-	    }
+            }
             */
-	    return;
-	}
+            return;
+        }
     }
 
     for (int i = 0; i < NUMFAN; i++) {
         if(!fan_ctl_set_pwm(i, fancal_step)) {
             // io_say_f("Failed to set PWM on fan %d\r\n", i);
-	}
+        }
     }
     fancal_last = time_us_64();
 }
@@ -227,27 +228,27 @@ void fan_ctl_task_run() {
     uint64_t now = time_us_64();
     static uint64_t time_last = 0;
     if (now < (time_last + CMD_WAIT_TIME_US)) {
-	return;
+        return;
     }
 
     for (int i = 0; i < NUMFAN; i++ ) {
-	if (fan_error[i]) {
+        if (fan_error[i]) {
             continue;
-	}
+        }
         uint16_t fanspeed;
         fan_ctl_get_fan_speed(i, &fanspeed);
-    	
-	// Anti-stall
-	if (desired_fan_speed[i] > 0 && fanspeed == 0) {
-	    // io_say_f("Stall on fan %d\r\n", i);
-            fan_ctl_set_pwm(i, fan_get_stall_speed(i) + 2);
-	    continue;
-	}
 
-	// Apply requested fan speed relative to stall speed
+        // Anti-stall
+        if (desired_fan_speed[i] > 0 && fanspeed == 0) {
+            // io_say_f("Stall on fan %d\r\n", i);
+            fan_ctl_set_pwm(i, fan_get_stall_speed(i) + 2);
+            continue;
+        }
+
+        // Apply requested fan speed relative to stall speed
         uint8_t new_rpm = 0;
         if (desired_fan_speed[i] > 0) {
-    	    new_rpm = fan_get_stall_speed(i) + desired_fan_speed[i];
+            new_rpm = fan_get_stall_speed(i) + desired_fan_speed[i];
         }
         fan_ctl_set_pwm(i, new_rpm);
     }
@@ -257,11 +258,11 @@ void fan_ctl_task_run() {
 void fan_ctl_task() {
     switch (fan_state) {
         case FAN_STATE_CALIBRATE:
-	    return fan_ctl_task_calibrate();
-	case FAN_STATE_RUN:
-	    return fan_ctl_task_run();
-	default:
-	    fan_state = FAN_STATE_CALIBRATE;
-	    break;
+            return fan_ctl_task_calibrate();
+        case FAN_STATE_RUN:
+            return fan_ctl_task_run();
+        default:
+            fan_state = FAN_STATE_CALIBRATE;
+            break;
     }
 }
