@@ -1455,6 +1455,7 @@
 	(symbol
 		(lib_id "Power_Protection:PRTR5V0U2X")
 		(at 181.61 91.44 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1462,15 +1463,6 @@
 		(dnp no)
 		(uuid "77b748b0-c897-45b7-86c8-e7195f175378")
 		(property "Reference" "D3"
-			(at 185.42 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PRTR5V0U2X"
 			(at 185.42 100.33 90)
 			(effects
 				(font
@@ -1479,8 +1471,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "PRTR5V0U2X"
+			(at 185.42 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-143"
-			(at 181.61 92.964 0)
+			(at 181.61 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1489,7 +1490,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf"
-			(at 181.61 92.964 0)
+			(at 181.61 89.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
