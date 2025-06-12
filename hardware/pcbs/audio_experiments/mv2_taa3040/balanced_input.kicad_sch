@@ -1431,7 +1431,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "098017d8-c875-43b8-9a4b-7e33e8f2783d")
-		(property "Reference" "C12"
+		(property "Reference" "C13"
 			(at 153.67 91.44 90)
 			(effects
 				(font
@@ -1494,11 +1494,11 @@
 		(instances
 			(project "mv2_taa3040"
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "C12")
+					(reference "C13")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -1611,7 +1611,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "592f0945-d7f0-4dff-972d-aeffc84fe80b")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR032"
 			(at 160.02 78.74 0)
 			(effects
 				(font
@@ -1663,11 +1663,11 @@
 		(instances
 			(project ""
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "#PWR030")
+					(reference "#PWR032")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "#PWR032")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -1682,7 +1682,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f03a7de-7659-4d16-9f9e-21b9f5cb36fa")
-		(property "Reference" "C11"
+		(property "Reference" "C12"
 			(at 153.67 63.5 90)
 			(effects
 				(font
@@ -1745,11 +1745,11 @@
 		(instances
 			(project ""
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "C11")
+					(reference "C12")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -1764,7 +1764,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "756064e7-6ddf-479a-a337-dbf7d9dbdc3d")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 203.2 78.74 0)
 			(effects
 				(font
@@ -1814,11 +1814,11 @@
 		(instances
 			(project "mv2_taa3040"
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "#PWR033")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -1915,7 +1915,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c63f8cd-2523-4914-9c02-75e2f3b9848f")
-		(property "Reference" "C10"
+		(property "Reference" "C11"
 			(at 148.59 77.4635 0)
 			(effects
 				(font
@@ -1978,11 +1978,11 @@
 		(instances
 			(project "mv2_taa3040"
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "C10")
+					(reference "C11")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -1997,7 +1997,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4a95088-b243-4e38-b4e0-290184606110")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 177.8 63.5 90)
 			(effects
 				(font
@@ -2060,11 +2060,11 @@
 		(instances
 			(project "mv2_taa3040"
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -2079,7 +2079,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ac889fce-f743-472d-992c-f468eb4f1634")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 176.53 91.44 90)
 			(effects
 				(font
@@ -2142,11 +2142,11 @@
 		(instances
 			(project "mv2_taa3040"
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/e3f94415-cffd-4131-bc0e-4234c6300c0c"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 				(path "/41a55a1d-5108-482f-b313-9eaa5d011dff/ec88f180-6d4b-439f-8697-a1ff92f435a7"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
