@@ -3218,7 +3218,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "Header_1x20"
+		(property "MPN" "SSQ-120-03-T-S"
 			(at 68.58 96.52 0)
 			(effects
 				(font

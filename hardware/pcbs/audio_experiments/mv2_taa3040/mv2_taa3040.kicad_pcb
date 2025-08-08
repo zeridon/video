@@ -689,7 +689,7 @@
 		(path "/1c3f6b07-c9aa-4f11-804b-09faf49e24ef/b6e2052b-48ff-4d09-8780-3157be176bf9/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/Balanced Input 4/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -4268,7 +4268,7 @@
 				)
 			)
 		)
-		(property "MPN" "R 0Ω 0805"
+		(property "MPN" "R 0Ω 1206"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7585,7 +7585,7 @@
 		(path "/e3f94415-cffd-4131-bc0e-4234c6300c0c/3bf1189a-5745-484e-b713-f473b34ebbfc/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/Balanced Input 1/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -8024,7 +8024,7 @@
 		(path "/ec88f180-6d4b-439f-8697-a1ff92f435a7/3bf1189a-5745-484e-b713-f473b34ebbfc/409d9dd7-4cfe-4aa5-a245-0cca9702e3f0")
 		(sheetname "/Balanced Input 2/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -8228,7 +8228,7 @@
 		(sheetname "/")
 		(sheetfile "mv2_taa3040.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -8732,7 +8732,7 @@
 		(path "/bd2f1d91-73ea-4344-9315-80da99bbdd84/b6e2052b-48ff-4d09-8780-3157be176bf9/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/Balanced Input 3/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -10574,7 +10574,7 @@
 		(path "/1c3f6b07-c9aa-4f11-804b-09faf49e24ef/b6e2052b-48ff-4d09-8780-3157be176bf9/409d9dd7-4cfe-4aa5-a245-0cca9702e3f0")
 		(sheetname "/Balanced Input 4/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -19283,7 +19283,7 @@
 		(path "/bd2f1d91-73ea-4344-9315-80da99bbdd84/b6e2052b-48ff-4d09-8780-3157be176bf9/409d9dd7-4cfe-4aa5-a245-0cca9702e3f0")
 		(sheetname "/Balanced Input 3/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -21358,7 +21358,7 @@
 				)
 			)
 		)
-		(property "MPN" "Header_1x20"
+		(property "MPN" "SSQ-120-03-T-S"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22882,7 +22882,7 @@
 				)
 			)
 		)
-		(property "MPN" "R 0Ω 0805"
+		(property "MPN" "R 0Ω 1206"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23455,7 +23455,7 @@
 		(sheetname "/")
 		(sheetfile "mv2_taa3040.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -30293,7 +30293,7 @@
 		(sheetname "/")
 		(sheetfile "mv2_taa3040.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -30585,7 +30585,7 @@
 		(path "/ec88f180-6d4b-439f-8697-a1ff92f435a7/3bf1189a-5745-484e-b713-f473b34ebbfc/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/Balanced Input 2/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)
@@ -31914,7 +31914,7 @@
 		(sheetname "/")
 		(sheetfile "mv2_taa3040.kicad_sch")
 		(zone_connect 1)
-		(attr exclude_from_pos_files allow_soldermask_bridges)
+		(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
 		(fp_rect
 			(start -0.15 -0.75)
 			(end 0.15 0.75)
@@ -38106,7 +38106,7 @@
 		(path "/e3f94415-cffd-4131-bc0e-4234c6300c0c/3bf1189a-5745-484e-b713-f473b34ebbfc/409d9dd7-4cfe-4aa5-a245-0cca9702e3f0")
 		(sheetname "/Balanced Input 1/Input frontend/")
 		(sheetfile "input_frontend.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(fp_line
 			(start -0.399622 0.56)
 			(end 0.399622 0.56)

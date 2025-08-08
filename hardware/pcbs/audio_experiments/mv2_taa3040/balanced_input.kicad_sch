@@ -2042,7 +2042,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "R 0Ω 0805"
+		(property "MPN" "R 0Ω 1206"
 			(at 176.53 64.77 90)
 			(effects
 				(font
