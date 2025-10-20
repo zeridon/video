@@ -3284,7 +3284,7 @@
 		)
 		(uuid "10973439-5ea5-4180-a2c5-8f8cc082123f")
 	)
-	(hierarchical_label "PHANTOM"
+	(hierarchical_label "PHANTOM_PULLDOWN"
 		(shape input)
 		(at 50.8 66.04 180)
 		(effects
