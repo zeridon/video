@@ -439,8 +439,12 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -540,8 +544,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+5V"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -561,8 +564,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -638,8 +645,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -918,7 +924,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0974d1f2-6faf-494a-a924-181d8b9cdf7b")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR0112"
 			(at 146.05 95.25 0)
 			(effects
 				(font
@@ -968,7 +974,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c4fe3322-408e-4a63-9af2-adca55ba4923"
-					(reference "#PWR034")
+					(reference "#PWR0112")
 					(unit 1)
 				)
 			)
@@ -984,7 +990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56b23b3c-2b0d-4e31-b5e6-a50d25ea39b4")
-		(property "Reference" "J10"
+		(property "Reference" "J9"
 			(at 154.94 87.63 0)
 			(effects
 				(font
@@ -1000,7 +1006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:DectModule"
+		(property "Footprint" "extra:DectModule"
 			(at 153.67 99.06 0)
 			(effects
 				(font
@@ -1075,7 +1081,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c4fe3322-408e-4a63-9af2-adca55ba4923"
-					(reference "J10")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -1091,7 +1097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b33d9cbc-b510-4416-9c0e-3eec05d47901")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR0113"
 			(at 146.05 114.3 0)
 			(effects
 				(font
@@ -1141,7 +1147,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c4fe3322-408e-4a63-9af2-adca55ba4923"
-					(reference "#PWR033")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)

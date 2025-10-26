@@ -314,8 +314,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -391,8 +395,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -528,7 +531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9110d05d-5bf3-47be-8bd5-c898a3b5a7f8")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR0114"
 			(at 93.98 106.68 0)
 			(effects
 				(font
@@ -578,7 +581,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "#PWR023")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
@@ -594,7 +597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a95618e-5a61-46d7-b2a7-6f72a2b40d9c")
-		(property "Reference" "R6"
+		(property "Reference" "R53"
 			(at 105.41 89.9541 90)
 			(effects
 				(font
@@ -682,7 +685,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "R6")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -698,7 +701,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be9f0ffd-931c-463d-a82a-930141b55eec")
-		(property "Reference" "J7"
+		(property "Reference" "J10"
 			(at 80.645 103.3399 0)
 			(effects
 				(font
@@ -780,7 +783,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "J7")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -796,7 +799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f65cfcc2-343a-494c-8af7-e1b4e34388f3")
-		(property "Reference" "R28"
+		(property "Reference" "R54"
 			(at 105.41 100.5459 90)
 			(effects
 				(font
@@ -884,7 +887,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "R28")
+					(reference "R54")
 					(unit 1)
 				)
 			)
