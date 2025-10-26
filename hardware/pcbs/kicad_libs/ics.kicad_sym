@@ -558,7 +558,7 @@
 				)
 			)
 			(pin power_in line
-				(at 8.89 -34.29 90)
+				(at 7.62 -34.29 90)
 				(length 2.54)
 				(name "PGND"
 					(effects
@@ -576,7 +576,7 @@
 				)
 			)
 			(pin power_in line
-				(at 11.43 -34.29 90)
+				(at 10.16 -34.29 90)
 				(length 2.54)
 				(name "PGND"
 					(effects
@@ -594,7 +594,7 @@
 				)
 			)
 			(pin power_in line
-				(at 13.97 -34.29 90)
+				(at 12.7 -34.29 90)
 				(length 2.54)
 				(name "AGND"
 					(effects
@@ -604,6 +604,24 @@
 					)
 				)
 				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -34.29 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)

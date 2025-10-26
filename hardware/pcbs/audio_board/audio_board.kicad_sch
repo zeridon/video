@@ -7574,7 +7574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:Jack_XLR_Neutrik_NC3MAH_Horizontal"
+		(property "Footprint" "conn:Jack_XLR_Neutrik_NC3MAH_Horizontal"
 			(at 212.09 85.09 0)
 			(effects
 				(font
@@ -8017,7 +8017,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:Jack_XLR_Neutrik_NC3MAH_Horizontal"
+		(property "Footprint" "conn:Jack_XLR_Neutrik_NC3MAH_Horizontal"
 			(at 184.15 85.09 0)
 			(effects
 				(font
