@@ -64,7 +64,7 @@
           ""
         ],
         [
-          "unconnected_items|164020000|109800000|2370604d-ec90-4489-814c-d8fbb7416960|31511137-f857-469c-8e05-00a883aafc57",
+          "unconnected_items|164020000|109800000|F.Cu|4|2370604d-ec90-4489-814c-d8fbb7416960|31511137-f857-469c-8e05-00a883aafc57",
           ""
         ]
       ],
@@ -502,6 +502,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"

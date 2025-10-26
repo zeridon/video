@@ -1674,290 +1674,6 @@
 		(column_widths 20.32 20.32 38.1)
 		(row_heights 2.54 2.54 2.54 2.54 2.54)
 		(cells
-			(table_cell "MD4"
-				(exclude_from_sim no)
-				(at 56.515 80.645 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-					(justify left top)
-				)
-				(uuid "63be1c6b-4f3a-405f-aa16-cd5d638c740a")
-			)
-			(table_cell "MD5"
-				(exclude_from_sim no)
-				(at 76.835 80.645 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-					(justify left top)
-				)
-				(uuid "a3da0951-52fe-4b33-9788-cf44ca259ace")
-			)
-			(table_cell "Configuration"
-				(exclude_from_sim no)
-				(at 97.155 80.645 0)
-				(size 38.1 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.254)
-						(bold yes)
-					)
-					(justify left top)
-				)
-				(uuid "c88efc8a-0c05-4765-bb38-7e1241d33426")
-			)
-			(table_cell "Low"
-				(exclude_from_sim no)
-				(at 56.515 83.185 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "00b20a0f-c7b9-4ffd-b2f8-681343f65e1c")
-			)
-			(table_cell "Low"
-				(exclude_from_sim no)
-				(at 76.835 83.185 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "f773b02a-f1ea-45be-b728-7b9ad1868ba7")
-			)
-			(table_cell "Differential line out"
-				(exclude_from_sim no)
-				(at 97.155 83.185 0)
-				(size 38.1 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "f0f943fd-cb3e-4d9f-9451-f9578bda55d0")
-			)
-			(table_cell "High"
-				(exclude_from_sim no)
-				(at 56.515 85.725 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "54390a95-1038-4021-aca0-f3be3e61eb7b")
-			)
-			(table_cell "Low"
-				(exclude_from_sim no)
-				(at 76.835 85.725 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "73bab483-d492-448f-b920-9e654e199c64")
-			)
-			(table_cell "Differential HP or Line"
-				(exclude_from_sim no)
-				(at 97.155 85.725 0)
-				(size 38.1 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "ae2aa397-d606-4c05-b9d7-30f95a160a78")
-			)
-			(table_cell "Low"
-				(exclude_from_sim no)
-				(at 56.515 88.265 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "b9519693-43e0-40e2-bf54-a1b8531b5aeb")
-			)
-			(table_cell "High"
-				(exclude_from_sim no)
-				(at 76.835 88.265 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "cb1ef92c-02ad-49f6-a52c-888585ca4578")
-			)
-			(table_cell "Single-ended line out"
-				(exclude_from_sim no)
-				(at 97.155 88.265 0)
-				(size 38.1 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "3ee3c4cc-0e33-4a71-be14-645b426f6715")
-			)
-			(table_cell "High"
-				(exclude_from_sim no)
-				(at 56.515 90.805 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "f74ea492-0e6d-44cc-a390-3b4397cf26ad")
-			)
-			(table_cell "High"
-				(exclude_from_sim no)
-				(at 76.835 90.805 0)
-				(size 20.32 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "e3ff293f-a0aa-48b0-928e-e3ace1b598e0")
-			)
-			(table_cell "Pseudo-differential headphone out"
-				(exclude_from_sim no)
-				(at 97.155 90.805 0)
-				(size 38.1 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-				(uuid "1896f3be-0d47-4bc9-b2f8-6264a7feea32")
-			)
-		)
-	)
-	(table
-		(column_count 3)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 20.32 20.32 38.1)
-		(row_heights 2.54 2.54 2.54 2.54 2.54)
-		(cells
 			(table_cell "MD1"
 				(exclude_from_sim no)
 				(at 56.515 62.23 0)
@@ -2218,6 +1934,290 @@
 					(justify left top)
 				)
 				(uuid "45bd4dcc-c426-4322-ae21-4de7bfae7fd0")
+			)
+		)
+	)
+	(table
+		(column_count 3)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 20.32 20.32 38.1)
+		(row_heights 2.54 2.54 2.54 2.54 2.54)
+		(cells
+			(table_cell "MD4"
+				(exclude_from_sim no)
+				(at 56.515 80.645 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+					(justify left top)
+				)
+				(uuid "63be1c6b-4f3a-405f-aa16-cd5d638c740a")
+			)
+			(table_cell "MD5"
+				(exclude_from_sim no)
+				(at 76.835 80.645 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+					(justify left top)
+				)
+				(uuid "a3da0951-52fe-4b33-9788-cf44ca259ace")
+			)
+			(table_cell "Configuration"
+				(exclude_from_sim no)
+				(at 97.155 80.645 0)
+				(size 38.1 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.254)
+						(bold yes)
+					)
+					(justify left top)
+				)
+				(uuid "c88efc8a-0c05-4765-bb38-7e1241d33426")
+			)
+			(table_cell "Low"
+				(exclude_from_sim no)
+				(at 56.515 83.185 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "00b20a0f-c7b9-4ffd-b2f8-681343f65e1c")
+			)
+			(table_cell "Low"
+				(exclude_from_sim no)
+				(at 76.835 83.185 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "f773b02a-f1ea-45be-b728-7b9ad1868ba7")
+			)
+			(table_cell "Differential line out"
+				(exclude_from_sim no)
+				(at 97.155 83.185 0)
+				(size 38.1 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "f0f943fd-cb3e-4d9f-9451-f9578bda55d0")
+			)
+			(table_cell "High"
+				(exclude_from_sim no)
+				(at 56.515 85.725 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "54390a95-1038-4021-aca0-f3be3e61eb7b")
+			)
+			(table_cell "Low"
+				(exclude_from_sim no)
+				(at 76.835 85.725 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "73bab483-d492-448f-b920-9e654e199c64")
+			)
+			(table_cell "Differential HP or Line"
+				(exclude_from_sim no)
+				(at 97.155 85.725 0)
+				(size 38.1 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "ae2aa397-d606-4c05-b9d7-30f95a160a78")
+			)
+			(table_cell "Low"
+				(exclude_from_sim no)
+				(at 56.515 88.265 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "b9519693-43e0-40e2-bf54-a1b8531b5aeb")
+			)
+			(table_cell "High"
+				(exclude_from_sim no)
+				(at 76.835 88.265 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "cb1ef92c-02ad-49f6-a52c-888585ca4578")
+			)
+			(table_cell "Single-ended line out"
+				(exclude_from_sim no)
+				(at 97.155 88.265 0)
+				(size 38.1 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "3ee3c4cc-0e33-4a71-be14-645b426f6715")
+			)
+			(table_cell "High"
+				(exclude_from_sim no)
+				(at 56.515 90.805 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "f74ea492-0e6d-44cc-a390-3b4397cf26ad")
+			)
+			(table_cell "High"
+				(exclude_from_sim no)
+				(at 76.835 90.805 0)
+				(size 20.32 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "e3ff293f-a0aa-48b0-928e-e3ace1b598e0")
+			)
+			(table_cell "Pseudo-differential headphone out"
+				(exclude_from_sim no)
+				(at 97.155 90.805 0)
+				(size 38.1 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+				(uuid "1896f3be-0d47-4bc9-b2f8-6264a7feea32")
 			)
 		)
 	)
