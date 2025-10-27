@@ -5518,7 +5518,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias"
+		(property "Footprint" "ics:WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias"
 			(at 168.91 67.31 0)
 			(effects
 				(font
