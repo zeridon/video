@@ -751,16 +751,28 @@
       "Net-(C36-Pad1)": [
         "Phantom"
       ],
+      "Net-(C37-Pad1)": [
+        "Phantom"
+      ],
       "Net-(C37-Pad2)": [
         "Phantom"
       ],
       "Net-(C38-Pad1)": [
         "Phantom"
       ],
+      "Net-(C38-Pad2)": [
+        "Phantom"
+      ],
       "Net-(C39-Pad1)": [
         "Phantom"
       ],
       "Net-(C39-Pad2)": [
+        "Phantom"
+      ],
+      "Net-(C40-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C40-Pad2)": [
         "Phantom"
       ],
       "Net-(C41-Pad1)": [
@@ -790,7 +802,16 @@
       "Net-(C45-Pad2)": [
         "Phantom"
       ],
+      "Net-(C46-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C46-Pad2)": [
+        "Phantom"
+      ],
       "Net-(C48-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C49-Pad1)": [
         "Phantom"
       ],
       "Net-(C49-Pad2)": [
@@ -799,10 +820,19 @@
       "Net-(C50-Pad1)": [
         "Phantom"
       ],
+      "Net-(C50-Pad2)": [
+        "Phantom"
+      ],
       "Net-(C51-Pad1)": [
         "Phantom"
       ],
       "Net-(C51-Pad2)": [
+        "Phantom"
+      ],
+      "Net-(C52-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C52-Pad2)": [
         "Phantom"
       ],
       "Net-(L1-Pad2)": [

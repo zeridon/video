@@ -2491,7 +2491,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "08a99cc5-e3f3-4c79-a9a2-42d64a1b7326")
-		(property "Reference" "C14"
+		(property "Reference" "C15"
 			(at 171.45 55.8862 0)
 			(effects
 				(font
@@ -2554,11 +2554,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C21")
+					(reference "C22")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C14")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -2786,7 +2786,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a576ae1-df99-4554-ada7-14c027c3c05d")
-		(property "Reference" "C16"
+		(property "Reference" "C17"
 			(at 204.47 96.5262 0)
 			(effects
 				(font
@@ -2849,11 +2849,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C16")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -2940,7 +2940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49ed7ca0-b259-43ea-aa75-19e3ebd587fd")
-		(property "Reference" "C17"
+		(property "Reference" "C18"
 			(at 204.47 120.6562 0)
 			(effects
 				(font
@@ -3003,11 +3003,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C17")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -3093,7 +3093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c5cd430-9e7d-4852-bb5d-22925e450cbf")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 215.9 96.5262 0)
 			(effects
 				(font
@@ -3156,11 +3156,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C26")
+					(reference "C27")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -3247,7 +3247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73129747-3a06-4aae-bfbc-c08aea00fbd3")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 158.75 55.8862 0)
 			(effects
 				(font
@@ -3310,11 +3310,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C20")
+					(reference "C21")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3555,7 +3555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a083e239-c7af-4348-ae40-12f80ea84a8f")
-		(property "Reference" "C18"
+		(property "Reference" "C19"
 			(at 209.55 55.8862 0)
 			(effects
 				(font
@@ -3618,11 +3618,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C25")
+					(reference "C26")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C18")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4146,7 +4146,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eccf56b4-f80f-485c-b554-5a82ffc6a3b6")
-		(property "Reference" "C15"
+		(property "Reference" "C16"
 			(at 198.12 55.8862 0)
 			(effects
 				(font
@@ -4209,11 +4209,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "C22")
+					(reference "C23")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "C15")
+					(reference "C16")
 					(unit 1)
 				)
 			)

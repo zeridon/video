@@ -1912,7 +1912,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27761e3f-69e7-46da-b072-4d89e8a9e3d3")
-		(property "Reference" "C27"
+		(property "Reference" "C28"
 			(at 93.98 77.4762 0)
 			(effects
 				(font
@@ -1966,7 +1966,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C27")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -2310,7 +2310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b69befb-7dfd-409a-a532-b68fe72ecdb8")
-		(property "Reference" "C31"
+		(property "Reference" "C32"
 			(at 135.89 54.6162 0)
 			(effects
 				(font
@@ -2364,7 +2364,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C31")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -2446,7 +2446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f31ecd9-f889-499b-8b5e-910be0c17501")
-		(property "Reference" "C32"
+		(property "Reference" "C33"
 			(at 157.48 54.6162 0)
 			(effects
 				(font
@@ -2500,7 +2500,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C32")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -2516,7 +2516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8208dd37-b272-4a29-9978-ded5260583f6")
-		(property "Reference" "C30"
+		(property "Reference" "C31"
 			(at 127 54.6162 0)
 			(effects
 				(font
@@ -2570,7 +2570,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C30")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -2652,7 +2652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9342c81c-2f1d-4bae-8218-e3680da6a560")
-		(property "Reference" "C35"
+		(property "Reference" "C36"
 			(at 186.69 66.0462 0)
 			(effects
 				(font
@@ -2706,7 +2706,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C35")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -2987,7 +2987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba59745b-669d-4050-b2d5-3cbeb9b5db7c")
-		(property "Reference" "C28"
+		(property "Reference" "C29"
 			(at 104.14 66.0462 0)
 			(effects
 				(font
@@ -3041,7 +3041,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C28")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -3195,7 +3195,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8d98202-53d0-4251-8c87-793e54da75df")
-		(property "Reference" "C33"
+		(property "Reference" "C34"
 			(at 167.64 54.6162 0)
 			(effects
 				(font
@@ -3249,7 +3249,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C33")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -3465,7 +3465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2653f0b-5d02-4a02-aa28-a567176ee0ab")
-		(property "Reference" "C29"
+		(property "Reference" "C30"
 			(at 113.03 66.0462 0)
 			(effects
 				(font
@@ -3519,7 +3519,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C29")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -3535,7 +3535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd181b80-90d2-496e-91a9-e80468b0b5de")
-		(property "Reference" "C34"
+		(property "Reference" "C35"
 			(at 176.53 66.0462 0)
 			(effects
 				(font
@@ -3589,7 +3589,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/f61319fa-7c7c-4923-baf7-ddc2208dd523"
-					(reference "C34")
+					(reference "C35")
 					(unit 1)
 				)
 			)

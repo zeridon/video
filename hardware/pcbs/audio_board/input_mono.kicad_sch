@@ -420,6 +420,32 @@
 		(color 0 0 0 0)
 		(uuid "943c1fab-da4e-4353-9f75-941b1e5ab5d2")
 	)
+	(junction
+		(at 99.06 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4f50deb-2e9c-4ef9-a3cd-2c917c4b7ab2")
+	)
+	(wire
+		(pts
+			(xy 99.06 104.14) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "054f39c1-6b40-40c2-b0d3-1af29bfc1012")
+	)
+	(wire
+		(pts
+			(xy 99.06 99.06) (xy 99.06 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0982f8e3-fbc9-4de1-9765-ae69d0bf6513")
+	)
 	(wire
 		(pts
 			(xy 87.63 96.52) (xy 101.6 96.52)
@@ -462,7 +488,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 99.06) (xy 93.98 99.06)
+			(xy 87.63 99.06) (xy 99.06 99.06)
 		)
 		(stroke
 			(width 0)
@@ -482,6 +508,26 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 104.14) (xy 99.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0412f73-8162-4bf3-931b-abf27307c70f")
+	)
+	(wire
+		(pts
+			(xy 99.06 114.3) (xy 99.06 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a29e0a9f-5d93-4381-98b2-c52d9a91a235")
+	)
+	(wire
+		(pts
 			(xy 114.3 96.52) (xy 114.3 95.25)
 		)
 		(stroke
@@ -489,16 +535,6 @@
 			(type default)
 		)
 		(uuid "a538acad-692e-4365-b1f5-3b0f26ea7dad")
-	)
-	(wire
-		(pts
-			(xy 93.98 99.06) (xy 93.98 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfd6ae10-cd62-49b9-92bc-f72cbf8ffe57")
 	)
 	(wire
 		(pts
@@ -510,7 +546,7 @@
 		)
 		(uuid "f7238538-dd2b-49c6-8bfe-e71c6d49fbbe")
 	)
-	(hierarchical_label "OUTPUT"
+	(hierarchical_label "OUT+"
 		(shape output)
 		(at 121.92 95.25 0)
 		(effects
@@ -521,9 +557,20 @@
 		)
 		(uuid "18b41ea7-adef-4d21-b3e4-a5e4485dd3f2")
 	)
+	(hierarchical_label "OUT-"
+		(shape output)
+		(at 121.92 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d8fb75d-a426-4d98-8d81-4983dc0fdb29")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 100.33 0)
+		(at 99.06 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -532,7 +579,7 @@
 		(fields_autoplaced yes)
 		(uuid "9110d05d-5bf3-47be-8bd5-c898a3b5a7f8")
 		(property "Reference" "#PWR0115"
-			(at 93.98 106.68 0)
+			(at 99.06 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -541,15 +588,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 104.4655 0)
+			(at 99.06 119.7055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 100.33 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -558,7 +606,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 100.33 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -567,7 +615,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 100.33 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -597,7 +645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a95618e-5a61-46d7-b2a7-6f72a2b40d9c")
-		(property "Reference" "R54"
+		(property "Reference" "R55"
 			(at 105.41 89.9541 90)
 			(effects
 				(font
@@ -685,7 +733,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "R54")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -799,7 +847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f65cfcc2-343a-494c-8af7-e1b4e34388f3")
-		(property "Reference" "R55"
+		(property "Reference" "R56"
 			(at 105.41 100.5459 90)
 			(effects
 				(font
@@ -887,7 +935,111 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "R55")
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 110.49 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff5651dd-b94a-48e4-962e-96f10d48df36")
+		(property "Reference" "R54"
+			(at 103.0859 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "510"
+			(at 101.1649 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 97.282 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 10kΩ 125mW 1% 0603"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112116023 "
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2fac3df-1f20-47e6-a72f-e91ad1df5194")
+		)
+		(pin "2"
+			(uuid "65174744-90ef-4e7b-b2e0-03d0a9488789")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
+					(reference "R54")
 					(unit 1)
 				)
 			)

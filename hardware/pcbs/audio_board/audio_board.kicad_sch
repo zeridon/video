@@ -3969,6 +3969,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 63.5) (xy 187.96 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e108c9-5106-464e-8001-9c2a8ee7c596")
+	)
+	(wire
+		(pts
 			(xy 44.45 22.86) (xy 44.45 24.13)
 		)
 		(stroke
@@ -4319,7 +4329,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 46.99) (xy 165.1 67.31)
+			(xy 165.1 46.99) (xy 165.1 63.5)
 		)
 		(stroke
 			(width 0)
@@ -5204,7 +5214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "054c6334-e7af-4766-ab43-8d0a7484443a")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR012"
 			(at 177.8 156.21 0)
 			(effects
 				(font
@@ -5255,74 +5265,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 165.1 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09a00aab-2e17-4a2a-a9a6-06d2efed1f11")
-		(property "Reference" "#PWR011"
-			(at 165.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 165.1 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "14c13acc-b5d1-4f74-b1de-8743d267db9e")
-		)
-		(instances
-			(project ""
-				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR011")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5435,7 +5378,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d49ad0b-206a-4f2e-b7fa-a939eef7630f")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 259.08 144.78 0)
 			(effects
 				(font
@@ -5485,7 +5428,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6131,7 +6074,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32892958-cb68-494a-b1ca-c95af91d70e3")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR017"
 			(at 259.08 157.48 0)
 			(effects
 				(font
@@ -6181,7 +6124,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR018")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6197,7 +6140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38a06531-1bfa-489e-b92c-7833a5182b00")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR011"
 			(at 175.26 101.6 0)
 			(effects
 				(font
@@ -6248,7 +6191,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR012")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -6428,7 +6371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aad7c9b-c3ba-43f4-84c1-cf38aac0d73d")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 234.95 157.48 0)
 			(effects
 				(font
@@ -6478,7 +6421,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR016")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7212,7 +7155,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6b7e497-20a1-43dd-b41e-4c5afabd9cc5")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR013"
 			(at 203.2 101.6 0)
 			(effects
 				(font
@@ -7263,7 +7206,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR014")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -7579,7 +7522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf844afa-96a2-4788-a6bd-bda68105b4b3")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR014"
 			(at 234.95 144.78 0)
 			(effects
 				(font
@@ -7629,7 +7572,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR015")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -8502,7 +8445,7 @@
 		)
 	)
 	(sheet
-		(at 187.96 34.925)
+		(at 187.96 23.495)
 		(size 31.75 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8518,78 +8461,6 @@
 		)
 		(uuid "91e2e940-fc71-4db8-9476-c8ec62bf0617")
 		(property "Sheetname" "XLR input 2"
-			(at 187.96 34.2134 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "xlr_input.kicad_sch"
-			(at 187.96 41.8596 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "COLD" output
-			(at 187.96 39.37 180)
-			(uuid "a59f8582-2066-4288-8844-93142e738c8a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "HOT" output
-			(at 187.96 36.83 180)
-			(uuid "92abe345-188c-41d7-8fe7-6315349d34c8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PHANTOM_PULLDOWN" input
-			(at 219.71 36.83 0)
-			(uuid "c5f7f0d7-bba4-4905-9985-86106a493d27")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "audio_board"
-				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 187.96 23.495)
-		(size 31.75 6.35)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "b0f2da11-13c7-4314-8470-ff6d99797a55")
-		(property "Sheetname" "XLR input 1"
 			(at 187.96 22.7834 0)
 			(effects
 				(font
@@ -8609,7 +8480,7 @@
 		)
 		(pin "COLD" output
 			(at 187.96 27.94 180)
-			(uuid "cb701032-8c63-4170-95dd-9bb9ef3538b7")
+			(uuid "a59f8582-2066-4288-8844-93142e738c8a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8619,7 +8490,7 @@
 		)
 		(pin "HOT" output
 			(at 187.96 25.4 180)
-			(uuid "86cdaf45-c83d-43ed-a012-a94ae3aac341")
+			(uuid "92abe345-188c-41d7-8fe7-6315349d34c8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8629,6 +8500,78 @@
 		)
 		(pin "PHANTOM_PULLDOWN" input
 			(at 219.71 25.4 0)
+			(uuid "c5f7f0d7-bba4-4905-9985-86106a493d27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 187.96 34.925)
+		(size 31.75 6.35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b0f2da11-13c7-4314-8470-ff6d99797a55")
+		(property "Sheetname" "XLR input 1"
+			(at 187.96 34.2134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "xlr_input.kicad_sch"
+			(at 187.96 41.8596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "COLD" output
+			(at 187.96 39.37 180)
+			(uuid "cb701032-8c63-4170-95dd-9bb9ef3538b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "HOT" output
+			(at 187.96 36.83 180)
+			(uuid "86cdaf45-c83d-43ed-a012-a94ae3aac341")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PHANTOM_PULLDOWN" input
+			(at 219.71 36.83 0)
 			(uuid "5c4de213-63c7-4c67-9a46-bfa4261ba698")
 			(effects
 				(font
@@ -8921,7 +8864,7 @@
 	)
 	(sheet
 		(at 187.96 58.42)
-		(size 24.13 5.08)
+		(size 24.13 7.62)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8945,7 +8888,7 @@
 			)
 		)
 		(property "Sheetfile" "input_mono.kicad_sch"
-			(at 187.96 64.0846 0)
+			(at 187.96 66.6246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8953,9 +8896,19 @@
 				(justify left top)
 			)
 		)
-		(pin "OUTPUT" output
+		(pin "OUT+" output
 			(at 187.96 60.96 180)
-			(uuid "bf4c1da3-9de9-4e66-9444-9524de380d01")
+			(uuid "fcc00902-4e71-40cb-83d0-0ece925d8958")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT-" output
+			(at 187.96 63.5 180)
+			(uuid "27695965-8930-4c33-b214-ed30fa1c9fef")
 			(effects
 				(font
 					(size 1.27 1.27)
