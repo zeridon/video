@@ -578,7 +578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9110d05d-5bf3-47be-8bd5-c898a3b5a7f8")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0117"
 			(at 99.06 121.92 0)
 			(effects
 				(font
@@ -629,7 +629,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "#PWR0115")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)

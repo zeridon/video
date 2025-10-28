@@ -194,6 +194,7 @@
         0.2,
         0.25,
         0.3,
+        0.4,
         0.5,
         1.0
       ],
@@ -808,7 +809,13 @@
       "Net-(C46-Pad2)": [
         "Phantom"
       ],
+      "Net-(C47-Pad1)": [
+        "Phantom"
+      ],
       "Net-(C48-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C48-Pad2)": [
         "Phantom"
       ],
       "Net-(C49-Pad1)": [
@@ -833,6 +840,15 @@
         "Phantom"
       ],
       "Net-(C52-Pad2)": [
+        "Phantom"
+      ],
+      "Net-(C53-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C54-Pad1)": [
+        "Phantom"
+      ],
+      "Net-(C54-Pad2)": [
         "Phantom"
       ],
       "Net-(L1-Pad2)": [
