@@ -2721,7 +2721,7 @@
 	)
 	(text "OUTB- close to connector"
 		(exclude_from_sim no)
-		(at 185.166 143.51 0)
+		(at 191.77 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3366,6 +3366,16 @@
 			(type default)
 		)
 		(uuid "3e8b7fc6-ded2-42c1-9cf8-33f3ebf0dcd5")
+	)
+	(wire
+		(pts
+			(xy 177.8 148.59) (xy 177.8 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ef012b5-d728-41b2-a17d-2db36adc3860")
 	)
 	(wire
 		(pts
@@ -4156,6 +4166,16 @@
 			(type default)
 		)
 		(uuid "ac7d3a1c-d5d2-4248-8e48-db3582f70f85")
+	)
+	(wire
+		(pts
+			(xy 177.8 138.43) (xy 177.8 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad000c32-12bb-420b-9a81-defdb2559cf0")
 	)
 	(wire
 		(pts
@@ -5176,6 +5196,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 177.8 149.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "054c6334-e7af-4766-ab43-8d0a7484443a")
+		(property "Reference" "#PWR013"
+			(at 177.8 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 154.3034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a24cea4-c8d5-4640-bc61-b49c4e734144")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 165.1 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5348,7 +5435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d49ad0b-206a-4f2e-b7fa-a939eef7630f")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR017"
 			(at 259.08 144.78 0)
 			(effects
 				(font
@@ -5398,7 +5485,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR016")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -6044,7 +6131,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32892958-cb68-494a-b1ca-c95af91d70e3")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR018"
 			(at 259.08 157.48 0)
 			(effects
 				(font
@@ -6094,7 +6181,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR017")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6341,7 +6428,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aad7c9b-c3ba-43f4-84c1-cf38aac0d73d")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 234.95 157.48 0)
 			(effects
 				(font
@@ -6391,7 +6478,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -6716,7 +6803,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "0"
 			(at 171.196 133.35 90)
 			(effects
 				(font
@@ -7125,7 +7212,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6b7e497-20a1-43dd-b41e-4c5afabd9cc5")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR014"
 			(at 203.2 101.6 0)
 			(effects
 				(font
@@ -7176,7 +7263,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR013")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -7492,7 +7579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf844afa-96a2-4788-a6bd-bda68105b4b3")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR015"
 			(at 234.95 144.78 0)
 			(effects
 				(font
@@ -7542,7 +7629,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "#PWR014")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -7624,6 +7711,109 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 177.8 144.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "c5428037-ab84-4b42-99f1-a5052e01221c")
+		(property "Reference" "R9"
+			(at 180.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 180.34 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 179.578 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23182"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "560112116054"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "R 47Ω 125mW 1% 0603"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Shop" "https://store.comet.bg/Catalogue/Product/4392/"
+			(at 177.8 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b91b5a79-3545-4e0f-8e17-5d779f86dacd")
+		)
+		(pin "2"
+			(uuid "6543ab83-486a-4520-8e7f-ee660e8d84c5")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 171.45 138.43 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7639,7 +7829,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "0"
 			(at 171.196 138.43 90)
 			(effects
 				(font

@@ -924,7 +924,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0974d1f2-6faf-494a-a924-181d8b9cdf7b")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0113"
 			(at 146.05 95.25 0)
 			(effects
 				(font
@@ -974,7 +974,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c4fe3322-408e-4a63-9af2-adca55ba4923"
-					(reference "#PWR0112")
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -1097,7 +1097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b33d9cbc-b510-4416-9c0e-3eec05d47901")
-		(property "Reference" "#PWR0113"
+		(property "Reference" "#PWR0114"
 			(at 146.05 114.3 0)
 			(effects
 				(font
@@ -1147,7 +1147,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c4fe3322-408e-4a63-9af2-adca55ba4923"
-					(reference "#PWR0113")
+					(reference "#PWR0114")
 					(unit 1)
 				)
 			)
