@@ -2500,7 +2500,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 171.45 58.4262 0)
 			(effects
 				(font
@@ -2536,7 +2536,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "MPN" "C 1μF 16V 0805"
 			(at 168.91 57.15 0)
 			(effects
 				(font
@@ -2831,7 +2831,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "MPN" "C 100nF 16V 0805"
 			(at 201.93 97.79 0)
 			(effects
 				(font
@@ -2949,7 +2949,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 204.47 123.1962 0)
 			(effects
 				(font
@@ -2985,7 +2985,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "MPN" "C 1μF 16V 0805"
 			(at 201.93 121.92 0)
 			(effects
 				(font
@@ -3102,7 +3102,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 215.9 99.0662 0)
 			(effects
 				(font
@@ -3138,7 +3138,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "MPN" "C 1μF 16V 0805"
 			(at 213.36 97.79 0)
 			(effects
 				(font
@@ -3256,7 +3256,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10μF"
 			(at 158.75 58.4262 0)
 			(effects
 				(font
@@ -3292,7 +3292,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C440198"
+		(property "MPN" "C 10μF 16V 0805"
 			(at 156.21 57.15 0)
 			(effects
 				(font
@@ -3517,15 +3517,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C23162"
-			(at 106.68 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "9f865358-7893-48ef-8e65-ff3ee65b9abb")
 		)
@@ -3564,7 +3555,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10μF"
 			(at 209.55 58.4262 0)
 			(effects
 				(font
@@ -3600,7 +3591,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C440198"
+		(property "MPN" "C 10μF 16V 0805"
 			(at 207.01 57.15 0)
 			(effects
 				(font
@@ -4155,7 +4146,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 198.12 58.4262 0)
 			(effects
 				(font
@@ -4191,7 +4182,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15849"
+		(property "MPN" "C 1μF 16V 0805"
 			(at 195.58 57.15 0)
 			(effects
 				(font

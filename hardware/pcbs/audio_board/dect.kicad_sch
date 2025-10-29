@@ -1102,6 +1102,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "Header_1x12"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "ec22dbeb-d0b1-4193-b59c-2a006b39fbdc")
 		)

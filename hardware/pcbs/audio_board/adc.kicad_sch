@@ -1921,7 +1921,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 93.98 80.0162 0)
 			(effects
 				(font
@@ -1949,6 +1949,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 91.44 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 1μF 16V 0805"
 			(at 91.44 78.74 0)
 			(effects
 				(font
@@ -2355,6 +2364,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C 100nF 16V 0805"
+			(at 133.35 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d809580f-988b-4c0c-bb1f-9ae25b7b2034")
 		)
@@ -2491,6 +2509,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C 100nF 16V 0805"
+			(at 154.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "013e1750-285c-4639-9cb5-9964927b1a94")
 		)
@@ -2525,7 +2552,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 127 57.1562 0)
 			(effects
 				(font
@@ -2553,6 +2580,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 124.46 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 1μF 16V 0805"
 			(at 124.46 55.88 0)
 			(effects
 				(font
@@ -2661,7 +2697,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10μF"
 			(at 186.69 68.5862 0)
 			(effects
 				(font
@@ -2689,6 +2725,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 184.15 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 10μF 16V 0805"
 			(at 184.15 67.31 0)
 			(effects
 				(font
@@ -2996,7 +3041,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10μF"
 			(at 104.14 68.5862 0)
 			(effects
 				(font
@@ -3024,6 +3069,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 101.6 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 10μF 16V 0805"
 			(at 101.6 67.31 0)
 			(effects
 				(font
@@ -3204,7 +3258,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 167.64 57.1562 0)
 			(effects
 				(font
@@ -3232,6 +3286,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 165.1 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 1μF 16V 0805"
 			(at 165.1 55.88 0)
 			(effects
 				(font
@@ -3510,6 +3573,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C 100nF 16V 0805"
+			(at 110.49 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4f81148b-debe-4210-996e-e049c84174e4")
 		)
@@ -3572,6 +3644,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 173.99 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 100nF 16V 0805"
 			(at 173.99 67.31 0)
 			(effects
 				(font

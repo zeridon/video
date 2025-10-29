@@ -4045,15 +4045,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C478011"
-			(at 80.01 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "c37022cc-8ab2-40fd-8379-49677b4c3b12")
 		)
@@ -4124,7 +4115,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C21117"
+		(property "MPN" "C 33nF 16V 0805"
 			(at 207.01 106.68 0)
 			(effects
 				(font
@@ -4276,15 +4267,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C80670"
-			(at 67.31 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "4"
 			(uuid "d2985a94-29df-4c35-9bb0-4787417c2a23")
 		)
@@ -4394,7 +4376,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF"
+		(property "Value" "47μF"
 			(at 95.25 74.0409 0)
 			(effects
 				(font
@@ -4422,6 +4404,15 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 91.44 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "C 47μF 16V P2"
 			(at 91.44 73.66 0)
 			(effects
 				(font
@@ -4464,7 +4455,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "B5819W SL"
+		(property "Value" "Schottky"
 			(at 81.28 70.1674 90)
 			(effects
 				(font
@@ -4501,7 +4492,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C8598"
+		(property "MPN" "B0540W"
 			(at 78.74 68.58 90)
 			(effects
 				(font
@@ -4637,15 +4628,6 @@
 		)
 		(property "Description" "Inductor with ferrite core, small symbol"
 			(at 54.61 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1002"
-			(at 54.61 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +4801,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 216.9541 69.8636 0)
 			(effects
 				(font
@@ -4855,7 +4837,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C307331"
+		(property "MPN" "C 100nF 16V 0805"
 			(at 214.63 68.58 0)
 			(effects
 				(font
@@ -4925,15 +4907,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25768"
 			(at 146.05 97.79 0)
 			(effects
 				(font
@@ -5209,15 +5182,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1002"
-			(at 231.14 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "93dbbb60-a4d5-4810-9eb7-99f120b3adf8")
 		)
@@ -5252,7 +5216,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10μF"
 			(at 140.97 68.5862 0)
 			(effects
 				(font
@@ -5288,7 +5252,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C15850"
+		(property "MPN" "C 10μF 16V 0805"
 			(at 138.43 67.31 0)
 			(effects
 				(font
@@ -5398,7 +5362,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 150.9141 68.5936 0)
 			(effects
 				(font
@@ -5434,7 +5398,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C307331"
+		(property "MPN" "C 100nF 16V 0805"
 			(at 148.59 67.31 0)
 			(effects
 				(font
@@ -5759,15 +5723,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25741"
-			(at 196.85 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b50f70c0-5c7f-4e9b-8523-e6518300acb9")
 		)
@@ -5970,15 +5925,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25867"
-			(at 207.01 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "ef015611-d4fb-4bff-be7c-dc3a53f86cd4")
 		)
@@ -6114,21 +6060,21 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1532"
-			(at 157.48 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ESR" "38mohm"
 			(at 164.338 102.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "MPN" "C 22nF 16V 0805"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6266,15 +6212,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25879"
-			(at 201.93 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "7d3395ea-c096-458d-8561-0b039b66dd80")
 		)
@@ -6387,7 +6324,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1μF"
 			(at 157.48 81.2862 0)
 			(effects
 				(font
@@ -6423,7 +6360,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C52923 "
+		(property "MPN" "C 1μF 16V 0805"
 			(at 154.94 80.01 0)
 			(effects
 				(font
@@ -6695,7 +6632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMA"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 194.31 62.23 0)
 			(effects
 				(font
@@ -6722,8 +6659,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14996"
-			(at 194.31 62.23 90)
+		(property "MPN" "SS210"
+			(at 194.31 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6999,15 +6936,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1779"
-			(at 226.06 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "DatasheetRef" "C5"
 			(at 226.06 68.58 0)
 			(effects
@@ -7153,15 +7081,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25741"
-			(at 201.93 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "0f095c8f-6663-4abe-9eed-1dd5e19ee936")
 		)
@@ -7223,15 +7142,6 @@
 		)
 		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 69.85 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2146"
-			(at 69.85 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7606,7 +7516,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "22μF"
 			(at 71.12 82.55 0)
 			(effects
 				(font
@@ -7642,7 +7552,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C45783"
+		(property "MPN" "C 22μF 16V 0805"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -7685,7 +7595,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "100nF"
 			(at 161.0741 68.5936 0)
 			(effects
 				(font
@@ -7721,7 +7631,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C307331"
+		(property "MPN" "C 100nF 16V 0805"
 			(at 158.75 67.31 0)
 			(effects
 				(font
@@ -7792,15 +7702,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 59.69 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25123"
 			(at 59.69 68.58 0)
 			(effects
 				(font
@@ -8155,7 +8056,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1664"
+		(property "MPN" "C 330pF 16V 0805"
 			(at 217.17 99.06 0)
 			(effects
 				(font
