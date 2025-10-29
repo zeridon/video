@@ -3,4 +3,5 @@
   (lib (name "extra")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/extra.kicad_sym")(options "")(descr ""))
   (lib (name "ics")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/ics.kicad_sym")(options "")(descr ""))
   (lib (name "audio_ics")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/audio_ics.kicad_sym")(options "")(descr ""))
+  (lib (name "conn")(type "KiCad")(uri "${KIPRJMOD}/../kicad_libs/conn.kicad_sym")(options "")(descr ""))
 )
