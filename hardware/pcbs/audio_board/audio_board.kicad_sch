@@ -5533,6 +5533,15 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "PinHeader_01x04"
+			(at 35.56 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "adb61f02-a40d-440c-91e6-d0927a1ca245")
 		)

@@ -1227,6 +1227,15 @@
 				(justify left)
 			)
 		)
+		(property "MPN" "PinHeader_01x12"
+			(at 153.67 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "12"
 			(uuid "38fc692b-ec20-4df8-a87e-c6a9e92c44eb")
 		)
