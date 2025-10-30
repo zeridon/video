@@ -3481,7 +3481,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7k"
+		(property "Value" "4.7kΩ"
 			(at 109.22 123.1899 0)
 			(effects
 				(font
@@ -3509,6 +3509,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 106.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 4.7kΩ 125mW 1% 0805"
 			(at 106.68 121.92 0)
 			(effects
 				(font
@@ -3806,6 +3815,15 @@
 			)
 		)
 		(property "Description" "TAD5242 Hardware-control stereo audio DAC with 120dB dynamic range, and headphone/line driver"
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TAD5242IRGER"
 			(at 170.18 63.5 0)
 			(effects
 				(font

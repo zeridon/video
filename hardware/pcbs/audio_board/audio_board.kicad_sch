@@ -5369,7 +5369,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1kΩ"
 			(at 46.228 29.2173 0)
 			(effects
 				(font
@@ -5397,6 +5397,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 44.45 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 1kΩ 125mW 1% 0805"
 			(at 44.45 27.94 0)
 			(effects
 				(font
@@ -5756,7 +5765,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1kΩ"
 			(at 38.608 29.2173 0)
 			(effects
 				(font
@@ -5784,6 +5793,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 36.83 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 1kΩ 125mW 1% 0805"
 			(at 36.83 27.94 0)
 			(effects
 				(font
@@ -5824,7 +5842,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "47Ω"
 			(at 125.476 165.1 90)
 			(effects
 				(font
@@ -5859,7 +5877,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "R 47Ω 125mW 1% 0805"
 			(at 125.73 165.1 0)
 			(effects
 				(font
@@ -5970,7 +5988,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1kΩ"
 			(at 60.198 29.2173 0)
 			(effects
 				(font
@@ -5998,6 +6016,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 58.42 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 1kΩ 125mW 1% 0805"
 			(at 58.42 27.94 0)
 			(effects
 				(font
@@ -6274,6 +6301,15 @@
 			)
 		)
 		(property "MPN" "490-SJ1-3533NG"
+			(at 191.77 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" "Internal mono in"
 			(at 191.77 135.89 0)
 			(effects
 				(font
@@ -6649,7 +6685,7 @@
 				)
 			)
 		)
-		(property "Value" "47"
+		(property "Value" "47Ω"
 			(at 125.476 167.64 90)
 			(effects
 				(font
@@ -6684,7 +6720,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "R 47Ω 125mW 1% 0805"
 			(at 125.73 167.64 0)
 			(effects
 				(font
@@ -6725,7 +6761,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 171.196 133.35 90)
 			(effects
 				(font
@@ -6760,7 +6796,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "R 0Ω 125mW 1% 0805"
 			(at 171.45 133.35 0)
 			(effects
 				(font
@@ -6970,7 +7006,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "Header_1x04"
+		(property "MPN" "PinHeader_1x04"
 			(at 40.64 162.56 0)
 			(effects
 				(font
@@ -7019,7 +7055,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1kΩ"
 			(at 52.578 29.2173 0)
 			(effects
 				(font
@@ -7047,6 +7083,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 50.8 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 1kΩ 125mW 1% 0805"
 			(at 50.8 27.94 0)
 			(effects
 				(font
@@ -7223,7 +7268,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "Teensy 4.1"
 			(at 50.4033 142.24 0)
 			(effects
 				(font
@@ -7252,6 +7297,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 48.26 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2x PinSocket_1x24"
 			(at 48.26 50.8 0)
 			(effects
 				(font
@@ -7576,7 +7630,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "0Ω"
 			(at 180.34 146.05 0)
 			(effects
 				(font

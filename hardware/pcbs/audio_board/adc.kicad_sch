@@ -3155,6 +3155,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "TAA3040IRTWR"
+			(at 151.13 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "6a03ccc2-a79f-4296-bee6-20082bb56a08")
 		)

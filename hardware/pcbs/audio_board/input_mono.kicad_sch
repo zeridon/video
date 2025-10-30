@@ -653,7 +653,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 105.41 91.8751 90)
 			(effects
 				(font
@@ -688,7 +688,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "R 10kΩ 125mW 1% 0805"
 			(at 105.41 93.98 0)
 			(effects
 				(font
@@ -730,7 +730,7 @@
 				)
 			)
 		)
-		(property "Value" "Stereo Line-in"
+		(property "Value" "AudioJack3"
 			(at 80.645 101.4189 0)
 			(effects
 				(font
@@ -766,6 +766,15 @@
 			)
 		)
 		(property "MPN" "490-SJ1-3533NG"
+			(at 82.55 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" "Stereo Line-in"
 			(at 82.55 96.52 0)
 			(effects
 				(font
@@ -810,7 +819,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 105.41 98.6249 90)
 			(effects
 				(font
@@ -845,7 +854,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "R 10kΩ 125mW 1% 0805"
 			(at 105.41 96.52 0)
 			(effects
 				(font
@@ -887,7 +896,7 @@
 				)
 			)
 		)
-		(property "Value" "510"
+		(property "Value" "510Ω"
 			(at 101.1649 110.49 90)
 			(effects
 				(font
@@ -922,7 +931,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "R 510Ω 125mW 1% 0805"
 			(at 99.06 110.49 0)
 			(effects
 				(font

@@ -4635,6 +4635,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "BLM21AG601SN1D"
+			(at 54.61 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b1bbecd5-1e30-4c80-80e1-a67f509aaa8b")
 		)
@@ -4879,7 +4888,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "22kΩ"
 			(at 147.828 99.0673 0)
 			(effects
 				(font
@@ -4907,6 +4916,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 146.05 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 22kΩ 125mW 1% 0805"
 			(at 146.05 97.79 0)
 			(effects
 				(font
@@ -5175,6 +5193,15 @@
 		)
 		(property "Description" "Inductor with ferrite core, small symbol"
 			(at 231.14 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BLM21AG601SN1D"
+			(at 231.14 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,6 +5636,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "LM5158QRTERQ1"
+			(at 168.91 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "14"
 			(uuid "6ed146c6-a16d-463e-8016-da7ea677f08d")
 		)
@@ -5687,7 +5723,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100kΩ"
 			(at 198.628 101.6073 0)
 			(effects
 				(font
@@ -5715,6 +5751,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 196.85 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 100kΩ 125mW 1% 0805"
 			(at 196.85 100.33 0)
 			(effects
 				(font
@@ -5889,7 +5934,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1.5kΩ"
 			(at 208.788 100.3373 0)
 			(effects
 				(font
@@ -5917,6 +5962,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 207.01 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 1.5kΩ 125mW 1% 0805"
 			(at 207.01 99.06 0)
 			(effects
 				(font
@@ -6176,7 +6230,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "2.2kΩ"
 			(at 203.708 83.8273 0)
 			(effects
 				(font
@@ -6204,6 +6258,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 201.93 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 2.2kΩ 125mW 1% 0805"
 			(at 201.93 82.55 0)
 			(effects
 				(font
@@ -6945,6 +7008,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "C 4.7μF 16V 0805"
+			(at 226.06 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "55bcac2a-b9b3-4c60-9eec-68818998c20a")
 		)
@@ -7045,7 +7117,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100kΩ"
 			(at 203.708 73.6673 0)
 			(effects
 				(font
@@ -7073,6 +7145,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 201.93 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 100kΩ 125mW 1% 0805"
 			(at 201.93 72.39 0)
 			(effects
 				(font
@@ -7142,6 +7223,15 @@
 		)
 		(property "Description" "NPN transistor, base/emitter/collector"
 			(at 69.85 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BC817-40"
+			(at 69.85 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7674,7 +7764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "510"
+		(property "Value" "510Ω"
 			(at 62.23 69.8499 0)
 			(effects
 				(font
@@ -7702,6 +7792,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 59.69 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 510Ω 125mW 1% 0805"
 			(at 59.69 68.58 0)
 			(effects
 				(font
