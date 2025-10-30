@@ -4879,7 +4879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f9e1459-9a73-4195-a4db-82d7b27b042d")
-		(property "Reference" "R10"
+		(property "Reference" "R13"
 			(at 147.828 97.1463 0)
 			(effects
 				(font
@@ -4942,7 +4942,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/23b45e70-9f0d-43c3-ad82-81d9481de3a2"
-					(reference "R10")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -5714,7 +5714,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61fbf041-9ed3-418b-b220-a5ef4baf16df")
-		(property "Reference" "R11"
+		(property "Reference" "R14"
 			(at 198.628 99.6863 0)
 			(effects
 				(font
@@ -5777,7 +5777,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/23b45e70-9f0d-43c3-ad82-81d9481de3a2"
-					(reference "R11")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -5925,7 +5925,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "797bde5f-6022-4890-9033-8f0d0e27496e")
-		(property "Reference" "R14"
+		(property "Reference" "R17"
 			(at 208.788 98.4163 0)
 			(effects
 				(font
@@ -5988,7 +5988,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/23b45e70-9f0d-43c3-ad82-81d9481de3a2"
-					(reference "R14")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -6221,7 +6221,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89296ec8-c365-494b-9aea-55ac03b14d38")
-		(property "Reference" "R13"
+		(property "Reference" "R16"
 			(at 203.708 81.9063 0)
 			(effects
 				(font
@@ -6284,7 +6284,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/23b45e70-9f0d-43c3-ad82-81d9481de3a2"
-					(reference "R13")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -7108,7 +7108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2f03760-9305-4261-9c54-5d12276f3d45")
-		(property "Reference" "R12"
+		(property "Reference" "R15"
 			(at 203.708 71.7463 0)
 			(effects
 				(font
@@ -7171,7 +7171,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/23b45e70-9f0d-43c3-ad82-81d9481de3a2"
-					(reference "R12")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -7755,7 +7755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1e60a2c-8833-44d5-b3ff-226217ebf6de")
-		(property "Reference" "R9"
+		(property "Reference" "R12"
 			(at 62.23 67.3099 0)
 			(effects
 				(font
@@ -7818,7 +7818,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/23b45e70-9f0d-43c3-ad82-81d9481de3a2"
-					(reference "R9")
+					(reference "R12")
 					(unit 1)
 				)
 			)

@@ -3472,7 +3472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f9debe5-2261-41f6-9ade-d37e6d9d8485")
-		(property "Reference" "R15"
+		(property "Reference" "R18"
 			(at 109.22 120.6499 0)
 			(effects
 				(font
@@ -3535,11 +3535,11 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "R16")
+					(reference "R19")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "R15")
+					(reference "R18")
 					(unit 1)
 				)
 			)

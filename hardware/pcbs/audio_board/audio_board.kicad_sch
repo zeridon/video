@@ -3037,6 +3037,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 170.18) (xy 138.43 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00e20e3d-2818-43b9-9896-5a688bc91eaa")
+	)
+	(wire
+		(pts
 			(xy 170.18 50.8) (xy 170.18 41.91)
 		)
 		(stroke
@@ -3057,7 +3067,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 172.72) (xy 138.43 172.72)
+			(xy 111.76 172.72) (xy 121.92 172.72)
 		)
 		(stroke
 			(width 0)
@@ -3107,7 +3117,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 170.18) (xy 138.43 170.18)
+			(xy 111.76 170.18) (xy 121.92 170.18)
 		)
 		(stroke
 			(width 0)
@@ -3437,7 +3447,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 175.26) (xy 138.43 175.26)
+			(xy 111.76 175.26) (xy 121.92 175.26)
 		)
 		(stroke
 			(width 0)
@@ -4327,6 +4337,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 172.72) (xy 138.43 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae1bcb1e-f281-431e-86e5-24b31e88c769")
+	)
+	(wire
+		(pts
 			(xy 25.4 69.85) (xy 35.56 69.85)
 		)
 		(stroke
@@ -4604,6 +4624,16 @@
 			(type default)
 		)
 		(uuid "eea8e1a8-20da-4bef-9b6f-eca9be7f7551")
+	)
+	(wire
+		(pts
+			(xy 129.54 175.26) (xy 138.43 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2a265e1-41aa-4829-9120-74aba6c92e53")
 	)
 	(wire
 		(pts
@@ -6711,6 +6741,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 125.73 172.72 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84cca289-0975-4038-944c-926334b788fe")
+		(property "Reference" "R8"
+			(at 130.81 171.704 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 125.476 172.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 125.73 174.498 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 47Ω 125mW 1% 0805"
+			(at 125.73 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03de0a48-d51f-4586-b337-6298663cf9ee")
+		)
+		(pin "2"
+			(uuid "dbad7623-a3d2-4883-a1ed-4d22cbf9ce09")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 50.8 46.99 0)
 		(unit 1)
@@ -6927,7 +7033,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9373232e-1ee3-42e9-ae77-e6e1474f61c6")
-		(property "Reference" "R7"
+		(property "Reference" "R10"
 			(at 175.26 132.08 90)
 			(effects
 				(font
@@ -6988,7 +7094,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "R7")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -7120,6 +7226,82 @@
 			(project ""
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 175.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c4729fb-2c56-4a56-882d-6bc85759f15d")
+		(property "Reference" "R9"
+			(at 130.81 174.244 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 125.476 175.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 125.73 177.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 47Ω 125mW 1% 0805"
+			(at 125.73 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6aaca5c9-3cd1-435f-b0ee-973cce1d706b")
+		)
+		(pin "2"
+			(uuid "e71b5f23-e76f-4c5f-b137-f1a74588faf6")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7563,6 +7745,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 125.73 170.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bef8c28b-6299-4f4e-9e99-37816cdf0162")
+		(property "Reference" "R7"
+			(at 130.81 169.164 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47Ω"
+			(at 125.476 170.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 125.73 171.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 47Ω 125mW 1% 0805"
+			(at 125.73 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01c44c99-84b2-4d80-97f2-26522325b363")
+		)
+		(pin "2"
+			(uuid "580a3ddb-0e27-424e-9897-51f311b78e97")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 234.95 138.43 0)
 		(unit 1)
@@ -7711,7 +7969,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "c5428037-ab84-4b42-99f1-a5052e01221c")
-		(property "Reference" "R8"
+		(property "Reference" "R11"
 			(at 180.34 143.51 0)
 			(effects
 				(font
@@ -7772,7 +8030,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1"
-					(reference "R8")
+					(reference "R11")
 					(unit 1)
 				)
 			)
