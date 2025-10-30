@@ -6273,7 +6273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles"
+		(property "Footprint" "conn:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles"
 			(at 191.77 135.89 0)
 			(effects
 				(font
