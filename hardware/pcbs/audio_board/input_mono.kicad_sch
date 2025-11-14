@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "bd4df892-bd7f-4122-9069-7c753c75c075")
 	(paper "A4")
 	(lib_symbols
@@ -84,18 +84,6 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
 					)
 					(stroke
@@ -108,7 +96,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -129,26 +117,20 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AudioJack3_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
 					)
-					(number "R"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
+			)
+			(symbol "AudioJack3_1_1"
 				(pin passive line
 					(at 5.08 2.54 180)
 					(length 2.54)
@@ -160,6 +142,24 @@
 						)
 					)
 					(number "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "R"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -186,9 +186,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -307,11 +310,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -386,8 +394,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -403,6 +411,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -410,6 +419,32 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "943c1fab-da4e-4353-9f75-941b1e5ab5d2")
+	)
+	(junction
+		(at 99.06 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4f50deb-2e9c-4ef9-a3cd-2c917c4b7ab2")
+	)
+	(wire
+		(pts
+			(xy 99.06 104.14) (xy 121.92 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "054f39c1-6b40-40c2-b0d3-1af29bfc1012")
+	)
+	(wire
+		(pts
+			(xy 99.06 99.06) (xy 99.06 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0982f8e3-fbc9-4de1-9765-ae69d0bf6513")
 	)
 	(wire
 		(pts
@@ -453,7 +488,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 99.06) (xy 93.98 99.06)
+			(xy 87.63 99.06) (xy 99.06 99.06)
 		)
 		(stroke
 			(width 0)
@@ -473,6 +508,26 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 104.14) (xy 99.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0412f73-8162-4bf3-931b-abf27307c70f")
+	)
+	(wire
+		(pts
+			(xy 99.06 114.3) (xy 99.06 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a29e0a9f-5d93-4381-98b2-c52d9a91a235")
+	)
+	(wire
+		(pts
 			(xy 114.3 96.52) (xy 114.3 95.25)
 		)
 		(stroke
@@ -480,16 +535,6 @@
 			(type default)
 		)
 		(uuid "a538acad-692e-4365-b1f5-3b0f26ea7dad")
-	)
-	(wire
-		(pts
-			(xy 93.98 99.06) (xy 93.98 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfd6ae10-cd62-49b9-92bc-f72cbf8ffe57")
 	)
 	(wire
 		(pts
@@ -501,10 +546,9 @@
 		)
 		(uuid "f7238538-dd2b-49c6-8bfe-e71c6d49fbbe")
 	)
-	(hierarchical_label "OUTPUT"
+	(hierarchical_label "OUT+"
 		(shape output)
 		(at 121.92 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -513,9 +557,20 @@
 		)
 		(uuid "18b41ea7-adef-4d21-b3e4-a5e4485dd3f2")
 	)
+	(hierarchical_label "OUT-"
+		(shape output)
+		(at 121.92 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d8fb75d-a426-4d98-8d81-4983dc0fdb29")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 93.98 100.33 0)
+		(at 99.06 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -523,8 +578,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9110d05d-5bf3-47be-8bd5-c898a3b5a7f8")
-		(property "Reference" "#PWR023"
-			(at 93.98 106.68 0)
+		(property "Reference" "#PWR0117"
+			(at 99.06 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -533,15 +588,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 93.98 104.4655 0)
+			(at 99.06 119.7055 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 100.33 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -550,7 +606,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 100.33 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -559,7 +615,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 100.33 0)
+			(at 99.06 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -573,7 +629,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "#PWR023")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -589,7 +645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a95618e-5a61-46d7-b2a7-6f72a2b40d9c")
-		(property "Reference" "R6"
+		(property "Reference" "R57"
 			(at 105.41 89.9541 90)
 			(effects
 				(font
@@ -597,7 +653,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 105.41 91.8751 90)
 			(effects
 				(font
@@ -605,7 +661,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 105.41 95.758 90)
 			(effects
 				(font
@@ -632,34 +688,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25804"
-			(at 105.41 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "R 10kΩ 125mW 1% 0603"
-			(at 105.41 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116023 "
-			(at 105.41 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+		(property "MPN" "R 10kΩ 125mW 1% 0805"
 			(at 105.41 93.98 0)
 			(effects
 				(font
@@ -677,7 +706,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "R6")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -693,7 +722,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be9f0ffd-931c-463d-a82a-930141b55eec")
-		(property "Reference" "J7"
+		(property "Reference" "J10"
 			(at 80.645 103.3399 0)
 			(effects
 				(font
@@ -701,7 +730,7 @@
 				)
 			)
 		)
-		(property "Value" "Stereo Line-in"
+		(property "Value" "AudioJack3"
 			(at 80.645 101.4189 0)
 			(effects
 				(font
@@ -709,7 +738,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles"
+		(property "Footprint" "conn:Jack_3.5mm_CUI_SJ1-3533NG_Horizontal_CircularHoles"
 			(at 82.55 96.52 0)
 			(effects
 				(font
@@ -745,16 +774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Part" " SJ1-3533NG "
-			(at 82.55 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://eu.mouser.com/ProductDetail/490-SJ1-3533NG"
+		(property "Purpose" "Stereo Line-in"
 			(at 82.55 96.52 0)
 			(effects
 				(font
@@ -775,7 +795,7 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "J7")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -791,7 +811,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f65cfcc2-343a-494c-8af7-e1b4e34388f3")
-		(property "Reference" "R28"
+		(property "Reference" "R58"
 			(at 105.41 100.5459 90)
 			(effects
 				(font
@@ -799,7 +819,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 105.41 98.6249 90)
 			(effects
 				(font
@@ -807,7 +827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 105.41 94.742 90)
 			(effects
 				(font
@@ -834,34 +854,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25804"
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "R 10kΩ 125mW 1% 0603"
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "560112116023 "
-			(at 105.41 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Shop" "https://store.comet.bg/Catalogue/Product/4415/"
+		(property "MPN" "R 10kΩ 125mW 1% 0805"
 			(at 105.41 96.52 0)
 			(effects
 				(font
@@ -879,7 +872,84 @@
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
-					(reference "R28")
+					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 99.06 110.49 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff5651dd-b94a-48e4-962e-96f10d48df36")
+		(property "Reference" "R56"
+			(at 103.0859 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "510Ω"
+			(at 101.1649 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 97.282 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "R 510Ω 125mW 1% 0805"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c2fac3df-1f20-47e6-a72f-e91ad1df5194")
+		)
+		(pin "2"
+			(uuid "65174744-90ef-4e7b-b2e0-03d0a9488789")
+		)
+		(instances
+			(project "audio_board"
+				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c7838b89-33be-4400-baf7-0a033ee6e87f"
+					(reference "R56")
 					(unit 1)
 				)
 			)
