@@ -4376,6 +4376,7 @@
 	(symbol
 		(lib_id "Transistor_FET:Si2371EDS")
 		(at 97.79 48.26 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4383,7 +4384,7 @@
 		(dnp no)
 		(uuid "4251a7e4-84f7-40f6-9c5e-4c4dd26a605c")
 		(property "Reference" "Q3"
-			(at 104.14 46.9899 0)
+			(at 104.14 49.5301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4392,7 +4393,7 @@
 			)
 		)
 		(property "Value" "SI2309CDS-T1-GE3"
-			(at 104.14 49.5299 0)
+			(at 104.14 46.9901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4401,7 +4402,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 102.87 50.165 0)
+			(at 102.87 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4412,7 +4413,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/63924/si2371eds.pdf"
-			(at 102.87 52.07 0)
+			(at 102.87 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,7 +4577,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100kΩ"
+		(property "Value" "100Ω"
 			(at 74.93 55.8799 0)
 			(effects
 				(font
@@ -4612,7 +4613,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "R 100kΩ 125mW 1% 0805"
+		(property "MPN" "R 100Ω 125mW 1% 0805"
 			(at 72.39 54.61 0)
 			(effects
 				(font
@@ -4906,7 +4907,6 @@
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
 		(at 69.85 66.04 0)
-		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4914,15 +4914,6 @@
 		(dnp no)
 		(uuid "66380e1e-e185-4c82-84c8-eb8534acc691")
 		(property "Reference" "Q2"
-			(at 74.93 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2N7002"
 			(at 74.93 67.31 0)
 			(effects
 				(font
@@ -4931,8 +4922,17 @@
 				(justify left)
 			)
 		)
+		(property "Value" "2N7002"
+			(at 74.93 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 74.93 64.135 0)
+			(at 74.93 67.945 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4943,7 +4943,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 74.93 62.23 0)
+			(at 74.93 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -881,16 +881,25 @@
       "Net-(Q2-S)": [
         "Phantom"
       ],
+      "Net-(Q3-D)": [
+        "Phantom"
+      ],
       "Net-(Q3-S)": [
         "Phantom"
       ],
       "Net-(Q4-S)": [
         "Phantom"
       ],
+      "Net-(Q5-D)": [
+        "Phantom"
+      ],
       "Net-(Q5-S)": [
         "Phantom"
       ],
       "Net-(Q6-S)": [
+        "Phantom"
+      ],
+      "Net-(Q7-D)": [
         "Phantom"
       ],
       "Net-(Q7-S)": [
@@ -1173,10 +1182,6 @@
     [
       "8957bb4e-7be5-4513-a482-a60a2150a7cb",
       "XLR input 3"
-    ],
-    [
-      "c4fe3322-408e-4a63-9af2-adca55ba4923",
-      "DECT"
     ],
     [
       "c7838b89-33be-4400-baf7-0a033ee6e87f",

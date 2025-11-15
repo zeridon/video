@@ -145,130 +145,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "audio_ics:TAD5242"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -497,24 +373,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at -2.54 -55.88 0)
-					(length 2.54)
-					(name "MD6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 8.89 -1.27 270)
 					(length 2.54)
@@ -679,6 +537,24 @@
 				)
 			)
 			(symbol "TAD5242_1_0"
+				(pin passive line
+					(at -2.54 -55.88 0)
+					(length 2.54)
+					(name "MD6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 10.16 -64.77 90)
 					(length 2.54)
@@ -1345,7 +1221,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 129.54) (xy 106.68 125.73)
+			(xy 106.68 104.14) (xy 106.68 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1492,6 +1368,16 @@
 			(type default)
 		)
 		(uuid "75e0b95f-bff7-4bfb-9feb-1f0510deccbd")
+	)
+	(wire
+		(pts
+			(xy 165.1 119.38) (xy 165.1 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7973a29f-97a8-43fa-8d69-d5c8a6aa97b6")
 	)
 	(wire
 		(pts
@@ -1662,16 +1548,6 @@
 			(type default)
 		)
 		(uuid "d0083d63-fc74-4dce-8b96-89621f6d4ee2")
-	)
-	(wire
-		(pts
-			(xy 106.68 118.11) (xy 106.68 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da661ee2-b64f-497f-be67-a623c6b8b4a9")
 	)
 	(wire
 		(pts
@@ -2376,17 +2252,6 @@
 			(justify right)
 		)
 		(uuid "aa48b736-2397-489d-9184-cc8e4842cc5e")
-	)
-	(hierarchical_label "DOUT"
-		(shape output)
-		(at 165.1 119.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b34a4a5c-a939-452a-b112-12de23e81314")
 	)
 	(hierarchical_label "OUTB-"
 		(shape output)
@@ -3463,35 +3328,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 106.68 121.92 0)
+		(lib_id "power:GND")
+		(at 165.1 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8f9debe5-2261-41f6-9ade-d37e6d9d8485")
-		(property "Reference" "R18"
-			(at 109.22 120.6499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4.7kΩ"
-			(at 109.22 123.1899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 104.902 121.92 90)
+		(uuid "929d7f78-fd34-443a-a44e-cb8cfa865bc8")
+		(property "Reference" "#PWR0118"
+			(at 165.1 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3499,8 +3346,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 106.68 121.92 0)
+		(property "Value" "GND"
+			(at 165.1 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3508,8 +3355,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 106.68 121.92 0)
+		(property "Footprint" ""
+			(at 165.1 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3517,8 +3364,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "R 4.7kΩ 125mW 1% 0805"
-			(at 106.68 121.92 0)
+		(property "Datasheet" ""
+			(at 165.1 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3526,20 +3373,26 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "9f865358-7893-48ef-8e65-ff3ee65b9abb")
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "0406e912-59cc-4fe0-acfd-ca7414c110e5")
+			(uuid "e0c6109b-f090-411e-9e2c-11d96a99a823")
 		)
 		(instances
 			(project "audio_board"
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/c20e00b3-a078-47c9-844e-cc3fff4643af"
-					(reference "R19")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 				(path "/54443f96-c7c5-4432-b890-45b14a1547a1/e4b4e226-c2a2-4edc-87fb-3e533fe789a5"
-					(reference "R18")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
