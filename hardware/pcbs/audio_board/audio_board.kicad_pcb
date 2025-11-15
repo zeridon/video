@@ -52917,7 +52917,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "FOSDEM Audio Interface rev. D"
+	(gr_text "FOSDEM Audio Interface rev. E"
 		(at 220 100 90)
 		(layer "B.SilkS")
 		(uuid "1d183e1d-c0ff-46f5-8148-08bb164ebc0d")
