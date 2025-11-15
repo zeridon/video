@@ -367,6 +367,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9da13689-b5ac-4f59-970a-c261c44751b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16a14506-f0d2-4cf5-8e23-6bf75393abf5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d0439ae-ff2d-4d31-98ed-8db6de5c78a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d893c6e2-d73b-4117-b392-0c40c1064504")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c20e00b3-a078-47c9-844e-cc3fff4643af/2a576ae1-df99-4554-ada7-14c027c3c05d")
 		(sheetname "/DAC 2/")
@@ -618,6 +670,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "654ed63b-a205-4a31-b44e-1e196030a2ee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bc509dc-6450-423c-9b37-06b443898eb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59c53864-96e5-413a-8581-e5ec00e7fa21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed2f6cad-a7df-4fba-8918-dd9044fa3d2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9373232e-1ee3-42e9-ae77-e6e1474f61c6")
 		(sheetname "/")
@@ -843,6 +947,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bea54338-6076-42b2-8946-17bf850d5a21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cf8d15e-7010-4762-809e-c4bf705c38d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a68c7c90-3094-4e33-acb5-054e437241e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c7915e6-a13a-4b1c-bdb8-6b845d0db099")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/797bde5f-6022-4890-9033-8f0d0e27496e")
 		(sheetname "/Power/")
@@ -1055,6 +1211,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1b6ed6f-f86a-4cd1-badc-ae599c145646")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5419a9e0-d056-4017-b6ed-8cae2ca73a68")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36495b93-f4b2-4581-80bd-644ec2bb1b15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8c8405a-63de-4c57-be7c-c3d50bc7d6ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/27761e3f-69e7-46da-b072-4d89e8a9e3d3")
 		(sheetname "/ADC/")
@@ -1260,6 +1468,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7ee24798-0a94-4180-ada5-813720955cc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acaa7662-ae5b-4055-9428-fd733bdbaaab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04ee0e5d-5b1a-4d12-a461-f8f889cd8004")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "134b8122-93c8-4e0c-886f-43a188aacda4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "359864d5-beac-44e2-9884-49ced6e7ecc4")
 			(effects
 				(font
 					(size 1 1)
@@ -1501,6 +1761,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b82b8576-79e2-4f55-b16e-e5426403164a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbd36566-e458-48ea-bd25-dc376ecacfaf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5806e974-2eba-414c-9869-8e000c4955b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e33ed3b-d016-44bb-85a5-f4811770ca1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73950f0f-b6e9-42df-a21a-bfe04fd439d7")
 			(effects
 				(font
 					(size 1 1)
@@ -2114,7 +2426,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "913e1a82-ccf9-4e24-a632-95d4c6d8fa57")
+			(uuid "09b9cdec-550d-4ab1-ae31-4b5fd386ec93")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_XLR_Neutrik_NC3FAH2-DA_Horizontal.wrl"
@@ -2237,6 +2549,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d055001-4589-48a6-acbd-6129b85d6466")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94a14425-1bfe-4056-aa1e-953fb52f69a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0b49d53-422c-4da1-a67d-f1ce73b10dd7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7ca924f6-e8d6-4295-aea9-bc9789b5530a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d04b4142-f52d-49ce-8da1-22e19d505c22")
 			(effects
 				(font
 					(size 1 1)
@@ -2449,6 +2813,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1d7e4da1-e8f5-449d-9786-7ebeaef8a77d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a125f74-d47d-487f-bff2-4c1d2396f5a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2744a4f2-1327-42ce-aca5-18180753d9cd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6cb536d-4363-4b39-bb5d-9370eae085b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fed8e816-b67e-47e1-83c5-3ccfe8294b29")
 			(effects
 				(font
 					(size 1 1)
@@ -2669,6 +3085,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "416b7ca4-8dd0-4e3f-a276-c46692a2895c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e663fc94-d571-4058-9f2b-8ea6c4ca03af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "009cecd0-f301-407a-82a3-8a6829d5bc57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6c9ed0f-3ddc-4e11-8f9f-742cfa1afe5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/bef8c28b-6299-4f4e-9e99-37816cdf0162")
 		(sheetname "/")
@@ -2881,6 +3349,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb4f6bce-005c-43c3-a5c0-b82374ed7ec0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98c9c235-9ebf-4689-9a14-fd76f3c2b7d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0208c93-e475-4f37-acda-3df961dea03b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d2570df9-5418-4ef9-ba4e-8d5621d187f4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/0c5f720b-08eb-445d-87cf-f5e0cba945ae")
 		(sheetname "/XLR input 3/")
@@ -3086,6 +3606,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fb832a68-6bb5-45a7-b01f-ba4aa4d8ccd0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d851f3b-9708-40cc-a875-62ff98eb4bd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf5d8c82-39aa-4ebe-b8e6-6b4de31527ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba56c37d-4426-45ab-9bb5-42be55c09956")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b2a814a-f021-4fd9-b1f0-2488250ef27e")
 			(effects
 				(font
 					(size 1 1)
@@ -3344,6 +3916,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d828b37-f902-4449-920e-fafefd0afd53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "681842cf-2142-45ce-b9c5-3da6ec8c9aca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a03bdf67-fef8-43f9-92b1-c18a3ff63488")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46b43103-3edd-468a-b503-2536e4b4a03f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9eaa64cd-43a6-4a6c-80f2-0b6c4ecc754b")
 		(sheetname "/")
@@ -3549,6 +4173,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8550f438-5d55-41f5-8ce2-37caa7ccb6c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f543e511-9f8a-4911-93b3-ac14733d3f25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "151ae28d-e3fe-4646-8344-35ca93924404")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e594c77b-f09b-4eae-abab-d768018f7780")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5341e7cf-b1d7-4172-b874-a99f281a4c62")
 			(effects
 				(font
 					(size 1 1)
@@ -3790,6 +4466,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ee6a0345-11ae-4800-b083-15004ec578eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e8bc506-bd98-40bd-9a42-7c95c9a14f88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6455a59-972b-4cc2-820a-e498e41489aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "287df8b4-40ac-4d3f-b1be-ff4b30c6a482")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73c456c3-ab77-4e2d-97bc-a90d3eb7f644")
 			(effects
 				(font
 					(size 1 1)
@@ -4403,7 +5131,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "aadda347-634d-4abb-bf23-a7f7fa14ae91")
+			(uuid "1be0a0cb-bf9d-4200-8ab7-c166e735b136")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_XLR_Neutrik_NC3FAH2-DA_Horizontal.wrl"
@@ -4487,6 +5215,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2d3c5ea7-91a9-4ca3-a9f7-313984d1e2b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58c00684-804d-4562-9b95-7624d988ab11")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc25cbfb-5e02-489a-89a7-6122d889926c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f8854a3-c926-4630-a979-e3d4c2aee1eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e815d74-f4df-4693-b89a-c22e2c910dfb")
 			(effects
 				(font
 					(size 1 1)
@@ -4712,6 +5492,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bff16d95-88a1-4997-b639-19046d851e28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb8b9200-717c-4896-b274-4e70be8fdaf7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10b0808c-74c7-44a4-881c-a8fcd168d95e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c33645d-643c-4aa8-b4cf-e6930a54d349")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c69ee60-07ea-4c7e-a1d9-c9ec53daa7fc")
 			(effects
 				(font
 					(size 1 1)
@@ -4983,6 +5815,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3dc9551-6835-4cc9-805d-a3057f7ec553")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7ee2f1c-3179-4514-a3af-e10aae6eabb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8cb07ee-8475-439d-b1a4-5f04628898fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad0fd418-ddf0-4ec8-b2b0-d2c194c426ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d9e6146-a0ac-40c4-96e7-6865e702fcf8")
 		(sheetname "/")
@@ -5183,11 +6067,76 @@
 				)
 			)
 		)
+		(property "MPN" "NC3MAH"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acb9fb0a-9299-4716-a38b-62914ece00f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e97b9879-97b6-4a0b-82a9-82410cfa789a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6625590b-e16a-4bcb-bac4-4e65511b8211")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c60a8240-b5dd-4165-aa7b-6cf074e3ed81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4f5461d5-b69b-4596-b64f-12652f2a5964")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Jack*XLR*")
 		(path "/eb3d0aa3-29bc-4051-a8e5-de40ed3dff4b")
 		(sheetname "/")
 		(sheetfile "audio_board.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole)
 		(fp_line
 			(start -9.11 11.31)
 			(end -5.41 11.31)
@@ -5764,6 +6713,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f7b655ae-fa90-4d6a-b356-1404b12a6874")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ca965ce-73ac-4b0c-b166-92dc14d9d0ff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85c2cc46-9628-4323-a1c4-8e685bc199a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "574f8817-8680-4464-a698-90d40e227fda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4cddb486-7b51-4d70-bd7f-d03527c717e4")
 			(effects
 				(font
 					(size 1 1)
@@ -7118,6 +8119,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edb2e090-865f-486b-8da7-236d5e669861")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c40fe504-138d-45af-901e-bf02977433fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2ee3c18-39e7-4ea5-8898-e254300a3a52")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ccac0fe-120b-4a46-86e5-0af9917afd80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/e1267163-e72e-4863-acca-3604239b2ae0")
 		(sheetname "/")
@@ -7178,7 +8231,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "d2dd1c87-3f7e-4c3a-aba7-e4dcc4605bcb")
 		)
 		(pad "1" thru_hole circle
 			(at -1.697056 1.697056)
@@ -7190,7 +8243,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "a41c30da-5806-4d25-8f36-8046628343ab")
 		)
 		(pad "1" thru_hole circle
 			(at 0 -2.4)
@@ -7202,7 +8255,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "d11bf29c-f885-4252-9228-e5d26198cbda")
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -7214,7 +8267,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "492b3bde-b4a8-4895-8d8e-f3bfb2bdf0cf")
 		)
 		(pad "1" thru_hole circle
 			(at 0 2.4)
@@ -7226,7 +8279,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "ee5c8e37-fe52-491d-bc8f-d292d7f95fa2")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 -1.697056)
@@ -7238,7 +8291,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "4582e180-e5ba-4ef9-9378-d0508b92388a")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 1.697056)
@@ -7250,7 +8303,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "68bc8cdc-28e9-47a6-a4a4-a8862310ceab")
 		)
 		(pad "1" thru_hole circle
 			(at 2.4 0)
@@ -7262,7 +8315,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "d0df248b-bcd0-4363-9e78-5ee551a3b929")
+			(uuid "743d3965-fe55-4518-a5c4-f7f196e05fb5")
 		)
 		(embedded_fonts no)
 	)
@@ -7324,6 +8377,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "484a18a0-bd7d-4b7f-bb86-2e55f96e0ae0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc0b714d-ee2a-48b2-be56-60d6ba424838")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "745fa74c-f5ee-4f66-8a16-fd5e113fe584")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c7a9b85-480d-4295-b91e-4c3d4ad19dd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d38ca86-470b-4630-b50a-1a014a5cfec2")
 			(effects
 				(font
 					(size 1 1)
@@ -7539,6 +8644,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d5d7f564-a45e-4048-a790-89cc46a75cf9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b39b5ce-beac-4ae5-bad1-89dc6fac89b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb852c9c-ed7e-45fd-9455-4b724c9edf82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a720c37f-92b1-4a56-80b2-9bcd5826c34d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9554ac2-291f-4bf6-a19f-5d12033bfde8")
 			(effects
 				(font
 					(size 1 1)
@@ -7830,6 +8987,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0149d8a8-8b8b-47ff-86a9-66c5cf746e64")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d2b48a1-0d57-4758-94e1-b47d802f4387")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93784e84-a99f-4858-b467-905e58eff7d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ca9bc1c-c2c4-4b92-ad21-2c909ff26df4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/9342c81c-2f1d-4bae-8218-e3680da6a560")
 		(sheetname "/ADC/")
@@ -8035,6 +9244,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "feab12bc-c04d-41d9-ab9d-78b0e22a5b21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e81e5f7f-3891-429a-ab86-e5e445845156")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "814de00e-89ef-4286-bf2d-1af89db90063")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df05e5bc-0f66-44a4-bb6d-b6f38fa7a327")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc10b6ef-47e3-4e67-a02e-b1a5ad312f8b")
 			(effects
 				(font
 					(size 1 1)
@@ -8254,6 +9515,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec2c47b2-171d-45c5-8d13-910e0d5ad14a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ebcc606c-4d28-4951-a098-c19bb26d5af7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "594709bd-ac65-4068-8783-705b06c0dea8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9168c615-4d76-406f-b3cb-89ffd2629c80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/fe8b501c-22af-4767-b74b-407bc507d5cc")
 		(sheetname "/XLR input 1/")
@@ -8459,6 +9772,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "04d004a3-fee8-46a3-ac1d-15097c0acdda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3fb07f52-8978-463b-88b1-0dc371df87e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be57f305-10dd-42af-9350-4b47d72719d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab58b1f1-7936-46ba-a184-1ee84f46db5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a4fc2e3-61aa-4cfc-b539-13b8ad6c769d")
 			(effects
 				(font
 					(size 1 1)
@@ -8691,6 +10056,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a577fa51-9242-42fd-8aba-d35e43e94121")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "115d402a-6c39-4d15-ae8c-3db0ef2b2d28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7439453-21ae-46b5-b27a-c3e0327bfdb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16363280-a294-4e07-866d-9e25a4fe1ee9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/89296ec8-c365-494b-9aea-55ac03b14d38")
 		(sheetname "/Power/")
@@ -8909,6 +10326,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e57ea582-b714-41b5-87d5-2e83c435918b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "996a0c7a-5dd8-4256-8294-2e23bad19dfd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05b433f5-b877-40e0-9629-5c5b0a658b4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "638e67bd-4efe-4f11-892b-68eacf0ad69e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44717987-89d7-4980-ba0d-2a86f698fe33")
 			(effects
 				(font
 					(size 1 1)
@@ -9137,6 +10606,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b1458794-fb94-476c-9152-187d4ede694a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "acdb49e9-9e1b-4a69-91d1-9f1a9a03594c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "557a6fc1-719d-487f-ba07-5e5fe48094cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c4440329-8e7a-40aa-96f8-bcf054d5ce82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82c2cbe9-b6ed-440f-847e-bfa6d550aa43")
 			(effects
 				(font
 					(size 1 1)
@@ -9431,6 +10952,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c2e0046-5d13-4cf3-94e8-193154a5cb56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19e2e5d2-9167-4607-bd97-b26d87959dab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98805b1c-b5ee-44cd-957e-971b687fac5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "15755382-9369-4be8-ac3e-de6b7f2a6153")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/c2f03760-9305-4261-9c54-5d12276f3d45")
 		(sheetname "/Power/")
@@ -9644,6 +11217,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a644615-e014-4434-8103-c94aad8f3496")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1879b297-9a18-420a-9710-b27bfd761a80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f9d8136-73aa-47d3-a4b1-8e9d81b9f6bb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "738a1c24-295e-4a4c-a28a-e047fd70e378")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/7c7e6401-b330-46ac-bdfe-b0828c8f0bb8")
 		(sheetname "/XLR input 2/")
@@ -9849,6 +11474,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "85df7423-58b9-4cd5-9dbf-37689196aebc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36ec8755-2236-4098-8360-5e2b7850ebdc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecc224a2-80d9-4f77-a116-314c8f474f7e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "845f1803-cc38-42e4-b8b4-44c710dc636f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77f5ad6d-273c-445f-93a1-36c9f52c83b3")
 			(effects
 				(font
 					(size 1 1)
@@ -10385,7 +12062,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "passive")
-			(uuid "e251d3ce-9728-4076-aebf-9d061c86d1de")
+			(uuid "03362c4f-ac46-4bb6-8d0e-040c3bc09d87")
 		)
 		(pad "17" thru_hole circle
 			(at 0 0)
@@ -10397,7 +12074,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "passive")
-			(uuid "e251d3ce-9728-4076-aebf-9d061c86d1de")
+			(uuid "4768b3be-400c-4246-be53-55055ed02f0b")
 		)
 		(pad "17" smd rect
 			(at 0 0)
@@ -10408,7 +12085,7 @@
 			(pinfunction "EP")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "e251d3ce-9728-4076-aebf-9d061c86d1de")
+			(uuid "58f167fd-8ed2-4ec3-89ac-a88079261fb4")
 		)
 		(pad "17" smd rect
 			(at 0 0)
@@ -10419,7 +12096,7 @@
 			(pinfunction "EP")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "e251d3ce-9728-4076-aebf-9d061c86d1de")
+			(uuid "449460c8-3ae5-4ebe-8498-3c74d72a1f3e")
 		)
 		(pad "17" thru_hole circle
 			(at 0.59 -0.59)
@@ -10431,7 +12108,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "passive")
-			(uuid "e251d3ce-9728-4076-aebf-9d061c86d1de")
+			(uuid "fbbdba83-050c-4b8e-b0b9-e29bf6ef55ce")
 		)
 		(pad "17" thru_hole circle
 			(at 0.59 0.59)
@@ -10443,7 +12120,7 @@
 			(net 1 "GND")
 			(pinfunction "EP")
 			(pintype "passive")
-			(uuid "e251d3ce-9728-4076-aebf-9d061c86d1de")
+			(uuid "bc773881-5654-4b8a-8d5e-7208398c4446")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm.step"
@@ -10516,6 +12193,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "45d16cf6-da38-4f9b-a489-8ad3a1c1a929")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34b2ba42-b00c-40a9-872d-3bb8659bd6f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f17300dc-564d-42aa-b4e3-75fb71506a36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3728ef8e-89a1-41e3-bb83-0a3d1e140f05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5093c632-3f10-4886-adbb-45ffd54faaa5")
 			(effects
 				(font
 					(size 1 1)
@@ -10728,6 +12457,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "48a71e86-0ea3-4cdd-9593-9f00fc12072b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1b2353d4-d582-451d-91f3-13976d6b39b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4894bfe0-35bc-4c2c-9084-b3b131e3f96d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac2880c1-a471-4db2-8cad-e3a5b11a442d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a046a38-4681-4e84-9ccc-05e3368dcef6")
 			(effects
 				(font
 					(size 1 1)
@@ -12086,6 +13867,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5dd837c4-2d1e-40f4-b994-49bfc896f1dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7b3198f-b367-49da-b8f2-b4f737ce7628")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05a3b84e-aea3-48e4-85fd-e5b4e0e7f597")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4388b0d9-7f51-4c3a-9412-b5f19613875a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b578532c-0b4c-4549-9e01-b1ae61b21413")
 			(effects
 				(font
 					(size 1 1)
@@ -13464,6 +15297,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ef2de77-ea65-40aa-a7b1-94738ede76b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c59a931-9a3a-4436-a3ef-b965071a8be1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4c54c884-7a54-43dc-8f92-00dfb5f411a8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a308b3d-092f-4961-9c28-94f4e63be8fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/409d9dd7-4cfe-4aa5-a245-0cca9702e3f0")
 		(sheetname "/XLR input 2/")
@@ -13678,6 +15563,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9de9b0ad-8010-47a7-9886-c19a745ec40d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "295c677c-31b0-46ac-956f-45a918270f8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68317e78-d159-4b9e-a90e-6cace5c0b215")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9deb0d1-b407-4c47-9ea9-d8717f26c281")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/35f82ffb-2845-4d10-82e4-a1049ca4d0d2")
 		(sheetname "/XLR input 1/")
@@ -13883,6 +15820,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e208e279-f663-441e-b195-1b9d9392970f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4351cd9-68b4-44c6-916f-251f5f4d1a99")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c82873ee-556e-4085-9c15-e771d10ccbc9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee55a487-1523-4a78-975a-3b8933189bc0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5fa9ebe2-0b4f-425b-834b-313de065ef6b")
 			(effects
 				(font
 					(size 1 1)
@@ -14115,6 +16104,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad1bf22a-3b26-4e8d-afb0-a2b47afb1c73")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94c4b5b3-720e-4040-87a3-5e24a1393b8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fbd831c-3ab2-4fe6-ac1a-6e3254d5a903")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79fbba52-ab58-4d58-9b57-5f626e0dd5cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/eefe062f-2017-499b-a3b3-35515a5468c5")
 		(sheetname "/Power/")
@@ -14327,6 +16368,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2779b53e-e4cf-46fa-840e-cd54f78a5cb6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c2696932-d820-4191-8838-d9e614d5e7e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3640b12e-5b67-4b0c-8c54-aeac5d8db7d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "68e3cd6c-625c-4385-b8d5-9554573207d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/b4520ba6-0f18-46b6-8b43-44b29d3eb607")
 		(sheetname "/XLR input 2/")
@@ -14532,6 +16625,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a6484711-e5bd-49d8-bbcb-40289f84189d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d7af756-b174-4d37-8f2e-cd590240011e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83327df8-afbb-4a5d-bbfd-79ed6a503274")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a03fd2f9-beae-4eac-902b-a216824c148c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7aaee44d-8206-49f8-bba2-6c6744374e75")
 			(effects
 				(font
 					(size 1 1)
@@ -14764,6 +16909,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "710afd41-f917-4a26-b7d7-44b9b9af2406")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56909586-822d-4f08-b98e-9f086ec6d360")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "807c15c0-8ceb-46c9-870e-9652423690e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56982ed9-e11f-4510-bb6e-d275538cacbc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "CP_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/d9741454-b354-408b-9edb-8877bc4759b9")
 		(sheetname "/Power/")
@@ -14982,6 +17179,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2b9e8e3b-bef5-4180-95e9-9d4f3a7b5c9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6313ffa6-538d-4c8a-809a-4554072a2453")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fa63d0a7-f6b8-4288-b964-de81a8ac01c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8feed540-768e-461e-a580-85b39d26aaea")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da261b12-3b2d-4f9a-957b-53ad4ddbed0f")
 			(effects
 				(font
 					(size 1 1)
@@ -15214,6 +17463,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23f1ecbb-49c2-4132-ad03-d0f041d476a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54485b58-304a-496d-b034-be469bc958b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3cbff9fa-f0e4-44e5-97fb-410b8840efb1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b3e1291-363c-40a0-9e37-b2b3efb07df1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c20e00b3-a078-47c9-844e-cc3fff4643af/08a99cc5-e3f3-4c79-a9a2-42d64a1b7326")
 		(sheetname "/DAC 2/")
@@ -15415,6 +17716,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea61a02e-9286-40f7-bf35-ef3389c5b72b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36951eef-4271-4a59-b15a-5e778cc0bf8e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "73449dbe-65a3-4b86-a7b2-04e9217b7722")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e1afca5-f18a-445b-a772-60168da0f1be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/029a104a-66c2-42cc-8376-9416f8d074c5")
 		(sheetname "/")
@@ -15475,7 +17828,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "07b8514e-e7ed-4c17-8473-4ccc9a81bab1")
 		)
 		(pad "1" thru_hole circle
 			(at -1.697056 1.697056)
@@ -15487,7 +17840,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "2237e66b-b699-4d68-838e-aedb1a8ffc87")
 		)
 		(pad "1" thru_hole circle
 			(at 0 -2.4)
@@ -15499,7 +17852,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "8e901c12-29a4-49f9-8f1f-87db37b81c96")
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -15511,7 +17864,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "e18c65a3-25a9-4786-b5ec-a2dcc0b7eb9a")
 		)
 		(pad "1" thru_hole circle
 			(at 0 2.4)
@@ -15523,7 +17876,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "62a4eef0-1b98-4a5c-845c-c185f0f5de68")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 -1.697056)
@@ -15535,7 +17888,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "ad95d960-9d12-4b9d-9f82-a9eccdbd111d")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 1.697056)
@@ -15547,7 +17900,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "7affb328-58b0-4c37-854f-e6c9bdd0d257")
 		)
 		(pad "1" thru_hole circle
 			(at 2.4 0)
@@ -15559,7 +17912,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "ab4c771e-f1d5-42a1-98c3-2660edd53fd6")
+			(uuid "07277902-e2d0-462b-8a22-764188815044")
 		)
 		(embedded_fonts no)
 	)
@@ -15636,6 +17989,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2109ea98-8e9d-4b0c-a967-dc3b8708a02a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "937cb69c-1d8c-44d4-b106-5ac975d7ba7c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf7c4a09-c5b9-4644-b761-daa2bbb80829")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "34a0a7ec-9b96-40a0-ae23-736ca5e3cc2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b598d37a-726c-4dce-8d86-b0f5179a068f")
 			(effects
 				(font
 					(size 1 1)
@@ -15891,6 +18296,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ba52e472-fa22-4a18-8b55-fb3fe6fbc3a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b3a1efa-513b-496d-9f98-0b873cc4e38d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b17a5a8a-b2ee-40e8-9924-78f8dbf771bd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f83cf310-5e7c-4abe-90d3-700f2f53a45a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/fe8b501c-22af-4767-b74b-407bc507d5cc")
 		(sheetname "/XLR input 3/")
@@ -16096,6 +18553,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "11d8d814-00fd-4be5-b5fb-9f34c6db96ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2205c017-fd69-44e3-9e5e-b3fb07734fde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2fb0dde7-5b3b-4e14-9f29-ba066da4f4c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "999b3e53-bcbe-4ecc-a492-b538ef64a579")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c76226ba-eb8b-43ba-9101-adcc2200ef66")
 			(effects
 				(font
 					(size 1 1)
@@ -16315,6 +18824,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d86ebcd0-f842-4186-b8cc-8aeb89d016a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7f724dcd-fa34-45b4-9083-166317ca3e5a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d80d4d8a-4f26-4158-818a-728d313c68a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e79b91b4-1f12-40df-945d-0c2c2aa2e7d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/fd181b80-90d2-496e-91a9-e80468b0b5de")
 		(sheetname "/ADC/")
@@ -16527,6 +19088,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d79a96c4-0985-4b46-b494-38c1614ce921")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "019fa697-64ce-4bd6-93e1-44cbf6f460fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38d553a2-53c6-4e04-9119-86009d66ddb1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8b188e2-e49e-48fd-b82b-a7cdfd8b8a57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/7f31ecd9-f889-499b-8b5e-910be0c17501")
 		(sheetname "/ADC/")
@@ -16732,6 +19345,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f258ed15-f9df-4ad6-a096-1338827dd116")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d8addb6-6a4a-4234-903a-1d50d66dcbfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af7aa452-e8b2-47f9-a0d2-f8155817e0a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7199bcb-a239-4041-8c13-e91fb7c008ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd3ccbab-9eab-48f9-9782-8b65b4fa2d45")
 			(effects
 				(font
 					(size 1 1)
@@ -16959,6 +19624,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "07622b1c-dbf4-4e32-831c-94c2ab8e68cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "332741d9-de03-4744-8b0f-4fe8c8bc363e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef87faed-e216-4879-be78-375418e46caa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab3fffbf-27d5-41b2-965e-285abb9d1070")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46425fa3-2be6-4de0-8dd3-cf3aea786668")
 			(effects
 				(font
 					(size 1 1)
@@ -17222,6 +19939,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "715edbd9-13f6-4523-bd09-e83ebcf202b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "005910b5-2344-4309-b1d6-50e8c5d38c79")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1609e1b7-8b37-4972-88d7-95a2824f6af6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cf824a82-bddc-433a-81e2-0fc8dcb0dca1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/5098ef14-9f7e-45f3-beaf-b316e4d466be")
 		(sheetname "/XLR input 3/")
@@ -17427,6 +20196,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a4d09064-22be-4a96-be20-110907a1f367")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6ce65e9-26e0-4b59-86ef-4fb6c9092c45")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8b2612e-af61-4098-a79e-596ab9bb178d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "071a47f4-50e3-4d41-948a-093bed7b1186")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a5c4f56-c3f0-4d9b-8107-33251cb817dc")
 			(effects
 				(font
 					(size 1 1)
@@ -17652,6 +20473,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "730ba934-3b0f-43d2-b6d1-bb2e59c0edb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9241b6a3-1139-4daf-a223-8402fb1a863b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19998872-5b28-4e06-bc1b-a46c85b31091")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a145379-4816-42ce-9709-929058cbca2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8abb4ba4-4b82-4890-be7b-6115846376c6")
 			(effects
 				(font
 					(size 1 1)
@@ -17910,6 +20783,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ce71216-14ff-4086-ad24-4a8f54cd1c4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f27c2b9a-c05e-4bf4-9271-fdcf3a395db6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "66ab472b-4049-4b76-8f1a-061aa4a9d98b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "166b850d-5a17-450c-a0d7-68eb880d9f5b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2ba79a38-d96c-41e4-a110-b9e5be6e14a4")
 		(sheetname "/")
@@ -18115,6 +21040,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "20e4c0a7-d04f-49c5-b705-8657f0822a0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d638137-ccfa-45e4-a8a2-ff4141902334")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09df2aed-1368-4987-8630-1c35902d39db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1fb1823a-6520-4853-a064-d397fd308289")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9316004-6310-483c-926d-d0d408a5e5bf")
 			(effects
 				(font
 					(size 1 1)
@@ -19480,6 +22457,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2006c3d4-b75e-4ce9-b4ec-1f6d370a76bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bd768e3-cf6d-45f2-a9d5-99572f138556")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ac857ede-ca23-4a13-8103-15e07d80cc8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ee14fbd-8dca-47c2-b6c0-d807760fed3e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/a5213bc0-58b4-4bc4-892f-70bf4ed038db")
 		(sheetname "/Power/")
@@ -19685,6 +22714,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fac409c7-9bb1-47b5-b78d-6abf61b4bd82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "06c64e9a-7e4c-4e6d-92fe-26debe4f6157")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "90bed952-82f9-4fbc-bb90-57463d40ac92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "874a4b37-d80a-40a1-aab8-47e176675fdf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8be2bd55-62b9-49eb-899b-40f8073db45d")
 			(effects
 				(font
 					(size 1 1)
@@ -19917,6 +22998,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9da0aa3e-9ecd-4eb9-8352-844808c8d1c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e67f18c-acfd-498a-b3b9-3ea657ef0864")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0efa72a8-aa89-452c-81d7-6e1340aa346f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1a86e866-8e14-409a-9155-3e1d57687ee7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/1a7a80c6-f4ed-48a0-9540-6bc008dc47e3")
 		(sheetname "/Power/")
@@ -20142,6 +23275,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e625dc19-3586-45f8-aa04-43872fbc91d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ec16d06-185f-4a60-b712-490d9fbc85f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a98aa842-36b7-4647-8737-f52b2cfc590f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f1d06dee-41c8-4d44-ac5a-6d7d73edab23")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4b4e226-c2a2-4edc-87fb-3e533fe789a5/5c5cd430-9e7d-4852-bb5d-22925e450cbf")
 		(sheetname "/DAC 1/")
@@ -20347,6 +23532,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "576d30b9-6c6b-41bb-ab5f-196655d56d2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1132b65-13bc-4810-a485-6f2a64405128")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9388b77c-15cd-4d0a-ab09-11671b2fb8f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3019f827-0725-4041-bcc6-4e3c6412e63c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ef7f24b9-456b-4289-929f-2429461f4e12")
 			(effects
 				(font
 					(size 1 1)
@@ -20697,12 +23934,64 @@
 				)
 			)
 		)
-		(property "MPN" "640457-8"
+		(property "MPN" "640456-8"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "97aaafc1-90b0-4aa3-b5fd-4f060e5f2d19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "def62bbd-1cf4-4339-b7e2-12dfc0059483")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ff4543f4-987d-46be-8ae4-2624f83e2b49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4465948-02ca-4c5b-983b-073b2d4a122d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0e1147d-960f-4281-9f86-6dbe76e542d7")
 			(effects
 				(font
 					(size 1 1)
@@ -21131,6 +24420,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3154a7fe-a5fd-46e3-b5d9-f21f1f4f61dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e8893de-20ea-43d0-8945-df8bb12183ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32bdd7fb-638c-49f9-8489-f3fc594f7c15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fca30cbf-59ab-4e51-a644-e5ab0a43912f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/61fbf041-9ed3-418b-b220-a5ef4baf16df")
 		(sheetname "/Power/")
@@ -21343,6 +24684,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "728abc0c-ffa5-4b1e-b552-a8d04766b65d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "38978a85-1fa8-4322-8c91-f7ffa1801f0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "74900a0f-ddb5-4922-8fdc-182c266d8337")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d4f02ac-7f81-430c-9bc2-7f2e4ac0f80c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/5fab3f54-0e2d-4883-afbe-55926f1c6c40")
 		(sheetname "/XLR input 1/")
@@ -21548,6 +24941,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "469d6079-d795-4568-8401-6095adc75311")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1185a49-3b25-42b7-b55f-595943286ab6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f71be7d-dda2-422d-a96b-7a48b4b92dd1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4953f3d9-32e4-4850-baff-39e656f835d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d35bc40-7ed2-44f1-a835-b35f2b0149bb")
 			(effects
 				(font
 					(size 1 1)
@@ -22166,7 +25611,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "d917b7b7-5b0a-4ce2-bd36-652bf94efd0d")
 		)
 		(pad "25" thru_hole circle
 			(at -0.635 0.635 180)
@@ -22179,7 +25624,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "226ae616-a9db-4260-993e-ab40dd51e216")
 		)
 		(pad "25" thru_hole circle
 			(at 0 -0.635 180)
@@ -22192,7 +25637,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "46ec25cb-6d1d-4fe7-adfb-723c24454149")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0 180)
@@ -22205,7 +25650,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "c9cd49db-9348-4d2d-84d3-2253d7240d09")
 		)
 		(pad "25" smd rect
 			(at 0 0 180)
@@ -22216,7 +25661,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "983b1e8b-9b4b-4b7d-a301-fb071c1062d5")
 		)
 		(pad "25" smd rect
 			(at 0 0 180)
@@ -22227,7 +25672,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "dcc492cc-bac2-4d93-bd60-e019e1a9b151")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0.635 180)
@@ -22240,7 +25685,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "bc418a74-156f-4e84-a069-454e1601f7e8")
 		)
 		(pad "25" thru_hole circle
 			(at 0.635 -0.635 180)
@@ -22253,7 +25698,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "30f6f15c-4339-4d2c-aa9c-6eb38c357adf")
 		)
 		(pad "25" thru_hole circle
 			(at 0.635 0 180)
@@ -22266,7 +25711,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "51c312d2-11b7-44a4-94be-46c8b649c3f8")
 		)
 		(pad "25" thru_hole circle
 			(at 0.635 0.635 180)
@@ -22279,7 +25724,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "0db927ff-02c2-4278-a80c-e6cdae4fcb6d")
+			(uuid "dde60e68-0895-436d-8a65-0baee862f8db")
 		)
 		(pad "A1" smd rect
 			(at -1.725 -1.725 180)
@@ -22431,6 +25876,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0c0b5eb2-99a2-4310-a959-76b505fdfabe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8016c587-649f-4f43-8838-62e9da654289")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5d3a58d-96ec-43b5-a375-c592b30d5958")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bb8444c-e441-4754-95a7-4d2e804f808c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "405e4e19-31b2-4949-979f-0b14ba498bf0")
 			(effects
 				(font
 					(size 1 1)
@@ -22650,6 +26147,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ec0eb73-df9a-4f9f-bf55-9dafd8b75c48")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8106a101-a4ce-4cad-9138-ed2e3b7c1f2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe2faf52-7376-4047-8ab2-fb3ff39f9df6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd679b52-9505-40bd-9dbd-610ad19654ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/5098ef14-9f7e-45f3-beaf-b316e4d466be")
 		(sheetname "/XLR input 1/")
@@ -22855,6 +26404,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a1ffeced-7eea-4cbf-b607-8a1ce8db624e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae0c4b6a-50b7-4f57-98ef-4545f86b14f0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe2ea03b-5983-4ded-9aef-6d88603a60fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14f2ccb6-3a9c-457e-a83d-4c71570bec22")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecdcb04f-dfe7-47ef-8df3-513a78e64d21")
 			(effects
 				(font
 					(size 1 1)
@@ -24220,6 +27821,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e178e04b-fc6b-495b-8964-6244e5b449d6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72dd6a30-a6c4-45c6-a74d-8717e081651a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e2cde81-bd64-4f4d-8095-8c565e1ab028")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ced4a3b2-dcd9-4ce6-8a56-03a3b1f11aa0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/d8f2e5d7-77e8-4cba-b6f8-99ed6f8641bb")
 		(sheetname "/XLR input 1/")
@@ -24445,6 +28098,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cdb3035-9099-4a3c-9a5d-9eee90ea588d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d816db4c-7e90-4421-919e-31d97839bd5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8080dba0-9fdf-4312-91b0-fac0a7dbd4b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "040d8c13-d6e0-480e-b825-59ed3e957d21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/36dc27cf-3fde-4b9e-a767-c0715becdd89")
 		(sheetname "/Power/")
@@ -24650,6 +28355,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "42dc6534-c5fd-4f71-aa47-b8d590509fa8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1dc67371-5f31-4ab9-9809-4ba48fe3c531")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "85d26489-1733-449d-a0b8-2bebc83a25b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0f90a1d-3c1d-4606-9d58-9d158ec77d04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6012079-0202-4863-808a-cef75ef245ad")
 			(effects
 				(font
 					(size 1 1)
@@ -25268,7 +29025,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "5cb66166-91d2-4fc9-8f14-4351f2266bda")
 		)
 		(pad "25" thru_hole circle
 			(at -0.9525 0.9525)
@@ -25281,7 +29038,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "cd3966e1-6b4e-42ec-8cb4-5223fa0c3996")
 		)
 		(pad "25" thru_hole circle
 			(at 0 -0.9525)
@@ -25294,7 +29051,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "90ec885e-49e4-4c61-bb87-e9ce900f0f78")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0)
@@ -25307,7 +29064,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "32bc2a33-bd0a-4619-afc9-286fe6abbd6d")
 		)
 		(pad "25" smd rect
 			(at 0 0)
@@ -25318,7 +29075,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "963a2de8-3f03-4dcc-95e1-e54408e331ea")
 		)
 		(pad "25" smd rect
 			(at 0 0)
@@ -25329,7 +29086,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "f2e79e57-3a18-4ccc-9833-539554373597")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0.9525)
@@ -25342,7 +29099,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "18fbf341-34c0-4288-9802-6d6809a70101")
 		)
 		(pad "25" thru_hole circle
 			(at 0.9525 -0.9525)
@@ -25355,7 +29112,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "bb9c3f86-3465-48af-b21c-49766947b777")
 		)
 		(pad "25" thru_hole circle
 			(at 0.9525 0)
@@ -25368,7 +29125,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "e9cd4e70-1bc9-46d4-9a89-6864b7ebdd13")
 		)
 		(pad "25" thru_hole circle
 			(at 0.9525 0.9525)
@@ -25381,7 +29138,7 @@
 			(pinfunction "VSS")
 			(pintype "power_in")
 			(zone_connect 2)
-			(uuid "4ea857c9-983c-4e81-9b0d-23dc6589c0b0")
+			(uuid "d2330fd9-443b-4412-baef-4ec3a79915d1")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.step"
@@ -25454,6 +29211,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "56613935-593c-46b3-abd1-bfdd8a879047")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e853ff8-88d8-4984-b8dd-1307d386a4c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e7ed0a10-f22d-4a63-b560-83fa6f5d9009")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4d6cd7f-3df3-4d53-830b-a6c3cbb44bf6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "52819f98-1c95-45e1-b2ca-e8abafcb2576")
 			(effects
 				(font
 					(size 1 1)
@@ -25681,6 +29490,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4de74ea8-47b3-427a-9de2-5134d03a3a13")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1cf539e-550d-43d7-92a2-b73364baa4dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29cbaf40-b281-4a9e-a3b6-4b6d890e209f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29a868af-c1c5-424f-8c71-7e4dfdd2eecb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7a3b1be-58ed-4995-95b3-a6ce71079b63")
 			(effects
 				(font
 					(size 1 1)
@@ -25944,6 +29805,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "118e68e9-80c1-4aaa-8ed6-79d18bfc0124")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a78e0cf-3438-41af-81a5-0c2580fc15a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0a219f4-d875-4858-ae69-4f888891d749")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26b8c235-d855-418f-a89c-c50faec20654")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/ba59745b-669d-4050-b2d5-3cbeb9b5db7c")
 		(sheetname "/ADC/")
@@ -26175,6 +30088,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8b0f0ce8-c1cd-437b-8686-44ed7a558389")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d25819a8-0949-4792-86c5-0337bc465b06")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3efa2c3-6cae-490d-802c-84b094a3f257")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32899228-a7e8-4307-8bb6-c1de72652a66")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edc70262-7673-4084-8d67-66916aa8284d")
 			(effects
 				(font
 					(size 1 1)
@@ -26433,6 +30398,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0faf1b8-0525-4440-af72-7b1a9a4667c5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9dcc95bc-0519-4d44-a76e-7bad11cce600")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f94a852-b936-4741-819b-56beff002baa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72541550-d31a-4443-81de-d4fc2e8c7ba3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c7838b89-33be-4400-baf7-0a033ee6e87f/f65cfcc2-343a-494c-8af7-e1b4e34388f3")
 		(sheetname "/PC Mono input/")
@@ -26638,6 +30655,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1835a959-5159-4516-81d3-647197d52172")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ed2a7a8b-dc54-4a1b-b992-e34123ad8577")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53c45a69-22d2-469c-aee1-57ec0c6b61e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "371cbd24-e942-461f-a01b-7fc4edf417f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d9eecb5-144e-4ee1-92ab-cd752ff0ea09")
 			(effects
 				(font
 					(size 1 1)
@@ -26857,6 +30926,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "271d20e2-c61c-4c3d-8084-2165fe0930cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3b26569-6a0a-4af4-b323-a783582a1d01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd7723e2-efe0-4197-9a60-f1a269c2485d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14b27c4d-a603-40e4-bbd5-badbf5b15f87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/7b69befb-7dfd-409a-a532-b68fe72ecdb8")
 		(sheetname "/ADC/")
@@ -27057,11 +31178,76 @@
 				)
 			)
 		)
+		(property "MPN" "NC3MAH"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3260fa15-02d9-4eae-a187-010f224f0976")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08952867-d412-43b6-87f5-e23de36ad993")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19998057-a829-47fd-b61e-11d7d74518ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00c6a913-c65a-4c9d-a83e-a3813e2dcff0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51fcf348-5fd8-44ea-b1e7-6be7e58e101b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Jack*XLR*")
 		(path "/c4b24031-35fa-430b-ac2d-cda8fc477882")
 		(sheetname "/")
 		(sheetfile "audio_board.kicad_sch")
-		(attr through_hole exclude_from_bom)
+		(attr through_hole)
 		(fp_line
 			(start -9.11 11.31)
 			(end -5.41 11.31)
@@ -27671,6 +31857,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae7fc351-b44a-4469-8410-9976b05c736f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e1b960dc-8e7d-4435-9621-5a47a03edf04")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e017ca8-5109-4eaa-a072-702c37cc2549")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3069b9f-8c6d-413e-b78e-514ec573baef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/7d9a2d79-b628-4232-9575-3059446feb29")
 		(sheetname "/Power/")
@@ -27883,6 +32121,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec78ed91-715e-4bcb-a8ce-e7b274427c83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d4c9aa4b-1c40-4bfb-8e8e-7aaca7c7a0e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b0695c86-79f3-413d-92f9-1c39d044bd27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14db4ee8-1cfa-4707-bba4-e092424919b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/35f82ffb-2845-4d10-82e4-a1049ca4d0d2")
 		(sheetname "/XLR input 3/")
@@ -28088,6 +32378,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4841939f-bce3-42b6-ab18-3b4d5b574166")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bb53472a-2c94-4984-b1cd-c0a9563de320")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "77c2b1c1-0b04-456e-9fa7-9ff2516cc725")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbfe1d68-6d46-4b69-a91a-d6314050d41b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c2fa232-2420-4997-8832-e06b8c69e87e")
 			(effects
 				(font
 					(size 1 1)
@@ -28706,7 +33048,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "ece69348-e9d7-4161-baa8-45ff2b44c18f")
 		)
 		(pad "25" thru_hole circle
 			(at -0.635 0.635 180)
@@ -28719,7 +33061,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "957c6dd5-f630-453d-813d-14739e298205")
 		)
 		(pad "25" thru_hole circle
 			(at 0 -0.635 180)
@@ -28732,7 +33074,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "157765bf-dd13-417b-8b2c-b2dd481bc0c7")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0 180)
@@ -28745,7 +33087,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "9e7e7406-efc8-497e-92c9-3d4f70c65015")
 		)
 		(pad "25" smd rect
 			(at 0 0 180)
@@ -28756,7 +33098,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "b8bceb62-55ea-4879-9bbb-b01bc8b2b5b7")
 		)
 		(pad "25" smd rect
 			(at 0 0 180)
@@ -28767,7 +33109,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "e64189f9-7c77-4824-95c8-566f38419f14")
 		)
 		(pad "25" thru_hole circle
 			(at 0 0.635 180)
@@ -28780,7 +33122,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "371f039c-4863-4361-a8d7-4f5b24e9fe7e")
 		)
 		(pad "25" thru_hole circle
 			(at 0.635 -0.635 180)
@@ -28793,7 +33135,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "6ce23a66-1c7e-42d0-9b56-707db1e8f4e0")
 		)
 		(pad "25" thru_hole circle
 			(at 0.635 0 180)
@@ -28806,7 +33148,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "de638c8b-ce02-4342-a105-06e96c3ae940")
 		)
 		(pad "25" thru_hole circle
 			(at 0.635 0.635 180)
@@ -28819,7 +33161,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(zone_connect 2)
-			(uuid "a9147a19-5366-4fb0-b9bf-1cee89c5b8cb")
+			(uuid "f7035c91-40a2-42ee-a1a3-596d242a6186")
 		)
 		(pad "A1" smd rect
 			(at -1.725 -1.725 180)
@@ -28932,6 +33274,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6b29c542-db8a-4293-88ec-25f38b78c01e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8286e74b-f06a-4076-b857-7ddf76d494d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "136c69dc-7103-4c23-9328-5c5a844eb49f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d04eb35-f35f-48da-ae02-6f2389ffccb8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "153b1620-7d10-43d0-952c-64d0f18f7d85")
 			(effects
 				(font
 					(size 1 1)
@@ -29152,6 +33546,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ac94ecd-1c85-4848-9baf-4f682ececd6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a47b97d-67b9-4639-8315-be7f8e2c4e56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d347cb63-a056-4b2c-9120-7eb1000f5bde")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "160e7e2e-225e-4a7d-a29c-640672a98a4f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9c4729fb-2c56-4a56-882d-6bc85759f15d")
 		(sheetname "/")
@@ -29357,6 +33803,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b516a314-5e79-425b-b72d-70ab8d8473b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3e2c6491-90dc-440e-b071-91613f0fcbe8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9d6e4c8-e9b6-4816-b66f-dc12f0b7016c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b4a669d-ab3c-4fc9-a260-8646f540e991")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0b39c2a-2247-412b-827b-3084f7cbf27b")
 			(effects
 				(font
 					(size 1 1)
@@ -29584,6 +34082,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "faa957b5-5cea-41fd-8739-a1f3a0d271a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b3db3f3-f8c5-4837-9ac0-df0e806ce994")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "31ce0f6c-21b0-40e4-98d0-45a9d04eeb61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ea0d8766-1110-463b-8515-d708b73e7b65")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d55996ed-44d6-49ed-a4e4-cb7ca65b6db9")
 			(effects
 				(font
 					(size 1 1)
@@ -29895,6 +34445,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7a6687a0-55fd-4b8b-8c24-da39de226ff3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "180e10f3-8df7-4c43-a8f9-29aaa92169c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abd3f3b6-6217-4cd5-80cd-9957483813a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9d907b0-d0d2-4561-a44b-9e84fd2cc7ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af9a9608-1a0b-4e5b-8cd6-24428a584c5a")
 			(effects
 				(font
 					(size 1 1)
@@ -30508,7 +35110,7 @@
 			(drill 1.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "b11ca681-dd98-472b-be10-5246be80b3a7")
+			(uuid "77a59959-2dcd-4fcb-ace6-a4647f91da23")
 		)
 		(embedded_fonts no)
 		(model "${KICAD8_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_XLR_Neutrik_NC3FAH2-DA_Horizontal.wrl"
@@ -30592,6 +35194,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8c02c2ab-044c-4276-a6fa-6de2446c2b2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d3fef9c-dd30-4d3f-a81d-29196c62651e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8fc3ff8a-a8ab-4196-9701-97ea1880bbfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "477d9825-bd21-41b6-a358-b70e8790756a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a88f701b-5117-4744-9e34-025e828eb964")
 			(effects
 				(font
 					(size 1 1)
@@ -30830,6 +35484,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "998629b8-f9f6-42fa-9f41-414b2927e5b0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55f40aeb-2bb6-4090-ba71-4f1a80e13530")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dcedb9a6-1c72-4304-aa13-8020ee60ff9f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f480bf86-068c-44c2-9fc3-5b6ac3db39ca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a3d9ae8d-7d6a-4755-a86f-ce9951dafc2d")
 			(effects
 				(font
 					(size 1 1)
@@ -31188,6 +35894,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a7e90634-a509-4809-9558-501e888266de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "abfac8eb-2ef2-47b6-a95d-7a67daff92b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de863c13-a09f-4c29-b707-7ff87e13b436")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05877886-09f9-4998-9d15-f4888b00c133")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/1f9e1459-9a73-4195-a4db-82d7b27b042d")
 		(sheetname "/Power/")
@@ -31439,6 +36197,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bf017d6-ddba-464d-b1cd-bdcba4bb078f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "011a6e2b-c850-4b43-9828-8f433755f830")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2dce35d-0f00-4209-a2db-165570e3d6b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "719730f4-16c0-4ae9-9653-8d071c480a0f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c7838b89-33be-4400-baf7-0a033ee6e87f/ff5651dd-b94a-48e4-962e-96f10d48df36")
 		(sheetname "/PC Mono input/")
@@ -31651,6 +36461,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b926029-3fea-464e-ae09-2aabc476e35f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a710ace-7d33-4f16-aab0-74c65464c2bc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a760e717-6e05-47ae-8bdf-e7528fddc71c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69eb5f7d-52c9-4420-a3a0-6f59e7b5a54d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/f2653f0b-5d02-4a02-aa28-a567176ee0ab")
 		(sheetname "/ADC/")
@@ -31856,6 +36718,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "24d4f820-9891-4a67-ac8b-f4b161467bbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40cfd68c-a56f-4e83-9e56-f42c2781266a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc8282f9-10d9-4d45-9c55-fe0c05822f53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ba6ead4-2709-4c4c-9198-99747f0349d4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a537530b-b2d7-4524-96d2-0c00230f3388")
 			(effects
 				(font
 					(size 1 1)
@@ -33221,6 +38135,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09e1241d-fbbc-459e-80b5-39e7b9da6104")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "538530c3-8da5-446d-a972-f56aed9fa793")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0e0c25c-08de-4194-9556-c45cc0ca57dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f17e2378-93e8-4bc7-9f15-4b91a9f63fb5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "CP_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/22a88194-6017-4ec3-8ed2-fa1601df5589")
 		(sheetname "/XLR input 3/")
@@ -34572,6 +39538,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d1ceacbd-27f9-49b8-84ad-a0e3b7a44233")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6bf444e-b514-4619-a906-7427d1235812")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bf23cff4-6f2d-40ce-beb3-f0f706cc5837")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a2943da2-4646-4662-bdb0-396d664b9d05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54fa6dee-06e0-4d99-9d2a-7fe3b734bf8e")
 			(effects
 				(font
 					(size 1 1)
@@ -35950,6 +40968,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "afbdbfa5-f567-4f6c-bc11-a8f4071ac8b2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc3fcc5a-7ce9-4800-a893-d20f213873df")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3e99eb7-6e4c-4951-963c-4469f15d339d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36026949-a9f9-4c39-ba7a-e9b10fe221c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/XLR input 3/")
@@ -36177,6 +41247,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b204e86c-adcd-44bf-a934-46e2d09bc999")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dbcb4f83-3772-480c-953f-9dc81a7f010d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e400f4df-f3d6-44a1-b90b-e58a29deb71d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca9dc60c-3a7f-440c-84c4-ab24a2b13eaa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c20e00b3-a078-47c9-844e-cc3fff4643af/73129747-3a06-4aae-bfbc-c08aea00fbd3")
 		(sheetname "/DAC 2/")
@@ -36378,6 +41500,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "41155741-318f-4338-9693-576d0113f0d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a8b53bc-8ff2-4094-9a07-407a6a2332d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f142e00a-6ccb-470f-a781-bbb3b729f533")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09b1ee33-0d84-4d6a-a4a0-806d0b8ef163")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/d7722e69-4f00-4c15-8998-105a600bdb4f")
 		(sheetname "/")
@@ -36438,7 +41612,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "73df20e0-5374-420b-bdf1-2cd860e4473b")
 		)
 		(pad "1" thru_hole circle
 			(at -1.697056 1.697056)
@@ -36450,7 +41624,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "ea392875-b372-4294-bf51-bdbc51398de2")
 		)
 		(pad "1" thru_hole circle
 			(at 0 -2.4)
@@ -36462,7 +41636,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "26f069f0-4c04-4165-8aa2-b69eb075ce7a")
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -36474,7 +41648,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "9082296b-6e7d-4b2a-9fd5-b7c11f1abe8b")
 		)
 		(pad "1" thru_hole circle
 			(at 0 2.4)
@@ -36486,7 +41660,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "86104a64-72bb-42c1-be21-7ed2367d5a3c")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 -1.697056)
@@ -36498,7 +41672,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "7a3b0a0d-d31f-4ee9-8d8a-a80c7843d366")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 1.697056)
@@ -36510,7 +41684,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "8adb9c74-0f9f-4899-a477-45ef68d09d45")
 		)
 		(pad "1" thru_hole circle
 			(at 2.4 0)
@@ -36522,7 +41696,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "7fbe7e0a-d940-4160-a995-cd01263ed37e")
+			(uuid "b1352398-f699-4991-ba88-62f65078acdb")
 		)
 		(embedded_fonts no)
 	)
@@ -36597,6 +41771,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "17903b1c-0273-487e-8fd7-a44da649cfba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "115e5e97-a5a9-401c-a193-0f3c68391ec2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5bf0912-5567-4d29-84dc-b2f65e1a4cb0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "234640da-3aa0-4fbc-9e8d-a651816430fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f360ed5-a36e-4ba0-b7f1-d2ddeceeb863")
 			(effects
 				(font
 					(size 1 1)
@@ -36811,6 +42037,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7ed40196-7803-437b-a463-4c2452153f05")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e077cf4f-841e-4189-aa04-109830b195af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "784405c5-552d-4a17-95f6-41e2ed80677f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "175563f1-bef8-4c0c-aa48-b11524d9b403")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9cfa7583-f52e-4fe6-8190-edafe5941813")
 			(effects
 				(font
 					(size 1 1)
@@ -37169,6 +42447,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65175e63-0cb0-4aa6-b5e6-3ef98570b9dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83980b92-7d77-403c-b43f-4e34765f0880")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc1f3ec2-cd7b-4ebf-ab6b-cf398923428e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "62b37574-991a-46ec-87e3-93b44bd1f490")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4b4e226-c2a2-4edc-87fb-3e533fe789a5/a083e239-c7af-4348-ae40-12f80ea84a8f")
 		(sheetname "/DAC 1/")
@@ -37374,6 +42704,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7aa0fc7f-7a20-4047-9753-f79d66558d20")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0b53b5a-cd6b-4dde-b981-678ee30ab108")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cd126cc-ad4d-440c-b146-8d85488ff872")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "075bb8c0-e236-40b9-8558-53f9e33c43e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d24be734-eede-43bb-8fb3-2e045a3e5fd0")
 			(effects
 				(font
 					(size 1 1)
@@ -37587,6 +42969,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "90f106f3-18f3-444a-b3d3-99504e9a2497")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2aa5bde-be7a-4132-807d-bad53c64415e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8035231a-464a-4ffa-8205-05f9072954ce")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ab88443-6081-4bed-b554-70421b083a33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69ccb709-831a-4430-ab4b-400c87d74602")
 			(effects
 				(font
 					(size 1 1)
@@ -37819,6 +43253,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98c3d9f9-9083-41b6-9303-34a438e1c8ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cad5e19d-92de-47c2-ad6b-332b9502a4cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16e1ded6-4bd3-4357-8284-3c024e97f941")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9820dae9-5971-404d-861e-796add5981c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/1f592443-35ca-49b9-ba91-260196b10c55")
 		(sheetname "/Power/")
@@ -38024,6 +43510,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e9477d18-c7fe-47f6-bf02-6384f06d719a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc996236-1dfa-4af2-95da-2eeb75dc9232")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2e90f863-b818-4509-af87-56a9404ac558")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "daf62b4b-3dd0-4bd2-a1bf-bc321c25bc61")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b44b4ec6-de69-472c-b08e-d300b43668a5")
 			(effects
 				(font
 					(size 1 1)
@@ -38369,6 +43907,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3485bb97-ed9f-4834-979a-bbff0cf237fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3def0cf8-135f-4abd-b726-b6e32793ba77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0949ff74-2db9-4070-bbc4-5fb0a762a412")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd125c13-4d4f-4104-a9a3-6eb5dbb069eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/8957bb4e-7be5-4513-a482-a60a2150a7cb/cbe1d44b-9d06-4398-8833-55fc47283200")
 		(sheetname "/XLR input 3/")
@@ -38589,6 +44179,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "032edbf2-c9e8-45de-9487-cbc333b90a0d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c86e4aa-9a25-49ae-8cb3-aa8558852ed7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b25c3b2f-c6b8-4b2d-996e-e78e2edec4ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ce8383e3-4ece-4fe3-92a7-d25062eaaf12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "91348ea7-1b87-4e31-bf04-24b06ac42fff")
 			(effects
 				(font
 					(size 1 1)
@@ -38883,6 +44525,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b426600d-f700-435a-b082-a0fdcbc84856")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4359a84d-3539-49f0-a668-e5930cb165d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f70639fe-3944-4677-a51d-ae2fdb376451")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8446c08a-35b6-43c4-9432-2dcd13efcab1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c20e00b3-a078-47c9-844e-cc3fff4643af/eccf56b4-f80f-485c-b554-5a82ffc6a3b6")
 		(sheetname "/DAC 2/")
@@ -39089,6 +44783,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "62ae69b6-d3b4-40e3-a24e-6ae8cdcf477a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f9c4eca-c007-4791-a9b4-bb52a3b31908")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f587bf9e-886a-456e-a858-b2d0898bf144")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f55885ad-5628-4594-aaf5-dc4120be7065")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69d9d289-2511-4066-81af-4bd4c3953a2d")
 			(effects
 				(font
 					(size 1 1)
@@ -39347,6 +45093,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d85bb938-b167-4ee5-8c72-130aa212f8fe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec32535d-f10a-470b-8068-3d70a2512593")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5dd7d6b5-5cbe-435d-a839-65795d9ff3ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "be34eb2d-96cd-445e-9ed7-518d71853cf7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/92fef7dd-c880-4b0e-9e0d-11bdd1c5e7d7")
 		(sheetname "/")
@@ -39578,6 +45376,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "60314ec0-a4f2-46be-b47c-0a76d1275fa8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c76c604e-16af-47f7-be1c-34b75484ee0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7d96d040-275c-4607-bcb3-b3dd717f5251")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07c9bbe4-eb26-4aba-8349-cc3e1fd77ec2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ab48bd1-38fc-471b-b9a1-f9369451fce2")
 			(effects
 				(font
 					(size 1 1)
@@ -39923,6 +45773,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b3f48ac-cd13-4731-951c-5bb0706e4f89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d79c0db5-806d-42f6-b81a-002e8028ad18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f68994e1-4395-439b-a697-cb9fe859923b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ef50bf5-fcd8-42ff-87fd-82d64d828e4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/6223e2d7-a990-4bc4-9d5e-a3abd2a00e23")
 		(sheetname "/XLR input 2/")
@@ -40141,6 +46043,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "994059f1-f60d-4598-a2d0-6b151b617b7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6abed633-9592-4d48-b73a-293fa214a038")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d27e240c-732b-473b-ba7f-a3426f272db6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f9f17f0-d694-4cca-8c6d-3c2c759ea552")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2af7205d-3c16-470b-8be4-5bdf1b6e43cb")
 			(effects
 				(font
 					(size 1 1)
@@ -40381,6 +46335,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8db9f1f5-5359-4c68-9b9d-43682b85dcc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8d795d2-f46a-4630-a0b0-2b4c7107d162")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84424f8e-762f-4fa9-aea4-bc4cac9c0bfa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d315dfa8-54a6-4454-97f5-63014a87f828")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d727480-3727-45b5-bdf4-e959fdc2a832")
 			(effects
 				(font
 					(size 1 1)
@@ -40792,6 +46798,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e5a08747-3844-4ca0-8bc4-02709c9e76ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ce48a22-040f-4b60-870b-b40478633ccd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c44f6dc4-e302-4c5f-8f35-5c541fe813ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "25e1e3e1-565d-4d6b-bfb2-9096d45c8212")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/088c3e24-de35-4891-800a-d5e9a8377039")
 		(sheetname "/")
@@ -41154,6 +47212,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab84cf6f-68b6-472a-839c-28d2b00536d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09320c19-18cd-4e53-b664-b68a84b19b42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b5222dd4-6ce1-403f-8d61-bdc0e10f8dd0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd54809f-75da-40ea-80ec-c322450a00bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "SOT?143*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/0d6eed8b-a0f9-45ec-a86f-138a03935151")
 		(sheetname "/XLR input 1/")
@@ -41416,6 +47526,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a495ccb2-d508-4f30-971c-0853431dec2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c7b4dd32-5d40-441f-b70d-d8cfa5ae7df8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c70234c-9e45-48bb-931a-561e9722bd4a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2288287c-93d1-4192-a6fb-6f313e7bd17c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3496c9e5-3e18-4e0e-b4a2-5ff61b00eaa9")
 			(effects
 				(font
 					(size 1 1)
@@ -41760,6 +47922,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d10187d3-051c-40fb-ad43-9e80737d0d55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "747388df-ab39-45c6-ac46-b5e894399421")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db82b3e9-9c1b-4526-ac58-56b98c19aafd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5326873-6a8a-4ed9-941f-8f49be7a2502")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/cbe1d44b-9d06-4398-8833-55fc47283200")
 		(sheetname "/XLR input 1/")
@@ -41985,6 +48199,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c77b5f5f-ac40-405c-bd11-35ec575ceccc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c4472cf-d5e3-45f4-b5a3-321fbb85a274")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c2edc6e-46d3-4581-9e7b-772de3fc89fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "572dcddf-85a3-430f-8fe7-1873f75ac88e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4b4e226-c2a2-4edc-87fb-3e533fe789a5/49ed7ca0-b259-43ea-aa75-19e3ebd587fd")
 		(sheetname "/DAC 1/")
@@ -42190,6 +48456,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f37d7e87-b246-4a1a-9671-32018f46b175")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ce9847e-c66d-496f-b71f-9cc93393d35e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "819db10a-550d-4b26-890a-f487633210a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e97f2c9-dcb9-4a30-aa58-e4db329b3fda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ea4ee0a-c912-40f7-b280-3d6e500673cc")
 			(effects
 				(font
 					(size 1 1)
@@ -42409,6 +48727,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5360f087-2335-441b-883b-b0b9058fa773")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79cd6372-421c-430b-8c05-51ecc4d394a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "604656fe-e5a0-43c7-87af-1f43dbb250a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "964d6cb0-1445-421b-8749-218ed0e07fa7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/f849ad0c-4fa2-4408-8b91-3166dc2c2610")
 		(sheetname "/XLR input 2/")
@@ -42614,6 +48984,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6732c47c-c79b-437d-af12-31b810f66f6d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01a8e21f-2b11-41a7-9a01-fa2fd8f8aded")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad3bd659-8ad5-4fef-9268-4622966345e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "853182dd-fae3-4f5c-9c77-5436827fb9e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f40d4633-8889-4bb9-8e8e-cb915a323c69")
 			(effects
 				(font
 					(size 1 1)
@@ -42841,6 +49263,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "35d226ec-4cec-4c23-b109-1da72a623f7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16f190be-9788-4874-8db7-0bbf7e31090c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6d5dc2ad-3db2-4728-879b-723dd5c3bf3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "658f6430-c757-4c92-b19f-890af9d3cb24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4a7c5d77-9984-46a7-9a50-c1faf9465dd3")
 			(effects
 				(font
 					(size 1 1)
@@ -43142,6 +49616,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d30e5b12-3f51-4750-9017-f07f5613701c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2672f3a-afc5-4b48-a97f-faf074835032")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7e574de6-4e7d-43b2-ba6f-2fca97f14ee3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "689f8f21-c039-43c6-b94b-38252eb35422")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/b4520ba6-0f18-46b6-8b43-44b29d3eb607")
 		(sheetname "/XLR input 1/")
@@ -43367,6 +49893,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04d5e762-8d05-4587-bda4-2fdccc7420b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "af81b579-6fe9-4a1e-be83-755561bd5967")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c97d4c04-7dd1-4b9d-a3d2-7df7b434e6da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "264ad452-a13f-4575-b54d-23fd10f8b677")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/b0f2da11-13c7-4314-8470-ff6d99797a55/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/XLR input 1/")
@@ -43575,6 +50153,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "96957f6f-0ee9-4fcc-883d-97775daac773")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "01cb077d-482d-47b5-afe8-b8a1ffb34ff8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b903c7b1-1dfd-4b28-968a-f26926da58a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c6540193-6fb4-4cdc-b69b-b51f4a2fb7c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d85e600-2665-4bdc-9760-9a686f4f6b67")
 			(effects
 				(font
 					(size 1 1)
@@ -43807,6 +50437,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f95fd62-b9a0-4a42-b04a-1b1f78ff1fa7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c743dfbb-cd1d-4672-bf3b-1cf454b7b6af")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cbd33b35-b0f8-4930-bdb6-a3846c362a87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b500dd31-bf52-4c10-bc05-65d1972b24fa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/097a9169-4c38-469f-9781-f7b41362eedc")
 		(sheetname "/Power/")
@@ -44025,6 +50707,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "11cde403-0694-471a-9024-abb2e487e3ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "508d4669-dfb3-4fb9-8fef-62a918c3111a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "93720115-9a13-4df1-a0ab-2f77d1e6bc82")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c48e2150-ba4a-4c5d-96a4-d630869a7c6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14e5befb-b263-4f27-b911-99e76dee13b0")
 			(effects
 				(font
 					(size 1 1)
@@ -44257,6 +50991,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4915bb5f-1902-411a-a37c-dddfe54608b5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b727aeac-6edf-46c8-b626-9c69177f2685")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d878709a-74b3-4b6d-b42c-fdde37df8e6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0cd606ab-54eb-4a71-beb3-6e5f420c4bda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/db710fd4-a76f-40d1-9e38-3646f8e65e26")
 		(sheetname "/Power/")
@@ -44462,6 +51248,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "830a4c41-81c1-41f0-abc5-9eaeb4e9efbd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f7ca400c-be64-4446-9bf6-d662e9abc3cf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "40a83beb-db7f-4a73-ba8c-efeb9310c35d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dcb0ffc8-b38e-40bb-bfee-53f04789f2f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8925e0a3-8e7f-41f2-b82a-2f368e508264")
 			(effects
 				(font
 					(size 1 1)
@@ -45827,6 +52665,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "361791ed-31d9-41f4-a949-4f6b3132e278")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f1a5ff8-97c4-4a05-9044-fe1245887494")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db32e52f-2a24-4534-8d08-0750dafb9766")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "947e7e32-6460-4460-8d38-58eef65917e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/b63bb4af-e1a5-41a0-a9ec-29533b240981")
 		(sheetname "/XLR input 2/")
@@ -46032,6 +52922,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b4a314b8-f9fd-4f1e-adae-b5abcd113d2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96f3bfe3-bed8-4dee-9bcb-5ad39a3e5cc7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ccd7b95-2bb1-4856-a794-a1de3f49375b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ad9e2fea-63f0-42c9-898b-e2c842571e3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9ddc6325-e549-43cd-aeeb-2ba942689680")
 			(effects
 				(font
 					(size 1 1)
@@ -46264,6 +53206,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "429f0010-e345-472c-a650-f1b7dc993980")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c69a580a-ba33-4060-a7c7-8381b3863f3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ba761e1-f596-4770-9ca6-ae28713678ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c3dea51-4660-47e9-ac71-5ee81f4c29be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c20e00b3-a078-47c9-844e-cc3fff4643af/49ed7ca0-b259-43ea-aa75-19e3ebd587fd")
 		(sheetname "/DAC 2/")
@@ -46482,6 +53476,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f0787747-c194-47b1-913f-b78bed47dea3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26842521-c3f2-40d3-9819-d6318c85d0a9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b6373cec-a76c-43ef-88bc-be2ec15600a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab0b713d-ba13-4900-9cc0-e9c9a70b7224")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18c9f569-fe90-4a05-849a-2dbe3e440ead")
 			(effects
 				(font
 					(size 1 1)
@@ -46714,6 +53760,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "018fe877-662f-45bc-83ae-a7a9a62d1cb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7cf47dd0-d72a-422d-ad5f-7936d5ed6aae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53bf5b8f-0826-483e-87f7-cc481b49c2c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2743f948-4746-4132-9bf9-19dc5c289df2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/e1e60a2c-8833-44d5-b3ff-226217ebf6de")
 		(sheetname "/Power/")
@@ -46932,6 +54030,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0d2f8112-eead-4cba-8f6a-cbfe74c5f6e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9c731b3a-ecf9-470a-a05c-d32938955999")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9421bbf-3619-4d8e-aaa1-e1e4dec45aa6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e5d12e2-6f5c-4874-a0ff-3737ebf0336e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1889a3d1-8abf-4ff7-b3b1-f0c428b49ed5")
 			(effects
 				(font
 					(size 1 1)
@@ -47190,6 +54340,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "984d708e-36e2-4f51-9f62-da89b13050ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "befca668-7b65-4fb0-99d1-55ece1ca90ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cec89da-dce3-4de7-90c5-4d9a1b0bf9ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca51bbf1-8547-44f9-b6a9-ff025b309fda")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/c5428037-ab84-4b42-99f1-a5052e01221c")
 		(sheetname "/")
@@ -47415,6 +54617,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "874c656d-4540-406d-87f0-23db5667d78e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d93a3ba-d2fa-4725-adee-65f7f63e2c56")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cd5b1f8e-330c-4e8d-ae4b-04a55f153080")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "84a5ce05-63fd-4b01-a5c1-719e863ba2b3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4b4e226-c2a2-4edc-87fb-3e533fe789a5/2a576ae1-df99-4554-ada7-14c027c3c05d")
 		(sheetname "/DAC 1/")
@@ -47620,6 +54874,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "70eea4f1-de11-4000-bfc5-d3b3428b0082")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b6aec5e-b7fe-4c09-9790-3f2702944934")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "da495d85-7af7-4231-9024-9d318e40f731")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cdc6b35f-fab3-4aed-81b6-aa8bdfe31bb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b51ca1b-db36-4462-92a6-1c2d478b5391")
 			(effects
 				(font
 					(size 1 1)
@@ -47839,6 +55145,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b560c3ca-2a4e-4f38-b6a3-cf233188b307")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "810c4eee-772a-4390-9368-ec4c1fff94f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d5b3e04-5257-4b7a-8e1b-05de4305d17d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9955d48-9918-4ed1-89d1-b7742c49eb4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/f61319fa-7c7c-4923-baf7-ddc2208dd523/8208dd37-b272-4a29-9978-ded5260583f6")
 		(sheetname "/ADC/")
@@ -48044,6 +55402,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e8c68110-95bd-4938-8ef5-b2f43af86fee")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9dff2fc4-950a-4992-bcac-dd02d239b35a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c7dc452-9531-4645-ae1e-f14f8ddcca41")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fc3e4a13-8890-40b7-aad4-35c0a4602b5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edb3041b-8191-4988-b94d-b05b89bdfde5")
 			(effects
 				(font
 					(size 1 1)
@@ -49422,6 +56832,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7264be42-85b4-4065-815f-7985cfd3e460")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7168ed01-5a61-480d-b523-dafbec59eaba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2e8e101-be1d-4015-bfe8-d83dd4c22d8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0ff5d32f-556b-4355-b56b-ae0708adc879")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/e4b4e226-c2a2-4edc-87fb-3e533fe789a5/73129747-3a06-4aae-bfbc-c08aea00fbd3")
 		(sheetname "/DAC 1/")
@@ -49673,6 +57135,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1494f4b3-7f48-49cf-b924-3a7c8c40696e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e4236ab3-df67-4be2-b372-5b75ebba5637")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c37972a7-3f7a-4776-86de-7aa7c602abd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "152fea06-bdd4-4aff-b4ef-77d8f8b49639")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/0c93d476-2494-4eb0-84ea-5def20625e3a")
 		(sheetname "/")
@@ -49878,6 +57392,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ab3d9726-063b-4300-a80c-6cce275acf85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b09ed950-0671-4286-b43f-fcc31a3985da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "05b406cd-d743-4c68-bdfa-38270051d2a0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1839ebb2-158c-44a3-aa68-95572e4a62ab")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0f3808f-5bec-4b95-ae56-1262d59f8c60")
 			(effects
 				(font
 					(size 1 1)
@@ -50097,6 +57663,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8beaa7f6-a0a8-497e-9968-3bffb68cd0e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cb3efd8-292c-49c0-bcd7-b394e47d2137")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b4869bb6-3a6a-4b2e-9ed5-d5fa65a47bca")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2c153e0-6fca-429b-8453-9f131982aa49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/9da6743b-2976-4297-92eb-95273442704e")
 		(sheetname "/Power/")
@@ -50298,6 +57916,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a9a32a7a-eaf5-4203-b20a-8f9ccd868024")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03476137-18bd-4b72-b8b6-810123f4021f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c218411-05e1-43fa-a6a5-bfaba44b9fd2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "877a93ea-7d62-4d8f-b52e-bb4456e2bd7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/f738e820-508c-4096-8862-b242cfab54cc")
 		(sheetname "/")
@@ -50358,7 +58028,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "6abf5120-4039-42aa-9ace-718df46f1010")
 		)
 		(pad "1" thru_hole circle
 			(at -1.697056 1.697056)
@@ -50370,7 +58040,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "4fd582b5-b055-4b82-967b-7165c0337900")
 		)
 		(pad "1" thru_hole circle
 			(at 0 -2.4)
@@ -50382,7 +58052,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "20fb9db0-85b5-473f-9239-77d32ef4da5a")
 		)
 		(pad "1" thru_hole circle
 			(at 0 0)
@@ -50394,7 +58064,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "6a68af7e-1941-481c-8e9f-cd7f188ec32c")
 		)
 		(pad "1" thru_hole circle
 			(at 0 2.4)
@@ -50406,7 +58076,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "40be02e1-d26b-4585-9765-37d73e1427b8")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 -1.697056)
@@ -50418,7 +58088,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "d5162503-7236-4056-9bea-1945a9e6d273")
 		)
 		(pad "1" thru_hole circle
 			(at 1.697056 1.697056)
@@ -50430,7 +58100,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "044185f6-8948-4347-8bad-4d55d28ca837")
 		)
 		(pad "1" thru_hole circle
 			(at 2.4 0)
@@ -50442,7 +58112,7 @@
 			(pinfunction "1")
 			(pintype "input")
 			(zone_connect 2)
-			(uuid "a125132e-aee6-4581-878b-ec370713a9c1")
+			(uuid "8b6ca007-d706-42d4-b8f2-126ea9402912")
 		)
 		(embedded_fonts no)
 	)
@@ -50504,6 +58174,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "fc44ec1d-1cb2-4d9a-b5f0-af60381bebc8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b88df7e6-1084-43ff-9c7c-2c045f1f18b9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a2d8ed6-28aa-4826-aeae-6616d45aef2d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "82011480-c504-4fc5-9edd-84ee530cfc21")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e956816f-e395-4335-a3ee-71fb5bf52744")
 			(effects
 				(font
 					(size 1 1)
@@ -50736,6 +58458,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "622edbc6-56bf-4ab2-8fc0-3c8a8bb3ab3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8743e57-cd37-4388-bdfc-5267b79e595e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c3d91400-c268-4846-a018-d57d92bf4795")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76ae3503-1d87-4f27-b83c-9fece182cd3e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/6fface61-37d0-4573-be63-1a6a78d62481")
 		(sheetname "/XLR input 2/")
@@ -50956,6 +58730,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0c383cd2-ad80-4fd9-8d43-c99cb224de47")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1e387b32-9cd8-4cce-b525-cdb92fe11790")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "971f4762-87c6-4877-b4e0-02cfcf233596")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b7200cf-eecf-4a56-9a6e-1b518bf2b76f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f4f65485-e3cb-46b3-9ad0-5c1d700f5021")
 			(effects
 				(font
 					(size 1 1)
@@ -51321,6 +59147,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f601c425-5e9e-4db9-b43d-31ae78bc52c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "df09a8bb-3699-428a-8183-36cf81c32f39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "834f4ab3-2950-4503-8f3a-473c4fdfb9e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b8283ba-5736-4245-bf76-5527163e90c3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/91e2e940-fc71-4db8-9476-c8ec62bf0617/5fab3f54-0e2d-4883-afbe-55926f1c6c40")
 		(sheetname "/XLR input 2/")
@@ -51559,6 +59437,58 @@
 				)
 			)
 		)
+		(property "Purpose Pin10" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "51eb2664-01e0-4ff0-9159-e1e6c6b28041")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5a97094-286f-4032-a66b-24ca50f98775")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21d91b94-ded7-4ee7-9998-1818229bcc39")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a1de55c-4b1e-4734-ba90-8edb0f9649d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/be544464-1738-4ff3-b0f1-e539b7c0900f")
 		(sheetname "/")
 		(sheetfile "audio_board.kicad_sch")
@@ -51627,7 +59557,7 @@
 			(net 68 "+3.3V")
 			(pinfunction "3v3")
 			(pintype "power_in")
-			(uuid "052b5e2d-6d66-4a6b-87fe-b421b695c490")
+			(uuid "b34552d1-063c-4e3a-b2a3-23ffd331ae1c")
 		)
 		(pad "4" thru_hole circle
 			(at -7.62 5.08 90)
@@ -52078,7 +60008,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "9e3f87b7-500d-446c-aa95-950aaa07c0f1")
+			(uuid "e3cd53fb-358b-4302-a9fb-4546d5c5b1e5")
 		)
 		(pad "G" thru_hole circle
 			(at 7.62 27.94 90)
@@ -52089,7 +60019,7 @@
 			(net 1 "GND")
 			(pinfunction "GND")
 			(pintype "power_in")
-			(uuid "9e3f87b7-500d-446c-aa95-950aaa07c0f1")
+			(uuid "6db4863f-02f4-4cad-9a7c-67bc6042e34a")
 		)
 		(embedded_fonts no)
 	)
@@ -52151,6 +60081,58 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1c5cf861-ca5f-4bc4-a285-2d48809e52fc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0b9b2685-d399-44ad-93ca-5f98e25162f6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8507fbeb-25fb-499d-b29a-46a37f04eb35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ca2e98ed-d6e6-4805-b0cd-c61a81e1dcb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3778fe3-b7cc-4d4c-a954-a680a1e0ba9f")
 			(effects
 				(font
 					(size 1 1)
@@ -55270,6 +63252,15 @@
 		(uuid "61981906-c590-492b-a899-04efca2eddba")
 	)
 	(via
+		(at 171.1325 99.3775)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(free yes)
+		(net 1)
+		(uuid "62e3bb48-fa34-4536-aefe-a05d707e8987")
+	)
+	(via
 		(at 99.5 103.25)
 		(size 0.6)
 		(drill 0.3)
@@ -57945,28 +65936,28 @@
 		(uuid "2d59d5e3-99ba-4c11-9368-dc8db7f3fd77")
 	)
 	(segment
+		(start 172.085 98.425)
+		(end 174.66 101)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 16)
+		(uuid "05795bb0-49b3-4bf2-84a0-e0223100d17a")
+	)
+	(segment
 		(start 190.5 101)
 		(end 210.25 120.75)
 		(width 0.25)
 		(layer "B.Cu")
 		(net 16)
-		(uuid "10daac96-a5cf-4df6-bd1d-70695a342510")
-	)
-	(segment
-		(start 171.425 98.425)
-		(end 174 101)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 16)
-		(uuid "177e0a2e-f299-472d-9ee9-abbc1ecafcf4")
+		(uuid "10c7be9a-126d-4079-8061-7a36b3f5f923")
 	)
 	(segment
 		(start 153.67 98.425)
-		(end 171.425 98.425)
+		(end 172.085 98.425)
 		(width 0.25)
 		(layer "B.Cu")
 		(net 16)
-		(uuid "3a17edd1-d281-481d-bb62-69380226e729")
+		(uuid "68106395-4660-4aad-9700-88f435d10623")
 	)
 	(segment
 		(start 210.25 120.75)
@@ -57974,15 +65965,15 @@
 		(width 0.25)
 		(layer "B.Cu")
 		(net 16)
-		(uuid "563943a1-be2a-4a56-8059-61cd6c807286")
+		(uuid "ca417a1b-a816-44ab-a3b0-a2a23e7abafa")
 	)
 	(segment
-		(start 174 101)
+		(start 174.66 101)
 		(end 190.5 101)
 		(width 0.25)
 		(layer "B.Cu")
 		(net 16)
-		(uuid "852c56be-8bce-4182-9e07-c72c139db26d")
+		(uuid "f50b5228-b8f8-4c80-b26b-dbcf0f2a420b")
 	)
 	(segment
 		(start 80.9425 111.38)
@@ -63951,20 +71942,12 @@
 		(uuid "fed86d1f-fdee-4b38-8123-4ffda7fecd52")
 	)
 	(segment
-		(start 129 102.788)
+		(start 129 102.5655)
 		(end 129 102.5525)
 		(width 0.25)
 		(layer "B.Cu")
 		(net 126)
-		(uuid "322cae73-835f-4a2e-9bc5-ac8bc816404c")
-	)
-	(segment
-		(start 129.082 102.87)
-		(end 129 102.788)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 126)
-		(uuid "85bb6f3a-84b8-4bf4-8735-a388dec06974")
+		(uuid "1a6f62c3-3174-4f7c-bd0e-5be4cf9b82cd")
 	)
 	(segment
 		(start 157.81075 102.88325)
@@ -63972,15 +71955,7 @@
 		(width 0.25)
 		(layer "B.Cu")
 		(net 126)
-		(uuid "a900171d-496c-4870-a6ac-59c0d752b69b")
-	)
-	(segment
-		(start 156.37 102.87)
-		(end 129.082 102.87)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 126)
-		(uuid "aa4b4637-c5de-481f-8993-d21b3c160912")
+		(uuid "8675abe3-b6eb-4efb-8e43-ec086904138b")
 	)
 	(segment
 		(start 156.38325 102.88325)
@@ -63988,7 +71963,23 @@
 		(width 0.25)
 		(layer "B.Cu")
 		(net 126)
-		(uuid "c4faedb9-58b6-4c29-8fa9-952a8e4d51a1")
+		(uuid "8fcb7ed2-f91f-4d6a-b798-bb21ce6fe805")
+	)
+	(segment
+		(start 156.37 102.87)
+		(end 129.3045 102.87)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 126)
+		(uuid "9fc8c9e5-bc55-4724-953c-c5c8de46c756")
+	)
+	(segment
+		(start 129.3045 102.87)
+		(end 129 102.5655)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 126)
+		(uuid "cfc34eeb-c304-4952-a709-c35b9aaf038a")
 	)
 	(segment
 		(start 169.71 93.5)
