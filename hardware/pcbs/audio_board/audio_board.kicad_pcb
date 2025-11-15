@@ -52905,7 +52905,7 @@
 		(layer "User.6")
 		(uuid "fde60aba-009f-46b4-9168-cdc748e4c052")
 	)
-	(gr_text "FOSDEM Audio Interface rev. D"
+	(gr_text "FOSDEM Audio Interface rev. E"
 		(at 220 123.5 90)
 		(layer "F.SilkS")
 		(uuid "c552a0e3-5b1f-45a8-8548-8a99915e2453")
