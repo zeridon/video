@@ -6,7 +6,7 @@ executors:
     - image: cimg/go:1.23
   debian:
     docker:
-    - image: archlinux:latest
+    - image: archlinux:base-20250309.0.318843
   ruby:
     docker:
     - image: cimg/ruby:3.4
