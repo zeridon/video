@@ -291,6 +291,7 @@
 	(net 127 "Net-(J2-Pin_5)")
 	(net 128 "Net-(J9-PadT)")
 	(net 129 "Net-(J9-PadR)")
+	(net 130 "Net-(R15-Pad1)")
 	(footprint "Capacitor_SMD:C_0805_2012Metric"
 		(layer "F.Cu")
 		(uuid "02df6104-544f-4830-a808-2be563d1cd4a")
@@ -877,7 +878,7 @@
 		(at 80.95 112.3 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R17"
+		(property "Reference" "R18"
 			(at 1.822159 0.56694 180)
 			(layer "F.SilkS")
 			(uuid "46ae73a9-f7f3-4a51-8f81-de92e125111f")
@@ -1418,7 +1419,7 @@
 		(at 128.675 129 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R34"
+		(property "Reference" "R35"
 			(at 1.424288 -1.240589 270)
 			(layer "F.SilkS")
 			(uuid "925030b9-8513-466c-b4db-2471ec5197ba")
@@ -3559,7 +3560,7 @@
 		(at 197.675 127.325 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R47"
+		(property "Reference" "R48"
 			(at 1.825 0.075 180)
 			(layer "F.SilkS")
 			(uuid "2bc4cc4b-5e1c-4906-83c2-98de910c45f5")
@@ -4390,7 +4391,7 @@
 		(at 171.75 127.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at -2.070586 -0.007446 180)
 			(layer "F.SilkS")
 			(uuid "faa80c63-3946-4d20-adc5-d29885cd0d2c")
@@ -5432,7 +5433,7 @@
 		(at 136.175 126.175)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R36"
+		(property "Reference" "R37"
 			(at -0.671937 -1.240212 0)
 			(layer "F.SilkS")
 			(uuid "6147140c-b736-47ed-954e-3b906ad2cbfc")
@@ -6600,7 +6601,7 @@
 		(at 186.69 104.4575 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R56"
+		(property "Reference" "R57"
 			(at 1.9575 0.06 180)
 			(layer "F.SilkS")
 			(uuid "83d922e6-d21f-4e21-bf14-c5dfa4b53f48")
@@ -9170,7 +9171,7 @@
 		(at 173.75 127.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R26"
+		(property "Reference" "R27"
 			(at 1.948059 -0.03714 180)
 			(layer "F.SilkS")
 			(uuid "34244f44-3e9e-4bda-bcd1-67779bab9e42")
@@ -10037,7 +10038,7 @@
 		(at 192.85 126.25 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R49"
+		(property "Reference" "R50"
 			(at 1.818745 -0.028246 270)
 			(layer "F.SilkS")
 			(uuid "e1ecf672-0207-49aa-b3f1-b6c9500bc8eb")
@@ -10301,7 +10302,7 @@
 		(at 151.425 135.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R18"
+		(property "Reference" "R19"
 			(at -0.866169 -1.241031 90)
 			(layer "F.SilkS")
 			(uuid "aa503605-70ea-4b58-a4c5-d25afbd1dad3")
@@ -10565,7 +10566,7 @@
 		(at 194.5 118.25 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R53"
+		(property "Reference" "R54"
 			(at -2 0 270)
 			(layer "F.SilkS")
 			(uuid "0d0c6513-a804-4a1b-bf48-e5172681cde5")
@@ -10829,8 +10830,8 @@
 		(at 84.25 111.7)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R16"
-			(at 0.207139 1.540347 0)
+		(property "Reference" "R17"
+			(at -0.627696 1.410594 180)
 			(layer "F.SilkS")
 			(uuid "339350d1-7000-4807-9fce-8ede0e3f9542")
 			(effects
@@ -11385,13 +11386,14 @@
 		(descr "TRS 3.5mm, horizontal, through-hole, , circular holeshttps://www.cui.com/product/resource/sj1-353xng.pdf")
 		(tags "TRS audio jack stereo horizontal circular")
 		(property "Reference" "J4"
-			(at 0.1 -6.45 180)
+			(at 5.249999 9.505984 270)
 			(layer "F.SilkS")
 			(uuid "6ccccb14-421b-43fc-a11e-46f1e45eb0f2")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.7 0.7)
+					(thickness 0.13)
+					(bold yes)
 				)
 			)
 		)
@@ -11726,7 +11728,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R15"
-			(at 0.1 1.3 0)
+			(at 0.985316 1.341449 0)
 			(layer "F.SilkS")
 			(uuid "0cab74f4-a528-404a-b546-39c321f0e560")
 			(effects
@@ -11970,7 +11972,7 @@
 			(size 1.025 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.243902)
-			(net 83 "Net-(U3-FB)")
+			(net 130 "Net-(R15-Pad1)")
 			(pintype "passive")
 			(uuid "21f7f1b7-c91a-4611-827f-1ad93c7a899d")
 		)
@@ -12986,7 +12988,7 @@
 		(at 183.85 127.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R45"
+		(property "Reference" "R46"
 			(at 0.934895 -1.270814 90)
 			(layer "F.SilkS")
 			(uuid "5d6f420d-5df0-4d73-a713-7f5801030e18")
@@ -13230,6 +13232,271 @@
 			(net 74 "Net-(L9-Pad2)")
 			(pintype "passive")
 			(uuid "1c4a40b4-f472-4455-a386-adad92d22a4c")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Resistor_SMD:R_0805_2012Metric"
+		(layer "F.Cu")
+		(uuid "400c48cb-80d8-4182-87f8-e9426c3e3fd6")
+		(at 85.939797 113.939616)
+		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+		(tags "resistor")
+		(property "Reference" "R16"
+			(at 1.433623 1.314472 0)
+			(layer "F.SilkS")
+			(uuid "b94ca03e-438a-46f1-b986-8a5e12273869")
+			(effects
+				(font
+					(size 0.7 0.7)
+					(thickness 0.13)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "3.9kΩ"
+			(at 0 1.65 0)
+			(layer "F.Fab")
+			(uuid "3ea45208-f117-4925-a948-b46d6c3baa67")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d3c7eb-d29f-40c4-bdfe-493043bf45af")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e282e169-d506-41f2-ab54-c28d547320eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "R 3.9kΩ 125mW 1% 0805"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a713925-6117-470f-b075-4f294a10b294")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin10" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "491bf413-a173-4909-b59b-9154ae03560f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin11" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d916aed-5e7c-4828-a006-39459a25eeb7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin12" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "58bbaf5f-0784-40b8-b88c-f5fdc9556ee3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purpose Pin9" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a77858d3-ff00-4308-9fc6-3187f594e684")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/23b45e70-9f0d-43c3-ad82-81d9481de3a2/98c1602b-1d2a-481e-9ac3-36bf0cd45628")
+		(sheetname "/Power/")
+		(sheetfile "power.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -0.227064 -0.735)
+			(end 0.227064 -0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0c3df1c9-5fa4-4574-af5b-08f1f75e18f9")
+		)
+		(fp_line
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "79da2da4-4d60-4be7-80e0-b16b4417c571")
+		)
+		(fp_line
+			(start -1.68 -0.95)
+			(end 1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "51c7ca04-7688-4cce-a19c-85cf6ac9618c")
+		)
+		(fp_line
+			(start -1.68 0.95)
+			(end -1.68 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "217f5687-0fd1-4f3a-a8c5-1875d3398fde")
+		)
+		(fp_line
+			(start 1.68 -0.95)
+			(end 1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "03619c46-1c26-494b-abea-3f94b275b29b")
+		)
+		(fp_line
+			(start 1.68 0.95)
+			(end -1.68 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a9826bc5-f792-49e0-914e-3e2540ec6c78")
+		)
+		(fp_line
+			(start -1 -0.625)
+			(end 1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8005ef04-d74b-4d4d-819c-f50140bad570")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5647d68a-7f50-487f-bb16-2f0099579d02")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "49623961-01b5-42d4-96cb-85bab628f425")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7ee5bba8-cf00-4bc9-986d-10fee2df8734")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "ed640311-4aa8-41cd-b906-ff71c86ac975")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.08)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.9125 0)
+			(size 1.025 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.243902)
+			(net 83 "Net-(U3-FB)")
+			(pintype "passive")
+			(uuid "c5e6cc25-7390-4275-98b3-21117d18b3d5")
+		)
+		(pad "2" smd roundrect
+			(at 0.9125 0)
+			(size 1.025 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.243902)
+			(net 130 "Net-(R15-Pad1)")
+			(pintype "passive")
+			(uuid "42211c5e-4715-439a-bb2d-6d17c35d3dad")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
@@ -16349,7 +16616,7 @@
 		(at 161.6 118.425 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R28"
+		(property "Reference" "R29"
 			(at 0.040613 1.316411 180)
 			(layer "F.SilkS")
 			(uuid "b7e89f9a-a289-4a1c-bad6-6870c673a9ef")
@@ -16613,7 +16880,7 @@
 		(at 151.925 132.425)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R19"
+		(property "Reference" "R20"
 			(at -1.925 0.075 90)
 			(layer "F.SilkS")
 			(uuid "6a9be7e1-df3e-4e19-9ca0-028a14cca894")
@@ -17154,7 +17421,7 @@
 		(at 141.575 118.175 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R41"
+		(property "Reference" "R42"
 			(at -1.425 1.175 180)
 			(layer "F.SilkS")
 			(uuid "11e8ef68-a54c-43f0-9709-775d410f5456")
@@ -17418,7 +17685,7 @@
 		(at 138 124.175)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R39"
+		(property "Reference" "R40"
 			(at 1.910806 0.130495 90)
 			(layer "F.SilkS")
 			(uuid "69ee5546-842c-4e9c-be2f-0f9dab80eb23")
@@ -19082,7 +19349,7 @@
 		(at 177.35 135.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R42"
+		(property "Reference" "R43"
 			(at 0 -1.65 90)
 			(layer "F.SilkS")
 			(uuid "fbb55acf-769c-4bb7-8dca-fb910e3345f5")
@@ -19346,7 +19613,7 @@
 		(at 184.15 104.4575 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R57"
+		(property "Reference" "R58"
 			(at -1.9575 -0.1 180)
 			(layer "F.SilkS")
 			(uuid "16340952-d697-4f0d-9193-55b7c0829057")
@@ -20403,7 +20670,7 @@
 		(at 157.925 127.175 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R21"
+		(property "Reference" "R22"
 			(at 1.925 -0.175 180)
 			(layer "F.SilkS")
 			(uuid "9f20d2bf-72be-4ae8-8cca-9cdd7158da9e")
@@ -21255,7 +21522,7 @@
 		(at 181.571453 132.614203 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R44"
+		(property "Reference" "R45"
 			(at 0 -1.65 270)
 			(layer "F.SilkS")
 			(uuid "470e89ab-bc32-441f-84c7-a24fa19e8435")
@@ -21266,7 +21533,7 @@
 				)
 			)
 		)
-		(property "Value" "100Ω"
+		(property "Value" "100kΩ"
 			(at 0 1.65 270)
 			(layer "F.Fab")
 			(uuid "9c5de894-dec8-47fb-b2f4-e0a6e392b946")
@@ -21301,7 +21568,7 @@
 				)
 			)
 		)
-		(property "MPN" "R 100Ω 125mW 1% 0805"
+		(property "MPN" "R 100kΩ 125mW 1% 0805"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21519,7 +21786,7 @@
 		(at 189.1 126.25)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R48"
+		(property "Reference" "R49"
 			(at -0.6 -1.25 0)
 			(layer "F.SilkS")
 			(uuid "11b86c24-3e06-439b-89f9-d585651feb8c")
@@ -24855,7 +25122,7 @@
 		(at 163.175 126.175)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R24"
+		(property "Reference" "R25"
 			(at -0.718246 -1.263218 0)
 			(layer "F.SilkS")
 			(uuid "466554a2-27be-43cf-897c-2c53454b1e5f")
@@ -27160,7 +27427,7 @@
 		(at 193.04 97.79 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R54"
+		(property "Reference" "R55"
 			(at -1.96 0.04 270)
 			(layer "F.SilkS")
 			(uuid "9ed34c23-bb97-4490-8a83-a1abf36efae5")
@@ -27463,7 +27730,7 @@
 		(at 155.675 132.5 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 0 -1.325 270)
 			(layer "F.SilkS")
 			(uuid "bc7f8aba-0c7b-4519-944a-12b574a665c6")
@@ -27474,7 +27741,7 @@
 				)
 			)
 		)
-		(property "Value" "100Ω"
+		(property "Value" "100kΩ"
 			(at 0 1.65 270)
 			(layer "F.Fab")
 			(uuid "99baee75-3860-4d3f-bbff-4be3701f9303")
@@ -27509,7 +27776,7 @@
 				)
 			)
 		)
-		(property "MPN" "R 100Ω 125mW 1% 0805"
+		(property "MPN" "R 100kΩ 125mW 1% 0805"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29137,7 +29404,7 @@
 		(at 165 124.175)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R27"
+		(property "Reference" "R28"
 			(at 1.904574 0.093018 270)
 			(layer "F.SilkS")
 			(uuid "22cc92dc-dc38-4c9d-8eab-40db3924f05c")
@@ -30534,7 +30801,7 @@
 		(at 134.6 118.425 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R40"
+		(property "Reference" "R41"
 			(at 0.044615 1.289472 180)
 			(layer "F.SilkS")
 			(uuid "cc146f7b-50c4-4bbd-809f-9f0ae4891f33")
@@ -31675,7 +31942,7 @@
 		(at 193.04 100.04 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R55"
+		(property "Reference" "R56"
 			(at -1.96 0.04 270)
 			(layer "F.SilkS")
 			(uuid "45e0faae-0afe-420b-88f6-467d776eb122")
@@ -33389,7 +33656,7 @@
 		(at 146.75 127.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R38"
+		(property "Reference" "R39"
 			(at 1.960312 0.293898 180)
 			(layer "F.SilkS")
 			(uuid "1cabac2a-9468-40f1-9608-72009a8a66eb")
@@ -34848,7 +35115,7 @@
 		(at 187.525 118.5 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R52"
+		(property "Reference" "R53"
 			(at 0.025 1.25 180)
 			(layer "F.SilkS")
 			(uuid "5456fd7f-8d85-4764-ba67-8b5063d4ca60")
@@ -37928,7 +38195,7 @@
 		(at 124.25 135.160184 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R30"
+		(property "Reference" "R31"
 			(at -0.176016 -1.358315 90)
 			(layer "F.SilkS")
 			(uuid "d1835abb-e376-49a0-9a7b-ed5efea6c4fb")
@@ -45135,7 +45402,7 @@
 		(at 128.675 132.5 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R32"
+		(property "Reference" "R33"
 			(at -0.080935 -1.370362 270)
 			(layer "F.SilkS")
 			(uuid "f8f84f48-a3a6-4549-ac93-03c2879863be")
@@ -45146,7 +45413,7 @@
 				)
 			)
 		)
-		(property "Value" "100Ω"
+		(property "Value" "100kΩ"
 			(at 0 1.65 270)
 			(layer "F.Fab")
 			(uuid "9565d4cd-2437-48e8-bf7b-95aebd35dd34")
@@ -45181,7 +45448,7 @@
 				)
 			)
 		)
-		(property "MPN" "R 100Ω 125mW 1% 0805"
+		(property "MPN" "R 100kΩ 125mW 1% 0805"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46331,7 +46598,7 @@
 		(at 181.6 129.075 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R46"
+		(property "Reference" "R47"
 			(at -0.925 1.4 90)
 			(layer "F.SilkS")
 			(uuid "24bb4394-c93e-486e-afc9-0c5adc9f8761")
@@ -46596,13 +46863,14 @@
 		(descr "TRS 3.5mm, horizontal, through-hole, , circular holeshttps://www.cui.com/product/resource/sj1-353xng.pdf")
 		(tags "TRS audio jack stereo horizontal circular")
 		(property "Reference" "J9"
-			(at 0.099999 -6.45 150)
+			(at -5.019633 0.610741 240)
 			(layer "F.SilkS")
 			(uuid "2df1ea05-2896-4a7c-b1f3-bd697a7dc612")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.7 0.7)
+					(thickness 0.13)
+					(bold yes)
 				)
 			)
 		)
@@ -48197,7 +48465,7 @@
 		(at 130.925 127.175 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R33"
+		(property "Reference" "R34"
 			(at 0.921789 -1.263907 90)
 			(layer "F.SilkS")
 			(uuid "6877523d-c338-45d0-80d9-222edefeccd4")
@@ -49537,7 +49805,7 @@
 			)
 		)
 		(fp_text user "${Purpose}"
-			(at 0 10.25 90)
+			(at 0.295074 10.303904 90)
 			(layer "F.SilkS")
 			(uuid "4a6a5a7f-e209-4d49-9e27-35b720500b7d")
 			(effects
@@ -50346,7 +50614,7 @@
 		(at 155.675 129 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R22"
+		(property "Reference" "R23"
 			(at -0.75 1.325 90)
 			(layer "F.SilkS")
 			(uuid "ac91f55c-9cfe-43c0-ba98-590390cd81ac")
@@ -50887,7 +51155,7 @@
 		(at 139.925 126.175 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R37"
+		(property "Reference" "R38"
 			(at 1.827135 -0.051199 270)
 			(layer "F.SilkS")
 			(uuid "aff36c83-7bc3-42cd-9c1b-fe2054748d5b")
@@ -51415,7 +51683,7 @@
 		(at 177.85 132.5)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R43"
+		(property "Reference" "R44"
 			(at -1.85 0 90)
 			(layer "F.SilkS")
 			(uuid "3ecc6274-b643-4a19-8b63-615194da0df5")
@@ -52040,7 +52308,7 @@
 		(at 168.575 118.175 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R29"
+		(property "Reference" "R30"
 			(at 0.013028 1.247695 180)
 			(layer "F.SilkS")
 			(uuid "48a51d24-964e-4d36-9bf9-3b20f4a0f2aa")
@@ -55089,7 +55357,7 @@
 		(at 124.925 132.425)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R31"
+		(property "Reference" "R32"
 			(at -1.925 0.075 90)
 			(layer "F.SilkS")
 			(uuid "8331beb6-1f03-4ec4-9438-40903ba3ed26")
@@ -55353,7 +55621,7 @@
 		(at 144.75 127.25 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R35"
+		(property "Reference" "R36"
 			(at 1.920878 0.05934 180)
 			(layer "F.SilkS")
 			(uuid "54160e6d-7c69-4405-af7c-8425846dad37")
@@ -57305,7 +57573,7 @@
 		(at 190.925 124.25)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R51"
+		(property "Reference" "R52"
 			(at 1.943437 0.13493 90)
 			(layer "F.SilkS")
 			(uuid "74cca01e-81ae-4877-9cd1-c4c24fc66d23")
@@ -59823,7 +60091,7 @@
 		(at 199.75 127.325 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R50"
+		(property "Reference" "R51"
 			(at 1.825 0.25 180)
 			(layer "F.SilkS")
 			(uuid "32a52660-aa85-4cb9-8df6-0fe207e785c4")
@@ -60605,7 +60873,7 @@
 		(at 166.925 126.175 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
-		(property "Reference" "R25"
+		(property "Reference" "R26"
 			(at 1.854176 -0.063325 270)
 			(layer "F.SilkS")
 			(uuid "8e5193e8-8a19-44e5-861e-aba0974ed3cd")
@@ -67757,7 +68025,7 @@
 		(uuid "98c52f1d-8d65-4209-97c1-dd466548f37d")
 	)
 	(via
-		(at 84.75 113.25)
+		(at 86 115.5)
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
@@ -74421,12 +74689,20 @@
 		(uuid "5a9d0781-8c77-466e-87a8-80d976da7553")
 	)
 	(segment
-		(start 86.7375 111.7)
-		(end 85.1625 111.7)
+		(start 85.1625 111.7)
+		(end 85.1625 113.804413)
 		(width 0.25)
 		(layer "F.Cu")
 		(net 83)
-		(uuid "777f68c6-45d2-4b44-b7bf-0c6263c45b54")
+		(uuid "61228081-2406-46df-8801-15e8ba19afa3")
+	)
+	(segment
+		(start 85.1625 113.804413)
+		(end 85.027297 113.939616)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 83)
+		(uuid "945046e9-e977-47f4-a237-a5f5f5e81da4")
 	)
 	(segment
 		(start 82.55 108.5)
@@ -76346,6 +76622,22 @@
 		(net 129)
 		(uuid "b13befb9-5503-44fb-951c-6f8a77f24303")
 	)
+	(segment
+		(start 86.852297 111.814797)
+		(end 86.7375 111.7)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 130)
+		(uuid "cce7bce0-aa3e-412c-af46-ccec37370b9b")
+	)
+	(segment
+		(start 86.852297 113.939616)
+		(end 86.852297 111.814797)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 130)
+		(uuid "f6930283-1f52-4d1a-83eb-bb1f6f7eed9e")
+	)
 	(zone
 		(net 85)
 		(net_name "/Power/48VREG")
@@ -76890,7 +77182,7 @@
 				(xy 186.172452 115.601463) (xy 186.205792 115.587652) (xy 186.286286 115.554312) (xy 186.337509 115.520084)
 				(xy 186.388733 115.485858) (xy 186.475858 115.398733) (xy 186.475858 115.398731) (xy 186.486066 115.388524)
 				(xy 186.486067 115.388521) (xy 187.175857 114.698734) (xy 187.177458 114.696338) (xy 187.180517 114.691762)
-				(xy 187.201491 114.660369) (xy 187.244311 114.596286) (xy 187.291463 114.482452) (xy 187.312429 114.377046)
+				(xy 187.201491 114.660369) (xy 187.244311 114.596286) (xy 187.291463 114.482452) (xy 187.302455 114.42719)
 				(xy 187.3155 114.361607) (xy 187.3155 114.238394) (xy 187.3155 108.026679) (xy 187.318001 108.014106)
 				(xy 187.318001 107.890893) (xy 187.3155 107.878319) (xy 187.3155 107.747) (xy 187.335185 107.679961)
 				(xy 187.387989 107.634206) (xy 187.4395 107.623) (xy 188.553885 107.623) (xy 188.620924 107.642685)
@@ -80349,39 +80641,54 @@
 			(pts
 				(xy 83.530539 111.719685) (xy 83.576294 111.772489) (xy 83.5875 111.824) (xy 83.5875 112.899999)
 				(xy 83.649972 112.899999) (xy 83.649986 112.899998) (xy 83.752697 112.889505) (xy 83.919119 112.834358)
-				(xy 83.919124 112.834356) (xy 84.068342 112.742317) (xy 84.161964 112.648695) (xy 84.223287 112.61521)
-				(xy 84.292979 112.620194) (xy 84.337327 112.648695) (xy 84.431344 112.742712) (xy 84.580666 112.834814)
-				(xy 84.747203 112.889999) (xy 84.849991 112.9005) (xy 85.475008 112.900499) (xy 85.475016 112.900498)
-				(xy 85.475019 112.900498) (xy 85.531302 112.894748) (xy 85.577797 112.889999) (xy 85.744334 112.834814)
-				(xy 85.884905 112.748109) (xy 85.952296 112.72967) (xy 86.015094 112.748109) (xy 86.155666 112.834814)
-				(xy 86.322203 112.889999) (xy 86.424991 112.9005) (xy 87.050008 112.900499) (xy 87.050016 112.900498)
-				(xy 87.050019 112.900498) (xy 87.106302 112.894748) (xy 87.152797 112.889999) (xy 87.319334 112.834814)
-				(xy 87.468656 112.742712) (xy 87.562319 112.649049) (xy 87.623642 112.615564) (xy 87.693334 112.620548)
-				(xy 87.737681 112.649049) (xy 87.831344 112.742712) (xy 87.980666 112.834814) (xy 88.147203 112.889999)
-				(xy 88.249991 112.9005) (xy 88.875008 112.900499) (xy 88.875016 112.900498) (xy 88.875019 112.900498)
-				(xy 88.931302 112.894748) (xy 88.977797 112.889999) (xy 89.144334 112.834814) (xy 89.293656 112.742712)
-				(xy 89.417712 112.618656) (xy 89.465093 112.541837) (xy 89.51704 112.495112) (xy 89.586002 112.483889)
-				(xy 89.59482 112.485315) (xy 89.6126 112.488852) (xy 89.671156 112.5005) (xy 89.671158 112.5005)
-				(xy 89.828844 112.5005) (xy 89.828845 112.500499) (xy 89.983497 112.469737) (xy 90.129179 112.409394)
-				(xy 90.260289 112.321789) (xy 90.273242 112.308836) (xy 90.287819 112.29426) (xy 90.349142 112.260775)
-				(xy 90.418834 112.265759) (xy 90.474767 112.307631) (xy 90.499184 112.373095) (xy 90.4995 112.381941)
-				(xy 90.4995 112.88777) (xy 90.479815 112.954809) (xy 90.463181 112.975451) (xy 87.225451 116.213181)
-				(xy 87.164128 116.246666) (xy 87.13777 116.2495) (xy 81.786077 116.2495) (xy 81.719038 116.229815)
-				(xy 81.673283 116.177011) (xy 81.663339 116.107853) (xy 81.688812 116.048587) (xy 81.692704 116.043663)
-				(xy 81.692712 116.043656) (xy 81.784814 115.894334) (xy 81.839999 115.727797) (xy 81.8505 115.625009)
-				(xy 81.850499 114.574992) (xy 81.839999 114.472203) (xy 81.784814 114.305666) (xy 81.766695 114.276291)
-				(xy 81.748255 114.208901) (xy 81.769177 114.142237) (xy 81.807136 114.105657) (xy 81.868656 114.067712)
-				(xy 81.992712 113.943656) (xy 82.084814 113.794334) (xy 82.139999 113.627797) (xy 82.1505 113.525009)
-				(xy 82.150499 112.899992) (xy 82.14758 112.87142) (xy 82.139999 112.797203) (xy 82.139998 112.7972)
-				(xy 82.121942 112.74271) (xy 82.084814 112.630666) (xy 81.992712 112.481344) (xy 81.899049 112.387681)
-				(xy 81.865564 112.326358) (xy 81.870548 112.256666) (xy 81.899049 112.212319) (xy 81.931207 112.180161)
-				(xy 81.992712 112.118656) (xy 82.084814 111.969334) (xy 82.084816 111.969326) (xy 82.087864 111.962791)
-				(xy 82.09024 111.963898) (xy 82.123033 111.916499) (xy 82.18754 111.889654) (xy 82.25632 111.901945)
-				(xy 82.307536 111.94947) (xy 82.325 112.01292) (xy 82.325 112.19997) (xy 82.325001 112.199987) (xy 82.335494 112.302697)
-				(xy 82.390641 112.469119) (xy 82.390643 112.469124) (xy 82.482684 112.618345) (xy 82.606654 112.742315)
-				(xy 82.755875 112.834356) (xy 82.75588 112.834358) (xy 82.922302 112.889505) (xy 82.922309 112.889506)
-				(xy 83.025019 112.899999) (xy 83.087499 112.899998) (xy 83.0875 112.899998) (xy 83.0875 111.824)
-				(xy 83.107185 111.756961) (xy 83.159989 111.711206) (xy 83.2115 111.7) (xy 83.4635 111.7)
+				(xy 83.919124 112.834356) (xy 84.068342 112.742317) (xy 84.161964 112.648695) (xy 84.169911 112.644355)
+				(xy 84.175336 112.637109) (xy 84.200092 112.627875) (xy 84.223287 112.61521) (xy 84.232317 112.615855)
+				(xy 84.2408 112.612692) (xy 84.26662 112.618308) (xy 84.292979 112.620194) (xy 84.302032 112.626012)
+				(xy 84.309073 112.627544) (xy 84.337327 112.648695) (xy 84.364241 112.675609) (xy 84.397726 112.736932)
+				(xy 84.392742 112.806624) (xy 84.35087 112.862557) (xy 84.341658 112.868828) (xy 84.296141 112.896903)
+				(xy 84.172086 113.020958) (xy 84.079984 113.170279) (xy 84.079982 113.170284) (xy 84.062312 113.223608)
+				(xy 84.024798 113.336819) (xy 84.024798 113.33682) (xy 84.024797 113.33682) (xy 84.014297 113.439599)
+				(xy 84.014297 114.439617) (xy 84.014298 114.439626) (xy 84.024797 114.542412) (xy 84.024798 114.542415)
+				(xy 84.068899 114.6755) (xy 84.079983 114.70895) (xy 84.172085 114.858272) (xy 84.296141 114.982328)
+				(xy 84.445463 115.07443) (xy 84.612 115.129615) (xy 84.714788 115.140116) (xy 85.339805 115.140115)
+				(xy 85.339813 115.140114) (xy 85.339816 115.140114) (xy 85.396099 115.134364) (xy 85.442594 115.129615)
+				(xy 85.609131 115.07443) (xy 85.758453 114.982328) (xy 85.852116 114.888665) (xy 85.913439 114.85518)
+				(xy 85.983131 114.860164) (xy 86.027478 114.888665) (xy 86.121141 114.982328) (xy 86.270463 115.07443)
+				(xy 86.437 115.129615) (xy 86.539788 115.140116) (xy 87.164805 115.140115) (xy 87.164813 115.140114)
+				(xy 87.164816 115.140114) (xy 87.221099 115.134364) (xy 87.267594 115.129615) (xy 87.434131 115.07443)
+				(xy 87.583453 114.982328) (xy 87.707509 114.858272) (xy 87.799611 114.70895) (xy 87.854796 114.542413)
+				(xy 87.865297 114.439625) (xy 87.865296 113.439608) (xy 87.859073 113.378693) (xy 87.854796 113.336819)
+				(xy 87.854795 113.336816) (xy 87.839359 113.290233) (xy 87.799611 113.170282) (xy 87.707509 113.02096)
+				(xy 87.583453 112.896904) (xy 87.550556 112.876613) (xy 87.535002 112.85932) (xy 87.516386 112.845384)
+				(xy 87.512077 112.833832) (xy 87.503833 112.824666) (xy 87.500097 112.801709) (xy 87.49197 112.779919)
+				(xy 87.49459 112.767873) (xy 87.49261 112.755703) (xy 87.501879 112.734369) (xy 87.506823 112.711647)
+				(xy 87.518572 112.695951) (xy 87.520454 112.691621) (xy 87.527952 112.683415) (xy 87.562322 112.649045)
+				(xy 87.623644 112.615563) (xy 87.693335 112.620549) (xy 87.737681 112.649049) (xy 87.831344 112.742712)
+				(xy 87.980666 112.834814) (xy 88.147203 112.889999) (xy 88.249991 112.9005) (xy 88.875008 112.900499)
+				(xy 88.875016 112.900498) (xy 88.875019 112.900498) (xy 88.931302 112.894748) (xy 88.977797 112.889999)
+				(xy 89.144334 112.834814) (xy 89.293656 112.742712) (xy 89.417712 112.618656) (xy 89.465093 112.541837)
+				(xy 89.51704 112.495112) (xy 89.586002 112.483889) (xy 89.59482 112.485315) (xy 89.6126 112.488852)
+				(xy 89.671156 112.5005) (xy 89.671158 112.5005) (xy 89.828844 112.5005) (xy 89.828845 112.500499)
+				(xy 89.983497 112.469737) (xy 90.129179 112.409394) (xy 90.260289 112.321789) (xy 90.273242 112.308836)
+				(xy 90.287819 112.29426) (xy 90.349142 112.260775) (xy 90.418834 112.265759) (xy 90.474767 112.307631)
+				(xy 90.499184 112.373095) (xy 90.4995 112.381941) (xy 90.4995 112.88777) (xy 90.479815 112.954809)
+				(xy 90.463181 112.975451) (xy 87.225451 116.213181) (xy 87.164128 116.246666) (xy 87.13777 116.2495)
+				(xy 81.786077 116.2495) (xy 81.719038 116.229815) (xy 81.673283 116.177011) (xy 81.663339 116.107853)
+				(xy 81.688812 116.048587) (xy 81.692704 116.043663) (xy 81.692712 116.043656) (xy 81.784814 115.894334)
+				(xy 81.839999 115.727797) (xy 81.8505 115.625009) (xy 81.850499 114.574992) (xy 81.839999 114.472203)
+				(xy 81.784814 114.305666) (xy 81.766695 114.276291) (xy 81.748255 114.208901) (xy 81.769177 114.142237)
+				(xy 81.807136 114.105657) (xy 81.868656 114.067712) (xy 81.992712 113.943656) (xy 82.084814 113.794334)
+				(xy 82.139999 113.627797) (xy 82.1505 113.525009) (xy 82.150499 112.899992) (xy 82.150183 112.896903)
+				(xy 82.139999 112.797203) (xy 82.139998 112.7972) (xy 82.126247 112.755703) (xy 82.084814 112.630666)
+				(xy 81.992712 112.481344) (xy 81.899049 112.387681) (xy 81.865564 112.326358) (xy 81.870548 112.256666)
+				(xy 81.899049 112.212319) (xy 81.931207 112.180161) (xy 81.992712 112.118656) (xy 82.084814 111.969334)
+				(xy 82.084816 111.969326) (xy 82.087864 111.962791) (xy 82.09024 111.963898) (xy 82.123033 111.916499)
+				(xy 82.18754 111.889654) (xy 82.25632 111.901945) (xy 82.307536 111.94947) (xy 82.325 112.01292)
+				(xy 82.325 112.19997) (xy 82.325001 112.199987) (xy 82.335494 112.302697) (xy 82.390641 112.469119)
+				(xy 82.390643 112.469124) (xy 82.482684 112.618345) (xy 82.606654 112.742315) (xy 82.755875 112.834356)
+				(xy 82.75588 112.834358) (xy 82.922302 112.889505) (xy 82.922309 112.889506) (xy 83.025019 112.899999)
+				(xy 83.087499 112.899998) (xy 83.0875 112.899998) (xy 83.0875 111.824) (xy 83.107185 111.756961)
+				(xy 83.159989 111.711206) (xy 83.2115 111.7) (xy 83.4635 111.7)
 			)
 		)
 		(filled_polygon
