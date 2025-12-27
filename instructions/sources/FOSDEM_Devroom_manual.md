@@ -27,10 +27,7 @@ If you have your Matrix ID in pretalx, you'll be pulled directly. If you have an
 
 ## Video mixing control
 
-At `https://control.video.fosdem.org/` you can access the video control for your room.
-
-* Username: `USERNAME`
-* Password: `PASSWORD`
+In `https://pretalx.fosdem.org` you can find the link to control the video mix. If needed, share that link with the volunteer(s) that help you.
 
 The interface is pretty self-explanatory (and usable even on a mobile phone). You can see the current output, the camera and presenter box sources, and select one of four different views that will go on the stream and be recorded:
 
