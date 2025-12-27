@@ -23,7 +23,7 @@ depend: .depend
 
 
 dm-build-timestamp: .depend makedep.sh tmpl.my FOSDEM_Devroom_manual.md plaintext pregen.sh
-	./pregen.sh
+	pandoc -f markdown -t latex --variable papersize=a4paper  --variable classoption=twocolumn  --variable columnsep=1in -V geometry:margin=2cm FOSDEM_Devroom_manual.md -o ../FOSDEM_Devroom_manual.pdf
 	touch dm-build-timestamp
 
 clean:
