@@ -8,7 +8,7 @@
 |`[ ]` Unpack tripod|
 |`[ ]` Install camera on tripod|
 |`[ ]` Reset camera according to instructions|
-|`[ ]` Install camera box & camera laptop on tripod|
+|`[ ]` Install camera box (odd number) & camera laptop on tripod|
 |`[ ]` Connect laptop to power|
 |`[ ]` Connect camera box to laptop (USB)|
 |`[ ]` Connect camera box to camera (HDMI)|
@@ -22,7 +22,7 @@
 |`[ ]` Connect chargers to the receivers|
 |`[ ]` Connect headphones to camera|
 | |
-|`[ ]` Install slides box & slides laptop where the speaker will be|
+|`[ ]` Install slides box (even number) & slides laptop where the speaker will be|
 |`[ ]` Connect slides laptop to power|
 |`[ ]` Connect slides box to laptop (USB)|
 |`[ ]` Connect slides box to beamer (HDMI)|
