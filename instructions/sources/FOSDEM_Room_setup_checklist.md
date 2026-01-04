@@ -1,8 +1,4 @@
----
-geometry: "top=0cm, right=0cm, bottom=0cm, left=0cm"
-fontsize: "9pt"
----
-| Video buildup checklist for room ROOM_NUMBER** |
+| Video buildup checklist for room **ROOM_NUMBER** |
 | --- |
 |`[ ]` Bring equipment to room ROOM_NUMBER|
 |`[ ]` Unpack tripod|
@@ -10,16 +6,11 @@ fontsize: "9pt"
 |`[ ]` Level tripod|
 |`[ ]` Install camera on tripod|
 |`[ ]` Connect camera power and install camera battery
-|`[ ]` Set INPUT1 to LINE on 1st slider
-|`[ ]` Set INPUT1 to EXT on 2nd slider
-|`[ ]` Set INPUT1 to MAN on 3rd slider
+|`[ ]` Set INPUT1 to LINE on 1st slider, EXT on 2nd slider, MAN on 3rd slider
 |`[ ]` Set INPUT1 to 5 on volume knob
-|`[ ]` Set INPUT2 to MIC/MIC +48V on 1st slider
-|`[ ]` Set INPUT2 to INT MIC on 2nd slider
-|`[ ]` Set INPUT2 to MAN on 3rd slider
+|`[ ]` Set INPUT2 to MIC/MIC +48V on 1st slider, INT MIC on 2nd slider, MAN on 3rd slider
 |`[ ]` Set INPUT2 to 5 on volume knob
-|`[ ]` Set camera resolution to 1920x1080|
-|`[ ]` Set camera refresh rate to 50p
+|`[ ]` Set camera resolution to 1920x1080 and refresh rate to 50p|
 |`[ ]` Remove lens cover of camera
 |`[ ]` Install camera box (odd number) on tripod with zip ties|
 |`[ ]` Connect camera box (odd number) to power
@@ -39,7 +30,7 @@ fontsize: "9pt"
 |`[ ]` Run ethernet cable from any port on slides box to any port on camera box - check suggested cable route at bottom
 | |
 |`[ ]` Connect headphones to camera|
-|`[ ]` Write room name on whiteboard to point camera to|
+|`[ ]` Write room name on the whiteboard to point camera to|
 |`[ ]` Point camera to where speaker will be without getting presentation in frame|
 |`[ ]` Mark on floor where speaker should be (skip for Janson, K.1105 and H.2215)|
 |`[ ]` Leave signs folder on desk next to slides box
