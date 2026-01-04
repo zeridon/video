@@ -21,7 +21,7 @@
 |`[ ]` Connect internet to any port on slides box
 |`[ ]` Connect speaker(clip-on) micropohone to IN3 on slides box
 |`[ ]` Connect audience(handheld) microphone to IN2 on slides box
-|`[ ]` Connect short XLR cable from OUT2 on slides box to room audio
+|`[ ]` Connect short XLR cable from OUT2 on slides box to room audio or FOSDEM-provided loudspeaker
 |`[ ]` Connect charging cables from slides box USB ports to microphone receiver's batteries
 |`[ ]` Connect charging cables from slides box USB ports to microphone transmitter's batteries - Always have batteries charging
 |`[ ]` Connect HDMI cable from slides box HDMI OUT to room projector - may need to use HDMI->VGA converter
