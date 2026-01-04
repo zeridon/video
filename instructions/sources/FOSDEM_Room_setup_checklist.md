@@ -1,52 +1,58 @@
-|&nbsp;&nbsp;&nbsp;&nbsp;**Stuff to do**|
-|-----------|
-|`[ ]` Bring equipment to the room|
-|`[ ]` Notify VOC (message, in Matrix) of which box is used for which purpose (slides, cam)|
-| |
-|`[ ]` Write the room name on the whiteboard to point the camera to|
-|`[ ]` Identify camera placement|
+---
+geometry: "top=0cm, right=0cm, bottom=0cm, left=0cm"
+fontsize: "9pt"
+---
+| Video buildup checklist for room ROOM_NUMBER** |
+| --- |
+|`[ ]` Bring equipment to room ROOM_NUMBER|
 |`[ ]` Unpack tripod|
+|`[ ]` Place tripod at CAMERA_POSITION|
+|`[ ]` Level tripod|
 |`[ ]` Install camera on tripod|
-|`[ ]` Reset camera according to instructions|
-|`[ ]` Install camera box (odd number) & camera laptop on tripod|
-|`[ ]` Connect laptop to power|
-|`[ ]` Connect camera box to laptop (USB)|
-|`[ ]` Connect camera box to camera (HDMI)|
-|`[ ]` Connect camera box to network (Rj45)|
-|`[ ]` Power-on camera laptop|
+|`[ ]` Connect camera power and install camera battery
+|`[ ]` Set INPUT1 to LINE on 1st slider
+|`[ ]` Set INPUT1 to EXT on 2nd slider
+|`[ ]` Set INPUT1 to MAN on 3rd slider
+|`[ ]` Set INPUT1 to 5 on volume knob
+|`[ ]` Set INPUT2 to MIC/MIC +48V on 1st slider
+|`[ ]` Set INPUT2 to INT MIC on 2nd slider
+|`[ ]` Set INPUT2 to MAN on 3rd slider
+|`[ ]` Set INPUT2 to 5 on volume knob
+|`[ ]` Set camera resolution to 1920x1080|
+|`[ ]` Set camera refresh rate to 50p
+|`[ ]` Remove lens cover of camera
+|`[ ]` Install camera box (odd number) on tripod with zip ties|
+|`[ ]` Connect camera box (odd number) to power
+|`[ ]` Connect camera to camera box with HDMI cable
 | |
-|`[ ]` Install audio mixer|
-|`[ ]` Connect audio mixer to camera|
-|`[ ]` Connect PA or external speaker to mixer|
-|`[ ]` Connect receiver(s) to audio mixer|
-|`[ ]` Connect chargers to the receivers|
+|`[ ]` Install slides box (even number) on desk
+|`[ ]` Connect slides box (even number) to power
+|`[ ]` Connect internet to any port on slides box
+|`[ ]` Connect speaker(clip-on) micropohone to IN3 on slides box
+|`[ ]` Connect audience(handheld) microphone to IN2 on slides box
+|`[ ]` Connect short XLR cable from OUT2 on slides box to room audio
+|`[ ]` Connect charging cables from slides box USB ports to microphone receiver's batteries
+|`[ ]` Connect charging cables from slides box USB ports to microphone transmitter's batteries - Always have batteries charging
+|`[ ]` Connect HDMI cable from slides box HDMI OUT to room projector - may need to use HDMI->VGA converter
+|`[ ]` Connect HDMI cables to slides box HDMI IN port to be used by presenter - leave other end on desk
+|`[ ]` Connect XLR cable from OUT1 on slides box to INPUT1 on camera - check suggested cable route at bottom
+|`[ ]` Run ethernet cable from any port on slides box to any port on camera box - check suggested cable route at bottom
+| |
 |`[ ]` Connect headphones to camera|
-| |
-|`[ ]` Install slides box (even number) & slides laptop where the speaker will be|
-|`[ ]` Connect slides laptop to power|
-|`[ ]` Connect slides box to laptop (USB)|
-|`[ ]` Connect slides box to beamer (HDMI)|
-|`[ ]` Connect slides box to network (RJ45)|
-|`[ ]` Power-on slides laptop|
-|`[ ]` Point camera to where the speaker will be without getting the presentation in frame|
-|`[ ]` Mark on the floor where the speaker should be (skip for Janson, K.1105 and H.2215)|
-| |
+|`[ ]` Write room name on whiteboard to point camera to|
+|`[ ]` Point camera to where speaker will be without getting presentation in frame|
+|`[ ]` Mark on floor where speaker should be (skip for Janson, K.1105 and H.2215)|
+|`[ ]` Leave signs folder on desk next to slides box
+| |~~~~
 |&nbsp;&nbsp;&nbsp;&nbsp;**Tests**|
-| |
-|`[ ]` Verify camera audio settings|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;left channel external microphone (audio mixer)|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;right channel internal microphone (room ambient audio)|
-|`[ ]` Camera video settings: 1080p|
-|`[ ]` Camera video settings: full auto|
-| |
-|`[ ]` Make sure you see picture on the camera laptop|
-|`[ ]` Make sure you see picture on the slides laptop and beamer when there's signal present|
+|`[ ]` Make sure you see picture on camera box|
+|`[ ]` Make sure you see picture on slides box and projector when there's signal present|
 | |
 |`[ ]` Talk into all microphones and check levels|
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Within 80% on camera|
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;No noise|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Audible in the room|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;No feedback - make sure to walk around with the microphones|
+|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Audible in room|
+|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;No feedback - make sure to walk around with microphones|
 ||
 |`[ ]` Repeat microphone test with VOC|
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Ask VOC member to call you, in Matrix |
@@ -55,7 +61,7 @@
 |`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Test both mics and confirm levels |
 ||
 |`[ ]` Make sure VOC sees both video sources|
-||
-|`[ ]` If no issues are seen from the VOC:|
-|`[ ]` &nbsp;&nbsp;&nbsp;&nbsp;Connect microphone batteries to chargers|
-|-----------|
+|`[ ]` If no issues are seen from VOC, connect microphone batteries to chargers|
+|`[ ]` **Tape this checklist to camera box**|
+
+Suggested route for XLR and network cable is as follows: CABLE_RUN
