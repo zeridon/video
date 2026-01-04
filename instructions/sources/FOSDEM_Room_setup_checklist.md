@@ -18,7 +18,7 @@
 | |
 |`[ ]` Install slides box (even number) on desk
 |`[ ]` Connect slides box (even number) to power
-|`[ ]` Connect internet to any port on slides box
+|`[ ]` Connect internet (red cable left by the network team) to any port on slides box
 |`[ ]` Connect speaker(clip-on) micropohone to IN3 on slides box
 |`[ ]` Connect audience(handheld) microphone to IN2 on slides box
 |`[ ]` Connect short XLR cable from OUT2 on slides box to room audio or FOSDEM-provided loudspeaker
