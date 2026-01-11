@@ -24,7 +24,7 @@
 |`[ ]` Connect short XLR cable from OUT2 on slides box to room audio or FOSDEM-provided loudspeaker
 |`[ ]` Connect charging cables from slides box USB ports to microphone receiver's batteries
 |`[ ]` Connect charging cables from slides box USB ports to microphone transmitter's batteries - Always have batteries charging
-|`[ ]` Connect HDMI cable from slides box HDMI OUT to room projector - may need to use HDMI->VGA converter
+|`[ ]` Connect HDMI cable from slides box HDMI LOOP to room projector - may need to use HDMI->VGA converter
 |`[ ]` Connect HDMI cables to slides box HDMI IN port to be used by presenter - leave other end on desk
 |`[ ]` Connect XLR cable from OUT1 on slides box to INPUT1 on camera - check suggested cable route at bottom
 |`[ ]` Run ethernet cable from any port on slides box to any port on camera box - check suggested cable route at bottom
