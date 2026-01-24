@@ -16,7 +16,7 @@ function populate_room_checklist {
     sed -i "s|ROOM_NUMBER|${room_name}|g" "${path_to_room_checklist}"
     sed -i "s|CAMERA_POSITION|\"${camera_position}\"|g" "${path_to_room_checklist}"
     sed -i "s|CABLE_RUN|${best_cable_run}|g" "${path_to_room_checklist}"
-    pandoc -f markdown -V papersize:a4 -V geometry:margin=1cm -t latex  -o "${path_to_room_checklist}".pdf "${path_to_room_checklist}"
+    pandoc -f markdown -V papersize:a4 -V geometry:margin=1.5cm -t latex  -o "${path_to_room_checklist}".pdf "${path_to_room_checklist}"
     rm "${path_to_room_checklist}"
     return 0
 }
