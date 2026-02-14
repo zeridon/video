@@ -10,11 +10,14 @@ depend: .depend
 
 -include .depend
 
-../FOSDEM_AV_manual.pdf: FOSDEM_AV_manual.tex
+rsc.tex: FOSDEM_Room_setup_checklist.md
+	pandoc FOSDEM_Room_setup_checklist.md -s -t latex -o rsc.tex
+
+../FOSDEM_AV_manual.pdf: FOSDEM_AV_manual.tex rsc.tex
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" FOSDEM_AV_manual.tex
 	mv FOSDEM_AV_manual.pdf ..
 
-../FOSDEM_AV_manual.epub: FOSDEM_AV_manual.tex
+../FOSDEM_AV_manual.epub: FOSDEM_AV_manual.tex rsc.tex
 	mk4ht htlatex FOSDEM_AV_manual.tex 'xhtml,charset=utf-8,pmathml' ' -cunihtf -utf8 -cvalidate'
 	ebook-convert FOSDEM_AV_manual.html ../FOSDEM_AV_manual.epub  --language en --no-default-epub-cover
 
