@@ -8,7 +8,7 @@
 \usepackage[english]{babel}                   % English language/hyphenation
 \usepackage{fancyhdr}
 \usepackage{float} %For exact figure positioning
-\usepackage[top=2cm, bottom=4cm]{geometry}
+\usepackage[top=2cm, bottom=4cm, left=2cm, right=2cm]{geometry}
 \usepackage{graphicx}                 % Enable pdflatex
 \usepackage{hyperref}
 %\usepackage{fix-cm}                         % Custom fontsizes
@@ -21,6 +21,41 @@
 \usepackage[table]{xcolor}
 \usepackage{longtable}
 \definecolor{ForestGreen}{RGB}{34,139,34}
+
+\usepackage{amsmath,amssymb}
+
+\usepackage{footnote}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\urlstyle{same}
+
+
 
 \rowcolors{2}{gray!25}{white}
 
@@ -140,7 +175,13 @@ Your job during the conference, with the backup from the VOC team, is to do the 
 \subsection{Video operations control or VOC}
 You are in the NOC in the K building or in the VOC of a building.
 
-Your job is to constantly monitor all the equipment and streams for problems, and to arrange fixes for any that occur. You have visual monitoring of all audio streams.
+Your job is to constantly monitor all the equipment and streams for problems,
+and to arrange fixes for any that occur. You have visual monitoring of all
+audio streams.
+
+You have methods for contacting all relevant parties. The preferred one for
+issues that require quick reaction is the stationary phone to call the relevant
+people, or in person, if they're in your VOC.
 
 \begin{itemize}
   \item monitor video and update scene if necessary. See the ``Monitoring and control of video streams'' section for more details;
@@ -149,7 +190,8 @@ Your job is to constantly monitor all the equipment and streams for problems, an
   \item communicate with dispatch and NOC/VOCs about room-related issues - closing/opening rooms, etc..
 \end{itemize}
 
-Do not run out to fix problems yourselves. Delegate to the per building teams. Maintaining contact between everyone is your main priority.
+Do not run out to fix problems yourselves. Delegate to the per building teams.
+Maintaining contact between everyone is your main priority.
 
 For more details on the monitoring, see ``Monitoring and control of video streams''.
 
@@ -172,15 +214,53 @@ There should be the following monitoring available:
   \item Page with video previews of camera, slides and mix streams, with sound levels. It can show all rooms, or a single building.\\ This is the main tool and is available at https://control.video.fosdem.org/showbuilding.php;
   \item Grafana with audio levels of the camera's input, for all rooms and selectable for a set of rooms;
   \item Ability to stream every box's stream to check for issues in video or audio - this usually an \texttt{mpv} invocation;
-  \item Control interface for the video mix, to select the scene to be shown, at https://control.video.fosdem.org/ with user and password. Request access from NOC or your per-building video resposible person;
+  \item Control interface for the video mix, to select the scene to be shown, at \\https://control.video.fosdem.org/ with user and password. Request access from NOC or your per-building video resposible person;
   \item (TBD) Host-level monitoring for all involved infrastructure, to see network outages and such.
 \end{itemize}
 
-Access to those systems is provided on Friday. Every per-building team should have a way to see the monitoring well enough, either via the in-room beamer, or some spare large screen.
+Access to those systems is provided on Friday. Every per-building team should
+have a way to see the monitoring well enough, either via the in-room beamer, or
+some spare large screen.
+
+The \texttt{showbuilding.php} looks like this:
+
+\includegraphics[width = 180mm]{showbuilding.png}
+
+On top, you can select the buildings to see.
+
+For each room in the building, from top to bottom:
+
+\begin{itemize}
+  \item Room name. Its background is while if the sound levels are ok, red if there is no data, and yellow if the audio levels are not within the defined boundaries;
+  \item Snapshot of the camera input, updated every 2-3 seconds;
+  \item Snapshot of the slides/laptop input, updated every 2-3 seconds;
+  \item Snapshot of the mixed stream output from the video mixer, updated every 2-3 seconds. This is what gets sent to the viewers of the streams;
+  \item Graph of the levels of the sound. The blue line is the microphone input, the green-yellow is the room ambiance level picked from the camera internal microphone.
+\end{itemize}
+
+The three bands on the sound levels are, from top to bottom:
+
+\begin{itemize}
+  \item Yellow band, from 0 dbm to -14 dbm - peaking/too high;
+  \item Green band, from -14 dbm to -30 dbm - ok;
+  \item Red band, below -30 dbm - too quiet or missing;
+\end{itemize}
+
+The sound levels for the microphone input during a talk need to be in the
+middle (green) band. It's good for the levels from the camera also to be in
+that band during a talk.
 
 
 \section{Rooms}
-We have 30 rooms: 13 small, 15 large and 2 extra large rooms. Each type of room has a different audio/video setup.
+We have 30 rooms: 13 small, 15 large and 2 extra large rooms.
+
+For the extra-large rooms (Janson, K.1105) we use ULB's audio for both input
+(microphones) and output (PA).
+
+For the large rooms, we use the room's PA and out own microphones.
+
+For the remaining rooms, we provide our own PA and microphones.
+
 \begin{itemize}
   \item AW: AW1120 (S), AW1121 (S)
   \item K: K1105 (XXL), K3201 (S), K3401 (S), K3601 (S), K4201 (S), K4401 (S), K4601 (S)
@@ -192,9 +272,15 @@ We have 30 rooms: 13 small, 15 large and 2 extra large rooms. Each type of room 
   \item J: Janson (XXL), J.1106 (S, spare)
 \end{itemize}
 
-Every room has one gray box with the equipment neededd to setup the room. The box is labeled with the room number and includes a checklist with all equipment inside and a checklist for the setup.
+Every room has one gray box with the equipment needed to setup the room. The
+box is labeled with the room number and includes a checklist with all equipment
+inside and a checklist for the setup.
 
-\include{rsc}
+The checklist is the main pointer on how to setup the room. There's a copy
+below without the room-specific details for where the cable runs are and the
+camera placement.
+
+\include{FOSDEM_Room_setup_checklist}
 
 \subsection{Small rooms}
 These have a projector and a tie pin microphone for the speaker. Audience questions must be repeated by the lecturer to be recorded properly.

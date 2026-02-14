@@ -62,9 +62,11 @@ Suggested route for XLR and network cable is as follows: CABLE_RUN
 
 ## Teardown instructions
 
-![](../sources/per_room_video_box_filled.jpg){ width=\\textwidth }
-
 This is the best layout for the pelicancases, videoboxes (and their PSU's) and fit everything else around or above it.
 
 - Roll up each cable and put it back it's bag
 - Be sure to put the room box contents checklist at the very top inside of the box once you're done
+
+![](../sources/per_room_video_box_filled.jpg){ width=100% }
+
+
