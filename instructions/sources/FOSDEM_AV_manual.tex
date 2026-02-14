@@ -385,8 +385,8 @@ There is no need to operate the controls on the camera (once on and in the corre
   \item a power cable, connected to mains, with the box already turned on
   \item slides boxes (the one for the speaker) only:
     \begin{itemize}
-      \item The right HDMI connection should be connected to the projector
-      \item The left HDMI connection should have a loose HDMI cable, for connecting to the presenter laptop
+      \item The right HDMI connection should be connected to the projector (HDMI loop out)
+      \item The left HDMI connection should have a loose HDMI cable, for connecting to the presenter laptop (HDMI in)
     \end{itemize}
   \item Cam boxes only:
     \begin{itemize}
@@ -431,7 +431,7 @@ Camera/Tripod & Cam must be attached to tripod plate \\
 \hline
 \end{tabular}
 
-\subsection{Setup for large and extra large rooms}
+\subsection{Camera setup for a room}
 
 \subsubsection{Screw camera on mount}
 Screw the camera onto the tripod. Every camera has a screw hole at the bottom that can be used for this. The plate has a distinct ``point camera in this direction'' arrow, pay attention to this. The screw can be tightened by a coin or similar object.
@@ -454,7 +454,9 @@ Do not forget to hook up the other end of the HDMI cable to the FOSDEM Video Box
 \end{figure}
 
 \subsubsection{Microphone}
-Plug the XLR cable of the audio system into Input1.
+Plug the XLR cable from the audio mixer (in the slides box) output or ULB's
+audio system (for J and K.1105) into Input1. This is the main audio input and
+audio stream that's provided to the outside world.
 
 \begin{figure}[H]
   \centering
@@ -586,20 +588,17 @@ The correct way to wear a lapel mic is as follows:
   \item The speaker is notified that if he's not facing in the direction of the microphone (e.g. not looking straight) the audio will be less audible.
 \end{itemize}
 
-Video team members will be both monitoring remotely as well as visiting rooms with problems. If you have questions, concerns or problems and there is no video team member nearby, contact them
+Video team members will be both monitoring remotely as well as visiting rooms
+with problems. If you have questions, concerns or problems and there is no
+video team member nearby, contact them
 %through the \texttt{\#video:fosdem.org} channel on Matrix https://chat.fosdem.org/\#/room/\#video:fosdem.org or
-in \texttt{FOSDEM Video}. If your video box shows issues on the LCD, most likely somebody is already on their way to you. When communicating with video team members, please mention the \emph{room number} as opposed to the devroom name. Devrooms move around, room numbers stay constant.
+in \texttt{FOSDEM Video}. If your video box shows issues on the LCD, most
+likely somebody is already on their way to you. When communicating with video
+team members, please mention the \emph{room number} as opposed to the devroom
+name. Devrooms move around, room numbers stay constant.
 
+\newpage
 \section{System infrastructure overview}
-
-This section explains how the video streaming and recording works in general
-for FOSDEM, to use as a helper to understanding the system and dealing with
-issues.
-
-The system's code and recipes for deployment are available in FOSDEM's GitHub
-repo \texttt{infrastructure}, in the \texttt{ansible} subdirectory.
-
-This is a general schema of the setup:
 
 \begin{figure}[H]
   \begin{sideways}
@@ -608,6 +607,15 @@ This is a general schema of the setup:
   \end{sideways}
 \end{figure}
 
+
+Above is a general schema of the setup.
+
+This section explains how the video streaming and recording works in general
+for FOSDEM, to use as a helper to understanding the system and dealing with
+issues.
+
+The system's code and recipes for deployment are available in FOSDEM's GitHub
+repo \texttt{infrastructure}, in the \texttt{ansible} subdirectory.
 
 Below is a list of components (some software, some whole-system) that are the pieces of the whole thing.
 
