@@ -19,17 +19,17 @@
 AudioControlTAA3040 taa3040;
 
 AudioMixer4 *matrix[6][2] = {
-    {&mixer1, &mixer2},   {&mixer4, &mixer5},   {&mixer7, &mixer8},
+    {&mixer1, &mixer2}, {&mixer4, &mixer5}, {&mixer7, &mixer8},
     {&mixer10, &mixer11}, {&mixer13, &mixer14}, {&mixer16, &mixer17},
 };
 
 AudioAnalyzeRMS *ent_rms[12] = {
-    &rms1, &rms2, &rms3, &rms4,  &rms5,  &rms6,
+    &rms1, &rms2, &rms3, &rms4, &rms5, &rms6,
     &rms7, &rms8, &rms9, &rms10, &rms11, &rms12,
 };
 
 AudioAnalyzePeak *ent_peak[12] = {
-    &peak1, &peak2, &peak3, &peak4,  &peak5,  &peak6,
+    &peak1, &peak2, &peak3, &peak4, &peak5, &peak6,
     &peak7, &peak8, &peak9, &peak10, &peak11, &peak12,
 };
 
@@ -45,7 +45,7 @@ void audio_setup() {
     taa3040.enable();
     taa3040.gain(0, 6, IMPEDANCE_2k5, 0, 0);
     taa3040.gain(1, 6, IMPEDANCE_2k5, 0, 0);
-    taa3040.gain(2, 6, IMPEDANCE_2k5, 0,0);
+    taa3040.gain(2, 6, IMPEDANCE_2k5, 0, 0);
     taa3040.gain(3, 6, IMPEDANCE_10k, 0, 0);
 }
 
@@ -100,8 +100,7 @@ bool is_muted(int channel, int bus) {
 }
 
 float calc_real_gain(int channel, int bus, int gain) {
-    return gain * !is_muted(channel, bus) * state.bus_multipliers[bus] *
-           state.channel_multipliers[channel];
+    return gain * !is_muted(channel, bus) * state.bus_multipliers[bus];
 }
 
 void set_gain(int channel, int bus, int gain) {
@@ -130,6 +129,13 @@ void set_bus_multiplier(int bus, float multiplier) {
 float get_bus_multiplier(int bus) { return state.bus_multipliers[bus]; }
 
 void set_channel_multiplier(int channel, float multiplier) {
+    if (channel < 4) {
+        // Channel config for mic inputs
+        taa3040.gain(channel, (uint8_t)multiplier, IMPEDANCE_2k5, 0, 0);
+    } else {
+        // Channel config for line inputs
+        taa3040.gain(channel, (uint8_t)multiplier, IMPEDANCE_10k, 0, 0);
+    }
     state.channel_multipliers[channel] = multiplier;
     for (int bus = 0; bus < BUSES; ++bus)
         set_gain(channel, bus, state.gains[channel][bus]);
@@ -149,6 +155,7 @@ void reset_bus_multipliers() {
     memcpy(state.bus_multipliers, default_bus_multipliers,
            BUSES * sizeof(float));
 }
+
 void reset_channel_multipliers() {
     memcpy(state.channel_multipliers, default_channel_multipliers,
            CHANNELS * sizeof(float));
