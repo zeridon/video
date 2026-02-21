@@ -223,9 +223,11 @@ Access to those systems is provided on Friday. Every per-building team should
 have a way to see the monitoring well enough, either via the in-room beamer, or
 some spare large screen.
 
+\subsection{General overview}
+
 The \texttt{showbuilding.php} looks like this:
 
-\includegraphics[width = 180mm]{showbuilding.png}
+\includegraphics[width = 170mm]{showbuilding.png}
 
 On top, you can select the buildings to see.
 
@@ -250,6 +252,50 @@ The three bands on the sound levels are, from top to bottom:
 The sound levels for the microphone input during a talk need to be in the
 middle (green) band. It's good for the levels from the camera also to be in
 that band during a talk.
+
+
+\subsection{Per-room control}
+
+The per-room control looks like this:
+
+\includegraphics[width = 170mm]{control.video.png}
+
+The "room status" on top is used to set if the room is either full or not. It's
+mostly for use for the devroom managers.
+
+The 4 buttons below control the video mix:
+
+\begin{itemize}
+  \item side-by-side presenter - picture in picture, large slides, small camera view. This is the default
+  \item side-by-side slides - picture in picture, large camera, small sldies videw.
+  \item fullscreen presenter - the camera view on full screen.
+  \item fullscreen slides - the slides view on full screen.
+\end{itemize}
+
+On the right side there is a preview of the current streams, same as in
+\texttt{showbuilding.php} above. Below that is a graph of the output levels,
+same as described above.
+
+Below that there's a link to a Grafana instance with all levels.
+
+On the bottom left there is the audio mixer control. It's split in two parts -
+input and output.
+
+The inputs are the three input on the box, and \texttt{PC} is the analog input
+from the HDMI capture card (the sound channel split from it).  It carries
+either the camera audio (for a cambox) or the presenter's audio from their HDMI
+output (for the slides box).
+
+The outputs are to the camera, to the room PA, and to the left/right channel of
+the headphone jack (for monitoring purposes).
+
+For each slider, there's the current setting and the level at the moment, that
+should be moving in almost-real-time.
+
+At the inputs, below the sliders there's a checkbox to select to which output
+channels the input channel gets sent.
+
+
 
 
 \section{Rooms}
