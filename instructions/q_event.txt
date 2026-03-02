@@ -1,0 +1,142 @@
+This is a general questionnaire for video recording/streaming at events. It's
+written mostly for the FOSDEM setup, but should be helpful to any event.
+
+The main point is to collect all relevant information beforehand, so planning
+can be done for venues and events that have not been seen before.
+
+0. Preamble
+
+FOSDEM has an interesting video setup and collected expertise on video
+streaming and recording that should be helpful to more events. Based on the
+experience gathered, we can help other events stream and record.
+
+Video, regretfully, is non-trivial. It's invasive (cameras, cables, sound),
+"real-time" (even a small issue makes a recording somewhat useless), and in
+server terms, it's a lot more "pet" than "cattle".
+
+So most of these questions can help everyone plan better and minimize the
+problems that can occur in the middle of the event that would send people
+scrambling around to fix while it's live. It's ok if some of those can't be
+answered, or are irrelevant - just note that the list tries to be exhaustive
+and is not tailored to a specific event.
+
+We do have an AV manual for what the FOSDEM setup is, and that might be helpful
+to provide some extra context about the questions. It's at
+https://github.com/FOSDEM/video/tree/master/instructions For an example drawing
+of a venue, take a look at
+https://github.com/OpenFest/openfest/blob/master/2015/floorplans/parter.pdf
+
+1. Event
+
+Name of the event:
+Location of the event (city, country, etc):
+Dates of the event:
+Time for deployment/setup:
+Time for tear-down:
+Is there time available before the event for a site visit?
+Can you arrange shipping to your organization and back of some equipment, and
+store it safely with you?
+
+Preferred methods for communication:
+Main contact for video and related in the organization - name, phone number,
+other contact details (this would be the person called when stuff has gone
+wrong and immediate reaction is needed):
+
+
+Any travel details that are out of the ordinary that should be known?
+Do you have someone to assist with basic information on travel/sleeping
+arrangements/where to eat, etc. (as we'll be in an unknown place? :) ) :
+
+Have you done any streaming/recording before?
+
+If you want to stream to the outside world, do you want to build your own
+streaming infrastructure, use a hyperscaler (like YouTube), or have something
+else run by us?
+
+What amount of online visitors do you expect to have?
+
+What is the acceptable stream bandwidth for a single stream, between 1 and 5 Mbps?
+
+Do you have people willing to learn how to do video in the future?
+Do you have volunteer(s) who can help full-time with video, during setup, the
+event, and tear-down?
+Do you have volunteer(s) who can help part-time with video, during setup, the
+event, and tear-down?
+
+Do you have any travel/lodging budget for external video people (like us)?
+
+2. Venue - general
+
+Name and location of the venue:
+What parts of the venue are available for the general event, and for staff?
+   Is there a dedicated "staff" space, a space that can be used for NOC?
+Do you have drawings/schematics of the parts of the venue that will be used
+that you can share?
+A drawing that also includes power outlets, network ports, and existing
+video/audio equipment?
+Do you have photos of the venue?
+Do you have contacts with the venue's technical staff?
+What language does the technical staff speak?
+Is there a wireless network in the venue that's available for use?
+Is there a wired network in the venue that also provides internet connectivity?
+Can it be used without anything weird, like 802.1x? What are the requirements
+to connect and use it?
+
+Is the 4/5G reception good enough at the venue so that it can be used as a
+last-resort streaming connectivity? Can you provide such connectivity, if
+needed?
+
+Number of rooms used for events (talks, etc):
+(min) Number of rooms that MUST be streamed/recorded:
+(max) Number of rooms that CAN be streamed/recorded:
+
+
+4. Venue - rooms
+(these are one per room)
+
+Room ID (how do you call this room):
+Size of the room by number of people:
+Are there any planned layout changes to the room during the event?
+Is there an existing recording/streaming setup to integrate with/work in
+parallel with, and who handles it?
+Is there a screen or projector in the room, and what is the interface to it
+(HDMI, VGA)?
+Where is the connection to the screen/projector available physically in the
+room?
+Is there wired network available in the room? What are the points of presence?
+Is there a PA system in the room (loudspeakers) that we can connect to, and
+how?
+Is there a sound system in the room (microphones, mixer)? Can we use and
+control that? If it exists, can you provide a list of what is there, maybe a
+photo?
+Are there usual cable routes, or any pre-existing cabling in the room?
+What is the policy of running cables through the room?
+What is the policy of taping cables to the floor or walls?
+Are there fixed cameras in the room that we can use in some way?
+Can the room's lights be controlled?
+
+Features (the options are required/nice to have/no, or something more detailed):
+    Do you need multiple cameras?
+    Do you want to be able to play audio from the lecturer's laptop?
+    Do you want to have music during the pauses between talks?
+    Do you want to have a background slide on the screen in between talks?
+    Do lecturers bring their own laptops, are all presentations on a single laptop, or a mix?
+    Do you have events/slots where the video-responsible people have to trigger/play pre-selected video/audio clips?
+    Do you need the video people to also control the lights in the room?
+
+5. Event - available equipment
+
+(it's pretty hard or close to impossible to bring some of the larger stuff)
+
+Outside of what's present in the rooms, what type and amount of the following
+do you have that can be used for video/streaming:
+
+Cameras (note if they have HDMI output, and sound input on XLR connectors):
+Tripods that can handle cameras:
+Wireless microphones, models, frequency ranges, if known:
+Laptops:
+HDMI cables:
+XLR cables:
+Any other video equipment that you think is relevant:
+Networking equipment - switches, APs, routers:
+Networking equipment - cabling (a lot of the communication is over Ethernet):
