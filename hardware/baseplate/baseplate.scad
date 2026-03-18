@@ -9,6 +9,7 @@ use <display.scad>
 use <case.scad>
 use <nuts.scad>
 use <../brackets/cable-holder.scad>
+use <../brackets/standoffs-hagibi.scad>
 
 $fn=120;
 
@@ -67,6 +68,8 @@ module thirdparty_boards() {
     // translate(radxa_x2l_transl) rotate(180) radxa_x2l();
     translate([0, 0, 5]) translate(radxa_x4_transl) radxa_x4();
     translate(hdmi_transl) rotate(180) hdmi();
+    translate([0, 0, 0.5]) translate(hdmi_transl) rotate(180) hagibi_standoffs();
+    translate([0, 0, 16]) translate(hdmi_transl) rotate(180) hdmi();
     cable_holders();
 }
 
@@ -97,5 +100,5 @@ module box() {
     baseplate();
 }
 
-// box();
+box();
 baseplate_shape();
