@@ -21,11 +21,11 @@ void unmute(uint8_t channel, uint8_t bus);
 void set_volume(uint8_t channel, uint8_t bus, float gain);
 float get_volume(uint8_t channel, uint8_t bus);
 
-float get_bus_multiplier(uint8_t bus);
-void set_bus_multiplier(uint8_t bus, float multiplier);
+float get_bus_volume(uint8_t bus);
+void set_bus_volume(uint8_t bus, float volume);
 
-float get_channel_multiplier(uint8_t channel);
-void set_channel_multiplier(uint8_t channel, float multiplier);
+float get_channel_input_gain_db(uint8_t channel);
+void set_channel_input_gain_db(uint8_t channel, float gain);
 
 // void raw_set_crosspoint(uint8_t channel, uint8_t bus, float gain);
 float raw_get_crosspoint(uint8_t channel, uint8_t bus);

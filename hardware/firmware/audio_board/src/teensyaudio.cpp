@@ -84,7 +84,7 @@ bool is_muted(uint8_t channel, uint8_t bus) {
 }
 
 float calc_real_volume(uint8_t channel, uint8_t bus, float volume) {
-    return volume * !is_muted(channel, bus) * state.bus_multipliers[bus];
+    return volume * !is_muted(channel, bus) * state.bus_volumes[bus];
 }
 
 void apply_volume(uint8_t channel, uint8_t bus) {
@@ -109,43 +109,56 @@ void unmute(uint8_t channel, uint8_t bus) {
     apply_volume(channel, bus);
 }
 
-void set_bus_multiplier(uint8_t bus, float multiplier) {
-    state.bus_multipliers[bus] = multiplier;
+void set_bus_volume(uint8_t bus, float vol) {
+    state.bus_volumes[bus] = vol;
     for (uint8_t channel = 0; channel < CHANNELS; ++channel) {
         apply_volume(channel, bus);
     }
 }
 
-float get_bus_multiplier(uint8_t bus) { return state.bus_multipliers[bus]; }
+float get_bus_volume(uint8_t bus) { return state.bus_volumes[bus]; }
 
-void set_channel_multiplier(uint8_t channel, float multiplier) {
-    state.channel_multipliers[channel] = multiplier;
-    taa3040.gain(channel, (uint8_t)multiplier, IMPEDANCE_10k, 0, 0);
+void set_channel_input_gain_db(uint8_t channel, float gain) {
+    uint8_t whole_gain = (uint8_t)(gain + 0.5);
+    if (gain < 1) {
+        whole_gain = 1;
+    }
+    if (gain > 42) {
+        whole_gain = 42;
+    }
+
+    state.channel_input_gains[channel] = (float)whole_gain;
+    taa3040.gain(channel, whole_gain, IMPEDANCE_10k, 0, 0);
 }
 
-float get_channel_multiplier(uint8_t channel) {
-    return state.channel_multipliers[channel];
+void apply_channel_input_gain(uint8_t channel) {
+    set_channel_input_gain_db(channel, state.channel_input_gains[channel]);
 }
 
-void reset_matrix() { memcpy(state.matrix, default_gains, sizeof(state.matrix)); }
+float get_channel_input_gain_db(uint8_t channel) {
+    return state.channel_input_gains[channel];
+}
+
+void reset_matrix() { memcpy(state.matrix, default_matrix, sizeof(state.matrix)); }
 
 void reset_mutes() {
     memcpy(&state.mutes, &default_mutes, sizeof(state.mutes));
 }
 
-void reset_bus_multipliers() {
-    memcpy(state.bus_multipliers, default_bus_multipliers,
+void reset_bus_volumes() {
+    memcpy(state.bus_volumes, default_bus_volumes,
            BUSES * sizeof(float));
 }
 
-void reset_channel_multipliers() {
-    memcpy(state.channel_multipliers, default_channel_multipliers,
+void reset_channel_input_gains() {
+    memcpy(state.channel_input_gains, default_channel_input_gains_db,
            CHANNELS * sizeof(float));
 }
 
 void apply_all() {
     uint8_t i, j;
     for (i = 0; i < CHANNELS; ++i) {
+        apply_channel_input_gain(i);
         for (j = 0; j < BUSES; ++j) {
             apply_volume(i, j);
         }
@@ -155,8 +168,8 @@ void apply_all() {
 void audio_reset_default_state() {
     reset_matrix();
     reset_mutes();
-    reset_bus_multipliers();
-    reset_channel_multipliers();
+    reset_bus_volumes();
+    reset_channel_input_gains();
 }
 
 bool matrix_ok() {
@@ -172,10 +185,10 @@ bool matrix_ok() {
     return true;
 }
 
-bool bus_multipliers_ok() {
+bool bus_volumes_ok() {
     uint8_t i;
     for (i = 0; i < BUSES; ++i) {
-        if (isnan(state.bus_multipliers[i])) {
+        if (isnan(state.bus_volumes[i])) {
             return false;
         }
     }
@@ -183,10 +196,10 @@ bool bus_multipliers_ok() {
     return true;
 }
 
-bool channel_multipliers_ok() {
+bool channel_input_gains_ok() {
     uint8_t i;
     for (i = 0; i < CHANNELS; ++i) {
-        if (isnan(state.channel_multipliers[i])) {
+        if (isnan(state.channel_input_gains[i])) {
             return false;
         }
     }
@@ -204,7 +217,7 @@ void audio_load_state() {
 #ifdef USE_EEPROM
     eeprom_load_all(state, STATE_EEPROM_OFFSET);
 
-    if (!matrix_ok() || !bus_multipliers_ok() || !channel_multipliers_ok()) {
+    if (!matrix_ok() || !bus_volumes_ok() || !channel_input_gains_ok()) {
         audio_reset_default_state();
         audio_eeprom_save_all();
     }

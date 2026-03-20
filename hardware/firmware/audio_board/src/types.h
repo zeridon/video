@@ -9,8 +9,8 @@ typedef struct {
 
     uint64_t mutes;
 
-    float channel_multipliers[CHANNELS];
-    float bus_multipliers[BUSES];
+    float channel_input_gains[CHANNELS];
+    float bus_volumes[BUSES];
 } AudioState;
 
 typedef struct {

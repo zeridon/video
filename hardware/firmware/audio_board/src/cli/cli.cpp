@@ -58,16 +58,16 @@ void Cli::exec_cmd() {
         this->port->print("ok");
         for (uint8_t chan = 0; chan < CHANNELS; chan++) {
             this->port->print(" ");
-            this->print_float_fixed(get_channel_multiplier(chan), 3, 3);
+            this->print_float_fixed(get_channel_input_gain_db(chan), 3, 3);
         }
         this->port->println();
         return;
     }
-    if (this->hop_word("bus-levels")) {
+    if (this->hop_word("bus-volumes")) {
         this->port->print("ok");
         for (uint8_t bus = 0; bus < BUSES; bus++) {
             this->port->print(" ");
-            this->print_float_fixed(get_bus_multiplier(bus), 3, 3);
+            this->print_float_fixed(get_bus_volume(bus), 3, 3);
         }
         this->port->println();
         return;
@@ -112,28 +112,28 @@ void Cli::exec_cmd() {
 
         set_volume(chan, bus, vol);
 
-        this->port->print("ok");
+        this->port->println("ok");
         return;
     }
-    if (this->hop_word("set-gain")) {
+    if (this->hop_word("set-in-gain")) {
         uint16_t chan = parse_uint();
-        float vol = parse_float();
+        float gain = parse_float();
 
         if (chan >= CHANNELS) {
             this->port->printf("fail (chan %d is invalid)\n", chan);
             return;
         }
-        if (vol < 0) {
-            this->port->printf("fail (vol should not be negative)\n");
+        if (gain < 0) {
+            this->port->printf("fail (gain should not be negative)\n");
             return;
         }
 
-        set_channel_multiplier(chan, vol);
+        set_channel_input_gain_db(chan, gain);
 
-        this->port->print("ok");
+        this->port->println("ok");
         return;
     }
-    if (this->hop_word("set-bus-level")) {
+    if (this->hop_word("set-bus-volume")) {
         uint16_t bus = parse_uint();
         float vol = parse_float();
 
@@ -146,9 +146,9 @@ void Cli::exec_cmd() {
             return;
         }
 
-        set_bus_multiplier(bus, vol);
+        set_bus_volume(bus, vol);
 
-        this->port->print("ok");
+        this->port->println("ok");
         return;
     }
     if (this->hop_word("factory-reset")) {
@@ -169,7 +169,12 @@ void Cli::print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits) 
 
     buf[0] = sign ? '-' : '+';
 
-    if (x >= 10 * whole_digits) {
+    float limit = 1;
+    for (uint8_t i = 0; i < whole_digits; i++) {
+        limit *= 10;
+    }
+
+    if (x >= limit) {
         buf[1] = 'i';
         buf[2] = 'n';
         buf[3] = 'f';
