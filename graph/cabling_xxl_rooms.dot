@@ -56,7 +56,6 @@ digraph G {
 				cam_box_hdmi_in [label="HDMI in\nHDMI A (full size) female"];
 				cam_box_switch [label="4x Gbit dumb switch"];
 				cam_box_usb [label="USB"];
-				cam_box_ac_in [label="ac adapter"];
 			}
 		}
 
@@ -77,8 +76,6 @@ digraph G {
 					mix_panel_out_1 [label="XLR out 1\nmale port\nbalanced mono"];
 					mix_panel_out_2 [label="XLR out 2\nmale port\nbalanced mono"];
 				}
-				speaker_box_ac_in [label="ac adapter"];
-
 	}
 		}
 	}
@@ -106,8 +103,6 @@ video_vlan [label="FOSDEM video vlan", style="dotted"];
 
 	# AC power
 	cam_power_strip -> camera_ac_in;
-	cam_power_strip -> cam_box_ac_in;
 
 	speaker_power_strip -> speaker_laptop;
-	speaker_power_strip -> speaker_box_ac_in;
 }
