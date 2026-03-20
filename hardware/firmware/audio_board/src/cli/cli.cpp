@@ -63,6 +63,18 @@ void Cli::exec_cmd() {
         this->port->println();
         return;
     }
+    if (this->hop_word("phantoms")) {
+        this->port->print("ok");
+        for (uint8_t chan = 0; chan < CHANNELS; chan++) {
+            if (is_phantom_on(chan)) {
+                this->port->print(" 1");
+            } else {
+                this->port->print(" 0");
+            }
+        }
+        this->port->println();
+        return;
+    }
     if (this->hop_word("bus-volumes")) {
         this->port->print("ok");
         for (uint8_t bus = 0; bus < BUSES; bus++) {
@@ -88,6 +100,21 @@ void Cli::exec_cmd() {
             unmute(chan, bus);
         } else {
             mute(chan, bus);
+        }
+        this->port->println("ok");
+        return;
+    }
+    if (this->hop_word("set-phantom")) {
+        uint16_t chan = parse_uint();
+        uint16_t want_phantom = parse_uint();
+        if (chan >= CHANNELS) {
+            this->port->printf("fail (chan %d is invalid)\n", chan);
+            return;
+        }
+        if (want_phantom > 0) {
+            set_phantom_on(chan);
+        } else {
+            set_phantom_off(chan);
         }
         this->port->println("ok");
         return;

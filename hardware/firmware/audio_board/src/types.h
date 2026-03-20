@@ -8,6 +8,7 @@ typedef struct {
     float matrix[CHANNELS][BUSES];
 
     uint64_t mutes;
+    uint16_t phantoms;
 
     float channel_input_gains[CHANNELS];
     float bus_volumes[BUSES];

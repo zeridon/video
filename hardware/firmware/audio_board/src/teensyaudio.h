@@ -35,6 +35,10 @@ Levels &audio_get_levels();
 
 void audio_reset_default_state();
 
+bool is_phantom_on(uint8_t channel);
+void set_phantom_on(uint8_t channel);
+void set_phantom_off(uint8_t channel);
+
 #ifdef USE_EEPROM
 uint8_t audio_eeprom_save_all();
 #endif

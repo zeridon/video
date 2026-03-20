@@ -10,6 +10,8 @@ const PROGMEM float default_channel_input_gains_db[CHANNELS] = {
 // see helpers/generate_mutes.py
 const PROGMEM uint64_t default_mutes = 52361428992;
 
+const PROGMEM uint16_t default_phantoms = 0;
+
 const PROGMEM float default_matrix[CHANNELS][BUSES] = {
     // outputs: OUT1, OUT2, HP1, HP2, USB1, USB2
     // IN1

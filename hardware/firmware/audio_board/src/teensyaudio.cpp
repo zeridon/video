@@ -79,6 +79,31 @@ uint64_t mute_mask(uint64_t channel, uint64_t bus) {
     return (uint64_t)1 << (uint64_t)((channel * CHANNELS) + bus);
 }
 
+void apply_phantom(uint8_t channel) {
+    bool is_on = (state.phantoms & (1 << channel)) > 0;
+    // TODO: apply state
+}
+
+bool is_phantom_on(uint8_t channel) {
+    return !!(state.phantoms & (1 << channel));
+}
+
+void set_phantom_on(uint8_t channel) {
+    if (channel > 3) {
+        return;
+    }
+    state.phantoms |= (1 << channel);
+    apply_phantom(channel);
+}
+
+void set_phantom_off(uint8_t channel) {
+    if (channel > 3) {
+        return;
+    }
+    state.phantoms &= ~(1 << channel);
+    apply_phantom(channel);
+}
+
 bool is_muted(uint8_t channel, uint8_t bus) {
     return !!(state.mutes & mute_mask(channel, bus));
 }
@@ -145,6 +170,10 @@ void reset_mutes() {
     memcpy(&state.mutes, &default_mutes, sizeof(state.mutes));
 }
 
+void reset_phantoms() {
+    memcpy(&state.phantoms, &default_phantoms, sizeof(state.phantoms));
+}
+
 void reset_bus_volumes() {
     memcpy(state.bus_volumes, default_bus_volumes,
            BUSES * sizeof(float));
@@ -159,6 +188,7 @@ void apply_all() {
     uint8_t i, j;
     for (i = 0; i < CHANNELS; ++i) {
         apply_channel_input_gain(i);
+        apply_phantom(i);
         for (j = 0; j < BUSES; ++j) {
             apply_volume(i, j);
         }
@@ -168,6 +198,7 @@ void apply_all() {
 void audio_reset_default_state() {
     reset_matrix();
     reset_mutes();
+    reset_phantoms();
     reset_bus_volumes();
     reset_channel_input_gains();
 }
