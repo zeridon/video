@@ -1,12 +1,12 @@
 #include <OSCBundle.h>
 #include <OSCMessage.h>
-#include <SLIPEncodedSerial.h>
 
 #include "config.h"
 #include "helpers.h"
 #include <stdint.h>
 
 #include "teensyaudio.h"
+#include "cli/cli.h"
 
 #ifdef USE_EEPROM
 
@@ -30,17 +30,9 @@ ChanInfo channel_info[] = {
     {CHAN_MAGENTA, "USB", "USB1", 1}, {CHAN_MAGENTA, "USB", "USB2", 2},
 };
 
-SLIPEncodedUSBSerial slip(Serial);
-
 void send(OSCMessage &msg) {
-    slip.beginPacket();
-    msg.send(slip);
-    slip.endPacket();
 }
 void send(OSCBundle &msg) {
-    slip.beginPacket();
-    msg.send(slip);
-    slip.endPacket();
 }
 
 void onOscChannel(OSCMessage &msg, int patternOffset) {
@@ -349,30 +341,17 @@ void setup() {
 
     audio_setup();
 
-    slip.begin(115200);
+    SerialUSB.begin(115200);
     SerialUSB1.println("board ready");
 }
+
+Cli the_cli(&SerialUSB);
 
 unsigned long last_draw = 0;
 unsigned long last_save = 0;
 
 void loop() {
     int size;
-    OSCMessage msg;
-    if (slip.available()) {
-        while (!slip.endofPacket() && slip.available()) {
-            while (1) {
-                int c = slip.read();
-                if (c >= 0 ) {
-                    msg.fill(c);
-                    break;
-                }
-            }
-        }
-        if (!msg.hasError()) {
-            onPacketReceived(msg);
-        }
-    }
 
     Levels &levels = audio_get_levels();
 
@@ -386,6 +365,8 @@ void loop() {
         last_draw = millis();
     }
 #endif
+
+    the_cli.update();
 
 #ifdef USE_EEPROM
     // save to EEPROM every 60 seconds

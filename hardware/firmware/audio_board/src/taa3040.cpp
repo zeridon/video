@@ -37,82 +37,82 @@ void AudioControlTAA3040::getAsiStatus() {
     last_asi = raw;
     uint8_t ratio = raw & 0x0F;
     uint8_t rate = raw >> 4;
-    Serial.print("ASI Status: ");
+    SerialUSB1.print("ASI Status: ");
     switch(ratio) {
     case 0:
-        Serial.print("ratio 16, ");
+        SerialUSB1.print("ratio 16, ");
         break;
     case 1:
-        Serial.print("ratio 24, ");
+        SerialUSB1.print("ratio 24, ");
         break;
     case 2:
-        Serial.print("ratio 32, ");
+        SerialUSB1.print("ratio 32, ");
         break;
     case 3:
-        Serial.print("ratio 48, ");
+        SerialUSB1.print("ratio 48, ");
         break;
     case 4:
-        Serial.print("ratio 64, ");
+        SerialUSB1.print("ratio 64, ");
         break;
     case 5:
-        Serial.print("ratio 96, ");
+        SerialUSB1.print("ratio 96, ");
         break;
     case 6:
-        Serial.print("ratio 128, ");
+        SerialUSB1.print("ratio 128, ");
         break;
     case 7:
-        Serial.print("ratio 192, ");
+        SerialUSB1.print("ratio 192, ");
         break;
     case 8:
-        Serial.print("ratio 256, ");
+        SerialUSB1.print("ratio 256, ");
         break;
     case 9:
-        Serial.print("ratio 384, ");
+        SerialUSB1.print("ratio 384, ");
         break;
     case 10:
-        Serial.print("ratio 512, ");
+        SerialUSB1.print("ratio 512, ");
         break;
     case 11:
-        Serial.print("ratio 1024, ");
+        SerialUSB1.print("ratio 1024, ");
         break;
     case 12:
-        Serial.print("ratio 2048, ");
+        SerialUSB1.print("ratio 2048, ");
         break;
     case 13:
     case 14:
-        Serial.printf("ratio RESERVED(%d), ", ratio);
+        SerialUSB1.printf("ratio RESERVED(%d), ", ratio);
         break;
     case 15:
-        Serial.print("ratio INVALID, ");
+        SerialUSB1.print("ratio INVALID, ");
         break;
     }
     switch(rate) {
     case 0:
-        Serial.println("rate 7.35-8Khz");
+        SerialUSB1.println("rate 7.35-8Khz");
         break;
     case 1:
-        Serial.println("rate 14.7-16Khz");
+        SerialUSB1.println("rate 14.7-16Khz");
         break;
     case 2:
-        Serial.println("rate 22.05-24Khz");
+        SerialUSB1.println("rate 22.05-24Khz");
         break;
     case 3:
-        Serial.println("rate 29.4-32Khz");
+        SerialUSB1.println("rate 29.4-32Khz");
         break;
     case 4:
-        Serial.println("rate 44.1-48Khz");
+        SerialUSB1.println("rate 44.1-48Khz");
         break;
     case 5:
-        Serial.println("rate 88.2-96Khz");
+        SerialUSB1.println("rate 88.2-96Khz");
         break;
     case 6:
-        Serial.println("rate 176.4-192Khz");
+        SerialUSB1.println("rate 176.4-192Khz");
         break;
     case 7:
-        Serial.println("rate 352.8-384Khz");
+        SerialUSB1.println("rate 352.8-384Khz");
         break;
     case 8:
-        Serial.println("rate 705.6-768Khz");
+        SerialUSB1.println("rate 705.6-768Khz");
         break;
     case 9:
     case 10:
@@ -120,10 +120,10 @@ void AudioControlTAA3040::getAsiStatus() {
     case 12:
     case 13:
     case 14:
-        Serial.printf("rate RESERVED(%d)\n", rate);
+        SerialUSB1.printf("rate RESERVED(%d)\n", rate);
         break;
     case 15:
-        Serial.println("rate INVALID");
+        SerialUSB1.println("rate INVALID");
         break;
     }
 
@@ -134,17 +134,17 @@ void AudioControlTAA3040::setRegister(uint8_t reg, uint8_t value) {
     Wire1.write(reg);
     Wire1.write(value);
     if (Wire1.endTransmission() != 0) {
-        Serial.println("I2C error");
+        SerialUSB1.println("I2C error");
     }
 }
 
 void AudioControlTAA3040::setRegister(uint8_t page, uint8_t reg, uint8_t value) {
-    Serial.print("REG ");
-    Serial.print(page, HEX);
-    Serial.print(":");
-    Serial.print(reg, HEX);
-    Serial.print(" = ");
-    Serial.println(value, HEX);
+    SerialUSB1.print("REG ");
+    SerialUSB1.print(page, HEX);
+    SerialUSB1.print(":");
+    SerialUSB1.print(reg, HEX);
+    SerialUSB1.print(" = ");
+    SerialUSB1.println(value, HEX);
 
     if (page != currentPage) {
         setRegister(0, page);
@@ -164,7 +164,7 @@ uint8_t AudioControlTAA3040::getRegister(uint8_t page, uint8_t reg) {
     Wire1.requestFrom(0x4e, 1, true);
     const uint8_t res = Wire.read();
     if (Wire1.endTransmission() != 0) {
-        Serial.println("I2C error");
+        SerialUSB1.println("I2C error");
     }
     return res;
 }

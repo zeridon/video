@@ -107,7 +107,7 @@ set(FEATURES
 	USE_DISPLAY
 )
 
-set(SOURCES 
+set(SOURCES
 	teensy4_usb_descriptor.c
 	src/main.cpp
 	src/storage.cpp
@@ -115,6 +115,7 @@ set(SOURCES
 	src/helpers.cpp
 	src/teensyaudio.cpp
     src/taa3040.cpp
+    src/cli/cli.cpp
 )
 
 # Build this project
