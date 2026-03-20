@@ -14,23 +14,23 @@ void update_levels(float levels_smooth[CHANNELS + BUSES],
                    float levels_rms[CHANNELS + BUSES],
                    float levels_peak[CHANNELS + BUSES]);
 
-bool is_muted(int channel, int bus);
-void mute(int channel, int bus);
-void unmute(int channel, int bus);
+bool is_muted(uint8_t channel, uint8_t bus);
+void mute(uint8_t channel, uint8_t bus);
+void unmute(uint8_t channel, uint8_t bus);
 
-void set_gain(int channel, int bus, float gain);
-float get_gain(int channel, int bus);
+void set_gain(uint8_t channel, uint8_t bus, float gain);
+float get_gain(uint8_t channel, uint8_t bus);
 
-float get_bus_multiplier(int bus);
-void set_bus_multiplier(int bus, float multiplier);
+float get_bus_multiplier(uint8_t bus);
+void set_bus_multiplier(uint8_t bus, float multiplier);
 
-float get_channel_multiplier(int channel);
-void set_channel_multiplier(int channel, float multiplier);
+float get_channel_multiplier(uint8_t channel);
+void set_channel_multiplier(uint8_t channel, float multiplier);
 
-// void raw_set_crosspoint(int channel, int bus, float gain);
-float raw_get_crosspoint(int channel, int bus);
+// void raw_set_crosspoint(uint8_t channel, uint8_t bus, float gain);
+float raw_get_crosspoint(uint8_t channel, uint8_t bus);
 
-// void raw_set_mix(int bus, float channel_gains[CHANNELS]);
+// void raw_set_mix(uint8_t bus, float channel_gains[CHANNELS]);
 
 void audio_update_levels(Levels &levels);
 Levels &audio_get_levels();
