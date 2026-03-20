@@ -5,7 +5,7 @@
 #include <stdint.h>
 
 typedef struct {
-    float gains[CHANNELS][BUSES];
+    float matrix[CHANNELS][BUSES];
 
     uint64_t mutes;
 

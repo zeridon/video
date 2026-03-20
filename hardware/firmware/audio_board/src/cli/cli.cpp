@@ -48,7 +48,7 @@ void Cli::exec_cmd() {
                 } else {
                     this->port->print(" 1*");
                 }
-                this->print_float_fixed(get_gain(chan, bus), 3, 3);
+                this->print_float_fixed(get_volume(chan, bus), 3, 3);
             }
         }
         this->port->println();
@@ -110,7 +110,7 @@ void Cli::exec_cmd() {
             return;
         }
 
-        set_gain(chan, bus, vol);
+        set_volume(chan, bus, vol);
 
         this->port->print("ok");
         return;
