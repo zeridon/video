@@ -99,11 +99,11 @@ bool is_muted(int channel, int bus) {
     return !!(state.mutes & mute_mask(channel, bus));
 }
 
-float calc_real_gain(int channel, int bus, int gain) {
+float calc_real_gain(int channel, int bus, float gain) {
     return gain * !is_muted(channel, bus) * state.bus_multipliers[bus];
 }
 
-void set_gain(int channel, int bus, int gain) {
+void set_gain(int channel, int bus, float gain) {
     state.gains[channel][bus] = gain;
     raw_set_crosspoint(channel, bus, calc_real_gain(channel, bus, gain));
 }

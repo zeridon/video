@@ -44,9 +44,9 @@ void Cli::exec_cmd() {
         for (uint8_t chan = 0; chan < CHANNELS; chan++) {
             for (uint8_t bus = 0; bus < BUSES; bus++) {
                 if (is_muted(chan, bus)) {
-                    this->port->print(" 1*");
-                } else {
                     this->port->print(" 0*");
+                } else {
+                    this->port->print(" 1*");
                 }
                 this->print_float_fixed(get_gain(chan, bus), 3, 3);
             }
@@ -63,7 +63,7 @@ void Cli::exec_cmd() {
         this->port->println();
         return;
     }
-    if (this->hop_word("outs")) {
+    if (this->hop_word("bus-levels")) {
         this->port->print("ok");
         for (uint8_t bus = 0; bus < BUSES; bus++) {
             this->port->print(" ");
@@ -72,10 +72,90 @@ void Cli::exec_cmd() {
         this->port->println();
         return;
     }
+    if (this->hop_word("set-send")) {
+        uint16_t chan = parse_uint();
+        uint16_t bus = parse_uint();
+        uint16_t want_send = parse_uint();
+        if (chan >= CHANNELS) {
+            this->port->printf("fail (chan %d is invalid)\n", chan);
+            return;
+        }
+        if (bus >= BUSES) {
+            this->port->printf("fail (bus %d is invalid)\n", bus);
+            return;
+        }
+        if (want_send > 0) {
+            unmute(chan, bus);
+        } else {
+            mute(chan, bus);
+        }
+        this->port->println("ok");
+        return;
+    }
+    if (this->hop_word("set-fader")) {
+        uint16_t chan = parse_uint();
+        uint16_t bus = parse_uint();
+        float vol = parse_float();
+
+        if (chan >= CHANNELS) {
+            this->port->printf("fail (chan %d is invalid)\n", chan);
+            return;
+        }
+        if (bus >= BUSES) {
+            this->port->printf("fail (bus %d is invalid)\n", bus);
+            return;
+        }
+        if (vol < 0) {
+            this->port->printf("fail (vol should not be negative)\n");
+            return;
+        }
+
+        set_gain(chan, bus, vol);
+
+        this->port->print("ok");
+        return;
+    }
+    if (this->hop_word("set-gain")) {
+        uint16_t chan = parse_uint();
+        float vol = parse_float();
+
+        if (chan >= CHANNELS) {
+            this->port->printf("fail (chan %d is invalid)\n", chan);
+            return;
+        }
+        if (vol < 0) {
+            this->port->printf("fail (vol should not be negative)\n");
+            return;
+        }
+
+        set_channel_multiplier(chan, vol);
+
+        this->port->print("ok");
+        return;
+    }
+    if (this->hop_word("set-bus-level")) {
+        uint16_t bus = parse_uint();
+        float vol = parse_float();
+
+        if (bus >= BUSES) {
+            this->port->printf("fail (bus %d is invalid)\n", bus);
+            return;
+        }
+        if (vol < 0) {
+            this->port->printf("fail (vol should not be negative)\n");
+            return;
+        }
+
+        set_bus_multiplier(bus, vol);
+
+        this->port->print("ok");
+        return;
+    }
     if (this->hop_word("factory-reset")) {
         audio_reset_default_state();
         audio_eeprom_save_all();
         this->port->println("ok");
+        return;
     }
 }
 
@@ -140,7 +220,7 @@ void Cli::skip_whitespace() {
     skip_whitespace_in(&this->cmd);
 }
 
-uint16_t Cli::parse_number() {
+uint16_t Cli::parse_uint() {
     skip_whitespace();
     uint16_t result = 0;
     while (*this->cmd >= '0' && *this->cmd <= '9') {
@@ -153,6 +233,41 @@ uint16_t Cli::parse_number() {
         this->cmd++;
     }
     return result;
+}
+
+float Cli::parse_float() {
+    skip_whitespace();
+
+    float sign = 1.0f;
+    if (*this->cmd == '-') {
+        sign = -1.0f;
+        this->cmd++;
+    } else if (*this->cmd == '+') {
+        this->cmd++;
+    }
+
+    float result = 0.0f;
+    while (*this->cmd >= '0' && *this->cmd <= '9') {
+        result *= 10.0f;
+        result += (*this->cmd) - '0';
+        this->cmd++;
+    }
+
+    if (*this->cmd == '.') {
+        this->cmd++;
+        float place = 0.1f;
+        while (*this->cmd >= '0' && *this->cmd <= '9') {
+            result += ((*this->cmd) - '0') * place;
+            place *= 0.1f;
+            this->cmd++;
+        }
+    }
+
+    if (*this->cmd == ' ') {
+        this->cmd++;
+    }
+
+    return sign * result;
 }
 
 bool Cli::hop_word(const char* word) {

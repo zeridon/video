@@ -15,7 +15,8 @@ class Cli {
         bool is_terminator_or_whitespace(char c);
         void skip_whitespace_in(char** buf);
         void skip_whitespace();
-        uint16_t parse_number();
+        uint16_t parse_uint();
+        float parse_float();
         bool hop_word(const char* word);
         void eat(char chr);
 

@@ -18,7 +18,7 @@ bool is_muted(int channel, int bus);
 void mute(int channel, int bus);
 void unmute(int channel, int bus);
 
-void set_gain(int channel, int bus, int gain);
+void set_gain(int channel, int bus, float gain);
 float get_gain(int channel, int bus);
 
 float get_bus_multiplier(int bus);
