@@ -60,6 +60,7 @@ jobs:
            hardware/firmware/tools/flash_rp2040_firmware.sh=/usr/share/fosdem_firmware/flash_rp2040_firmware.sh \
            hardware/firmware/tools/flash_audio_board_firmware.sh=/usr/share/fosdem_firmware/flash_audio_board_firmware.sh
     - run: package_cloud push fosdem/video-team/debian/bookworm release/*deb
+    - run: package_cloud push fosdem/video-team/debian/trixie release/*deb
     - store_artifacts:
         path: release
     - persist_to_workspace:
@@ -71,19 +72,6 @@ jobs:
     executor: github
     steps:
     - run: apk add fakeroot findutils
-    - attach_workspace:
-        at: .
-    - run: mkdir -v -p release
-    - run: fakeroot tar -czvf release/fosdem-firmware-${CIRCLE_TAG}.amd64.tar.gz -C firmware_build $(find firmware_build -mindepth 1 -maxdepth 1 -printf '%f\n')
-    - run: cd release && sha256sum fosdem-firmware-*.tar.gz *deb > sha256sums.txt
-    - run: >
-        ghr \
-          -u "${CIRCLE_PROJECT_USERNAME}" \
-          -r "${CIRCLE_PROJECT_REPONAME}" \
-          -c "${CIRCLE_SHA1}" \
-          -delete \
-          "${CIRCLE_TAG}" \
-          ./release/
 
 workflows:
   build:
