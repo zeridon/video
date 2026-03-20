@@ -19,6 +19,8 @@ class Cli {
         bool hop_word(const char* word);
         void eat(char chr);
 
+        void print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits);
+
         // state used only during exec_cmd():
         char* cmd;
 };

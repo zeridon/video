@@ -1,11 +1,67 @@
 #include "cli.h"
 
+#include "../config.h"
+#include "../teensyaudio.h"
+#include "../helpers.h"
+
 Cli::Cli(Stream* _port) : port(_port) {}
 
 void Cli::exec_cmd() {
     if (this->hop_word("ping")) {
         this->port->printf("pong %s\n", this->cmd);
+        return;
     }
+    if (this->hop_word("levels")) {
+        Levels &levels = audio_get_levels();
+        this->port->print("ok");
+        for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
+            this->port->print(" ");
+            this->print_float_fixed(rmsToDb(levels.rms[i]), 3, 5);
+            this->port->print(" ");
+            this->print_float_fixed(rmsToDb(levels.peak[i]), 3, 5);
+            this->port->print(" ");
+            this->print_float_fixed(rmsToDb(levels.smooth[i]), 3, 5);
+        }
+        this->port->println();
+    }
+}
+
+void Cli::print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits) {
+    char buf[whole_digits + frac_digits + 3];
+
+    bool sign = x < 0;
+    if (sign) {
+        x = -x;
+    }
+
+    buf[0] = sign ? '-' : '+';
+
+    if (x >= 10 * whole_digits) {
+        buf[1] = 'i';
+        buf[2] = 'n';
+        buf[3] = 'f';
+        buf[4] = '\0';
+    } else {
+        uint32_t whole = (uint32_t)x;
+        float frac = x - whole;
+
+        for (uint8_t i = whole_digits; i >= 1; i--) {
+            buf[i] = '0' + (whole % 10);
+            whole /= 10;
+        }
+
+        buf[whole_digits + 1] = '.';
+
+        for (uint8_t i = 0; i < frac_digits; i++) {
+            frac *= 10;
+            buf[whole_digits + 2 + i] = '0' + (uint32_t)frac;
+            frac -= (uint32_t)frac;
+        }
+
+        buf[frac_digits + whole_digits + 2] = '\0';
+    }
+
+    this->port->print(buf);
 }
 
 bool Cli::is_terminator(char c) {
