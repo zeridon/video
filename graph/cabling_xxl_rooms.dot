@@ -1,5 +1,5 @@
 digraph G {
-	label="FOSDEM 2024 xxl rooms video cabling setup:\njanson, k1105";
+	label="FOSDEM 2027 xxl rooms video cabling setup:\njanson, k1105";
 	concentrate = true;
 	compound = true;
 	node [shape = box];
@@ -26,16 +26,17 @@ digraph G {
 			URL = "https://en-us.sennheiser.com/global-downloads/file/671/Set100PG3_US_INT.pdf";
 			audience_microphone_2_receiver_audio_out [label = "audio out\n3.5mm trs ?unbalanced ?mono female"];
 		}
+		ulb_mixer [label="ULB audio mixer"];
 	}
+	
 
-	room_projector_optional_adapter [label = "optional vga->hdmi adapter", style="dotted"];
 	speaker_laptop [label = "speaker laptop"];
 
 	subgraph cluster_camera {
 		label="camera\nSony HXR-NX100"
 			URL="https://pro.sony.com/bbsccms/assets/files/micro/nxcam/latest/Sony_HXR-NX100.pdf";
-		camera_xlr_in_1 [label = "audio in CH1\nXLR female port\n48V phantom power"];
-		camera_xlr_in_2 [label = "audio in CH2\nXLR female port\n48V phantom power"];
+		camera_xlr_in_1 [label = "audio in CH1 (left)\nXLR female port\n48V phantom power"];
+		camera_xlr_in_2 [label = "audio in CH2 (right)\nXLR female port\n48V phantom power"];
 		camera_hdmi_out [label = "HDMI out\nHDMI A (full size) female"];
 		camera_internal_mic [label="audio in CH2\ninternal microphone"];
 		camera_audio_monitor [label="audio monitoring port\n3.5mm trs stereo female"];
@@ -49,19 +50,13 @@ digraph G {
 
 		subgraph cam {
 			label = "";
-			subgraph cluster_cam_laptop {
-				label = "cam box laptop";
-				cam_laptop_ac_in [label="AC in"];
-				cam_laptop_usb [label="USB"];
-			}
 			subgraph cluster_cam_box {
 				label = "camera box";
 				URL = "https://github.com/FOSDEM/video";
 				cam_box_hdmi_in [label="HDMI in\nHDMI A (full size) female"];
-				cam_box_switch [label="3x Gbit dumb switch"];
+				cam_box_switch [label="4x Gbit dumb switch"];
 				cam_box_usb [label="USB"];
 			}
-			cam_laptop_usb -> cam_box_usb [ dir = "both" ];
 		}
 
 		subgraph speaker {
@@ -71,58 +66,43 @@ digraph G {
 				URL = "https://github.com/FOSDEM/video";
 				speaker_box_hdmi_in [label="HDMI in\nleft HDMI port\nfemale"];
 				speaker_box_hdmi_out [label="HDMI out\nright HDMI port\nfemale"];
-				speaker_box_switch [label="3x Gbit dumb switch"];
+				speaker_box_switch [label="4x Gbit dumb switch"];
 				speaker_box_usb [label="USB"];
-			}
-				subgraph cluster_speaker_video_laptop {
-				label = "speaker box laptop"
-				speaker_video_laptop_ac_in [label="AC in"];
-				speaker_video_laptop_usb [label="USB"];
-			}
-			speaker_video_laptop_usb -> speaker_box_usb [ dir = "both" ];
+				subgraph cluster_mix_panel {
+					label = "audio mixer";
+					mix_panel_mic_1_in [label="mic 1 in\nXLR female port\n+48V phantom power"];
+					mix_panel_mic_2_in [label="mic 2 in\nXLR female port\n+48V phantom power"];
+					mix_panel_mic_3_in [label="mic 3 in\nXLR female port\n+48V phantom power"];
+					mix_panel_out_1 [label="XLR out 1\nmale port\nbalanced mono"];
+					mix_panel_out_2 [label="XLR out 2\nmale port\nbalanced mono"];
+				}
+	}
 		}
 	}
 
-	subgraph cluster_mix_panel {
-		label="audio mix panel\n?ULB provided";
-		url = "http://usa.yamaha.com/products/live_sound/mixers/analog-mixers/mg_standard_model/mg06/";
-		mix_panel_mic_1_in [label="mic 1 in\nXLR female port\n+48V phantom power"];
-		mix_panel_mic_2_in [label="mic 2 in\nXLR female port\n+48V phantom power"];
-		mix_panel_mic_3_in [label="mic 3 in\nXLR female port\n+48V phantom power"];
-		mix_panel_out_1 [label="mix panel out left\nXLR male port\nbalanced left or mono"];
-		mix_panel_out_2 [label="mix panel out right\nXLR male port\nbalanced right or mono"];
-		mix_panel_ac_in [label="AC in"];
-	}
 	cam_power_strip [label="camera side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
 	speaker_power_strip [label="speaker side power strip\n>=4 CEE 7/3 or 7/5 sockets"];
 
 	room_projector [label="room projector HDMI in\nHDMI port\nfemale"];
-	headphones [label="Sennheiser HD201 headphones\n3.5mm trs stereo male\nrental budgetcam", URL="https://en-us.sennheiser.com/over-ear-headphones-hd-201"];
-	video_vlan [label="FOSDEM video vlan", style="dotted"];
+	headphones [label="Sennheiser HD25 headphones\n3.5mm trs stereo male", URL="https://www.sennheiser.com/en-us/catalog/products/headphones/hd-25/hd-25-506909"];
+video_vlan [label="FOSDEM video vlan", style="dotted"];
 
 	speaker_microphone -> speaker_microphone_receiver_audio_out [label = "+-600 MHz analog wireless", lhead = cluster_speaker_microphone_receiver, style = dashed ];
 	audience_microphone_1 -> audience_microphone_1_receiver_audio_out [label = "+-600 MHz analog wireless", lhead = cluster_audience_microphone_1_receiver, style = dashed ];
 	audience_microphone_2 -> audience_microphone_2_receiver_audio_out [label = "+-600 MHz analog wireless", lhead = cluster_audience_microphone_2_receiver, style = dashed ];
-	speaker_microphone_receiver_audio_out -> mix_panel_mic_1_in [label = "3.5mm trs mono unbalanced male to XLR male"];
-	audience_microphone_1_receiver_audio_out -> mix_panel_mic_2_in [label = "3.5mm trs mono unbalanced male to XLR male"];
-	audience_microphone_2_receiver_audio_out -> mix_panel_mic_3_in [label = "3.5mm trs mono unbalanced male to XLR male"];
 
-	mix_panel_out_1 -> camera_xlr_in_1 [label = "xlr cable\nfemale/male"];
-	mix_panel_out_2 -> camera_xlr_in_2 [label = "xlr cable\nfemale/male"];
 	speaker_laptop -> speaker_box_hdmi_in [label = "direct hdmi cable male/male"];
-	speaker_box_hdmi_out -> room_projector_optional_adapter [label = "VGA cable\nmale/male", style = "dotted"];
-	room_projector_optional_adapter -> room_projector [label = "HDMI cable male/male", style = "dotted"];
 	camera_hdmi_out -> cam_box_hdmi_in [label = "HDMI cable\nHDMI A (full size)\nmale/male"];
 	speaker_box_hdmi_out -> room_projector [label = "HDMI cable\nmale/male"];
 	camera_audio_monitor -> headphones;
 	speaker_box_switch -> video_vlan [dir = "both", label = "ethernet cable"];
 	speaker_box_switch -> cam_box_switch [dir = "both", label = "ethernet cable"];
+	
+	ulb_mixer -> camera_xlr_in_1;
+	mix_panel_out_2 -> ulb_mixer;
 
 	# AC power
 	cam_power_strip -> camera_ac_in;
-	cam_power_strip -> cam_laptop_ac_in;
-	cam_power_strip -> mix_panel_ac_in;
 
 	speaker_power_strip -> speaker_laptop;
-	speaker_power_strip -> speaker_video_laptop_ac_in;
 }
