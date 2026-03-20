@@ -11,7 +11,7 @@ void Cli::exec_cmd() {
         this->port->printf("pong %s\n", this->cmd);
         return;
     }
-    if (this->hop_word("levels")) {
+    if (this->hop_word("levels.db")) {
         Levels &levels = audio_get_levels();
         this->port->print("ok");
         for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
@@ -23,6 +23,59 @@ void Cli::exec_cmd() {
             this->print_float_fixed(rmsToDb(levels.smooth[i]), 3, 5);
         }
         this->port->println();
+        return;
+    }
+    if (this->hop_word("levels")) {
+        Levels &levels = audio_get_levels();
+        this->port->print("ok");
+        for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
+            this->port->print(" ");
+            this->print_float_fixed(levels.rms[i], 3, 5);
+            this->port->print(" ");
+            this->print_float_fixed(levels.peak[i], 3, 5);
+            this->port->print(" ");
+            this->print_float_fixed(levels.smooth[i], 3, 5);
+        }
+        this->port->println();
+        return;
+    }
+    if (this->hop_word("matrix")) {
+        this->port->print("ok");
+        for (uint8_t chan = 0; chan < CHANNELS; chan++) {
+            for (uint8_t bus = 0; bus < BUSES; bus++) {
+                if (is_muted(chan, bus)) {
+                    this->port->print(" 1*");
+                } else {
+                    this->port->print(" 0*");
+                }
+                this->print_float_fixed(get_gain(chan, bus), 3, 3);
+            }
+        }
+        this->port->println();
+        return;
+    }
+    if (this->hop_word("gains")) {
+        this->port->print("ok");
+        for (uint8_t chan = 0; chan < CHANNELS; chan++) {
+            this->port->print(" ");
+            this->print_float_fixed(get_channel_multiplier(chan), 3, 3);
+        }
+        this->port->println();
+        return;
+    }
+    if (this->hop_word("outs")) {
+        this->port->print("ok");
+        for (uint8_t bus = 0; bus < BUSES; bus++) {
+            this->port->print(" ");
+            this->print_float_fixed(get_bus_multiplier(bus), 3, 3);
+        }
+        this->port->println();
+        return;
+    }
+    if (this->hop_word("factory-reset")) {
+        audio_reset_default_state();
+        audio_eeprom_save_all();
+        this->port->println("ok");
     }
 }
 
@@ -61,7 +114,12 @@ void Cli::print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits) 
         buf[frac_digits + whole_digits + 2] = '\0';
     }
 
-    this->port->print(buf);
+    // FIXME: give this function to a year 1 uni student to make prettier
+    if (sign) {
+        this->port->print(buf);
+    } else {
+        this->port->print(buf + 1);
+    }
 }
 
 bool Cli::is_terminator(char c) {
