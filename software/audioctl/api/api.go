@@ -32,6 +32,7 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 
 	a.m.AddTopic("heartbeat")
 	a.m.AddTopic("state")
+	a.m.AddTopic("levels")
 	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd)
 
 	a.srv.Handler = a.m.Handler()
@@ -42,7 +43,7 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 func (a *Api) Serve() error {
 	defer close(a.dying)
 	go a.doHeartbeat()
-	go a.statePoller()
+	go a.poller()
 	a.logger.Info("starting server", "addr", a.cfg.Bind)
 	return a.srv.ListenAndServe()
 }
@@ -67,20 +68,38 @@ func (a *Api) doHeartbeat() {
 	}
 }
 
-func (a *Api) statePoller() {
-	ticker := time.NewTicker(1 * time.Second)
-	defer ticker.Stop()
+func (a *Api) poller() {
+	pollState := time.NewTicker(time.Duration(a.cfg.StatePollIntervalMsec) * time.Millisecond)
+	defer pollState.Stop()
 
+	pollLevels := time.NewTicker(time.Duration(a.cfg.LevelsPollIntervalMsec) * time.Millisecond)
+	defer pollLevels.Stop()
+
+	a.pollState()
 	for {
 		select {
 		case <-a.dying:
 			return
-		case <-ticker.C:
-			state, err := a.ctl.GetFullState()
-			if err != nil {
-				a.logger.Error("could not poll state", "err", err)
-			}
-			misirka.Publish(a.m, "state", state)
+		case <-pollState.C:
+			a.pollState()
+		case <-pollLevels.C:
+			a.pollLevels()
 		}
 	}
+}
+
+func (a *Api) pollState() {
+	state, err := a.ctl.GetFullState()
+	if err != nil {
+		a.logger.Error("could not poll state", "err", err)
+	}
+	misirka.Publish(a.m, "state", state)
+}
+
+func (a *Api) pollLevels() {
+	levels, err := a.ctl.GetLevels()
+	if err != nil {
+		a.logger.Error("could not poll levels", "err", err)
+	}
+	misirka.Publish(a.m, "levels", levels)
 }

@@ -21,6 +21,9 @@ type Ctl struct {
 	reqs      chan *requestSync
 	input     chan string
 	readerErr chan error
+
+	numChans int
+	numBuses int
 }
 
 func New(logger *slog.Logger, cfg *config.CtlCfg) *Ctl {

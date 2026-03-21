@@ -60,15 +60,31 @@ func (c *Ctl) GetFullState() (*MixerState, error) {
 		return nil, fmt.Errorf("could not get matrix: %w", err)
 	}
 
-	numChans := len(chanNames)
-	numBuses := len(busNames)
-	if len(chanLabels) != numChans || len(busLabels) != numBuses {
+	c.numChans = len(chanNames)
+	c.numBuses = len(busNames)
+	if len(chanLabels) != c.numChans || len(busLabels) != c.numBuses {
 		return nil, fmt.Errorf("item length mismatch (channel.labels and channel.names returned mismatching data)")
 	}
 
+	if len(phantoms) != c.numChans {
+		return nil, fmt.Errorf("wrong number of phantoms (got %d, should be %d)", len(phantoms), c.numChans)
+	}
+
+	if len(gains) != c.numChans {
+		return nil, fmt.Errorf("wrong number of gains (got %d, should be %d)", len(gains), c.numChans)
+	}
+
+	if len(sends) != c.numChans*c.numBuses {
+		return nil, fmt.Errorf("wrong number of matrix items (got %d, should be %d)", len(sends), c.numChans*c.numBuses)
+	}
+
+	if len(busVolumes) != c.numBuses {
+		return nil, fmt.Errorf("wrong number of busVolumes (got %d, should be %d)", len(busVolumes), c.numBuses)
+	}
+
 	m := &MixerState{
-		Channels: make([]ChannelState, numChans),
-		Buses:    make([]BusState, numBuses),
+		Channels: make([]ChannelState, c.numChans),
+		Buses:    make([]BusState, c.numBuses),
 	}
 
 	for i := range m.Channels {
@@ -76,9 +92,9 @@ func (c *Ctl) GetFullState() (*MixerState, error) {
 		m.Channels[i].Name = chanNames[i]
 		m.Channels[i].Gain = gains[i]
 		m.Channels[i].Phantom = phantoms[i]
-		m.Channels[i].Sends = make([]SendState, numBuses)
+		m.Channels[i].Sends = make([]SendState, c.numBuses)
 		for j := range m.Buses {
-			m.Channels[i].Sends[j] = sends[i*numBuses+j]
+			m.Channels[i].Sends[j] = sends[i*c.numBuses+j]
 		}
 	}
 
