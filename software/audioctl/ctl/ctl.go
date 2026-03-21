@@ -83,6 +83,7 @@ func (c *Ctl) RawCmd(argstr string) (string, error) {
 		select {
 		case data := <-c.input:
 			if resp, err, ok := c.parseResponse(data); ok {
+				c.logger.Debug("cmd", "argstr", argstr, "resp", resp)
 				return resp, err
 			}
 			c.handleUnsolicitedInput(data)

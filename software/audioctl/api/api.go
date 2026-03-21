@@ -38,6 +38,9 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd)
 	misirka.HandleCall(a.m, "set-matrix-send", a.handleSetMatrixSend)
 	misirka.HandleCall(a.m, "set-matrix-volume", a.handleSetMatrixVolume)
+	misirka.HandleCall(a.m, "set-phantom", a.handleSetPhantom)
+	misirka.HandleCall(a.m, "set-in-gain", a.handleSetInGain)
+	misirka.HandleCall(a.m, "set-bus-volume", a.handleSetBusVolume)
 
 	a.srv.Handler = a.m.Handler()
 	a.srv.Addr = a.cfg.Bind

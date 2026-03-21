@@ -99,6 +99,102 @@ func (a *Api) handleSetMatrixSend(param SetMatrixSendParam) (string, *misirka.ME
 	return "ok", nil
 }
 
+type SetInGainParam struct {
+	Chan     *uint8   `json:"channel"`
+	ChanName *string  `json:"channel_name"`
+	Gain     *float32 `json:"gain"`
+}
+
+func (a *Api) handleSetInGain(param SetInGainParam) (string, *misirka.MErr) {
+	err := a.getChanByName(&param.Chan, param.ChanName)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -1000,
+			Err:  err,
+		}
+	}
+
+	if param.Chan == nil || param.Gain == nil {
+		return "", &misirka.MErr{
+			Code: -1000,
+			Err:  fmt.Errorf("missing fields (need channel, gain)"),
+		}
+	}
+	err = a.ctl.SetInGain(*param.Chan, *param.Gain)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -42,
+			Err:  err,
+		}
+	}
+	a.forceRefresh()
+	return "ok", nil
+}
+
+type SetPhantomParam struct {
+	Chan     *uint8  `json:"channel"`
+	ChanName *string `json:"channel_name"`
+	Phantom  *bool   `json:"phantom"`
+}
+
+func (a *Api) handleSetPhantom(param SetPhantomParam) (string, *misirka.MErr) {
+	err := a.getChanByName(&param.Chan, param.ChanName)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -1000,
+			Err:  err,
+		}
+	}
+
+	if param.Chan == nil || param.Phantom == nil {
+		return "", &misirka.MErr{
+			Code: -1000,
+			Err:  fmt.Errorf("missing fields (need channel, phantom)"),
+		}
+	}
+	err = a.ctl.SetPhantom(*param.Chan, *param.Phantom)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -42,
+			Err:  err,
+		}
+	}
+	a.forceRefresh()
+	return "ok", nil
+}
+
+type SetBusVolumeParam struct {
+	Bus     *uint8   `json:"bus"`
+	BusName *string  `json:"bus_name"`
+	Volume  *float32 `json:"volume"`
+}
+
+func (a *Api) handleSetBusVolume(param SetBusVolumeParam) (string, *misirka.MErr) {
+	err := a.getBusByName(&param.Bus, param.BusName)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -1000,
+			Err:  err,
+		}
+	}
+
+	if param.Bus == nil || param.Volume == nil {
+		return "", &misirka.MErr{
+			Code: -1000,
+			Err:  fmt.Errorf("missing fields (need bus, volume)"),
+		}
+	}
+	err = a.ctl.SetBusVolume(*param.Bus, *param.Volume)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -42,
+			Err:  err,
+		}
+	}
+	a.forceRefresh()
+	return "ok", nil
+}
+
 func (a *Api) pollState() {
 	state, err := a.ctl.GetFullState()
 	if err != nil {
