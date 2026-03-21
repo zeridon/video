@@ -82,6 +82,9 @@ func (c *Ctl) GetFullState() (*MixerState, error) {
 		return nil, fmt.Errorf("wrong number of busVolumes (got %d, should be %d)", len(busVolumes), c.numBuses)
 	}
 
+	c.ChanNames = chanNames
+	c.BusNames = busNames
+
 	m := &MixerState{
 		Channels: make([]ChannelState, c.numChans),
 		Buses:    make([]BusState, c.numBuses),

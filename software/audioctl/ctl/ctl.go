@@ -22,8 +22,10 @@ type Ctl struct {
 	input     chan string
 	readerErr chan error
 
-	numChans int
-	numBuses int
+	numChans  int
+	numBuses  int
+	ChanNames []string
+	BusNames  []string
 }
 
 func New(logger *slog.Logger, cfg *config.CtlCfg) *Ctl {

@@ -34,6 +34,7 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 	a.m.AddTopic("state")
 	a.m.AddTopic("levels")
 	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd)
+	misirka.HandleCall(a.m, "set-send", a.handleSetSend)
 
 	a.srv.Handler = a.m.Handler()
 	a.srv.Addr = a.cfg.Bind
@@ -86,20 +87,4 @@ func (a *Api) poller() {
 			a.pollLevels()
 		}
 	}
-}
-
-func (a *Api) pollState() {
-	state, err := a.ctl.GetFullState()
-	if err != nil {
-		a.logger.Error("could not poll state", "err", err)
-	}
-	misirka.Publish(a.m, "state", state)
-}
-
-func (a *Api) pollLevels() {
-	levels, err := a.ctl.GetLevels()
-	if err != nil {
-		a.logger.Error("could not poll levels", "err", err)
-	}
-	misirka.Publish(a.m, "levels", levels)
 }
