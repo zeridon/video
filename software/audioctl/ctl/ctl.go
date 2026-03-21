@@ -77,8 +77,8 @@ func (c *Ctl) RawCmd(argstr string) (string, error) {
 	for {
 		select {
 		case data := <-c.input:
-			if resp, ok := c.parseResponse(data); ok {
-				return resp, nil
+			if resp, err, ok := c.parseResponse(data); ok {
+				return resp, err
 			}
 			c.handleUnsolicitedInput(data)
 		case <-timeout:
@@ -98,8 +98,18 @@ func newReq() *requestSync {
 	}
 }
 
-func (c *Ctl) parseResponse(data string) (string, bool) {
-	return "not implemented", true
+func (c *Ctl) parseResponse(data string) (string, error, bool) {
+	okprefix := fmt.Sprintf("[%d ok]", c.slug)
+	if resp, ok := strings.CutPrefix(data, okprefix); ok {
+		return strings.TrimSpace(resp), nil, true
+	}
+
+	failprefix := fmt.Sprintf("[%d err]", c.slug)
+	if resp, ok := strings.CutPrefix(data, failprefix); ok {
+		err := fmt.Errorf("hardware responded with error: %s", strings.TrimSpace(resp))
+		return "", err, true
+	}
+	return "", nil, false
 }
 
 func (c *Ctl) handleUnsolicitedInput(data string) {
