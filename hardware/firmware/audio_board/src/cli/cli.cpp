@@ -1,189 +1,60 @@
 #include "cli.h"
 
-#include "../config.h"
-#include "../teensyaudio.h"
-#include "../helpers.h"
-
 Cli::Cli(Stream* _port) : port(_port) {}
 
 void Cli::exec_cmd() {
-    if (this->hop_word("ping")) {
-        this->port->printf("pong %s\n", this->cmd);
+    if (this->cmds[this->num_cmds].name == nullptr || strncmp("END", this->cmds[this->num_cmds].name, 3) != 0) {
+        this->port->println("fail (internal bug: num_cmds in cli.h is probably wrong)");
         return;
     }
-    if (this->hop_word("levels.db")) {
-        Levels &levels = audio_get_levels();
-        this->port->print("ok");
-        for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
-            this->port->print(" ");
-            this->print_float_fixed(rmsToDb(levels.rms[i]), 3, 5);
-            this->port->print(" ");
-            this->print_float_fixed(rmsToDb(levels.peak[i]), 3, 5);
-            this->port->print(" ");
-            this->print_float_fixed(rmsToDb(levels.smooth[i]), 3, 5);
-        }
-        this->port->println();
-        return;
-    }
-    if (this->hop_word("levels")) {
-        Levels &levels = audio_get_levels();
-        this->port->print("ok");
-        for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
-            this->port->print(" ");
-            this->print_float_fixed(levels.rms[i], 3, 5);
-            this->port->print(" ");
-            this->print_float_fixed(levels.peak[i], 3, 5);
-            this->port->print(" ");
-            this->print_float_fixed(levels.smooth[i], 3, 5);
-        }
-        this->port->println();
-        return;
-    }
-    if (this->hop_word("matrix")) {
-        this->port->print("ok");
-        for (uint8_t chan = 0; chan < CHANNELS; chan++) {
-            for (uint8_t bus = 0; bus < BUSES; bus++) {
-                if (is_muted(chan, bus)) {
-                    this->port->print(" 0*");
-                } else {
-                    this->port->print(" 1*");
-                }
-                this->print_float_fixed(get_volume(chan, bus), 3, 3);
-            }
-        }
-        this->port->println();
-        return;
-    }
-    if (this->hop_word("gains")) {
-        this->port->print("ok");
-        for (uint8_t chan = 0; chan < CHANNELS; chan++) {
-            this->port->print(" ");
-            this->print_float_fixed(get_channel_input_gain_db(chan), 3, 3);
-        }
-        this->port->println();
-        return;
-    }
-    if (this->hop_word("phantoms")) {
-        this->port->print("ok");
-        for (uint8_t chan = 0; chan < CHANNELS; chan++) {
-            if (is_phantom_on(chan)) {
-                this->port->print(" 1");
-            } else {
-                this->port->print(" 0");
-            }
-        }
-        this->port->println();
-        return;
-    }
-    if (this->hop_word("bus-volumes")) {
-        this->port->print("ok");
-        for (uint8_t bus = 0; bus < BUSES; bus++) {
-            this->port->print(" ");
-            this->print_float_fixed(get_bus_volume(bus), 3, 3);
-        }
-        this->port->println();
-        return;
-    }
-    if (this->hop_word("set-send")) {
-        uint16_t chan = parse_uint();
-        uint16_t bus = parse_uint();
-        uint16_t want_send = parse_uint();
-        if (chan >= CHANNELS) {
-            this->port->printf("fail (chan %d is invalid)\n", chan);
-            return;
-        }
-        if (bus >= BUSES) {
-            this->port->printf("fail (bus %d is invalid)\n", bus);
-            return;
-        }
-        if (want_send > 0) {
-            unmute(chan, bus);
-        } else {
-            mute(chan, bus);
-        }
-        this->port->println("ok");
-        return;
-    }
-    if (this->hop_word("set-phantom")) {
-        uint16_t chan = parse_uint();
-        uint16_t want_phantom = parse_uint();
-        if (chan >= CHANNELS) {
-            this->port->printf("fail (chan %d is invalid)\n", chan);
-            return;
-        }
-        if (want_phantom > 0) {
-            set_phantom_on(chan);
-        } else {
-            set_phantom_off(chan);
-        }
-        this->port->println("ok");
-        return;
-    }
-    if (this->hop_word("set-fader")) {
-        uint16_t chan = parse_uint();
-        uint16_t bus = parse_uint();
-        float vol = parse_float();
 
-        if (chan >= CHANNELS) {
-            this->port->printf("fail (chan %d is invalid)\n", chan);
-            return;
+    const Cli::CmdDescr* cmd = this->hop_cmd();
+    if (!cmd) {
+        this->port->println("fail (unknown command; use `help` for help)");
+        return;
+    }
+
+    uint8_t num_spaces = 0;
+    for (uint8_t i = 0; this->input_buf[i] != '\0'; i++) {
+        if (this->input_buf[i] == ' ') {
+            num_spaces++;
         }
-        if (bus >= BUSES) {
-            this->port->printf("fail (bus %d is invalid)\n", bus);
-            return;
-        }
-        if (vol < 0) {
-            this->port->printf("fail (vol should not be negative)\n");
-            return;
+    }
+
+    if (cmd->num_args >= 0 && cmd->num_args != num_spaces) {
+        this->port->print("fail (");
+        this->print_usage(*cmd);
+        this->port->println(")");
+        return;
+    }
+
+    cmd->callback(this);
+}
+
+void Cli::print_usage(const Cli::CmdDescr& cmd) {
+    this->port->print("usage: ");
+    this->port->print(cmd.name);
+    if (cmd.arghelp[0] != '\0') {
+        this->port->print(" ");
+        this->port->print(cmd.arghelp);
+    }
+    this->port->print(" -- ");
+    this->port->print(cmd.help);
+}
+
+const Cli::CmdDescr* Cli::hop_cmd() {
+    for (uint8_t i = 0; i < Cli::num_cmds; i++) {
+        const Cli::CmdDescr& cmd = this->cmds[i];
+        if (cmd.name == nullptr || cmd.help == nullptr || cmd.arghelp == nullptr) {
+            this->port->printf("fail (internal bug: entry %d in commands.cpp is corrupted)", i);
+            return nullptr;
         }
 
-        set_volume(chan, bus, vol);
-
-        this->port->println("ok");
-        return;
-    }
-    if (this->hop_word("set-in-gain")) {
-        uint16_t chan = parse_uint();
-        float gain = parse_float();
-
-        if (chan >= CHANNELS) {
-            this->port->printf("fail (chan %d is invalid)\n", chan);
-            return;
+        if (this->hop_word(cmd.name)) {
+            return &cmd;
         }
-        if (gain < 0) {
-            this->port->printf("fail (gain should not be negative)\n");
-            return;
-        }
-
-        set_channel_input_gain_db(chan, gain);
-
-        this->port->println("ok");
-        return;
     }
-    if (this->hop_word("set-bus-volume")) {
-        uint16_t bus = parse_uint();
-        float vol = parse_float();
-
-        if (bus >= BUSES) {
-            this->port->printf("fail (bus %d is invalid)\n", bus);
-            return;
-        }
-        if (vol < 0) {
-            this->port->printf("fail (vol should not be negative)\n");
-            return;
-        }
-
-        set_bus_volume(bus, vol);
-
-        this->port->println("ok");
-        return;
-    }
-    if (this->hop_word("factory-reset")) {
-        audio_reset_default_state();
-        audio_eeprom_save_all();
-        this->port->println("ok");
-        return;
-    }
+    return nullptr;
 }
 
 void Cli::print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits) {
@@ -252,7 +123,7 @@ void Cli::skip_whitespace() {
     skip_whitespace_in(&this->cmd);
 }
 
-uint16_t Cli::parse_uint() {
+uint16_t Cli::hop_uint() {
     skip_whitespace();
     uint16_t result = 0;
     while (*this->cmd >= '0' && *this->cmd <= '9') {
@@ -267,7 +138,7 @@ uint16_t Cli::parse_uint() {
     return result;
 }
 
-float Cli::parse_float() {
+float Cli::hop_float() {
     skip_whitespace();
 
     float sign = 1.0f;

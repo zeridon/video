@@ -1,0 +1,287 @@
+#include "cli.h"
+
+#include "../config.h"
+#include "../teensyaudio.h"
+#include "../helpers.h"
+
+const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
+    {
+        .name = "ping",
+        .help = "returns `pong <text>`",
+        .arghelp = "<text>",
+        .num_args = -1,
+        .callback = [](Cli* cli){
+            cli->port->printf("pong %s\n", cli->cmd);
+        }
+    },
+    {
+        .name = "levels.db",
+        .help = "for each input channel and then for each output bus, returns 3 numbers that are the rms, peak and smooth levels in db",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            Levels &levels = audio_get_levels();
+            cli->port->print("ok");
+            for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
+                cli->port->print(" ");
+                cli->print_float_fixed(rmsToDb(levels.rms[i]), 3, 5);
+                cli->port->print(" ");
+                cli->print_float_fixed(rmsToDb(levels.peak[i]), 3, 5);
+                cli->port->print(" ");
+                cli->print_float_fixed(rmsToDb(levels.smooth[i]), 3, 5);
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "levels",
+        .help = "for each input channel and then for each output bus, returns 3 numbers that are the rms, peak and smooth levels",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            Levels &levels = audio_get_levels();
+            cli->port->print("ok");
+            for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
+                cli->port->print(" ");
+                cli->print_float_fixed(levels.rms[i], 3, 5);
+                cli->port->print(" ");
+                cli->print_float_fixed(levels.peak[i], 3, 5);
+                cli->port->print(" ");
+                cli->print_float_fixed(levels.smooth[i], 3, 5);
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "matrix",
+        .help = "for each input channel x outpub bus combination, outputs an item in the form <send>*<volume>, where send is 0/1 and volume is a float",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->port->print("ok");
+            for (uint8_t chan = 0; chan < CHANNELS; chan++) {
+                for (uint8_t bus = 0; bus < BUSES; bus++) {
+                    if (is_muted(chan, bus)) {
+                        cli->port->print(" 0*");
+                    } else {
+                        cli->port->print(" 1*");
+                    }
+                    cli->print_float_fixed(get_volume(chan, bus), 3, 3);
+                }
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "gains",
+        .help = "for each input channel, returns its gain in db",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->port->print("ok");
+            for (uint8_t chan = 0; chan < CHANNELS; chan++) {
+                cli->port->print(" ");
+                cli->print_float_fixed(get_channel_input_gain_db(chan), 3, 3);
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "phantoms",
+        .help = "for each input channel, returns its phantom power on/off status (0/1)",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->port->print("ok");
+            for (uint8_t chan = 0; chan < CHANNELS; chan++) {
+                if (is_phantom_on(chan)) {
+                    cli->port->print(" 1");
+                } else {
+                    cli->port->print(" 0");
+                }
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "bus-volumes",
+        .help = "for each output bus, returns its volume",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->port->print("ok");
+            for (uint8_t bus = 0; bus < BUSES; bus++) {
+                cli->port->print(" ");
+                cli->print_float_fixed(get_bus_volume(bus), 3, 3);
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "set-send",
+        .help = "for the given channel/bus crosspoint, set the send bit in the matrix",
+        .arghelp = "<in channel no> <out bus no> (0|1)",
+        .num_args = 3,
+        .callback = [](Cli* cli){
+            uint16_t chan = cli->hop_uint();
+            uint16_t bus = cli->hop_uint();
+            uint16_t want_send = cli->hop_uint();
+            if (chan >= CHANNELS) {
+                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                return;
+            }
+            if (bus >= BUSES) {
+                cli->port->printf("fail (bus %d is invalid)\n", bus);
+                return;
+            }
+            if (want_send > 0) {
+                unmute(chan, bus);
+            } else {
+                mute(chan, bus);
+            }
+            cli->port->println("ok");
+        }
+    },
+    {
+        .name = "set-phantom",
+        .help = "for the given input channel, set the phantom power on/off bit",
+        .arghelp = "<in channel no> (0|1)",
+        .num_args = 2,
+        .callback = [](Cli* cli){
+            uint16_t chan = cli->hop_uint();
+            uint16_t want_phantom = cli->hop_uint();
+            if (chan >= CHANNELS) {
+                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                return;
+            }
+            if (want_phantom > 0) {
+                set_phantom_on(chan);
+            } else {
+                set_phantom_off(chan);
+            }
+            cli->port->println("ok");
+        }
+    },
+    {
+        .name = "set-volume",
+        .help = "for the given channel/bus crosspoint, set the volume in the matrix",
+        .arghelp = "<in channel no> <out bus no> <volume>",
+        .num_args = 3,
+        .callback = [](Cli* cli){
+            uint16_t chan = cli->hop_uint();
+            uint16_t bus = cli->hop_uint();
+            float vol = cli->hop_float();
+
+            if (chan >= CHANNELS) {
+                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                return;
+            }
+            if (bus >= BUSES) {
+                cli->port->printf("fail (bus %d is invalid)\n", bus);
+                return;
+            }
+            if (vol < 0) {
+                cli->port->printf("fail (vol should not be negative)\n");
+                return;
+            }
+
+            set_volume(chan, bus, vol);
+
+            cli->port->println("ok");
+        },
+    },
+    {
+        .name = "set-in-gain",
+        .help = "for the given input channel, set the input gain in decibels",
+        .arghelp = "<in channel no> <gain>",
+        .num_args = 2,
+        .callback = [](Cli* cli){
+            uint16_t chan = cli->hop_uint();
+            float gain = cli->hop_float();
+
+            if (chan >= CHANNELS) {
+                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                return;
+            }
+            if (gain < 0) {
+                cli->port->printf("fail (gain should not be negative)\n");
+                return;
+            }
+
+            set_channel_input_gain_db(chan, gain);
+
+            cli->port->println("ok");
+        }
+    },
+    {
+        .name = "set-bus-volume",
+        .help = "for the given out bus, set its global volume to the given value",
+        .arghelp = "<out bus no> <volume>",
+        .num_args = 2,
+        .callback = [](Cli* cli){
+            uint16_t bus = cli->hop_uint();
+            float vol = cli->hop_float();
+
+            if (bus >= BUSES) {
+                cli->port->printf("fail (bus %d is invalid)\n", bus);
+                return;
+            }
+            if (vol < 0) {
+                cli->port->printf("fail (vol should not be negative)\n");
+                return;
+            }
+
+            set_bus_volume(bus, vol);
+
+            cli->port->println("ok");
+        }
+    },
+    {
+        .name = "factory-reset",
+        .help = "clear all settings and state stored in the EEPROM",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            audio_reset_default_state();
+            audio_eeprom_save_all();
+            cli->port->println("ok");
+        }
+    },
+    {
+        .name = "commands",
+        .help = "get a list of available commands",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->port->print("ok");
+            for (uint8_t i = 0; i < Cli::num_cmds; i++) {
+                cli->port->print(" ");
+                cli->port->print(Cli::cmds[i].name);
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "help",
+        .help = "I suppose you think that was terribly clever.",
+        .arghelp = "[command]",
+        .num_args = -1,
+        .callback = [](Cli* cli){
+            if (cli->cmd[0] == '\0') {
+                cli->port->println("ok use `commands` to get a list of commands and then `help <command>`");
+                return;
+            }
+            const Cli::CmdDescr* cmd = cli->hop_cmd();
+            if (!cmd) {
+                cli->port->println("fail (unknown command; use `commands` for list of commands)");
+                return;
+            }
+            cli->port->print("ok ");
+            cli->print_usage(*cmd);
+            cli->port->println();
+        }
+    },
+    {
+        .name = "END"
+    }
+};

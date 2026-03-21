@@ -116,6 +116,7 @@ set(SOURCES
 	src/teensyaudio.cpp
     src/taa3040.cpp
     src/cli/cli.cpp
+    src/cli/commands.cpp
 )
 
 # Build this project
