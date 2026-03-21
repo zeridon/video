@@ -117,6 +117,7 @@ set(SOURCES
     src/taa3040.cpp
     src/cli/cli.cpp
     src/cli/commands.cpp
+    src/debug.cpp
 )
 
 # Build this project

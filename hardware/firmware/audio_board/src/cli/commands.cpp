@@ -3,6 +3,7 @@
 #include "../config.h"
 #include "../teensyaudio.h"
 #include "../helpers.h"
+#include "../debug.h"
 
 const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
     {
@@ -279,6 +280,18 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             cli->port->print("ok ");
             cli->print_usage(*cmd);
             cli->port->println();
+        }
+    },
+    {
+        .name = "dbgtest",
+        .help = "print some log messages to check your debug logging",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            for (uint8_t i = 0; i < 5; i++) {
+                debug_print("foo ");
+                debug_printf("bar %d\nbaz\n", i);
+            }
         }
     },
     {

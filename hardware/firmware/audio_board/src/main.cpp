@@ -4,6 +4,7 @@
 
 #include "teensyaudio.h"
 #include "cli/cli.h"
+#include "debug.h"
 
 #ifdef USE_EEPROM
 
@@ -28,12 +29,9 @@ ChanInfo channel_info[] = {
 };
 
 void setup() {
-    if (CrashReport) {
-        // Wait until the debug interface is ready
-        while (!SerialUSB1 && millis() < 1500)
-            ;
-        SerialUSB1.print(CrashReport);
-    }
+    SerialUSB.begin(115200);
+    debug_init();
+    debug_print("board ready");
 
 #ifdef USE_DISPLAY
     display_setup();
@@ -41,9 +39,6 @@ void setup() {
     audio_load_state();
 
     audio_setup();
-
-    SerialUSB.begin(115200);
-    SerialUSB1.println("board ready");
 }
 
 Cli the_cli(&SerialUSB);
@@ -75,7 +70,7 @@ void loop() {
         size = audio_eeprom_save_all();
         last_save = millis();
 
-        SerialUSB1.printf("eeprom: wrote %d bytes\n", size);
+        debug_printf("eeprom: wrote %d bytes\n", size);
     }
 #endif
 }
