@@ -3,26 +3,38 @@
 Cli::Cli(Stream* _port) : port(_port) {}
 
 void Cli::exec_cmd() {
+    uint8_t num_args = 0;
+    for (uint8_t i = 0; this->input_buf[i] != '\0'; i++) {
+        if (this->input_buf[i] == ' ') {
+            num_args++;
+        }
+    }
+
+    if (this->cmd[0] >= '0' && this->cmd[0] <= '9') {
+        if (num_args == 0) {
+            this->prefix_fail();
+            this->port->println("I don't speak in numbers (say `help`)");
+            return;
+        }
+        this->slug = this->hop_uint();
+        num_args--;
+    }
+
     if (this->cmds[this->num_cmds].name == nullptr || strncmp("END", this->cmds[this->num_cmds].name, 3) != 0) {
-        this->port->println("[fail] internal bug: num_cmds in cli.h is probably wrong");
+        this->prefix_fail();
+        this->port->println("internal bug: num_cmds in cli.h is probably wrong");
         return;
     }
 
     const Cli::CmdDescr* cmd = this->hop_cmd();
     if (!cmd) {
-        this->port->println("[fail] unknown command; use `help` for help");
+        this->prefix_fail();
+        this->port->println("unknown command; use `help` for help");
         return;
     }
 
-    uint8_t num_spaces = 0;
-    for (uint8_t i = 0; this->input_buf[i] != '\0'; i++) {
-        if (this->input_buf[i] == ' ') {
-            num_spaces++;
-        }
-    }
-
-    if (cmd->num_args >= 0 && cmd->num_args != num_spaces) {
-        this->port->print("[fail] ");
+    if (cmd->num_args >= 0 && cmd->num_args != num_args) {
+        this->prefix_fail();
         this->print_usage(*cmd);
         this->port->println(")");
         return;
@@ -46,7 +58,8 @@ const Cli::CmdDescr* Cli::hop_cmd() {
     for (uint8_t i = 0; i < Cli::num_cmds; i++) {
         const Cli::CmdDescr& cmd = this->cmds[i];
         if (cmd.name == nullptr || cmd.help == nullptr || cmd.arghelp == nullptr) {
-            this->port->printf("[fail] internal bug: entry %d in commands.cpp is corrupted", i);
+            this->prefix_fail();
+            this->port->printf("internal bug: entry %d in commands.cpp is corrupted", i);
             return nullptr;
         }
 
@@ -198,7 +211,7 @@ void Cli::eat(char chr) {
         if (is_terminator(chr)) {
             this->input_pos = 0;
             this->input_buf[0] = '\0';
-            this->port->write("fail line too long\n");
+            this->port->write("[fail] line too long\n");
         }
         return;
     }
@@ -225,4 +238,37 @@ void Cli::update() {
             this->eat((char)c);
         }
     }
+}
+
+void Cli::print_fail() {
+    if (this->slug > 0) {
+        this->port->printf("[%d fail]", this->slug);
+        this->slug = 0;
+    } else {
+        this->port->printf("[fail]");
+    }
+}
+
+void Cli::prefix_fail() {
+    this->print_fail();
+    this->port->print(" ");
+}
+
+void Cli::print_ok() {
+    if (this->slug > 0) {
+        this->port->printf("[%d ok]", this->slug);
+        this->slug = 0;
+    } else {
+        this->port->printf("[ok]");
+    }
+}
+
+void Cli::prefix_ok() {
+    this->print_ok();
+    this->port->print(" ");
+}
+
+void Cli::report_ok() {
+    this->print_ok();
+    this->port->println();
 }

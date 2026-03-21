@@ -37,6 +37,13 @@ class Cli {
         void print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits);
         void print_usage(const Cli::CmdDescr& cmd);
 
-        // state used only during exec_cmd():
         char* cmd;
+
+        uint16_t slug;
+
+        void print_fail();
+        void prefix_fail();
+        void print_ok();
+        void prefix_ok();
+        void report_ok();
 };
