@@ -27,7 +27,9 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 	a.m = misirka.New("/", func(err error) {
 		logger.Error("API error", "err", err)
 	})
+
 	a.m.AddTopic("heartbeat")
+	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd)
 
 	a.srv.Handler = a.m.Handler()
 	a.srv.Addr = a.cfg.Bind
