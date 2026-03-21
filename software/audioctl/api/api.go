@@ -7,6 +7,7 @@ import (
 
 	"github.com/dexterlb/misirka/go/misirka"
 	"github.com/fosdem/video/software/audioctl/config"
+	"github.com/fosdem/video/software/audioctl/ctl"
 )
 
 type Api struct {
@@ -14,12 +15,14 @@ type Api struct {
 	m      *misirka.Misirka
 	logger *slog.Logger
 	cfg    *config.ApiCfg
+	ctl    *ctl.Ctl
 }
 
-func New(logger *slog.Logger, cfg *config.ApiCfg) *Api {
+func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 	a := &Api{}
 	a.cfg = cfg
 	a.logger = logger
+	a.ctl = ctl
 
 	a.m = misirka.New("/", func(err error) {
 		logger.Error("API error", "err", err)

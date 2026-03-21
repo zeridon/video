@@ -1,2 +1,4 @@
 api:
   bind: ':8811'
+ctl:
+  port_device: '/dev/ttyACM0'

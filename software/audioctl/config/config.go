@@ -9,6 +9,7 @@ import (
 
 type Config struct {
 	Api *ApiCfg
+	Ctl *CtlCfg
 }
 
 func Parse(filename string) (*Config, error) {
@@ -52,6 +53,13 @@ func (c *Config) Validate() error {
 	err = c.Api.Validate()
 	if err != nil {
 		return fmt.Errorf("error in `api` section: %w", err)
+	}
+	if c.Ctl == nil {
+		return fmt.Errorf("`ctl` section missing")
+	}
+	err = c.Ctl.Validate()
+	if err != nil {
+		return fmt.Errorf("error in `ctl` section: %w", err)
 	}
 	return nil
 }

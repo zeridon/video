@@ -7,6 +7,7 @@ import (
 
 	"github.com/fosdem/video/software/audioctl/api"
 	"github.com/fosdem/video/software/audioctl/config"
+	"github.com/fosdem/video/software/audioctl/ctl"
 )
 
 func main() {
@@ -23,7 +24,17 @@ func main() {
 		os.Exit(1)
 	}
 
-	a := api.New(logger.With("prefix", "api"), cfg.Api)
+	c := ctl.New(logger.With("prefix", "ctl"), cfg.Ctl)
+	go func() {
+		err := c.Loop()
+		if err != nil {
+			logger.Error("Control loop exited", "err", err)
+			os.Exit(1)
+		}
+		os.Exit(0)
+	}()
+
+	a := api.New(logger.With("prefix", "api"), cfg.Api, c)
 	err = a.Serve()
 	if err != nil {
 		logger.Error("Could not start server", "err", err)
