@@ -10,28 +10,26 @@
 void audio_setup();
 void audio_load_state();
 
-void update_levels(float levels_smooth[CHANNELS + BUSES],
-                   float levels_rms[CHANNELS + BUSES],
-                   float levels_peak[CHANNELS + BUSES]);
+void update_levels(float levels_smooth[CHANNELS + BUSES], float levels_rms[CHANNELS + BUSES], float levels_peak[CHANNELS + BUSES]);
 
 bool is_muted(uint8_t channel, uint8_t bus);
 void mute(uint8_t channel, uint8_t bus);
 void unmute(uint8_t channel, uint8_t bus);
 
-void set_volume(uint8_t channel, uint8_t bus, float gain);
+void  set_volume(uint8_t channel, uint8_t bus, float gain);
 float get_volume(uint8_t channel, uint8_t bus);
 
 float get_bus_volume(uint8_t bus);
-void set_bus_volume(uint8_t bus, float volume);
+void  set_bus_volume(uint8_t bus, float volume);
 
 float get_channel_input_gain_db(uint8_t channel);
-void set_channel_input_gain_db(uint8_t channel, float gain);
+void  set_channel_input_gain_db(uint8_t channel, float gain);
 
 // void raw_set_crosspoint(uint8_t channel, uint8_t bus, float gain);
 float raw_get_crosspoint(uint8_t channel, uint8_t bus);
 
-void audio_update_levels(Levels &levels);
-Levels &audio_get_levels();
+void    audio_update_levels(Levels& levels);
+Levels& audio_get_levels();
 
 void audio_reset_default_state();
 

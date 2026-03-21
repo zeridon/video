@@ -6,19 +6,19 @@
 #include <stdint.h>
 
 typedef struct {
-    float matrix[CHANNELS][BUSES];
+		float matrix[CHANNELS][BUSES];
 
-    uint64_t mutes;
-    uint16_t phantoms;
+		uint64_t mutes;
+		uint16_t phantoms;
 
-    float channel_input_gains[CHANNELS];
-    float bus_volumes[BUSES];
+		float channel_input_gains[CHANNELS];
+		float bus_volumes[BUSES];
 } AudioState;
 
 typedef struct {
-    float smooth[CHANNELS + BUSES];
-    float peak[CHANNELS + BUSES];
-    float rms[CHANNELS + BUSES];
+		float smooth[CHANNELS + BUSES];
+		float peak[CHANNELS + BUSES];
+		float rms[CHANNELS + BUSES];
 } Levels;
 
 #endif

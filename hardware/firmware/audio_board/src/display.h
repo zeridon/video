@@ -7,7 +7,7 @@
 
 #include <ST7735_t3.h>
 
-#define SCREEN_WIDTH 80   // OLED display width, in pixels
+#define SCREEN_WIDTH  80  // OLED display width, in pixels
 #define SCREEN_HEIGHT 160 // OLED display height, in pixels
 
 void display_setup();

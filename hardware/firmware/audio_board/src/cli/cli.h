@@ -1,49 +1,50 @@
 #include <Arduino.h>
 
 class Cli {
-    public:
-        Cli(Stream*);
-        void update();
-    private:
-        Stream* port;
+	public:
+		Cli(Stream*);
+		void update();
 
-        struct CmdDescr{
-            const char* name;
-            const char* help;
-            const char* arghelp;
-            int32_t num_args;
-            std::function<void(Cli*)> callback;
-        };
+	private:
+		Stream* port;
 
-        static const uint8_t num_cmds = 18;
-        static const CmdDescr cmds[num_cmds + 1];
+		struct CmdDescr {
+				const char*               name;
+				const char*               help;
+				const char*               arghelp;
+				int32_t                   num_args;
+				std::function<void(Cli*)> callback;
+		};
 
-        char input_buf[100];
-        uint8_t input_pos = 0;
+		static const uint8_t  num_cmds = 18;
+		static const CmdDescr cmds[num_cmds + 1];
 
-        void exec_cmd();
-        bool is_terminator(char c);
-        bool is_terminator_or_whitespace(char c);
-        void skip_whitespace_in(char** buf);
-        void skip_whitespace();
+		char    input_buf[100];
+		uint8_t input_pos = 0;
 
-        uint16_t hop_uint();
-        float hop_float();
-        bool hop_word(const char* word);
-        const Cli::CmdDescr* hop_cmd();
+		void exec_cmd();
+		bool is_terminator(char c);
+		bool is_terminator_or_whitespace(char c);
+		void skip_whitespace_in(char** buf);
+		void skip_whitespace();
 
-        void eat(char chr);
+		uint16_t             hop_uint();
+		float                hop_float();
+		bool                 hop_word(const char* word);
+		const Cli::CmdDescr* hop_cmd();
 
-        void print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits);
-        void print_usage(const Cli::CmdDescr& cmd);
+		void eat(char chr);
 
-        char* cmd;
+		void print_float_fixed(float x, uint8_t whole_digits, uint8_t frac_digits);
+		void print_usage(const Cli::CmdDescr& cmd);
 
-        uint16_t slug;
+		char* cmd;
 
-        void print_fail();
-        void prefix_fail();
-        void print_ok();
-        void prefix_ok();
-        void report_ok();
+		uint16_t slug;
+
+		void print_fail();
+		void prefix_fail();
+		void print_ok();
+		void prefix_ok();
+		void report_ok();
 };
