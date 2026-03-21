@@ -22,7 +22,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .num_args = 0,
         .callback = [](Cli* cli){
             Levels &levels = audio_get_levels();
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
                 cli->port->print(" ");
                 cli->print_float_fixed(rmsToDb(levels.rms[i]), 3, 5);
@@ -41,7 +41,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .num_args = 0,
         .callback = [](Cli* cli){
             Levels &levels = audio_get_levels();
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
                 cli->port->print(" ");
                 cli->print_float_fixed(levels.rms[i], 3, 5);
@@ -59,7 +59,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .arghelp = "",
         .num_args = 0,
         .callback = [](Cli* cli){
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t chan = 0; chan < CHANNELS; chan++) {
                 for (uint8_t bus = 0; bus < BUSES; bus++) {
                     if (is_muted(chan, bus)) {
@@ -79,7 +79,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .arghelp = "",
         .num_args = 0,
         .callback = [](Cli* cli){
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t chan = 0; chan < CHANNELS; chan++) {
                 cli->port->print(" ");
                 cli->print_float_fixed(get_channel_input_gain_db(chan), 3, 3);
@@ -93,7 +93,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .arghelp = "",
         .num_args = 0,
         .callback = [](Cli* cli){
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t chan = 0; chan < CHANNELS; chan++) {
                 if (is_phantom_on(chan)) {
                     cli->port->print(" 1");
@@ -110,7 +110,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .arghelp = "",
         .num_args = 0,
         .callback = [](Cli* cli){
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t bus = 0; bus < BUSES; bus++) {
                 cli->port->print(" ");
                 cli->print_float_fixed(get_bus_volume(bus), 3, 3);
@@ -119,7 +119,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         }
     },
     {
-        .name = "set-send",
+        .name = "send.set",
         .help = "for the given channel/bus crosspoint, set the send bit in the matrix",
         .arghelp = "<in channel no> <out bus no> (0|1)",
         .num_args = 3,
@@ -128,11 +128,11 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             uint16_t bus = cli->hop_uint();
             uint16_t want_send = cli->hop_uint();
             if (chan >= CHANNELS) {
-                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                cli->port->printf("[fail] chan %d is invalid\n", chan);
                 return;
             }
             if (bus >= BUSES) {
-                cli->port->printf("fail (bus %d is invalid)\n", bus);
+                cli->port->printf("[fail] bus %d is invalid\n", bus);
                 return;
             }
             if (want_send > 0) {
@@ -140,11 +140,11 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             } else {
                 mute(chan, bus);
             }
-            cli->port->println("ok");
+            cli->port->println("[ok]");
         }
     },
     {
-        .name = "set-phantom",
+        .name = "phantom.set",
         .help = "for the given input channel, set the phantom power on/off bit",
         .arghelp = "<in channel no> (0|1)",
         .num_args = 2,
@@ -152,7 +152,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             uint16_t chan = cli->hop_uint();
             uint16_t want_phantom = cli->hop_uint();
             if (chan >= CHANNELS) {
-                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                cli->port->printf("[fail] chan %d is invalid\n", chan);
                 return;
             }
             if (want_phantom > 0) {
@@ -160,11 +160,11 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             } else {
                 set_phantom_off(chan);
             }
-            cli->port->println("ok");
+            cli->port->println("[ok]");
         }
     },
     {
-        .name = "set-volume",
+        .name = "volume.set",
         .help = "for the given channel/bus crosspoint, set the volume in the matrix",
         .arghelp = "<in channel no> <out bus no> <volume>",
         .num_args = 3,
@@ -174,25 +174,25 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             float vol = cli->hop_float();
 
             if (chan >= CHANNELS) {
-                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                cli->port->printf("[fail] chan %d is invalid\n", chan);
                 return;
             }
             if (bus >= BUSES) {
-                cli->port->printf("fail (bus %d is invalid)\n", bus);
+                cli->port->printf("[fail] bus %d is invalid\n", bus);
                 return;
             }
             if (vol < 0) {
-                cli->port->printf("fail (vol should not be negative)\n");
+                cli->port->printf("[fail] vol should not be negative\n");
                 return;
             }
 
             set_volume(chan, bus, vol);
 
-            cli->port->println("ok");
+            cli->port->println("[ok]");
         },
     },
     {
-        .name = "set-in-gain",
+        .name = "in-gain.set",
         .help = "for the given input channel, set the input gain in decibels",
         .arghelp = "<in channel no> <gain>",
         .num_args = 2,
@@ -201,21 +201,21 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             float gain = cli->hop_float();
 
             if (chan >= CHANNELS) {
-                cli->port->printf("fail (chan %d is invalid)\n", chan);
+                cli->port->printf("[fail] chan %d is invalid\n", chan);
                 return;
             }
             if (gain < 0) {
-                cli->port->printf("fail (gain should not be negative)\n");
+                cli->port->printf("[fail] gain should not be negative\n");
                 return;
             }
 
             set_channel_input_gain_db(chan, gain);
 
-            cli->port->println("ok");
+            cli->port->println("[ok]");
         }
     },
     {
-        .name = "set-bus-volume",
+        .name = "bus-volume.set",
         .help = "for the given out bus, set its global volume to the given value",
         .arghelp = "<out bus no> <volume>",
         .num_args = 2,
@@ -224,17 +224,17 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
             float vol = cli->hop_float();
 
             if (bus >= BUSES) {
-                cli->port->printf("fail (bus %d is invalid)\n", bus);
+                cli->port->printf("[fail] bus %d is invalid\n", bus);
                 return;
             }
             if (vol < 0) {
-                cli->port->printf("fail (vol should not be negative)\n");
+                cli->port->printf("[fail] vol should not be negative\n");
                 return;
             }
 
             set_bus_volume(bus, vol);
 
-            cli->port->println("ok");
+            cli->port->println("[ok]");
         }
     },
     {
@@ -245,7 +245,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .callback = [](Cli* cli){
             audio_reset_default_state();
             audio_eeprom_save_all();
-            cli->port->println("ok");
+            cli->port->println("[ok]");
         }
     },
     {
@@ -254,7 +254,7 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .arghelp = "",
         .num_args = 0,
         .callback = [](Cli* cli){
-            cli->port->print("ok");
+            cli->port->print("[ok]");
             for (uint8_t i = 0; i < Cli::num_cmds; i++) {
                 cli->port->print(" ");
                 cli->port->print(Cli::cmds[i].name);
@@ -269,15 +269,15 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .num_args = -1,
         .callback = [](Cli* cli){
             if (cli->cmd[0] == '\0') {
-                cli->port->println("ok use `commands` to get a list of commands and then `help <command>`");
+                cli->port->println("[ok] use `commands` to get a list of commands and then `help <command>`");
                 return;
             }
             const Cli::CmdDescr* cmd = cli->hop_cmd();
             if (!cmd) {
-                cli->port->println("fail (unknown command; use `commands` for list of commands)");
+                cli->port->println("[fail] unknown command; use `commands` for list of commands");
                 return;
             }
-            cli->port->print("ok ");
+            cli->port->print("[ok] ");
             cli->print_usage(*cmd);
             cli->port->println();
         }
