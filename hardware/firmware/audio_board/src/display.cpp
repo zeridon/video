@@ -47,7 +47,7 @@ void draw_meter(int16_t x, int16_t y, int16_t w, int16_t h, float level) {
     display.fillRect(x, y, w, h - red_thresh - rfill, RGB(100, 0, 0));
 }
 
-void draw_channel(float rms, int id, ChanInfo &channel_info) {
+void draw_channel(float rms, int id, const ChanInfo &channel_info) {
     uint16_t offset = 0;
     if (id < CHANNELS) {
     } else {
@@ -67,15 +67,14 @@ void draw_channel(float rms, int id, ChanInfo &channel_info) {
                DbtoLevel(rmsToDb(rms)));
 }
 
-void display_update_vu(float levels_rms[CHANNELS + BUSES],
-                       ChanInfo channel_info[CHANNELS + BUSES]) {
+void display_update_vu(float levels_rms[CHANNELS + BUSES]) {
     display.fillScreen(RGB(0, 0, 0));
 
     display.setTextSize(1);
     display.setTextColor(RGB(0, 0, 0));
 
     for (int i = 0; i < 12; i++) {
-        draw_channel(levels_rms[i], i, channel_info[i]);
+        draw_channel(levels_rms[i], i, channel_info(i));
     }
 }
 

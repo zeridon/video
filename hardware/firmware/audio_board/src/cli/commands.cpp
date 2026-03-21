@@ -4,6 +4,7 @@
 #include "../teensyaudio.h"
 #include "../helpers.h"
 #include "../debug.h"
+#include "../channels.h"
 
 const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
     {
@@ -13,6 +14,46 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
         .num_args = -1,
         .callback = [](Cli* cli){
             cli->port->printf("pong %s\n", cli->cmd);
+        }
+    },
+    {
+        .name = "channel.labels",
+        .help = "returns a list of the short labels of inputs and buses",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->prefix_ok();
+            cli->port->print("channels:");
+            for (uint8_t i = 0; i < CHANNELS; i++) {
+                cli->port->print(" ");
+                cli->port->print(channel_info(i).label);
+            }
+            cli->port->print("; buses:");
+            for (uint8_t i = 0; i < BUSES; i++) {
+                cli->port->print(" ");
+                cli->port->print(channel_info(CHANNELS + i).label);
+            }
+            cli->port->println();
+        }
+    },
+    {
+        .name = "channel.names",
+        .help = "returns a list of the names of inputs and buses",
+        .arghelp = "",
+        .num_args = 0,
+        .callback = [](Cli* cli){
+            cli->prefix_ok();
+            cli->port->print("channels:");
+            for (uint8_t i = 0; i < CHANNELS; i++) {
+                cli->port->print(" ");
+                cli->port->print(channel_info(i).desc);
+            }
+            cli->port->print("; buses:");
+            for (uint8_t i = 0; i < BUSES; i++) {
+                cli->port->print(" ");
+                cli->port->print(channel_info(CHANNELS + i).desc);
+            }
+            cli->port->println();
         }
     },
     {

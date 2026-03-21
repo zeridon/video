@@ -2,6 +2,7 @@
 #define _MIXER_TYPES_H_
 
 #include "config.h"
+#include "channels.h"
 #include <stdint.h>
 
 typedef struct {

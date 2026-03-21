@@ -18,16 +18,6 @@
 
 #endif
 
-ChanInfo channel_info[] = {
-    {CHAN_WHITE, "1", "IN1", 0},      {CHAN_WHITE, "2", "IN2", 0},
-    {CHAN_WHITE, "3", "IN3", 0},      {CHAN_YELLOW, "P", "PC", 0},
-    {CHAN_MAGENTA, "USB", "USB1", 1}, {CHAN_MAGENTA, "USB", "USB2", 2},
-
-    {CHAN_WHITE, "1", "OUT1", 0},     {CHAN_WHITE, "2", "OUT2", 0},
-    {CHAN_GREEN, "AFL", "HP1", 1},    {CHAN_GREEN, "AFL", "HP2", 2},
-    {CHAN_MAGENTA, "USB", "USB1", 1}, {CHAN_MAGENTA, "USB", "USB2", 2},
-};
-
 void setup() {
     SerialUSB.begin(115200);
     debug_init();
@@ -54,7 +44,7 @@ void loop() {
     audio_update_levels(levels);
 
 #ifdef USE_DISPLAY
-    display_update_vu(levels.rms, channel_info);
+    display_update_vu(levels.rms);
 
     if (last_draw < (millis() - 16)) {
         display_update_screen();

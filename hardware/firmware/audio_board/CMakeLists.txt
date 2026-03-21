@@ -118,6 +118,7 @@ set(SOURCES
     src/cli/cli.cpp
     src/cli/commands.cpp
     src/debug.cpp
+    src/channels.cpp
 )
 
 # Build this project
