@@ -87,13 +87,13 @@ void apply_phantom(uint8_t channel) {
     bool is_on = (state.phantoms & (1 << channel)) > 0;
     switch (channel) {
         case 0:
-            digitalWrite(PIN_PHANTOM_IN1, is_on);
+            digitalWrite(PIN_PHANTOM_IN1, is_on ? HIGH : LOW);
             break;
         case 1:
-            digitalWrite(PIN_PHANTOM_IN2, is_on);
+            digitalWrite(PIN_PHANTOM_IN2, is_on ? HIGH : LOW);
             break;
         case 2:
-            digitalWrite(PIN_PHANTOM_IN3, is_on);
+            digitalWrite(PIN_PHANTOM_IN3, is_on ? HIGH : LOW);
             break;
     }
 }
