@@ -11,12 +11,13 @@ import (
 )
 
 type Api struct {
-	srv    http.Server
-	m      *misirka.Misirka
-	logger *slog.Logger
-	cfg    *config.ApiCfg
-	ctl    *ctl.Ctl
-	dying  chan struct{}
+	srv          http.Server
+	m            *misirka.Misirka
+	logger       *slog.Logger
+	cfg          *config.ApiCfg
+	ctl          *ctl.Ctl
+	dying        chan struct{}
+	refreshState chan struct{}
 }
 
 func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
@@ -25,6 +26,7 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 	a.logger = logger
 	a.ctl = ctl
 	a.dying = make(chan struct{})
+	a.refreshState = make(chan struct{})
 
 	a.m = misirka.New("/", func(err error) {
 		logger.Error("API error", "err", err)
@@ -34,7 +36,8 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
 	a.m.AddTopic("state")
 	a.m.AddTopic("levels")
 	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd)
-	misirka.HandleCall(a.m, "set-send", a.handleSetSend)
+	misirka.HandleCall(a.m, "set-matrix-send", a.handleSetMatrixSend)
+	misirka.HandleCall(a.m, "set-matrix-volume", a.handleSetMatrixVolume)
 
 	a.srv.Handler = a.m.Handler()
 	a.srv.Addr = a.cfg.Bind
@@ -81,10 +84,17 @@ func (a *Api) poller() {
 		select {
 		case <-a.dying:
 			return
+		case <-a.refreshState:
+			a.pollState()
 		case <-pollState.C:
 			a.pollState()
 		case <-pollLevels.C:
 			a.pollLevels()
 		}
 	}
+}
+
+func (a *Api) forceRefresh() {
+	// TODO: throttling
+	a.refreshState <- struct{}{}
 }
