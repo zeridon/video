@@ -210,7 +210,7 @@ void Cli::eat(char chr) {
 		if (is_terminator(chr)) {
 			this->input_pos    = 0;
 			this->input_buf[0] = '\0';
-			this->port->write("[fail] line too long\n");
+			this->port->write("[err] line too long\n");
 		}
 		return;
 	}
@@ -241,10 +241,10 @@ void Cli::update() {
 
 void Cli::print_fail() {
 	if (this->slug > 0) {
-		this->port->printf("[%d fail]", this->slug);
+		this->port->printf("[%d err]", this->slug);
 		this->slug = 0;
 	} else {
-		this->port->printf("[fail]");
+		this->port->printf("[err]");
 	}
 }
 
@@ -258,7 +258,7 @@ void Cli::print_ok() {
 		this->port->printf("[%d ok]", this->slug);
 		this->slug = 0;
 	} else {
-		this->port->printf("[ok]");
+		this->port->printf(" [ok]");
 	}
 }
 
