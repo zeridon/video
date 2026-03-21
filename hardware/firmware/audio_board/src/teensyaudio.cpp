@@ -42,6 +42,10 @@ void audio_setup() {
     Wire.begin();
     Wire1.begin();
 
+    pinMode(PIN_PHANTOM_IN1, OUTPUT);
+    pinMode(PIN_PHANTOM_IN2, OUTPUT);
+    pinMode(PIN_PHANTOM_IN3, OUTPUT);
+
     taa3040.enable();
 }
 
@@ -81,7 +85,17 @@ uint64_t mute_mask(uint64_t channel, uint64_t bus) {
 
 void apply_phantom(uint8_t channel) {
     bool is_on = (state.phantoms & (1 << channel)) > 0;
-    // TODO: apply state
+    switch (channel) {
+        case 0:
+            digitalWrite(PIN_PHANTOM_IN1, is_on);
+            break;
+        case 1:
+            digitalWrite(PIN_PHANTOM_IN2, is_on);
+            break;
+        case 2:
+            digitalWrite(PIN_PHANTOM_IN3, is_on);
+            break;
+    }
 }
 
 bool is_phantom_on(uint8_t channel) {
@@ -89,7 +103,7 @@ bool is_phantom_on(uint8_t channel) {
 }
 
 void set_phantom_on(uint8_t channel) {
-    if (channel > 3) {
+    if (channel > 2) {
         return;
     }
     state.phantoms |= (1 << channel);
@@ -97,7 +111,7 @@ void set_phantom_on(uint8_t channel) {
 }
 
 void set_phantom_off(uint8_t channel) {
-    if (channel > 3) {
+    if (channel > 2) {
         return;
     }
     state.phantoms &= ~(1 << channel);
