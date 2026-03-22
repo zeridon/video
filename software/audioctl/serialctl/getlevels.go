@@ -1,19 +1,12 @@
-package ctl
+package serialctl
 
-import "fmt"
+import (
+	"fmt"
 
-type Levels struct {
-	RMS    LevelsBlock `json:"rms"`
-	Peak   LevelsBlock `json:"peak"`
-	Smooth LevelsBlock `json:"smooth"`
-}
+	"github.com/fosdem/video/software/audioctl/ctl"
+)
 
-type LevelsBlock struct {
-	Input []float32 `json:"inputs"`
-	Bus   []float32 `json:"buses"`
-}
-
-func (c *Ctl) GetLevels() (*Levels, error) {
+func (c *SerialCtl) GetLevels() (*ctl.Levels, error) {
 	if c.numChans == 0 || c.numBuses == 0 {
 		return nil, fmt.Errorf("no channels/buses known (maybe GetFullState() did not get called)")
 	}
@@ -44,16 +37,16 @@ func (c *Ctl) GetLevels() (*Levels, error) {
 	if len(vals) != (c.numChans+c.numBuses)*3 {
 		return nil, fmt.Errorf("got %d values instead of %d", len(vals), (c.numChans+c.numBuses)*3)
 	}
-	levels := &Levels{
-		RMS: LevelsBlock{
+	levels := &ctl.Levels{
+		RMS: ctl.LevelsBlock{
 			Input: make([]float32, c.numChans),
 			Bus:   make([]float32, c.numBuses),
 		},
-		Peak: LevelsBlock{
+		Peak: ctl.LevelsBlock{
 			Input: make([]float32, c.numChans),
 			Bus:   make([]float32, c.numBuses),
 		},
-		Smooth: LevelsBlock{
+		Smooth: ctl.LevelsBlock{
 			Input: make([]float32, c.numChans),
 			Bus:   make([]float32, c.numBuses),
 		},

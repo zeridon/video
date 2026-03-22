@@ -7,7 +7,7 @@ import (
 
 	"github.com/fosdem/video/software/audioctl/api"
 	"github.com/fosdem/video/software/audioctl/config"
-	"github.com/fosdem/video/software/audioctl/ctl"
+	"github.com/fosdem/video/software/audioctl/serialctl"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	c := ctl.New(logger.With("prefix", "ctl"), cfg.Ctl)
+	c := serialctl.New(logger.With("prefix", "ctl"), cfg.Ctl)
 	go func() {
 		err := c.Loop()
 		if err != nil {

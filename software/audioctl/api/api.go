@@ -15,12 +15,14 @@ type Api struct {
 	m            *misirka.Misirka
 	logger       *slog.Logger
 	cfg          *config.ApiCfg
-	ctl          *ctl.Ctl
+	ctl          ctl.Ctl
 	dying        chan struct{}
 	refreshState chan struct{}
+	chanNames    []string
+	busNames     []string
 }
 
-func New(logger *slog.Logger, cfg *config.ApiCfg, ctl *ctl.Ctl) *Api {
+func New(logger *slog.Logger, cfg *config.ApiCfg, ctl ctl.Ctl) *Api {
 	a := &Api{}
 	a.cfg = cfg
 	a.logger = logger

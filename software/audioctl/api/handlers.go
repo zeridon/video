@@ -228,6 +228,21 @@ func (a *Api) pollState() {
 	if err != nil {
 		a.logger.Error("could not poll state", "err", err)
 	}
+
+	if len(a.chanNames) != len(state.Channels) {
+		a.chanNames = make([]string, len(state.Channels))
+	}
+	for i := range state.Channels {
+		a.chanNames[i] = state.Channels[i].Name
+	}
+
+	if len(a.busNames) != len(state.Buses) {
+		a.busNames = make([]string, len(state.Buses))
+	}
+	for i := range state.Buses {
+		a.busNames[i] = state.Buses[i].Name
+	}
+
 	misirka.Publish(a.m, "state", state)
 }
 
@@ -243,8 +258,8 @@ func (a *Api) getChanByName(idx **uint8, name *string) error {
 	if name == nil {
 		return nil
 	}
-	for i := range a.ctl.ChanNames {
-		if *name == a.ctl.ChanNames[i] {
+	for i := range a.chanNames {
+		if *name == a.chanNames[i] {
 			j := uint8(i)
 			*idx = &j
 			return nil
@@ -258,8 +273,8 @@ func (a *Api) getBusByName(idx **uint8, name *string) error {
 	if name == nil {
 		return nil
 	}
-	for i := range a.ctl.BusNames {
-		if *name == a.ctl.BusNames[i] {
+	for i := range a.busNames {
+		if *name == a.busNames[i] {
 			j := uint8(i)
 			*idx = &j
 			return nil

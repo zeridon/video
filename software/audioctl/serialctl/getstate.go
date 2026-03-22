@@ -1,36 +1,14 @@
-package ctl
+package serialctl
 
 import (
 	"fmt"
 	"strconv"
 	"strings"
+
+	"github.com/fosdem/video/software/audioctl/ctl"
 )
 
-type MixerState struct {
-	Channels []ChannelState `json:"channels"`
-	Buses    []BusState     `json:"buses"`
-}
-
-type ChannelState struct {
-	Label   string      `json:"label"`
-	Name    string      `json:"name"`
-	Gain    float32     `json:"gain"`
-	Phantom bool        `json:"phantom"`
-	Sends   []SendState `json:"sends"`
-}
-
-type BusState struct {
-	Label  string  `json:"label"`
-	Name   string  `json:"name"`
-	Volume float32 `json:"volume"`
-}
-
-type SendState struct {
-	Unmuted bool    `json:"unmuted"`
-	Volume  float32 `json:"volume"`
-}
-
-func (c *Ctl) GetFullState() (*MixerState, error) {
+func (c *SerialCtl) GetFullState() (*ctl.MixerState, error) {
 	chanNames, busNames, err := c.GetChannelNames()
 	if err != nil {
 		return nil, fmt.Errorf("could not get channel names: %w", err)
@@ -82,12 +60,9 @@ func (c *Ctl) GetFullState() (*MixerState, error) {
 		return nil, fmt.Errorf("wrong number of busVolumes (got %d, should be %d)", len(busVolumes), c.numBuses)
 	}
 
-	c.ChanNames = chanNames
-	c.BusNames = busNames
-
-	m := &MixerState{
-		Channels: make([]ChannelState, c.numChans),
-		Buses:    make([]BusState, c.numBuses),
+	m := &ctl.MixerState{
+		Channels: make([]ctl.ChannelState, c.numChans),
+		Buses:    make([]ctl.BusState, c.numBuses),
 	}
 
 	for i := range m.Channels {
@@ -95,7 +70,7 @@ func (c *Ctl) GetFullState() (*MixerState, error) {
 		m.Channels[i].Name = chanNames[i]
 		m.Channels[i].Gain = gains[i]
 		m.Channels[i].Phantom = phantoms[i]
-		m.Channels[i].Sends = make([]SendState, c.numBuses)
+		m.Channels[i].Sends = make([]ctl.SendState, c.numBuses)
 		for j := range m.Buses {
 			m.Channels[i].Sends[j] = sends[i*c.numBuses+j]
 		}
@@ -110,7 +85,7 @@ func (c *Ctl) GetFullState() (*MixerState, error) {
 	return m, nil
 }
 
-func (c *Ctl) GetChannelNames() ([]string, []string, error) {
+func (c *SerialCtl) GetChannelNames() ([]string, []string, error) {
 	resp, err := c.RawCmd("channel.names")
 	if err != nil {
 		return nil, nil, err
@@ -118,7 +93,7 @@ func (c *Ctl) GetChannelNames() ([]string, []string, error) {
 	return parseChannelBusList(resp, "channels", "buses")
 }
 
-func (c *Ctl) GetChannelLabels() ([]string, []string, error) {
+func (c *SerialCtl) GetChannelLabels() ([]string, []string, error) {
 	resp, err := c.RawCmd("channel.labels")
 	if err != nil {
 		return nil, nil, err
@@ -126,7 +101,7 @@ func (c *Ctl) GetChannelLabels() ([]string, []string, error) {
 	return parseChannelBusList(resp, "channels", "buses")
 }
 
-func (c *Ctl) GetInputGains() ([]float32, error) {
+func (c *SerialCtl) GetInputGains() ([]float32, error) {
 	resp, err := c.RawCmd("gains")
 	if err != nil {
 		return nil, err
@@ -134,7 +109,7 @@ func (c *Ctl) GetInputGains() ([]float32, error) {
 	return parseFloatList(resp)
 }
 
-func (c *Ctl) GetBusVolumes() ([]float32, error) {
+func (c *SerialCtl) GetBusVolumes() ([]float32, error) {
 	resp, err := c.RawCmd("bus-volumes")
 	if err != nil {
 		return nil, err
@@ -142,7 +117,7 @@ func (c *Ctl) GetBusVolumes() ([]float32, error) {
 	return parseFloatList(resp)
 }
 
-func (c *Ctl) GetPhantoms() ([]bool, error) {
+func (c *SerialCtl) GetPhantoms() ([]bool, error) {
 	resp, err := c.RawCmd("phantoms")
 	if err != nil {
 		return nil, err
@@ -150,14 +125,14 @@ func (c *Ctl) GetPhantoms() ([]bool, error) {
 	return parseBoolList(resp)
 }
 
-func (c *Ctl) GetMatrix() ([]SendState, error) {
+func (c *SerialCtl) GetMatrix() ([]ctl.SendState, error) {
 	resp, err := c.RawCmd("matrix")
 	if err != nil {
 		return nil, err
 	}
 
 	fields := strings.Fields(resp)
-	result := make([]SendState, len(fields))
+	result := make([]ctl.SendState, len(fields))
 	for i, f := range fields {
 		result[i], err = parseSend(f)
 		if err != nil {
@@ -168,8 +143,8 @@ func (c *Ctl) GetMatrix() ([]SendState, error) {
 	return result, nil
 }
 
-func parseSend(s string) (SendState, error) {
-	var ss SendState
+func parseSend(s string) (ctl.SendState, error) {
+	var ss ctl.SendState
 	var err error
 
 	fields := strings.Split(s, "*")

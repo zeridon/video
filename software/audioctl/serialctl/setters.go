@@ -1,8 +1,12 @@
-package ctl
+package serialctl
 
-import "fmt"
+import (
+	"fmt"
 
-func (c *Ctl) SetFullState(state *MixerState) error {
+	"github.com/fosdem/video/software/audioctl/ctl"
+)
+
+func (c *SerialCtl) SetFullState(state *ctl.MixerState) error {
 	var err error
 	for i := range c.numChans {
 		for j := range c.numBuses {
@@ -37,7 +41,7 @@ func (c *Ctl) SetFullState(state *MixerState) error {
 	return nil
 }
 
-func (c *Ctl) SetMatrixSend(ch uint8, bus uint8, unmuted bool) error {
+func (c *SerialCtl) SetMatrixSend(ch uint8, bus uint8, unmuted bool) error {
 	if int(ch) >= c.numChans || int(bus) > c.numBuses {
 		return fmt.Errorf("malformed input")
 	}
@@ -50,7 +54,7 @@ func (c *Ctl) SetMatrixSend(ch uint8, bus uint8, unmuted bool) error {
 	return nil
 }
 
-func (c *Ctl) SetMatrixVolume(ch uint8, bus uint8, volume float32) error {
+func (c *SerialCtl) SetMatrixVolume(ch uint8, bus uint8, volume float32) error {
 	if int(ch) >= c.numChans || int(bus) > c.numBuses {
 		return fmt.Errorf("malformed input")
 	}
@@ -63,7 +67,7 @@ func (c *Ctl) SetMatrixVolume(ch uint8, bus uint8, volume float32) error {
 	return nil
 }
 
-func (c *Ctl) SetInGain(ch uint8, gain float32) error {
+func (c *SerialCtl) SetInGain(ch uint8, gain float32) error {
 	if int(ch) >= c.numChans {
 		return fmt.Errorf("malformed input")
 	}
@@ -76,7 +80,7 @@ func (c *Ctl) SetInGain(ch uint8, gain float32) error {
 	return nil
 }
 
-func (c *Ctl) SetPhantom(ch uint8, phantom bool) error {
+func (c *SerialCtl) SetPhantom(ch uint8, phantom bool) error {
 	if int(ch) >= c.numChans {
 		return fmt.Errorf("malformed input")
 	}
@@ -89,7 +93,7 @@ func (c *Ctl) SetPhantom(ch uint8, phantom bool) error {
 	return nil
 }
 
-func (c *Ctl) SetBusVolume(bus uint8, volume float32) error {
+func (c *SerialCtl) SetBusVolume(bus uint8, volume float32) error {
 	if int(bus) > c.numBuses {
 		return fmt.Errorf("malformed input")
 	}
@@ -102,7 +106,7 @@ func (c *Ctl) SetBusVolume(bus uint8, volume float32) error {
 	return nil
 }
 
-func (c *Ctl) FactoryReset() error {
+func (c *SerialCtl) FactoryReset() error {
 	_, err := c.RawCmd("factory-reset")
 	if err != nil {
 		return err
