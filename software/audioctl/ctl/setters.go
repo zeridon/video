@@ -2,6 +2,41 @@ package ctl
 
 import "fmt"
 
+func (c *Ctl) SetFullState(state *MixerState) error {
+	var err error
+	for i := range c.numChans {
+		for j := range c.numBuses {
+			err = c.SetMatrixSend(uint8(i), uint8(j), state.Channels[i].Sends[j].Unmuted)
+			if err != nil {
+				return fmt.Errorf("could not set send %dx%d: %w", i, j, err)
+			}
+			err = c.SetMatrixVolume(uint8(i), uint8(j), state.Channels[i].Sends[j].Volume)
+			if err != nil {
+				return fmt.Errorf("could not set volume %dx%d: %w", i, j, err)
+			}
+		}
+
+		err = c.SetInGain(uint8(i), state.Channels[i].Gain)
+		if err != nil {
+			return fmt.Errorf("could not set gain on channel %d: %w", i, err)
+		}
+
+		err = c.SetPhantom(uint8(i), state.Channels[i].Phantom)
+		if err != nil {
+			return fmt.Errorf("could not set phantom on channel %d: %w", i, err)
+		}
+	}
+
+	for j := range c.numBuses {
+		err = c.SetBusVolume(uint8(j), state.Buses[j].Volume)
+		if err != nil {
+			return fmt.Errorf("could not set volume on bus %d: %w", j, err)
+		}
+	}
+
+	return nil
+}
+
 func (c *Ctl) SetMatrixSend(ch uint8, bus uint8, unmuted bool) error {
 	if int(ch) >= c.numChans || int(bus) > c.numBuses {
 		return fmt.Errorf("malformed input")

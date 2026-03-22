@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/dexterlb/misirka/go/misirka"
+	"github.com/fosdem/video/software/audioctl/ctl"
 )
 
 func (a *Api) handleRawCmd(param string) (string, *misirka.MErr) {
@@ -15,6 +16,18 @@ func (a *Api) handleRawCmd(param string) (string, *misirka.MErr) {
 		}
 	}
 	return resp, nil
+}
+
+func (a *Api) handleSetFullState(param *ctl.MixerState) (string, *misirka.MErr) {
+	err := a.ctl.SetFullState(param)
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -42,
+			Err:  err,
+		}
+	}
+	a.forceRefresh()
+	return "ok", nil
 }
 
 type SetMatrixVolumeParam struct {
