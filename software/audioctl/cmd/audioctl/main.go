@@ -7,6 +7,8 @@ import (
 
 	"github.com/fosdem/video/software/audioctl/api"
 	"github.com/fosdem/video/software/audioctl/config"
+	"github.com/fosdem/video/software/audioctl/ctl"
+	"github.com/fosdem/video/software/audioctl/fakectl"
 	"github.com/fosdem/video/software/audioctl/serialctl"
 )
 
@@ -24,7 +26,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	c := serialctl.New(logger.With("prefix", "ctl"), cfg.Ctl)
+	var c ctl.Ctl
+	if cfg.Ctl.PortDevice == "fake" {
+		logger.Info("using fake ctl")
+		c = fakectl.New(cfg.Ctl)
+	} else {
+		c = serialctl.New(logger.With("prefix", "ctl"), cfg.Ctl)
+	}
 	go func() {
 		err := c.Loop()
 		if err != nil {
