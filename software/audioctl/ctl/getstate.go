@@ -12,7 +12,7 @@ type MixerState struct {
 }
 
 type ChannelState struct {
-	Label   string      `json:"label "`
+	Label   string      `json:"label"`
 	Name    string      `json:"name"`
 	Gain    float32     `json:"gain"`
 	Phantom bool        `json:"phantom"`
