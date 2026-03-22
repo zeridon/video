@@ -67,6 +67,15 @@ func (c *Ctl) SetBusVolume(bus uint8, volume float32) error {
 	return nil
 }
 
+func (c *Ctl) FactoryReset() error {
+	_, err := c.RawCmd("factory-reset")
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func boolToNum(b bool) int {
 	if b {
 		return 1

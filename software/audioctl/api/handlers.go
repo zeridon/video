@@ -163,6 +163,21 @@ func (a *Api) handleSetPhantom(param SetPhantomParam) (string, *misirka.MErr) {
 	return "ok", nil
 }
 
+type FactoryResetParam struct {
+}
+
+func (a *Api) handleFactoryReset(param FactoryResetParam) (string, *misirka.MErr) {
+	err := a.ctl.FactoryReset()
+	if err != nil {
+		return "", &misirka.MErr{
+			Code: -42,
+			Err:  err,
+		}
+	}
+	a.forceRefresh()
+	return "ok", nil
+}
+
 type SetBusVolumeParam struct {
 	Bus     *uint8   `json:"bus"`
 	BusName *string  `json:"bus_name"`
