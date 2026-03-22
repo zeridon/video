@@ -13,6 +13,8 @@
 #define REG_P0_DEV_STS1      (0x77)
 #define REG_P0_CH1_CFG0      (0x3C)
 #define REG_P0_CH1_CFG1      (0x3D)
+#define REG_P0_CH1_CFG2      (0x3E)
+#define REG_P0_CH1_CFG3      (0x3F)
 
 #define IMPEDANCE_2k5        (0b00)
 #define IMPEDANCE_10k        (0b01)
@@ -23,6 +25,7 @@ class AudioControlTAA3040 {
 		bool enable();
 		bool disable();
 		bool gain(uint8_t channel, uint8_t gain, uint8_t impedance, uint8_t mode, uint8_t coupling);
+		bool digitalGain(uint8_t channel, float gainDb);
 
 		void getAsiStatus();
 

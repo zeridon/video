@@ -23,10 +23,38 @@ bool AudioControlTAA3040::disable(void) {
 	return true;
 }
 
+/*
+ * Set the gain in the PGA in steps of 1dB. The gain rainge is from 0 to 42 dB. This also controls the 
+ * analog frontend configuration.
+ */
 bool AudioControlTAA3040::gain(uint8_t channel, uint8_t gain, uint8_t impedance, uint8_t mode, uint8_t coupling) {
 	uint8_t offset = channel * 5;
 	setRegister(REG_P0_CH1_CFG0 + offset, (impedance << 2) | (mode << 5) | (coupling << 4));
 	setRegister(REG_P0_CH1_CFG1 + offset, gain << 2);
+	return true;
+}
+
+/*
+ * Set the digital volume control for the channel. This ranges from -100dB to +27dB with a
+ * precision of 0.1 dB. 
+ */
+bool AudioControlTAA3040::digitalGain(uint8_t channel, float gainDb) {
+	uint8_t offset = channel * 5;
+	float halfDbs = gainDb * 2;
+
+	uint8_t steps = (uint8_t)(halfDbs + 0.5);
+	// 1.3 -> 2.6 -> 3 (1.5dB)
+	uint8_t remain = (uint8_t)(halfDbs - (float)steps * 5);
+	// 3 - 2.6 == 0.4 -> 2 0.1dB steps -> 1.5dB - 0.2dB == 1.3dB
+
+	// The DigitalVolume does large adjustments in 0.5dB steps
+	uint8_t val = 201 + steps;
+	setRegister(REG_P0_CH1_CFG2 + offset, val);
+
+	// Use the Calibration register to do fine adjustments in 0.1dB steps
+	val = 8 + remain;
+	setRegister(REG_P0_CH1_CFG3 + offset, val << 4);
+
 	return true;
 }
 
