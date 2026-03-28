@@ -1,6 +1,6 @@
 #include "display.h"
 #include "channels.h"
-#include "helpers.h"
+#include "db_conversion.h"
 
 #include <ST7735_t3.h>
 
@@ -58,7 +58,7 @@ void draw_channel(float rms, int id, const ChanInfo& channel_info) {
 
 		display.drawString(channel_info.label, 5 + ((id % 6) * 12), offset + (SCREEN_HEIGHT / 2) - 9);
 	}
-	draw_meter(6 + (12 * (id % 6)), offset + 1, 10, (SCREEN_HEIGHT / 2) - 13, DbtoLevel(rmsToDb(rms)));
+	draw_meter(6 + (12 * (id % 6)), offset + 1, 10, (SCREEN_HEIGHT / 2) - 13, out_level_to_scale(rms));
 }
 
 void display_update_vu(float levels_rms[CHANNELS + BUSES]) {

@@ -111,7 +111,7 @@ set(SOURCES
 	src/main.cpp
 	src/storage.cpp
 	src/display.cpp
-	src/helpers.cpp
+	src/db_conversion.cpp
 	src/teensyaudio.cpp
     src/taa3040.cpp
     src/cli/cli.cpp

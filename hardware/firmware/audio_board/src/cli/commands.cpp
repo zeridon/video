@@ -2,7 +2,7 @@
 
 #include "../config.h"
 #include "../teensyaudio.h"
-#include "../helpers.h"
+#include "../db_conversion.h"
 #include "../debug.h"
 #include "../channels.h"
 
@@ -42,16 +42,16 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 		 }
 		 cli->port->println();
 	 }},
-	{.name = "levels.db", .help = "for each input channel and then for each output bus, returns 3 numbers that are the rms, peak and smooth levels in db", .arghelp = "", .num_args = 0, .callback = [](Cli* cli) {
+	{.name = "levels.db", .help = "for each input channel and then for each output bus, returns 3 numbers that are the rms, peak and smooth levels in dBu", .arghelp = "", .num_args = 0, .callback = [](Cli* cli) {
 		 Levels& levels = audio_get_levels();
 		 cli->prefix_ok();
 		 for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
 			 cli->port->print(" ");
-			 cli->print_float_fixed(rmsToDb(levels.rms[i]), 3, 5);
+			 cli->print_float_fixed(out_level_to_dBu(levels.rms[i]), 3, 5);
 			 cli->port->print(" ");
-			 cli->print_float_fixed(rmsToDb(levels.peak[i]), 3, 5);
+			 cli->print_float_fixed(out_level_to_dBu(levels.peak[i]), 3, 5);
 			 cli->port->print(" ");
-			 cli->print_float_fixed(rmsToDb(levels.smooth[i]), 3, 5);
+			 cli->print_float_fixed(out_level_to_dBu(levels.smooth[i]), 3, 5);
 		 }
 		 cli->port->println();
 	 }},

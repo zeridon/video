@@ -1,5 +1,4 @@
 #include "config.h"
-#include "helpers.h"
 #include <stdint.h>
 
 #include "teensyaudio.h"
