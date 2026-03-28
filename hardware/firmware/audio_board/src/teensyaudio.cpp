@@ -2,7 +2,7 @@
 #include <Wire.h>
 
 #include "config.h"
-
+#include "db_conversion.h"
 #include "teensyaudio.h"
 
 #ifdef USE_EEPROM
@@ -146,21 +146,24 @@ bool is_muted(uint8_t channel, uint8_t bus) {
 	return !!(state.mutes & mute_mask(channel, bus));
 }
 
-float calc_real_volume(uint8_t channel, uint8_t bus, float volume) {
-	return volume * !is_muted(channel, bus) * state.bus_volumes[bus];
+float calc_real_volume(uint8_t channel, uint8_t bus) {
+	float volume_dB = state.matrix_dB[channel][bus] + state.bus_volumes_dB[bus];
+	float volume    = coef_from_dB(volume_dB);
+	return volume * !is_muted(channel, bus);
 }
 
 void apply_volume(uint8_t channel, uint8_t bus) {
-	float volume = state.matrix[channel][bus];
-	raw_set_crosspoint(channel, bus, calc_real_volume(channel, bus, volume));
+	raw_set_crosspoint(channel, bus, calc_real_volume(channel, bus));
 }
 
-void set_volume(uint8_t channel, uint8_t bus, float volume) {
-	state.matrix[channel][bus] = volume;
+void set_volume_dB(uint8_t channel, uint8_t bus, float volume) {
+	state.matrix_dB[channel][bus] = volume;
 	apply_volume(channel, bus);
 }
 
-float get_volume(uint8_t channel, uint8_t bus) { return state.matrix[channel][bus]; }
+float get_volume_dB(uint8_t channel, uint8_t bus) {
+	return state.matrix_dB[channel][bus];
+}
 
 void mute(uint8_t channel, uint8_t bus) {
 	state.mutes |= mute_mask(channel, bus);
@@ -172,16 +175,18 @@ void unmute(uint8_t channel, uint8_t bus) {
 	apply_volume(channel, bus);
 }
 
-void set_bus_volume(uint8_t bus, float vol) {
-	state.bus_volumes[bus] = vol;
+void set_bus_volume_dB(uint8_t bus, float vol) {
+	state.bus_volumes_dB[bus] = vol;
 	for (uint8_t channel = 0; channel < CHANNELS; ++channel) {
 		apply_volume(channel, bus);
 	}
 }
 
-float get_bus_volume(uint8_t bus) { return state.bus_volumes[bus]; }
+float get_bus_volume_dB(uint8_t bus) {
+	return state.bus_volumes_dB[bus];
+}
 
-void set_channel_input_gain_db(uint8_t channel, float gain) {
+void set_channel_input_gain_dB(uint8_t channel, float gain) {
 	uint8_t whole_gain = (uint8_t)(gain + 0.5);
 	if (gain < 1) {
 		whole_gain = 1;
@@ -190,19 +195,21 @@ void set_channel_input_gain_db(uint8_t channel, float gain) {
 		whole_gain = 42;
 	}
 
-	state.channel_input_gains[channel] = (float)whole_gain;
+	state.channel_input_gains_dB[channel] = (float)whole_gain;
 	taa3040.gain(channel, whole_gain, IMPEDANCE_10k, 0, 0);
 }
 
 void apply_channel_input_gain(uint8_t channel) {
-	set_channel_input_gain_db(channel, state.channel_input_gains[channel]);
+	set_channel_input_gain_dB(channel, state.channel_input_gains_dB[channel]);
 }
 
-float get_channel_input_gain_db(uint8_t channel) {
-	return state.channel_input_gains[channel];
+float get_channel_input_gain_dB(uint8_t channel) {
+	return state.channel_input_gains_dB[channel];
 }
 
-void reset_matrix() { memcpy(state.matrix, default_matrix, sizeof(state.matrix)); }
+void reset_matrix() {
+	memcpy(state.matrix_dB, default_matrix_dB, sizeof(state.matrix_dB));
+}
 
 void reset_mutes() {
 	memcpy(&state.mutes, &default_mutes, sizeof(state.mutes));
@@ -213,11 +220,11 @@ void reset_phantoms() {
 }
 
 void reset_bus_volumes() {
-	memcpy(state.bus_volumes, default_bus_volumes, BUSES * sizeof(float));
+	memcpy(state.bus_volumes_dB, default_bus_volumes_dB, BUSES * sizeof(float));
 }
 
 void reset_channel_input_gains() {
-	memcpy(state.channel_input_gains, default_channel_input_gains_db, CHANNELS * sizeof(float));
+	memcpy(state.channel_input_gains_dB, default_channel_input_gains_dB, CHANNELS * sizeof(float));
 }
 
 void apply_all() {
@@ -243,7 +250,7 @@ bool matrix_ok() {
 	uint8_t i, j;
 	for (i = 0; i < CHANNELS; ++i) {
 		for (j = 0; j < BUSES; ++j) {
-			if (isnan(state.matrix[i][j])) {
+			if (isnan(state.matrix_dB[i][j])) {
 				return false;
 			}
 		}
@@ -255,7 +262,7 @@ bool matrix_ok() {
 bool bus_volumes_ok() {
 	uint8_t i;
 	for (i = 0; i < BUSES; ++i) {
-		if (isnan(state.bus_volumes[i])) {
+		if (isnan(state.bus_volumes_dB[i])) {
 			return false;
 		}
 	}
@@ -266,7 +273,7 @@ bool bus_volumes_ok() {
 bool channel_input_gains_ok() {
 	uint8_t i;
 	for (i = 0; i < CHANNELS; ++i) {
-		if (isnan(state.channel_input_gains[i])) {
+		if (isnan(state.channel_input_gains_dB[i])) {
 			return false;
 		}
 	}

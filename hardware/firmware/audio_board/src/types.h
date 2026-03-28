@@ -6,13 +6,13 @@
 #include <stdint.h>
 
 typedef struct {
-		float matrix[CHANNELS][BUSES];
+		float matrix_dB[CHANNELS][BUSES];
 
 		uint64_t mutes;
 		uint16_t phantoms;
 
-		float channel_input_gains[CHANNELS];
-		float bus_volumes[BUSES];
+		float channel_input_gains_dB[CHANNELS];
+		float bus_volumes_dB[BUSES];
 } AudioState;
 
 typedef struct {

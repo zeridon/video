@@ -16,17 +16,14 @@ bool is_muted(uint8_t channel, uint8_t bus);
 void mute(uint8_t channel, uint8_t bus);
 void unmute(uint8_t channel, uint8_t bus);
 
-void  set_volume(uint8_t channel, uint8_t bus, float gain);
-float get_volume(uint8_t channel, uint8_t bus);
+void  set_volume_dB(uint8_t channel, uint8_t bus, float vol_dB);
+float get_volume_dB(uint8_t channel, uint8_t bus);
 
-float get_bus_volume(uint8_t bus);
-void  set_bus_volume(uint8_t bus, float volume);
+float get_bus_volume_dB(uint8_t bus);
+void  set_bus_volume_dB(uint8_t bus, float vol_dB);
 
-float get_channel_input_gain_db(uint8_t channel);
-void  set_channel_input_gain_db(uint8_t channel, float gain);
-
-// void raw_set_crosspoint(uint8_t channel, uint8_t bus, float gain);
-float raw_get_crosspoint(uint8_t channel, uint8_t bus);
+float get_channel_input_gain_dB(uint8_t channel);
+void  set_channel_input_gain_dB(uint8_t channel, float gain);
 
 void    audio_update_levels(Levels& levels);
 Levels& audio_get_levels();

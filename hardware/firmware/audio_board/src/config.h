@@ -7,4 +7,4 @@
 #define PIN_PHANTOM_IN2 36
 #define PIN_PHANTOM_IN3 35
 
-#define OUT_SPAN_VOLTS (1.2258f)
+#define OUT_SPAN_VOLTS  (1.2258f)
