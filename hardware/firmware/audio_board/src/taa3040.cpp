@@ -24,7 +24,7 @@ bool AudioControlTAA3040::disable(void) {
 }
 
 /*
- * Set the gain in the PGA in steps of 1dB. The gain rainge is from 0 to 42 dB. This also controls the 
+ * Set the gain in the PGA in steps of 1dB. The gain rainge is from 0 to 42 dB. This also controls the
  * analog frontend configuration.
  */
 bool AudioControlTAA3040::gain(uint8_t channel, uint8_t gain, uint8_t impedance, uint8_t mode, uint8_t coupling) {
@@ -36,11 +36,11 @@ bool AudioControlTAA3040::gain(uint8_t channel, uint8_t gain, uint8_t impedance,
 
 /*
  * Set the digital volume control for the channel. This ranges from -100dB to +27dB with a
- * precision of 0.1 dB. 
+ * precision of 0.1 dB.
  */
 bool AudioControlTAA3040::digitalGain(uint8_t channel, float gainDb) {
-	uint8_t offset = channel * 5;
-	float halfDbs = gainDb * 2;
+	uint8_t offset  = channel * 5;
+	float   halfDbs = gainDb * 2;
 
 	uint8_t steps = (uint8_t)(halfDbs + 0.5);
 	// 1.3 -> 2.6 -> 3 (1.5dB)
