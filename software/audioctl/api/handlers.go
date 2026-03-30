@@ -227,6 +227,7 @@ func (a *Api) pollState() {
 	state, err := a.ctl.GetFullState()
 	if err != nil {
 		a.logger.Error("could not poll state", "err", err)
+		return
 	}
 
 	if len(a.chanNames) != len(state.Channels) {
