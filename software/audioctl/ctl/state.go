@@ -6,22 +6,22 @@ type MixerState struct {
 }
 
 type ChannelState struct {
-	Label   string      `json:"label"`
-	Name    string      `json:"name"`
-	Gain    float32     `json:"gain"`
+	Name    string      `json:"name"`  // descriptive name of the input
+	Label   string      `json:"label"` // short label
+	Gain    float32     `json:"gain"`  // input gain in dB (0 means identity)
 	Phantom bool        `json:"phantom"`
 	Sends   []SendState `json:"sends"`
 }
 
 type BusState struct {
-	Label  string  `json:"label"`
-	Name   string  `json:"name"`
-	Volume float32 `json:"volume"`
+	Name   string  `json:"name"`   // descriptive name of the output bus
+	Label  string  `json:"label"`  // short label
+	Volume float32 `json:"volume"` // volume in dB (0 means identity)
 }
 
 type SendState struct {
 	Unmuted bool    `json:"unmuted"`
-	Volume  float32 `json:"volume"`
+	Volume  float32 `json:"volume"` // crosspoint volume in dB (0 means identity)
 }
 
 type Levels struct {
