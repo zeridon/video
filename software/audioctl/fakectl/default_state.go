@@ -7,48 +7,48 @@ var defaultState *ctl.MixerState = &ctl.MixerState{
 		{
 			Name:    "fubalina",
 			Label:   "foo",
-			Gain:    3,
+			Gain:    -60,
 			Phantom: false,
 			Sends: []ctl.SendState{
 				{
 					Unmuted: true,
-					Volume:  1,
+					Volume:  0,
 				},
 				{
 					Unmuted: false,
-					Volume:  1,
+					Volume:  0,
 				},
 			},
 		},
 		{
 			Name:    "barabela",
 			Label:   "bar",
-			Gain:    8,
+			Gain:    0,
 			Phantom: false,
 			Sends: []ctl.SendState{
 				{
-					Unmuted: false,
-					Volume:  1,
+					Unmuted: true,
+					Volume:  -18,
 				},
 				{
 					Unmuted: true,
-					Volume:  0.42,
+					Volume:  -30,
 				},
 			},
 		},
 		{
 			Name:    "bazinga",
 			Label:   "baz",
-			Gain:    42,
+			Gain:    0,
 			Phantom: true,
 			Sends: []ctl.SendState{
 				{
 					Unmuted: false,
-					Volume:  1,
+					Volume:  0,
 				},
 				{
 					Unmuted: true,
-					Volume:  0.82,
+					Volume:  -20,
 				},
 			},
 		},
@@ -57,12 +57,12 @@ var defaultState *ctl.MixerState = &ctl.MixerState{
 		{
 			Name:   "penka",
 			Label:  "pe",
-			Volume: 0.4,
+			Volume: 0,
 		},
 		{
 			Name:   "donka",
 			Label:  "do",
-			Volume: 0.4,
+			Volume: -10,
 		},
 	},
 }

@@ -2,6 +2,7 @@ package fakectl
 
 import (
 	"fmt"
+	"math"
 	"math/rand"
 	"time"
 
@@ -170,35 +171,52 @@ func (c *FakeCtl) FactoryReset() error {
 }
 
 func (c *FakeCtl) Loop() error {
-	lowThresholds := make([]float32, len(c.state.Channels)+len(c.state.Buses))
-	highThresholds := make([]float32, len(c.state.Channels)+len(c.state.Buses))
-	diffs := make([]float32, len(c.state.Channels)+len(c.state.Buses))
+	lowThresholds := make([]float32, len(c.state.Channels))
+	highThresholds := make([]float32, len(c.state.Channels))
+	diffs := make([]float32, len(c.state.Channels))
+	inputLevels := make([]float32, len(c.state.Channels))
 
 	for {
 		time.Sleep(10 * time.Millisecond)
 
 		for i := range diffs {
-			var curVal *float32
-			if i < len(c.state.Channels) {
-				curVal = &c.levels.RMS.Input[i]
-			} else {
-				curVal = &c.levels.RMS.Bus[i-len(c.state.Channels)]
-			}
-
 			if diffs[i] == 0 {
 				diffs[i] = -0.4 - rand.Float32()
 			}
 
-			if diffs[i] > 0 && *curVal > highThresholds[i] {
+			if diffs[i] > 0 && c.levels.RMS.Input[i] > highThresholds[i] {
 				diffs[i] = -0.4 - rand.Float32()
-				highThresholds[i] = -100*rand.Float32() + 4
+				highThresholds[i] = -20*rand.Float32() + 4
 			}
-			if diffs[i] < 0 && *curVal < lowThresholds[i] {
+			if diffs[i] < 0 && c.levels.RMS.Input[i] < lowThresholds[i] {
 				diffs[i] = 0.4 + rand.Float32()
 				lowThresholds[i] = -50*rand.Float32() - 70
 			}
 
-			*curVal += diffs[i]
+			inputLevels[i] += diffs[i]
+
+			c.levels.RMS.Input[i] = inputLevels[i] + c.state.Channels[i].Gain
+			if c.levels.RMS.Input[i] < -120 {
+				c.levels.RMS.Input[i] = -120
+			}
+		}
+
+		for j := range c.levels.RMS.Bus {
+			busLevel := float32(0)
+			for i := range c.levels.RMS.Input {
+				mul := float32(0)
+				send := c.state.Channels[i].Sends[j]
+				if send.Unmuted {
+					gain_dB := send.Volume + c.state.Buses[j].Volume
+					mul = coef_from_dB(gain_dB)
+				}
+				busLevel += coef_from_dB(c.levels.RMS.Input[i]) * mul
+			}
+			busLevel_dB := coef_to_dB(busLevel)
+			if busLevel_dB < -120 {
+				busLevel_dB = -120
+			}
+			c.levels.RMS.Bus[j] = busLevel_dB
 		}
 
 		for i := range c.levels.RMS.Input {
@@ -245,4 +263,12 @@ func (c *FakeCtl) copyLevels(levels []float32) []float32 {
 		}
 	}
 	return result
+}
+
+func coef_to_dB(x float32) float32 {
+	return 20.0 * float32(math.Log10(float64(x)))
+}
+
+func coef_from_dB(db float32) float32 {
+	return float32(math.Pow(10, float64(db/20.0)))
 }
