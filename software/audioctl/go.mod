@@ -3,7 +3,7 @@ module github.com/fosdem/video/software/audioctl
 go 1.25.5
 
 require (
-	github.com/dexterlb/misirka/go v0.0.0-20260322141321-b53f25447e7f
+	github.com/dexterlb/misirka/go v0.0.0-20260414144551-62b2df7bf08d
 	github.com/goccy/go-yaml v1.19.2
 	go.bug.st/serial v1.6.4
 )
