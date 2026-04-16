@@ -8,6 +8,7 @@ import (
 	"github.com/dexterlb/misirka/go/misirka"
 	"github.com/fosdem/video/software/audioctl/config"
 	"github.com/fosdem/video/software/audioctl/ctl"
+	"github.com/fosdem/video/software/audioctl/fakectl"
 )
 
 type Api struct {
@@ -30,23 +31,73 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctl ctl.Ctl) *Api {
 	a.dying = make(chan struct{})
 	a.refreshState = make(chan struct{})
 
-	a.m = misirka.New("/", func(err error) {
+	a.m = misirka.New(func(err error) {
 		logger.Error("API error", "err", err)
-	})
+	}).Descr("control API for the FOSDEM audio board")
 
-	a.m.AddTopic("heartbeat")
-	a.m.AddTopic("state")
-	a.m.AddTopic("levels")
-	misirka.HandleCall(a.m, "set-full-state", a.handleSetFullState)
-	misirka.HandleCall(a.m, "set-matrix-send", a.handleSetMatrixSend)
-	misirka.HandleCall(a.m, "set-matrix-volume", a.handleSetMatrixVolume)
-	misirka.HandleCall(a.m, "set-phantom", a.handleSetPhantom)
-	misirka.HandleCall(a.m, "set-in-gain", a.handleSetInGain)
-	misirka.HandleCall(a.m, "set-bus-volume", a.handleSetBusVolume)
-	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd)
-	misirka.HandleCall(a.m, "factory-reset", a.handleFactoryReset)
+	misirka.AddTopic(a.m, "heartbeat").
+		Descr("sends a heartbeat every now and then").
+		Example(Heartbeat{Now: time.Now()})
 
-	a.srv.Handler = a.m.Handler()
+	misirka.AddTopic(a.m, "state").
+		Descr("sends the full audio control state").
+		Example(fakectl.DefaultState)
+
+	misirka.AddTopic(a.m, "levels").
+		Descr("sends the audio levels of all inputs and outputs, in decibels").
+		Example(fakectl.DefaultLevels())
+
+	misirka.HandleCall(a.m, "set-full-state", a.handleSetFullState).
+		Descr("set the full state of the audio mixer at once").
+		Example(fakectl.DefaultState, "ok")
+
+	misirka.HandleCall(a.m, "set-matrix-send", a.handleSetMatrixSend).
+		Descr("set the unmuted status of the given matrix cross-point").
+		Example(exampleMatrixSendParam1, "ok").
+		Example(exampleMatrixSendParam2, "ok").
+		PathValueAlias("set-matrix-send/i/{channel}/{bus}/{unmuted}").
+		PathValueAlias("set-matrix-send/{channel_name}/{bus_name}/{unmuted}")
+
+	misirka.HandleCall(a.m, "set-matrix-volume", a.handleSetMatrixVolume).
+		Descr("set the volume (in decibels) of the given matrix cross-point").
+		Example(exampleMatrixVolumeParam1, "ok").
+		Example(exampleMatrixVolumeParam2, "ok").
+		PathValueAlias("set-matrix-volume/i/{channel}/{bus}/{volume}").
+		PathValueAlias("set-matrix-volume/{channel_name}/{bus_name}/{volume}")
+
+	misirka.HandleCall(a.m, "set-phantom", a.handleSetPhantom).
+		Descr("turn phantom power for the given input on or off").
+		Example(examplePhantomParam1, "ok").
+		Example(examplePhantomParam2, "ok").
+		PathValueAlias("set-phantom/i/{channel}/{phantom}").
+		PathValueAlias("set-phantom/{channel_name}/{phantom}")
+
+	misirka.HandleCall(a.m, "set-in-gain", a.handleSetInGain).
+		Descr("set the input gain (in decibels) of the given input channel").
+		Example(exampleInGainParam1, "ok").
+		Example(exampleInGainParam2, "ok").
+		PathValueAlias("set-in-gain/i/{channel}/{volume}").
+		PathValueAlias("set-in-gain/{channel_name}/{volume}")
+
+	misirka.HandleCall(a.m, "set-bus-volume", a.handleSetBusVolume).
+		Descr("set the volume (in decibels) of the given output bus").
+		Example(exampleBusVolumeParam1, "ok").
+		Example(exampleBusVolumeParam2, "ok").
+		PathValueAlias("set-bus-volume/i/{bus}/{volume}").
+		PathValueAlias("set-bus-volume/{bus_name}/{volume}")
+
+	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd).
+		Descr("execute a raw command on the audio hardware").
+		Example("volume.set 0 1 2.5", "ok")
+
+	misirka.HandleCall(a.m, "factory-reset", a.handleFactoryReset).
+		Descr("factory reset the audio hardware").
+		Example(FactoryResetParam{}, "ok")
+
+	a.m.HandleDoc()
+	a.m.HandleWebsocket()
+
+	a.srv.Handler = a.m.HTTPHandler()
 	a.srv.Addr = a.cfg.Bind
 	return a
 }

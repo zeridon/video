@@ -31,10 +31,10 @@ func (a *Api) handleSetFullState(param *ctl.MixerState) (string, *misirka.MErr) 
 }
 
 type SetMatrixVolumeParam struct {
-	Chan     *uint8   `json:"channel"`
-	Bus      *uint8   `json:"bus"`
-	ChanName *string  `json:"channel_name"`
-	BusName  *string  `json:"bus_name"`
+	Chan     *uint8   `json:"channel,omitempty"`
+	Bus      *uint8   `json:"bus,omitempty"`
+	ChanName *string  `json:"channel_name,omitempty"`
+	BusName  *string  `json:"bus_name,omitempty"`
 	Volume   *float32 `json:"volume"`
 }
 
@@ -145,8 +145,8 @@ func (a *Api) handleSetInGain(param SetInGainParam) (string, *misirka.MErr) {
 }
 
 type SetPhantomParam struct {
-	Chan     *uint8  `json:"channel"`
-	ChanName *string `json:"channel_name"`
+	Chan     *uint8  `json:"channel,omitempty"`
+	ChanName *string `json:"channel_name,omitempty"`
 	Phantom  *bool   `json:"phantom"`
 }
 
@@ -192,8 +192,8 @@ func (a *Api) handleFactoryReset(param FactoryResetParam) (string, *misirka.MErr
 }
 
 type SetBusVolumeParam struct {
-	Bus     *uint8   `json:"bus"`
-	BusName *string  `json:"bus_name"`
+	Bus     *uint8   `json:"bus,omitempty"`
+	BusName *string  `json:"bus_name,omitempty"`
 	Volume  *float32 `json:"volume"`
 }
 

@@ -18,22 +18,9 @@ type FakeCtl struct {
 
 func New(cfg *config.CtlCfg) *FakeCtl {
 	return &FakeCtl{
-		state: defaultState,
-		cfg:   cfg,
-		levels: &ctl.Levels{
-			RMS: ctl.LevelsBlock{
-				Input: make([]float32, len(defaultState.Channels)),
-				Bus:   make([]float32, len(defaultState.Buses)),
-			},
-			Peak: ctl.LevelsBlock{
-				Input: make([]float32, len(defaultState.Channels)),
-				Bus:   make([]float32, len(defaultState.Buses)),
-			},
-			Smooth: ctl.LevelsBlock{
-				Input: make([]float32, len(defaultState.Channels)),
-				Bus:   make([]float32, len(defaultState.Buses)),
-			},
-		},
+		state:  DefaultState,
+		cfg:    cfg,
+		levels: DefaultLevels(),
 	}
 }
 
@@ -166,7 +153,7 @@ func (c *FakeCtl) SetBusVolume(bus uint8, volume float32) error {
 }
 
 func (c *FakeCtl) FactoryReset() error {
-	c.state = defaultState
+	c.state = DefaultState
 	return nil
 }
 

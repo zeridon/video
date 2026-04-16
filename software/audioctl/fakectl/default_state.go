@@ -2,7 +2,7 @@ package fakectl
 
 import "github.com/fosdem/video/software/audioctl/ctl"
 
-var defaultState *ctl.MixerState = &ctl.MixerState{
+var DefaultState *ctl.MixerState = &ctl.MixerState{
 	Channels: []ctl.ChannelState{
 		{
 			Name:    "fubalina",
@@ -65,4 +65,21 @@ var defaultState *ctl.MixerState = &ctl.MixerState{
 			Volume: -10,
 		},
 	},
+}
+
+func DefaultLevels() *ctl.Levels {
+	return &ctl.Levels{
+		RMS: ctl.LevelsBlock{
+			Input: make([]float32, len(DefaultState.Channels)),
+			Bus:   make([]float32, len(DefaultState.Buses)),
+		},
+		Peak: ctl.LevelsBlock{
+			Input: make([]float32, len(DefaultState.Channels)),
+			Bus:   make([]float32, len(DefaultState.Buses)),
+		},
+		Smooth: ctl.LevelsBlock{
+			Input: make([]float32, len(DefaultState.Channels)),
+			Bus:   make([]float32, len(DefaultState.Buses)),
+		},
+	}
 }
