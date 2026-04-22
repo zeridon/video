@@ -1,0 +1,7 @@
+api:
+  bind: ':8811'
+  state_poll_interval_msec: 10000
+  levels_poll_interval_msec: 100
+ctl:
+  port_device: '/dev/ttyACM0'
+  use_db_levels: true
