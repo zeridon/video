@@ -171,11 +171,11 @@ func (c *FakeCtl) Loop() error {
 				diffs[i] = -0.4 - rand.Float32()
 			}
 
-			if diffs[i] > 0 && c.levels.RMS.Input[i] > highThresholds[i] {
+			if diffs[i] > 0 && inputLevels[i] > highThresholds[i] {
 				diffs[i] = -0.4 - rand.Float32()
 				highThresholds[i] = -20*rand.Float32() + 4
 			}
-			if diffs[i] < 0 && c.levels.RMS.Input[i] < lowThresholds[i] {
+			if diffs[i] < 0 && inputLevels[i] < lowThresholds[i] {
 				diffs[i] = 0.4 + rand.Float32()
 				lowThresholds[i] = -50*rand.Float32() - 70
 			}
