@@ -1,17 +1,18 @@
 package config
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/dexterlb/misirka/go/msksrvbuilder"
+)
 
 type ApiCfg struct {
-	Bind                   string
+	Misirka                msksrvbuilder.ServerBuildConfig
 	StatePollIntervalMsec  uint `yaml:"state_poll_interval_msec"`
 	LevelsPollIntervalMsec uint `yaml:"levels_poll_interval_msec"`
 }
 
 func (a *ApiCfg) Validate() error {
-	if a.Bind == "" {
-		return fmt.Errorf("`bind` should be nonempty")
-	}
 	if a.StatePollIntervalMsec < 5 {
 		return fmt.Errorf("`state_poll_interval_msec` should be >= 5")
 	}

@@ -3,28 +3,21 @@ package api
 import (
 	"fmt"
 
-	"github.com/dexterlb/misirka/go/misirka"
 	"github.com/fosdem/video/software/audioctl/ctl"
 )
 
-func (a *Api) handleRawCmd(param string) (string, *misirka.MErr) {
+func (a *Api) handleRawCmd(param string) (string, error) {
 	resp, err := a.ctl.RawCmd(param)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	return resp, nil
 }
 
-func (a *Api) handleSetFullState(param *ctl.MixerState) (string, *misirka.MErr) {
+func (a *Api) handleSetFullState(param *ctl.MixerState) (string, error) {
 	err := a.ctl.SetFullState(param)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -38,34 +31,22 @@ type SetMatrixVolumeParam struct {
 	Volume   *float32 `json:"volume"`
 }
 
-func (a *Api) handleSetMatrixVolume(param SetMatrixVolumeParam) (string, *misirka.MErr) {
+func (a *Api) handleSetMatrixVolume(param SetMatrixVolumeParam) (string, error) {
 	err := a.getChanByName(&param.Chan, param.ChanName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 	err = a.getBusByName(&param.Bus, param.BusName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 
 	if param.Chan == nil || param.Bus == nil || param.Volume == nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  fmt.Errorf("missing fields (need channel, bus, unmuted)"),
-		}
+		return "", fmt.Errorf("missing fields (need channel, bus, unmuted)")
 	}
 	err = a.ctl.SetMatrixVolume(*param.Chan, *param.Bus, *param.Volume)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -79,34 +60,22 @@ type SetMatrixSendParam struct {
 	Unmuted  *bool   `json:"unmuted"`
 }
 
-func (a *Api) handleSetMatrixSend(param SetMatrixSendParam) (string, *misirka.MErr) {
+func (a *Api) handleSetMatrixSend(param SetMatrixSendParam) (string, error) {
 	err := a.getChanByName(&param.Chan, param.ChanName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 	err = a.getBusByName(&param.Bus, param.BusName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 
 	if param.Chan == nil || param.Bus == nil || param.Unmuted == nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  fmt.Errorf("missing fields (need channel, bus, unmuted)"),
-		}
+		return "", err
 	}
 	err = a.ctl.SetMatrixSend(*param.Chan, *param.Bus, *param.Unmuted)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -118,27 +87,18 @@ type SetInGainParam struct {
 	Gain     *float32 `json:"gain"`
 }
 
-func (a *Api) handleSetInGain(param SetInGainParam) (string, *misirka.MErr) {
+func (a *Api) handleSetInGain(param SetInGainParam) (string, error) {
 	err := a.getChanByName(&param.Chan, param.ChanName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 
 	if param.Chan == nil || param.Gain == nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  fmt.Errorf("missing fields (need channel, gain)"),
-		}
+		return "", fmt.Errorf("missing fields (need channel, gain)")
 	}
 	err = a.ctl.SetInGain(*param.Chan, *param.Gain)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -150,27 +110,18 @@ type SetPhantomParam struct {
 	Phantom  *bool   `json:"phantom"`
 }
 
-func (a *Api) handleSetPhantom(param SetPhantomParam) (string, *misirka.MErr) {
+func (a *Api) handleSetPhantom(param SetPhantomParam) (string, error) {
 	err := a.getChanByName(&param.Chan, param.ChanName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 
 	if param.Chan == nil || param.Phantom == nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  fmt.Errorf("missing fields (need channel, phantom)"),
-		}
+		return "", err
 	}
 	err = a.ctl.SetPhantom(*param.Chan, *param.Phantom)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -179,13 +130,10 @@ func (a *Api) handleSetPhantom(param SetPhantomParam) (string, *misirka.MErr) {
 type FactoryResetParam struct {
 }
 
-func (a *Api) handleFactoryReset(param FactoryResetParam) (string, *misirka.MErr) {
+func (a *Api) handleFactoryReset(param FactoryResetParam) (string, error) {
 	err := a.ctl.FactoryReset()
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -197,27 +145,18 @@ type SetBusVolumeParam struct {
 	Volume  *float32 `json:"volume"`
 }
 
-func (a *Api) handleSetBusVolume(param SetBusVolumeParam) (string, *misirka.MErr) {
+func (a *Api) handleSetBusVolume(param SetBusVolumeParam) (string, error) {
 	err := a.getBusByName(&param.Bus, param.BusName)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  err,
-		}
+		return "", err
 	}
 
 	if param.Bus == nil || param.Volume == nil {
-		return "", &misirka.MErr{
-			Code: -1000,
-			Err:  fmt.Errorf("missing fields (need bus, volume)"),
-		}
+		return "", err
 	}
 	err = a.ctl.SetBusVolume(*param.Bus, *param.Volume)
 	if err != nil {
-		return "", &misirka.MErr{
-			Code: -42,
-			Err:  err,
-		}
+		return "", err
 	}
 	a.forceRefresh()
 	return "ok", nil
@@ -244,7 +183,7 @@ func (a *Api) pollState() {
 		a.busNames[i] = state.Buses[i].Name
 	}
 
-	misirka.Publish(a.m, "state", state)
+	a.stateBus.Send(state)
 }
 
 func (a *Api) pollLevels() {
@@ -252,7 +191,8 @@ func (a *Api) pollLevels() {
 	if err != nil {
 		a.logger.Error("could not poll levels", "err", err)
 	}
-	misirka.Publish(a.m, "levels", levels)
+
+	a.levelsBus.Send(levels)
 }
 
 func (a *Api) getChanByName(idx **uint8, name *string) error {

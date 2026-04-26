@@ -2,18 +2,19 @@ package api
 
 import (
 	"log/slog"
-	"net/http"
 	"time"
 
-	"github.com/dexterlb/misirka/go/misirka"
+	"github.com/dexterlb/misirka/go/mskbus"
+	"github.com/dexterlb/misirka/go/msksrv"
+	"github.com/dexterlb/misirka/go/msksrvbuilder"
 	"github.com/fosdem/video/software/audioctl/config"
 	"github.com/fosdem/video/software/audioctl/ctl"
 	"github.com/fosdem/video/software/audioctl/fakectl"
 )
 
 type Api struct {
-	srv          http.Server
-	m            *misirka.Misirka
+	srv          *msksrv.Server
+	mainLoop     *msksrvbuilder.MainLoop
 	logger       *slog.Logger
 	cfg          *config.ApiCfg
 	ctl          ctl.Ctl
@@ -21,84 +22,90 @@ type Api struct {
 	refreshState chan struct{}
 	chanNames    []string
 	busNames     []string
+
+	heartbeatBus *mskbus.BusOf[Heartbeat]
+	stateBus     *mskbus.BusOf[*ctl.MixerState]
+	levelsBus    *mskbus.BusOf[*ctl.Levels]
 }
 
-func New(logger *slog.Logger, cfg *config.ApiCfg, ctl ctl.Ctl) *Api {
+func New(logger *slog.Logger, cfg *config.ApiCfg, ctlInst ctl.Ctl) *Api {
 	a := &Api{}
 	a.cfg = cfg
 	a.logger = logger
-	a.ctl = ctl
+	a.ctl = ctlInst
 	a.dying = make(chan struct{})
 	a.refreshState = make(chan struct{})
 
-	a.m = misirka.New(func(err error) {
+	errHandler := func(err error) {
 		logger.Error("API error", "err", err)
-	}).Descr("control API for the FOSDEM audio board")
+	}
 
-	misirka.AddTopic(a.m, "heartbeat").
+	a.srv, a.mainLoop = msksrvbuilder.BuildServer(errHandler, &cfg.Misirka)
+
+	a.srv.Descr("control API for the FOSDEM audio board")
+
+	a.heartbeatBus = msksrv.AddTopic[Heartbeat](a.srv, "heartbeat").
 		Descr("sends a heartbeat every now and then").
-		Example(Heartbeat{Now: time.Now()})
+		Example(Heartbeat{Now: time.Now()}).
+		Bus()
 
-	misirka.AddTopic(a.m, "state").
+	a.stateBus = msksrv.AddTopic[*ctl.MixerState](a.srv, "state").
 		Descr("sends the full audio control state").
-		Example(fakectl.DefaultState)
+		Example(fakectl.DefaultState).
+		Bus()
 
-	misirka.AddTopic(a.m, "levels").
+	a.levelsBus = msksrv.AddTopic[*ctl.Levels](a.srv, "levels").
 		Descr("sends the audio levels of all inputs and outputs, in decibels").
-		Example(fakectl.DefaultLevels())
+		Example(fakectl.DefaultLevels()).
+		Bus()
 
-	misirka.HandleCall(a.m, "set-full-state", a.handleSetFullState).
+	msksrv.AddCall(a.srv, "set-full-state", a.handleSetFullState).
 		Descr("set the full state of the audio mixer at once").
 		Example(fakectl.DefaultState, "ok")
 
-	misirka.HandleCall(a.m, "set-matrix-send", a.handleSetMatrixSend).
+	msksrv.AddCall(a.srv, "set-matrix-send", a.handleSetMatrixSend).
 		Descr("set the unmuted status of the given matrix cross-point").
 		Example(exampleMatrixSendParam1, "ok").
 		Example(exampleMatrixSendParam2, "ok").
 		PathValueAlias("set-matrix-send/i/{channel}/{bus}/{unmuted}").
 		PathValueAlias("set-matrix-send/{channel_name}/{bus_name}/{unmuted}")
 
-	misirka.HandleCall(a.m, "set-matrix-volume", a.handleSetMatrixVolume).
+	msksrv.AddCall(a.srv, "set-matrix-volume", a.handleSetMatrixVolume).
 		Descr("set the volume (in decibels) of the given matrix cross-point").
 		Example(exampleMatrixVolumeParam1, "ok").
 		Example(exampleMatrixVolumeParam2, "ok").
 		PathValueAlias("set-matrix-volume/i/{channel}/{bus}/{volume}").
 		PathValueAlias("set-matrix-volume/{channel_name}/{bus_name}/{volume}")
 
-	misirka.HandleCall(a.m, "set-phantom", a.handleSetPhantom).
+	msksrv.AddCall(a.srv, "set-phantom", a.handleSetPhantom).
 		Descr("turn phantom power for the given input on or off").
 		Example(examplePhantomParam1, "ok").
 		Example(examplePhantomParam2, "ok").
 		PathValueAlias("set-phantom/i/{channel}/{phantom}").
 		PathValueAlias("set-phantom/{channel_name}/{phantom}")
 
-	misirka.HandleCall(a.m, "set-in-gain", a.handleSetInGain).
+	msksrv.AddCall(a.srv, "set-in-gain", a.handleSetInGain).
 		Descr("set the input gain (in decibels) of the given input channel").
 		Example(exampleInGainParam1, "ok").
 		Example(exampleInGainParam2, "ok").
 		PathValueAlias("set-in-gain/i/{channel}/{volume}").
 		PathValueAlias("set-in-gain/{channel_name}/{volume}")
 
-	misirka.HandleCall(a.m, "set-bus-volume", a.handleSetBusVolume).
+	msksrv.AddCall(a.srv, "set-bus-volume", a.handleSetBusVolume).
 		Descr("set the volume (in decibels) of the given output bus").
 		Example(exampleBusVolumeParam1, "ok").
 		Example(exampleBusVolumeParam2, "ok").
 		PathValueAlias("set-bus-volume/i/{bus}/{volume}").
 		PathValueAlias("set-bus-volume/{bus_name}/{volume}")
 
-	misirka.HandleCall(a.m, "raw-cmd", a.handleRawCmd).
+	msksrv.AddCall(a.srv, "raw-cmd", a.handleRawCmd).
 		Descr("execute a raw command on the audio hardware").
 		Example("volume.set 0 1 2.5", "ok")
 
-	misirka.HandleCall(a.m, "factory-reset", a.handleFactoryReset).
+	msksrv.AddCall(a.srv, "factory-reset", a.handleFactoryReset).
 		Descr("factory reset the audio hardware").
 		Example(FactoryResetParam{}, "ok")
 
-	a.m.HandleDoc()
-	a.m.HandleWebsocket()
-
-	a.srv.Handler = a.m.HTTPHandler()
-	a.srv.Addr = a.cfg.Bind
 	return a
 }
 
@@ -106,8 +113,8 @@ func (a *Api) Serve() error {
 	defer close(a.dying)
 	go a.doHeartbeat()
 	go a.poller()
-	a.logger.Info("starting server", "addr", a.cfg.Bind)
-	return a.srv.ListenAndServe()
+	a.logger.Info("starting server", "addr", a.cfg.Misirka.HTTPBackend.BindAddress)
+	return a.mainLoop.Run()
 }
 
 type Heartbeat struct {
@@ -125,7 +132,7 @@ func (a *Api) doHeartbeat() {
 			return
 		case t := <-ticker.C:
 			h.Now = t
-			misirka.Publish(a.m, "heartbeat", h)
+			a.heartbeatBus.Send(h)
 		}
 	}
 }

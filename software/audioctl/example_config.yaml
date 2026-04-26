@@ -1,5 +1,16 @@
 api:
-  bind: ':8811'
+  misirka:
+    http:
+      enable: true
+      bind: ':8811'
+      prefix: ''
+    ws:
+      enable: true
+      url: '/ws'
+    doc:
+      enable: true
+      path: 'doc'
+      html_path: 'doc.html'
   state_poll_interval_msec: 10000
   levels_poll_interval_msec: 100
 ctl:

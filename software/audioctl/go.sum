@@ -2,8 +2,8 @@ github.com/creack/goselect v0.1.2 h1:2DNy14+JPjRBgPzAd1thbQp4BSIihxcBf0IXhQXDRa0
 github.com/creack/goselect v0.1.2/go.mod h1:a/NhLweNvqIYMuxcMOuWY516Cimucms3DglDzQP3hKY=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/dexterlb/misirka/go v0.0.0-20260422143033-240dae907622 h1:fXoQDvy2HroPbotp/nsALl6KsfHbNLDcfYztqUS9Ga8=
-github.com/dexterlb/misirka/go v0.0.0-20260422143033-240dae907622/go.mod h1:VZeXV8DAty9fQUq9+W3W8IRcTEI/NEElYDBj8hBOx4E=
+github.com/dexterlb/misirka/go v0.0.0-20260426191713-aede647a9083 h1:NEc+mRpmC9tDNYl9l3mdLurk047ctbDp/UiVjz0vTJE=
+github.com/dexterlb/misirka/go v0.0.0-20260426191713-aede647a9083/go.mod h1:VZeXV8DAty9fQUq9+W3W8IRcTEI/NEElYDBj8hBOx4E=
 github.com/goccy/go-json v0.10.6 h1:p8HrPJzOakx/mn/bQtjgNjdTcN+/S6FcG2CTtQOrHVU=
 github.com/goccy/go-json v0.10.6/go.mod h1:oq7eo15ShAhp70Anwd5lgX2pLfOS3QCiwU/PULtXL6M=
 github.com/goccy/go-yaml v1.19.2 h1:PmFC1S6h8ljIz6gMRBopkjP1TVT7xuwrButHID66PoM=

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/dexterlb/misirka/go/msksrvbuilder"
 	"github.com/goccy/go-yaml"
 )
 
@@ -33,7 +34,11 @@ func Parse(filename string) (*Config, error) {
 
 	m := yaml.NewDecoder(f, yaml.Strict())
 
-	cfg := &Config{}
+	cfg := &Config{
+		Api: &ApiCfg{
+			Misirka: msksrvbuilder.DefaultServerBuildConfig,
+		},
+	}
 	err = m.Decode(cfg)
 	if err != nil {
 		return nil, err
