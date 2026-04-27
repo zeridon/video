@@ -21,6 +21,7 @@
     "misirka": "github:dexterlb/misirka",
     "node": "^25.9.0",
     "prettier": "^3.8.2",
+    "tsx-vanilla": "^1.2.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.8",

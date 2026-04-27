@@ -11,7 +11,7 @@ export default defineConfig([
     "!node_modules/misirka/",
   ]),
   {
-    files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,tsx,jsx}"],
     plugins: { js },
     extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },

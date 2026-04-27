@@ -1,5 +1,5 @@
 import favicon_dataurl from "../assets/favicon.png?url&inline"
-import { MixerUI } from "./mixer_ui.ts"
+import { MixerUI } from "./mixer_ui.tsx"
 import { WSClient } from "misirka"
 
 function setup_favicon() {
