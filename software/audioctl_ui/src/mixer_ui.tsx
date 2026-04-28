@@ -18,13 +18,15 @@ export class MixerUI {
 
   private client: MixerClient
 
-  public toggleSetupMode() {
-    for(const slider of document.querySelectorAll<HTMLInputElement>(`.inputs .gain input[type=range]`)) {
-      slider.disabled = !slider.disabled
+  public toggleSetupMode(setup: boolean) {
+    for(const gainSlider of document.querySelectorAll<HTMLDivElement>(`.inputs .gain`)) {
+      gainSlider.querySelector<HTMLInputElement>(`input[type=range]`)!.disabled = !setup
+      gainSlider.querySelector<HTMLDivElement>(`.volume`)!.style.visibility = setup ? 'visible' : 'hidden'
     }
 
-    for(const phantom of document.querySelectorAll<HTMLInputElement>(`.inputs .phantom input`)) {
-      phantom.disabled = !phantom.disabled
+    for(const phantom of document.querySelectorAll<HTMLInputElement>(`.inputs .phantom`)) {
+      phantom.querySelector<HTMLInputElement>(`input[type=checkbox]`)!.disabled = !setup
+      phantom.style.visibility = setup ? 'visible' : 'hidden'
     }
   }
 
@@ -50,6 +52,8 @@ export class MixerUI {
 
     this.setupInputs(inputsContainer.value!, initialState)
     this.setupOutputs(outputsContainer.value!, initialState)
+
+    this.toggleSetupMode(false)
 
     await this.client.subscribe_state(s => this.updateState(s))
     await this.client.subscribe_levels(l => this.updateVu(initialState, l))

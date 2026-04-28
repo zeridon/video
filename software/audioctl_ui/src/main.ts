@@ -14,7 +14,8 @@ function main() {
   const mclient = new WSClient(ws_url())
   const ui = new MixerUI(mclient, document.querySelector<HTMLDivElement>('#mixer')!)
 
-  document.querySelector<HTMLButtonElement>('#setup-mode')!.onclick = () => ui.toggleSetupMode()
+  document.querySelector<HTMLInputElement>('#setup-mode')!.oninput =
+    e => ui.toggleSetupMode((e.target as HTMLInputElement)!.checked)
 }
 
 function ws_url() {
