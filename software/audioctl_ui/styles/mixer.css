@@ -35,8 +35,19 @@ body {
 	border: 1px solid black;
 	margin: 0.5rem;
 
-	width: var(--mixer-vu-width);
-	max-width: var(--mixer-vu-width);
+	/*width: var(--mixer-vu-width);*/
+	min-width: var(--mixer-vu-width);
+}
+
+.channel .controls {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.channel .send {
+	display: flex;
+	justify-content: center;
 }
 
 .channel h3 {
@@ -63,26 +74,58 @@ body {
 	height: var(--mixer-vu-height);
 }
 
-.mutes > div {
+.volume input[type=range] {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.phantom {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.phantom input[type=checkbox] {
+	font-size: x-large;
+	accent-color: red;
+}
+
+.sends {
 	display: flex;
+	flex-direction: row;
 }
 
-.mutes > div > * {
-	display: inline-block;
-	flex: 1;
-}
-
-.mutes label {
-	text-align: right;
-	font-size: large;
-}
-
-.mutes input[type=checkbox] {
+.send input[type=checkbox] {
 	font-size: x-large;
 	accent-color: green;
 }
 
-meter {
+.volume, .vu-meter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.channel .send {
+	border: 1px dotted black;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	border-collapse: collapse;
+}
+
+.channel .send h4 {
+	vertical-align: middle;
+	text-align: right;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	flex-grow: 1;
+	direction: ltr;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+}
+
+.channel meter {
 	height: var(--mixer-vu-height);
 	direction: rtl;
 	writing-mode: vertical-lr;

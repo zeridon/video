@@ -12,7 +12,9 @@ function setup_favicon() {
 function main() {
   setup_favicon()
   const mclient = new WSClient(ws_url())
-  new MixerUI(mclient, document.querySelector('body')!)
+  const ui = new MixerUI(mclient, document.querySelector<HTMLDivElement>('#mixer')!)
+
+  document.querySelector<HTMLButtonElement>('#setup-mode')!.onclick = () => ui.toggleSetupMode()
 }
 
 function ws_url() {
