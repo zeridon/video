@@ -25,7 +25,7 @@ func New(cfg *config.CtlCfg) *FakeCtl {
 }
 
 func (c *FakeCtl) GetFullState() (*ctl.MixerState, error) {
-	return c.state, nil
+	return c.state.Copy(), nil
 }
 
 func (c *FakeCtl) GetChannelNames() ([]string, []string, error) {

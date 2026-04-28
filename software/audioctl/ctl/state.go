@@ -46,13 +46,13 @@ func MixerStateEqual(x, y *MixerState) bool {
 	}
 
 	for i := range x.Channels {
-		if !channelEqual(&x.Channels[i], &y.Channels[i]) {
+		if !ChannelStateEqual(&x.Channels[i], &y.Channels[i]) {
 			return false
 		}
 	}
 
 	for i := range x.Buses {
-		if !busEqual(&x.Buses[i], &y.Buses[i]) {
+		if !BusStateEqual(&x.Buses[i], &y.Buses[i]) {
 			return false
 		}
 	}
@@ -60,7 +60,7 @@ func MixerStateEqual(x, y *MixerState) bool {
 	return true
 }
 
-func channelEqual(a, b *ChannelState) bool {
+func ChannelStateEqual(a, b *ChannelState) bool {
 	if a.Name != b.Name ||
 		a.Label != b.Label ||
 		a.Gain != b.Gain ||
@@ -70,7 +70,7 @@ func channelEqual(a, b *ChannelState) bool {
 	}
 
 	for i := range a.Sends {
-		if !sendEqual(&a.Sends[i], &b.Sends[i]) {
+		if !SendStateEqual(&a.Sends[i], &b.Sends[i]) {
 			return false
 		}
 	}
@@ -78,13 +78,76 @@ func channelEqual(a, b *ChannelState) bool {
 	return true
 }
 
-func busEqual(a, b *BusState) bool {
+func BusStateEqual(a, b *BusState) bool {
 	return a.Name == b.Name &&
 		a.Label == b.Label &&
 		a.Volume == b.Volume
 }
 
-func sendEqual(a, b *SendState) bool {
+func SendStateEqual(a, b *SendState) bool {
 	return a.Unmuted == b.Unmuted &&
 		a.Volume == b.Volume
+}
+
+func (m *MixerState) Copy() *MixerState {
+	copyMixerState := &MixerState{
+		Channels: make([]ChannelState, len(m.Channels)),
+		Buses:    make([]BusState, len(m.Buses)),
+	}
+
+	for i, channel := range m.Channels {
+		copyMixerState.Channels[i] = *channel.Copy()
+	}
+
+	for i, bus := range m.Buses {
+		copyMixerState.Buses[i] = bus.Copy()
+	}
+
+	return copyMixerState
+}
+
+func (c *ChannelState) Copy() *ChannelState {
+	copyChannel := &ChannelState{
+		Name:    c.Name,
+		Label:   c.Label,
+		Gain:    c.Gain,
+		Phantom: c.Phantom,
+		Sends:   make([]SendState, len(c.Sends)),
+	}
+
+	for i, send := range c.Sends {
+		copyChannel.Sends[i] = send.Copy()
+	}
+
+	return copyChannel
+}
+
+func (b *BusState) Copy() BusState {
+	return BusState{
+		Name:   b.Name,
+		Label:  b.Label,
+		Volume: b.Volume,
+	}
+}
+
+func (s *SendState) Copy() SendState {
+	return SendState{
+		Unmuted: s.Unmuted,
+		Volume:  s.Volume,
+	}
+}
+
+func (l *Levels) Copy() Levels {
+	return Levels{
+		RMS:    l.RMS.Copy(),
+		Peak:   l.Peak.Copy(),
+		Smooth: l.Smooth.Copy(),
+	}
+}
+
+func (lb *LevelsBlock) Copy() LevelsBlock {
+	return LevelsBlock{
+		Input: append([]float32(nil), lb.Input...),
+		Bus:   append([]float32(nil), lb.Bus...),
+	}
 }
