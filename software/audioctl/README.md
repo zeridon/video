@@ -15,7 +15,7 @@ see [video-amixcontrol](https://github.com/fosdem/video-amixcontrol).
 ```
 $ cp example_config.yaml my_config.yaml
 <modify my_config.yaml>
-$ go run 'github.com/fosdem/video/software/audioctl/cmd/audioctl' my_config.yaml
+$ ./build.sh run my_config.yaml
 ```
 
 For debug purposes, you can set `port_device: fake` in the config

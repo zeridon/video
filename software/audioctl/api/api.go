@@ -52,7 +52,8 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctlInst ctl.Ctl) *Api {
 	a.stateBus = msksrv.AddTopic[*ctl.MixerState](a.srv, "state").
 		Descr("sends the full audio control state").
 		Example(fakectl.DefaultState).
-		Bus()
+		Bus().
+		DedupBy(ctl.MixerStateEqual)
 
 	a.levelsBus = msksrv.AddTopic[*ctl.Levels](a.srv, "levels").
 		Descr("sends the audio levels of all inputs and outputs, in decibels").

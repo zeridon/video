@@ -34,3 +34,57 @@ type LevelsBlock struct {
 	Input []float32 `json:"inputs"`
 	Bus   []float32 `json:"buses"`
 }
+
+func MixerStateEqual(x, y *MixerState) bool {
+	if x == nil || y == nil {
+		return x == y
+	}
+
+	if len(x.Channels) != len(y.Channels) ||
+		len(x.Buses) != len(y.Buses) {
+		return false
+	}
+
+	for i := range x.Channels {
+		if !channelEqual(&x.Channels[i], &y.Channels[i]) {
+			return false
+		}
+	}
+
+	for i := range x.Buses {
+		if !busEqual(&x.Buses[i], &y.Buses[i]) {
+			return false
+		}
+	}
+
+	return true
+}
+
+func channelEqual(a, b *ChannelState) bool {
+	if a.Name != b.Name ||
+		a.Label != b.Label ||
+		a.Gain != b.Gain ||
+		a.Phantom != b.Phantom ||
+		len(a.Sends) != len(b.Sends) {
+		return false
+	}
+
+	for i := range a.Sends {
+		if !sendEqual(&a.Sends[i], &b.Sends[i]) {
+			return false
+		}
+	}
+
+	return true
+}
+
+func busEqual(a, b *BusState) bool {
+	return a.Name == b.Name &&
+		a.Label == b.Label &&
+		a.Volume == b.Volume
+}
+
+func sendEqual(a, b *SendState) bool {
+	return a.Unmuted == b.Unmuted &&
+		a.Volume == b.Volume
+}
