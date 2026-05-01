@@ -42,7 +42,9 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctlInst ctl.Ctl) *Api {
 
 	a.srv, a.mainLoop = msksrvbuilder.BuildServer(errHandler, &cfg.Misirka)
 
-	a.srv.Descr("control API for the FOSDEM audio board")
+	a.srv.
+		Name("FOSDEM AudioCtl").
+		Descr("control API for the FOSDEM audio board")
 
 	a.heartbeatBus = msksrv.AddTopic[Heartbeat](a.srv, "heartbeat").
 		Descr("sends a heartbeat every now and then").
