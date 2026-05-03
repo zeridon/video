@@ -1,11 +1,13 @@
 package api
 
 import (
+	"errors"
 	"log/slog"
 	"time"
 
 	"github.com/dexterlb/misirka/go/mskbus"
 	"github.com/dexterlb/misirka/go/msksrv"
+	"github.com/dexterlb/misirka/go/msksrv/backends"
 	"github.com/dexterlb/misirka/go/msksrvbuilder"
 	"github.com/fosdem/video/software/audioctl/config"
 	"github.com/fosdem/video/software/audioctl/ctl"
@@ -36,11 +38,24 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctlInst ctl.Ctl) *Api {
 	a.dying = make(chan struct{})
 	a.refreshState = make(chan struct{})
 
-	errHandler := func(err error) {
-		logger.Error("API error", "err", err)
+	evtHandlers := backends.EventHandlers{
+		Err: func(err error) {
+			if berr, ok := errors.AsType[*backends.BackendSpecificError](err); ok {
+				logger.Error("API error", "backend", berr.BackendName, "err", berr.Err)
+			} else {
+				logger.Error("API error", "err", err)
+			}
+		},
+		Info: func(msg string, data map[string]interface{}) {
+			attrs := make([]any, 0, len(data)*2)
+			for k, v := range data {
+				attrs = append(attrs, k, v)
+			}
+			logger.Info(msg, attrs...)
+		},
 	}
 
-	a.srv, a.mainLoop = msksrvbuilder.BuildServer(errHandler, &cfg.Misirka)
+	a.srv, a.mainLoop = msksrvbuilder.BuildServer(evtHandlers, &cfg.Misirka)
 
 	a.srv.
 		Name("FOSDEM AudioCtl").
@@ -116,7 +131,6 @@ func (a *Api) Serve() error {
 	defer close(a.dying)
 	go a.doHeartbeat()
 	go a.poller()
-	a.logger.Info("starting server", "addr", a.cfg.Misirka.HTTPBackend.BindAddress)
 	return a.mainLoop.Run()
 }
 
