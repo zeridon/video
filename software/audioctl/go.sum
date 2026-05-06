@@ -2,8 +2,8 @@ github.com/creack/goselect v0.1.2 h1:2DNy14+JPjRBgPzAd1thbQp4BSIihxcBf0IXhQXDRa0
 github.com/creack/goselect v0.1.2/go.mod h1:a/NhLweNvqIYMuxcMOuWY516Cimucms3DglDzQP3hKY=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/dexterlb/misirka/go v0.0.0-20260503152557-244cb4376b91 h1:Ut2c9zkG+D+z9Xr9noW5O0QaAXQiAAfee/Y21K55VIg=
-github.com/dexterlb/misirka/go v0.0.0-20260503152557-244cb4376b91/go.mod h1:VZeXV8DAty9fQUq9+W3W8IRcTEI/NEElYDBj8hBOx4E=
+github.com/dexterlb/misirka/go v0.0.0-20260506211016-17b2917bbaf8 h1:duGTo13nkph1RzDAAdBz7bKLGxNMQYr7Gj/CagjJVPA=
+github.com/dexterlb/misirka/go v0.0.0-20260506211016-17b2917bbaf8/go.mod h1:VZeXV8DAty9fQUq9+W3W8IRcTEI/NEElYDBj8hBOx4E=
 github.com/eclipse/paho.golang v0.23.0 h1:KHgl2wz6EJo7cMBmkuhpt7C576vP+kpPv7jjvSyR6Mk=
 github.com/eclipse/paho.golang v0.23.0/go.mod h1:nQRhTkoZv8EAiNs5UU0/WdQIx2NrnWUpL9nsGJTQN04=
 github.com/goccy/go-json v0.10.6 h1:p8HrPJzOakx/mn/bQtjgNjdTcN+/S6FcG2CTtQOrHVU=

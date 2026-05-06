@@ -49,17 +49,17 @@ export class MixerClient {
 
   async subscribe_state(handler: (state: MixerState) => void) {
     await this.client.subscribe(
-      ['state'], MixerStateSchema, handler,
+      'state', MixerStateSchema, handler,
     )
   }
 
   async subscribe_levels(handler: (levels: Levels) => void) {
     await this.client.subscribe(
-      ['levels'], LevelsSchema, handler,
+      'levels', LevelsSchema, handler,
     )
   }
 
   private async call_expecting_ok(method: string, param: any) {
-    await this.client.request(method, param, OkRespSchema)
+    await this.client.call(method, param, OkRespSchema)
   }
 }

@@ -36,7 +36,7 @@ export class MixerUI {
 
     const inputsContainer = ref<HTMLDivElement>()
     const outputsContainer = ref<HTMLDivElement>()
-    
+
     this.container.replaceChildren(
       <div className='mixer'>
         <div className='mixer'>
@@ -113,7 +113,7 @@ export class MixerUI {
     container.replaceChildren(
       ...state.channels.entries().map(([i, inp]) =>
         <Input input={inp} state={state}
-          onGain={gain => this.client.set_in_gain(i, gain)} 
+          onGain={gain => this.client.set_in_gain(i, gain)}
           onSendMute={bus => muted => this.client.set_matrix_send(i, bus, !muted)}
           onSendVolume={bus => volume => this.client.set_matrix_volume(i, bus, volume)}
           onPhantom={enabled => this.client.set_phantom(i, enabled)}
