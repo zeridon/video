@@ -52,10 +52,10 @@ export const Input = (props: {
         <Meter/>
       </div>
       <div className='phantom' title='Phantom power'>
-        <label htmlFor={`phantom-${props.input.name}`}>&#x1F47B;&#x1F47B; </label>
+        <label htmlFor={`phantom-${props.input.name}`}>&#x1F47B; </label>
         <input type='checkbox'
           id={`phantom-${props.input.name}`}
-          oninput={e => props.onPhantom(!e.target.checked)}/>
+          onchange={e => props.onPhantom(e.target.checked)}/>
       </div>
     </div>
     <div className='sends' children={sends.toArray()}/>

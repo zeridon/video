@@ -85,7 +85,10 @@ export class MixerUI {
       const input = this.container.querySelector<HTMLDivElement>(`.inputs [data-name=${channel.name}]`)!
       input.querySelector<HTMLInputElement>(`input[type=range]`)!.value = channel.gain.toString()
       input.querySelector<HTMLDivElement>(`.gaindb`)!.innerText = formatDb(channel.gain)
+
+      input.querySelector<HTMLInputElement>(`.phantom input[type=checkbox]`)!.checked = channel.phantom
     }
+    
     for (const bus of state.buses) {
       const output =  this.container.querySelector<HTMLDivElement>(`.outputs [data-name=${bus.name}]`)!
       output.querySelector<HTMLInputElement>(`input[type=range]`)!.value = bus.volume.toString()
