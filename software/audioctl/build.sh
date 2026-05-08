@@ -10,6 +10,7 @@ function run_linters {
             set -euo pipefail
             cd "${cdir}"
             cd "${goproj_dir}"
+            go test ./... 2>&1 | grep -v "^\(ok\|?\)" || true >&2
             if [[ -f .golangci.yaml ]]; then
                 golangci-lint run
                 golangci-lint fmt
@@ -22,13 +23,13 @@ function run_linters {
 }
 
 function do_build {
-    run_linters
     mkdir -p "${cdir}"/build
     (
         set -euo pipefail
         cd "${cdir}"
         go build -o build/audioctl 'github.com/fosdem/video/software/audioctl/cmd/audioctl'
     )
+    run_linters
 }
 
 function reset_go_mod {

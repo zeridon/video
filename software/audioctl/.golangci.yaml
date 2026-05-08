@@ -16,3 +16,5 @@ linters:
       - path: external\/go4vl
         linters:
           - staticcheck
+output:
+  show-stats: false

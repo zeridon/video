@@ -62,7 +62,7 @@ body {
 
 .channel .db {
 	font-family: monospace;
-	writing-mode: sideways-lr;
+	/* writing-mode: sideways-lr; FIXME: use transform() or something else */
 
 }
 
@@ -86,7 +86,7 @@ body {
 
 .phantom input[type=checkbox] {
 	font-size: x-large;
-	accent-color: red;
+	/* accent-color: red; FIXME: disable linter warning */
 }
 
 .sends {
@@ -96,7 +96,7 @@ body {
 
 .send input[type=checkbox] {
 	font-size: x-large;
-	accent-color: green;
+	/* accent-color: green; FIXME: disable linter warning */
 }
 
 .volume, .vu-meter {

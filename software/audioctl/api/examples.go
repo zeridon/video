@@ -59,7 +59,6 @@ var exampleFalse = false
 var exampleFoo = "foo"
 var exampleBar = "bar"
 var examplePenka = "penka"
-var exampleDonka = "donka"
 var exampleThree = uint8(3)
 var exampleOne = uint8(1)
 var exampleZero = uint8(0)

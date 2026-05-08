@@ -152,11 +152,12 @@ func parseSend(s string) (ctl.SendState, error) {
 		return ss, fmt.Errorf("%s is not in the form <send>*<volume>", s)
 	}
 
-	if fields[0] == "0" {
+	switch fields[0] {
+	case "0":
 		ss.Unmuted = false
-	} else if fields[0] == "1" {
+	case "1":
 		ss.Unmuted = true
-	} else {
+	default:
 		return ss, fmt.Errorf("%s is not a valid mute/unmute value (0|1)", fields[0])
 	}
 
@@ -173,11 +174,12 @@ func parseBoolList(s string) ([]bool, error) {
 	fields := strings.Fields(s)
 	result := make([]bool, len(fields))
 	for i, f := range fields {
-		if f == "0" {
+		switch f {
+		case "0":
 			result[i] = false
-		} else if f == "1" {
+		case "1":
 			result[i] = true
-		} else {
+		default:
 			return nil, fmt.Errorf("%s is not a bool", f)
 		}
 	}

@@ -40,7 +40,8 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctlInst ctl.Ctl) *Api {
 
 	evtHandlers := backends.EventHandlers{
 		Err: func(err error) {
-			if berr, ok := errors.AsType[*backends.BackendSpecificError](err); ok {
+			var berr *backends.BackendSpecificError
+			if errors.As(err, &berr) {
 				logger.Error("API error", "backend", berr.BackendName, "err", berr.Err)
 			} else {
 				logger.Error("API error", "err", err)
