@@ -4,7 +4,25 @@ set -euo pipefail
 
 cdir="$(dirname "$(readlink -f "${0}")")"
 
+function run_linters {
+    while read goproj_dir; do
+        (
+            set -euo pipefail
+            cd "${cdir}"
+            cd "${goproj_dir}"
+            if [[ -f .golangci.yaml ]]; then
+                golangci-lint run
+                golangci-lint fmt
+            fi
+        )
+    done < <(
+        echo "${cdir}"
+        cat "${cdir}"/go.mod | grep '^replace ' | sed -E 's/.*=>\s*(.*)/\1/g'
+    )
+}
+
 function do_build {
+    run_linters
     mkdir -p "${cdir}"/build
     (
         set -euo pipefail
@@ -17,7 +35,7 @@ function reset_go_mod {
     cat > "${cdir}"/go.mod <<END
     module github.com/fosdem/video/software/audioctl
 
-    go 1.25.5
+    go 1.24
 END
     (
         set -euo pipefail
