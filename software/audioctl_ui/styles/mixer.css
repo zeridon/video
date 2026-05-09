@@ -12,6 +12,7 @@ body {
 .channellist {
 	display: flex;
 	flex-wrap: wrap;
+	flex: 1 0 auto;
 }
 
 .mixer h2 {

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "npm run check && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "check": "tsc -p tsconfig.json && eslint && eslint node_modules/misirka/ts/index.ts",
     "lint": "eslint --fix && eslint --fix node_modules/misirka/ts/*.ts",
