@@ -24,7 +24,7 @@ bool AudioControlTAA3040::disable(void) {
 }
 
 /*
- * Set the gain in the PGA in steps of 1dB. The gain rainge is from 0 to 42 dB. This also controls the
+ * Set the gain in the PGA in steps of 1dB. The gain range is from 0 to 42 dB. This also controls the
  * analog frontend configuration.
  */
 bool AudioControlTAA3040::gain(uint8_t channel, uint8_t gain, uint8_t impedance, uint8_t mode, uint8_t coupling) {
@@ -37,6 +37,8 @@ bool AudioControlTAA3040::gain(uint8_t channel, uint8_t gain, uint8_t impedance,
 /*
  * Set the digital volume control for the channel. This ranges from -100dB to +27dB with a
  * precision of 0.1 dB.
+ * Note that this function is untested, unused and might have problems.
+ * Why would you need in-ADC digital gain anyway?
  */
 bool AudioControlTAA3040::digitalGain(uint8_t channel, float gainDb) {
 	uint8_t offset  = channel * 5;

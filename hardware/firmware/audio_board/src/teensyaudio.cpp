@@ -146,23 +146,55 @@ bool is_muted(uint8_t channel, uint8_t bus) {
 	return !!(state.mutes & mute_mask(channel, bus));
 }
 
+float get_volume_dB(uint8_t channel, uint8_t bus) {
+	return state.matrix_dB[channel][bus];
+}
+
+float get_bus_volume_dB(uint8_t bus) {
+	return state.bus_volumes_dB[bus];
+}
+
+uint8_t get_channel_gain_dB_analog(uint8_t channel) {
+	float gain = state.channel_input_gains_dB[channel];
+
+	// the analog gain of the TAA3040 is between 0 and 42dB
+	// and has a whole-number resolution
+
+	if (gain < 0) {
+		return 0;
+	}
+	if (gain > 42) {
+		return 42;
+	}
+
+	return (uint8_t)(gain + 0.5);
+}
+
+float get_channel_gain_dB_digital(uint8_t channel) {
+	float gain = state.channel_input_gains_dB[channel];
+	return gain - (float)get_channel_gain_dB_analog(channel);
+}
+
+void apply_channel_input_gain(uint8_t channel) {
+	set_channel_input_gain_dB(channel, state.channel_input_gains_dB[channel]);
+}
+
+float get_channel_input_gain_dB(uint8_t channel) {
+	return state.channel_input_gains_dB[channel];
+}
+
 float calc_real_volume(uint8_t channel, uint8_t bus) {
-	float volume_dB = state.matrix_dB[channel][bus] + state.bus_volumes_dB[bus];
+	float input_volume_dB  = get_channel_gain_dB_digital(channel);
+	float matrix_volume_dB = state.matrix_dB[channel][bus];
+	float bus_volume_dB    = state.bus_volumes_dB[bus];
+
+	float volume_dB = input_volume_dB + matrix_volume_dB + bus_volume_dB;
 	float volume    = coef_from_dB(volume_dB);
 	return volume * !is_muted(channel, bus);
 }
 
 void apply_volume(uint8_t channel, uint8_t bus) {
 	raw_set_crosspoint(channel, bus, calc_real_volume(channel, bus));
-}
-
-void set_volume_dB(uint8_t channel, uint8_t bus, float volume) {
-	state.matrix_dB[channel][bus] = volume;
-	apply_volume(channel, bus);
-}
-
-float get_volume_dB(uint8_t channel, uint8_t bus) {
-	return state.matrix_dB[channel][bus];
 }
 
 void mute(uint8_t channel, uint8_t bus) {
@@ -175,6 +207,11 @@ void unmute(uint8_t channel, uint8_t bus) {
 	apply_volume(channel, bus);
 }
 
+void set_volume_dB(uint8_t channel, uint8_t bus, float volume) {
+	state.matrix_dB[channel][bus] = volume;
+	apply_volume(channel, bus);
+}
+
 void set_bus_volume_dB(uint8_t bus, float vol) {
 	state.bus_volumes_dB[bus] = vol;
 	for (uint8_t channel = 0; channel < CHANNELS; ++channel) {
@@ -182,29 +219,15 @@ void set_bus_volume_dB(uint8_t bus, float vol) {
 	}
 }
 
-float get_bus_volume_dB(uint8_t bus) {
-	return state.bus_volumes_dB[bus];
-}
-
 void set_channel_input_gain_dB(uint8_t channel, float gain) {
-	uint8_t whole_gain = (uint8_t)(gain + 0.5);
-	if (gain < 1) {
-		whole_gain = 1;
+	state.channel_input_gains_dB[channel] = gain;
+
+	uint8_t analog_gain = get_channel_gain_dB_analog(channel);
+	taa3040.gain(channel, analog_gain, IMPEDANCE_10k, 0, 0);
+
+	for (uint8_t bus = 0; bus < BUSES; ++bus) {
+		apply_volume(channel, bus);
 	}
-	if (gain > 42) {
-		whole_gain = 42;
-	}
-
-	state.channel_input_gains_dB[channel] = (float)whole_gain;
-	taa3040.gain(channel, whole_gain, IMPEDANCE_10k, 0, 0);
-}
-
-void apply_channel_input_gain(uint8_t channel) {
-	set_channel_input_gain_dB(channel, state.channel_input_gains_dB[channel]);
-}
-
-float get_channel_input_gain_dB(uint8_t channel) {
-	return state.channel_input_gains_dB[channel];
 }
 
 void reset_matrix() {
