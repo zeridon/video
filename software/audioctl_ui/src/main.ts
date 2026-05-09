@@ -20,7 +20,7 @@ function main() {
 
 function ws_url() {
   const protocol = location.protocol === "https:" ? "wss" : "ws"
-  return `${protocol}://${location.host}/ws`
+  return `${protocol}://${location.host}${location.pathname.replace(/\/?$/, '/ws')}`
 }
 
 main()
