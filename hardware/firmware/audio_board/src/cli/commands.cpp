@@ -227,11 +227,6 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 				cli->port->printf("bus %d is invalid\n", bus);
 				return;
 			}
-			if (vol < 0) {
-				cli->prefix_fail();
-				cli->port->printf("vol should not be negative\n");
-				return;
-			}
 
 			set_volume_dB(chan, bus, vol);
 
@@ -275,11 +270,6 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 			if (bus >= BUSES) {
 				cli->prefix_fail();
 				cli->port->printf("bus %d is invalid\n", bus);
-				return;
-			}
-			if (vol < 0) {
-				cli->prefix_fail();
-				cli->port->printf("vol should not be negative\n");
 				return;
 			}
 
