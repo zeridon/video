@@ -73,11 +73,49 @@ void audio_setup() {
 	taa3040.enable();
 }
 
+uint8_t get_channel_gain_dB_analog(uint8_t channel) {
+	float gain = state.channel_input_gains_dB[channel];
+
+	// the analog gain of the TAA3040 is between 0 and 42dB
+	// and has a whole-number resolution
+
+	if (gain < 0) {
+		return 0;
+	}
+	if (gain > 42) {
+		return 42;
+	}
+
+	return (uint8_t)(gain + 0.5);
+}
+
+float get_channel_gain_dB_digital(uint8_t channel) {
+	float gain = state.channel_input_gains_dB[channel];
+	return gain - (float)get_channel_gain_dB_analog(channel);
+}
+
+float level_multiplier_chan(uint8_t chan_id) {
+	float db = get_channel_gain_dB_digital(chan_id);
+	return coef_from_dB(db);
+}
+
+float level_multiplier_bus(uint8_t bus_id) {
+	return 1;
+}
+
+float level_multiplier(uint8_t meter_id) {
+	if (meter_id < CHANNELS) {
+		return level_multiplier_chan(meter_id);
+	} else {
+		return level_multiplier_bus(meter_id - CHANNELS);
+	}
+}
+
 void audio_update_levels(Levels& levels) {
 	float temp;
 	if (rms1.available()) {
 		for (uint8_t i = 0; i < CHANNELS + BUSES; i++) {
-			temp             = ent_rms[i]->read();
+			temp             = ent_rms[i]->read() * level_multiplier(i);
 			levels.smooth[i] = ((levels.smooth[i] * 9) + temp) / 10;
 			temp             = levels.smooth[i];
 			// VU meter drains slowly after a peak
@@ -86,7 +124,7 @@ void audio_update_levels(Levels& levels) {
 			} else {
 				levels.rms[i] = temp;
 			}
-			levels.peak[i] = ent_peak[i]->read();
+			levels.peak[i] = ent_peak[i]->read() * level_multiplier(i);
 		}
 
 		taa3040.getAsiStatus();
@@ -152,27 +190,6 @@ float get_volume_dB(uint8_t channel, uint8_t bus) {
 
 float get_bus_volume_dB(uint8_t bus) {
 	return state.bus_volumes_dB[bus];
-}
-
-uint8_t get_channel_gain_dB_analog(uint8_t channel) {
-	float gain = state.channel_input_gains_dB[channel];
-
-	// the analog gain of the TAA3040 is between 0 and 42dB
-	// and has a whole-number resolution
-
-	if (gain < 0) {
-		return 0;
-	}
-	if (gain > 42) {
-		return 42;
-	}
-
-	return (uint8_t)(gain + 0.5);
-}
-
-float get_channel_gain_dB_digital(uint8_t channel) {
-	float gain = state.channel_input_gains_dB[channel];
-	return gain - (float)get_channel_gain_dB_analog(channel);
 }
 
 void apply_channel_input_gain(uint8_t channel) {
