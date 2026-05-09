@@ -247,11 +247,6 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 				cli->port->printf("chan %d is invalid\n", chan);
 				return;
 			}
-			if (gain < 0) {
-				cli->prefix_fail();
-				cli->port->printf("gain should not be negative\n");
-				return;
-			}
 
 			set_channel_input_gain_dB(chan, gain);
 
