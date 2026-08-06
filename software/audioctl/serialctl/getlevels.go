@@ -55,13 +55,13 @@ func (c *SerialCtl) GetLevels() (*ctl.Levels, error) {
 	for i := range c.numChans {
 		levels.RMS.Input[i] = vals[i*3+0]
 		levels.Peak.Input[i] = vals[i*3+1]
-		levels.Smooth.Input[i] = vals[i*3+1]
+		levels.Smooth.Input[i] = vals[i*3+2]
 	}
 	for i := range c.numBuses {
 		j := c.numChans + i
 		levels.RMS.Bus[i] = vals[j*3+0]
 		levels.Peak.Bus[i] = vals[j*3+1]
-		levels.Smooth.Bus[i] = vals[j*3+1]
+		levels.Smooth.Bus[i] = vals[j*3+2]
 	}
 
 	return levels, nil
