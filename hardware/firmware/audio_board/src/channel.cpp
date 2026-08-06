@@ -16,8 +16,14 @@ Channel::Channel(AudioAnalyzePeak* in_peak, AudioAnalyzeRMS* in_rms, AudioFilter
 }
 
 void Channel::update() {
-	float rms          = this->_rms->read() * this->_level_multiplier;
-	this->level_peak   = this->_peak->read() * this->_level_multiplier;
+	float rms = this->_rms->read() * this->_level_multiplier;
+	if (this->_peak->available()) {
+		// peak may be unavailable when there is no stream on the input (e.g. USB)
+		// for some reason smooth and rms are always available
+		this->level_peak = this->_peak->read() * this->_level_multiplier;
+	} else {
+		this->level_peak *= 0.97;
+	}
 	this->level_smooth = (this->level_smooth * 9 + rms) / 10;
 
 	if (rms < this->level_rms) {
