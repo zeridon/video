@@ -130,6 +130,15 @@ func (c *SerialCtl) FactoryReset() error {
 	return nil
 }
 
+func (c *SerialCtl) Persist() error {
+	_, err := c.RawCmd("persist")
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func boolToNum(b bool) int {
 	if b {
 		return 1

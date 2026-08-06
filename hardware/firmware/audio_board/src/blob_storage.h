@@ -4,8 +4,8 @@
 #include "config.h"
 
 struct __attribute__((packed)) EepromBlob {
-	char    buf[BLOB_SIZE];
-	uint8_t checksum;
+		char    buf[BLOB_SIZE];
+		uint8_t checksum;
 };
 
 class BlobStorage {

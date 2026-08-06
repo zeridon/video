@@ -38,8 +38,6 @@ unsigned long last_draw = 0;
 unsigned long last_save = 0;
 
 void loop() {
-	int size;
-
 	Levels& levels = audio_get_levels();
 
 	audio_update_levels(levels);
@@ -54,16 +52,6 @@ void loop() {
 #endif
 
 	the_cli.update();
-
-#ifdef USE_EEPROM
-	// save to EEPROM every 60 seconds
-	if (last_save + 60000 < millis()) {
-		size      = audio_eeprom_save_all();
-		last_save = millis();
-
-		debug_printf("eeprom: wrote %d bytes\n", size);
-	}
-#endif
 }
 
 int main() {

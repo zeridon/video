@@ -238,6 +238,13 @@ func (m *Mapper) FactoryReset() error {
 	return m.ctl.FactoryReset()
 }
 
+func (m *Mapper) Persist() error {
+	m.mutex.Lock()
+	defer m.mutex.Unlock()
+
+	return m.ctl.Persist()
+}
+
 func (m *Mapper) RawCmd(argstr string) (string, error) {
 	m.mutex.Lock()
 	defer m.mutex.Unlock()

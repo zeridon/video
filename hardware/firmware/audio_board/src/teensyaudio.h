@@ -33,7 +33,7 @@ bool is_phantom_on(uint8_t channel);
 void set_phantom_on(uint8_t channel);
 void set_phantom_off(uint8_t channel);
 
-InputChannel* get_channel(uint8_t channel);
+InputChannel*  get_channel(uint8_t channel);
 OutputChannel* get_bus(uint8_t bus);
 
 bool        set_blob(uint8_t index, const char* text);

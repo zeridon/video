@@ -10,10 +10,10 @@
 #define CROSSPOINTS (CHANNELS + 2)
 
 struct __attribute__((packed)) EepromOutput {
-	EepromBiquad eq[4];
-	float        matrix_gain[CROSSPOINTS];
-	bool         matrix_mute[CROSSPOINTS];
-	uint8_t      checksum;
+		EepromBiquad eq[4];
+		float        matrix_gain[CROSSPOINTS];
+		bool         matrix_mute[CROSSPOINTS];
+		uint8_t      checksum;
 };
 
 class OutputChannel : public Channel {

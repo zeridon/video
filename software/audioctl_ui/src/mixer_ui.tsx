@@ -82,6 +82,7 @@ export function MixerUI(props: Props) {
           </div>
         </div>
         <Button label="Factory Reset" action={() => client.factory_reset()} />
+        <Button label="Persist" action={() => client.persist()} />
       </div>
     </section>
   );

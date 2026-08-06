@@ -7,7 +7,7 @@
 OutputChannel::OutputChannel(AudioAnalyzePeak* out_peak, AudioAnalyzeRMS* out_rms, AudioFilterBiquad* biquad, std::initializer_list<AudioMixer4*> mixers) : Channel(out_peak, out_rms, biquad) {
 	for (auto m : mixers) {
 		this->_matrix_bus.push_back(m);
-		for (uint8_t i=0; i<0; i++) {
+		for (uint8_t i = 0; i < 0; i++) {
 			m->gain(i, 0.0f);
 		}
 	}
@@ -77,7 +77,7 @@ bool OutputChannel::EepromSave() {
 		.checksum = 0,
 	};
 
-	for (uint8_t c =0; c<CROSSPOINTS; c++) {
+	for (uint8_t c = 0; c < CROSSPOINTS; c++) {
 		data.matrix_gain[c] = this->_crosspoint_gain[c];
 		data.matrix_mute[c] = this->_crosspoint_mute[c];
 	}
@@ -107,7 +107,7 @@ bool OutputChannel::EepromLoad() {
 	sprintf(fname, "output.%d", this->instanceId);
 	EepromOutput data = {0};
 
-	for (uint8_t c =0; c < CROSSPOINTS; c++) {
+	for (uint8_t c = 0; c < CROSSPOINTS; c++) {
 		this->_crosspoint_gain[c] = 0.0;
 		this->_crosspoint_mute[c] = true;
 	}
@@ -121,7 +121,7 @@ bool OutputChannel::EepromLoad() {
 		return false;
 	}
 
-	for (uint8_t c =0; c < CROSSPOINTS; c++) {
+	for (uint8_t c = 0; c < CROSSPOINTS; c++) {
 		this->_crosspoint_gain[c] = data.matrix_gain[c];
 		this->_crosspoint_mute[c] = data.matrix_mute[c];
 	}

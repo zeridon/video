@@ -169,7 +169,11 @@ func New(logger *slog.Logger, cfg *config.ApiCfg, ctlInst ctl.Ctl) *Api {
 
 	msksrv.AddCall(a.srv, "factory-reset", a.handleFactoryReset).
 		Descr("factory reset the audio hardware").
-		Example(FactoryResetParam{}, "ok")
+		Example(EmptyParam{}, "ok")
+
+	msksrv.AddCall(a.srv, "persist", a.handlePersist).
+		Descr("persist settings in audio hardware's flash").
+		Example(EmptyParam{}, "ok")
 
 	return a
 }

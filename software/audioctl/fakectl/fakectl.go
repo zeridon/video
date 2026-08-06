@@ -157,6 +157,10 @@ func (c *FakeCtl) FactoryReset() error {
 	return nil
 }
 
+func (c *FakeCtl) Persist() error {
+	return fmt.Errorf("persist not implemented on fakectl")
+}
+
 func (c *FakeCtl) Loop() error {
 	lowThresholds := make([]float32, len(c.state.Channels))
 	highThresholds := make([]float32, len(c.state.Channels))

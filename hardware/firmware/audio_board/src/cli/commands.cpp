@@ -239,36 +239,29 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 			cli->report_ok();
 		},
 	},
-    {
-        .name = "channel.eq",
-        .help = "for the given channel. return the EQ state",
-        .arghelp  = "<channel no>",
-        .num_args = 1,
-        .callback = [](Cli* cli)
-        {
-            uint16_t chan = cli->hop_uint();
+	{.name = "channel.eq", .help = "for the given channel. return the EQ state", .arghelp = "<channel no>", .num_args = 1, .callback = [](Cli* cli) {
+		 uint16_t chan = cli->hop_uint();
 
-            if (chan >= CHANNELS) {
-                cli->prefix_fail();
-                cli->port->printf("channel %d is invalid [0-%d]\n", chan, CHANNELS-1);
-                return;
-            }
+		 if (chan >= CHANNELS) {
+			 cli->prefix_fail();
+			 cli->port->printf("channel %d is invalid [0-%d]\n", chan, CHANNELS - 1);
+			 return;
+		 }
 
-            cli->prefix_ok();
-            for (uint8_t band = 0; band < 4; band++) {
-                Band b = get_channel(chan)->filter.GetBand(band);
-                cli->port->print(b.type);
-                cli->port->print(" ");
-                cli->print_float_fixed(b.frequency, 5, 2);
-                cli->port->print(" ");
-                cli->print_float_fixed(b.gain, 3, 3);
-                cli->port->print(" ");
-                cli->print_float_fixed(b.q, 3, 4);
-                cli->port->print(" ");
-            }
-            cli->port->println();
-        }
-    },
+		 cli->prefix_ok();
+		 for (uint8_t band = 0; band < 4; band++) {
+			 Band b = get_channel(chan)->filter.GetBand(band);
+			 cli->port->print(b.type);
+			 cli->port->print(" ");
+			 cli->print_float_fixed(b.frequency, 5, 2);
+			 cli->port->print(" ");
+			 cli->print_float_fixed(b.gain, 3, 3);
+			 cli->port->print(" ");
+			 cli->print_float_fixed(b.q, 3, 4);
+			 cli->port->print(" ");
+		 }
+		 cli->port->println();
+	 }},
 	{
 		.name     = "channel.eq.set",
 		.help     = "for the given channel, configure an eq band",
@@ -302,43 +295,36 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 			cli->report_ok();
 		},
 	},
+	{.name = "bus.eq", .help = "for the given bus. return the state of the EQ bands", .arghelp = "<bus no>", .num_args = 1, .callback = [](Cli* cli) {
+		 uint16_t bus = cli->hop_uint();
+
+		 if (bus >= BUSES) {
+			 cli->prefix_fail();
+			 cli->port->printf("bus %d is invalid [0-%d]\n", bus, BUSES - 1);
+			 return;
+		 }
+
+		 cli->prefix_ok();
+		 for (uint8_t band = 0; band < 4; band++) {
+			 Band b = get_bus(bus)->filter.GetBand(band);
+			 cli->port->print(b.type);
+			 cli->port->print(" ");
+			 cli->print_float_fixed(b.frequency, 5, 2);
+			 cli->port->print(" ");
+			 cli->print_float_fixed(b.gain, 3, 3);
+			 cli->port->print(" ");
+			 cli->print_float_fixed(b.q, 3, 4);
+			 cli->port->print(" ");
+		 }
+		 cli->port->println();
+	 }},
 	{
-		.name = "bus.eq",
-		.help = "for the given bus. return the state of the EQ bands",
-		.arghelp  = "<bus no>",
-		.num_args = 1,
-		.callback = [](Cli* cli)
-		{
-			uint16_t bus = cli->hop_uint();
-
-			if (bus >= BUSES) {
-				cli->prefix_fail();
-				cli->port->printf("bus %d is invalid [0-%d]\n", bus, BUSES-1);
-				return;
-			}
-
-			cli->prefix_ok();
-			for (uint8_t band = 0; band < 4; band++) {
-				Band b = get_bus(bus)->filter.GetBand(band);
-				cli->port->print(b.type);
-				cli->port->print(" ");
-				cli->print_float_fixed(b.frequency, 5, 2);
-				cli->port->print(" ");
-				cli->print_float_fixed(b.gain, 3, 3);
-				cli->port->print(" ");
-				cli->print_float_fixed(b.q, 3, 4);
-				cli->port->print(" ");
-			}
-			cli->port->println();
-		}
-	},
-{
 		.name     = "bus.eq.set",
 		.help     = "for the given bus, configure an eq band",
 		.arghelp  = "<bus no> <band no> <shape> <freq> <gain> <q>",
 		.num_args = 6,
 		.callback = [](Cli* cli) {
-			uint16_t bus  = cli->hop_uint();
+			uint16_t bus   = cli->hop_uint();
 			uint16_t band  = cli->hop_uint();
 			uint16_t shape = cli->hop_uint();
 			float    freq  = cli->hop_float();
@@ -375,9 +361,9 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 			audio_eeprom_save_all();
 			cli->report_ok();
 			delay(50);
-			USB1_USBCMD = 0;        // disconnect from usb
+			USB1_USBCMD = 0; // disconnect from usb
 			delay(50);
-            SCB_AIRCR = 0x05FA0004; // reboot
+			SCB_AIRCR = 0x05FA0004; // reboot
 		},
 	},
 	{
@@ -475,9 +461,26 @@ const Cli::CmdDescr Cli::cmds[Cli::num_cmds + 1] = {
 		.arghelp  = "<bus>",
 		.num_args = 1,
 		.callback = [](Cli* cli) {
-			uint16_t bus  = cli->hop_uint();
-			auto b = get_bus(bus);
+			uint16_t bus = cli->hop_uint();
+			auto     b   = get_bus(bus);
 			b->DebugState();
+			cli->report_ok();
+		},
+	},
+	{
+		.name     = "persist",
+		.help     = "save settings to flash/eeprom",
+		.arghelp  = "",
+		.num_args = 0,
+		.callback = [](Cli* cli) {
+#if USE_EEPROM
+			int size = audio_eeprom_save_all();
+			debug_printf("eeprom: wrote %d bytes\n", size);
+			cli->report_ok();
+#else
+			cli->prefix_fail();
+			cli->port->printf("persisting is disabled\n");
+#endif
 		},
 	},
 	{

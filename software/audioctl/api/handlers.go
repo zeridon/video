@@ -163,11 +163,19 @@ func (a *Api) handleSetPhantom(param SetPhantomParam) (string, error) {
 	return "ok", nil
 }
 
-type FactoryResetParam struct {
+type EmptyParam struct{}
+
+func (a *Api) handleFactoryReset(param EmptyParam) (string, error) {
+	err := a.mapper.FactoryReset()
+	if err != nil {
+		return "", err
+	}
+	a.forceRefresh()
+	return "ok", nil
 }
 
-func (a *Api) handleFactoryReset(param FactoryResetParam) (string, error) {
-	err := a.mapper.FactoryReset()
+func (a *Api) handlePersist(param EmptyParam) (string, error) {
+	err := a.mapper.Persist()
 	if err != nil {
 		return "", err
 	}

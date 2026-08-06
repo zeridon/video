@@ -16,6 +16,7 @@ type Ctl interface {
 	SetPhantom(ch uint8, phantom bool) error
 	SetBlob(blob string) error
 	FactoryReset() error
+	Persist() error
 	Loop() error
 	RawCmd(argstr string) (string, error)
 	GetLevels() (*Levels, error)
