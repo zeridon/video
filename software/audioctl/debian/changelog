@@ -1,9 +1,16 @@
-fosdem-audioctl (0.0.16) UNRELEASED; urgency=medium
+fosdem-audioctl (0.0.17) stable; urgency=medium
 
+  * release 0.0.17 
+
+ -- Vasil Kolev <vasil@kvothe.home.ludost.net>  Thu, 06 Aug 2026 14:51:21 +0300
+
+fosdem-audioctl (0.0.16) stable; urgency=medium
+
+  [ FOSDEM Video Team ]
   * Non-maintainer upload.
   * release 0.0.16
 
- -- FOSDEM Video Team <video@fosdem.org>  Thu, 06 Aug 2026 06:54:36 +0300
+ -- Vasil Kolev <vasil@kvothe.home.ludost.net>  Thu, 06 Aug 2026 14:51:06 +0300
 
 fosdem-audioctl (0.0.1) stable; urgency=medium
 
