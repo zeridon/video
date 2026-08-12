@@ -29,7 +29,10 @@ export default function useAppState() {
     function connect() {
       const params = new URLSearchParams(window.location.search);
       const mqtt_url = params.get("mqtt_url");
-      const ws_url = params.get("ws_url");
+      let ws_url = params.get("ws_url");
+      if (!ws_url) {
+        ws_url = location.href.replace(/\/?$/, "/ws");
+      }
 
       if (mqtt_url) {
         let mqtt_prefix = params.get("mqtt_prefix");

@@ -11,14 +11,29 @@ export default defineConfig(({ mode }) => {
   };
 
   if (mode === "development") {
+    const api_url = process.env.API_URL;
+    if (!api_url) {
+      throw new Error(
+        "please specify the API_URL env var to, for example, http(s)://[IP]:[port]",
+      );
+    }
     server_cfg = {
       watch: {
         ignored: ["!**/node_modules/misirka/**"],
       },
       allowedHosts: true,
+      proxy: {
+        "/ws": {
+          target: api_url,
+          ws: true,
+          changeOrigin: true,
+          secure: false,
+          rewrite: (path: string) => path,
+        },
+      },
     };
 
-    optimize_deps.exclude.push("misirka");
+    optimize_deps.exclude.push("misirka", "rtui");
   }
 
   const checker_cfg = {
