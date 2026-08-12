@@ -29,7 +29,6 @@ export function MixerOutput(props: Props) {
             max={60}
             direction="vertical"
             onNewUserVal={actions.set_master_fader}
-            syncBackAfter={1300}
           />
           <VUMeter levels={props.levels} kind="buses" idx={props.idx} />
         </div>

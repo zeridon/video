@@ -50,7 +50,6 @@ export function MixerInput(props: Props) {
               max={60}
               direction="vertical"
               onNewUserVal={actions.set_gain}
-              syncBackAfter={1300}
             />
           </div>
         )}
@@ -61,7 +60,6 @@ export function MixerInput(props: Props) {
             max={60}
             direction="vertical"
             onNewUserVal={actions.set_master_fader}
-            syncBackAfter={1300}
           />
           <VUMeter levels={props.levels} kind="inputs" idx={props.idx} />
         </div>
@@ -112,7 +110,6 @@ function SendMap(props: {
         max={60}
         direction="vertical"
         onNewUserVal={actions.set_volume}
-        syncBackAfter={1300}
       />
       <Checkbox
         className="mute"

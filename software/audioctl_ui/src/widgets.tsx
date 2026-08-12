@@ -6,9 +6,10 @@ import type { SliderProps } from "rtui/preact";
 export { Checkbox } from "rtui/preact";
 
 export function VUSlider(props: SliderProps) {
+  const full_props = {...props, syncBackAfter: 2000, syncBackAfterDuringDrag: 15000};
   return (
     <div className="vu-slider">
-      <Slider {...props} />
+      <Slider {...full_props} />
       <div className="db gaindb">{formatDb(props.value)}</div>
     </div>
   );
