@@ -9,6 +9,7 @@ in {
 
   boot.kernelModules = [
     "dm-crypt" # to be able to mount encrypted hard drives
+    "usbmon"
   ];
 
   boot.kernelParams = [ "mitigations=off" ];

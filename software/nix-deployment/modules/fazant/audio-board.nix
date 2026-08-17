@@ -52,7 +52,7 @@
   audioctl-ui-pkg = pkgs.buildNpmPackage {
     name = "audioctl-ui";
     src = ../../../audioctl_ui;
-    npmDepsHash = "sha256-pjfZzzumrv7DjF6NPHkQvMLzBhHnvKJfXZ/EUuFbbEI=";
+    npmDepsHash = "sha256-jKQUf58WIX9mAVNXAaWQHFKI9UmmDHIy+9hINtExBXc=";
     npmBuildScript = "build";
     makeCacheWritable = true;
     installPhase = ''
