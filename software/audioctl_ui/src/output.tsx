@@ -20,7 +20,7 @@ export function MixerOutput(props: Props) {
 
   return (
     <div className="channel">
-      <h3 title={bus.name}>{bus.label}</h3>
+      <h3 title={bus.name} className="scribblestrip output">{bus.name}</h3>
       <div className="controls">
         <div className="sliders master">
           <VUSlider
@@ -33,10 +33,10 @@ export function MixerOutput(props: Props) {
           <VUMeter levels={props.levels} kind="buses" idx={props.idx} />
         </div>
         <Checkbox
-          className="mute"
+          className="mute inverted"
           checked={bus.master_unmuted}
           onNewUserVal={actions.set_master_unmuted}
-          label="unmuted"
+          label="Mute"
           syncBackAfter={1300}
         />
       </div>

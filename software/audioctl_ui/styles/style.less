@@ -1,0 +1,139 @@
+@bg: #282828;
+@bgpanel: #2d2d2d;
+@primary: #0b82d0;
+@disabled: #202020;
+@scribbleInput: #151515;
+@scribbleOutput: #5c0303;
+
+@import "component/progress";
+@import "component/checkbox";
+@import "component/button";
+@import "component/slider";
+@import "component/dialog";
+
+.bevel() {
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.button-light(@color) {
+  background: @color;
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1), 0 0 8px 0 fade(lighten(@color, 20%), 40%);
+  text-shadow: 1px 1px black;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, td, th {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+  font-size: 11pt;
+}
+
+body, html {
+  background: @bg;
+  color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.global-controls {
+  padding: 10px;
+  display: flex;
+  max-width: 250px;
+}
+
+#mixer-output {
+  //display: none;
+}
+
+div.mixer {
+  margin: 10px;
+  .bevel();
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.04);
+
+  .channellist {
+    display: flex;
+
+    .channel {
+      padding-top: 10px;
+    }
+
+    .channel:not(:first-child) {
+      padding-left: 8px;
+      padding-right: 8px;
+      border-left: 1px solid black;
+    }
+
+    .channel:first-child {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    h3 {
+      padding-left: 8px;
+      padding-right: 8px;
+      margin: 10px -8px;
+    }
+
+    .mute {
+      margin-bottom: 10px;
+    }
+
+    .sliders {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+
+      .db {
+        font-family: monospace;
+        text-align: center;
+      }
+
+      .vu-slider {
+        flex: 1;
+        height: 100%;
+      }
+
+      .vu-meter {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        meter {
+          direction: rtl;
+          writing-mode: vertical-lr;
+
+          .progress(#222, crimson, forestgreen, darkgoldenrod);
+
+          border: 1px solid black;
+          border-radius: 3px;
+          width: 8px;
+          height: 15rem;
+
+        }
+      }
+    }
+  }
+}
+
+.scribblestrip {
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 11pt;
+
+  &.input {
+    background: @scribbleInput;
+  }
+
+  &.output {
+    background: @scribbleOutput;
+  }
+}

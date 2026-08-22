@@ -1,0 +1,100 @@
+dialog {
+  background: #303030;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 0 0 rgba(255, 255, 255, 0.1), 4px 4px 8px 0 black;
+
+  padding: 36px 0 0;
+  min-width: 300px;
+
+  .headerbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+
+    h4 {
+      position: absolute;
+      left: 10px;
+      height: 36px;
+      line-height: 36px;
+      margin: 0;
+      user-select: none;
+    }
+
+    button {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      right: 3px;
+      top: 3px;
+    }
+  }
+
+
+  main {
+    display: flex;
+
+    section {
+      position: relative;
+      padding: 10px;
+      padding-top: 32px;
+      border-left: 1px solid black;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      & > header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        line-height: 30px;
+        font-size: 0.85em;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+dialog.setup-panel {
+  .phantom {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .sends {
+    display: flex;
+    height: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    .send:not(:first-child) {
+      padding-left: 8px;
+      padding-right: 8px;
+      border-left: 1px solid black;
+    }
+
+    .send:first-child {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    h4 {
+      padding-left: 8px;
+      padding-right: 8px;
+      margin: 0px -8px;
+    }
+
+    .slider {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

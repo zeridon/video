@@ -6,7 +6,11 @@ import type { SliderProps } from "rtui/preact";
 export { Checkbox } from "rtui/preact";
 
 export function VUSlider(props: SliderProps) {
-  const full_props = {...props, syncBackAfter: 2000, syncBackAfterDuringDrag: 15000};
+  const full_props = {
+    ...props,
+    syncBackAfter: 2000,
+    syncBackAfterDuringDrag: 15000,
+  };
   return (
     <div className="vu-slider">
       <Slider {...full_props} />
@@ -23,12 +27,10 @@ export function VUMeter(props: {
   const { levels, kind, idx } = props;
   const db = useComputed(() => levels.value?.smooth[kind][idx] ?? -120);
   const value = useComputed(() => logLinear(db.value));
-  const label = useComputed(() => formatDb(db.value));
 
   return (
     <div className="vu-meter">
       <meter min={0} max={1} low={0.5} optimum={0.2} high={0.8} value={value} />
-      <div className="db meterdb">{label}</div>
     </div>
   );
 }

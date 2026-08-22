@@ -26,6 +26,7 @@
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
+    "less": "^4.9.0",
     "prettier": "^3.8.2",
     "tsx-vanilla": "^1.2.0",
     "typescript": "~6.0.2",

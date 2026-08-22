@@ -1,0 +1,34 @@
+.progress(@background, @subsuboptimum, @suboptimum, @optimum) {
+  background: @background;
+  &::-webkit-meter-bar {
+    background: @background;
+  }
+  &:-moz-meter-optimum::-moz-meter-bar {
+    background: @optimum;
+  }
+
+  /* The green (optimum) bar in Chrome etc. */
+  &::-webkit-meter-optimum-value {
+    background: @optimum;
+  }
+
+  /* The yellow (sub-optimum) bar in Firefox */
+  &:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: @suboptimum;
+  }
+
+  /* The yellow (sub-optimum) bar in Chrome etc. */
+  &::-webkit-meter-suboptimum-value {
+    background: @suboptimum;
+  }
+
+  /* The red (even less good) bar in Firefox */
+  &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: @subsuboptimum;
+  }
+
+  /* The red (even less good) bar in Chrome etc. */
+  &::-webkit-meter-even-less-good-value {
+    background: @subsuboptimum;
+  }
+}

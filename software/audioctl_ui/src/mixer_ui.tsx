@@ -1,11 +1,11 @@
-import { useSignal } from "@preact/signals";
-import type { MisirkaClient } from "misirka";
-import { MixerClient } from "./mixerclient.ts";
-import type { MixerState, Levels } from "./api_data.ts";
-import { MixerInput, type InputActions, type SendActions } from "./input.tsx";
-import { MixerOutput, type OutputActions } from "./output.tsx";
-import { useEffect, useState } from "preact/hooks";
-import { Button } from "rtui/preact";
+import {useSignal} from "@preact/signals";
+import type {MisirkaClient} from "misirka";
+import {MixerClient} from "./mixerclient.ts";
+import type {MixerState, Levels} from "./api_data.ts";
+import {MixerInput, type InputActions, type SendActions} from "./input.tsx";
+import {MixerOutput, type OutputActions} from "./output.tsx";
+import {useEffect, useState} from "preact/hooks";
+import {Button} from "rtui/preact";
 
 type Props = {
   client: MisirkaClient;
@@ -24,8 +24,8 @@ export function MixerUI(props: Props) {
   }, []);
 
   const mk_send_actions: (ch: number, bus: number) => SendActions = (
-    chan,
-    bus,
+      chan,
+      bus,
   ) => ({
     set_volume: (volume) => client.set_matrix_volume(chan, bus, volume),
     set_unmuted: (unmuted) => client.set_matrix_send(chan, bus, unmuted),
@@ -37,7 +37,7 @@ export function MixerUI(props: Props) {
     set_gain: (gain) => client.set_in_gain(i, gain),
     set_master_fader: (fader) => client.set_channel_master_fader(i, fader),
     set_master_unmuted: (unmuted) =>
-      client.set_channel_master_unmuted(i, unmuted),
+        client.set_channel_master_unmuted(i, unmuted),
     set_phantom: (on) => client.set_phantom(i, on),
     send: (bus) => mk_send_actions(i, bus),
   });
@@ -50,40 +50,40 @@ export function MixerUI(props: Props) {
   if (!mixerState) return <span>Connected, waiting for first state</span>;
 
   return (
-    <section>
-      <div className="mixer">
-        <div className="mixer">
-          <h2>Inputs</h2>
-          <div className="inputs channellist">
-            {mixerState.channels.map((channel, i) => (
-              <MixerInput
-                key={`chan-${i}`}
-                channel={channel}
-                buses={mixerState.buses}
-                idx={i}
-                levels={levels}
-                actions={mk_input_actions(i)}
-              />
-            ))}
+      <section>
+        <div>
+          <div className="global-controls">
+            <Button label="Factory Reset" action={() => client.factory_reset()}/>
+            <Button label="Persist" action={() => client.persist()}/>
+          </div>
+          <div className="mixer" id="mixer-input">
+            <div className="inputs channellist">
+              {mixerState.channels.map((channel, i) => (
+                  <MixerInput
+                      key={`chan-${i}`}
+                      channel={channel}
+                      buses={mixerState.buses}
+                      idx={i}
+                      levels={levels}
+                      actions={mk_input_actions(i)}
+                  />
+              ))}
+            </div>
+          </div>
+          <div className="mixer" id="mixer-output">
+            <div className="outputs channellist">
+              {mixerState.buses.map((bus, i) => (
+                  <MixerOutput
+                      key={`bus-${i}`}
+                      bus={bus}
+                      idx={i}
+                      levels={levels}
+                      actions={mk_output_actions(i)}
+                  />
+              ))}
+            </div>
           </div>
         </div>
-        <div className="mixer">
-          <h2>Outputs</h2>
-          <div className="outputs channellist">
-            {mixerState.buses.map((bus, i) => (
-              <MixerOutput
-                key={`bus-${i}`}
-                bus={bus}
-                idx={i}
-                levels={levels}
-                actions={mk_output_actions(i)}
-              />
-            ))}
-          </div>
-        </div>
-        <Button label="Factory Reset" action={() => client.factory_reset()} />
-        <Button label="Persist" action={() => client.persist()} />
-      </div>
-    </section>
+      </section>
   );
 }
