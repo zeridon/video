@@ -55,6 +55,7 @@ div.mixer {
   .bevel();
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.04);
+  overflow: scroll;
 
   .channellist {
     display: flex;
@@ -128,6 +129,10 @@ div.mixer {
   padding-top: 2px;
   padding-bottom: 2px;
   font-size: 11pt;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width:100px;
 
   &.input {
     background: @scribbleInput;
