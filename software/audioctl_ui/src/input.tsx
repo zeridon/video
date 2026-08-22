@@ -80,7 +80,9 @@ export function MixerInput(props: Props) {
           </main>
 
         </dialog>
-        <Checkbox className="phantom indicator" checked={channel.phantom} label="+48V"/>
+        <span className={["checkbox", "phantom", "indicator", channel.phantom ? "checked" : "unchecked"].join(" ")}>
+          +48V
+        </span>
         <h3 title={channel.name} className="scribblestrip input">{channel.name}</h3>
         <div className="controls">
           <Checkbox
