@@ -5,6 +5,8 @@ This will for now not do what we want though:
 - keep the video.fosdem.org archive (and its mirrors!) as the backend
 - use PeerTube as a lightweight searchability and discoverability frontend
 
+A less elegant way duplicates the data to the PT instance through full synchronisation. That is easily possible, but not something we really want. The archive is 3.4 Tb as of 2026...
+
 ## Set up the experimental ActivityPub server
 - Prepare the environment
 <pre>
