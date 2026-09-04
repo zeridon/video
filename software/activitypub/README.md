@@ -1,5 +1,9 @@
 # Experiment: ActivityPub for PeerTube
-The following steps set up an experimental ActivityPub server that can be federated with PeerTube. The video metadata and subtitles get imported and are searchable. The actual videos do not play for some reason to still be examined.
+The following steps set up an experimental ActivityPub server that can be federated with PeerTube. The video metadata and subtitles get imported and are searchable. The actual videos do not play. PeerTube expects m3u8 url's formatted in the correct way.
+
+This will for now not do what we want though:
+- keep the video.fosdem.org archive (and its mirrors!) as the backend
+- use PeerTube as a lightweight searchability and discoverability frontend
 
 ## Set up the experimental ActivityPub server
 - Prepare the environment
@@ -26,3 +30,8 @@ pip install fastapi uvicorn cryptography
   - Follow fosdem@fosdem.markvdb.be .
   - Reload and notice the federation request has been accepted.
   - Go to the front page. The video metadata become visible and the subtitles can be seen, but the video does not play, nor is the preview image visible.
+
+## See also
+- https://github.com/Chocobozzz/PeerTube/blob/develop/packages/models/src/activitypub/objects/video-object.ts
+- https://docs.joinpeertube.org/api/activitypub
+- https://docs.joinpeertube.org/contribute/architecture#communications-between-instances
