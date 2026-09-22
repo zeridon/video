@@ -1,5 +1,5 @@
 # Experiment: ActivityPub for PeerTube
-The following steps set up an experimental ActivityPub server that can be federated with PeerTube. The video metadata and subtitles get imported and are searchable. The actual videos do not play. PeerTube expects m3u8 url's formatted in the correct way.
+The following steps set up an experimental ActivityPub server that can be federated with PeerTube. The video metadata and subtitles get imported and are searchable. The actual videos do not play. As per @chocobozz, PeerTube handles single mp4 files perfectly fine.
 
 This will for now not do what we want though:
 - keep the video.fosdem.org archive (and its mirrors!) as the backend
